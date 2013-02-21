@@ -1,0 +1,22 @@
+;
+; Copyright (c) Hiteg Ltd.  All rights reserved.
+;
+;
+; Use of this source code is subject to the terms of the Hiteg Ltd end-user
+; license agreement (EULA) under which you licensed this SOFTWARE PRODUCT.
+; If you did not accept the terms of the EULA, you are not authorized to use
+; this source code. For a copy of the EULA, please see the LICENSE.RTF on your
+; install media.
+;
+LIBRARY EPCTL
+
+EXPORTS EPCTL_Init
+	EPCTL_Deinit
+	EPCTL_Open
+	EPCTL_Close
+	EPCTL_Read
+	EPCTL_Write
+	EPCTL_Seek
+	EPCTL_IOControl
+	EPCTL_PowerDown
+	EPCTL_PowerUp

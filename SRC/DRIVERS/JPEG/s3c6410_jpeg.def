@@ -1,0 +1,10 @@
+LIBRARY     JPG
+
+EXPORTS JPG_Init
+    JPG_Deinit
+    JPG_Open
+    JPG_Close
+    JPG_Write
+    JPG_IOControl
+    JPG_PowerDown
+    JPG_PowerUp

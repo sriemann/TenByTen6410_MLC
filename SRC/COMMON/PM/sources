@@ -1,0 +1,33 @@
+!if 0
+Copyright (c) Microsoft Corporation.  All rights reserved.
+!endif
+!if 0
+Use of this source code is subject to the terms of the Microsoft end-user
+license agreement (EULA) under which you licensed this SOFTWARE PRODUCT.
+If you did not accept the terms of the EULA, you are not authorized to use
+this source code. For a copy of the EULA, please see the LICENSE.RTF on your
+install media.
+!endif
+!if 0
+!IF "$(BSP_USEDVS)" != "1"
+SKIPBUILD=1
+!ENDIF
+!endif
+TARGETNAME = s3c6410_PM
+TARGETTYPE = LIBRARY
+
+SYNCHRONIZE_DRAIN = 1
+NOMIPS16CODE = 1
+
+CDEFINES=$(CDEFINES) -DCEDDK_USEDDKMACRO
+
+!IF "$(BSP_USEDVS)" == "1"
+CDEFINES=$(CDEFINES) -DDVS_EN
+!ENDIF
+
+SOURCES= \
+    s3c6410_pm.c    \
+    dvs.c 
+      
+
+SOURCELIBS= \

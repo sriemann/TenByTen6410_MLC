@@ -1,0 +1,11 @@
+!if 0
+    File:   DIRS
+
+    Author: Flash Software
+
+	COPYRIGHT (c) 2006 SAMSUNG ELECTRONICS CO., LTD. ALL RIGHTS RESERVED
+!endif
+
+DIRS = Misc \
+    DLL
+

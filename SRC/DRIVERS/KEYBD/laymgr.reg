@@ -1,0 +1,56 @@
+;
+; Copyright (c) Microsoft Corporation.  All rights reserved.
+;
+;
+; Use of this source code is subject to the terms of the Microsoft end-user
+; license agreement (EULA) under which you licensed this SOFTWARE PRODUCT.
+; If you did not accept the terms of the EULA, you are not authorized to use
+; this source code. For a copy of the EULA, please see the LICENSE.RTF on your
+; install media.
+;
+
+; This file is to be included in platform.reg if required.
+
+#if ! defined keybd_driver
+#define keybd_driver	"smdk6410_keypad.dll"
+#endif
+
+#if ! defined keybd_preload_index
+#define keybd_preload_index	4
+#endif
+
+#if $(_IMAGELANGIDLIST)==0412
+
+; Korean keyboard layout
+#define input_locale 00000412
+#define input_method e0010412
+#define input_locale_text "Korean"
+
+#else
+
+; Default to US keyboard layout
+#define input_locale 00000409
+#define input_method e0010409
+#define input_locale_text "US"
+
+#endif // $(_IMAGELANGIDLIST)
+
+[HKEY_LOCAL_MACHINE\HARDWARE\DEVICEMAP\KEYBD]
+	"DriverName"=$(keybd_driver)
+	"Irq"=dword:20				;IRQ_KEYPAD (Virtual IRQ 0x20(32) -> Physical IRQ 0x16(22)
+	"SYSCONBase"=dword:7E00F000	; S3C6410 SysCon
+	"IOBase"=dword:7F008000		; S3C6410 GPIO
+	"IOCTRLBase"=dword:7E00A000	; S3C6410 Keypad I/F
+
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Layouts\$(input_locale)]
+	"Layout File"=$(keybd_driver)
+	"Layout Text"=$(input_locale_text)
+	"PS2_AT"=$(keybd_driver)
+	"Matrix"=$(keybd_driver)
+
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Layouts\$(input_method)]
+	"keyboard layout"="$(input_locale)"
+
+[HKEY_CURRENT_USER\Keyboard Layout\Preload\$(keybd_preload_index)]
+	@="$(input_locale)"
+

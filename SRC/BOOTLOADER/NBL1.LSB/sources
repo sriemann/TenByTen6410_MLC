@@ -1,0 +1,37 @@
+# Stepldr cannot support DEBUG build
+# For some Additional DEBUG library linking
+# It's size over Stepping Stone's size
+!if "$(WINCEDEBUG)" == "debug"
+SKIPBUILD = 1
+!endif
+
+TARGETNAME		= nbl1
+TARGETTYPE		= PROGRAM
+RELEASETYPE		= PLATFORM
+EXEENTRY		= StartUp
+NOMIPS16CODE	= 1
+WINCECPU=1
+
+!IF "$(BSP_USEDVS)" == "1"
+ADEFINES=$(ADEFINES) -pd "DVS_EN SETL {TRUE}"
+!ELSE
+ADEFINES=$(ADEFINES) -pd "DVS_EN SETL {FALSE}"
+!ENDIF
+CDEFEINS=$(CDEFINES) /Faccs /Fm
+
+LDEFINES = -subsystem:native /DEBUG /DEBUGTYPE:CV /FIXED:NO
+
+# FullLibc.lib is used for C common operator function
+# Do not remove this library even build will succeed without this
+# some divider function can map incorrectly.
+TARGETLIBS = $(_COMMONOAKROOT)\lib\$(_CPUINDPATH)\fulllibc.lib \
+    $(_COMMONSDKROOT)\lib\$(_CPUINDPATH)\corelibc.lib    \
+    $(_PLATCOMMONLIB)\$(_CPUDEPPATH)\s3c6410_system_lib_sec_v1.lib
+
+SOURCES =	startup.s	\
+			main.c    \
+			nand.c    \
+			nand_opt.s    \
+			utils.c
+
+WINCETARGETFILES = nbl1_romimage

@@ -1,0 +1,36 @@
+!if 0
+Copyright (c) Microsoft Corporation.  All rights reserved.
+!endif
+!if 0
+Use of this source code is subject to the terms of the Microsoft end-user
+license agreement (EULA) under which you licensed this SOFTWARE PRODUCT.
+If you did not accept the terms of the EULA, you are not authorized to use
+this source code. For a copy of the EULA, please see the LICENSE.RTF on your
+install media.
+!endif
+
+!if "$(BSP_NOUSBHCD)" == "1"
+SKIPBUILD=1
+!endif
+
+TARGETNAME = s3c6410_ohci2
+TARGETTYPE = DYNLINK
+RELEASETYPE = PLATFORM
+DLLENTRY = _DllMainCRTStartup
+DEFFILE = $(_COMMONOAKROOT)\inc\ohcd.def
+
+SYNCHRONIZE_DRAIN=1
+
+TARGETLIBS =    \
+        $(_COMMONSDKROOT)\lib\$(_CPUINDPATH)\coredll.lib    \
+        $(_SYSGENOAKROOT)\lib\$(_CPUINDPATH)\ceddk.lib    \
+
+SOURCELIBS =    \
+        $(_COMMONOAKROOT)\lib\$(_CPUINDPATH)\ohcdmdd2.lib    \
+        $(_COMMONOAKROOT)\lib\$(_CPUINDPATH)\hcdlib.lib
+
+SOURCES= \
+        s3c6410_ohci.c \
+
+#xref VIGUID {de6b1c71-cdba-43d3-ba2f-1a2ff2c0e1fa}
+#xref VSGUID {80521542-3d41-44f6-840c-cc8cfe45bf03}

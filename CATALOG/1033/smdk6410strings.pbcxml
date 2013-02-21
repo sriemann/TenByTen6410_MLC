@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!--
+Copyright (c) Microsoft Corporation.  All rights reserved.
+-->
+<!--
+Use of this source code is subject to the terms of the Microsoft end-user
+license agreement (EULA) under which you licensed this SOFTWARE PRODUCT.
+If you did not accept the terms of the EULA, you are not authorized to use
+this source code. For a copy of the EULA, please see the LICENSE.RTF on your
+install media.
+-->
+<CatalogFile xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" RequiredVersion="6.00" xsi:schemaLocation="urn:Microsoft.PlatformBuilder/Catalog PbcXml600.xsd" xmlns="urn:Microsoft.PlatformBuilder/Catalog">
+  <FileInformation Id="FileInformation:Samsung:SMDK6410:1033">
+    <Title>Samsung SMDK6410 StringTable 1033</Title>
+    <Vendor>Samsung</Vendor>
+    <OSVersion>6.00</OSVersion>
+    <FileVersion>1.0</FileVersion>
+  </FileInformation>
+  <StringTable Id="StringTable:Samsung:SMDK6410:1033" Namespace="Samsung" Culture="1033">
+    <Title>Samsung SMDK6410 StringTable 1033</Title>
+    <Item>
+      <Key>SMDK6410:ARMV4I:Title</Key>
+      <Type>Title</Type>
+      <Value>SMDK6410</Value>
+    </Item>
+    <Item>
+      <Key>SMDK6410:SMDK6410ARMV4I:Title</Key>
+      <Type>Title</Type>
+      <Value>SMDK6410: ARMV4I</Value>
+    </Item>
+    <Item>
+      <Key>SMDK6410:Camera:Title</Key>
+      <Type>Title</Type>
+      <Value>Camera Driver(DSHOW)</Value>
+    </Item>		
+    <Item>
+      <Key>SMDK6410:Display:Title</Key>
+      <Type>Title</Type>
+      <Value>Display Driver(DDRAW)</Value>
+    </Item>
+    <Item>
+      <Key>SMDK6410:Video:Title</Key>
+      <Type>Title</Type>
+      <Value>RAW Level Video Driver(Custom API)</Value>
+    </Item>		
+    <Item>
+      <Key>SMDK6410:Keypad:Title</Key>
+      <Type>Title</Type>
+      <Value>Keyboard and Keypad Driver</Value>
+    </Item>		
+    <Item>
+      <Key>SMDK6410:PowerControl:Title</Key>
+      <Type>Title</Type>
+      <Value>Power Controller</Value>
+    </Item>
+    <Item>
+      <Key>SMDK6410:PowerButton:Title</Key>
+      <Type>Title</Type>
+      <Value>Power Button</Value>
+    </Item>
+    <Item>
+      <Key>SMDK6410:SPI:Title</Key>
+      <Type>Title</Type>
+      <Value>High Speed SPI Driver</Value>
+    </Item>
+    <Item>
+      <Key>SMDK6410:Serial:Title</Key>
+      <Type>Title</Type>
+      <Value>UART Serial Driver</Value>
+    </Item>
+    <Item>
+      <Key>SMDK6410:USBFunction:Title</Key>
+      <Type>Title</Type>
+      <Value>USB Function</Value>
+    </Item>
+    <Item>
+      <Key>SMDK6410:USBHost(OHCI):Title</Key>
+      <Type>Title</Type>
+      <Value>USB Host (OHCI)</Value>
+    </Item>
+    <Item>
+      <Key>SMDK6410:HSMMC0:Title</Key>
+      <Type>Title</Type>
+      <Value>HSMMC Driver for Channel 0</Value>
+    </Item>
+    <Item>
+      <Key>SMDK6410:HSMMC1:Title</Key>
+      <Type>Title</Type>
+      <Value>HSMMC Driver for Channel 1</Value>
+    </Item>        
+    <Item>
+      <Key>SMDK6410:Touch:Title</Key>
+      <Type>Title</Type>
+      <Value>Legacy Touch Panel Driver</Value>
+    </Item>        
+    <Item>
+      <Key>SMDK6410:Jpeg:Title</Key>
+      <Type>Title</Type>
+      <Value>Jpeg Decoder Driver</Value>
+    </Item>        
+    <Item>
+      <Key>SMDK6410:MFC:Title</Key>
+      <Type>Title</Type>
+      <Value>Multi Function Codec Driver</Value>
+    </Item>                
+    <Item>
+      <Key>SMDK6410:Audio_IIS:Title</Key>
+      <Type>Title</Type>
+      <Value>IIS Audio WaveDev Driver</Value>
+    </Item>                
+    <Item>
+      <Key>SMDK6410:Audio_AC97:Title</Key>
+      <Type>Title</Type>
+      <Value>AC97 Audio WaveDev Driver</Value>
+    </Item>
+    <Item>
+      <Key>SMDK6410:NAND_FMD:Title</Key>
+      <Type>Title</Type>
+      <Value>FMD-based NAND Storage</Value>
+    </Item>
+    <Item>
+      <Key>SMDK6410:EthernetBootloader(eboot):Title</Key>
+      <Type>Title</Type>
+      <Value>Ethernet Bootloader (eboot)</Value>
+    </Item>
+    <Item>
+      <Key>SMDK6410:EthernetBootloader(eboot):Description</Key>
+      <Type>Description</Type>
+      <Value>Ethernet Bootloader Support Image Download, Fusing, and This Bootloader is a kind of second bootloader</Value>
+    </Item>    
+    <Item>
+      <Key>SMDK6410:EBootsourcecode:Title</Key>
+      <Type>Title</Type>
+      <Value>Ethernet Bootloader Source Code</Value>
+    </Item>        
+    <Item>
+      <Key>SMDK6410:ARMV4I:Description</Key>
+      <Type>Description</Type>
+      <Value>A BSP for the Samsung SMDK6410 Development Platform.  The platform uses the OS that is built for the ARM v4 architecture and contains the ARM instruction set with Thumb Interworking enabled.</Value>
+    </Item>
+    <Item>
+      <Key>SMDK6410:SMDK6410DevelopmentPlatform:Description</Key>
+      <Type>Description</Type>
+      <Value>SMDK6410 Development Platform</Value>
+    </Item>
+    <Item>
+      <Key>SMDK6410:Display:Description</Key>
+      <Type>Description</Type>
+      <Value>Display Driver can support Directdraw Overlay</Value>
+    </Item>
+    <Item>
+      <Key>SMDK6410:powerbutton:Description</Key>
+      <Type>Description</Type>
+      <Value>power button.</Value>
+    </Item>
+    <Item>
+      <Key>SMDK6410:SerialDriver:Description</Key>
+      <Type>Description</Type>
+      <Value>Serial Driver.</Value>
+    </Item>
+    <Item>
+      <Key>SMDK6410:USBFunction:Description</Key>
+      <Type>Description</Type>
+      <Value>USB Function</Value>
+    </Item>
+    <Item>
+      <Key>SMDK6410:USBHost(OHCI):Description</Key>
+      <Type>Description</Type>
+      <Value>USB Host (OHCI)</Value>
+    </Item>
+    <Item>
+      <Key>SMDK6410:DeviceDrivers:Location</Key>
+      <Type>Location</Type>
+      <Value>Device Drivers</Value>
+    </Item>
+    <Item>
+      <Key>SMDK6410:DeviceDrivers_InputDevices_KeyboardMouse:Location</Key>
+      <Type>Location</Type>
+      <Value>Device Drivers\Input Devices\Keyboard/Mouse</Value>
+    </Item>
+    <Item>
+      <Key>SMDK6410:DeviceDrivers_PCCard_PCCardHost:Location</Key>
+      <Type>Location</Type>
+      <Value>Device Drivers\PC Card\PC Card Host</Value>
+    </Item>
+    <Item>
+      <Key>SMDK6410:DeviceDrivers_PowerButton:Location</Key>
+      <Type>Location</Type>
+      <Value>Device Drivers\Power Button</Value>
+    </Item>
+    <Item>
+      <Key>SMDK6410:DeviceDrivers_Serial:Location</Key>
+      <Type>Location</Type>
+      <Value>Device Drivers\Serial</Value>
+    </Item>
+    <Item>
+      <Key>SMDK6410:DeviceDrivers_U.ctionBusDrivers:Location</Key>
+      <Type>Location</Type>
+      <Value>Device Drivers\USB Function\USB Function Bus Drivers</Value>
+    </Item>
+    <Item>
+      <Key>SMDK6410:DeviceDrivers_USBHost_USBHostControllers:Location</Key>
+      <Type>Location</Type>
+      <Value>Device Drivers\USB Host\USB Host Controllers</Value>
+    </Item>
+    <Item>
+      <Key>SMDK6410:StorageDevices:Location</Key>
+      <Type>Location</Type>
+      <Value>Storage Devices</Value>
+    </Item>
+  </StringTable>
+</CatalogFile>

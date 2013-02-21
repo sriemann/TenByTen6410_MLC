@@ -1,0 +1,98 @@
+# 
+# (c) Marvell Semiconductor, Inc., 
+# 
+# Description:
+#     NDIS 5.1 driver nmake macro file, which provides the target, include
+#  and source files information.
+# 
+#seeky add 20090325
+WIFI_DEVIF=SDIO 
+WIFI_CHIPID=8686 
+
+TARGETNAME=$(WIFI_DEVIF)$(WIFI_CHIPID)
+DRIVER_SELECT=-DIF_$(WIFI_DEVIF)
+
+RELEASETYPE=PLATFORM
+#RELEASETYPE=LOCAL
+TARGETTYPE=DYNLINK
+DEFFILE=$(TARGETNAME).def
+DLLENTRY=DllEntry
+
+TARGETLIBS= \
+  $(_PROJECTROOT)\cesysgen\sdk\lib\$(_TGTCPU)\$(WINCEDEBUG)\coredll.lib \
+  $(_PROJECTROOT)\cesysgen\sdk\lib\$(_TGTCPU)\$(WINCEDEBUG)\ntcompat.lib \
+  $(_PROJECTROOT)\cesysgen\sdk\lib\$(_TGTCPU)\$(WINCEDEBUG)\ndis.lib \
+  $(_PROJECTROOT)\cesysgen\oak\lib\$(_TGTCPU)\$(WINCEDEBUG)\ceddk.lib \
+  $(_PUBLICROOT)\common\oak\lib\$(_TGTCPU)\$(WINCEDEBUG)\rsa32.lib \
+  $(_TARGETPLATROOT)\lib\$(_CPUDEPPATH)\drvif.lib
+
+########################################
+#	Libraries for SDIO
+#
+!IF "$(WIFI_DEVIF)" == "SDIO"
+TARGETLIBS= $(TARGETLIBS) $(_PROJECTROOT)\cesysgen\oak\lib\$(_TGTCPU)\$(WINCEDEBUG)\SDcardlib.lib
+TARGETLIBS= $(TARGETLIBS) $(_PROJECTROOT)\cesysgen\oak\lib\$(_TGTCPU)\$(WINCEDEBUG)\sdbus.lib
+#	Library if using external interrupt on SDIO
+!IF "$(WIFI_INTRSRC)" == "INTR_EXT"
+TARGETLIBS= $(TARGETLIBS) $(_TARGETPLATROOT)\lib\$(_CPUDEPPATH)\drvio.lib
+
+ljhkhkjl
+!ENDIF
+!ENDIF
+
+
+
+
+EXT_INCLUDES= \
+  .\; \
+  $(_PROJECTROOT)\cesysgen\sdk\inc; \
+  $(_PROJECTROOT)\cesysgen\ddk\inc; \
+  $(_PROJECTROOT)\cesysgen\oak\inc; \
+  ..\IO\$(WIFI_DEVIF)\$(WIFI_HOSTTYPE); \
+  ..\IF\IF_$(WIFI_DEVIF); \
+
+!include ..\source.param
+CDEFINES=$(CDEFINES) -DNDIS51_MINIPORT
+
+FILE_VIEW_INCLUDES_FOLDER= \
+	dot11mib.h \
+	dsdef.h \
+	eagledev.h \
+	hostcmd.h \
+	If.h \
+	igxBug.h \
+	IxStatus.h \
+	macreg.h \
+	macrodef.h \
+	Mrvioctl.h \
+	ndisdef.h \
+	oid.h \
+	operfunc.h \
+	precomp.h \
+	procdef.h \
+	power.h \
+	SDNdis.h \
+	stdhdr.h \
+	wlan_ccx.h \
+	wmm.h
+
+SOURCES=  initproc.c \
+        oidproc.c \
+        hwacproc.c \
+        cmdproc.c \
+        miscproc.c \
+        pnpproc.c \
+        TxProc.c \
+        RxProc.c \
+        IntProc.c \
+        power.c \
+        cmdsend.c \
+        NDISLoader.cpp \
+        ExitProc.c \
+        Wlan_11d.c \
+        wlan_ccx.c \
+        wmm.c \
+	wlan_roam.c \
+	wlan_thread.c \
+	aes.c \
+	custom_interface.c

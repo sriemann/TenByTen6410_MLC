@@ -1,0 +1,27 @@
+#Windows Thumbnails ignorieren
+Thumbs.db
+
+#Visual Studio Dateien ignorieren
+*.obj
+*.pdb
+*.user
+*.aps
+*.vspscc
+*.ncb
+*.suo
+*.tlb
+*.tlh
+*.bak
+*.cache
+*.ilk
+*.log
+*.wrn
+*.err
+[Bb]in
+[Dd]ebug*/
+*.sbr
+_desktop.ini
+obj/
+.svn/
+[Rr]elease*/
+_ReSharper*/

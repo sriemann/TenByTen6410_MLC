@@ -1,0 +1,14 @@
+LIBRARY SD8686PN
+
+EXPORTS 
+DriverEntry
+NDL_Close
+NDL_Deinit
+NDL_Init
+NDL_IOControl
+NDL_Open
+NDL_PowerDown
+NDL_PowerUp
+NDL_Read
+NDL_Seek
+NDL_Write

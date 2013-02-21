@@ -1,0 +1,43 @@
+
+
+WINCEREL=1
+TARGETNAME=AACSBREnhancedDecoder
+TARGETDEFNAME=AACSBREnhancedDecoder.def
+RELEASETYPE=PLATFORM
+DLLENTRY=_DllMainCRTStartup
+TARGETTYPE=DYNLINK
+CDEFINES=$(CDEFINES) -DAACSBREnhanceddecfilter_EXPORTS -D_FIMV_WINCE_ -DPS_DEC -DAAC_ENABLE_SBR
+SOURCES= \
+  AACSBREnhanced.cpp \
+  AACSBREnhancedDecoder.rc \
+
+INCLUDES= \
+  $(_WINCEROOT)\public\DirectX\SDK\inc;$(_WINCEROOT)\public\DirectX\SDK\Samples\Dshow\Baseclasses; \
+  $(_WINCEROOT)\public\common\sdk\inc;$(_WINCEROOT)\public\common\oak\inc; \
+
+SOURCELIBS= \
+  $(_WINCEROOT)\public\DirectX\SDK\lib\$(_CPUINDPATH)\strmbase.lib \
+  $(_WINCEROOT)\public\DirectX\SDK\lib\$(_CPUINDPATH)\strmiids.lib \
+  $(_PROJECTROOT)\cesysgen\sdk\lib\$(_CPUINDPATH)\ole32.lib \
+  $(_PROJECTROOT)\cesysgen\sdk\lib\$(_CPUINDPATH)\uuid.lib \
+  $(_PROJECTROOT)\cesysgen\sdk\lib\$(_CPUINDPATH)\coredll.lib \
+  AACSBREnhancedDecoder.lib \
+
+TARGETLIBS= \
+  $(_WINCEROOT)\public\DirectX\SDK\lib\$(_CPUINDPATH)\strmbase.lib \
+  $(_WINCEROOT)\public\DirectX\SDK\lib\$(_CPUINDPATH)\strmiids.lib \
+  $(_PROJECTROOT)\cesysgen\sdk\lib\$(_CPUINDPATH)\ole32.lib \
+  $(_PROJECTROOT)\cesysgen\sdk\lib\$(_CPUINDPATH)\uuid.lib \
+  $(_PROJECTROOT)\cesysgen\sdk\lib\$(_CPUINDPATH)\coredll.lib \
+
+FILE_VIEW_ROOT_FOLDER= \
+  AACSBREnhancedDecoder.reg \
+  AACSBREnhancedDecoder.def \
+
+FILE_VIEW_INCLUDES_FOLDER= \
+  AACSBREnhanced.h \
+  iAACSBREnhanced.h \
+  stdafx.h \
+  SsbSsipAudioAacDecoder.h \
+  SsbTypeDefs.h \
+

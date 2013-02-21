@@ -1,0 +1,533 @@
+ s3c6410_ohci2
+
+ Timestamp is 5125b29e (Thu Feb 21 13:37:34 2013)
+
+ Preferred load address is 10000000
+
+ Start         Length     Name                   Class
+ 0001:00000000 00000004H .CRT$XCA                CODE
+ 0001:00000004 00000004H .CRT$XCZ                CODE
+ 0001:00000008 00000004H .CRT$XIA                CODE
+ 0001:0000000c 00000004H .CRT$XIZ                CODE
+ 0001:00000010 00000004H .CRT$XPA                CODE
+ 0001:00000014 00000004H .CRT$XPZ                CODE
+ 0001:00000018 00000004H .CRT$XTA                CODE
+ 0001:0000001c 00000004H .CRT$XTZ                CODE
+ 0001:00000020 000005d0H .rdata                  CODE
+ 0001:000005f0 0000002aH .rdata$debug            CODE
+ 0001:0000061c 0000bf3cH .text                   CODE
+ 0001:0000c558 00000154H .xdata                  CODE
+ 0001:0000c6ac 00000028H .idata$2                CODE
+ 0001:0000c6d4 00000014H .idata$3                CODE
+ 0001:0000c6e8 00000110H .idata$4                CODE
+ 0001:0000c7f8 00000016H .idata$6                CODE
+ 0001:0000c810 00000100H .edata                  CODE
+ 0002:00000000 00000110H .idata$5                DATA
+ 0002:00000110 0000003cH .data                   DATA
+ 0002:0000014c 00000034H .bss                    DATA
+ 0003:00000000 000009d0H .pdata                  DATA
+
+  Address         Publics by Value              Rva+Base       Lib:Object
+
+ 0000:00000000       ___safe_se_handler_count   00000000     <absolute>
+ 0000:00000000       ___safe_se_handler_table   00000000     <absolute>
+ 0001:00000000       __xc_a                     10001000     corelib0:crt0init.obj
+ 0001:00000004       __xc_z                     10001004     corelib0:crt0init.obj
+ 0001:00000008       __xi_a                     10001008     corelib0:crt0init.obj
+ 0001:0000000c       __xi_z                     1000100c     corelib0:crt0init.obj
+ 0001:00000010       __xp_a                     10001010     corelib0:crt0init.obj
+ 0001:00000014       __xp_z                     10001014     corelib0:crt0init.obj
+ 0001:00000018       __xt_a                     10001018     corelib0:crt0init.obj
+ 0001:0000001c       __xt_z                     1000101c     corelib0:crt0init.obj
+ 0001:00000044       ??_C@_1CC@NPEFILDH@?$AAP?$AAh?$AAy?$AAs?$AAi?$AAc?$AAa?$AAl?$AAP?$AAa?$AAg?$AAe?$AAS?$AAi?$AAz?$AAe?$AA?$AA@ 10001044     s3c6410_ohci.obj
+ 0001:00000068       ??_C@_1BM@KKKMKIHE@?$AAH?$AAc?$AAd?$AAC?$AAa?$AAp?$AAa?$AAb?$AAi?$AAl?$AAi?$AAt?$AAy?$AA?$AA@ 10001068     s3c6410_ohci.obj
+ 0001:00000084       ??_C@_1BI@BHLBGEOK@?$AAP?$AAr?$AAi?$AAo?$AAr?$AAi?$AAt?$AAy?$AA2?$AA5?$AA6?$AA?$AA@ 10001084     hcdlib:hcddrv.obj
+ 0001:0000009c       ??_C@_17KACEIPNC@?$AAK?$AAe?$AAy?$AA?$AA@ 1000109c     hcdlib:hcddrv.obj
+ 0001:000000a8       ??_7CHcd@@6B@              100010a8     hcdlib:hcd.obj
+ 0001:000000f8       ??_C@_1BE@NANPENDH@?$AAH?$AAc?$AAd?$AAA?$AAt?$AAt?$AAa?$AAc?$AAh?$AA?$AA@ 100010f8     hcdlib:cdevice.obj
+ 0001:0000010c       ??_C@_1CE@MBINLHH@?$AAH?$AAc?$AAd?$AAD?$AAe?$AAv?$AAi?$AAc?$AAe?$AAA?$AAt?$AAt?$AAa?$AAc?$AAh?$AAe?$AAd?$AA?$AA@ 1000110c     hcdlib:cdevice.obj
+ 0001:00000130       ??_C@_1CE@KAKNBFJP@?$AAH?$AAc?$AAd?$AAD?$AAe?$AAv?$AAi?$AAc?$AAe?$AAD?$AAe?$AAt?$AAa?$AAc?$AAh?$AAe?$AAd?$AA?$AA@ 10001130     hcdlib:cdevice.obj
+ 0001:00000154       ??_C@_1DC@HKGGOMPG@?$AAH?$AAc?$AAd?$AAD?$AAe?$AAv?$AAi?$AAc?$AAe?$AAS?$AAu?$AAs?$AAp?$AAe?$AAn?$AAd?$AAe?$AAR?$AAe?$AAs?$AAu?$AAm?$AAe?$AAd?$AA?$AA@ 10001154     hcdlib:cdevice.obj
+ 0001:00000188       ??_C@_1CO@MCCAIHAO@?$AAH?$AAc?$AAd?$AAS?$AAe?$AAl?$AAe?$AAc?$AAt?$AAC?$AAo?$AAn?$AAf?$AAi?$AAg?$AAu?$AAr?$AAa?$AAt?$AAi?$AAo?$AAn?$AA?$AA@ 10001188     hcdlib:cdevice.obj
+ 0001:000001b8       ??_C@_1BC@MPAIGMIO@?$AAU?$AAS?$AAB?$AAD?$AA?4?$AAD?$AAL?$AAL?$AA?$AA@ 100011b8     hcdlib:cdevice.obj
+ 0001:000001cc       ??_C@_1BE@MDMBICMJ@?$AAH?$AAc?$AAd?$AAD?$AAe?$AAt?$AAa?$AAc?$AAh?$AA?$AA@ 100011cc     hcdlib:cdevice.obj
+ 0001:000001e0       ??_7CDevice@@6B@           100011e0     hcdlib:cdevice.obj
+ 0001:00000218       ??_7CHub@@6B@              10001218     hcdlib:cdevice.obj
+ 0001:00000278       ??_7CRootHub@@6B@          10001278     hcdlib:cdevice.obj
+ 0001:000002d8       ??_7CExternalHub@@6B@      100012d8     hcdlib:cdevice.obj
+ 0001:00000334       ??_7CFunction@@6B@         10001334     hcdlib:cdevice.obj
+ 0001:00000370       ??_7COhcd@@6B@             10001370     ohcdmdd2:cohcd.obj
+ 0001:000003d0       ??_7CPipeAbs@@6B@          100013d0     ohcdmdd2:cpipe.obj
+ 0001:000003f0       ??_7CPipe@@6B@             100013f0     ohcdmdd2:cpipe.obj
+ 0001:00000430       ??_7CQueuedPipe@@6B@       10001430     ohcdmdd2:cpipe.obj
+ 0001:00000478       ??_7CBulkPipe@@6B@         10001478     ohcdmdd2:cpipe.obj
+ 0001:000004c0       ??_7CControlPipe@@6B@      100014c0     ohcdmdd2:cpipe.obj
+ 0001:00000508       ??_7CInterruptPipe@@6B@    10001508     ohcdmdd2:cpipe.obj
+ 0001:00000550       ??_7CIsochronousPipe@@6B@  10001550     ohcdmdd2:cpipe.obj
+ 0001:00000590       ??_7CHW@@6B@               10001590     ohcdmdd2:chw.obj
+ 0001:0000061c       HcdPdd_DllMain             1000161c f   s3c6410_ohci.obj
+ 0001:00000624       ConfigureOHCICard          10001624 f   s3c6410_ohci.obj
+ 0001:00000bfc       HcdPdd_Init                10001bfc f   s3c6410_ohci.obj
+ 0001:00000c94       HcdPdd_CheckConfigPower    10001c94 f   s3c6410_ohci.obj
+ 0001:00000ca8       HcdPdd_PowerUp             10001ca8 f   s3c6410_ohci.obj
+ 0001:00000d1c       HcdPdd_PowerDown           10001d1c f   s3c6410_ohci.obj
+ 0001:00000d60       HcdPdd_Deinit              10001d60 f   s3c6410_ohci.obj
+ 0001:00000e40       HcdPdd_Open                10001e40 f   s3c6410_ohci.obj
+ 0001:00000e48       HcdPdd_Close               10001e48 f   s3c6410_ohci.obj
+ 0001:00000e50       HcdPdd_Read                10001e50 f   s3c6410_ohci.obj
+ 0001:00000e58       HcdPdd_Write               10001e58 f   s3c6410_ohci.obj
+ 0001:00000e60       HcdPdd_Seek                10001e60 f   s3c6410_ohci.obj
+ 0001:00000e68       HcdPdd_IOControl           10001e68 f   s3c6410_ohci.obj
+ 0001:00000e70       HcdPdd_InitiatePowerUp     10001e70 f   s3c6410_ohci.obj
+ 0001:00000ecc       DllMain                    10001ecc f   hcdlib:hcddrv.obj
+ 0001:000010e8       HcdMdd_CreateHcdObject     100020e8 f   hcdlib:hcddrv.obj
+ 0001:0000114c       HcdMdd_DestroyHcdObject    1000214c f   hcdlib:hcddrv.obj
+ 0001:00001174       HcdMdd_DestroyMemoryObject 10002174 f   hcdlib:hcddrv.obj
+ 0001:0000119c       HcdMdd_PowerUp             1000219c f   hcdlib:hcddrv.obj
+ 0001:000011c0       HcdMdd_PowerDown           100021c0 f   hcdlib:hcddrv.obj
+ 0001:000011e4       HcdMdd_SetCapability       100021e4 f   hcdlib:hcddrv.obj
+ 0001:00001208       HCD_Init                   10002208 f   hcdlib:hcddrv.obj
+ 0001:0000134c       HCD_PowerUp                1000234c f   hcdlib:hcddrv.obj
+ 0001:0000135c       HCD_PowerDown              1000235c f   hcdlib:hcddrv.obj
+ 0001:0000136c       HCD_Deinit                 1000236c f   hcdlib:hcddrv.obj
+ 0001:0000137c       HCD_Open                   1000237c f   hcdlib:hcddrv.obj
+ 0001:0000138c       HCD_Close                  1000238c f   hcdlib:hcddrv.obj
+ 0001:0000139c       HCD_Read                   1000239c f   hcdlib:hcddrv.obj
+ 0001:000013ac       HCD_Write                  100023ac f   hcdlib:hcddrv.obj
+ 0001:000013bc       HCD_Seek                   100023bc f   hcdlib:hcddrv.obj
+ 0001:000013cc       HCD_IOControl              100023cc f   hcdlib:hcddrv.obj
+ 0001:000013fc       HcdMdd_CreateMemoryObject  100023fc f   hcdlib:hcddrv.obj
+ 0001:0000147c       ??1CHcd@@UAA@XZ            1000247c f   hcdlib:hcd.obj
+ 0001:000014fc       ?WaitForPortStatusChange@CHcd@@UAAHPAX@Z 100024fc f i hcdlib:hcd.obj
+ 0001:00001504       ?SuspendHC@CHcd@@UAAHXZ    10002504 f i hcdlib:hcd.obj
+ 0001:0000150c       ?ResumeNotification@CHcd@@MAAHXZ 1000250c f i hcdlib:hcd.obj
+ 0001:0000158c       ?SetRootHub@CHcd@@QAAPAVCRootHub@@PAV2@@Z 1000258c f   hcdlib:hcd.obj
+ 0001:000015bc       ?OpenPipe@CHcd@@QAAHIPBU_USB_ENDPOINT_DESCRIPTOR@@PAI@Z 100025bc f   hcdlib:hcd.obj
+ 0001:0000164c       ?ClosePipe@CHcd@@QAAHII@Z  1000264c f   hcdlib:hcd.obj
+ 0001:000016ac       ?IssueTransfer@CHcd@@QAAHIIP6AKPAX@Z0KPBXKKPBKK0K2PAK4PAH44@Z 100026ac f   hcdlib:hcd.obj
+ 0001:000017bc       ?AbortTransfer@CHcd@@QAAHIIP6AKPAX@Z0PBX@Z 100027bc f   hcdlib:hcd.obj
+ 0001:0000183c       ?IsPipeHalted@CHcd@@QAAHIIPAH@Z 1000283c f   hcdlib:hcd.obj
+ 0001:000018ac       ?ResetPipe@CHcd@@QAAHII@Z  100028ac f   hcdlib:hcd.obj
+ 0001:0000190c       ?DisableDevice@CHcd@@UAAHIH@Z 1000290c f   hcdlib:hcd.obj
+ 0001:0000196c       ?SuspendResume@CHcd@@UAAHIH@Z 1000296c f   hcdlib:hcd.obj
+ 0001:000019cc       ?BusChildIoControl@CHcd@@QAAHKPAXK@Z 100029cc f   hcdlib:hcd.obj
+ 0001:000019fc       ?GetOTGCapabilityBits@CHcd@@QAAEXZ 100029fc f   hcdlib:hcd.obj
+ 0001:00001a54       ??0CHcd@@QAA@XZ            10002a54 f   hcdlib:hcd.obj
+ 0001:00001ac8       ??_ECHcd@@UAAPAXI@Z        10002ac8 f i hcdlib:hcd.obj
+ 0001:00001ac8       ??_GCHcd@@UAAPAXI@Z        10002ac8 f i hcdlib:hcd.obj
+ 0001:00001af0       ?CreateNewNode@CPhysMem@@AAAPAUtMEMLIST@@KKK@Z 10002af0 f   hcdlib:cphysmem.obj
+ 0001:00001b70       ?FindFreeBlock@CPhysMem@@AAAPAUtMEMLIST@@KH@Z 10002b70 f   hcdlib:cphysmem.obj
+ 0001:00001be4       ?AddNodeToFreeList@CPhysMem@@AAAHPAUtMEMLIST@@H@Z 10002be4 f   hcdlib:cphysmem.obj
+ 0001:00001d7c       ?FreeList@CPhysMem@@AAAHPAPAUtMEMLIST@@@Z 10002d7c f   hcdlib:cphysmem.obj
+ 0001:00001dcc       ?AllocateSpecialMemory@CPhysMem@@QAAHKQAPAE@Z 10002dcc f   hcdlib:cphysmem.obj
+ 0001:00001dec       ?AllocateMemory@CPhysMem@@QAAHKQAPAEKPAH@Z 10002dec f   hcdlib:cphysmem.obj
+ 0001:00001f60       ?FreeMemory@CPhysMem@@QAAXQAEKK@Z 10002f60 f   hcdlib:cphysmem.obj
+ 0001:00002048       ?ReInit@CPhysMem@@QAAXXZ   10003048 f   hcdlib:cphysmem.obj
+ 0001:00002230       ??1CPhysMem@@QAA@XZ        10003230 f   hcdlib:cphysmem.obj
+ 0001:0000229c       ??0CPhysMem@@QAA@KKPAE0@Z  1000329c f   hcdlib:cphysmem.obj
+ 0001:00002420       ??0CDeviceGlobal@@QAA@XZ   10003420 f   hcdlib:cdevice.obj
+ 0001:0000247c       ?Initialize@CDeviceGlobal@@QAAHPAX@Z 1000347c f   hcdlib:cdevice.obj
+ 0001:0000257c       ?DeInitialize@CDeviceGlobal@@QAAXXZ 1000357c f   hcdlib:cdevice.obj
+ 0001:000025f4       ?ReserveAddress@CDeviceGlobal@@QAAHAAE@Z 100035f4 f   hcdlib:cdevice.obj
+ 0001:0000267c       ?FreeAddress@CDeviceGlobal@@QAAXE@Z 1000367c f   hcdlib:cdevice.obj
+ 0001:000026c0       ?TransferDoneCallbackSetEvent@CDevice@@KAKPAX@Z 100036c0 f   hcdlib:cdevice.obj
+ 0001:000026d8       ??0CDevice@@QAA@EABU_USB_DEVICE_INFO@@HEQAVCDeviceGlobal@@QAVCHub@@@Z 100036d8 f   hcdlib:cdevice.obj
+ 0001:0000274c       ?OTGSwitchRoleEnable@CDevice@@UAA?AW4HCD_REQUEST_STATUS@@I@Z 1000374c f i hcdlib:cdevice.obj
+ 0001:00002754       ?ResumeNotification@CDevice@@UAAHXZ 10003754 f i hcdlib:cdevice.obj
+ 0001:0000275c       ?NotifyOnSuspendedResumed@CDevice@@UAAHH@Z 1000375c f i hcdlib:cdevice.obj
+ 0001:00002764       ?DeleteUsbConfigurationStructure@CDevice@@QBAXAAU_NON_CONST_USB_CONFIGURATION@@@Z 10003764 f   hcdlib:cdevice.obj
+ 0001:00002814       ?AllocatePipeArray@CDevice@@IAAHXZ 10003814 f   hcdlib:cdevice.obj
+ 0001:000028e0       ?DisableDevice@CDevice@@UAA?AW4HCD_REQUEST_STATUS@@IH@Z 100038e0 f   hcdlib:cdevice.obj
+ 0001:00002918       ?SuspendResume@CDevice@@UAA?AW4HCD_REQUEST_STATUS@@IH@Z 10003918 f   hcdlib:cdevice.obj
+ 0001:00002980       ?GetDescriptor@CHub@@IAAHQAVCPipeAbs@@EEEGPAXK@Z 10003980 f   hcdlib:cdevice.obj
+ 0001:00002b54       ?DetachDownstreamDeviceThread@CHub@@IAAKXZ 10003b54 f   hcdlib:cdevice.obj
+ 0001:00002bb8       ?AllocateDeviceArray@CHub@@IAAHXZ 10003bb8 f   hcdlib:cdevice.obj
+ 0001:00002c18       ?HandleDetach@CHub@@UAAXXZ 10003c18 f   hcdlib:cdevice.obj
+ 0001:00002d8c       ?OpenPipe@CHub@@UAA?AW4HCD_REQUEST_STATUS@@IQBU_USB_ENDPOINT_DESCRIPTOR@@QAI@Z 10003d8c f   hcdlib:cdevice.obj
+ 0001:00002e20       ?ClosePipe@CHub@@UAA?AW4HCD_REQUEST_STATUS@@II@Z 10003e20 f   hcdlib:cdevice.obj
+ 0001:00002eac       ?IssueTransfer@CHub@@UAA?AW4HCD_REQUEST_STATUS@@IIQ6AKPAX@ZQAXKQBXKKQBKK2K3QAK5QAH55@Z 10003eac f   hcdlib:cdevice.obj
+ 0001:00002fc4       ?AbortTransfer@CHub@@UAA?AW4HCD_REQUEST_STATUS@@IIQ6AKPAX@ZQAXQBX@Z 10003fc4 f   hcdlib:cdevice.obj
+ 0001:00003070       ?IsPipeHalted@CHub@@UAA?AW4HCD_REQUEST_STATUS@@IIQAH@Z 10004070 f   hcdlib:cdevice.obj
+ 0001:00003104       ?ResetPipe@CHub@@UAA?AW4HCD_REQUEST_STATUS@@II@Z 10004104 f   hcdlib:cdevice.obj
+ 0001:00003190       ?DisableDevice@CHub@@UAA?AW4HCD_REQUEST_STATUS@@IH@Z 10004190 f   hcdlib:cdevice.obj
+ 0001:00003230       ?NotifyOnSuspendedResumed@CHub@@UAAHH@Z 10004230 f   hcdlib:cdevice.obj
+ 0001:000032a4       ?SuspendResume@CHub@@UAA?AW4HCD_REQUEST_STATUS@@IH@Z 100042a4 f   hcdlib:cdevice.obj
+ 0001:00003344       ?SuspendResumeOffStreamDevice@CHub@@UAAHIH@Z 10004344 f   hcdlib:cdevice.obj
+ 0001:00003430       ?PowerAllHubPorts@CRootHub@@EAAHXZ 10004430 f   hcdlib:cdevice.obj
+ 0001:00003438       ?WaitForPortStatusChange@CRootHub@@EAAHAAEAAU_USB_HUB_AND_PORT_STATUS@@@Z 10004438 f   hcdlib:cdevice.obj
+ 0001:00003720       ?GetStatus@CRootHub@@EAAHEAAU_USB_HUB_AND_PORT_STATUS@@@Z 10004720 f   hcdlib:cdevice.obj
+ 0001:00003740       ?ResetAndEnablePort@CRootHub@@EAAHE@Z 10004740 f   hcdlib:cdevice.obj
+ 0001:00003794       ?DisablePort@CRootHub@@EAAXE@Z 10004794 f   hcdlib:cdevice.obj
+ 0001:000037b4       ?SetOrClearFeature@CRootHub@@EAAHGEG@Z 100047b4 f   hcdlib:cdevice.obj
+ 0001:000037d8       ?SetOrClearRemoteWakup@CRootHub@@EAAHH@Z 100047d8 f   hcdlib:cdevice.obj
+ 0001:000037e0       ?OTGSwitchRoleEnable@CRootHub@@UAA?AW4HCD_REQUEST_STATUS@@I@Z 100047e0 f   hcdlib:cdevice.obj
+ 0001:00003880       ?PowerAllHubPorts@CExternalHub@@EAAHXZ 10004880 f   hcdlib:cdevice.obj
+ 0001:00003914       ?GetStatusChangeBitmap@CExternalHub@@AAAHAAK@Z 10004914 f   hcdlib:cdevice.obj
+ 0001:00003aa4       ?WaitForPortStatusChange@CExternalHub@@EAAHAAEAAU_USB_HUB_AND_PORT_STATUS@@@Z 10004aa4 f   hcdlib:cdevice.obj
+ 0001:00003bcc       ?GetStatus@CExternalHub@@EAAHEAAU_USB_HUB_AND_PORT_STATUS@@@Z 10004bcc f   hcdlib:cdevice.obj
+ 0001:00003d24       ?ResetAndEnablePort@CExternalHub@@EAAHE@Z 10004d24 f   hcdlib:cdevice.obj
+ 0001:00003e54       ?DisablePort@CExternalHub@@EAAXE@Z 10004e54 f   hcdlib:cdevice.obj
+ 0001:00003e8c       ?SetOrClearFeature@CExternalHub@@EAAHGEG@Z 10004e8c f   hcdlib:cdevice.obj
+ 0001:00003fd8       ?SetOrClearRemoteWakup@CExternalHub@@EAAHH@Z 10004fd8 f   hcdlib:cdevice.obj
+ 0001:0000412c       ?NotifyOnSuspendedResumed@CFunction@@UAAHH@Z 1000512c f   hcdlib:cdevice.obj
+ 0001:00004188       ?OpenPipe@CFunction@@UAA?AW4HCD_REQUEST_STATUS@@IQBU_USB_ENDPOINT_DESCRIPTOR@@QAI@Z 10005188 f   hcdlib:cdevice.obj
+ 0001:000043e8       ?ClosePipe@CFunction@@UAA?AW4HCD_REQUEST_STATUS@@II@Z 100053e8 f   hcdlib:cdevice.obj
+ 0001:00004488       ?IssueTransfer@CFunction@@UAA?AW4HCD_REQUEST_STATUS@@IIQ6AKPAX@ZQAXKQBXKKQBKK2K3QAK5QAH55@Z 10005488 f   hcdlib:cdevice.obj
+ 0001:000045ac       ?AbortTransfer@CFunction@@UAA?AW4HCD_REQUEST_STATUS@@IIQ6AKPAX@ZQAXQBX@Z 100055ac f   hcdlib:cdevice.obj
+ 0001:00004630       ?IsPipeHalted@CFunction@@UAA?AW4HCD_REQUEST_STATUS@@IIQAH@Z 10005630 f   hcdlib:cdevice.obj
+ 0001:000046c0       ?HandleDetach@CFunction@@EAAXXZ 100056c0 f   hcdlib:cdevice.obj
+ 0001:000047bc       ?SetOrClearFeature@CFunction@@AAAHEGEG@Z 100057bc f   hcdlib:cdevice.obj
+ 0001:00004938       ?OTGSwitchRoleEnable@CFunction@@UAA?AW4HCD_REQUEST_STATUS@@I@Z 10005938 f   hcdlib:cdevice.obj
+ 0001:0000498c       ??1CDeviceGlobal@@QAA@XZ   1000598c f   hcdlib:cdevice.obj
+ 0001:000049b8       ??1CDevice@@UAA@XZ         100059b8 f   hcdlib:cdevice.obj
+ 0001:00004a50       ?CreateUsbConfigurationStructure@CDevice@@QBAHAAU_NON_CONST_USB_CONFIGURATION@@QAEI@Z 10005a50 f   hcdlib:cdevice.obj
+ 0001:00004dc4       ??0CHub@@QAA@EABU_USB_DEVICE_INFO@@HEABU_USB_HUB_DESCRIPTOR@@QAVCHcd@@QAV0@@Z 10005dc4 f   hcdlib:cdevice.obj
+ 0001:00004e88       ?ResumeNotification@CHub@@UAAHXZ 10005e88 f i hcdlib:cdevice.obj
+ 0001:00004eac       ??1CHub@@UAA@XZ            10005eac f   hcdlib:cdevice.obj
+ 0001:00004f00       ?DetachDownstreamDeviceThreadStub@CHub@@KAKPAX@Z 10005f00 f   hcdlib:cdevice.obj
+ 0001:00004f10       ?DetachDevice@CHub@@IAAXE@Z 10005f10 f   hcdlib:cdevice.obj
+ 0001:00005020       ??0CRootHub@@QAA@ABU_USB_DEVICE_INFO@@HABU_USB_HUB_DESCRIPTOR@@QAVCHcd@@@Z 10006020 f   hcdlib:cdevice.obj
+ 0001:00005074       ??0CExternalHub@@QAA@EABU_USB_DEVICE_INFO@@HEABU_USB_HUB_DESCRIPTOR@@QAVCHcd@@QAVCHub@@@Z 10006074 f   hcdlib:cdevice.obj
+ 0001:000050c0       ??0CFunction@@QAA@EABU_USB_DEVICE_INFO@@HEQAVCHcd@@QAVCHub@@@Z 100060c0 f   hcdlib:cdevice.obj
+ 0001:00005138       ?EnterOperationalState@CFunction@@UAAHQAVCPipeAbs@@@Z 10006138 f   hcdlib:cdevice.obj
+ 0001:00005260       ?ResetPipe@CFunction@@UAA?AW4HCD_REQUEST_STATUS@@II@Z 10006260 f   hcdlib:cdevice.obj
+ 0001:00005318       ??_GCDevice@@UAAPAXI@Z     10006318 f i hcdlib:cdevice.obj
+ 0001:00005318       ??_ECDevice@@UAAPAXI@Z     10006318 f i hcdlib:cdevice.obj
+ 0001:00005340       ??_ECHub@@UAAPAXI@Z        10006340 f i hcdlib:cdevice.obj
+ 0001:00005340       ??_GCHub@@UAAPAXI@Z        10006340 f i hcdlib:cdevice.obj
+ 0001:00005370       ?AttachDevice@CHub@@IAAXEH@Z 10006370 f   hcdlib:cdevice.obj
+ 0001:00005f94       ?DisableOffStreamDevice@CHub@@UAAHIH@Z 10006f94 f   hcdlib:cdevice.obj
+ 0001:00006074       ??_GCRootHub@@UAAPAXI@Z    10007074 f i hcdlib:cdevice.obj
+ 0001:00006074       ??_ECRootHub@@UAAPAXI@Z    10007074 f i hcdlib:cdevice.obj
+ 0001:000060a8       ??_ECExternalHub@@UAAPAXI@Z 100070a8 f i hcdlib:cdevice.obj
+ 0001:000060a8       ??_GCExternalHub@@UAAPAXI@Z 100070a8 f i hcdlib:cdevice.obj
+ 0001:000060dc       ??_GCFunction@@UAAPAXI@Z   100070dc f i hcdlib:cdevice.obj
+ 0001:000060dc       ??_ECFunction@@UAAPAXI@Z   100070dc f i hcdlib:cdevice.obj
+ 0001:00006110       ?HubStatusChangeThread@CHub@@AAAKXZ 10007110 f   hcdlib:cdevice.obj
+ 0001:00006548       ?HubStatusChangeThreadStub@CHub@@KAKPAX@Z 10007548 f   hcdlib:cdevice.obj
+ 0001:00006558       ?EnterOperationalState@CRootHub@@UAAHQAVCPipeAbs@@@Z 10007558 f   hcdlib:cdevice.obj
+ 0001:00006628       ?EnterOperationalState@CExternalHub@@UAAHQAVCPipeAbs@@@Z 10007628 f   hcdlib:cdevice.obj
+ 0001:000067a0       ?EnterCritSec_Ex@CritSec_Ex@@QAA?AW4e_CritSec_Status@@K@Z 100077a0 f   hcdlib:sync.obj
+ 0001:000068cc       ?LeaveCritSec_Ex@CritSec_Ex@@QAAXXZ 100078cc f   hcdlib:sync.obj
+ 0001:0000690c       ?Initialize@CritSec_Ex@@QAAXXZ 1000790c f   hcdlib:sync.obj
+ 0001:00006940       ?PrepareDeleteCritSec_Ex@CritSec_Ex@@QAAXXZ 10007940 f   hcdlib:sync.obj
+ 0001:00006990       ??1CritSec_Ex@@QAA@XZ      10007990 f   hcdlib:sync.obj
+ 0001:000069fc       ??0Countdown@@QAA@K@Z      100079fc f   hcdlib:sync.obj
+ 0001:00006a44       ?IncrCountdown@Countdown@@QAAHXZ 10007a44 f   hcdlib:sync.obj
+ 0001:00006a94       ?DecrCountdown@Countdown@@QAAXXZ 10007a94 f   hcdlib:sync.obj
+ 0001:00006ac8       ?WaitForCountdown@Countdown@@QAAXH@Z 10007ac8 f   hcdlib:sync.obj
+ 0001:00006b00       ??1Countdown@@QAA@XZ       10007b00 f   hcdlib:sync.obj
+ 0001:00006b28       ??0CritSec_Ex@@QAA@XZ      10007b28 f   hcdlib:sync.obj
+ 0001:00006b7c       RegCloseKey                10007b7c f   coredll:COREDLL.dll
+ 0001:00006b8c       RegQueryValueExW           10007b8c f   coredll:COREDLL.dll
+ 0001:00006b9c       RegOpenKeyExW              10007b9c f   coredll:COREDLL.dll
+ 0001:00006bac       FreeIntChainHandler        10007bac f   coredll:COREDLL.dll
+ 0001:00006bbc       KernelLibIoControl         10007bbc f   coredll:COREDLL.dll
+ 0001:00006bcc       LoadIntChainHandler        10007bcc f   coredll:COREDLL.dll
+ 0001:00006bdc       DDKReg_GetIsrInfo          10007bdc f   coredll:COREDLL.dll
+ 0001:00006bec       DDKReg_GetWindowInfo       10007bec f   coredll:COREDLL.dll
+ 0001:00006bfc       DeleteCriticalSection      10007bfc f   coredll:COREDLL.dll
+ 0001:00006c0c       InitializeCriticalSection  10007c0c f   coredll:COREDLL.dll
+ 0001:00006c1c       DisableThreadLibraryCalls  10007c1c f   coredll:COREDLL.dll
+ 0001:00006c2c       OpenDeviceKey              10007c2c f   coredll:COREDLL.dll
+ 0001:00006c3c       LeaveCriticalSection       10007c3c f   coredll:COREDLL.dll
+ 0001:00006c4c       EnterCriticalSection       10007c4c f   coredll:COREDLL.dll
+ 0001:00006c5c       SetLastError               10007c5c f   coredll:COREDLL.dll
+ 0001:00006c6c       EventModify                10007c6c f   coredll:COREDLL.dll
+ 0001:00006c7c       LocalAlloc                 10007c7c f   coredll:COREDLL.dll
+ 0001:00006c8c       LocalFree                  10007c8c f   coredll:COREDLL.dll
+ 0001:00006c9c       WaitForSingleObject        10007c9c f   coredll:COREDLL.dll
+ 0001:00006cac       FreePhysMem                10007cac f   coredll:COREDLL.dll
+ 0001:00006cbc       CloseHandle                10007cbc f   coredll:COREDLL.dll
+ 0001:00006ccc       CreateEventW               10007ccc f   coredll:COREDLL.dll
+ 0001:00006cdc       AllocPhysMem               10007cdc f   coredll:COREDLL.dll
+ 0001:00006cec       GetProcAddressW            10007cec f   coredll:COREDLL.dll
+ 0001:00006cfc       LoadDriver                 10007cfc f   coredll:COREDLL.dll
+ 0001:00006d0c       FreeLibrary                10007d0c f   coredll:COREDLL.dll
+ 0001:00006d1c       Sleep                      10007d1c f   coredll:COREDLL.dll
+ 0001:00006d2c       GetTickCount               10007d2c f   coredll:COREDLL.dll
+ 0001:00006d3c       WaitForMultipleObjects     10007d3c f   coredll:COREDLL.dll
+ 0001:00006d4c       CeGetThreadPriority        10007d4c f   coredll:COREDLL.dll
+ 0001:00006d5c       CeSetThreadPriority        10007d5c f   coredll:COREDLL.dll
+ 0001:00006d6c       CreateThread               10007d6c f   coredll:COREDLL.dll
+ 0001:00006d7c       __GetUserKData             10007d7c f   coredll:COREDLL.dll
+ 0001:00006d8c       RaiseException             10007d8c f   coredll:COREDLL.dll
+ 0001:00006d9c       BusTransBusAddrToVirtual   10007d9c f   ceddk:CEDDK.dll
+ 0001:00006dac       HalFreeCommonBuffer        10007dac f   ceddk:CEDDK.dll
+ 0001:00006dbc       MmUnmapIoSpace             10007dbc f   ceddk:CEDDK.dll
+ 0001:00006dcc       HalAllocateCommonBuffer    10007dcc f   ceddk:CEDDK.dll
+ 0001:00006ddc       BusTransBusAddrToStatic    10007ddc f   ceddk:CEDDK.dll
+ 0001:00006dec       MmMapIoSpace               10007dec f   ceddk:CEDDK.dll
+ 0001:00006dfc       CloseBusAccessHandle       10007dfc f   ceddk:CEDDK.dll
+ 0001:00006e0c       CreateBusAccessHandle      10007e0c f   ceddk:CEDDK.dll
+ 0001:00006e1c       BusChildIoControl          10007e1c f   ceddk:CEDDK.dll
+ 0001:00006f30       _DllMainCRTStartup         10007f30 f   corelib0:pegdmain.obj
+ 0001:00006f60       __GSHandlerCheckCommon     10007f60 f   corelib0:gshandler.obj
+ 0001:00006f9c       __GSHandlerCheck           10007f9c f   corelib0:gshandler.obj
+ 0001:00006fc0       __security_init_cookie     10007fc0 f   corelib0:seccinit.obj
+ 0001:0000701c       __security_check_cookie    1000801c f   corelib0:armsecgs.obj
+ 0001:00007030       __gsfailure                10008030 f   corelib0:armsecgs.obj
+ 0001:00007170       _cexit                     10008170 f   corelib0:cexit.obj
+ 0001:0000718c       _initterm                  1000818c f   corelib0:crt0dat.obj
+ 0001:000071c0       _cinit                     100081c0 f   corelib0:crt0dat.obj
+ 0001:000071f4       wcsncpy                    100081f4 f   corelib1:COREDLL.dll
+ 0001:00007204       free                       10008204 f   corelib1:COREDLL.dll
+ 0001:00007214       malloc                     10008214 f   corelib1:COREDLL.dll
+ 0001:00007224       ??3@YAXPAX@Z               10008224 f   corelib1:COREDLL.dll
+ 0001:00007234       ??2@YAPAXI@Z               10008234 f   corelib1:COREDLL.dll
+ 0001:00007244       _purecall                  10008244 f   corelib1:COREDLL.dll
+ 0001:00007254       memset                     10008254 f   corelib1:COREDLL.dll
+ 0001:00007264       memcpy                     10008264 f   corelib1:COREDLL.dll
+ 0001:00007274       ??_V@YAXPAX@Z              10008274 f   corelib1:COREDLL.dll
+ 0001:00007284       ??_U@YAPAXI@Z              10008284 f   corelib1:COREDLL.dll
+ 0001:00007294       memcmp                     10008294 f   corelib1:COREDLL.dll
+ 0001:000072a4       __C_specific_handler       100082a4 f   corelib1:COREDLL.dll
+ 0001:000072b4       _XcptFilter                100082b4 f   corelib1:COREDLL.dll
+ 0001:000072c4       __security_gen_cookie2     100082c4 f   corelib1:COREDLL.dll
+ 0001:000072d4       __report_gsfailure         100082d4 f   corelib1:COREDLL.dll
+ 0001:000072e4       ??0COhcd@@QAA@PAXPAVCPhysMem@@PBGRAEK@Z 100082e4 f   ohcdmdd2:cohcd.obj
+ 0001:0000733c       ?GetNumberOfDownStreamPort@CHW@@UAAEXZ 1000833c f i ohcdmdd2:cohcd.obj
+ 0001:0000734c       ?GetCapability@CHW@@UAAKXZ 1000834c f i ohcdmdd2:cohcd.obj
+ 0001:00007354       ?SignalCheckForDoneTransfers@COhcd@@UAAXK@Z 10008354 f i ohcdmdd2:cohcd.obj
+ 0001:00007368       ??1COhcd@@UAA@XZ           10008368 f   ohcdmdd2:cohcd.obj
+ 0001:000073d8       ?DeviceDeInitialize@COhcd@@UAAXXZ 100083d8 f   ohcdmdd2:cohcd.obj
+ 0001:0000744c       ?DeviceInitialize@COhcd@@UAAHXZ 1000844c f   ohcdmdd2:cohcd.obj
+ 0001:00007590       ?CreateHCDObject@@YAPAVCHcd@@PAXPAVCPhysMem@@PBGRAEK@Z 10008590 f   ohcdmdd2:cohcd.obj
+ 0001:000075f0       ??_ECOhcd@@UAAPAXI@Z       100085f0 f i ohcdmdd2:cohcd.obj
+ 0001:000075f0       ??_GCOhcd@@UAAPAXI@Z       100085f0 f i ohcdmdd2:cohcd.obj
+ 0001:00007618       ?ChangeMaxPacketSize@CPipeAbs@@UAAXG@Z 10008618 f i ohcdmdd2:cpipe.obj
+ 0001:0000761c       ??_GCPipeAbs@@UAAPAXI@Z    1000861c f i ohcdmdd2:cpipe.obj
+ 0001:0000761c       ??_ECPipeAbs@@UAAPAXI@Z    1000861c f i ohcdmdd2:cpipe.obj
+ 0001:00007644       ??0CHCCAera@@QAA@QAVCPhysMem@@@Z 10008644 f   ohcdmdd2:cpipe.obj
+ 0001:0000768c       ?DeInitialize@CHCCAera@@QAAXXZ 1000868c f   ohcdmdd2:cpipe.obj
+ 0001:000076f8       ?SignalCheckForDoneTransfers@CHCCAera@@QAAXK@Z 100086f8 f   ohcdmdd2:cpipe.obj
+ 0001:000077a0       ?CheckForDoneTransfersThread@CHCCAera@@AAAKXZ 100087a0 f   ohcdmdd2:cpipe.obj
+ 0001:00007828       ??0CPipe@@QAA@QBU_USB_ENDPOINT_DESCRIPTOR@@HEQAVCOhcd@@@Z 10008828 f   ohcdmdd2:cpipe.obj
+ 0001:000078a4       ?GetType@CPipe@@UAA?AW4PIPE_TYPE@@XZ 100088a4 f i ohcdmdd2:cpipe.obj
+ 0001:000078ac       ?IsPipeHalted@CPipe@@UAA?AW4HCD_REQUEST_STATUS@@QAH@Z 100088ac f   ohcdmdd2:cpipe.obj
+ 0001:000078e0       ?ClearHaltedFlag@CPipe@@UAAXXZ 100088e0 f   ohcdmdd2:cpipe.obj
+ 0001:00007928       ?GetMemoryAllocationFlags@CPipe@@MBAKXZ 10008928 f   ohcdmdd2:cpipe.obj
+ 0001:00007930       ??0CQueuedPipe@@QAA@QBU_USB_ENDPOINT_DESCRIPTOR@@HEQAVCOhcd@@@Z 10008930 f   ohcdmdd2:cpipe.obj
+ 0001:0000798c       ?GetTdSize@CQueuedPipe@@UBA?BHXZ 1000898c f i ohcdmdd2:cpipe.obj
+ 0001:00007994       ??1CQueuedPipe@@UAA@XZ     10008994 f   ohcdmdd2:cpipe.obj
+ 0001:000079d4       ?IssueTransfer@CQueuedPipe@@UAA?AW4HCD_REQUEST_STATUS@@EQ6AKPAX@ZQAXKQBXKKQBKK2K3QAK5QAH55@Z 100089d4 f   ohcdmdd2:cpipe.obj
+ 0001:00007ba0       ?AbortTransfer@CQueuedPipe@@UAA?AW4HCD_REQUEST_STATUS@@Q6AKPAX@ZQAXPBX@Z 10008ba0 f   ohcdmdd2:cpipe.obj
+ 0001:00007dcc       ?CheckForDoneTransfers@CQueuedPipe@@UAAHTTDLINK@@@Z 10008dcc f   ohcdmdd2:cpipe.obj
+ 0001:00008040       ?UpdateInterruptQHTreeLoad@CQueuedPipe@@MAAXEH@Z 10009040 f   ohcdmdd2:cpipe.obj
+ 0001:00008044       ?GetType@CBulkPipe@@UAA?AW4PIPE_TYPE@@XZ 10009044 f i ohcdmdd2:cpipe.obj
+ 0001:0000804c       ?OpenPipe@CBulkPipe@@UAA?AW4HCD_REQUEST_STATUS@@XZ 1000904c f   ohcdmdd2:cpipe.obj
+ 0001:0000821c       ?GetListHead@CBulkPipe@@EAAPAKH@Z 1000921c f   ohcdmdd2:cpipe.obj
+ 0001:00008248       ?UpdateListControl@CBulkPipe@@UAAXHH@Z 10009248 f   ohcdmdd2:cpipe.obj
+ 0001:00008268       ?AreTransferParametersValid@CBulkPipe@@EBAHPBUSTRANSFER@@@Z 10009268 f   ohcdmdd2:cpipe.obj
+ 0001:000082c8       ?ScheduleTransfer@CBulkPipe@@EAA?AW4HCD_REQUEST_STATUS@@XZ 100092c8 f   ohcdmdd2:cpipe.obj
+ 0001:00008398       ?GetType@CControlPipe@@UAA?AW4PIPE_TYPE@@XZ 10009398 f i ohcdmdd2:cpipe.obj
+ 0001:000083a0       ?OpenPipe@CControlPipe@@UAA?AW4HCD_REQUEST_STATUS@@XZ 100093a0 f   ohcdmdd2:cpipe.obj
+ 0001:00008570       ?ChangeMaxPacketSize@CControlPipe@@UAAXG@Z 10009570 f   ohcdmdd2:cpipe.obj
+ 0001:00008680       ?GetListHead@CControlPipe@@EAAPAKH@Z 10009680 f   ohcdmdd2:cpipe.obj
+ 0001:000086ac       ?UpdateListControl@CControlPipe@@UAAXHH@Z 100096ac f   ohcdmdd2:cpipe.obj
+ 0001:000086cc       ?AreTransferParametersValid@CControlPipe@@EBAHPBUSTRANSFER@@@Z 100096cc f   ohcdmdd2:cpipe.obj
+ 0001:00008764       ?ScheduleTransfer@CControlPipe@@EAA?AW4HCD_REQUEST_STATUS@@XZ 10009764 f   ohcdmdd2:cpipe.obj
+ 0001:00008854       ?GetType@CInterruptPipe@@UAA?AW4PIPE_TYPE@@XZ 10009854 f i ohcdmdd2:cpipe.obj
+ 0001:0000885c       ?ComputeLoad@CInterruptPipe@@ABAHH@Z 1000985c f   ohcdmdd2:cpipe.obj
+ 0001:000088dc       ?OpenPipe@CInterruptPipe@@UAA?AW4HCD_REQUEST_STATUS@@XZ 100098dc f   ohcdmdd2:cpipe.obj
+ 0001:00008b54       ?UpdateInterruptQHTreeLoad@CInterruptPipe@@EAAXEH@Z 10009b54 f   ohcdmdd2:cpipe.obj
+ 0001:00008b58       ?GetListHead@CInterruptPipe@@EAAPAKH@Z 10009b58 f   ohcdmdd2:cpipe.obj
+ 0001:00008b90       ?UpdateListControl@CInterruptPipe@@UAAXHH@Z 10009b90 f   ohcdmdd2:cpipe.obj
+ 0001:00008bb0       ?AreTransferParametersValid@CInterruptPipe@@EBAHPBUSTRANSFER@@@Z 10009bb0 f   ohcdmdd2:cpipe.obj
+ 0001:00008c1c       ?ScheduleTransfer@CInterruptPipe@@EAA?AW4HCD_REQUEST_STATUS@@XZ 10009c1c f   ohcdmdd2:cpipe.obj
+ 0001:00008cec       ??0CIsochronousPipe@@QAA@QBU_USB_ENDPOINT_DESCRIPTOR@@HEQAVCOhcd@@@Z 10009cec f   ohcdmdd2:cpipe.obj
+ 0001:00008d60       ?GetType@CIsochronousPipe@@UAA?AW4PIPE_TYPE@@XZ 10009d60 f i ohcdmdd2:cpipe.obj
+ 0001:00008d68       ?GetTdSize@CIsochronousPipe@@UBA?BHXZ 10009d68 f i ohcdmdd2:cpipe.obj
+ 0001:00008d70       ??1CIsochronousPipe@@UAA@XZ 10009d70 f   ohcdmdd2:cpipe.obj
+ 0001:00008db0       ?OpenPipe@CIsochronousPipe@@UAA?AW4HCD_REQUEST_STATUS@@XZ 10009db0 f   ohcdmdd2:cpipe.obj
+ 0001:00008fa4       ?ClosePipe@CIsochronousPipe@@UAA?AW4HCD_REQUEST_STATUS@@XZ 10009fa4 f   ohcdmdd2:cpipe.obj
+ 0001:0000911c       ?AbortTransfer@CIsochronousPipe@@UAA?AW4HCD_REQUEST_STATUS@@Q6AKPAX@ZQAXPBX@Z 1000a11c f   ohcdmdd2:cpipe.obj
+ 0001:000092c0       ?GetListHead@CIsochronousPipe@@EAAPAKH@Z 1000a2c0 f   ohcdmdd2:cpipe.obj
+ 0001:000092f0       ?UpdateListControl@CIsochronousPipe@@UAAXHH@Z 1000a2f0 f   ohcdmdd2:cpipe.obj
+ 0001:00009310       ?AreTransferParametersValid@CIsochronousPipe@@EBAHPBUSTRANSFER@@@Z 1000a310 f   ohcdmdd2:cpipe.obj
+ 0001:000093b0       ?GetMemoryAllocationFlags@CIsochronousPipe@@EBAKXZ 1000a3b0 f   ohcdmdd2:cpipe.obj
+ 0001:000093b8       ?ScheduleTransfer@CIsochronousPipe@@EAA?AW4HCD_REQUEST_STATUS@@XZ 1000a3b8 f   ohcdmdd2:cpipe.obj
+ 0001:00009474       ?CheckForDoneTransfers@CIsochronousPipe@@UAAHTTDLINK@@@Z 1000a474 f   ohcdmdd2:cpipe.obj
+ 0001:00009504       ?CreateBulkPipe@@YAPAVCPipeAbs@@QBU_USB_ENDPOINT_DESCRIPTOR@@HEQAVCHcd@@@Z 1000a504 f   ohcdmdd2:cpipe.obj
+ 0001:00009568       ?CreateControlPipe@@YAPAVCPipeAbs@@QBU_USB_ENDPOINT_DESCRIPTOR@@HEQAVCHcd@@@Z 1000a568 f   ohcdmdd2:cpipe.obj
+ 0001:000095cc       ?CreateInterruptPipe@@YAPAVCPipeAbs@@QBU_USB_ENDPOINT_DESCRIPTOR@@HEQAVCHcd@@@Z 1000a5cc f   ohcdmdd2:cpipe.obj
+ 0001:00009630       ?CreateIsochronousPipe@@YAPAVCPipeAbs@@QBU_USB_ENDPOINT_DESCRIPTOR@@HEQAVCHcd@@@Z 1000a630 f   ohcdmdd2:cpipe.obj
+ 0001:00009680       ??1CHCCAera@@QAA@XZ        1000a680 f   ohcdmdd2:cpipe.obj
+ 0001:000096a4       ?CheckForDoneTransfersThreadStub@CHCCAera@@CAKPAX@Z 1000a6a4 f   ohcdmdd2:cpipe.obj
+ 0001:000096b4       ??_ECPipe@@UAAPAXI@Z       1000a6b4 f i ohcdmdd2:cpipe.obj
+ 0001:000096b4       ??_GCPipe@@UAAPAXI@Z       1000a6b4 f i ohcdmdd2:cpipe.obj
+ 0001:000096f4       ??_GCQueuedPipe@@UAAPAXI@Z 1000a6f4 f i ohcdmdd2:cpipe.obj
+ 0001:000096f4       ??_ECQueuedPipe@@UAAPAXI@Z 1000a6f4 f i ohcdmdd2:cpipe.obj
+ 0001:0000971c       ?ClosePipe@CQueuedPipe@@UAA?AW4HCD_REQUEST_STATUS@@XZ 1000a71c f   ohcdmdd2:cpipe.obj
+ 0001:000098ec       ??_GCBulkPipe@@UAAPAXI@Z   1000a8ec f i ohcdmdd2:cpipe.obj
+ 0001:000098ec       ??_ECBulkPipe@@UAAPAXI@Z   1000a8ec f i ohcdmdd2:cpipe.obj
+ 0001:00009920       ??_ECControlPipe@@UAAPAXI@Z 1000a920 f i ohcdmdd2:cpipe.obj
+ 0001:00009920       ??_GCControlPipe@@UAAPAXI@Z 1000a920 f i ohcdmdd2:cpipe.obj
+ 0001:00009954       ??_GCInterruptPipe@@UAAPAXI@Z 1000a954 f i ohcdmdd2:cpipe.obj
+ 0001:00009954       ??_ECInterruptPipe@@UAAPAXI@Z 1000a954 f i ohcdmdd2:cpipe.obj
+ 0001:00009988       ??_ECIsochronousPipe@@UAAPAXI@Z 1000a988 f i ohcdmdd2:cpipe.obj
+ 0001:00009988       ??_GCIsochronousPipe@@UAAPAXI@Z 1000a988 f i ohcdmdd2:cpipe.obj
+ 0001:000099b0       ?IssueTransfer@CIsochronousPipe@@UAA?AW4HCD_REQUEST_STATUS@@EQ6AKPAX@ZQAXKQBXKKQBKK2K3QAK5QAH55@Z 1000a9b0 f   ohcdmdd2:cpipe.obj
+ 0001:00009c20       ?Initialize@CHCCAera@@QAAHQAVCOhcd@@@Z 1000ac20 f   ohcdmdd2:cpipe.obj
+ 0001:00009e54       ??0CHW@@QAA@SAEKQAVCPhysMem@@PAX@Z 1000ae54 f   ohcdmdd2:chw.obj
+ 0001:00009ef0       ?SignalCheckForDoneTransfers@CHW@@UAAXK@Z 1000aef0 f i ohcdmdd2:chw.obj
+ 0001:00009ef4       ?DeInitialize@CHW@@UAAXXZ  1000aef4 f   ohcdmdd2:chw.obj
+ 0001:00009fb4       ?EnterOperationalState@CHW@@QAAXXZ 1000afb4 f   ohcdmdd2:chw.obj
+ 0001:00009fcc       ?StopHostController@CHW@@QAAXXZ 1000afcc f   ohcdmdd2:chw.obj
+ 0001:00009ff4       ?ListControl@CHW@@QAAXKHH@Z 1000aff4 f   ohcdmdd2:chw.obj
+ 0001:0000a100       ?CeResumeThread@CHW@@AAAKXZ 1000b100 f   ohcdmdd2:chw.obj
+ 0001:0000a1c0       ?ResumeHostController@CHW@@AAAXXZ 1000b1c0 f   ohcdmdd2:chw.obj
+ 0001:0000a1f4       ?SetCapability@CHW@@UAAKK@Z 1000b1f4 f   ohcdmdd2:chw.obj
+ 0001:0000a2d0       ?UpdateFrameCounter@CHW@@AAAXXZ 1000b2d0 f   ohcdmdd2:chw.obj
+ 0001:0000a310       ?GetFrameNumber@CHW@@UAAHPAK@Z 1000b310 f   ohcdmdd2:chw.obj
+ 0001:0000a340       ?WaitOneFrame@CHW@@QAAHXZ  1000b340 f   ohcdmdd2:chw.obj
+ 0001:0000a3b4       ?GetFrameLength@CHW@@UAAHPAG@Z 1000b3b4 f   ohcdmdd2:chw.obj
+ 0001:0000a3d4       ?SetFrameLength@CHW@@UAAHPAXG@Z 1000b3d4 f   ohcdmdd2:chw.obj
+ 0001:0000a3dc       ?StopAdjustingFrame@CHW@@UAAHXZ 1000b3dc f   ohcdmdd2:chw.obj
+ 0001:0000a3f8       ?GetPortStatus@CHW@@UAAHEAAU_USB_HUB_AND_PORT_STATUS@@@Z 1000b3f8 f   ohcdmdd2:chw.obj
+ 0001:0000a500       ?GetRootHubDescriptor@CHW@@QAAXAAU_USB_HUB_DESCRIPTOR@@@Z 1000b500 f   ohcdmdd2:chw.obj
+ 0001:0000a5fc       ?RootHubFeature@CHW@@UAAHEEG@Z 1000b5fc f   ohcdmdd2:chw.obj
+ 0001:0000a720       ?ResetAndEnablePort@CHW@@UAAHE@Z 1000b720 f   ohcdmdd2:chw.obj
+ 0001:0000a7f8       ?DisablePort@CHW@@UAAXE@Z  1000b7f8 f   ohcdmdd2:chw.obj
+ 0001:0000a81c       ?WaitForPortStatusChange@CHW@@UAAHPAX@Z 1000b81c f   ohcdmdd2:chw.obj
+ 0001:0000a89c       ??1CHW@@UAA@XZ             1000b89c f   ohcdmdd2:chw.obj
+ 0001:0000a8cc       ?CeResumeThreadStub@CHW@@CAKPAX@Z 1000b8cc f   ohcdmdd2:chw.obj
+ 0001:0000a8dc       ?PowerMgmtCallback@CHW@@UAAXH@Z 1000b8dc f   ohcdmdd2:chw.obj
+ 0001:0000a990       ?SuspendHC@CHW@@UAAHXZ     1000b990 f   ohcdmdd2:chw.obj
+ 0001:0000aa04       ?UsbInterruptThread@CHW@@AAAKXZ 1000ba04 f   ohcdmdd2:chw.obj
+ 0001:0000abc8       ?DidPortStatusChange@CHW@@UAAHE@Z 1000bbc8 f   ohcdmdd2:chw.obj
+ 0001:0000abf4       ??_ECHW@@UAAPAXI@Z         1000bbf4 f i ohcdmdd2:chw.obj
+ 0001:0000abf4       ??_GCHW@@UAAPAXI@Z         1000bbf4 f i ohcdmdd2:chw.obj
+ 0001:0000ac1c       ?UsbInterruptThreadStub@CHW@@CAKPAX@Z 1000bc1c f   ohcdmdd2:chw.obj
+ 0001:0000ac2c       ?Initialize@CHW@@UAAHXZ    1000bc2c f   ohcdmdd2:chw.obj
+ 0001:0000af48       ?AdvanceTDQueueTail@TDQueue@@QAAHXZ 1000bf48 f i ohcdmdd2:Transfer.obj
+ 0001:0000af94       ?AdvanceITDQueueTail@ITDQueue@@QAAHXZ 1000bf94 f i ohcdmdd2:Transfer.obj
+ 0001:0000afe8       ??0CTransfer@@QAA@QAVCQueuedPipe@@USTRANSFER@@PAV0@@Z 1000bfe8 f   ohcdmdd2:Transfer.obj
+ 0001:0000b0d8       ?Canceled@CTransfer@@QAAHXZ 1000c0d8 f   ohcdmdd2:Transfer.obj
+ 0001:0000b158       ??0TDQueue@@QAA@QAVCPhysMem@@KK@Z 1000c158 f   ohcdmdd2:Transfer.obj
+ 0001:0000b184       ?QueueDeInit@TDQueue@@QAAXXZ 1000c184 f   ohcdmdd2:Transfer.obj
+ 0001:0000b1e0       ?QueueInit@TDQueue@@QAAHXZ 1000c1e0 f   ohcdmdd2:Transfer.obj
+ 0001:0000b34c       ?InitTDQueueTailTD@TDQueue@@QAAHPAVCTransfer@@PAVCQueuedPipe@@EKGKKH@Z 1000c34c f   ohcdmdd2:Transfer.obj
+ 0001:0000b49c       ??0CITransfer@@QAA@QAVCIsochronousPipe@@USTRANSFER@@PAV0@@Z 1000c49c f   ohcdmdd2:Transfer.obj
+ 0001:0000b544       ?DoneITD@CITransfer@@QAAHXZ 1000c544 f   ohcdmdd2:Transfer.obj
+ 0001:0000b7e8       ?Canceled@CITransfer@@QAAHXZ 1000c7e8 f   ohcdmdd2:Transfer.obj
+ 0001:0000b870       ?CheckFrame@CITransfer@@QBAHG@Z 1000c870 f   ohcdmdd2:Transfer.obj
+ 0001:0000b910       ??0ITDQueue@@QAA@QAVCPhysMem@@KK@Z 1000c910 f   ohcdmdd2:Transfer.obj
+ 0001:0000b990       ?QueueDeInit@ITDQueue@@QAAXXZ 1000c990 f   ohcdmdd2:Transfer.obj
+ 0001:0000b9ec       ?QueueInit@ITDQueue@@QAAHXZ 1000c9ec f   ohcdmdd2:Transfer.obj
+ 0001:0000bb3c       ?InitITDQueueTailITD@ITDQueue@@QAAHPAVCITransfer@@PAVCIsochronousPipe@@GGPBKEKK@Z 1000cb3c f   ohcdmdd2:Transfer.obj
+ 0001:0000bcf4       ?ScheduleTD@CTransfer@@QAAHXZ 1000ccf4 f   ohcdmdd2:Transfer.obj
+ 0001:0000c00c       ?DoneTD@CTransfer@@QAAHXZ  1000d00c f   ohcdmdd2:Transfer.obj
+ 0001:0000c2e4       ??1TDQueue@@QAA@XZ         1000d2e4 f   ohcdmdd2:Transfer.obj
+ 0001:0000c2fc       ?ScheduleITD@CITransfer@@QAAHXZ 1000d2fc f   ohcdmdd2:Transfer.obj
+ 0001:0000c4d8       ??1ITDQueue@@QAA@XZ        1000d4d8 f   ohcdmdd2:Transfer.obj
+ 0001:0000c4e8       InterlockedExchange        1000d4e8 f   coredll:COREDLL.dll
+ 0001:0000c4f8       TerminateProcess           1000d4f8 f   coredll:COREDLL.dll
+ 0001:0000c508       InterruptDisable           1000d508 f   coredll:COREDLL.dll
+ 0001:0000c518       KernelIoControl            1000d518 f   coredll:COREDLL.dll
+ 0001:0000c528       SetInterruptEvent          1000d528 f   coredll:COREDLL.dll
+ 0001:0000c538       InterruptDone              1000d538 f   coredll:COREDLL.dll
+ 0001:0000c548       InterruptInitialize        1000d548 f   coredll:COREDLL.dll
+ 0001:0000c6ac       __IMPORT_DESCRIPTOR_COREDLL 1000d6ac     coredll:COREDLL.dll
+ 0001:0000c6c0       __IMPORT_DESCRIPTOR_CEDDK  1000d6c0     ceddk:CEDDK.dll
+ 0001:0000c6d4       __NULL_IMPORT_DESCRIPTOR   1000d6d4     coredll:COREDLL.dll
+ 0002:00000000       __imp_HalFreeCommonBuffer  1000e000     ceddk:CEDDK.dll
+ 0002:00000004       __imp_BusChildIoControl    1000e004     ceddk:CEDDK.dll
+ 0002:00000008       __imp_CreateBusAccessHandle 1000e008     ceddk:CEDDK.dll
+ 0002:0000000c       __imp_CloseBusAccessHandle 1000e00c     ceddk:CEDDK.dll
+ 0002:00000010       __imp_MmMapIoSpace         1000e010     ceddk:CEDDK.dll
+ 0002:00000014       __imp_BusTransBusAddrToStatic 1000e014     ceddk:CEDDK.dll
+ 0002:00000018       __imp_HalAllocateCommonBuffer 1000e018     ceddk:CEDDK.dll
+ 0002:0000001c       __imp_MmUnmapIoSpace       1000e01c     ceddk:CEDDK.dll
+ 0002:00000020       __imp_BusTransBusAddrToVirtual 1000e020     ceddk:CEDDK.dll
+ 0002:00000024       \177CEDDK_NULL_THUNK_DATA  1000e024     ceddk:CEDDK.dll
+ 0002:00000028       __imp_OpenDeviceKey        1000e028     coredll:COREDLL.dll
+ 0002:0000002c       __imp_LeaveCriticalSection 1000e02c     coredll:COREDLL.dll
+ 0002:00000030       __imp_EnterCriticalSection 1000e030     coredll:COREDLL.dll
+ 0002:00000034       __imp_SetLastError         1000e034     coredll:COREDLL.dll
+ 0002:00000038       __imp_EventModify          1000e038     coredll:COREDLL.dll
+ 0002:0000003c       __imp_LocalAlloc           1000e03c     coredll:COREDLL.dll
+ 0002:00000040       __imp_LocalFree            1000e040     coredll:COREDLL.dll
+ 0002:00000044       __imp_WaitForSingleObject  1000e044     coredll:COREDLL.dll
+ 0002:00000048       __imp_FreePhysMem          1000e048     coredll:COREDLL.dll
+ 0002:0000004c       __imp_CloseHandle          1000e04c     coredll:COREDLL.dll
+ 0002:00000050       __imp_CreateEventW         1000e050     coredll:COREDLL.dll
+ 0002:00000054       __imp_AllocPhysMem         1000e054     coredll:COREDLL.dll
+ 0002:00000058       __imp_DisableThreadLibraryCalls 1000e058     coredll:COREDLL.dll
+ 0002:0000005c       __imp_LoadDriver           1000e05c     coredll:COREDLL.dll
+ 0002:00000060       __imp_FreeLibrary          1000e060     coredll:COREDLL.dll
+ 0002:00000064       __imp_Sleep                1000e064     coredll:COREDLL.dll
+ 0002:00000068       __imp_GetTickCount         1000e068     coredll:COREDLL.dll
+ 0002:0000006c       __imp_WaitForMultipleObjects 1000e06c     coredll:COREDLL.dll
+ 0002:00000070       __imp_CeGetThreadPriority  1000e070     coredll:COREDLL.dll
+ 0002:00000074       __imp_CeSetThreadPriority  1000e074     coredll:COREDLL.dll
+ 0002:00000078       __imp_CreateThread         1000e078     coredll:COREDLL.dll
+ 0002:0000007c       __imp___GetUserKData       1000e07c     coredll:COREDLL.dll
+ 0002:00000080       __imp_RaiseException       1000e080     coredll:COREDLL.dll
+ 0002:00000084       __imp_InitializeCriticalSection 1000e084     coredll:COREDLL.dll
+ 0002:00000088       __imp_RegCloseKey          1000e088     coredll:COREDLL.dll
+ 0002:0000008c       __imp_DeleteCriticalSection 1000e08c     coredll:COREDLL.dll
+ 0002:00000090       __imp_DDKReg_GetWindowInfo 1000e090     coredll:COREDLL.dll
+ 0002:00000094       __imp_DDKReg_GetIsrInfo    1000e094     coredll:COREDLL.dll
+ 0002:00000098       __imp_LoadIntChainHandler  1000e098     coredll:COREDLL.dll
+ 0002:0000009c       __imp_KernelLibIoControl   1000e09c     coredll:COREDLL.dll
+ 0002:000000a0       __imp_FreeIntChainHandler  1000e0a0     coredll:COREDLL.dll
+ 0002:000000a4       __imp_RegOpenKeyExW        1000e0a4     coredll:COREDLL.dll
+ 0002:000000a8       __imp_RegQueryValueExW     1000e0a8     coredll:COREDLL.dll
+ 0002:000000ac       __imp_GetProcAddressW      1000e0ac     coredll:COREDLL.dll
+ 0002:000000b0       __imp_wcsncpy              1000e0b0     corelib1:COREDLL.dll
+ 0002:000000b4       __imp_free                 1000e0b4     corelib1:COREDLL.dll
+ 0002:000000b8       __imp_malloc               1000e0b8     corelib1:COREDLL.dll
+ 0002:000000bc       __imp_??3@YAXPAX@Z         1000e0bc     corelib1:COREDLL.dll
+ 0002:000000c0       __imp_??2@YAPAXI@Z         1000e0c0     corelib1:COREDLL.dll
+ 0002:000000c4       __imp__purecall            1000e0c4     corelib1:COREDLL.dll
+ 0002:000000c8       __imp_memset               1000e0c8     corelib1:COREDLL.dll
+ 0002:000000cc       __imp_memcpy               1000e0cc     corelib1:COREDLL.dll
+ 0002:000000d0       __imp_??_V@YAXPAX@Z        1000e0d0     corelib1:COREDLL.dll
+ 0002:000000d4       __imp_??_U@YAPAXI@Z        1000e0d4     corelib1:COREDLL.dll
+ 0002:000000d8       __imp_memcmp               1000e0d8     corelib1:COREDLL.dll
+ 0002:000000dc       __imp___C_specific_handler 1000e0dc     corelib1:COREDLL.dll
+ 0002:000000e0       __imp__XcptFilter          1000e0e0     corelib1:COREDLL.dll
+ 0002:000000e4       __imp___security_gen_cookie2 1000e0e4     corelib1:COREDLL.dll
+ 0002:000000e8       __imp___report_gsfailure   1000e0e8     corelib1:COREDLL.dll
+ 0002:000000ec       __imp_InterlockedExchange  1000e0ec     coredll:COREDLL.dll
+ 0002:000000f0       __imp_TerminateProcess     1000e0f0     coredll:COREDLL.dll
+ 0002:000000f4       __imp_InterruptDisable     1000e0f4     coredll:COREDLL.dll
+ 0002:000000f8       __imp_KernelIoControl      1000e0f8     coredll:COREDLL.dll
+ 0002:000000fc       __imp_SetInterruptEvent    1000e0fc     coredll:COREDLL.dll
+ 0002:00000100       __imp_InterruptDone        1000e100     coredll:COREDLL.dll
+ 0002:00000104       __imp_InterruptInitialize  1000e104     coredll:COREDLL.dll
+ 0002:00000108       __imp___rt_udiv            1000e108     corelib1:COREDLL.dll
+ 0002:0000010c       \177COREDLL_NULL_THUNK_DATA 1000e10c     coredll:COREDLL.dll
+ 0002:00000110       ?gc_HcdFuncs@@3U_HCD_FUNCS@@A 1000e110     hcdlib:hcddrv.obj
+ 0002:00000144       __security_cookie          1000e144     corelib0:seccinit.obj
+ 0002:00000148       __security_cookie_complement 1000e148     corelib0:seccinit.obj
+ 0002:0000014c       g_pSysConReg               1000e14c     s3c6410_ohci.obj
+ 0002:00000150       g_IstThreadPriority        1000e150     hcdlib:hcddrv.obj
+ 0002:00000154       ?g_CSection@@3UCRITICAL_SECTION@@A 1000e154     hcdlib:hcddrv.obj
+ 0002:00000168       g_dwContext                1000e168     hcdlib:hcddrv.obj
+ 0002:0000016c       _exitflag                  1000e16c     corelib0:cexit.obj
+ 0002:00000170       __onexitend                1000e170     <common>
+ 0002:00000174       __onexitbegin              1000e174     <common>
+ 0002:00000178       g_pcsExit                  1000e178     <common>
+ 0002:0000017c       _pRawDllMain               1000e17c     <common>
+
+ entry point at        0001:00006f30
+
+ Static symbols
+
+ 0001:000006b0       InitializeOHCI             100016b0 f   s3c6410_ohci.obj
+ 0001:00000f28       HcdGetFrameNumber          10001f28 f   hcdlib:hcddrv.obj
+ 0001:00000f44       HcdGetFrameLength          10001f44 f   hcdlib:hcddrv.obj
+ 0001:00000f60       HcdSetFrameLength          10001f60 f   hcdlib:hcddrv.obj
+ 0001:00000f7c       HcdStopAdjustingFrame      10001f7c f   hcdlib:hcddrv.obj
+ 0001:00000f98       HcdOpenPipe                10001f98 f   hcdlib:hcddrv.obj
+ 0001:00000fa8       HcdClosePipe               10001fa8 f   hcdlib:hcddrv.obj
+ 0001:00000fb8       HcdResetPipe               10001fb8 f   hcdlib:hcddrv.obj
+ 0001:00000fc8       HcdIsPipeHalted            10001fc8 f   hcdlib:hcddrv.obj
+ 0001:00000fd8       HcdIssueTransfer           10001fd8 f   hcdlib:hcddrv.obj
+ 0001:00001088       HcdAbortTransfer           10002088 f   hcdlib:hcddrv.obj
+ 0001:000010b0       HcdDisableDevice           100020b0 f   hcdlib:hcddrv.obj
+ 0001:000010cc       HcdSuspendResume           100020cc f   hcdlib:hcddrv.obj
+ 0001:00006e34       _DllMainCRTStartupHelper   10007e34 f   corelib0:pegdmain.obj
+ 0001:00007074       doexit                     10008074 f   corelib0:cexit.obj

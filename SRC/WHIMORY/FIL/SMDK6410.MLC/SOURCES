@@ -1,0 +1,22 @@
+!if 0
+    File:   sources
+
+    Author: AP Development Team
+
+	COPYRIGHT (c) 2006 SAMSUNG ELECTRONICS CO., LTD. ALL RIGHTS RESERVED
+!endif
+
+TARGETNAME=$(WMR_FIL)_MLC_FIL
+TARGETTYPE=LIBRARY
+RELEASETYPE=CUSTOM
+
+TARGETPATH=..\..\Lib\$(_TGTCPU)\$(WINCEDEBUG)
+
+INCLUDES=$(INCLUDES);..\..\inc;..\..\OAM\OSLess;
+
+CDEFINES=$(CDEFINES)
+
+SOURCES= \
+        S3C6410_FIL_opt.s    \
+        S3C6410_FIL.c    \
+        FIL.c

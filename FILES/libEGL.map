@@ -1,0 +1,238 @@
+ libEGL
+
+ Timestamp is 4a236f3d (Mon Jun 01 15:03:41 2009)
+
+ Preferred load address is 10000000
+
+ Start         Length     Name                   Class
+ 0001:00000000 00000004H .CRT$XCA                CODE
+ 0001:00000004 00000004H .CRT$XCZ                CODE
+ 0001:00000008 00000004H .CRT$XIA                CODE
+ 0001:0000000c 00000004H .CRT$XIZ                CODE
+ 0001:00000010 00000004H .CRT$XPA                CODE
+ 0001:00000014 00000004H .CRT$XPZ                CODE
+ 0001:00000018 00000004H .CRT$XTA                CODE
+ 0001:0000001c 00000004H .CRT$XTZ                CODE
+ 0001:00000020 000005b1H .rdata                  CODE
+ 0001:000005d4 00000023H .rdata$debug            CODE
+ 0001:00000600 00005a18H .text                   CODE
+ 0001:00006018 00000014H .xdata                  CODE
+ 0001:0000602c 00000028H .idata$2                CODE
+ 0001:00006054 00000014H .idata$3                CODE
+ 0001:00006068 00000054H .idata$4                CODE
+ 0001:000060bc 0000002aH .idata$6                CODE
+ 0001:000060f0 000005e0H .edata                  CODE
+ 0002:00000000 00000054H .idata$5                DATA
+ 0002:00000058 000007fcH .data                   DATA
+ 0002:00000858 000001e4H .bss                    DATA
+ 0003:00000000 000002f0H .pdata                  DATA
+
+  Address         Publics by Value              Rva+Base       Lib:Object
+
+ 0000:00000000       ___safe_se_handler_count   00000000     <absolute>
+ 0000:00000000       ___safe_se_handler_table   00000000     <absolute>
+ 0001:00000000       __xc_a                     10001000     corelib0:crt0init.obj
+ 0001:00000004       __xc_z                     10001004     corelib0:crt0init.obj
+ 0001:00000008       __xi_a                     10001008     corelib0:crt0init.obj
+ 0001:0000000c       __xi_z                     1000100c     corelib0:crt0init.obj
+ 0001:00000010       __xp_a                     10001010     corelib0:crt0init.obj
+ 0001:00000014       __xp_z                     10001014     corelib0:crt0init.obj
+ 0001:00000018       __xt_a                     10001018     corelib0:crt0init.obj
+ 0001:0000001c       __xt_z                     1000101c     corelib0:crt0init.obj
+ 0001:0000003c       ??_C@_09DLBCEAMC@OpenGL_ES?$AA@ 1000103c     egl.obj
+ 0001:00000048       ??_C@_06IGNANLBN@OpenVG?$AA@ 10001048     egl.obj
+ 0001:0000004f       ??_C@_00CNPNBAHC@?$AA@     1000104f     egl.obj
+ 0001:00000050       ??_C@_05GJLIMFAH@HUONE?$AA@ 10001050     egl.obj
+ 0001:00000058       ??_C@_03FAJELBPN@1?43?$AA@ 10001058     egl.obj
+ 0001:0000005c       ??_C@_0BD@BMHBHCAJ@eglDestroyImageKHR?$AA@ 1000105c     egl.obj
+ 0001:00000070       ??_C@_0BC@LFHEJBKG@eglCreateImageKHR?$AA@ 10001070     egl.obj
+ 0001:00000084       ??_C@_0BE@MPKKGPKG@eglUnlockSurfaceKHR?$AA@ 10001084     egl.obj
+ 0001:00000098       ??_C@_0BC@JIPADCED@eglLockSurfaceKHR?$AA@ 10001098     egl.obj
+ 0001:000000ac       ??_C@_1BK@PJOONKNK@?$AAL?$AAo?$AAc?$AAk?$AA?5?$AAF?$AAA?$AAI?$AAL?$AAE?$AAD?$AA?6?$AA?$AA@ 100010ac     platform.obj
+ 0001:000000c8       ??_C@_1CM@OFDKGMAK@?$AAC?$AAr?$AAe?$AAa?$AAt?$AAe?$AAS?$AAu?$AAr?$AAf?$AAa?$AAc?$AAe?$AA?5?$AAF?$AAA?$AAI?$AAL?$AAE?$AAD?$AA?6?$AA?$AA@ 100010c8     platform.obj
+ 0001:000000f8       ??_C@_1FG@LNLGPJEF@?$AAD?$AAD?$AAE?$AAR?$AAR?$AA_?$AAP?$AAR?$AAI?$AAM?$AAA?$AAR?$AAY?$AAS?$AAU?$AAR?$AAF?$AAA?$AAC?$AAE?$AAA?$AAL?$AAR?$AAE?$AAA?$AAD?$AAY?$AAE?$AAX?$AAI?$AAS?$AAT@ 100010f8     platform.obj
+ 0001:00000150       ??_C@_1EA@PCNOMHCG@?$AAD?$AAD?$AAE?$AAR?$AAR?$AA_?$AAO?$AAU?$AAT?$AAO?$AAF?$AAV?$AAI?$AAD?$AAE?$AAO?$AAM?$AAE?$AAM?$AAO?$AAR?$AAY?$AA?5?$AAF?$AAA?$AAI?$AAL?$AAE?$AAD?$AA?$AN?$AA?6?$AA?$AA@ 10001150     platform.obj
+ 0001:00000190       ??_C@_1DG@NEBCDKMD@?$AAD?$AAD?$AAE?$AAR?$AAR?$AA_?$AAN?$AAO?$AAO?$AAV?$AAE?$AAR?$AAL?$AAA?$AAY?$AAH?$AAW?$AA?5?$AAF?$AAA?$AAI?$AAL?$AAE?$AAD?$AA?$AN?$AA?6?$AA?$AA@ 10001190     platform.obj
+ 0001:000001c8       ??_C@_1DA@BAPMHKAK@?$AAD?$AAD?$AAE?$AAR?$AAR?$AA_?$AAN?$AAO?$AAF?$AAL?$AAI?$AAP?$AAH?$AAW?$AA?5?$AAF?$AAA?$AAI?$AAL?$AAE?$AAD?$AA?$AN?$AA?6?$AA?$AA@ 100011c8     platform.obj
+ 0001:000001f8       ??_C@_1EK@DDIFHCDI@?$AAD?$AAD?$AAE?$AAR?$AAR?$AA_?$AAN?$AAO?$AAC?$AAO?$AAO?$AAP?$AAE?$AAR?$AAA?$AAT?$AAI?$AAV?$AAE?$AAL?$AAE?$AAV?$AAE?$AAL?$AAS?$AAE?$AAT?$AA?5?$AAF?$AAA?$AAI?$AAL@ 100011f8     platform.obj
+ 0001:00000244       ??_C@_1DC@PMLHNLAE@?$AAD?$AAD?$AAE?$AAR?$AAR?$AA_?$AAN?$AAO?$AAA?$AAL?$AAP?$AAH?$AAA?$AAH?$AAW?$AA?5?$AAF?$AAA?$AAI?$AAL?$AAE?$AAD?$AA?$AN?$AA?6?$AA?$AA@ 10001244     platform.obj
+ 0001:00000278       ??_C@_1EE@GNFHEKIL@?$AAD?$AAD?$AAE?$AAR?$AAR?$AA_?$AAI?$AAN?$AAV?$AAA?$AAL?$AAI?$AAD?$AAP?$AAI?$AAX?$AAE?$AAL?$AAF?$AAO?$AAR?$AAM?$AAA?$AAT?$AA?5?$AAF?$AAA?$AAI?$AAL?$AAE?$AAD?$AA?$AN@ 10001278     platform.obj
+ 0001:000002bc       ??_C@_1DK@FJPIPMAO@?$AAD?$AAD?$AAE?$AAR?$AAR?$AA_?$AAI?$AAN?$AAV?$AAA?$AAL?$AAI?$AAD?$AAO?$AAB?$AAJ?$AAE?$AAC?$AAT?$AA?5?$AAF?$AAA?$AAI?$AAL?$AAE?$AAD?$AA?$AN?$AA?6?$AA?$AA@ 100012bc     platform.obj
+ 0001:000002f8       ??_C@_1DG@EBKAEBBJ@?$AAD?$AAD?$AAE?$AAR?$AAR?$AA_?$AAI?$AAN?$AAV?$AAA?$AAL?$AAI?$AAD?$AAC?$AAA?$AAP?$AAS?$AA?5?$AAF?$AAA?$AAI?$AAL?$AAE?$AAD?$AA?$AN?$AA?6?$AA?$AA@ 100012f8     platform.obj
+ 0001:00000330       ??_C@_1EG@DDPFOONE@?$AAD?$AAD?$AAE?$AAR?$AAR?$AA_?$AAI?$AAN?$AAC?$AAO?$AAM?$AAP?$AAA?$AAT?$AAI?$AAB?$AAL?$AAE?$AAP?$AAR?$AAI?$AAM?$AAA?$AAR?$AAY?$AA?5?$AAF?$AAA?$AAI?$AAL?$AAE?$AAD@ 10001330     platform.obj
+ 0001:00000378       ??_C@_1DK@ECOBELCM@?$AAS?$AAe?$AAt?$AAC?$AAo?$AAo?$AAp?$AAe?$AAr?$AAa?$AAt?$AAi?$AAv?$AAe?$AAL?$AAe?$AAv?$AAe?$AAl?$AA?5?$AAF?$AAA?$AAI?$AAL?$AAE?$AAD?$AA?$AN?$AA?6?$AA?$AA@ 10001378     platform.obj
+ 0001:000003b4       ??_C@_1DE@INJBNMOL@?$AAD?$AAi?$AAr?$AAe?$AAc?$AAt?$AAD?$AAr?$AAa?$AAw?$AAC?$AAr?$AAe?$AAa?$AAt?$AAe?$AA?5?$AAF?$AAA?$AAI?$AAL?$AAE?$AAD?$AA?$AN?$AA?6?$AA?$AA@ 100013b4     platform.obj
+ 0001:000003e8       ??_C@_1DG@DLLODPLK@?$AAD?$AAD?$AAE?$AAR?$AAR?$AA_?$AAO?$AAU?$AAT?$AAO?$AAF?$AAM?$AAE?$AAM?$AAO?$AAR?$AAY?$AA?5?$AAF?$AAA?$AAI?$AAL?$AAE?$AAD?$AA?$AN?$AA?6?$AA?$AA@ 100013e8     platform.obj
+ 0001:00000420       ??_C@_1DK@GAAMGOHG@?$AAD?$AAD?$AAE?$AAR?$AAR?$AA_?$AAI?$AAN?$AAV?$AAA?$AAL?$AAI?$AAD?$AAP?$AAA?$AAR?$AAA?$AAM?$AAS?$AA?5?$AAF?$AAA?$AAI?$AAL?$AAE?$AAD?$AA?$AN?$AA?6?$AA?$AA@ 10001420     platform.obj
+ 0001:0000045c       ??_C@_1CO@KCIKFEHE@?$AAD?$AAD?$AAE?$AAR?$AAR?$AA_?$AAG?$AAE?$AAN?$AAE?$AAR?$AAI?$AAC?$AA?5?$AAF?$AAA?$AAI?$AAL?$AAE?$AAD?$AA?$AN?$AA?6?$AA?$AA@ 1000145c     platform.obj
+ 0001:00000490       ??_C@_1FA@PIBNMCOJ@?$AAD?$AAD?$AAE?$AAR?$AAR?$AA_?$AAD?$AAI?$AAR?$AAE?$AAC?$AAT?$AAD?$AAR?$AAA?$AAW?$AAA?$AAL?$AAR?$AAE?$AAA?$AAD?$AAY?$AAC?$AAR?$AAE?$AAA?$AAT?$AAE?$AAD?$AA?5?$AAF@ 10001490     platform.obj
+ 0001:000004e0       ??_C@_0DE@EDKNIKDI@?$FLEGL?$FN?5Buffer?5Allocator?5unable?5to@ 100014e0     sec_gles_2_0.obj
+ 0001:00000514       ??_C@_1DK@OEHPDFMH@?$AA?5?$AAC?$AAr?$AAe?$AAa?$AAt?$AAe?$AA?5?$AAF?$AAi?$AAl?$AAe?$AA?5?$AAF?$AAa?$AAi?$AAl?$AAe?$AAd?$AA?5?$AAi?$AAn?$AA?5?$AAE?$AAG?$AAL?$AA?5?$AA?6?$AA?$AA@ 10001514     sec_driver.obj
+ 0001:00000550       ??_C@_1M@HFJKIAIF@?$AAG?$AAL?$AAE?$AA1?$AA?3?$AA?$AA@ 10001550     sec_driver.obj
+ 0001:0000055c       ??_C@_0BL@NJMNGICN@?$FLSLSIPixmap?$FN?5Invalid?5Size?6?$AA@ 1000155c     SLSIpixmap.obj
+ 0001:00000578       ??_C@_0CF@NOPKIMFL@?$FLSLSIPixmap?$FN?5Buffer?5is?5not?5alloa@ 10001578     SLSIpixmap.obj
+ 0001:000005a0       ??_C@_0DB@DHHNFNAA@?$FLSLSIPixmap?$FN?5Buffer?5is?5null?4?5It?5@ 100015a0     SLSIpixmap.obj
+ 0001:00000600       eglGetError                10001600 f   egl.obj
+ 0001:00000638       eglGetDisplay              10001638 f   egl.obj
+ 0001:00000878       eglInitialize              10001878 f   egl.obj
+ 0001:00000a0c       eglQueryString             10001a0c f   egl.obj
+ 0001:00000bdc       eglGetConfigs              10001bdc f   egl.obj
+ 0001:00000d24       eglChooseConfig            10001d24 f   egl.obj
+ 0001:00001248       eglGetConfigAttrib         10002248 f   egl.obj
+ 0001:0000149c       eglCreateWindowSurface     1000249c f   egl.obj
+ 0001:000018fc       eglCreatePbufferSurface    100028fc f   egl.obj
+ 0001:00001ff8       eglCreatePixmapSurface     10002ff8 f   egl.obj
+ 0001:00002528       eglDestroySurface          10003528 f   egl.obj
+ 0001:00002684       eglQuerySurface            10003684 f   egl.obj
+ 0001:00002a38       eglSurfaceAttrib           10003a38 f   egl.obj
+ 0001:00002b28       eglBindTexImage            10003b28 f   egl.obj
+ 0001:00002c68       eglReleaseTexImage         10003c68 f   egl.obj
+ 0001:00002da8       eglSwapInterval            10003da8 f   egl.obj
+ 0001:00002e50       eglCreateContext           10003e50 f   egl.obj
+ 0001:00003040       eglDestroyContext          10004040 f   egl.obj
+ 0001:00003208       eglMakeCurrent             10004208 f   egl.obj
+ 0001:0000368c       eglGetCurrentContext       1000468c f   egl.obj
+ 0001:00003704       eglGetCurrentSurface       10004704 f   egl.obj
+ 0001:000037dc       eglGetCurrentDisplay       100047dc f   egl.obj
+ 0001:00003854       eglQueryContext            10004854 f   egl.obj
+ 0001:00003a34       eglWaitNative              10004a34 f   egl.obj
+ 0001:00003aa0       eglSwapBuffers             10004aa0 f   egl.obj
+ 0001:00003c30       eglCopyBuffers             10004c30 f   egl.obj
+ 0001:00003cf4       eglCreatePbufferFromClientBuffer 10004cf4 f   egl.obj
+ 0001:00003ff4       eglWaitClient              10004ff4 f   egl.obj
+ 0001:000040e0       eglBindAPI                 100050e0 f   egl.obj
+ 0001:00004194       eglQueryAPI                10005194 f   egl.obj
+ 0001:000041d8       eglReleaseThread           100051d8 f   egl.obj
+ 0001:00004340       eglGetBackbufferAddress    10005340 f   egl.obj
+ 0001:0000434c       eglLockSurfaceKHR          1000534c f   egl.obj
+ 0001:000044e0       eglUnlockSurfaceKHR        100054e0 f   egl.obj
+ 0001:00004568       eglCreateImageKHR          10005568 f   egl.obj
+ 0001:00004718       eglDestroyImageKHR         10005718 f   egl.obj
+ 0001:00004810       eglTerminate               10005810 f   egl.obj
+ 0001:00004b04       eglWaitGL                  10005b04 f   egl.obj
+ 0001:00004be4       eglGetProcAddress          10005be4 f   egl.obj
+ 0001:00004cc0       eglGLESFreeBuffer          10005cc0 f   egl_gles.obj
+ 0001:00004ce0       eglGLESGetBuffer           10005ce0 f   egl_gles.obj
+ 0001:00004d00       eglGLESGetBufferAddress    10005d00 f   egl_gles.obj
+ 0001:00004d20       eglGLESGetPhysicalAddress  10005d20 f   egl_gles.obj
+ 0001:00004d30       eglGLESSetColorBuffer      10005d30 f   egl_gles.obj
+ 0001:00004e2c       eglGLESCreateContext       10005e2c f   egl_gles.obj
+ 0001:00004e74       eglGLESSetContext          10005e74 f   egl_gles.obj
+ 0001:00004ed8       eglGLESDestroyContext      10005ed8 f   egl_gles.obj
+ 0001:00004f00       eglGLESBindTexImage        10005f00 f   egl_gles.obj
+ 0001:00004f20       eglGLESReleaseTexImage     10005f20 f   egl_gles.obj
+ 0001:00004f40       eglGLESFinish              10005f40 f   egl_gles.obj
+ 0001:00004f60       eglVGSetColorBuffer        10005f60 f   egl_vg.obj
+ 0001:00004f80       eglVGCreatePbufferFromClientBuffer 10005f80 f   egl_vg.obj
+ 0001:00004fa0       eglVGCreateContext         10005fa0 f   egl_vg.obj
+ 0001:00004fc0       eglVGSetContext            10005fc0 f   egl_vg.obj
+ 0001:00004fe0       eglVGDestroyContext        10005fe0 f   egl_vg.obj
+ 0001:00005000       eglVGFlush                 10006000 f   egl_vg.obj
+ 0001:00005020       eglVGFinish                10006020 f   egl_vg.obj
+ 0001:00005040       PLATFORM_MALLOC            10006040 f   platform.obj
+ 0001:00005060       PLATFORM_FREE              10006060 f   platform.obj
+ 0001:00005080       PLATFORM_MEMSET            10006080 f   platform.obj
+ 0001:000050a0       PLATFORM_STRCMP            100060a0 f   platform.obj
+ 0001:000050b0       PLATFORM_GET_WINDOW_SIZE   100060b0 f   platform.obj
+ 0001:000050f4       PLATFORM_GET_PIXMAP_SIZE   100060f4 f   platform.obj
+ 0001:00005108       PLATFORM_GET_PIXMAP_ADDR   10006108 f   platform.obj
+ 0001:0000511c       PLATFORM_DISPLAY_BUFFER    1000611c f   platform.obj
+ 0001:000051a8       PLATFORM_COPY_BUFFER       100061a8 f   platform.obj
+ 0001:000051d0       PLATFORM_GET_WINDOW_BUFFER 100061d0 f   platform.obj
+ 0001:000055fc       PLATFORM_RELEASE_WINDOW_BUFFER 100065fc f   platform.obj
+ 0001:00005654       GLESGetBuffer              10006654 f   sec_gles_2_0.obj
+ 0001:000056d0       GLESFreeBuffer             100066d0 f   sec_gles_2_0.obj
+ 0001:00005700       GLESGetBufferAddress       10006700 f   sec_gles_2_0.obj
+ 0001:00005760       GLESGetPhysicalAddress     10006760 f   sec_gles_2_0.obj
+ 0001:00005770       GLESSetColorBuffer         10006770 f   sec_gles_2_0.obj
+ 0001:000057e8       GLESCreateContext          100067e8 f   sec_gles_2_0.obj
+ 0001:0000582c       GLESSetContext             1000682c f   sec_gles_2_0.obj
+ 0001:00005868       GLESDestroyContext         10006868 f   sec_gles_2_0.obj
+ 0001:0000588c       GLESBindTexImage           1000688c f   sec_gles_2_0.obj
+ 0001:00005948       GLESReleaseTexImage        10006948 f   sec_gles_2_0.obj
+ 0001:000059d0       GLESFinish                 100069d0 f   sec_gles_2_0.obj
+ 0001:000059f4       InitializeDriver           100069f4 f   sec_driver.obj
+ 0001:00005a6c       GetPhysicalAddress         10006a6c f   sec_driver.obj
+ 0001:00005ac0       eglGetConfigNum            10006ac0 f   egl_config.obj
+ 0001:00005ae0       eglGetConfigList           10006ae0 f   egl_config.obj
+ 0001:00005aec       eglAllocatePixmapBufferSLSI 10006aec f   SLSIpixmap.obj
+ 0001:00005bac       eglFreePixmapBufferSLSI    10006bac f   SLSIpixmap.obj
+ 0001:00005bf4       GetClientRect              10006bf4 f   coredll:COREDLL.dll
+ 0001:00005c04       BitBlt                     10006c04 f   coredll:COREDLL.dll
+ 0001:00005c14       NKDbgPrintfW               10006c14 f   coredll:COREDLL.dll
+ 0001:00005c24       CreateFileW                10006c24 f   coredll:COREDLL.dll
+ 0001:00005c34       DeviceIoControl            10006c34 f   coredll:COREDLL.dll
+ 0001:00005c44       DirectDrawCreate           10006c44 f   ddraw:DDRAW.dll
+ 0001:00005c54       DllMain                    10006c54 f   corelib0:dllmain.obj
+ 0001:00005d70       _DllMainCRTStartup         10006d70 f   corelib0:pegdmain.obj
+ 0001:00005e68       _cexit                     10006e68 f   corelib0:cexit.obj
+ 0001:00005e84       _initterm                  10006e84 f   corelib0:crt0dat.obj
+ 0001:00005eb8       _cinit                     10006eb8 f   corelib0:crt0dat.obj
+ 0001:00005eec       __security_init_cookie     10006eec f   corelib0:seccinit.obj
+ 0001:00005f48       malloc                     10006f48 f   corelib1:COREDLL.dll
+ 0001:00005f58       free                       10006f58 f   corelib1:COREDLL.dll
+ 0001:00005f68       memset                     10006f68 f   corelib1:COREDLL.dll
+ 0001:00005f78       memcpy                     10006f78 f   corelib1:COREDLL.dll
+ 0001:00005f88       strncmp                    10006f88 f   corelib1:COREDLL.dll
+ 0001:00005f98       ??3@YAXPAX@Z               10006f98 f   corelib1:COREDLL.dll
+ 0001:00005fa8       ??2@YAPAXI@Z               10006fa8 f   corelib1:COREDLL.dll
+ 0001:00005fb8       printf                     10006fb8 f   corelib1:COREDLL.dll
+ 0001:00005fc8       _XcptFilter                10006fc8 f   corelib1:COREDLL.dll
+ 0001:00005fd8       __C_specific_handler       10006fd8 f   corelib1:COREDLL.dll
+ 0001:00005fe8       __security_gen_cookie2     10006fe8 f   corelib1:COREDLL.dll
+ 0001:00005ff8       DisableThreadLibraryCalls  10006ff8 f   coredll:COREDLL.dll
+ 0001:00006008       TerminateProcess           10007008 f   coredll:COREDLL.dll
+ 0001:0000602c       __IMPORT_DESCRIPTOR_COREDLL 1000702c     coredll:COREDLL.dll
+ 0001:00006040       __IMPORT_DESCRIPTOR_DDRAW  10007040     ddraw:DDRAW.dll
+ 0001:00006054       __NULL_IMPORT_DESCRIPTOR   10007054     coredll:COREDLL.dll
+ 0002:00000000       __imp_GetClientRect        10008000     coredll:COREDLL.dll
+ 0002:00000004       __imp_BitBlt               10008004     coredll:COREDLL.dll
+ 0002:00000008       __imp_NKDbgPrintfW         10008008     coredll:COREDLL.dll
+ 0002:0000000c       __imp_CreateFileW          1000800c     coredll:COREDLL.dll
+ 0002:00000010       __imp_DeviceIoControl      10008010     coredll:COREDLL.dll
+ 0002:00000014       __imp_DisableThreadLibraryCalls 10008014     coredll:COREDLL.dll
+ 0002:00000018       __imp_malloc               10008018     corelib1:COREDLL.dll
+ 0002:0000001c       __imp_free                 1000801c     corelib1:COREDLL.dll
+ 0002:00000020       __imp_memset               10008020     corelib1:COREDLL.dll
+ 0002:00000024       __imp_memcpy               10008024     corelib1:COREDLL.dll
+ 0002:00000028       __imp_strncmp              10008028     corelib1:COREDLL.dll
+ 0002:0000002c       __imp_??3@YAXPAX@Z         1000802c     corelib1:COREDLL.dll
+ 0002:00000030       __imp_??2@YAPAXI@Z         10008030     corelib1:COREDLL.dll
+ 0002:00000034       __imp_printf               10008034     corelib1:COREDLL.dll
+ 0002:00000038       __imp__XcptFilter          10008038     corelib1:COREDLL.dll
+ 0002:0000003c       __imp___C_specific_handler 1000803c     corelib1:COREDLL.dll
+ 0002:00000040       __imp___security_gen_cookie2 10008040     corelib1:COREDLL.dll
+ 0002:00000044       __imp_TerminateProcess     10008044     coredll:COREDLL.dll
+ 0002:00000048       \177COREDLL_NULL_THUNK_DATA 10008048     coredll:COREDLL.dll
+ 0002:0000004c       __imp_DirectDrawCreate     1000804c     ddraw:DDRAW.dll
+ 0002:00000050       \177DDRAW_NULL_THUNK_DATA  10008050     ddraw:DDRAW.dll
+ 0002:0000084c       __security_cookie          1000884c     corelib0:seccinit.obj
+ 0002:00000850       __security_cookie_complement 10008850     corelib0:seccinit.obj
+ 0002:00000858       tracker                    10008858     debugHelper_egl.obj
+ 0002:000009ec       pfnGLES2ReleaseTexImage    100089ec     sec_gles_2_0.obj
+ 0002:000009f0       pfnglFinish                100089f0     sec_gles_2_0.obj
+ 0002:000009f4       pfnGLES2SetSurfaceData     100089f4     sec_gles_2_0.obj
+ 0002:000009f8       pfnGLESDepthNew            100089f8     sec_gles_2_0.obj
+ 0002:000009fc       pfnGLES2SetContext         100089fc     sec_gles_2_0.obj
+ 0002:00000a00       pfnglFlush                 10008a00     sec_gles_2_0.obj
+ 0002:00000a04       pfnGLESChunkFree           10008a04     sec_gles_2_0.obj
+ 0002:00000a08       pfnGLES2CreateContext      10008a08     sec_gles_2_0.obj
+ 0002:00000a0c       pfnGLES2DestroyContext     10008a0c     sec_gles_2_0.obj
+ 0002:00000a10       pfnGLESChunkNew            10008a10     sec_gles_2_0.obj
+ 0002:00000a14       pfnGLESDepthFree           10008a14     sec_gles_2_0.obj
+ 0002:00000a18       pfnGLES2DeInitdriver       10008a18     sec_gles_2_0.obj
+ 0002:00000a1c       pfnGLES2Initdriver         10008a1c     sec_gles_2_0.obj
+ 0002:00000a20       pfnGLES2BindTexImage       10008a20     sec_gles_2_0.obj
+ 0002:00000a24       pfnGLES2SwapBuffer         10008a24     sec_gles_2_0.obj
+ 0002:00000a28       _exitflag                  10008a28     corelib0:cexit.obj
+ 0002:00000a2c       g_hFimg                    10008a2c     <common>
+ 0002:00000a30       __onexitend                10008a30     <common>
+ 0002:00000a34       __onexitbegin              10008a34     <common>
+ 0002:00000a38       _pRawDllMain               10008a38     <common>
+
+ entry point at        0001:00005d70
+
+ Static symbols
+
+ 0001:00005c74       _DllMainCRTStartupHelper   10006c74 f   corelib0:pegdmain.obj
+ 0001:00005da0       doexit                     10006da0 f   corelib0:cexit.obj

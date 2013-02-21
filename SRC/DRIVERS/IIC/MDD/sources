@@ -1,0 +1,49 @@
+!if 0
+Copyright (c) Microsoft Corporation.  All rights reserved.
+!endif
+!if 0
+Use of this sample source code is subject to the terms of the 
+Software License Agreement (SLA) under which you licensed this software product.
+If you did not accept the terms of the license agreement, 
+you are not authorized to use this sample source code. 
+THE SAMPLE SOURCE CODE IS PROVIDED "AS IS", WITH NO WARRANTIES OR INDEMNITIES.
+!endif
+!if 0
+Copyright (c) 2005. Samsung Electronics, co. ltd.  All rights reserved.
+!endif
+!if 0
+Use of this source code is subject to the terms of the Microsoft end-user
+license agreement (EULA) under which you licensed this SOFTWARE PRODUCT.
+If you did not accept the terms of the EULA, you are not authorized to use
+this source code. For a copy of the EULA, please see the LICENSE.RTF on your
+install media.
+!endif
+
+!if "$(BSP_NOI2C)" == "1"
+SKIPBUILD=1
+!endif
+
+SYNCHRONIZE_DRAIN=1
+
+RELEASETYPE=PLATFORM
+TARGETNAME=s3c6410_iic
+TARGETTYPE=DYNLINK
+DEFFILE=iic.def
+
+DLLENTRY=DllEntry
+
+SOURCES= \
+    iic_mdd.cpp \
+
+TARGETLIBS= \
+    $(_COMMONSDKROOT)\lib\$(_CPUINDPATH)\coredll.lib    \
+    $(_COMMONOAKROOT)\lib\$(_CPUINDPATH)\ceddk.lib    \
+
+SOURCELIBS= \
+    $(_TARGETPLATROOT)\lib\$(_CPUINDPATH)\s3c6410_iic_lib.lib    \
+
+INCLUDES_PATH=$(_TARGETPLATROOT)\src\drivers\iic
+
+INCLUDES = $(INCLUDES); \
+           $(INCLUDES_PATH)\inc; \
+

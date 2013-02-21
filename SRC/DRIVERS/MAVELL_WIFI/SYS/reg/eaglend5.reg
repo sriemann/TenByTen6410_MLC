@@ -1,0 +1,53 @@
+[HKEY_LOCAL_MACHINE\Drivers\PCMCIA\EAGLEND5]
+   "Dll"="ndis.dll"
+   "Prefix"="NDS"
+   "Miniport"="EAGLEND5"
+
+[HKEY_LOCAL_MACHINE\Drivers\PCMCIA\Detect\101]
+   "Dll"="eaglend5.dll"
+   "Entry"="DetectMrvDrv"
+
+[HKEY_LOCAL_MACHINE\Comm\EAGLEND5]
+   "DisplayName"="EAGLEND5"
+   "Group"="NDIS"
+   "ImagePath"="EAGLEND5.dll"
+
+;
+; Template for the PCI bus driver
+;
+
+[HKEY_LOCAL_MACHINE\Drivers\BuiltIn\PCI\Template\EAGLEND5]
+   "Dll"="NDIS.dll"
+   "Entry"="NdisPCIBusDeviceInit"
+   "IsrDll"="giisr.dll"
+   "IsrHandler"="ISRHandler"
+   "Class"=dword:02
+   "SubClass"=dword:80
+   "ProgIF"=dword:0
+   "PortIsIO"=dword:0
+   "PortOffset"=dword:00000C88
+   "PortSize"=dword:4
+   "PortMask"=dword:ffffffff
+   "VendorID"=multi_sz:"1638"
+   "DeviceID"=multi_sz:"1100"
+
+[HKEY_LOCAL_MACHINE\Comm\EAGLEND5\Linkage]
+   "Route"=multi_sz:"EAGLEND51"
+
+[HKEY_LOCAL_MACHINE\Comm\EAGLEND51\Parms]
+   "PowerMode"=dword:0
+   "FragThsd"=dword:3E8
+   "RTSThsd"=dword:1F4
+   "NetworkAddress"=""
+
+; default TCP/IP settings
+[HKEY_LOCAL_MACHINE\Comm\EAGLEND51\Parms\TcpIp]
+   "EnableDHCP"=dword:1
+   ; This should be MULTI_SZ
+   "DefaultGateway"=""
+   ; Use zero for broadcast address? (or 255.255.255.255)
+   "UseZeroBroadcast"=dword:0
+   ; Thus should be MULTI_SZ, the IP address list
+   "IpAddress"="192.168.0.99"
+   ; This should be MULTI_SZ, the subnet masks for the above IP addresses
+   "Subnetmask"="255.255.255.0"

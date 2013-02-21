@@ -1,0 +1,214 @@
+;
+; Copyright (c) Microsoft Corporation.  All rights reserved.
+;
+;
+; Use of this sample source code is subject to the terms of the Microsoft
+; license agreement under which you licensed this sample source code. If
+; you did not accept the terms of the license agreement, you are not
+; authorized to use this sample source code. For the terms of the license,
+; please see the license agreement between you and Microsoft or, if applicable,
+; see the LICENSE.RTF on your install media or the root of your tools installation.
+; THE SAMPLE SOURCE CODE IS PROVIDED "AS IS", WITH NO WARRANTIES OR INDEMNITIES.
+;
+
+IF IMGMULTIXIP
+#define    XIPKERNEL    XIPKERNEL
+ELSE
+#define    XIPKERNEL    NK
+ENDIF IMGMULTIXIP
+
+
+MODULES
+;  Name            Path                                           Memory Type
+;  --------------  ---------------------------------------------  -----------
+; @CESYSGEN IF CE_MODULES_NK
+IF IMGNOKITL
+    nk.exe          $(_FLATRELEASEDIR)\oal.exe                  $(XIPKERNEL)  SHZ
+ENDIF IMGNOKITL
+
+IF IMGNOKITL !
+IF IMGNOKITLDLL
+    nk.exe          $(_FLATRELEASEDIR)\oalkitl.exe              $(XIPKERNEL)  SHZ
+ENDIF IMGNOKITLDLL
+IF IMGNOKITLDLL !
+    nk.exe          $(_FLATRELEASEDIR)\oal.exe                  $(XIPKERNEL)  SHZ
+    kitl.dll        $(_FLATRELEASEDIR)\kitl.dll                 $(XIPKERNEL)  SHZ
+ENDIF IMGNOKITLDLL !
+ENDIF IMGNOKITL !
+
+
+IF IMGPROFILER
+    kernel.dll      $(_FLATRELEASEDIR)\kernprof.dll             $(XIPKERNEL)  SHZ
+ENDIF IMGPROFILER
+
+IF IMGPROFILER !
+    kernel.dll      $(_FLATRELEASEDIR)\kern.dll                 $(XIPKERNEL)  SHZ
+ENDIF IMGPROFILER !
+
+IF IMGNODEBUGGER !
+   kd.dll          $(_FLATRELEASEDIR)\kd.dll                   $(XIPKERNEL)  SHK
+   hd.dll          $(_FLATRELEASEDIR)\hd.dll                   $(XIPKERNEL)  SHK
+   osaxst0.dll     $(_FLATRELEASEDIR)\osaxst0.dll              $(XIPKERNEL)  SHK
+   osaxst1.dll     $(_FLATRELEASEDIR)\osaxst1.dll              $(XIPKERNEL)  SHK
+ENDIF IMGNODEBUGGER
+
+IF IMGCELOGENABLE
+   celog.dll       $(_FLATRELEASEDIR)\celog.dll                $(XIPKERNEL)  SHK
+ENDIF IMGCELOGENABLE
+
+; @CESYSGEN ENDIF
+
+; @CESYSGEN IF CE_MODULES_COREDLL
+IF IMGTINYKERNEL  !
+   coredll.dll     $(_FLATRELEASEDIR)\coredll.dll              $(XIPKERNEL)  SH
+   oalioctl.dll    $(_FLATRELEASEDIR)\oalioctl.dll             $(XIPKERNEL)  SHK
+ENDIF IMGTINYKERNEL !
+   k.coredll.dll   $(_FLATRELEASEDIR)\k.coredll.dll            $(XIPKERNEL)  SHMK
+; @CESYSGEN ENDIF
+
+; @CESYSGEN IF CE_MODULES_FPCRT
+    fpcrt.dll       $(_FLATRELEASEDIR)\fpcrt.dll                $(XIPKERNEL)  SH
+    k.fpcrt.dll     $(_FLATRELEASEDIR)\fpcrt.dll                $(XIPKERNEL)  SHMK
+; @CESYSGEN ENDIF
+
+; @CESYSGEN IF CE_MODULES_FILESYS
+   filesys.dll     $(_FLATRELEASEDIR)\filesys.dll              $(XIPKERNEL)  SHK
+; @CESYSGEN ENDIF
+
+; @CESYSGEN IF CE_MODULES_ROMFSD
+   romfsd.dll     $(_FLATRELEASEDIR)\romfsd.dll              $(XIPKERNEL)  SHK
+; @CESYSGEN ENDIF
+
+; @CESYSGEN IF CE_MODULES_GWES
+   gwes.dll        $(_FLATRELEASEDIR)\gwes.dll                 NK  SHK
+; @CESYSGEN ENDIF
+
+; @CESYSGEN IF CE_MODULES_DEVICE
+   device.dll      $(_FLATRELEASEDIR)\device.dll               $(XIPKERNEL)  SHMK
+   udevice.exe     $(_FLATRELEASEDIR)\udevice.exe              $(XIPKERNEL)  SHM
+   devmgr.dll      $(_FLATRELEASEDIR)\devmgr.dll               $(XIPKERNEL)  SHMK
+   regenum.dll     $(_FLATRELEASEDIR)\regenum.dll              $(XIPKERNEL)  SHK
+   busenum.dll     $(_FLATRELEASEDIR)\busenum.dll              $(XIPKERNEL)  SHK
+; @CESYSGEN IF DEVICE_PMIF
+   pm.dll       $(_FLATRELEASEDIR)\pm.dll                      $(XIPKERNEL)  SHMK
+; @CESYSGEN ENDIF
+; @CESYSGEN IF CE_MODULES_SERVICES
+   servicesEnum.dll   $(_FLATRELEASEDIR)\servicesEnum.dll     $(XIPKERNEL)  SHK
+   servicesd.exe      $(_FLATRELEASEDIR)\servicesd.exe        $(XIPKERNEL)  SH
+   services.exe       $(_FLATRELEASEDIR)\services.exe         $(XIPKERNEL)  S
+   servicesStart.exe  $(_FLATRELEASEDIR)\servicesstart.exe    $(XIPKERNEL)  SH
+; @CESYSGEN ENDIF
+; @CESYSGEN ENDIF
+
+; @CESYSGEN IF CE_MODULES_ZLIB
+   zlib.dll        $(_FLATRELEASEDIR)\zlib.dll                 $(XIPKERNEL)  SH
+; @CESYSGEN ENDIF
+
+; @CESYSGEN IF CE_MODULES_SOFTKB
+    softkb.dll      $(_FLATRELEASEDIR)\softkb.dll                   NK  SH
+; @CESYSGEN ENDIF CE_MODULES_SOFTKB
+
+; @CESYSGEN IF CE_MODULES_BINFS
+   binfs.dll     $(_FLATRELEASEDIR)\binfs.dll                     $(XIPKERNEL)  SHK
+; @CESYSGEN ENDIF
+
+; @CESYSGEN IF CE_MODULES_FSDMGR
+   fsdmgr.dll     $(_FLATRELEASEDIR)\fsdmgr.dll                $(XIPKERNEL)  SHMK
+; @CESYSGEN ENDIF
+
+; @CESYSGEN IF CE_MODULES_MSPART
+   mspart.dll     $(_FLATRELEASEDIR)\mspart.dll                $(XIPKERNEL)  SHK
+; @CESYSGEN ENDIF
+
+IF IMGNOCEDDK !
+IF IMGNODFLTDDK !
+; @CESYSGEN IF CE_MODULES_CEDDK
+   ceddk.dll       $(_FLATRELEASEDIR)\ceddk.dll                $(XIPKERNEL)  SHQ
+; @CESYSGEN ENDIF
+ENDIF IMGNOCEDDK !
+ENDIF IMGNODFLTDDK !
+
+; @CESYSGEN IF CE_MODULES_CREDMAN
+   credsvc.dll      $(_FLATRELEASEDIR)\credsvc.dll             NK  SHM
+; @CESYSGEN ENDIF
+
+; @CESYSGEN IF CE_MODULES_NDIS
+   ndis.dll        $(_FLATRELEASEDIR)\ndis.dll                 NK  SHMK
+; @CESYSGEN ENDIF
+
+; @CESYSGEN IF CE_MODULES_NETBIOS
+   netbios.dll     $(_FLATRELEASEDIR)\netbios.dll              NK  SHMK
+; @CESYSGEN ENDIF
+
+; @CESYSGEN IF CE_MODULES_SERIAL && CE_MODULES_PCCARD
+#if ! defined BSP_NOPCMCIA  || ! defined BSP_NOPCCARD
+; Note - The serial driver is now split into a PCMCIA modem driver and a
+; builtin 16550 driver.  But all the PNP entries say to use serial.dll
+; for PCMCIA modems, So for now lets just call it serial.dll in the image
+   serial.dll      $(_FLATRELEASEDIR)\com_card.dll             NK  SHMK
+#endif BSP_NOPCMCIA ! || BSP_NOPCCARD !
+; @CESYSGEN ENDIF CE_MODULES_SERIAL && CE_MODULES_PCCARD
+
+#if defined IMGSDBUS2
+; @CESYSGEN IF CE_MODULES_SDBUS2
+   sdbus.dll      $(_FLATRELEASEDIR)\sdbus2.dll                 NK  SHMK
+; @CESYSGEN ENDIF CE_MODULES_SDBUS2
+#else
+; @CESYSGEN IF CE_MODULES_SDBUS
+   sdbus.dll      $(_FLATRELEASEDIR)\sdbus.dll                  NK  SHMK
+; @CESYSGEN ENDIF CE_MODULES_SDBUS
+#endif
+
+; @CESYSGEN IF CE_MODULES_SDMEMORY
+   sdmemory.dll   $(_FLATRELEASEDIR)\sdmemory.dll               NK  SHMK
+; @CESYSGEN ENDIF CE_MODULES_SDMEMORY
+
+; @CESYSGEN IF CE_MODULES_USBD
+; USB
+IF BSP_NOUSB !
+; @CESYSGEN IF CE_MODULES_USBDISK6
+   usbdisk6.dll   $(_FLATRELEASEDIR)\usbdisk6.dll               NK  SHMK
+; @CESYSGEN ENDIF CE_MODULES_USBDISK6
+ENDIF BSP_NOUSB !
+; @CESYSGEN ENDIF CE_MODULES_USBD
+
+; @CESYSGEN IF CE_MODULES_SERIALUSBFN
+   serialusbfn.dll    $(_FLATRELEASEDIR)\serialusbfn.dll        NK  SHMK
+; @CESYSGEN ENDIF CE_MODULES_SERIALUSBFN
+
+; @CESYSGEN IF CE_MODULES_WENDYSER
+    wendyser.dll  $(_FLATRELEASEDIR)\wendyser.dll              NK  SHMK
+; @CESYSGEN ENDIF
+
+; @CESYSGEN IF CE_MODULES_WCESTREAMBT
+    wcestreambt.dll  $(_FLATRELEASEDIR)\wcestreambt.dll        NK  SHMK
+; @CESYSGEN ENDIF
+
+; @CESYSGEN IF CE_MODULES_SIO950
+    sio950.dll  $(_FLATRELEASEDIR)\sio950.dll                  NK  SHMK
+; @CESYSGEN ENDIF
+
+; @CESYSGEN IF CE_MODULES_BTSVC
+    btsvc.dll    $(_FLATRELEASEDIR)\btsvc.dll                  NK  SHM
+; @CESYSGEN ENDIF
+
+; @CESYSGEN IF CE_MODULES_BTAGSVC
+    btagsvc.dll   $(_FLATRELEASEDIR)\btagsvc.dll               NK  SHM
+; @CESYSGEN ENDIF
+
+; @CESYSGEN IF CE_MODULES_UIPROXY
+   uiproxy.dll          $(_FLATRELEASEDIR)\uiproxy.dll           NK  SHM
+; @CESYSGEN ENDIF
+
+
+FILES
+   ceconfig.h       $(_FLATRELEASEDIR)\ceconfig.h              NK
+
+; @CESYSGEN IF COREDLL_CORELOC
+   wince.nls       $(_FLATRELEASEDIR)\wince.nls                $(XIPKERNEL)  SHU
+; @CESYSGEN ENDIF
+
+; @CESYSGEN IF FILESYS_FSREGHIVE
+   boot.hv         $(_FLATRELEASEDIR)\boot.hv                  $(XIPKERNEL)  SH
+; @CESYSGEN ENDIF
+

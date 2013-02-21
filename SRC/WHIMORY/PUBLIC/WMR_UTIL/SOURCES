@@ -1,0 +1,24 @@
+!if 0
+    File:   sources
+
+    Author: AP Development Team
+
+	COPYRIGHT (c) 2006 SAMSUNG ELECTRONICS CO., LTD. ALL RIGHTS RESERVED
+!endif
+
+TARGETNAME=WMR_Utils
+
+RELEASETYPE=CUSTOM
+
+TARGETTYPE=LIBRARY
+
+WINCECPU=1
+
+TARGETPATH=..\..\Lib\$(_TGTCPU)\$(WINCEDEBUG)
+
+INCLUDES=..\..\inc;..\..\OAM\OSLess;..\..\Core\VFL
+
+CDEFINES=$(CDEFINES)
+
+SOURCES= \
+        WMR_Utils.c    \

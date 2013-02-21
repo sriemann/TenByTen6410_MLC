@@ -1,0 +1,24 @@
+!if 0
+    File:   sources
+
+    Author: Janghwan Kim
+
+	COPYRIGHT (c) 2004 SAMSUNG ELECTRONICS CO., LTD. ALL RIGHTS RESERVED
+!endif
+
+TARGETNAME=BIBDrvIF
+
+TARGETTYPE=LIBRARY
+
+RELEASETYPE=CUSTOM
+
+DLLENTRY=BIBDrv_Entry
+
+TARGETPATH=..\..\Lib\$(_TGTCPU)\$(WINCEDEBUG)
+
+INCLUDES=..\inc;..\..\inc;..\..\Core\VFL;$(_TARGETPLATROOT)\Src\inc;
+
+CDEFINES=$(CDEFINES) -DWINCE_OAM
+
+SOURCES=SYSTEM.c    \
+        CacheBuf.c

@@ -1,0 +1,16 @@
+EXPORTS
+    SsbSipJPEGDecodeInit
+    SsbSipJPEGEncodeInit
+    SsbSipJPEGDecodeExe
+    SsbSipJPEGEncodeExe
+    SsbSipJPEGGetDecodeInBuf
+    SsbSipJPEGGetDecodeOutBuf
+    SsbSipJPEGGetEncodeInBuf
+    SsbSipJPEGGetEncodeOutBuf
+    SsbSipJPEGSetConfig
+    SsbSipJPEGGetConfig
+    SsbSipJPEGDecodeDeInit
+    SsbSipJPEGEncodeDeInit
+    SsbSipJPEGGetDecodeOutPhyBuf
+    SsbSipJPEGGetRGBBuf
+    SsbSipJPEGGetRGBPhyBuf

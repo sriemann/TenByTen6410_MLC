@@ -1,0 +1,74 @@
+!if 0
+Copyright (c) Microsoft Corporation.  All rights reserved.
+!endif
+!if 0
+Use of this source code is subject to the terms of the Microsoft end-user
+license agreement (EULA) under which you licensed this SOFTWARE PRODUCT.
+If you did not accept the terms of the EULA, you are not authorized to use
+this source code. For a copy of the EULA, please see the LICENSE.RTF on your
+install media.
+!endif
+
+TARGETNAME = oal
+TARGETTYPE = LIBRARY
+
+RELEASETYPE = PLATFORM
+NOMIPS16CODE = 1
+
+SYNCHRONIZE_DRAIN=1
+
+_OSSVCSOAKROOT=$(_PUBLICROOT)\ossvcs\oak
+
+INCLUDES=$(INCLUDES);..\..\inc;.\;$(_TARGETPLATROOT)\Src\Whimory\inc;$(_TARGETPLATROOT)\Src\Whimory\Public\inc;$(_TARGETPLATROOT)\Src\Whimory\OAM\OSLess;$(_TARGETPLATROOT)\Src\Whimory\Core\VFL;
+INCLUDES=$(INCLUDES);$(_TARGETPLATROOT)\src\drivers\ExtPowerCTL\INC;
+CDEFINES=$(CDEFINES) -DCEDDK_USEDDKMACRO
+
+!IF "$(BSP_DEBUGPORT)" == "SERIAL_UART0"
+CDEFINES=$(CDEFINES) -DDEBUG_PORT=0 -DDEBUG_ON=1
+!ENDIF
+
+!IF "$(BSP_DEBUGPORT)" == "SERIAL_UART1"
+CDEFINES=$(CDEFINES) -DDEBUG_PORT=1 -DDEBUG_ON=1
+!ENDIF
+
+!IF "$(BSP_DEBUGPORT)" == "SERIAL_UART2"
+CDEFINES=$(CDEFINES) -DDEBUG_PORT=2 -DDEBUG_ON=1
+!ENDIF
+
+!IF "$(BSP_DEBUGPORT)" == "SERIAL_UART3"
+CDEFINES=$(CDEFINES) -DDEBUG_PORT=3 -DDEBUG_ON=1
+!ENDIF
+
+!IF ("$(BSP_IROM_SDMMC_CH0_BOOT)"=="1")||("$(BSP_IROM_SDMMC_CH1_BOOT)"=="1")
+CDEFINES=$(CDEFINES) -D_IROM_SDMMC_
+!ENDIF
+
+LDEFINES=-subsystem:native /DEBUG /DEBUGTYPE:CV /FIXED:NO
+
+SOURCELIBS= \
+
+WHIMORYLIB=$(_TARGETPLATROOT)\src\Whimory\Lib
+
+SOURCELIBS=$(SOURCELIBS) \
+			$(WHIMORYLIB)\$(_TGTCPU)\$(WINCEDEBUG)\WMRGlobal.lib	\
+			$(WHIMORYLIB)\$(_TGTCPU)\$(WINCEDEBUG)\FTL_$(WMR_NAND_SUPPORT).lib			\
+			$(WHIMORYLIB)\$(_TGTCPU)\$(WINCEDEBUG)\VFL_$(WMR_NAND_SUPPORT).lib			\
+			$(WHIMORYLIB)\$(_TGTCPU)\$(WINCEDEBUG)\PMHALWrapper.lib	\
+#			$(WHIMORYLIB)\$(_TGTCPU)\$(WINCEDEBUG)\WinCEWMROAM.lib	\
+			$(WHIMORYLIB)\$(_TGTCPU)\$(WINCEDEBUG)\OSLessWMROAM.lib	\
+			$(WHIMORYLIB)\$(_TGTCPU)\$(WINCEDEBUG)\$(WMR_FIL)_$(WMR_NAND_SUPPORT)_FIL.lib	\
+			$(WHIMORYLIB)\$(_TGTCPU)\$(WINCEDEBUG)\WMR_Utils.lib	\
+			$(WHIMORYLIB)\$(_TGTCPU)\$(WINCEDEBUG)\PSIIMDDOAL.lib	\
+			$(_TARGETPLATROOT)\lib\$(_CPUINDPATH)\extpowerctl_lib.lib  \
+
+
+SOURCES =    \
+    debug.c    \
+    init.c        \
+    intr.c    \
+    ioctl.c    \
+    power.c    \
+
+ARM_SOURCES =    \
+    startup.s
+

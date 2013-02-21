@@ -1,0 +1,106 @@
+[Version]                  ; Required section
+Signature = "$Windows NT$"
+Provider = "Marvell"
+CESignature = "$Windows CE$"
+
+[CEDevice.pocket.arm]
+ProcessorType  = 2577
+UnsupportedPlatforms = "HPC","Jupiter"
+VersionMin = 4.00 ; version 4.0
+VersionMax = 4.99
+
+[DefaultInstall]           ; Required section
+AddReg = RegSettings.All
+CopyFiles = Files.ARM
+
+[Files.ARM]
+GSPI8385.dll,,,0
+
+
+[SourceDisksNames]                   ; Required section
+1 = ,"Common files",,.
+
+[SourceDisksFiles]         ; Required section
+GSPI8385.dll=1
+
+
+[DestinationDirs]             ; Required section
+Files.ARM = 0,%CE2%        ; \Windows
+
+[CEStrings]                ; Required section
+AppName = "GSPI8385PN Driver"
+InstallDir = %CE2%
+
+[RegSettings.All]
+HKLM,Drivers\BuiltIn\GSPI8385,Dll,0x00000000,ndis.dll
+HKLM,Drivers\BuiltIn\GSPI8385,Prefix,0x00000000,NDS
+HKLM,Drivers\BuiltIn\GSPI8385,Miniport,0x00000000,GSPI8385
+
+
+HKLM,Comm\GSPI8385,DisplayName,0x00000000,"Marvell GSPI8385 Wireless Card"
+HKLM,Comm\GSPI8385,Group,0x00000000,"NDIS"
+HKLM,Comm\GSPI8385,ImagePath,0x00000000,"GSPI8385.dll"
+
+HKLM,Comm\GSPI8385\Linkage,Route,0x00010000,"GSPI83851"
+
+HKLM,Comm\GSPI83851,DisplayName,0x00000000,"Marvell GSPI8385 Wireless Card"
+HKLM,Comm\GSPI83851,Group,0x00000000,"NDIS"
+HKLM,Comm\GSPI83851,ImagePath,0x00000000,"GSPI8385.dll"
+
+HKLM,Comm\GSPI83851\Parms,BusNumber,0x00010001,0
+HKLM,Comm\GSPI83851\Parms,BusType,0x00010001,0	; WinCE4.x only
+HKLM,Comm\Tcpip\Linkage,Bind,0x00010000,"ppp","GSPI83851"
+
+;
+; setup card parameters
+HKLM,Comm\GSPI83851\Parms,NetworkAddress,0x00000000,""
+HKLM,Comm\GSPI83851\Parms,"PowerMode",0x00010001,0 ; 0 = off, 1 = on
+HKLM,Comm\GSPI83851\Parms,"ExtendedScan",0x00010001,0 ; 0 = off, 1 = on
+HKLM,Comm\GSPI83851\Parms,"FragThsd",0x00010001,0x92A
+HKLM,Comm\GSPI83851\Parms,"RTSThsd",0x00010001,0x92A
+
+; following is for BT co-existence testing
+HKLM,Comm\GSPI83851\Parms,"BTMode",0x00010001,0
+HKLM,Comm\GSPI83851\Parms,"BTAntennaConfig",0x00010001,0
+HKLM,Comm\GSPI83851\Parms,"BTFrequencyConfig",0x00010001,0
+HKLM,Comm\GSPI83851\Parms,"BTWLANTxPriorityLo",0x00010001,0
+HKLM,Comm\GSPI83851\Parms,"BTWLANTxPriorityHi",0x00010001,0
+HKLM,Comm\GSPI83851\Parms,"BTWLANRxPriorityLo",0x00010001,0
+HKLM,Comm\GSPI83851\Parms,"BTWLANRxPriorityHi",0x00010001,0
+
+; adhoc starter default channel
+HKLM,Comm\GSPI83851\Parms,"AdhocDefaultChannel",0x00010001,6
+; adhoc starter WiFi test datarate modify or not 
+HKLM,Comm\GSPI83851\Parms,"AdhocWiFiDataRate",0x00010001,0
+
+;SetSD4BIT: Please set 1, SetSD1BIT: Please set 0, default SetSD1BIT
+HKLM,Comm\GSPI83851\Parms,"SetSD4BIT",0x00010001,0
+
+;Set the value of SdioIstThread
+HKLM,Comm\GSPI83851\Parms,"SdioIstThread",0x00010001,150
+
+;Set the value of AvoidScanTime after connected
+HKLM,Comm\GSPI83851\Parms,"AvoidScanTime",0x00010001,10000
+
+;Set ACTIVE_ROAMING
+HKLM,Comm\GSPI83851\Parms,"bActiveRoamingScanOneChannel",0x00010001,1
+HKLM,Comm\GSPI83851\Parms,"bLinkLostScanOneChannel",0x00010001,1
+
+;Set NEW_RSSI parameters
+HKLM,Comm\GSPI83851\Parms,"ulRSSIThresholdTimer",0x00010001,5000
+HKLM,Comm\GSPI83851\Parms,"RSSI_Range",0x00010001,10
+
+; default TCP/IP parameters
+HKLM,Comm\GSPI83851\Parms\TcpIp,"EnableDHCP",0x00010001,1
+HKLM,Comm\GSPI83851\Parms\TcpIp,"DefaultGateway",0x00010000,""
+HKLM,Comm\GSPI83851\Parms\TcpIp,"UseZeroBroadcast",0x00010001,0
+HKLM,Comm\GSPI83851\Parms\TcpIp,"IpAddress",0x00010000,"0.0.0.0"
+HKLM,Comm\GSPI83851\Parms\TcpIp,"Subnetmask",0x00010000,"255.255.255.0"
+
+
+; types
+;0x00000000		REG_SZ			string
+;0x00010000		REG_MULTI_SZ	multi-string
+;0x00000001		REG_BINARY		binary
+;0x00010001		REG_DWORD		dword
+

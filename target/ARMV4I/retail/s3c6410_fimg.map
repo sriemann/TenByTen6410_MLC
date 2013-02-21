@@ -1,0 +1,223 @@
+ s3c6410_fimg
+
+ Timestamp is 5125b29f (Thu Feb 21 13:37:35 2013)
+
+ Preferred load address is 10000000
+
+ Start         Length     Name                   Class
+ 0001:00000000 00000a10H .rdata                  CODE
+ 0001:00000a10 00000029H .rdata$debug            CODE
+ 0001:00000a40 00001b64H .text                   CODE
+ 0001:000025a4 00000028H .idata$2                CODE
+ 0001:000025cc 00000014H .idata$3                CODE
+ 0001:000025e0 00000094H .idata$4                CODE
+ 0001:00002674 00000016H .idata$6                CODE
+ 0001:00002690 000000ecH .edata                  CODE
+ 0002:00000000 00000094H .idata$5                DATA
+ 0002:00000098 00000454H .data                   DATA
+ 0002:000004ec 0000008cH .bss                    DATA
+ 0003:00000000 00000118H .pdata                  DATA
+
+  Address         Publics by Value              Rva+Base       Lib:Object
+
+ 0000:00000000       ___safe_se_handler_count   00000000     <absolute>
+ 0000:00000000       ___safe_se_handler_table   00000000     <absolute>
+ 0001:0000001c       ??_C@_1DK@JMHLPDDF@?$AA?$FL?$AAF?$AAI?$AAM?$AAG?$AA?$FN?$AA?5?$AAM?$AAu?$AAt?$AAe?$AAx?$AA?5?$AAa?$AAl?$AAr?$AAe?$AAa?$AAd?$AAy?$AA?5?$AAe?$AAx?$AAi?$AAs?$AAt?$AA?4?$AA?6?$AA?$AA@ 1000101c     gldriver.obj
+ 0001:00000058       ??_C@_1BO@ICIALGBJ@?$AAF?$AAI?$AAM?$AAG?$AA3?$AAD?$AAS?$AAF?$AAR?$AAM?$AAu?$AAt?$AAe?$AAx?$AA?$AA@ 10001058     gldriver.obj
+ 0001:00000078       ??_C@_1EK@BHLNPBDD@?$AAD?$AAD?$AA?3?$AA?3?$AA?5?$AAG?$AA3?$AAD?$AA?5?$AA?9?$AA?5?$AAP?$AAW?$AAC?$AA0?$AA?5?$AAO?$AAp?$AAe?$AAn?$AA?5?$AAD?$AAe?$AAv?$AAi?$AAc?$AAe?$AA?5?$AAF?$AAa?$AAi?$AAl@ 10001078     gldriver.obj
+ 0001:000000c4       ??_C@_1M@NPGHCEML@?$AAP?$AAW?$AAC?$AA0?$AA?3?$AA?$AA@ 100010c4     gldriver.obj
+ 0001:000000d0       ??_C@_1GC@OKKPMAPH@?$AAF?$AAI?$AAM?$AAG?$AA?5?$AAE?$AAR?$AAR?$AAO?$AAR?$AA?3?$AA?5?$AAU?$AAn?$AAa?$AAb?$AAl?$AAe?$AA?5?$AAt?$AAo?$AA?5?$AAi?$AAn?$AAi?$AAt?$AAi?$AAa?$AAl?$AAi?$AAz?$AAe@ 100010d0     gldriver.obj
+ 0001:00000138       ??_C@_1GE@HFNKPGCJ@?$AAF?$AAI?$AAM?$AAG?$AA?5?$AAE?$AAR?$AAR?$AAO?$AAR?$AA?3?$AA?5?$AAE?$AAr?$AAr?$AAo?$AAr?$AA?5?$AAc?$AAr?$AAe?$AAa?$AAt?$AAi?$AAn?$AAg?$AA?5?$AAe?$AAv?$AAe?$AAn?$AAt@ 10001138     gldriver.obj
+ 0001:000001a0       ??_C@_1GI@KMGEIMGD@?$AAF?$AAI?$AAM?$AAG?$AA?5?$AAE?$AAR?$AAR?$AAO?$AAR?$AA?3?$AA?5?$AAF?$AAa?$AAi?$AAl?$AAe?$AAd?$AA?5?$AAt?$AAo?$AA?5?$AAr?$AAe?$AAq?$AAu?$AAe?$AAs?$AAt?$AA?5?$AAt?$AAh@ 100011a0     gldriver.obj
+ 0001:00000208       ??_C@_1IG@CFHPMAIN@?$AA?$FL?$AAF?$AAI?$AAM?$AAG?$AA?3?$AAE?$AAR?$AAR?$AA?$FN?$AA?5?$AAF?$AAi?$AAm?$AAg?$AAP?$AAo?$AAw?$AAe?$AAr?$AAO?$AAn?$AA?$CI?$AA?$CJ?$AA?5?$AA?3?$AA?5?$AAp?$AAS?$AAy?$AAs?$AAC@ 10001208     libMain.obj
+ 0001:00000290       ??_C@_0BI@NKHNMOFA@sfr?5phy?5address?5?$DN?50x?$CFx?6?$AA@ 10001290     libMain.obj
+ 0001:000002a8       ??_C@_0BE@PHEOBFNK@sfr?5address?5?$DN?50x?$CFx?6?$AA@ 100012a8     libMain.obj
+ 0001:000002bc       ??_C@_1BO@EBHLKPOC@?$AAF?$AAr?$AAe?$AAe?$AAS?$AAF?$AAR?$AAA?$AAd?$AAd?$AAr?$AAe?$AAs?$AAs?$AA?$AA@ 100012bc     libMain.obj
+ 0001:000002dc       ??_C@_1DM@NDIBFHGO@?$AA?$CF?$AAs?$AA?3?$AA?5?$AAV?$AAi?$AAr?$AAt?$AAu?$AAa?$AAl?$AAF?$AAr?$AAe?$AAe?$AAE?$AAx?$AA?5?$AAi?$AAs?$AA?5?$AAf?$AAa?$AAi?$AAl?$AAe?$AAd?$AA?$AN?$AA?6?$AA?$AA@ 100012dc     libMain.obj
+ 0001:00000318       ??_C@_0CO@EIFDKMG@?$FLFIMGDRV?30x?$CF08x?$FN?50x?$CFx?50x?$CFx?50x?$CFx?5@ 10001318     libMain.obj
+ 0001:00000348       ??_C@_0DD@NEAFBEBM@?$FLFIMGDRV?30x?$CF08x?$FN?5DoAllocPhysMem?5@ 10001348     libMain.obj
+ 0001:0000037c       ??_C@_0DL@DOCFIBAH@?$FLFIMGDRV?30x?$CF08x?$FN?5After?5Alloc?0?5Bl@ 1000137c     libMain.obj
+ 0001:000003b8       ??_C@_0DL@JFFDEPII@?$FLFIMGDRV?30x?$CF08x?$FN?5?$DN?$DN?$DN?$DN?$DN?$DN?$DN?$DN?$DN?$DN?$DN?$DN?$DN?$DN?$DN@ 100013b8     libMain.obj
+ 0001:000003f4       ??_C@_0DC@BLDOMMHC@?$FLFIMGDRV?30x?$CF08x?$FN?5status?50x?$CFx?50x?$CF@ 100013f4     libMain.obj
+ 0001:00000428       ??_C@_0DP@NHNMDDF@?$FLFIMGDRV?30x?$CF08x?$FN?5Buffer?5Allocato@ 10001428     libMain.obj
+ 0001:00000468       ??_C@_0CL@KLPDENLD@?$FLFIMGDRV?30x?$CF08x?$FN?5DoAllocPhysMem?5@ 10001468     libMain.obj
+ 0001:00000494       ??_C@_0CN@NPOFPOBF@?$FLFIMGDRV?30x?$CF08x?$FN?5DoFreePhysMem?50@ 10001494     libMain.obj
+ 0001:000004c4       ??_C@_0DL@EKKNLNBB@?$FLFIMGDRV?30x?$CF08x?$FN?5Before?5Free?0?5Bl@ 100014c4     libMain.obj
+ 0001:00000500       ??_C@_0DD@HCKGGEOE@?$FLFIMGDRV?30x?$CF08x?$FN?5GetDepthBuffer?5@ 10001500     libMain.obj
+ 0001:00000534       ??_C@_0CM@DICGJGEN@?$FLFIMGDRV?30x?$CF08x?$FN?5Garbage?5Collect@ 10001534     libMain.obj
+ 0001:00000560       ??_C@_0CC@HAFNHLOH@?$FLFIMGDRV?30x?$CF08x?$FN?5Garbage?5Collect@ 10001560     libMain.obj
+ 0001:00000584       ??_C@_0CJ@GFOPFHIP@?$FLFIMGDRV?$FN?5Allocated?5Pool?50x?$CFx?50x@ 10001584     libMain.obj
+ 0001:000005b0       ??_C@_0CD@OEODPHNJ@?$FLFIMGDRV?$FN?5?$CFd?5th?5allocated?5is?5fai@ 100015b0     libMain.obj
+ 0001:000005d8       ??_C@_0EC@DBGNAIFL@?$FLFIMGDRV?$FN?5depthbuffer?5is?5allocat@ 100015d8     libMain.obj
+ 0001:0000061c       ??_C@_0CK@OCCGCMJJ@?$FLFIMGDRV?$FN?5depth?5buffer?5allocated@ 1000161c     libMain.obj
+ 0001:00000648       ??_C@_0CO@OFIPHHBM@?$FLFIMGDRV?$FN?5Only?5for?5Depthbuffer?5i@ 10001648     libMain.obj
+ 0001:00000678       ??_C@_0DJ@IALCNDCM@?$FLFIMGDRV?$FN?5Alloc?5Block?5Num?5?$DN?5?$CFd?5?5@ 10001678     libMain.obj
+ 0001:000006b4       ??_C@_0CD@NJDABDNL@?$FLFIMGDRV?$FN?5alloc?5physmem?5?$DN?5?$CFd?5?1?5?$CF@ 100016b4     libMain.obj
+ 0001:000006d8       ??_C@_0CB@FKIDANGH@?$FLFIMGDRV?$FN?5alloc?5virtmem?5?$DN?5?$CFd?1?$CFd?6@ 100016d8     libMain.obj
+ 0001:000006fc       ??_C@_0CL@FKBOBPL@?$FLFIMGDRV?$FN?5After?5Release?5physmem?5@ 100016fc     libMain.obj
+ 0001:00000728       ??_C@_0CJ@BHKDFMIJ@?$FLFIMGDRV?$FN?5After?5Release?5virtmem?5@ 10001728     libMain.obj
+ 0001:00000754       ??_C@_0CL@FBPJLENC@?$FLFIMGDRV?30x?$CF08x?$FN?5Release?5Free?5Me@ 10001754     libMain.obj
+ 0001:00000780       ??_C@_0CM@KDIHKOPA@?$FLFIMGDRV?$FN?5Before?5Release?5physmem@ 10001780     libMain.obj
+ 0001:000007ac       ??_C@_0CK@LAHMEPAI@?$FLFIMGDRV?$FN?5Before?5Release?5virtmem@ 100017ac     libMain.obj
+ 0001:000007d8       ??_C@_1BK@JDPPGGPG@?$AAA?$AAl?$AAl?$AAo?$AAc?$AAb?$AAl?$AAk?$AAS?$AAi?$AAz?$AAe?$AA?$AA@ 100017d8     libMain.obj
+ 0001:000007f4       ??_C@_1BI@GGKDMAAL@?$AAA?$AAl?$AAl?$AAo?$AAc?$AAb?$AAl?$AAk?$AAN?$AAu?$AAm?$AA?$AA@ 100017f4     libMain.obj
+ 0001:0000080c       ??_C@_1BK@CPFMAKOL@?$AAD?$AAe?$AAp?$AAt?$AAh?$AAB?$AAu?$AAf?$AAS?$AAi?$AAz?$AAe?$AA?$AA@ 1000180c     libMain.obj
+ 0001:00000828       ??_C@_1CK@MLHBNBFK@?$AAD?$AAr?$AAi?$AAv?$AAe?$AAr?$AAs?$AA?2?$AAB?$AAu?$AAi?$AAl?$AAt?$AAI?$AAn?$AA?2?$AAF?$AAI?$AAM?$AAG?$AA?$AA@ 10001828     libMain.obj
+ 0001:00000854       ??_C@_1CI@OFNJPBDF@?$AAV?$AAi?$AAr?$AAt?$AAu?$AAa?$AAl?$AAC?$AAo?$AAp?$AAy?$AA?5?$AAe?$AAr?$AAr?$AAo?$AAr?$AA?$AN?$AA?6?$AA?$AA@ 10001854     libMain.obj
+ 0001:0000087c       ??_C@_1DE@BHJKBKLI@?$AAC?$AAr?$AAe?$AAa?$AAt?$AAe?$AAF?$AAi?$AAl?$AAe?$AAM?$AAa?$AAp?$AAp?$AAi?$AAn?$AAg?$AA?5?$AAe?$AAr?$AAr?$AAo?$AAr?$AA?$AN?$AA?6?$AA?$AA@ 1000187c     libMain.obj
+ 0001:000008b0       ??_C@_0BG@LFOJFIIB@?$FLFIMGDRV?$FN?5InitDriver?6?$AA@ 100018b0     libMain.obj
+ 0001:000008c8       ??_C@_0CH@PJKFFJK@?6?6?6?5?5?$CK?$CK?$CK?5FIMG?5VERSION?5?3?50x?$CFx?5?$CK?$CK?$CK@ 100018c8     libMain.obj
+ 0001:000008f0       ??_C@_0DK@JFEDHEAE@?$FLFIMGDRV?30x?$CF08x?$FN?5ReAllocateList?5@ 100018f0     libMain.obj
+ 0001:0000092c       ??_C@_0CI@EBOMDGKJ@?$FLFIMGDRV?30x?$CF08x?$FN?5ReAllocateList?5@ 1000192c     libMain.obj
+ 0001:00000954       ??_C@_0CK@IOCBDK@?$FLFIMGDRV?30x?$CF08x?$FN?5Re?5Allocate?5Mem@ 10001954     libMain.obj
+ 0001:00000a40       ?DllEntry@@YAHPAXK0@Z      10001a40 f   gldriver.obj
+ 0001:00000a70       ?MakeMyMutex@@YAXXZ        10001a70 f   gldriver.obj
+ 0001:00000ab0       GLE_Init                   10001ab0 f   gldriver.obj
+ 0001:00000c24       GLE_Deinit                 10001c24 f   gldriver.obj
+ 0001:00000c84       GLE_Open                   10001c84 f   gldriver.obj
+ 0001:00000cfc       GLE_Close                  10001cfc f   gldriver.obj
+ 0001:00000d60       GLE_Draw                   10001d60 f   gldriver.obj
+ 0001:00000d80       GLE_PowerDown              10001d80 f   gldriver.obj
+ 0001:00000da0       GLE_PowerUp                10001da0 f   gldriver.obj
+ 0001:00000da4       ?PowerUpProcess@@YAXXZ     10001da4 f   gldriver.obj
+ 0001:00000dd8       ?PowerDownProcess@@YAXXZ   10001dd8 f   gldriver.obj
+ 0001:00000e0c       GLE_IOControl              10001e0c f   gldriver.obj
+ 0001:00001234       ?printf@Plat@@SAHPBDZZ     10002234 f i libMain.obj
+ 0001:0000124c       GLES2DeInitdriver          1000224c f   libMain.obj
+ 0001:00001288       GetPhysicalAddress         10002288 f   libMain.obj
+ 0001:000012fc       GetSFRAddress              100022fc f   libMain.obj
+ 0001:00001368       FreeSFRAddress             10002368 f   libMain.obj
+ 0001:000013c0       GetDMASFRAddress           100023c0 f   libMain.obj
+ 0001:000013e0       FreeDMASFRAddress          100023e0 f   libMain.obj
+ 0001:000013e4       DoAllocPhysMem             100023e4 f   libMain.obj
+ 0001:00001610       DoFreePhysMem              10002610 f   libMain.obj
+ 0001:00001740       RequestDepthBuffer         10002740 f   libMain.obj
+ 0001:000017e4       ReleaseDepthBuffer         100027e4 f   libMain.obj
+ 0001:00001814       GetMemoryStatus            10002814 f   libMain.obj
+ 0001:00001868       GarbageCollect             10002868 f   libMain.obj
+ 0001:000018f4       ?AllocateMemoryList@@YAHXZ 100028f4 f   libMain.obj
+ 0001:00001afc       FreeMemoryList             10002afc f   libMain.obj
+ 0001:00001ba8       ?ReadMemoryPoolFromRegistry@@YAHPAH00@Z 10002ba8 f   libMain.obj
+ 0001:00001d14       GLES2Initdriver            10002d14 f   libMain.obj
+ 0001:00001e14       GLES2Opendriver            10002e14 f   libMain.obj
+ 0001:00001f08       GLES2Closedriver           10002f08 f   libMain.obj
+ 0001:00001fb4       ReAllocMemoryList          10002fb4 f   libMain.obj
+ 0001:0000206c       WaitForPipelineStatus      1000306c f   global.obj
+ 0001:000020e0       fglSoftReset               100030e0 f   global.obj
+ 0001:00002120       fglGetVersion              10003120 f   global.obj
+ 0001:00002140       _fglSendToFIFO32           10003140     fnc.obj
+ 0001:000021c4       _gl_asm_memset             100031c4     gl_asm.obj
+ 0001:000021fc       _gl_asm_memcpy_3l          100031fc     gl_asm.obj
+ 0001:00002218       _gl_asm_memcpy_4l          10003218     gl_asm.obj
+ 0001:00002234       _gl_asm_convertPixels_ABGR2ARGB 10003234     gl_asm.obj
+ 0001:00002268       _gl_asm_nop                10003268     gl_asm.obj
+ 0001:00002278       _gl_asm_send_hostfifo2     10003278     gl_asm.obj
+ 0001:0000228c       _gl_asm_send_hostfifo3     1000328c     gl_asm.obj
+ 0001:000022a0       _gl_asm_send_hostfifo4     100032a0     gl_asm.obj
+ 0001:000022b4       _gl_asm_send_hostfifo5     100032b4     gl_asm.obj
+ 0001:000022c8       _gl_asm_send_hostfifo6     100032c8     gl_asm.obj
+ 0001:000022dc       _gl_asm_send_hostfifo7     100032dc     gl_asm.obj
+ 0001:000022f0       _gl_asm_send_hostfifo8     100032f0     gl_asm.obj
+ 0001:00002304       _gl_asm_send_hostfifo2_aux 10003304     gl_asm.obj
+ 0001:00002318       _gl_asm_send_hostfifo3_aux 10003318     gl_asm.obj
+ 0001:0000232c       _gl_asm_send_hostfifo4_aux 1000332c     gl_asm.obj
+ 0001:00002340       INTLOCK                    10003340     gl_asm.obj
+ 0001:00002354       INTFREE                    10003354     gl_asm.obj
+ 0001:00002374       DisableThreadLibraryCalls  10003374 f   coredll:COREDLL.dll
+ 0001:00002384       RegisterDbgZones           10003384 f   coredll:COREDLL.dll
+ 0001:00002394       NKDbgPrintfW               10003394 f   coredll:COREDLL.dll
+ 0001:000023a4       GetLastError               100033a4 f   coredll:COREDLL.dll
+ 0001:000023b4       CreateMutexW               100033b4 f   coredll:COREDLL.dll
+ 0001:000023c4       InitializeCriticalSection  100033c4 f   coredll:COREDLL.dll
+ 0001:000023d4       CreateFileW                100033d4 f   coredll:COREDLL.dll
+ 0001:000023e4       InterruptInitialize        100033e4 f   coredll:COREDLL.dll
+ 0001:000023f4       CreateEventW               100033f4 f   coredll:COREDLL.dll
+ 0001:00002404       KernelIoControl            10003404 f   coredll:COREDLL.dll
+ 0001:00002414       DeleteCriticalSection      10003414 f   coredll:COREDLL.dll
+ 0001:00002424       CloseHandle                10003424 f   coredll:COREDLL.dll
+ 0001:00002434       LeaveCriticalSection       10003434 f   coredll:COREDLL.dll
+ 0001:00002444       ReleaseMutex               10003444 f   coredll:COREDLL.dll
+ 0001:00002454       WaitForSingleObject        10003454 f   coredll:COREDLL.dll
+ 0001:00002464       SetLastError               10003464 f   coredll:COREDLL.dll
+ 0001:00002474       EnterCriticalSection       10003474 f   coredll:COREDLL.dll
+ 0001:00002484       __GetUserKData             10003484 f   coredll:COREDLL.dll
+ 0001:00002494       LockPages                  10003494 f   coredll:COREDLL.dll
+ 0001:000024a4       VirtualAllocCopyEx         100034a4 f   coredll:COREDLL.dll
+ 0001:000024b4       GetDirectCallerProcessId   100034b4 f   coredll:COREDLL.dll
+ 0001:000024c4       VirtualFreeEx              100034c4 f   coredll:COREDLL.dll
+ 0001:000024d4       Sleep                      100034d4 f   coredll:COREDLL.dll
+ 0001:000024e4       AllocPhysMem               100034e4 f   coredll:COREDLL.dll
+ 0001:000024f4       GlobalMemoryStatus         100034f4 f   coredll:COREDLL.dll
+ 0001:00002504       RegQueryValueExW           10003504 f   coredll:COREDLL.dll
+ 0001:00002514       RegOpenKeyExW              10003514 f   coredll:COREDLL.dll
+ 0001:00002524       VirtualCopy                10003524 f   coredll:COREDLL.dll
+ 0001:00002534       MapViewOfFile              10003534 f   coredll:COREDLL.dll
+ 0001:00002544       CreateFileMappingW         10003544 f   coredll:COREDLL.dll
+ 0001:00002554       InterruptDone              10003554 f   coredll:COREDLL.dll
+ 0001:00002564       MmUnmapIoSpace             10003564 f   ceddk:CEDDK.dll
+ 0001:00002574       MmMapIoSpace               10003574 f   ceddk:CEDDK.dll
+ 0001:00002584       malloc                     10003584 f   corelib1:COREDLL.dll
+ 0001:00002594       free                       10003594 f   corelib1:COREDLL.dll
+ 0001:000025a4       __IMPORT_DESCRIPTOR_COREDLL 100035a4     coredll:COREDLL.dll
+ 0001:000025b8       __IMPORT_DESCRIPTOR_CEDDK  100035b8     ceddk:CEDDK.dll
+ 0001:000025cc       __NULL_IMPORT_DESCRIPTOR   100035cc     coredll:COREDLL.dll
+ 0002:00000000       __imp_MmUnmapIoSpace       10004000     ceddk:CEDDK.dll
+ 0002:00000004       __imp_MmMapIoSpace         10004004     ceddk:CEDDK.dll
+ 0002:00000008       \177CEDDK_NULL_THUNK_DATA  10004008     ceddk:CEDDK.dll
+ 0002:0000000c       __imp_GetLastError         1000400c     coredll:COREDLL.dll
+ 0002:00000010       __imp_CreateMutexW         10004010     coredll:COREDLL.dll
+ 0002:00000014       __imp_InitializeCriticalSection 10004014     coredll:COREDLL.dll
+ 0002:00000018       __imp_CreateFileW          10004018     coredll:COREDLL.dll
+ 0002:0000001c       __imp_InterruptInitialize  1000401c     coredll:COREDLL.dll
+ 0002:00000020       __imp_CreateEventW         10004020     coredll:COREDLL.dll
+ 0002:00000024       __imp_KernelIoControl      10004024     coredll:COREDLL.dll
+ 0002:00000028       __imp_DeleteCriticalSection 10004028     coredll:COREDLL.dll
+ 0002:0000002c       __imp_CloseHandle          1000402c     coredll:COREDLL.dll
+ 0002:00000030       __imp_LeaveCriticalSection 10004030     coredll:COREDLL.dll
+ 0002:00000034       __imp_ReleaseMutex         10004034     coredll:COREDLL.dll
+ 0002:00000038       __imp_WaitForSingleObject  10004038     coredll:COREDLL.dll
+ 0002:0000003c       __imp_SetLastError         1000403c     coredll:COREDLL.dll
+ 0002:00000040       __imp_EnterCriticalSection 10004040     coredll:COREDLL.dll
+ 0002:00000044       __imp_NKDbgPrintfW         10004044     coredll:COREDLL.dll
+ 0002:00000048       __imp_LockPages            10004048     coredll:COREDLL.dll
+ 0002:0000004c       __imp_VirtualAllocCopyEx   1000404c     coredll:COREDLL.dll
+ 0002:00000050       __imp_GetDirectCallerProcessId 10004050     coredll:COREDLL.dll
+ 0002:00000054       __imp_VirtualFreeEx        10004054     coredll:COREDLL.dll
+ 0002:00000058       __imp_Sleep                10004058     coredll:COREDLL.dll
+ 0002:0000005c       __imp_AllocPhysMem         1000405c     coredll:COREDLL.dll
+ 0002:00000060       __imp_GlobalMemoryStatus   10004060     coredll:COREDLL.dll
+ 0002:00000064       __imp_RegQueryValueExW     10004064     coredll:COREDLL.dll
+ 0002:00000068       __imp_RegOpenKeyExW        10004068     coredll:COREDLL.dll
+ 0002:0000006c       __imp_VirtualCopy          1000406c     coredll:COREDLL.dll
+ 0002:00000070       __imp_MapViewOfFile        10004070     coredll:COREDLL.dll
+ 0002:00000074       __imp_CreateFileMappingW   10004074     coredll:COREDLL.dll
+ 0002:00000078       __imp_InterruptDone        10004078     coredll:COREDLL.dll
+ 0002:0000007c       __imp_RegisterDbgZones     1000407c     coredll:COREDLL.dll
+ 0002:00000080       __imp___GetUserKData       10004080     coredll:COREDLL.dll
+ 0002:00000084       __imp_DisableThreadLibraryCalls 10004084     coredll:COREDLL.dll
+ 0002:00000088       __imp_malloc               10004088     corelib1:COREDLL.dll
+ 0002:0000008c       __imp_free                 1000408c     corelib1:COREDLL.dll
+ 0002:00000090       \177COREDLL_NULL_THUNK_DATA 10004090     coredll:COREDLL.dll
+ 0002:00000098       dpCurSettings              10004098     gldriver.obj
+ 0002:000004dc       gFimgBase                  100044dc     libMain.obj
+ 0002:000004ec       ?g_hPwrControl@@3PAXA      100044ec     gldriver.obj
+ 0002:000004f0       g_IntrFIMG                 100044f0     gldriver.obj
+ 0002:000004f4       g_hPipeEvent               100044f4     gldriver.obj
+ 0002:000004f8       ?g_lockedContext@@3KA      100044f8     gldriver.obj
+ 0002:000004fc       ?g_InitDone@@3HA           100044fc     gldriver.obj
+ 0002:00000504       ?fimg_dd_open_flag@@3HA    10004504     gldriver.obj
+ 0002:00000508       ?is_pwr_down@@3HC          10004508     gldriver.obj
+ 0002:00000514       ?pHeadOfMemoryPool@@3PAUALLOCMEM_POOL@@A 10004514     libMain.obj
+ 0002:00000518       ?pDepthBuffer@@3PAUALLOCMEM_POOL@@A 10004518     libMain.obj
+ 0002:0000051c       ?g_blkSize@@3HA            1000451c     libMain.obj
+ 0002:00000520       ?g_blkNum@@3HA             10004520     libMain.obj
+ 0002:00000524       ?g_depthBufferSize@@3HA    10004524     libMain.obj
+ 0002:00000528       ?gPoolMem@@3UAddressBase@@A 10004528     libMain.obj
+ 0002:0000053c       ?gles20_open_mutex@@3UCRITICAL_SECTION@@A 1000453c     platform.obj
+ 0002:00000550       ?gles20_fimg_mutex@@3UCRITICAL_SECTION@@A 10004550     platform.obj
+ 0002:00000564       ?gles20_chunkalloc_mutex@@3UCRITICAL_SECTION@@A 10004564     platform.obj
+
+ entry point at        0000:00000000
+
+ Static symbols
+

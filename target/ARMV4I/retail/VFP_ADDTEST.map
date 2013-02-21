@@ -1,0 +1,36 @@
+ VFP_ADDTEST
+
+ Timestamp is 5125b2a8 (Thu Feb 21 13:37:44 2013)
+
+ Preferred load address is 00010000
+
+ Start         Length     Name                   Class
+ 0001:00000000 00000055H .rdata                  CODE
+ 0001:00000058 00000028H .rdata$debug            CODE
+ 0001:00000080 0000004cH .text                   CODE
+ 0001:000000cc 00000014H .idata$2                CODE
+ 0001:000000e0 00000014H .idata$3                CODE
+ 0001:000000f4 0000000cH .idata$4                CODE
+ 0001:00000100 0000000cH .idata$6                CODE
+ 0001:0000010c 00000000H .edata                  CODE
+ 0002:00000000 0000000cH .idata$5                DATA
+ 0003:00000000 00000008H .pdata                  DATA
+
+  Address         Publics by Value              Rva+Base       Lib:Object
+
+ 0000:00000000       ___safe_se_handler_table   00000000     <absolute>
+ 0000:00000000       ___safe_se_handler_count   00000000     <absolute>
+ 0001:0000001c       ??_C@_0DJ@JLILFDAC@Add?5result?5for?5val1?5?$DN?53?41234e?930@ 0001101c     DoubleAdd.obj
+ 0001:00000080       WinMain                    00011080 f   DoubleAdd.obj
+ 0001:000000ac       Sleep                      000110ac f   coredll:COREDLL.dll
+ 0001:000000bc       printf                     000110bc f   corelib1:COREDLL.dll
+ 0001:000000cc       __IMPORT_DESCRIPTOR_COREDLL 000110cc     coredll:COREDLL.dll
+ 0001:000000e0       __NULL_IMPORT_DESCRIPTOR   000110e0     coredll:COREDLL.dll
+ 0002:00000000       __imp_printf               00012000     corelib1:COREDLL.dll
+ 0002:00000004       __imp_Sleep                00012004     coredll:COREDLL.dll
+ 0002:00000008       \177COREDLL_NULL_THUNK_DATA 00012008     coredll:COREDLL.dll
+
+ entry point at        0001:00000080
+
+ Static symbols
+

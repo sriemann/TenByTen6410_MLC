@@ -1,0 +1,88 @@
+!if 0
+Copyright (c) Microsoft Corporation.  All rights reserved.
+!endif
+!if 0
+Use of this sample source code is subject to the terms of the 
+Software License Agreement (SLA) under which you licensed this software product.
+If you did not accept the terms of the license agreement, 
+you are not authorized to use this sample source code. 
+THE SAMPLE SOURCE CODE IS PROVIDED "AS IS", WITH NO WARRANTIES OR INDEMNITIES.
+!endif
+!IF 0
+
+
+Module Name:
+
+    sources.
+
+Abstract:
+
+    This file specifies the target component being built and the list of
+    sources files needed to build that component.  Also specifies optional
+    compiler switches and libraries that are unique for the component being
+    built.
+
+
+!ENDIF
+
+!if "$(BSP_NODISPLAY)" == "1"
+SKIPBUILD=1
+!endif
+
+SYNCHRONIZE_DRAIN=1
+
+TARGETNAME = s3c6410_disp
+RELEASETYPE = PLATFORM
+TARGETTYPE = DYNLINK
+DEFFILE=s3c6410_disp.def
+CODE_ANALYSIS=1
+CLEARTYPE=
+
+PRECOMPILED_INCLUDE=precomp.h
+PRECOMPILED_PCH=precomp.pch
+PRECOMPILED_CXX=1
+
+!IFDEF CLEARTYPE
+CDEFINES=$(CDEFINES) -DDDI -DVGA_DEBUG_MSGS -DCE_SPLIT_PRIMARY -DCLEARTYPE
+!ELSE
+CDEFINES=$(CDEFINES) -DDDI -DVGA_DEBUG_MSGS -DCE_SPLIT_PRIMARY
+!ENDIF
+
+!IF "$(DO_DISPPERF)"=="1"
+CDEFINES=$(CDEFINES) -DDO_DISPPERF
+!ENDIF
+
+INCLUDES=$(INCLUDES);..\INC;
+
+TARGETLIBS= \
+    $(_COMMONSDKROOT)\lib\$(_CPUINDPATH)\coredll.lib  \
+    $(_COMMONOAKROOT)\lib\$(_CPUINDPATH)\ceddk.lib    \
+
+SOURCELIBS= \
+    .\2d_accel_lib.lib \
+    $(_COMMONOAKROOT)\lib\$(_CPUINDPATH)\gpe.lib      \
+    $(_COMMONOAKROOT)\lib\$(_CPUINDPATH)\ddgpe.lib                \
+    $(_TARGETPLATROOT)\lib\$(_CPUINDPATH)\s3c6410_ldi_lib.lib \
+    $(_TARGETPLATROOT)\lib\$(_CPUINDPATH)\s3c6410_g2d_lib.lib \
+
+
+SOURCES=    \
+    display_main.cpp    \
+    ddoverlay.cpp   \
+    dispmode.cpp    \
+    cursor.cpp      \
+    line.cpp    \
+    hwblt.cpp   \
+    blt.cpp     \
+    blt_alpha.cpp   \
+    surf.cpp    \
+    halcaps.cpp \
+    haldd.cpp   \
+    halsurf.cpp \
+    tvcontrol.cpp
+
+ARM_SOURCES=\
+    accel_2d.s
+
+#xref VIGUID {b8f89265-f577-4aad-bc2c-eb583123c45b}
+#xref VSGUID {5396eb58-ae31-4678-9ea9-f9cf65f78262}

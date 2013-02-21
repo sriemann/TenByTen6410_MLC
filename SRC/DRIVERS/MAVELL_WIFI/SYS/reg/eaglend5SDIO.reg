@@ -1,0 +1,93 @@
+; Copyright (c) 2002 BSQUARE Corporation.  All rights reserved.
+;
+;
+; THIS CODE AND INFORMATION IS PROVIDED "AS IS" WITH
+; WARRANTY OF ANY KIND, EITHER EXPRESSED OR IMPLIED, 
+; INCLUDING BUT NOT LIMITED TO THE IMPLIED WARRANTIES OF 
+; MERCHANTABILITY AND/OR FITNESS FOR A PARTICULAR PURPOSE.
+;
+
+
+    ; registry keys for the NDIS driver
+[HKEY_LOCAL_MACHINE\Comm\Eaglend5SDIO]
+   "DisplayName"="Marvell 802.11 SDIO Adapter"
+   "Group"="NDIS"
+   "ImagePath"="Eaglend5SDIO.dll"
+
+[HKEY_LOCAL_MACHINE\Comm\Eaglend5SDIO\Linkage]
+   "Route"=multi_sz:"Eaglend5SDIO1"
+
+    ; instance 1 information
+[HKEY_LOCAL_MACHINE\Comm\Eaglend5SDIO1]
+   "DisplayName"="Marvell 802.11 SDIO Adapter"
+   "Group"="NDIS"
+   "ImagePath"="EagleND5SDIO.dll"
+	
+    ; instance 1 parameters
+[HKEY_LOCAL_MACHINE\Comm\Eaglend5SDIO1\Parms]
+   "BusNumber"=dword:0
+   "BusType"=dword:0
+IF _WINCEOSVER=400
+      ; .NET needs this bus type
+   "BusType"=dword:0
+ENDIF
+
+IF _WINCEOSVER=410
+       ; .NET needs this bus type
+   "BusType"=dword:0
+ENDIF
+
+IF _WINCEOSVER=420
+       ; .NET needs this bus type
+   "BusType"=dword:0
+ENDIF
+
+
+IF _WINCEOSVER=300
+       ; CE 3.0 or PocketPC needs this bus type
+   "BusType"=dword:8
+ENDIF
+
+
+    ; TCPIP linkage to instance 1 adapter
+[HKEY_LOCAL_MACHINE\Comm\Tcpip\Linkage]
+    "Bind"=multi_sz:"ppp","Eaglend5SDIO1"
+
+    ; default TCPIP settings for this instance
+[HKEY_LOCAL_MACHINE\Comm\Eaglend5SDIO1\Parms\TcpIp]
+   "EnableDHCP"=dword:1
+   ; This should be MULTI_SZ
+   "DefaultGateway"=""
+   ; Use zero for broadcast address? (or 255.255.255.255)
+   "UseZeroBroadcast"=dword:0
+   ; Thus should be MULTI_SZ, the IP address list
+   "IpAddress"="0.0.0.0"
+   ; This should be MULTI_SZ, the subnet masks for the above IP addresses
+   "Subnetmask"="0.0.0.0"
+
+   ; default TCPIP settings for this instance
+;[HKEY_LOCAL_MACHINE\Comm\Eaglend5SDIO1\Parms\TcpIp]
+   ;"EnableDHCP"=dword:0
+   ; This should be MULTI_SZ
+   ;"DefaultGateway"=""
+   ; Use zero for broadcast address? (or 255.255.255.255)
+   ;"UseZeroBroadcast"=dword:0
+   ; Thus should be MULTI_SZ, the IP address list
+   ;"IpAddress"="192.168.0.99"
+   ; This should be MULTI_SZ, the subnet masks for the above IP addresses
+   ;"Subnetmask"="255.255.255.0"
+
+   ; registry keys for the Streams portion of the driver
+[HKEY_LOCAL_MACHINE\Drivers\SDCARD\ClientDrivers\Custom\MANF-02DF-CARDID-9103-FUNC-1]
+   "Dll"="EAGLEND5SDIO.dll"     ; use the "streams" interface portion to load the NDIS portion
+   "Prefix"="NDL"
+       ; a dd instance key for each instance that can be added
+       ; "InstanceX" = "<Miniport Name>:<Miniport Instance>"
+   "Instance0"="Eaglend5SDIO:Eaglend5SDIO1"      ; first instance - must match \comm\Eaglend5SDIOX 
+   ;"Instance1"="Eaglend5SDIO:Eaglend5SDIO2"      ; second instance
+   
+[HKEY_LOCAL_MACHINE\Comm\Eaglend5SDIO1\Parms]
+   "PowerMode"=dword:0
+   "ExtendedScan"=dword:0
+   "FragThsd"=dword:2000
+   "RTSThsd"=dword:2000

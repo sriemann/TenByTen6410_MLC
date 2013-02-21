@@ -1,0 +1,198 @@
+
+          Davicom DM9000/9000A/9010 Driver for WinCE4.2/5.0/6.0 Release Note
+
+
+      The Davicom DM9000/9000A/9010 NDIS CE miniport device driver is used to be 
+  the network component of the Microsoft WinCE 5.0 enables hardware
+  containing Davicom's ISA Fast Ethernet controller 'DM9000', 'DM9000A' or 'DM9010'.
+    
+      This file describes the procedures of the driver installation. Note that
+  this is not written for end-users.
+
+	  
+CONTENTS:
+
+    dm9000.README         - This README file
+    HISTORY
+    makefile
+    sources
+    dm9isa.def
+    wince.c
+    common.h
+    driver.h
+    device.h
+    dm9isa.h
+    dm_type.h
+    common.cpp
+    driver.cpp
+    device.cpp
+    dm9isa.cpp
+    
+1. Platform
+
+ 	  1.1 CEPC: x86
+ 	  
+ 	  This driver is build based on the BSP for a Windows CE PC¡Vbased 
+  hardware development platform (CEPC). The platform uses the OS that is 
+  built for the x86 architecture.
+
+ 	  1.2 Intel PXA27x Dev Platform:ARMV4I
+ 	  This driver is build based on the BSP for the Intel XScale 
+  Microarchitecture Handheld Development Platform.  The platform uses the OS 
+  that is built for the ARM v4 architecture and contains the ARM instruction 
+  set with Thumb Interworking enabled. 
+ 	  
+ 	  1.3 STPC Atlas: x86
+ 	  
+ 	  This driver is build based on the BSP of The STPC Atlas Information 
+  Appliance Evaluation Kit -- ISA or Local Bus modes -- integrates a standard x86
+  core along with a powerful UMA graphics/video chipset, support logic including 
+  PCI, USB, IDE controllers and standard I/O interfaces.
+  
+2. Build driver
+
+	Copy driver source code to 
+	$(_winceroot)\public\common\oak\drivers\netcard\dm9isa directory
+	
+	Add "dm9isa" to $(_winceroot)\public\common\oak\drivers\netcard\
+	dirs file
+	
+	Open WinCE Platform Builder, and create a new platform by wizard.
+	Then click the menu bar [Build]->[Open Build Release Directory]
+	and pop the DOS window. In the DOS window, change the directory 
+	to $(_winceroot)\public\common\oak\drivers\netcard\dm9isa.
+	ex.
+			cd $(_winceroot)\public\common\oak\drivers\netcard\dm9isa
+	Use command "build -c" to complie and build the driver.
+	ex.
+			$(_winceroot)\public\common\oak\drivers\netcard\dm9isa>build -c
+	
+	Add "dm9isa" target to $(_winceroot)\public\common\cesysgen\makefile file
+	Append "dm9isa" to all "rtl8139" rules or dependencies
+	
+	Add "dm9isa" to $(_winceroot)\public\cebase\oak\misc\winceos.bat file
+	set CE_MODULES= dm9isa %CE_MODULES%
+	
+3. Installation
+
+	3.1 Unzip the zip file and extract them to your project release directory.
+
+	3.2 Add the folloing instruction to your project bib file.
+
+			[WinCE 4.2/5.0]
+  	    MODULES
+	    ;  Name            Path                                    Memory Type
+	    ;  --------------  --------------------------------------  -----------
+	       dm9isa.dll      $(_FLATRELEASEDIR)\dm9isa.dll           NK SH
+	       
+	    [WinCE6.0]
+				MODULES
+	    ;  Name            Path                                    Memory Type
+	    ;  --------------  --------------------------------------  -----------
+	       dm9isa.dll      $(_FLATRELEASEDIR)\dm9isa.dll           NK SHK
+
+
+4. Configuration
+	4.1	In the file project.reg, add the following registry values.
+	<e.g.>
+	
+         [HKEY_LOCAL_MACHINE\Comm\DM9CE]
+             "DisplayName"="DM9000/9000A/9010 ISA Fast Ethernet Adapter"
+             "Group"="NDIS"
+             "ImagePath"="dm9isa.dll"
+
+         [HKEY_LOCAL_MACHINE\Comm\DM9CE\Linkage]
+             "Route"=multi_sz:"DM9CE1"
+
+         [HKEY_LOCAL_MACHINE\Comm\DM9CE1]
+             "DisplayName"="DM9000/9000A/9010 ISA Fast Ethernet Adapter"
+             "Group"="NDIS"
+             "ImagePath"="dm9isa.dll"
+
+         [HKEY_LOCAL_MACHINE\Comm\Tcpip\Linkage]
+             "Bind"="dm9ce1"
+
+         [HKEY_LOCAL_MACHINE\Comm\DM9CE1\Parms]
+						 "BusNumber"=dword:0
+			 			 "BusType"=dword:1
+             "XmitBuffer"=dword:20
+             "RecvBuffer"=dword:20
+             "IrqNumber"=dword:4
+             "SysIntr"=dword:14
+             "IoAddress"=dword:300
+
+         [HKEY_LOCAL_MACHINE\Comm\DM9CE1\Parms\TcpIp]
+             "EnableDHCP"=dword:0
+             "UseZeroBroadcast"=dword:0
+             "DefaultGateway"="x.x.x.x"
+             "IpAddress"="x.x.x.x"
+             "Subnetmask"="x.x.x.x"
+             "DNS"="x.x.x.x"
+             "WINS"="x.x.x.x"
+
+	4.2 TCP/IP configurations
+
+	4.2.1 EnableDHCP
+		Set 1 for DHCP enable, 0 for disable.
+	
+	4.2.2 UseZeroBroadcast
+		Set 1 for use zero broadcast, 0 for not.
+	
+	4.2.3 DefaultGateway
+		Specify your gateway address in x.x.x.x format.
+	
+	4.2.4 IpAddress
+		Specify your IP address in x.x.x.x format.
+	
+	4.2.6 Subnetmask
+		Specify your subnet mask in x.x.x.x format.
+	
+	4.2.6 DNS
+		Specify your domain name server's address in x.x.x.x format.
+	
+	4.2.7 WINS
+		Specify your WINS server's address in x.x.x.x format.
+	
+5. DM9000 Configurables 
+    The DM9000 configurable parameters are located at
+    [HKEY_LOCAL_MACHINE\Comm\DM9CE1\Parms]
+    Their definitions are explained below.
+    
+	5.1 BusType
+	    Type: DWORD
+	    Description: The type of the bus it connects
+	    Valid Values:
+	         0 - Internal
+	         1 - ISA
+	         2 - EISA
+	         3 - MicroChannel
+	         4 - TurboChannel
+	         5 - PCIBus
+
+	5.2 BusNumber
+	    Type: DWORD
+	    Description: The bus number of the device
+	
+	5.3 IrqNumber
+	    Type: DWORD
+	    Description: The IRQ number of the device.
+	
+	5.4 SysIntr
+	    Type: DWORD
+	    Description: The mapped IRQ number of the device
+	    
+	5.4 IoAddress
+	    Type: DWORD
+	    Description: The base I/O address of the device
+	         
+	5.5 XmitBuffer
+	    Type: DWORD
+	    Description: The number of buffers for transmission.
+	         The recommended value is 0x20.
+	         
+	5.6 RecvBuffer
+	    Type: DWORD
+	    Description: The number of buffers for receiption.
+	         The recommended value is 0x20.
+	
+Copyright(C) 2007  

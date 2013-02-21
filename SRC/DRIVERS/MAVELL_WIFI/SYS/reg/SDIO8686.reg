@@ -1,0 +1,67 @@
+    ; registry keys for the Streams portion of the driver
+[HKEY_LOCAL_MACHINE\Drivers\SDCARD\ClientDrivers\Custom\MANF-02DF-CARDID-9103-FUNC-1]
+   "Dll"="SDIO8686.dll"     ; use the "streams" interface portion to load the NDIS portion
+   "Prefix"="NDL"
+       ; a dd instance key for each instance that can be added
+       ; "InstanceX" = "<Miniport Name>:<Miniport Instance>"
+   "Instance0"="SDIO8686:SDIO86861"
+   
+    ; registry keys for the NDIS driver
+[HKEY_LOCAL_MACHINE\Comm\SDIO8686]
+   "DisplayName"="Marvell SDIO8686 Wireless Card"
+   "Group"="NDIS"
+   "ImagePath"="SDIO8686.dll"
+
+[HKEY_LOCAL_MACHINE\Comm\SDIO8686\Linkage]
+   "Route"=multi_sz:"SDIO86861"
+
+    ; instance 1 information
+[HKEY_LOCAL_MACHINE\Comm\SDIO86861]
+   "DisplayName"="Marvell SDIO8686 Wireless Card"
+   "Group"="NDIS"
+   "ImagePath"="SDIO8686.dll"
+	
+    ; instance 1 parameters
+[HKEY_LOCAL_MACHINE\Comm\SDIO86861\Parms]
+   "BusNumber"=dword:0
+   "BusType"=dword:0
+
+    ; TCPIP linkage to instance 1 adapter
+[HKEY_LOCAL_MACHINE\Comm\Tcpip\Linkage]
+    "Bind"=multi_sz:"ppp","SDIO86861"
+   
+    ; setup card parameters
+[HKEY_LOCAL_MACHINE\Comm\SDIO86861\Parms]
+   "PowerMode"=dword:0
+   "ExtendedScan"=dword:1
+   "FragThsd"=dword:2346
+   "RTSThsd"=dword:2346
+       ; following is for BT co-existence testing
+   "BTMode"=dword:0
+   "BTAntennaConfig"=dword:0
+   "BTFrequencyConfig"=dword:0
+   "BTWLANTxPriorityLo"=dword:0
+   "BTWLANTxPriorityHi"=dword:0
+   "BTWLANRxPriorityLo"=dword:0
+   "BTWLANRxPriorityHi"=dword:0
+       ; adhoc starter default channel
+   "AdhocDefaultChannel"=dword:6
+       ; adhoc starter WiFi test datarate modify or not 
+   "AdhocWiFiDataRate"=dword:0
+       ; 4Bit mode
+   "SetSD4BIT"=dword:1
+   "SdioIstThread"=dword:65
+
+    ; default TCPIP settings for this instance
+[HKEY_LOCAL_MACHINE\Comm\SDIO86861\Parms\TcpIp]
+   "EnableDHCP"=dword:1
+       ; This should be MULTI_SZ
+   "DefaultGateway"=""
+       ; Use zero for broadcast address? (or 255.255.255.255)
+   "UseZeroBroadcast"=dword:0
+       ; Thus should be MULTI_SZ, the IP address list
+   "IpAddress"="0.0.0.0"
+       ; This should be MULTI_SZ, the subnet masks for the above IP addresses
+   "Subnetmask"="255.255.255.0"
+
+  

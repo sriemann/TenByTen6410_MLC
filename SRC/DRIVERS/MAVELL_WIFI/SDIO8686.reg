@@ -1,0 +1,172 @@
+;
+;	SDIO8686 registry file
+;	Copyright (C) Marvell Corporation
+;	
+;
+
+; registry keys for the Streams portion of the driver
+[HKEY_LOCAL_MACHINE\Drivers\SDCARD\ClientDrivers\Custom\MANF-02DF-CARDID-9103-FUNC-1]
+   "Dll"="SDIO8686.dll"     		; use the "streams" interface portion to load the NDIS portion
+   "Prefix"="NDL"
+       ; add instance key for each instance that can be added
+   "Instance0"="SDIO8686:SDIO86861"	; "InstanceX" = "<Miniport Name>:<Miniport Instance>"
+   
+;
+;	Registry keys
+;
+
+    ; registry keys for the NDIS driver
+[HKEY_LOCAL_MACHINE\Comm\SDIO8686]
+   "DisplayName"="Marvell SDIO8686 Wireless Card"
+   "Group"="NDIS"
+   "ImagePath"="SDIO8686.dll"
+
+
+[HKEY_LOCAL_MACHINE\Comm\SDIO8686\Linkage]
+   "Route"=multi_sz:"SDIO86861"
+
+    ; instance 1 information
+[HKEY_LOCAL_MACHINE\Comm\SDIO86861]
+   "DisplayName"="Marvell SDIO8686 Wireless Card"
+   "Group"="NDIS"
+   "ImagePath"="SDIO8686.dll"
+	
+    ; instance 1 parameters
+[HKEY_LOCAL_MACHINE\Comm\SDIO86861\Parms]
+   "BusNumber"=dword:0
+   "BusType"=dword:0
+
+    ; TCPIP linkage to instance 1 adapter
+[HKEY_LOCAL_MACHINE\Comm\Tcpip\Linkage]
+    "Bind"=multi_sz:"ppp","SDIO86861"
+   
+    ; setup card parameters
+[HKEY_LOCAL_MACHINE\Comm\SDIO86861\Parms]
+   "UseMfgFw"=dword:0
+   "PowerMode"=dword:0
+   "FragThsd"=dword:92A
+   "RTSThsd"=dword:92A
+       ; following is for BT/WLAN multi-functions driver 1:enable BT/WLAN multi-function driver, 0:WLAN only
+   "BTMode"=dword:0
+       ; adhoc starter default channel
+   "AdhocDefaultChannel"=dword:6
+       ; adhoc starter WiFi test datarate modify or not 
+   "AdhocWiFiDataRate"=dword:0
+       ; adhoc default band, 1:G, 0:B
+   "AdhocDefaultBand"=dword:1
+       ; 1:SDIO 4 bit mode; 0: SDIO 1 bit mode
+   "SetSD4BIT"=dword:0
+       ;Set the priority of SdioIstThread
+   "SdioIstThread"=dword:65
+       ;Set the value of AvoidScanTime after connected
+   "AvoidScanTime"=dword:2710
+       ;Set ACTIVE_ROAMING
+   "bActiveRoamingScanOneChannel"=dword:1
+   "bLinkLostScanOneChannel"=dword:1
+       ;Set NEW_RSSI parameters
+   "ulRSSIThresholdTimer"=dword:1388
+   "RSSI_Range"=dword:A
+       ;Set ACTIVE_ROAMING with BackGround Scan
+   "bActiveRoamingwithBGSCAN"=dword:0
+       ;Set RoamingMode:NOT_ROAMING_MODE = 1(default),ACTIVE_ROAMING_MODE=2,FAST_ROAMING_MODE
+   "RoamingMode"=dword:1
+       ;Set the value of Enable80211D
+   "Enable80211D"=dword:0
+       ;Set the value of LocalListenInterval
+   "LocalListenInterval"=dword:0
+       ;Set support 32bytes ESSID
+   "ESSID_32"=dword:0
+       ;Set the value to use GPIO pin as Interrupt pin, 1:use GPIO pin as interrupt source; 0:used SDIO bus interrupt
+   "SDGPIOIntEnable"=dword:1
+       ;Set the GPIO pin # to be used as Interrupt pin 
+   "GPIOIntPinNumber"=dword:4
+       ;Setup interrupt trigger edge, 0: Rasing edge, 1:Falling edge
+   "GPIOIntTriggerEdge"=dword:1
+       ;Setup interrupt pluse width(us)
+   "GPIOIntPulsewidth"=dword:5
+       ;Set the value of NullPktInterval, 0: unchanged. 
+   "NullPktInterval"=dword:0
+       ;Set the value of MultipleDTim
+   "MultipleDTim"=dword:1
+       ;Set the value of AdhocAwakePeriod
+   "AdhocAwakePeriod"=dword:1
+       ;Set MAC frame type
+   "MacFrameType"=dword:0
+       ;Set Auto Deep Sleep Time, 2 seconds unit.
+   "AutoDeepSleepTime"=dword:0
+       ;Set Association fail retry times while asso. fail.
+   "AssoRetryTimes"=dword:2
+      
+	;
+	;Roaming parameters ++
+	;
+	;Set the value of RoamSignalStrengthThreshold
+	"RoamSignalStrengthThreshold"=dword:2d
+
+	;
+	;Channel list. Valid value is from 0x00000000 ~ 0x00007ff
+	;	=> bit[i]=1, channel[i+1] will be scanned
+	"RoamChannelScanList"=dword:000007ff
+
+	; Scan interval per channel(ms)
+	"RoamMaxScanInterval"=dword:bb8
+	"RoamMinScanInterval"=dword:c8
+
+	;RSSI threshold. If the next AP's RSSI is higher more than this value, roam to that AP
+	"RoamDiffRSSIThreshold"=dword:0f
+
+	;Scan algorithm
+	;	0: Use background scan
+	;	1: Use active scan
+	"RoamScanAlgorithm"=dword:1
+	;
+	;Roaming parameters --
+	;
+
+	;Bus power is on/off in D3
+	"BusPowerInD3"=dword:1
+
+    ; default TCPIP settings for this instance
+[HKEY_LOCAL_MACHINE\Comm\SDIO86861\Parms\TcpIp]
+   "EnableDHCP"=dword:1
+       ; This should be MULTI_SZ
+   "DefaultGateway"=""
+       ; Use zero for broadcast address? (or 255.255.255.255)
+   "UseZeroBroadcast"=dword:0
+       ; Thus should be MULTI_SZ, the IP address list
+   "IpAddress"="0.0.0.0"
+       ; This should be MULTI_SZ, the subnet masks for the above IP addresses
+   "Subnetmask"="255.255.255.0"
+
+IF MRVL_MONOLITHIC_SDIO
+    ; setup monolithic SDIO Bus and SDHC parameters
+[HKEY_LOCAL_MACHINE\Drivers\Builtin\SDIO8686]
+   "Order"=dword:2
+   "Dll"="SDIO8686.dll"
+   "Prefix"="NDL"
+   "Instance0"="SDIO8686:SDIO86861"
+   "ThreadPriority"=dword:64     ; default thread priority for dispatch thread
+   "RequestListDepth"=dword:30   ; pre-allocated requests
+   "IClass"=multi_sz:"{20FA98A8-B298-4b32-8D72-C716AEE2FA84}=%b","{6F40791D-300E-44E4-BC38-E0E63CA8375C}=%b"
+
+    "ControllerIRQ"=dword:17	; IRQ_MMC 23
+    "ControllerISTPriority"=dword:64
+IF BSP_MAINSTONEII
+    "CardDetectIRQ"=dword:20	; IRQ_GPIO0_MMCCD 32
+ELSE
+    "CardDetectIRQ"=dword:28	; IRQ_GPIOXX_MMCCD 40
+ENDIF
+    "CardDetectISTPriority"=dword:65
+    "ClockAlwaysOn"=dword:0
+    "ClockOnIfInterruptsEnabled"=dword:1
+    "ehancePS"=dword:1
+  
+    "DMAChannel"=dword:14 ;comment this out to disable DMA support
+    "DMAIsrDll"="sdhc_dmaisr.dll"
+    "DMAIsrHandler"="SDHC_DMA_ISR"
+    "DMAIRQ"=dword:19		; IRQ_DMAC = 25
+    "DMAISTPriority"=dword:63
+    "DMABufferSize"=dword:10000
+    "MaximumClockFrequency"=dword:1312D00 ; clock rate 989680(10MHz) 1312D00(20MHz)
+ENDIF MRVL_MONOLITHIC_SDIO
+

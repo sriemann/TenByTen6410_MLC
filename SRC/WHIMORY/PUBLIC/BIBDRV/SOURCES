@@ -1,0 +1,23 @@
+!if 0
+    File:   sources
+
+    Author: Janghwan Kim
+
+	COPYRIGHT (c) 2002-2003 SAMSUNG ELECTRONICS CO., LTD. ALL RIGHTS RESERVED
+!endif
+
+TARGETNAME=BIBDrv
+
+TARGETTYPE=DYNLINK
+
+RELEASETYPE=PLATFORM
+
+TARGETLIBS=$(_COMMONSDKROOT)\lib\$(_CPUINDPATH)\coredll.lib		\
+		    ..\..\Lib\$(_TGTCPU)\$(WINCEDEBUG)\BIBDrvIF.lib		\
+			..\..\lib\$(_CPUDEPPATH)\PseudoVFL.lib \
+
+CDEFINES=$(CDEFINES) -DWINCE_OAM
+
+DLLENTRY=BIBDrv_Entry
+
+SOURCES=

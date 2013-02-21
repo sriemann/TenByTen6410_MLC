@@ -1,0 +1,19 @@
+//------------------------------------------------------------------------------
+//
+//  File for localizing platform-specific strings that may be presented to user.
+//
+//------------------------------------------------------------------------------
+
+#define LOC_DISPLAYNAME_COM1	"Serial Cable on COM1:"
+#define LOC_DISPLAYNAME_COM2	"Serial Cable on COM2:"
+#define LOC_DISPLAYNAME_COM3	"Serial Cable on COM3:"
+#define LOC_DISPLAYNAME_COM4	"Serial Cable on COM4:"
+#define LOC_DISPLAYNAME_RAWIR	"Raw IR"
+
+#define LOC_USBFN_MASS_MANUFACTURER		"Samsung"
+#define LOC_USBFN_MASS_PRODUCT			"Generic Mass Storage"
+#define LOC_USBFN_RNDIS_MANUFACTURER	"Samsung"
+#define LOC_USBFN_RNDIS_PRODUCT			"Generic RNDIS"
+#define LOC_USBFN_SERIAL_NAME			"USB Cable:"
+#define LOC_USBFN_SERIAL_MANUFACTURER	"Samsung"
+#define LOC_USBFN_SERIAL_PRODUCT		"Generic USB Serial"

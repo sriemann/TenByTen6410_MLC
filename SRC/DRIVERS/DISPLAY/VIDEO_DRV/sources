@@ -1,0 +1,41 @@
+
+TARGETNAME=s3c6410_Video
+DEFFILE=video_driver.def
+
+TARGETTYPE=DYNLINK
+
+RELEASETYPE=PLATFORM
+
+DLLENTRY=_DllEntryCRTStartup
+
+INCLUDES=$(INCLUDES);..\INC
+
+SOURCELIBS= \
+    $(_TARGETPLATROOT)\lib\$(_CPUINDPATH)\s3c6410_disp_lib.lib            \
+    $(_TARGETPLATROOT)\lib\$(_CPUINDPATH)\s3c6410_ldi_lib.lib                \
+    $(_TARGETPLATROOT)\lib\$(_CPUINDPATH)\s3c6410_post_lib.lib            \
+    $(_TARGETPLATROOT)\lib\$(_CPUINDPATH)\s3c6410_image_rotator_lib.lib    \
+    $(_TARGETPLATROOT)\lib\$(_CPUINDPATH)\s3c6410_tv_scaler_lib.lib        \
+    $(_TARGETPLATROOT)\lib\$(_CPUINDPATH)\s3c6410_tv_encoder_lib.lib
+
+TARGETLIBS= \
+    $(_COMMONSDKROOT)\lib\$(_CPUINDPATH)\coredll.lib    \
+    $(_COMMONOAKROOT)\lib\$(_CPUINDPATH)\ceddk.lib    \
+
+SOURCES= \
+    SVEngine.c        \
+    Interrupt.c        \
+    Power.c            \
+    ResourceAPI.c        \
+    DispConAPI.c        \
+    PostAPI.c            \
+    LocalPathAPI.c    \
+    RotatorAPI.c        \
+    TVScalerAPI.c        \
+    TVEncoderAPI.c    \
+    video_driver.c
+
+!IF "$(DO_TVSUPPORT)" == "1"
+CDEFINES=$(CDEFINES) -DSUPPORT_TV
+!ENDIF
+

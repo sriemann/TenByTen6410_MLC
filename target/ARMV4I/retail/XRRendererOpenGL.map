@@ -1,0 +1,468 @@
+ XRRendererOpenGL
+
+ Timestamp is 5125b2aa (Thu Feb 21 13:37:46 2013)
+
+ Preferred load address is 10000000
+
+ Start         Length     Name                   Class
+ 0001:00000000 00000004H .CRT$XCA                CODE
+ 0001:00000004 00000004H .CRT$XCZ                CODE
+ 0001:00000008 00000004H .CRT$XIA                CODE
+ 0001:0000000c 00000004H .CRT$XIZ                CODE
+ 0001:00000010 00000004H .CRT$XPA                CODE
+ 0001:00000014 00000004H .CRT$XPZ                CODE
+ 0001:00000018 00000004H .CRT$XTA                CODE
+ 0001:0000001c 00000004H .CRT$XTZ                CODE
+ 0001:00000020 00003066H .rdata                  CODE
+ 0001:00003088 0000002dH .rdata$debug            CODE
+ 0001:000030b8 00004ff0H .text                   CODE
+ 0001:000080a8 0000001cH .xdata                  CODE
+ 0001:000080c4 0000003cH .idata$2                CODE
+ 0001:00008100 00000014H .idata$3                CODE
+ 0001:00008114 000001acH .idata$4                CODE
+ 0001:000082c0 00000192H .idata$6                CODE
+ 0001:00008460 00000095H .edata                  CODE
+ 0002:00000000 000001acH .idata$5                DATA
+ 0002:000001b0 00000454H .data                   DATA
+ 0002:00000604 00000074H .bss                    DATA
+ 0003:00000000 00000270H .pdata                  DATA
+
+  Address         Publics by Value              Rva+Base       Lib:Object
+
+ 0000:00000000       ___safe_se_handler_table   00000000     <absolute>
+ 0000:00000000       ___safe_se_handler_count   00000000     <absolute>
+ 0001:00000000       __xc_a                     10001000     corelib0:crt0init.obj
+ 0001:00000004       __xc_z                     10001004     corelib0:crt0init.obj
+ 0001:00000008       __xi_a                     10001008     corelib0:crt0init.obj
+ 0001:0000000c       __xi_z                     1000100c     corelib0:crt0init.obj
+ 0001:00000010       __xp_a                     10001010     corelib0:crt0init.obj
+ 0001:00000014       __xp_z                     10001014     corelib0:crt0init.obj
+ 0001:00000018       __xt_a                     10001018     corelib0:crt0init.obj
+ 0001:0000001c       __xt_z                     1000101c     corelib0:crt0init.obj
+ 0001:0000003c       ??_C@_1CE@GNMFKKJC@?$AAC?$AAr?$AAe?$AAa?$AAt?$AAe?$AAd?$AA?5?$AAO?$AAp?$AAe?$AAn?$AAG?$AAL?$AA?5?$AAC?$AAS?$AA?$AA@ 1000103c     opengldevice.obj
+ 0001:00000060       ??_C@_1EG@PBCFENJM@?$AAC?$AAO?$AAp?$AAe?$AAn?$AAG?$AAL?$AAD?$AAe?$AAv?$AAi?$AAc?$AAe?$AA?3?$AA?3?$AAI?$AAn?$AAi?$AAt?$AAi?$AAa?$AAl?$AAi?$AAz?$AAe?$AAG?$AAl?$AAo?$AAb?$AAa?$AAl?$AAs@ 10001060     opengldevice.obj
+ 0001:000000a8       ??_C@_1EA@MCBNACLA@?$AAC?$AAO?$AAp?$AAe?$AAn?$AAG?$AAL?$AAD?$AAe?$AAv?$AAi?$AAc?$AAe?$AA?3?$AA?3?$AAC?$AAl?$AAe?$AAa?$AAn?$AAu?$AAp?$AAG?$AAl?$AAo?$AAb?$AAa?$AAl?$AAs?$AA?$CI?$AA?$CJ?$AA?$AA@ 100010a8     opengldevice.obj
+ 0001:000000e8       ??_C@_1GG@KHMHNOBG@?$AAC?$AAO?$AAp?$AAe?$AAn?$AAG?$AAL?$AAD?$AAe?$AAv?$AAi?$AAc?$AAe?$AA?3?$AA?3?$AAD?$AAe?$AAi?$AAn?$AAi?$AAt?$AAi?$AAa?$AAl?$AAi?$AAz?$AAe?$AA?$CI?$AA?$CJ?$AA?3?$AA?5?$AA?$CF@ 100010e8     opengldevice.obj
+ 0001:00000150       ??_C@_1EO@IJPBIGDE@?$AAT?$AAh?$AAr?$AAe?$AAa?$AAd?$AA?5?$AA?$FL?$AA0?$AAx?$AA?$CF?$AAx?$AA?$FN?$AA?5?$AAf?$AAr?$AAe?$AAe?$AAi?$AAn?$AAg?$AA?5?$AAe?$AAg?$AAl?$AAD?$AAi?$AAs?$AAp?$AAl?$AAa?$AAy@ 10001150     opengldevice.obj
+ 0001:000001a0       ??_C@_1EO@IMJEGIHF@?$AAT?$AAh?$AAr?$AAe?$AAa?$AAd?$AA?5?$AA?$FL?$AA0?$AAx?$AA?$CF?$AAx?$AA?$FN?$AA?5?$AAf?$AAr?$AAe?$AAe?$AAi?$AAn?$AAg?$AA?5?$AAe?$AAg?$AAl?$AAC?$AAo?$AAn?$AAt?$AAe?$AAx?$AAt@ 100011a0     opengldevice.obj
+ 0001:000001f0       ??_C@_1EO@OLOLLBDD@?$AAT?$AAh?$AAr?$AAe?$AAa?$AAd?$AA?5?$AA?$FL?$AA0?$AAx?$AA?$CF?$AAx?$AA?$FN?$AA?5?$AAf?$AAr?$AAe?$AAe?$AAi?$AAn?$AAg?$AA?5?$AAe?$AAg?$AAl?$AAS?$AAu?$AAr?$AAf?$AAa?$AAc?$AAe@ 100011f0     opengldevice.obj
+ 0001:00000240       ??_C@_1EE@GJJFEBPG@?$AAC?$AAO?$AAp?$AAe?$AAn?$AAG?$AAL?$AAD?$AAe?$AAv?$AAi?$AAc?$AAe?$AA?$FL?$AA?$CF?$AAd?$AA?$FN?$AA?3?$AA?3?$AAD?$AAe?$AAi?$AAn?$AAi?$AAt?$AAi?$AAa?$AAl?$AAi?$AAz?$AAe?$AA?$CI@ 10001240     opengldevice.obj
+ 0001:00000288       ??_C@_1EC@JKPIKLDN@?$AAC?$AAO?$AAp?$AAe?$AAn?$AAG?$AAL?$AAD?$AAe?$AAv?$AAi?$AAc?$AAe?$AA?$FL?$AA?$CF?$AAd?$AA?$FN?$AA?3?$AA?3?$AAA?$AAd?$AAd?$AAR?$AAe?$AAf?$AA?$CI?$AA?5?$AA?$CF?$AAd?$AA?5?$AA?$CJ?$AA?6@ 10001288     opengldevice.obj
+ 0001:000002d0       ??_C@_1FM@FLJCODNK@?$AAC?$AAO?$AAp?$AAe?$AAn?$AAG?$AAL?$AAD?$AAe?$AAv?$AAi?$AAc?$AAe?$AA?$FL?$AA?$CF?$AAd?$AA?$FN?$AA?3?$AA?5?$AAn?$AAo?$AA?5?$AAm?$AAo?$AAr?$AAe?$AA?5?$AAr?$AAe?$AAf?$AAs?$AA?$DL@ 100012d0     opengldevice.obj
+ 0001:00000330       ??_C@_1EE@BPLOKBKM@?$AAC?$AAO?$AAp?$AAe?$AAn?$AAG?$AAL?$AAD?$AAe?$AAv?$AAi?$AAc?$AAe?$AA?$FL?$AA?$CF?$AAd?$AA?$FN?$AA?3?$AA?3?$AAR?$AAe?$AAl?$AAe?$AAa?$AAs?$AAe?$AA?$CI?$AA?5?$AA?$CF?$AAd?$AA?5?$AA?$CJ@ 10001330     opengldevice.obj
+ 0001:00000378       ??_C@_1EG@PEOAENIB@?$AAC?$AAO?$AAp?$AAe?$AAn?$AAG?$AAL?$AAD?$AAe?$AAv?$AAi?$AAc?$AAe?$AA?$FL?$AA?$CF?$AAd?$AA?$FN?$AA?3?$AA?3?$AAR?$AAe?$AAs?$AAi?$AAz?$AAe?$AA?$CI?$AA?5?$AA?$CF?$AAd?$AAx?$AA?$CF?$AAd@ 10001378     opengldevice.obj
+ 0001:000003c0       ??_C@_1EK@PCEJICEA@?$AAC?$AAO?$AAp?$AAe?$AAn?$AAG?$AAL?$AAD?$AAe?$AAv?$AAi?$AAc?$AAe?$AA?$FL?$AA?$CF?$AAd?$AA?$FN?$AA?3?$AA?3?$AAS?$AAe?$AAt?$AAT?$AAe?$AAx?$AAt?$AAu?$AAr?$AAe?$AA?$CI?$AA?5?$AA?$CF@ 100013c0     opengldevice.obj
+ 0001:00000410       ??_C@_1FM@LFDHNOF@?$AAC?$AAO?$AAp?$AAe?$AAn?$AAG?$AAL?$AAD?$AAe?$AAv?$AAi?$AAc?$AAe?$AA?$FL?$AA?$CF?$AAd?$AA?$FN?$AA?3?$AA?3?$AAS?$AAe?$AAt?$AAR?$AAe?$AAn?$AAd?$AAe?$AAr?$AAT?$AAa?$AAr?$AAg@ 10001410     opengldevice.obj
+ 0001:0000046c       ??_C@_15GANGMFKL@?$AA?$CF?$AAs?$AA?$AA@ 1000146c     opengldevice.obj
+ 0001:00000478       ??_C@_1IO@CCMPIHGL@?$AAv?$AAP?$AAo?$AAs?$AA?5?$AA?$CI?$AA?$CF?$AA4?$AA?4?$AA4?$AAf?$AA?0?$AA?5?$AA?$CF?$AA4?$AA?4?$AA4?$AAf?$AA?0?$AA?5?$AA?$CF?$AA4?$AA?4?$AA4?$AAf?$AA?$CJ?$AA?0?$AA?5?$AAv?$AAD?$AAi?$AAf@ 10001478     opengldevice.obj
+ 0001:00000508       ??_C@_1HE@OEDLFJBF@?$AAC?$AAO?$AAp?$AAe?$AAn?$AAG?$AAL?$AAD?$AAe?$AAv?$AAi?$AAc?$AAe?$AA?$FL?$AA?$CF?$AAd?$AA?$FN?$AA?3?$AA?3?$AAD?$AAr?$AAa?$AAw?$AAT?$AAr?$AAi?$AAa?$AAn?$AAg?$AAl?$AAe?$AAS@ 10001508     opengldevice.obj
+ 0001:00000580       ??_C@_1EG@NMMABOHC@?$AAC?$AAO?$AAp?$AAe?$AAn?$AAG?$AAL?$AAD?$AAe?$AAv?$AAi?$AAc?$AAe?$AA?$FL?$AA?$CF?$AAd?$AA?$FN?$AA?3?$AA?3?$AAC?$AAl?$AAe?$AAa?$AAr?$AA?$CI?$AA?5?$AA0?$AAx?$AA?$CF?$AA0?$AA8?$AAx@ 10001580     opengldevice.obj
+ 0001:000005c8       ??_C@_1EM@OCFADIOL@?$AAC?$AAO?$AAp?$AAe?$AAn?$AAG?$AAL?$AAD?$AAe?$AAv?$AAi?$AAc?$AAe?$AA?$FL?$AA?$CF?$AAd?$AA?$FN?$AA?3?$AA?3?$AAP?$AAr?$AAe?$AAs?$AAe?$AAn?$AAt?$AA?$CI?$AA?5?$AAN?$AAO?$AAT?$AAI@ 100015c8     opengldevice.obj
+ 0001:00000618       ??_C@_1FG@LBIBCMPA@?$AAC?$AAO?$AAp?$AAe?$AAn?$AAG?$AAL?$AAD?$AAe?$AAv?$AAi?$AAc?$AAe?$AA?$FL?$AA?$CF?$AAd?$AA?$FN?$AA?3?$AA?3?$AAG?$AAe?$AAt?$AAT?$AAe?$AAx?$AAt?$AAu?$AAr?$AAe?$AAM?$AAe?$AAm@ 10001618     opengldevice.obj
+ 0001:00000670       ??_C@_01CLKCMJKC@?5?$AA@   10001670     opengldevice.obj
+ 0001:00000678       ??_C@_1FO@HCECPEIN@?$AAC?$AAO?$AAp?$AAe?$AAn?$AAG?$AAL?$AAD?$AAe?$AAv?$AAi?$AAc?$AAe?$AA?$FL?$AA?$CF?$AAd?$AA?$FN?$AA?3?$AA?3?$AAI?$AAs?$AAS?$AAu?$AAp?$AAp?$AAo?$AAr?$AAt?$AAe?$AAd?$AAG?$AAL@ 10001678     opengldevice.obj
+ 0001:000006d8       ??_C@_1M@HLGKFCJM@?$AAf?$AAa?$AAl?$AAs?$AAe?$AA?$AA@ 100016d8     opengldevice.obj
+ 0001:000006e4       ??_C@_19FKLFLPMF@?$AAt?$AAr?$AAu?$AAe?$AA?$AA@ 100016e4     opengldevice.obj
+ 0001:000006f0       ??_C@_1CI@BPLNKGBO@?$AAW?$AAO?$AAR?$AAD?$AAA?$AAl?$AAi?$AAg?$AAn?$AAe?$AAd?$AAT?$AAe?$AAx?$AAt?$AAu?$AAr?$AAe?$AAs?$AA?$AA@ 100016f0     opengldevice.obj
+ 0001:00000718       ??_C@_1BK@LNADFFOC@?$AAC?$AAh?$AAe?$AAc?$AAk?$AAe?$AAr?$AAb?$AAo?$AAa?$AAr?$AAd?$AA?$AA@ 10001718     opengldevice.obj
+ 0001:00000734       ??_C@_1BI@IHGOCCOI@?$AA1?$AA6?$AAB?$AAi?$AAt?$AAW?$AAi?$AAn?$AAd?$AAo?$AAw?$AA?$AA@ 10001734     opengldevice.obj
+ 0001:0000074c       ??_C@_1BM@CGLDLBKB@?$AA1?$AA6?$AAB?$AAi?$AAt?$AAT?$AAe?$AAx?$AAt?$AAu?$AAr?$AAe?$AAs?$AA?$AA@ 1000174c     opengldevice.obj
+ 0001:00000768       ??_C@_1EI@GIIOONAJ@?$AAS?$AAO?$AAF?$AAT?$AAW?$AAA?$AAR?$AAE?$AA?2?$AAM?$AAi?$AAc?$AAr?$AAo?$AAs?$AAo?$AAf?$AAt?$AA?2?$AAX?$AAa?$AAm?$AAl?$AAR?$AAe?$AAn?$AAd?$AAe?$AAr?$AAO?$AAp?$AAe@ 10001768     opengldevice.obj
+ 0001:000007b0       ??_C@_1MK@NOCGHCAO@?$AAC?$AAO?$AAp?$AAe?$AAn?$AAG?$AAL?$AAD?$AAe?$AAv?$AAi?$AAc?$AAe?$AA?$FL?$AA?$CF?$AAd?$AA?$FN?$AA?5?$AAt?$AAh?$AAr?$AAe?$AAa?$AAd?$AA?5?$AA?$FL?$AA0?$AAx?$AA?$CF?$AAx?$AA?$FN?$AA?5@ 100017b0     opengldevice.obj
+ 0001:0000087c       ??_C@_1DC@KPLFBLDL@?$AAS?$AAu?$AAr?$AAf?$AAa?$AAc?$AAe?$AA?5?$AA0?$AAx?$AA?$CF?$AA0?$AA8?$AAx?$AA?5?$AA?9?$AA?$DO?$AA?5?$AA0?$AAx?$AA?$CF?$AA0?$AA8?$AAx?$AA?$AA@ 1000187c     opengldevice.obj
+ 0001:000008b0       ??_C@_1DC@NHEMADMB@?$AAD?$AAi?$AAs?$AAp?$AAl?$AAa?$AAy?$AA?5?$AA0?$AAx?$AA?$CF?$AA0?$AA8?$AAx?$AA?5?$AA?9?$AA?$DO?$AA?5?$AA0?$AAx?$AA?$CF?$AA0?$AA8?$AAx?$AA?$AA@ 100018b0     opengldevice.obj
+ 0001:000008e4       ??_C@_1DC@LCHLBAEE@?$AAC?$AAo?$AAn?$AAt?$AAe?$AAx?$AAt?$AA?5?$AA0?$AAx?$AA?$CF?$AA0?$AA8?$AAx?$AA?5?$AA?9?$AA?$DO?$AA?5?$AA0?$AAx?$AA?$CF?$AA0?$AA8?$AAx?$AA?$AA@ 100018e4     opengldevice.obj
+ 0001:00000918       ??_C@_1EM@FGLPGBCN@?$AAC?$AAO?$AAp?$AAe?$AAn?$AAG?$AAL?$AAD?$AAe?$AAv?$AAi?$AAc?$AAe?$AA?$FL?$AA?$CF?$AAd?$AA?$FN?$AA?3?$AA?5?$AAE?$AAG?$AAL?$AA?5?$AAC?$AAO?$AAN?$AAT?$AAE?$AAX?$AAT?$AA?5?$AAS@ 10001918     opengldevice.obj
+ 0001:00000968       ??_C@_1HE@CFGPBEH@?$AAC?$AAO?$AAp?$AAe?$AAn?$AAG?$AAL?$AAD?$AAe?$AAv?$AAi?$AAc?$AAe?$AA?$FL?$AA?$CF?$AAd?$AA?$FN?$AA?5?$AAt?$AAh?$AAr?$AAe?$AAa?$AAd?$AA?5?$AA?$FL?$AA0?$AAx?$AA?$CF?$AAx?$AA?$FN?$AA?5@ 10001968     opengldevice.obj
+ 0001:000009e0       ??_C@_1FI@FDPOOMEB@?$AAT?$AAh?$AAr?$AAe?$AAa?$AAd?$AA?5?$AA?$FL?$AA0?$AAx?$AA?$CF?$AAx?$AA?$FN?$AA?5?$AAr?$AAe?$AAl?$AAe?$AAa?$AAs?$AAe?$AAd?$AA?5?$AAO?$AAp?$AAe?$AAn?$AAG?$AAL?$AA?5?$AAC?$AAS@ 100019e0     opengldevice.obj
+ 0001:00000a38       ??_C@_1IA@BMIMNLKJ@?$AAC?$AAO?$AAp?$AAe?$AAn?$AAG?$AAL?$AAD?$AAe?$AAv?$AAi?$AAc?$AAe?$AA?$FL?$AA?$CF?$AAd?$AA?$FN?$AA?3?$AA?5?$AAm?$AAi?$AAn?$AA?5?$AAR?$AAA?$AAM?$AA?3?$AA?5?$AA?$CF?$AAd?$AA?0?$AA?5@ 10001a38     opengldevice.obj
+ 0001:00000ab8       ??_C@_1LA@JBKKLLBH@?$AAC?$AAO?$AAp?$AAe?$AAn?$AAG?$AAL?$AAD?$AAe?$AAv?$AAi?$AAc?$AAe?$AA?$FL?$AA?$CF?$AAd?$AA?$FN?$AA?3?$AA?5?$AAF?$AAP?$AAS?$AA?3?$AA?5?$AA?$CF?$AA2?$AA?4?$AA2?$AAf?$AA?0?$AA?5?$AAf@ 10001ab8     opengldevice.obj
+ 0001:00000b68       ??_C@_1CC@LPACFDPM@?$AA?$HO?$AAC?$AAO?$AAp?$AAe?$AAn?$AAG?$AAL?$AAD?$AAe?$AAv?$AAi?$AAc?$AAe?$AA?$CI?$AA?$CJ?$AA?$AA@ 10001b68     opengldevice.obj
+ 0001:00000b90       ??_7COpenGLDevice@@6B@     10001b90     opengldevice.obj
+ 0001:00000be0       ??_C@_1FO@FEEHHPLI@?$AAC?$AAO?$AAp?$AAe?$AAn?$AAG?$AAL?$AAD?$AAe?$AAv?$AAi?$AAc?$AAe?$AA?$FL?$AA?$CF?$AAd?$AA?$FN?$AA?3?$AA?3?$AAC?$AAr?$AAe?$AAa?$AAt?$AAe?$AAT?$AAe?$AAx?$AAt?$AAu?$AAr?$AAe@ 10001be0     opengldevice.obj
+ 0001:00000c40       ??_C@_1BI@OGNLPEAL@?$AAD?$AAI?$AAS?$AAC?$AAA?$AAR?$AAD?$AAA?$AAB?$AAL?$AAE?$AA?$AA@ 10001c40     opengldevice.obj
+ 0001:00000c58       ??_C@_1BI@DKDILPKH@?$AAK?$AAE?$AAE?$AAP?$AA?5?$AAO?$AAN?$AA?5?$AAC?$AAP?$AAU?$AA?$AA@ 10001c58     opengldevice.obj
+ 0001:00000c70       ??_C@_1GI@IIIEAPED@?$AAC?$AAO?$AAp?$AAe?$AAn?$AAG?$AAL?$AAD?$AAe?$AAv?$AAi?$AAc?$AAe?$AA?$FL?$AA?$CF?$AAd?$AA?$FN?$AA?3?$AA?3?$AAC?$AAr?$AAe?$AAa?$AAt?$AAe?$AA1?$AA6?$AAB?$AAp?$AAp?$AAT?$AAe@ 10001c70     opengldevice.obj
+ 0001:00000cd8       ??_C@_1DK@GFIBMHHH@?$AAC?$AAO?$AAp?$AAe?$AAn?$AAG?$AAL?$AAD?$AAe?$AAv?$AAi?$AAc?$AAe?$AA?$FL?$AA?$CF?$AAd?$AA?$FN?$AA?3?$AA?3?$AAP?$AAr?$AAe?$AAs?$AAe?$AAn?$AAt?$AA?$CI?$AA?$CJ?$AA?$AA@ 10001cd8     opengldevice.obj
+ 0001:00000d18       ??_C@_1HK@GHBMPFA@?$AAe?$AAg?$AAl?$AAM?$AAa?$AAk?$AAe?$AAC?$AAu?$AAr?$AAr?$AAe?$AAn?$AAt?$AA?$CI?$AA?5?$AAd?$AAi?$AAs?$AAp?$AA?5?$AA0?$AAx?$AA?$CF?$AAx?$AA?0?$AA?5?$AAs?$AAu?$AAr?$AAf?$AA?5@ 10001d18     opengldevice.obj
+ 0001:00000d98       ??_C@_1HG@HMJHOOMJ@?$AAC?$AAO?$AAp?$AAe?$AAn?$AAG?$AAL?$AAD?$AAe?$AAv?$AAi?$AAc?$AAe?$AA?$FL?$AA?$CF?$AAd?$AA?$FN?$AA?5?$AAc?$AAr?$AAe?$AAa?$AAt?$AAe?$AAd?$AA?5?$AAE?$AAG?$AAL?$AA?5?$AAw?$AAi@ 10001d98     opengldevice.obj
+ 0001:00000e10       ??_C@_1KE@DIPAOMEA@?$AAE?$AAR?$AAR?$AAO?$AAR?$AA?3?$AA?5?$AAC?$AAO?$AAp?$AAe?$AAn?$AAG?$AAL?$AAD?$AAe?$AAv?$AAi?$AAc?$AAe?$AA?$FL?$AA?$CF?$AAd?$AA?$FN?$AA?3?$AA?3?$AAC?$AAr?$AAe?$AAa?$AAt?$AAe@ 10001e10     opengldevice.obj
+ 0001:00000eb8       ??_C@_1GE@DILAAOBM@?$AAC?$AAO?$AAp?$AAe?$AAn?$AAG?$AAL?$AAD?$AAe?$AAv?$AAi?$AAc?$AAe?$AA?$FL?$AA?$CF?$AAd?$AA?$FN?$AA?3?$AA?5?$AAP?$AAa?$AAr?$AAe?$AAn?$AAt?$AA?5?$AAw?$AAi?$AAn?$AAd?$AAo?$AAw@ 10001eb8     opengldevice.obj
+ 0001:00000f20       ??_C@_1FE@LLCDGOI@?$AAC?$AAO?$AAp?$AAe?$AAn?$AAG?$AAL?$AAD?$AAe?$AAv?$AAi?$AAc?$AAe?$AA?$FL?$AA?$CF?$AAd?$AA?$FN?$AA?3?$AA?3?$AAC?$AAr?$AAe?$AAa?$AAt?$AAe?$AAD?$AAi?$AAs?$AAp?$AAl?$AAa?$AAy@ 10001f20     opengldevice.obj
+ 0001:00000f74       ??_C@_1DK@PKNLKAF@?$AAF?$AAa?$AAi?$AAl?$AAe?$AAd?$AA?5?$AAt?$AAo?$AA?5?$AAl?$AAo?$AAa?$AAd?$AA?5?$AAb?$AAi?$AAn?$AAa?$AAr?$AAy?$AA?5?$AAs?$AAh?$AAa?$AAd?$AAe?$AAr?$AA?$AA@ 10001f74     opengldevice.obj
+ 0001:00000fb0       ??_C@_1DO@FCNEGFGI@?$AAg?$AAl?$AAS?$AAh?$AAa?$AAd?$AAe?$AAr?$AAB?$AAi?$AAn?$AAa?$AAr?$AAy?$AA?$CI?$AA?$CJ?$AA?3?$AA?5?$AAe?$AAr?$AAr?$AAo?$AAr?$AA?5?$AA?$DN?$AA?5?$AA0?$AAx?$AA?$CF?$AAx?$AA?$AA@ 10001fb0     opengldevice.obj
+ 0001:00000ff0       ??_C@_1CI@PAGNFPPH@?$AAL?$AAo?$AAa?$AAd?$AAi?$AAn?$AAg?$AA?5?$AAs?$AAh?$AAa?$AAd?$AAe?$AAr?$AA?5?$AA?$FL?$AA?$CF?$AAs?$AA?$FN?$AA?$AA@ 10001ff0     opengldevice.obj
+ 0001:00001018       ??_C@_1DG@NFEDGLHK@?$AAF?$AAa?$AAi?$AAl?$AAe?$AAd?$AA?5?$AAt?$AAo?$AA?5?$AAl?$AAo?$AAa?$AAd?$AA?5?$AAs?$AAh?$AAa?$AAd?$AAe?$AAr?$AAs?$AA?4?$AAd?$AAl?$AAl?$AA?$AA@ 10002018     opengldevice.obj
+ 0001:00001050       ??_C@_1BI@OOONMKMJ@?$AAs?$AAh?$AAa?$AAd?$AAe?$AAr?$AAs?$AA?4?$AAd?$AAl?$AAl?$AA?$AA@ 10002050     opengldevice.obj
+ 0001:00001068       ??_C@_1EM@CLIHAKPJ@?$AAC?$AAO?$AAp?$AAe?$AAn?$AAG?$AAL?$AAD?$AAe?$AAv?$AAi?$AAc?$AAe?$AA?$FL?$AA?$CF?$AAd?$AA?$FN?$AA?3?$AA?3?$AAL?$AAo?$AAa?$AAd?$AAS?$AAh?$AAa?$AAd?$AAe?$AAr?$AAB?$AAi?$AAn@ 10002068     opengldevice.obj
+ 0001:000010b4       ??_C@_1CK@JJJEOHOG@?$AAS?$AAh?$AAa?$AAd?$AAe?$AAr?$AA?5?$AAc?$AAo?$AAm?$AAp?$AAi?$AAl?$AAe?$AAd?$AA?5?$AAO?$AAK?$AA?$AN?$AA?6?$AA?$AA@ 100020b4     opengldevice.obj
+ 0001:000010e0       ??_C@_1DG@JEGLKMGH@?$AAC?$AAo?$AAm?$AAp?$AAi?$AAl?$AAe?$AAS?$AAh?$AAa?$AAd?$AAe?$AAr?$AA?3?$AA?5?$AAE?$AAr?$AAr?$AAo?$AAr?$AA?3?$AA?5?$AA?$CF?$AAS?$AA?$AN?$AA?6?$AA?$AA@ 100020e0     opengldevice.obj
+ 0001:00001118       ??_C@_1EG@BIBPKFGA@?$AAC?$AAO?$AAp?$AAe?$AAn?$AAG?$AAL?$AAD?$AAe?$AAv?$AAi?$AAc?$AAe?$AA?$FL?$AA?$CF?$AAd?$AA?$FN?$AA?3?$AA?3?$AAC?$AAo?$AAm?$AAp?$AAi?$AAl?$AAe?$AAS?$AAh?$AAa?$AAd?$AAe?$AAr@ 10002118     opengldevice.obj
+ 0001:00001160       ??_C@_1IM@JMNLIGIE@?$AAF?$AAo?$AAu?$AAn?$AAd?$AA?5?$AAn?$AAo?$AA?5?$AAb?$AAi?$AAn?$AAa?$AAr?$AAy?$AA?5?$AAs?$AAh?$AAa?$AAd?$AAe?$AAr?$AA?5?$AAa?$AAn?$AAd?$AA?5?$AAu?$AAn?$AAa?$AAb?$AAl@ 10002160     opengldevice.obj
+ 0001:000011f0       ??_C@_1FA@ICOAMNKD@?$AAH?$AAa?$AAr?$AAd?$AAw?$AAa?$AAr?$AAe?$AA?5?$AA?$CF?$AAs?$AA?5?$AAr?$AAu?$AAn?$AAt?$AAi?$AAm?$AAe?$AA?5?$AAs?$AAh?$AAa?$AAd?$AAe?$AAr?$AA?5?$AAc?$AAo?$AAm?$AAp?$AAi@ 100021f0     opengldevice.obj
+ 0001:00001240       ??_C@_1CC@FAOJNDO@?$AAd?$AAo?$AAe?$AAs?$AA?5?$AAn?$AAo?$AAt?$AA?5?$AAs?$AAu?$AAp?$AAp?$AAo?$AAr?$AAt?$AA?$AA@ 10002240     opengldevice.obj
+ 0001:00001264       ??_C@_1BC@PHLAKMJD@?$AAs?$AAu?$AAp?$AAp?$AAo?$AAr?$AAt?$AAs?$AA?$AA@ 10002264     opengldevice.obj
+ 0001:00001278       ??_C@_1EM@LILLANPC@?$AAC?$AAO?$AAp?$AAe?$AAn?$AAG?$AAL?$AAD?$AAe?$AAv?$AAi?$AAc?$AAe?$AA?$FL?$AA?$CF?$AAd?$AA?$FN?$AA?3?$AA?3?$AAI?$AAn?$AAi?$AAt?$AAi?$AAa?$AAl?$AAi?$AAz?$AAe?$AAS?$AAh?$AAa@ 10002278     opengldevice.obj
+ 0001:000012c8       ??_C@_1EC@OCJBMNEO@?$AAc?$AAo?$AAn?$AAf?$AAi?$AAg?$AA?$FL?$AA?$CF?$AAd?$AA?$FN?$AA?3?$AA?5?$AAE?$AAG?$AAL?$AA_?$AAS?$AAA?$AAM?$AAP?$AAL?$AAE?$AAS?$AA?5?$AA?$DN?$AA?5?$AA0?$AAx?$AA?$CF?$AAx?$AA?6?$AA?6@ 100022c8     opengldevice.obj
+ 0001:00001310       ??_C@_1EO@IJGHMEEE@?$AAc?$AAo?$AAn?$AAf?$AAi?$AAg?$AA?$FL?$AA?$CF?$AAd?$AA?$FN?$AA?3?$AA?5?$AAE?$AAG?$AAL?$AA_?$AAS?$AAA?$AAM?$AAP?$AAL?$AAE?$AA_?$AAB?$AAU?$AAF?$AAF?$AAE?$AAR?$AAS?$AA?5?$AA?$DN@ 10002310     opengldevice.obj
+ 0001:00001360       ??_C@_1FC@KHADMJFC@?$AAc?$AAo?$AAn?$AAf?$AAi?$AAg?$AA?$FL?$AA?$CF?$AAd?$AA?$FN?$AA?3?$AA?5?$AAE?$AAG?$AAL?$AA_?$AAT?$AAR?$AAA?$AAN?$AAS?$AAP?$AAA?$AAR?$AAE?$AAN?$AAT?$AA_?$AAT?$AAY?$AAP?$AAE@ 10002360     opengldevice.obj
+ 0001:000013b8       ??_C@_1EG@CBKBJDOO@?$AAc?$AAo?$AAn?$AAf?$AAi?$AAg?$AA?$FL?$AA?$CF?$AAd?$AA?$FN?$AA?3?$AA?5?$AAE?$AAG?$AAL?$AA_?$AAS?$AAU?$AAR?$AAF?$AAA?$AAC?$AAE?$AA_?$AAT?$AAY?$AAP?$AAE?$AA?5?$AA?$DN?$AA?5?$AA?$CF@ 100023b8     opengldevice.obj
+ 0001:00001400       ??_C@_1EM@NCNPBOKO@?$AAc?$AAo?$AAn?$AAf?$AAi?$AAg?$AA?$FL?$AA?$CF?$AAd?$AA?$FN?$AA?3?$AA?5?$AAE?$AAG?$AAL?$AA_?$AAR?$AAE?$AAN?$AAD?$AAE?$AAR?$AAA?$AAB?$AAL?$AAE?$AA_?$AAT?$AAY?$AAP?$AAE?$AA?5@ 10002400     opengldevice.obj
+ 0001:00001450       ??_C@_1FC@MMLDECMN@?$AAc?$AAo?$AAn?$AAf?$AAi?$AAg?$AA?$FL?$AA?$CF?$AAd?$AA?$FN?$AA?3?$AA?5?$AAE?$AAG?$AAL?$AA_?$AAN?$AAA?$AAT?$AAI?$AAV?$AAE?$AA_?$AAV?$AAI?$AAS?$AAU?$AAA?$AAL?$AA_?$AAT?$AAY@ 10002450     opengldevice.obj
+ 0001:000014a8       ??_C@_1EO@EHNHDDJP@?$AAc?$AAo?$AAn?$AAf?$AAi?$AAg?$AA?$FL?$AA?$CF?$AAd?$AA?$FN?$AA?3?$AA?5?$AAE?$AAG?$AAL?$AA_?$AAN?$AAA?$AAT?$AAI?$AAV?$AAE?$AA_?$AAV?$AAI?$AAS?$AAU?$AAA?$AAL?$AA_?$AAI?$AAD@ 100024a8     opengldevice.obj
+ 0001:000014f8       ??_C@_1FA@PIBOEICB@?$AAc?$AAo?$AAn?$AAf?$AAi?$AAg?$AA?$FL?$AA?$CF?$AAd?$AA?$FN?$AA?3?$AA?5?$AAE?$AAG?$AAL?$AA_?$AAN?$AAA?$AAT?$AAI?$AAV?$AAE?$AA_?$AAR?$AAE?$AAN?$AAD?$AAE?$AAR?$AAA?$AAB?$AAL@ 100024f8     opengldevice.obj
+ 0001:00001548       ??_C@_1FA@PBEHINJM@?$AAc?$AAo?$AAn?$AAf?$AAi?$AAg?$AA?$FL?$AA?$CF?$AAd?$AA?$FN?$AA?3?$AA?5?$AAE?$AAG?$AAL?$AA_?$AAM?$AAI?$AAN?$AA_?$AAS?$AAW?$AAA?$AAP?$AA_?$AAI?$AAN?$AAT?$AAE?$AAR?$AAV?$AAA@ 10002548     opengldevice.obj
+ 0001:00001598       ??_C@_1FA@IKAJEACJ@?$AAc?$AAo?$AAn?$AAf?$AAi?$AAg?$AA?$FL?$AA?$CF?$AAd?$AA?$FN?$AA?3?$AA?5?$AAE?$AAG?$AAL?$AA_?$AAM?$AAA?$AAX?$AA_?$AAS?$AAW?$AAA?$AAP?$AA_?$AAI?$AAN?$AAT?$AAE?$AAR?$AAV?$AAA@ 10002598     opengldevice.obj
+ 0001:000015e8       ??_C@_1FC@GBFBAIOD@?$AAc?$AAo?$AAn?$AAf?$AAi?$AAg?$AA?$FL?$AA?$CF?$AAd?$AA?$FN?$AA?3?$AA?5?$AAE?$AAG?$AAL?$AA_?$AAM?$AAA?$AAX?$AA_?$AAP?$AAB?$AAU?$AAF?$AAF?$AAE?$AAR?$AA_?$AAP?$AAI?$AAX?$AAE@ 100025e8     opengldevice.obj
+ 0001:00001640       ??_C@_1FC@KHGBKLLI@?$AAc?$AAo?$AAn?$AAf?$AAi?$AAg?$AA?$FL?$AA?$CF?$AAd?$AA?$FN?$AA?3?$AA?5?$AAE?$AAG?$AAL?$AA_?$AAM?$AAA?$AAX?$AA_?$AAP?$AAB?$AAU?$AAF?$AAF?$AAE?$AAR?$AA_?$AAH?$AAE?$AAI?$AAG@ 10002640     opengldevice.obj
+ 0001:00001698       ??_C@_1FA@COFCNIGF@?$AAc?$AAo?$AAn?$AAf?$AAi?$AAg?$AA?$FL?$AA?$CF?$AAd?$AA?$FN?$AA?3?$AA?5?$AAE?$AAG?$AAL?$AA_?$AAM?$AAA?$AAX?$AA_?$AAP?$AAB?$AAU?$AAF?$AAF?$AAE?$AAR?$AA_?$AAW?$AAI?$AAD?$AAT@ 10002698     opengldevice.obj
+ 0001:000016e8       ??_C@_1DI@HMJKHHEA@?$AAc?$AAo?$AAn?$AAf?$AAi?$AAg?$AA?$FL?$AA?$CF?$AAd?$AA?$FN?$AA?3?$AA?5?$AAE?$AAG?$AAL?$AA_?$AAL?$AAE?$AAV?$AAE?$AAL?$AA?5?$AA?$DN?$AA?5?$AA?$CF?$AAd?$AA?6?$AA?$AA@ 100026e8     opengldevice.obj
+ 0001:00001720       ??_C@_1EC@NCIGOJPB@?$AAc?$AAo?$AAn?$AAf?$AAi?$AAg?$AA?$FL?$AA?$CF?$AAd?$AA?$FN?$AA?3?$AA?5?$AAE?$AAG?$AAL?$AA_?$AAD?$AAE?$AAP?$AAT?$AAH?$AA_?$AAS?$AAI?$AAZ?$AAE?$AA?5?$AA?$DN?$AA?5?$AA?$CF?$AAd?$AA?6@ 10002720     opengldevice.obj
+ 0001:00001768       ??_C@_1EC@FPADFMGJ@?$AAc?$AAo?$AAn?$AAf?$AAi?$AAg?$AA?$FL?$AA?$CF?$AAd?$AA?$FN?$AA?3?$AA?5?$AAE?$AAG?$AAL?$AA_?$AAC?$AAO?$AAN?$AAF?$AAO?$AAR?$AAM?$AAA?$AAN?$AAT?$AA?5?$AA?$DN?$AA?5?$AA?$CF?$AAd?$AA?6@ 10002768     opengldevice.obj
+ 0001:000017b0       ??_C@_1EM@GAGOPJPD@?$AAc?$AAo?$AAn?$AAf?$AAi?$AAg?$AA?$FL?$AA?$CF?$AAd?$AA?$FN?$AA?3?$AA?5?$AAE?$AAG?$AAL?$AA_?$AAC?$AAO?$AAN?$AAF?$AAI?$AAG?$AA_?$AAC?$AAA?$AAV?$AAE?$AAA?$AAT?$AA?5?$AA?$DN?$AA?5@ 100027b0     opengldevice.obj
+ 0001:00001800       ??_C@_1FE@IOFOMJCG@?$AAc?$AAo?$AAn?$AAf?$AAi?$AAg?$AA?$FL?$AA?$CF?$AAd?$AA?$FN?$AA?3?$AA?5?$AAE?$AAG?$AAL?$AA_?$AAC?$AAO?$AAL?$AAO?$AAR?$AA_?$AAB?$AAU?$AAF?$AAF?$AAE?$AAR?$AA_?$AAT?$AAY?$AAP@ 10002800     opengldevice.obj
+ 0001:00001858       ??_C@_1FG@CDLKJJIB@?$AAc?$AAo?$AAn?$AAf?$AAi?$AAg?$AA?$FL?$AA?$CF?$AAd?$AA?$FN?$AA?3?$AA?5?$AAE?$AAG?$AAL?$AA_?$AAB?$AAI?$AAN?$AAD?$AA_?$AAT?$AAO?$AA_?$AAT?$AAE?$AAX?$AAT?$AAU?$AAR?$AAE?$AA_@ 10002858     opengldevice.obj
+ 0001:000018b0       ??_C@_1FE@EJFBJBP@?$AAc?$AAo?$AAn?$AAf?$AAi?$AAg?$AA?$FL?$AA?$CF?$AAd?$AA?$FN?$AA?3?$AA?5?$AAE?$AAG?$AAL?$AA_?$AAB?$AAI?$AAN?$AAD?$AA_?$AAT?$AAO?$AA_?$AAT?$AAE?$AAX?$AAT?$AAU?$AAR?$AAE?$AA_@ 100028b0     opengldevice.obj
+ 0001:00001908       ??_C@_1EM@LEDKCNBM@?$AAc?$AAo?$AAn?$AAf?$AAi?$AAg?$AA?$FL?$AA?$CF?$AAd?$AA?$FN?$AA?3?$AA?5?$AAE?$AAG?$AAL?$AA_?$AAA?$AAL?$AAP?$AAH?$AAA?$AA_?$AAM?$AAA?$AAS?$AAK?$AA_?$AAS?$AAI?$AAZ?$AAE?$AA?5@ 10002908     opengldevice.obj
+ 0001:00001958       ??_C@_1EK@LEEOGEKJ@?$AAc?$AAo?$AAn?$AAf?$AAi?$AAg?$AA?$FL?$AA?$CF?$AAd?$AA?$FN?$AA?3?$AA?5?$AAE?$AAG?$AAL?$AA_?$AAL?$AAU?$AAM?$AAI?$AAN?$AAA?$AAN?$AAC?$AAE?$AA_?$AAS?$AAI?$AAZ?$AAE?$AA?5?$AA?$DN@ 10002958     opengldevice.obj
+ 0001:000019a8       ??_C@_1EE@LKLHKHDL@?$AAc?$AAo?$AAn?$AAf?$AAi?$AAg?$AA?$FL?$AA?$CF?$AAd?$AA?$FN?$AA?3?$AA?5?$AAE?$AAG?$AAL?$AA_?$AAB?$AAU?$AAF?$AAF?$AAE?$AAR?$AA_?$AAS?$AAI?$AAZ?$AAE?$AA?5?$AA?$DN?$AA?5?$AA?$CF?$AAd@ 100029a8     opengldevice.obj
+ 0001:000019ec       ??_C@_1DE@CFIMHINF@?$AAc?$AAo?$AAn?$AAf?$AAi?$AAg?$AA?$FL?$AA?$CF?$AAd?$AA?$FN?$AA?3?$AA?5?$AAr?$AA?$CF?$AAd?$AAg?$AA?$CF?$AAd?$AAb?$AA?$CF?$AAd?$AAa?$AA?$CF?$AAd?$AA?6?$AA?$AA@ 100029ec     opengldevice.obj
+ 0001:00001a20       ??_C@_1CI@NLKEBLBN@?$AAC?$AAO?$AAp?$AAe?$AAn?$AAG?$AAL?$AAD?$AAe?$AAv?$AAi?$AAc?$AAe?$AA?$FL?$AA?$CF?$AAd?$AA?$FN?$AA?$CI?$AA?$CJ?$AA?$AA@ 10002a20     opengldevice.obj
+ 0001:00001a48       ??_C@_1GM@NJFIFGOF@?$AAC?$AAO?$AAp?$AAe?$AAn?$AAG?$AAL?$AAD?$AAe?$AAv?$AAi?$AAc?$AAe?$AA?3?$AA?5?$AAE?$AAn?$AAa?$AAb?$AAl?$AAe?$AA?5?$AAc?$AAh?$AAe?$AAc?$AAk?$AAe?$AAr?$AAb?$AAo?$AAa@ 10002a48     opengldevice.obj
+ 0001:00001ab4       ??_C@_0BC@FDOCEFMG@matViewProjection?$AA@ 10002ab4     opengldevice.obj
+ 0001:00001ac8       ??_C@_0BA@CKIEFFDM@useCheckerboard?$AA@ 10002ac8     opengldevice.obj
+ 0001:00001ad8       ??_C@_0BA@BMLEMALN@colorConversion?$AA@ 10002ad8     opengldevice.obj
+ 0001:00001ae8       ??_C@_0BE@FIGPOBGA@inTextureCoordinate?$AA@ 10002ae8     opengldevice.obj
+ 0001:00001afc       ??_C@_09MMNMFAML@inDiffuse?$AA@ 10002afc     opengldevice.obj
+ 0001:00001b08       ??_C@_0L@LKEIBJK@inPosition?$AA@ 10002b08     opengldevice.obj
+ 0001:00001b18       ??_C@_0CEK@PIOCCHAO@precision?5highp?5float?$DL?$AN?6uniform?5@ 10002b18     opengldevice.obj
+ 0001:00001d64       ??_C@_1CC@NJHKGOIP@?$AAD?$AAe?$AAf?$AAa?$AAu?$AAl?$AAt?$AAE?$AAf?$AAf?$AAe?$AAc?$AAt?$AA?4?$AAf?$AAs?$AA?$AA@ 10002d64     opengldevice.obj
+ 0001:00001d88       ??_C@_0CGC@GEGHOEOO@precision?5highp?5float?$DL?$AN?6attribut@ 10002d88     opengldevice.obj
+ 0001:00001fec       ??_C@_1CC@NKKMGMBE@?$AAD?$AAe?$AAf?$AAa?$AAu?$AAl?$AAt?$AAE?$AAf?$AAf?$AAe?$AAc?$AAt?$AA?4?$AAv?$AAs?$AA?$AA@ 10002fec     opengldevice.obj
+ 0001:00002010       ??_C@_1DA@DJDOFB@?$AAB?$AAG?$AAR?$AAA?$AA?5?$AAt?$AAe?$AAx?$AAt?$AAu?$AAr?$AAe?$AAs?$AA?5?$AA?5?$AA?5?$AA?5?$AA?$DN?$AA?5?$AA?$CF?$AAS?$AA?6?$AA?6?$AA?$AA@ 10003010     opengldevice.obj
+ 0001:00002040       ??_C@_02NFLNFON@NO?$AA@    10003040     opengldevice.obj
+ 0001:00002044       ??_C@_03IPHJCBHH@YES?$AA@  10003044     opengldevice.obj
+ 0001:00002048       ??_C@_0M@CIIOFPA@GL_EXT_bgra?$AA@ 10003048     opengldevice.obj
+ 0001:00002054       ??_C@_1CO@KCPCKPA@?$AAG?$AAL?$AA_?$AAM?$AAA?$AAX?$AA_?$AAT?$AAU?$AAs?$AA?5?$AA?5?$AA?5?$AA?5?$AA?5?$AA?5?$AA?5?$AA?$DN?$AA?5?$AA?$CF?$AAd?$AA?6?$AA?$AA@ 10003054     opengldevice.obj
+ 0001:00002084       ??_C@_1CO@DBIPGIE@?$AAG?$AAL?$AA_?$AAS?$AAU?$AAB?$AAP?$AAI?$AAX?$AAE?$AAL?$AA_?$AAB?$AAI?$AAT?$AAS?$AA?5?$AA?$DN?$AA?5?$AA?$CF?$AAd?$AA?6?$AA?$AA@ 10003084     opengldevice.obj
+ 0001:000020b4       ??_C@_1CM@IFMHLFLD@?$AAG?$AAL?$AA_?$AAE?$AAX?$AAT?$AAE?$AAN?$AAS?$AAI?$AAO?$AAN?$AAS?$AA?5?$AA?5?$AA?5?$AA?$DN?$AA?5?$AA?$CF?$AAS?$AA?6?$AA?$AA@ 100030b4     opengldevice.obj
+ 0001:000020e0       ??_C@_1CM@NJBKEJDD@?$AAG?$AAL?$AAS?$AAL?$AA_?$AAV?$AAE?$AAR?$AAS?$AAI?$AAO?$AAN?$AA?5?$AA?5?$AA?5?$AA?5?$AA?$DN?$AA?5?$AA?$CF?$AAS?$AA?6?$AA?$AA@ 100030e0     opengldevice.obj
+ 0001:0000210c       ??_C@_1CM@GBJGENIJ@?$AAG?$AAL?$AA_?$AAV?$AAE?$AAR?$AAS?$AAI?$AAO?$AAN?$AA?5?$AA?5?$AA?5?$AA?5?$AA?5?$AA?5?$AA?$DN?$AA?5?$AA?$CF?$AAS?$AA?6?$AA?$AA@ 1000310c     opengldevice.obj
+ 0001:00002138       ??_C@_1CM@NGHFMLPN@?$AAG?$AAL?$AA_?$AAR?$AAE?$AAN?$AAD?$AAE?$AAR?$AAE?$AAR?$AA?5?$AA?5?$AA?5?$AA?5?$AA?5?$AA?$DN?$AA?5?$AA?$CF?$AAS?$AA?6?$AA?$AA@ 10003138     opengldevice.obj
+ 0001:00002164       ??_C@_1CM@DFKOLOIB@?$AAG?$AAL?$AA_?$AAV?$AAE?$AAN?$AAD?$AAO?$AAR?$AA?5?$AA?5?$AA?5?$AA?5?$AA?5?$AA?5?$AA?5?$AA?$DN?$AA?5?$AA?$CF?$AAS?$AA?6?$AA?$AA@ 10003164     opengldevice.obj
+ 0001:00002190       ??_C@_1EK@CEEONHPD@?$AAC?$AAO?$AAp?$AAe?$AAn?$AAG?$AAL?$AAD?$AAe?$AAv?$AAi?$AAc?$AAe?$AA?$FL?$AA?$CF?$AAd?$AA?$FN?$AA?3?$AA?3?$AAI?$AAn?$AAi?$AAt?$AAi?$AAa?$AAl?$AAi?$AAz?$AAe?$AAS?$AAt?$AAa@ 10003190     opengldevice.obj
+ 0001:000021dc       ??_C@_1DA@IDJCPLNL@?$AAC?$AAO?$AAp?$AAe?$AAn?$AAG?$AAL?$AAD?$AAe?$AAv?$AAi?$AAc?$AAe?$AA?3?$AA?3?$AAC?$AAr?$AAe?$AAa?$AAt?$AAe?$AA?$CI?$AA?$CJ?$AA?$AA@ 100031dc     opengldevice.obj
+ 0001:00002210       ??_C@_1FM@OAJDAAC@?$AAE?$AAR?$AAR?$AAO?$AAR?$AA?3?$AA?5?$AAC?$AAO?$AAp?$AAe?$AAn?$AAG?$AAL?$AAD?$AAe?$AAv?$AAi?$AAc?$AAe?$AA?3?$AA?3?$AAI?$AAn?$AAi?$AAt?$AAi?$AAa?$AAl?$AAi?$AAz?$AAe@ 10003210     opengldevice.obj
+ 0001:00002270       ??_C@_1EM@EKOBDOAJ@?$AAT?$AAh?$AAr?$AAe?$AAa?$AAd?$AA?5?$AA?$FL?$AA0?$AAx?$AA?$CF?$AAx?$AA?$FN?$AA?5?$AAc?$AAr?$AAe?$AAa?$AAt?$AAe?$AAd?$AA?5?$AAe?$AAg?$AAl?$AAS?$AAu?$AAr?$AAf?$AAa?$AAc?$AAe@ 10003270     opengldevice.obj
+ 0001:000022c0       ??_C@_1EM@LOBKNHCK@?$AAT?$AAh?$AAr?$AAe?$AAa?$AAd?$AA?5?$AA?$FL?$AA0?$AAx?$AA?$CF?$AAx?$AA?$FN?$AA?5?$AAc?$AAr?$AAe?$AAa?$AAt?$AAe?$AAd?$AA?5?$AAe?$AAg?$AAl?$AAC?$AAo?$AAn?$AAt?$AAe?$AAx?$AAt@ 100032c0     opengldevice.obj
+ 0001:00002310       ??_C@_1EM@EBOBHGID@?$AAE?$AAR?$AAR?$AAO?$AAR?$AA?3?$AA?5?$AAe?$AAg?$AAl?$AAC?$AAr?$AAe?$AAa?$AAt?$AAe?$AAC?$AAo?$AAn?$AAt?$AAe?$AAx?$AAt?$AA?$CI?$AA?$CJ?$AA?0?$AA?5?$AAe?$AAr?$AAr?$AA?5?$AA?$DN@ 10003310     opengldevice.obj
+ 0001:00002368       ??_C@_1JA@HKGOBHPP@?$AAE?$AAR?$AAR?$AAO?$AAR?$AA?3?$AA?5?$AAC?$AAO?$AAp?$AAe?$AAn?$AAG?$AAL?$AAD?$AAe?$AAv?$AAi?$AAc?$AAe?$AA?$FL?$AA?$CF?$AAd?$AA?$FN?$AA?3?$AA?3?$AAI?$AAn?$AAi?$AAt?$AAi?$AAa@ 10003368     opengldevice.obj
+ 0001:000023f8       ??_C@_1CI@PHNLOJMI@?$AAU?$AAs?$AAi?$AAn?$AAg?$AA?5?$AA1?$AA6?$AAb?$AAp?$AAp?$AA?5?$AAc?$AAo?$AAn?$AAf?$AAi?$AAg?$AA?3?$AA?$AA@ 100033f8     opengldevice.obj
+ 0001:00002420       ??_C@_1CI@NOCEIFCM@?$AAU?$AAs?$AAi?$AAn?$AAg?$AA?5?$AA3?$AA2?$AAb?$AAp?$AAp?$AA?5?$AAc?$AAo?$AAn?$AAf?$AAi?$AAg?$AA?3?$AA?$AA@ 10003420     opengldevice.obj
+ 0001:00002448       ??_C@_1FC@INIKEHPG@?$AAC?$AAo?$AAn?$AAf?$AAi?$AAg?$AAu?$AAr?$AAa?$AAt?$AAi?$AAo?$AAn?$AAs?$AA?5?$AAs?$AAu?$AAp?$AAp?$AAo?$AAr?$AAt?$AAe?$AAd?$AA?5?$AAb?$AAy?$AA?5?$AAt?$AAh?$AAi?$AAs@ 10003448     opengldevice.obj
+ 0001:000024a0       ??_C@_1EM@LHJBNGHC@?$AAT?$AAh?$AAr?$AAe?$AAa?$AAd?$AA?5?$AA?$FL?$AA0?$AAx?$AA?$CF?$AAx?$AA?$FN?$AA?5?$AAc?$AAr?$AAe?$AAa?$AAt?$AAe?$AAd?$AA?5?$AAe?$AAg?$AAl?$AAD?$AAi?$AAs?$AAp?$AAl?$AAa?$AAy@ 100034a0     opengldevice.obj
+ 0001:000024ec       ??_C@_1DO@BGBNDAPJ@?$AAE?$AAR?$AAR?$AAO?$AAR?$AA?3?$AA?5?$AAe?$AAg?$AAl?$AAG?$AAe?$AAt?$AAD?$AAi?$AAs?$AAp?$AAl?$AAa?$AAy?$AA?$CI?$AA?$CJ?$AA?5?$AAf?$AAa?$AAi?$AAl?$AAe?$AAd?$AA?4?$AA?$AA@ 100034ec     opengldevice.obj
+ 0001:00002530       ??_C@_1EA@BOJIPMLF@?$AAC?$AAO?$AAp?$AAe?$AAn?$AAG?$AAL?$AAD?$AAe?$AAv?$AAi?$AAc?$AAe?$AA?$FL?$AA?$CF?$AAd?$AA?$FN?$AA?3?$AA?3?$AAI?$AAn?$AAi?$AAt?$AAi?$AAa?$AAl?$AAi?$AAz?$AAe?$AA?$CI?$AA?$CJ?$AA?$AA@ 10003530     opengldevice.obj
+ 0001:00002570       ??_C@_1HC@GEOKCAEK@?$AAC?$AAO?$AAp?$AAe?$AAn?$AAG?$AAL?$AAS?$AAu?$AAr?$AAf?$AAa?$AAc?$AAe?$AA?$FL?$AA?$CF?$AA3?$AAd?$AA?$FN?$AA?3?$AA?3?$AAD?$AAe?$AAi?$AAn?$AAi?$AAt?$AAi?$AAa?$AAl?$AAi?$AAz@ 10003570     openglsurface.obj
+ 0001:000025e8       ??_C@_1EI@CIJMAPBB@?$AAC?$AAO?$AAp?$AAe?$AAn?$AAG?$AAL?$AAS?$AAu?$AAr?$AAf?$AAa?$AAc?$AAe?$AA?$FL?$AA?$CF?$AA3?$AAd?$AA?$FN?$AA?3?$AA?3?$AAD?$AAe?$AAi?$AAn?$AAi?$AAt?$AAi?$AAa?$AAl?$AAi?$AAz@ 100035e8     openglsurface.obj
+ 0001:00002630       ??_C@_1DM@IJDLMGMN@?$AAC?$AAO?$AAp?$AAe?$AAn?$AAG?$AAL?$AAS?$AAu?$AAr?$AAf?$AAa?$AAc?$AAe?$AA?$FL?$AA?$CF?$AA3?$AAd?$AA?$FN?$AA?3?$AA?3?$AAA?$AAd?$AAd?$AAR?$AAe?$AAf?$AA?$CI?$AA?$CJ?$AA?$AA@ 10003630     openglsurface.obj
+ 0001:00002670       ??_C@_1FG@PLKBJMGP@?$AAC?$AAO?$AAp?$AAe?$AAn?$AAG?$AAL?$AAS?$AAu?$AAr?$AAf?$AAa?$AAc?$AAe?$AA?3?$AA?5?$AAn?$AAo?$AA?5?$AAm?$AAo?$AAr?$AAe?$AA?5?$AAr?$AAe?$AAf?$AAs?$AA?$DL?$AA?5?$AAc?$AAl@ 10003670     openglsurface.obj
+ 0001:000026c8       ??_C@_1DO@HHBJPDHG@?$AAC?$AAO?$AAp?$AAe?$AAn?$AAG?$AAL?$AAS?$AAu?$AAr?$AAf?$AAa?$AAc?$AAe?$AA?$FL?$AA?$CF?$AA3?$AAd?$AA?$FN?$AA?3?$AA?3?$AAR?$AAe?$AAl?$AAe?$AAa?$AAs?$AAe?$AA?$CI?$AA?$CJ?$AA?$AA@ 100036c8     openglsurface.obj
+ 0001:00002708       ??_C@_1DM@HHEHLLLF@?$AAC?$AAO?$AAp?$AAe?$AAn?$AAG?$AAL?$AAS?$AAu?$AAr?$AAf?$AAa?$AAc?$AAe?$AA?$FL?$AA?$CF?$AA3?$AAd?$AA?$FN?$AA?3?$AA?3?$AAU?$AAn?$AAl?$AAo?$AAc?$AAk?$AA?$CI?$AA?$CJ?$AA?$AA@ 10003708     openglsurface.obj
+ 0001:00002748       ??_C@_1FA@DNONDKIG@?$AAC?$AAO?$AAp?$AAe?$AAn?$AAG?$AAL?$AAS?$AAu?$AAr?$AAf?$AAa?$AAc?$AAe?$AA?$FL?$AA?$CF?$AA3?$AAd?$AA?$FN?$AA?3?$AA?3?$AAP?$AAr?$AAe?$AAs?$AAe?$AAn?$AAt?$AA?$CI?$AA?5?$AAN?$AAO@ 10003748     openglsurface.obj
+ 0001:00002798       ??_C@_1GA@GDLKCDMO@?$AAC?$AAO?$AAp?$AAe?$AAn?$AAG?$AAL?$AAS?$AAu?$AAr?$AAf?$AAa?$AAc?$AAe?$AA?$FL?$AA?$CF?$AA3?$AAd?$AA?$FN?$AA?3?$AA?3?$AAA?$AAd?$AAd?$AAD?$AAi?$AAr?$AAt?$AAy?$AA?$CI?$AA?5?$AA?$CF@ 10003798     openglsurface.obj
+ 0001:000027f8       ??_C@_1EC@DJKBPKNB@?$AAC?$AAO?$AAp?$AAe?$AAn?$AAG?$AAL?$AAS?$AAu?$AAr?$AAf?$AAa?$AAc?$AAe?$AA?3?$AA?3?$AAC?$AAO?$AAp?$AAe?$AAn?$AAG?$AAL?$AAS?$AAu?$AAr?$AAf?$AAa?$AAc?$AAe?$AA?$CI?$AA?$CJ@ 100037f8     openglsurface.obj
+ 0001:00002840       ??_7COpenGLSurface@@6B@    10003840     openglsurface.obj
+ 0001:00002880       ??_C@_1CO@JFOKLECL@?$AA?$HO?$AAC?$AAO?$AAp?$AAe?$AAn?$AAG?$AAL?$AAS?$AAu?$AAr?$AAf?$AAa?$AAc?$AAe?$AA?$FL?$AA?$CF?$AA3?$AAd?$AA?$FN?$AA?$CI?$AA?$CJ?$AA?$AA@ 10003880     openglsurface.obj
+ 0001:000028b0       ??_C@_1FE@PLDDNHDG@?$AAC?$AAO?$AAp?$AAe?$AAn?$AAG?$AAL?$AAS?$AAu?$AAr?$AAf?$AAa?$AAc?$AAe?$AA?$FL?$AA?$CF?$AA3?$AAd?$AA?$FN?$AA?3?$AA?5?$AAc?$AAr?$AAe?$AAa?$AAt?$AAe?$AAd?$AA?5?$AA?$CF?$AAd?$AA?5@ 100038b0     openglsurface.obj
+ 0001:00002908       ??_C@_1EA@JNILANAM@?$AAC?$AAO?$AAp?$AAe?$AAn?$AAG?$AAL?$AAS?$AAu?$AAr?$AAf?$AAa?$AAc?$AAe?$AA?$FL?$AA?$CF?$AA3?$AAd?$AA?$FN?$AA?3?$AA?5?$AA3?$AA2?$AAb?$AAi?$AAt?$AA?5?$AAR?$AAG?$AAB?$AAA?$AA?$AA@ 10003908     openglsurface.obj
+ 0001:00002948       ??_C@_1EA@LJPDIOHP@?$AAC?$AAO?$AAp?$AAe?$AAn?$AAG?$AAL?$AAS?$AAu?$AAr?$AAf?$AAa?$AAc?$AAe?$AA?$FL?$AA?$CF?$AA3?$AAd?$AA?$FN?$AA?3?$AA?5?$AA3?$AA2?$AAb?$AAi?$AAt?$AA?5?$AAB?$AAG?$AAR?$AAA?$AA?$AA@ 10003948     openglsurface.obj
+ 0001:00002988       ??_C@_1EG@IPOAKMMD@?$AAC?$AAO?$AAp?$AAe?$AAn?$AAG?$AAL?$AAS?$AAu?$AAr?$AAf?$AAa?$AAc?$AAe?$AA?$FL?$AA?$CF?$AA3?$AAd?$AA?$FN?$AA?3?$AA?5?$AA1?$AA6?$AAb?$AAi?$AAt?$AA?5?$AAR?$AAG?$AAB?$AA?5?$AA5@ 10003988     openglsurface.obj
+ 0001:000029d0       ??_C@_1KC@EDMLCBKF@?$AAE?$AAR?$AAR?$AAO?$AAR?$AA?3?$AA?5?$AAC?$AAO?$AAp?$AAe?$AAn?$AAG?$AAL?$AAS?$AAu?$AAr?$AAf?$AAa?$AAc?$AAe?$AA?3?$AA?3?$AAI?$AAn?$AAi?$AAt?$AAi?$AAa?$AAl?$AAi?$AAz@ 100039d0     openglsurface.obj
+ 0001:00002a78       ??_C@_1FO@PKKNGAMO@?$AAC?$AAO?$AAp?$AAe?$AAn?$AAG?$AAL?$AAS?$AAu?$AAr?$AAf?$AAa?$AAc?$AAe?$AA?3?$AA?3?$AAI?$AAn?$AAi?$AAt?$AAi?$AAa?$AAl?$AAi?$AAz?$AAe?$AA?$CI?$AAf?$AAR?$AAe?$AAn?$AAd@ 10003a78     openglsurface.obj
+ 0001:00002ad8       ??_C@_1GM@PJNNMGNC@?$AAC?$AAO?$AAp?$AAe?$AAn?$AAG?$AAL?$AAS?$AAu?$AAr?$AAf?$AAa?$AAc?$AAe?$AA?$FL?$AA?$CF?$AA3?$AAd?$AA?$FN?$AA?3?$AA?3?$AAL?$AAo?$AAc?$AAk?$AA?$CI?$AA?5?$AA0?$AAx?$AA?$CF?$AA0?$AA8@ 10003ad8     openglsurface.obj
+ 0001:00002b48       ??_C@_1LO@PNGMKPJO@?$AAC?$AAO?$AAp?$AAe?$AAn?$AAG?$AAL?$AAS?$AAu?$AAr?$AAf?$AAa?$AAc?$AAe?$AA?$FL?$AA?$CF?$AA3?$AAd?$AA?$FN?$AA?5?$AA?$CF?$AA3?$AAd?$AA?5?$AAx?$AA?5?$AA?$CF?$AA3?$AAd?$AA?5?$AAb?$AAe@ 10003b48     openglsurface.obj
+ 0001:00002c08       ??_C@_1DO@FABGKKBA@?$AAC?$AAO?$AAp?$AAe?$AAn?$AAG?$AAL?$AAS?$AAu?$AAr?$AAf?$AAa?$AAc?$AAe?$AA?$FL?$AA?$CF?$AA3?$AAd?$AA?$FN?$AA?3?$AA?3?$AAP?$AAr?$AAe?$AAs?$AAe?$AAn?$AAt?$AA?$CI?$AA?$CJ?$AA?$AA@ 10003c08     openglsurface.obj
+ 0001:00002c48       ??_C@_1IA@HMAPGEPI@?$AAE?$AAR?$AAR?$AAO?$AAR?$AA?3?$AA?5?$AAC?$AAO?$AAp?$AAe?$AAn?$AAG?$AAL?$AAS?$AAu?$AAr?$AAf?$AAa?$AAc?$AAe?$AA?3?$AA?3?$AAC?$AAr?$AAe?$AAa?$AAt?$AAe?$AA?$CI?$AA?$CJ?$AA?3@ 10003c48     openglsurface.obj
+ 0001:00002cc8       ??_C@_1DC@PLLPNBHP@?$AAC?$AAO?$AAp?$AAe?$AAn?$AAG?$AAL?$AAS?$AAu?$AAr?$AAf?$AAa?$AAc?$AAe?$AA?3?$AA?3?$AAC?$AAr?$AAe?$AAa?$AAt?$AAe?$AA?$CI?$AA?$CJ?$AA?$AA@ 10003cc8     openglsurface.obj
+ 0001:00002d00       ??_C@_1FI@OPJFLAML@?$AAC?$AAO?$AAp?$AAe?$AAn?$AAG?$AAL?$AAR?$AAe?$AAn?$AAd?$AAe?$AAr?$AAe?$AAr?$AA?3?$AA?5?$AAn?$AAo?$AA?5?$AAm?$AAo?$AAr?$AAe?$AA?5?$AAr?$AAe?$AAf?$AAs?$AA?$DL?$AA?5?$AAc@ 10003d00     openglrenderer.obj
+ 0001:00002d58       ??_C@_1GI@LOLLJDMF@?$AAC?$AAO?$AAp?$AAe?$AAn?$AAG?$AAL?$AAR?$AAe?$AAn?$AAd?$AAe?$AAr?$AAe?$AAr?$AA?3?$AA?3?$AAF?$AAr?$AAe?$AAe?$AAR?$AAe?$AAs?$AAo?$AAu?$AAr?$AAc?$AAe?$AAs?$AA?3?$AA?5@ 10003d58     openglrenderer.obj
+ 0001:00002dc0       ??_C@_1EC@JKGDAFHF@?$AAC?$AAO?$AAp?$AAe?$AAn?$AAG?$AAL?$AAR?$AAe?$AAn?$AAd?$AAe?$AAr?$AAe?$AAr?$AA?3?$AA?3?$AAF?$AAr?$AAe?$AAe?$AAR?$AAe?$AAs?$AAo?$AAu?$AAr?$AAc?$AAe?$AAs?$AA?$CI?$AA?$CJ@ 10003dc0     openglrenderer.obj
+ 0001:00002e04       ??_C@_1DC@DKOAMJEK@?$AAC?$AAO?$AAp?$AAe?$AAn?$AAG?$AAL?$AAR?$AAe?$AAn?$AAd?$AAe?$AAr?$AAe?$AAr?$AA?3?$AA?3?$AAR?$AAe?$AAs?$AAe?$AAt?$AA?$CI?$AA?$CJ?$AA?$AA@ 10003e04     openglrenderer.obj
+ 0001:00002e38       ??_C@_1FI@ICFLBJKG@?$AAC?$AAO?$AAp?$AAe?$AAn?$AAG?$AAL?$AAR?$AAe?$AAn?$AAd?$AAe?$AAr?$AAe?$AAr?$AA?3?$AA?5?$AA?9?$AA?5?$AAR?$AAe?$AAn?$AAd?$AAe?$AAr?$AAP?$AAl?$AAu?$AAg?$AAi?$AAn?$AAI@ 10003e38     openglrenderer.obj
+ 0001:00002e90       ??_C@_1FA@PEAJNHNP@?$AAC?$AAO?$AAp?$AAe?$AAn?$AAG?$AAL?$AAR?$AAe?$AAn?$AAd?$AAe?$AAr?$AAe?$AAr?$AA?5?$AA?9?$AA?5?$AAR?$AAe?$AAn?$AAd?$AAe?$AAr?$AAP?$AAl?$AAu?$AAg?$AAi?$AAn?$AAC?$AAl@ 10003e90     openglrenderer.obj
+ 0001:00002ee0       ??_7COpenGLRenderer@@6B@   10003ee0     openglrenderer.obj
+ 0001:00002f00       ??_C@_1DE@LIJGDOB@?$AAC?$AAO?$AAp?$AAe?$AAn?$AAG?$AAL?$AAR?$AAe?$AAn?$AAd?$AAe?$AAr?$AAe?$AAr?$AA?3?$AA?3?$AAC?$AAr?$AAe?$AAa?$AAt?$AAe?$AA?$CI?$AA?$CJ?$AA?$AA@ 10003f00     openglrenderer.obj
+ 0001:00002f38       ??_C@_1HA@PFIEJFKE@?$AAC?$AAO?$AAp?$AAe?$AAn?$AAG?$AAL?$AAR?$AAe?$AAn?$AAd?$AAe?$AAr?$AAe?$AAr?$AA?3?$AA?5?$AAF?$AAa?$AAi?$AAl?$AAu?$AAr?$AAe?$AA?5?$AAt?$AAo?$AA?5?$AAc?$AAr?$AAe?$AAa@ 10003f38     openglrenderer.obj
+ 0001:00002fa8       ??_C@_1FG@FMCCIMNE@?$AAC?$AAO?$AAp?$AAe?$AAn?$AAG?$AAL?$AAR?$AAe?$AAn?$AAd?$AAe?$AAr?$AAe?$AAr?$AA?3?$AA?3?$AAP?$AAr?$AAe?$AAR?$AAe?$AAn?$AAd?$AAe?$AAr?$AA?$CI?$AA?$CJ?$AA?5?$AAT?$AAh?$AAr@ 10003fa8     openglrenderer.obj
+ 0001:00003000       ??_C@_1DM@BNLCFCNM@?$AAC?$AAO?$AAp?$AAe?$AAn?$AAG?$AAL?$AAR?$AAe?$AAn?$AAd?$AAe?$AAr?$AAe?$AAr?$AA?3?$AA?3?$AAP?$AAo?$AAs?$AAt?$AAR?$AAe?$AAn?$AAd?$AAe?$AAr?$AA?$CI?$AA?$CJ?$AA?$AA@ 10004000     openglrenderer.obj
+ 0001:00003040       ??_C@_1EG@DPGOFLHJ@?$AAC?$AAO?$AAp?$AAe?$AAn?$AAG?$AAL?$AAR?$AAe?$AAn?$AAd?$AAe?$AAr?$AAe?$AAr?$AA?5?$AA?9?$AA?5?$AAC?$AAr?$AAe?$AAa?$AAt?$AAe?$AAR?$AAe?$AAn?$AAd?$AAe?$AAr?$AAe?$AAr@ 10004040     openglrenderer.obj
+ 0001:000030b8       DllMain                    100040b8 f   dllentry.obj
+ 0001:000030f4       ?InitializeGlobals@COpenGLDevice@@SAJXZ 100040f4 f   opengldevice.obj
+ 0001:00003158       ?CleanupGlobals@COpenGLDevice@@SAXXZ 10004158 f   opengldevice.obj
+ 0001:000031b0       ?Deinitialize@COpenGLDevice@@EAAXXZ 100041b0 f   opengldevice.obj
+ 0001:00003390       ?AddRef@COpenGLDevice@@UAAIXZ 10004390 f   opengldevice.obj
+ 0001:000033dc       ?Release@COpenGLDevice@@UAAIXZ 100043dc f   opengldevice.obj
+ 0001:00003468       ?Resize@COpenGLDevice@@UAAJII@Z 10004468 f   opengldevice.obj
+ 0001:000036b0       ?SetTexture@COpenGLDevice@@UAAJIPAUICustomSurface@@@Z 100046b0 f   opengldevice.obj
+ 0001:000036f0       ?SetRenderTarget@COpenGLDevice@@UAAJPAUICustomSurface@@@Z 100046f0 f   opengldevice.obj
+ 0001:00003728       ?DrawTriangleStrip@COpenGLDevice@@UAAJPAUXRVertex@@I@Z 10004728 f   opengldevice.obj
+ 0001:00003a5c       ?Clear@COpenGLDevice@@UAAJI@Z 10004a5c f   opengldevice.obj
+ 0001:00003b90       ?Present@COpenGLDevice@@UAAJUXRRECT_WH@@0I@Z 10004b90 f   opengldevice.obj
+ 0001:00003bc0       ?GetTextureMemoryUsage@COpenGLDevice@@UAAJPAI0@Z 10004bc0 f   opengldevice.obj
+ 0001:00003c20       ?FindExtString@COpenGLDevice@@ABAHPBD0@Z 10004c20 f   opengldevice.obj
+ 0001:00003c9c       ?IsSupportedGLExt@COpenGLDevice@@QAAHPBD@Z 10004c9c f   opengldevice.obj
+ 0001:00003d54       ?GetRegistryOptions@COpenGLDevice@@AAAXXZ 10004d54 f   opengldevice.obj
+ 0001:00003eb4       ?Lock@COpenGLDevice@@UAAJXZ 10004eb4 f   opengldevice.obj
+ 0001:000041b8       ?Unlock@COpenGLDevice@@UAAJXZ 100051b8 f   opengldevice.obj
+ 0001:00004220       ?PrintPerfStats@COpenGLDevice@@AAAXXZ 10005220 f   opengldevice.obj
+ 0001:000043a0       ??1COpenGLDevice@@EAA@XZ   100053a0 f   opengldevice.obj
+ 0001:000043e0       ?IsHardwareComposited@COpenGLDevice@@UAA_NXZ 100053e0 f i opengldevice.obj
+ 0001:000043e8       ?CreateTexture@COpenGLDevice@@UAAJHIIHPAPAUICustomSurface@@@Z 100053e8 f   opengldevice.obj
+ 0001:000044b4       ?Create16BppTexture@COpenGLDevice@@UAAJHIIHPAPAUICustomSurface@@@Z 100054b4 f   opengldevice.obj
+ 0001:00004554       ?Present@COpenGLDevice@@UAAJXZ 10005554 f   opengldevice.obj
+ 0001:0000460c       ?CreateDisplaySurface@COpenGLDevice@@EAAJXZ 1000560c f   opengldevice.obj
+ 0001:000047d4       ?LoadShaderBinary@COpenGLDevice@@AAAJIPBGPAI@Z 100057d4 f   opengldevice.obj
+ 0001:00004ab8       ?CompileShader@COpenGLDevice@@AAAJIPBDPAI@Z 10005ab8 f   opengldevice.obj
+ 0001:00004cbc       ?InitializeShader@COpenGLDevice@@AAAJIPBGPBDPAI@Z 10005cbc f   opengldevice.obj
+ 0001:00004e24       ?PrintDisplayConfig@COpenGLDevice@@AAAJPAX@Z 10005e24 f   opengldevice.obj
+ 0001:00005850       ??0COpenGLDevice@@AAA@XZ   10006850 f   opengldevice.obj
+ 0001:000058f4       ??_GCOpenGLDevice@@EAAPAXI@Z 100068f4 f i opengldevice.obj
+ 0001:000058f4       ??_ECOpenGLDevice@@EAAPAXI@Z 100068f4 f i opengldevice.obj
+ 0001:0000591c       ?InitializeState@COpenGLDevice@@AAAJXZ 1000691c f   opengldevice.obj
+ 0001:000060e4       ?Create@COpenGLDevice@@SAJPAUHWND__@@PAPAUICustomGraphicsDevice@@@Z 100070e4 f   opengldevice.obj
+ 0001:000061a4       ?Initialize@COpenGLDevice@@EAAJPAUHWND__@@@Z 100071a4 f   opengldevice.obj
+ 0001:000067cc       ?Deinitialize@COpenGLSurface@@AAAXXZ 100077cc f   openglsurface.obj
+ 0001:000068bc       ?AddRef@COpenGLSurface@@UAAIXZ 100078bc f   openglsurface.obj
+ 0001:000068f4       ?Release@COpenGLSurface@@UAAIXZ 100078f4 f   openglsurface.obj
+ 0001:00006968       ?Unlock@COpenGLSurface@@UAAJXZ 10007968 f   openglsurface.obj
+ 0001:000069a0       ?Present@COpenGLSurface@@UAAJPAUHWND__@@UXRRECT_WH@@1I@Z 100079a0 f   openglsurface.obj
+ 0001:000069d4       ?AddDirty@COpenGLSurface@@UAAJABUXRRECT_WH@@@Z 100079d4 f   openglsurface.obj
+ 0001:00006c90       ??0COpenGLSurface@@AAA@XZ  10007c90 f   openglsurface.obj
+ 0001:00006d38       ?GetWidth@COpenGLSurface@@UAAIXZ 10007d38 f i openglsurface.obj
+ 0001:00006d40       ?GetHeight@COpenGLSurface@@UAAIXZ 10007d40 f i openglsurface.obj
+ 0001:00006d48       ?GetPixelFormat@COpenGLSurface@@UAA?AW4XRPixelFormat@@XZ 10007d48 f i openglsurface.obj
+ 0001:00006d50       ?IsVideoSurface@COpenGLSurface@@UAAHXZ 10007d50 f i openglsurface.obj
+ 0001:00006d58       ?IsOpaque@COpenGLSurface@@UAAHXZ 10007d58 f i openglsurface.obj
+ 0001:00006d60       ?IsTransparent@COpenGLSurface@@UAAHXZ 10007d60 f i openglsurface.obj
+ 0001:00006d68       ?SetIsOpaque@COpenGLSurface@@UAAXH@Z 10007d68 f i openglsurface.obj
+ 0001:00006d70       ?SetIsTransparent@COpenGLSurface@@UAAXH@Z 10007d70 f i openglsurface.obj
+ 0001:00006d78       ??1COpenGLSurface@@EAA@XZ  10007d78 f   openglsurface.obj
+ 0001:00006dd0       ?Initialize@COpenGLSurface@@AAAJPAVCOpenGLDevice@@HIIW4XRPixelFormat@@H@Z 10007dd0 f   openglsurface.obj
+ 0001:00007280       ?Lock@COpenGLSurface@@UAAJPAPAXPAHPAI2@Z 10008280 f   openglsurface.obj
+ 0001:000073a4       ?Present@COpenGLSurface@@UAAJPAUHWND__@@PAUXRPOINT@@I@Z 100083a4 f   openglsurface.obj
+ 0001:000073e8       ??_GCOpenGLSurface@@EAAPAXI@Z 100083e8 f i openglsurface.obj
+ 0001:000073e8       ??_ECOpenGLSurface@@EAAPAXI@Z 100083e8 f i openglsurface.obj
+ 0001:00007410       ?Create@COpenGLSurface@@SAJPAVCOpenGLDevice@@HIIHW4XRPixelFormat@@PAPAV1@@Z 10008410 f   openglsurface.obj
+ 0001:00007514       ?AddRef@COpenGLRenderer@@UAAIXZ 10008514 f   openglrenderer.obj
+ 0001:00007528       ?Release@COpenGLRenderer@@UAAIXZ 10008528 f   openglrenderer.obj
+ 0001:00007584       ?FreeResources@COpenGLRenderer@@UAAXXZ 10008584 f   openglrenderer.obj
+ 0001:00007610       ?Reset@COpenGLRenderer@@UAAXXZ 10008610 f   openglrenderer.obj
+ 0001:00007638       RenderPluginInitialize     10008638 f   openglrenderer.obj
+ 0001:00007664       RenderPluginCleanup        10008664 f   openglrenderer.obj
+ 0001:00007690       ?SetGraphicsDevice@COpenGLRenderer@@UAAJPAVCOpenGLDevice@@@Z 10008690 f   openglrenderer.obj
+ 0001:000076d0       ?Create@COpenGLRenderer@@SAJPAPAUIRenderer@@@Z 100086d0 f   openglrenderer.obj
+ 0001:00007754       ?PreRender@COpenGLRenderer@@UAAJPAUHWND__@@PAUHDC__@@PBUtagSIZE@@PAHPAPAUICustomSurface@@@Z 10008754 f   openglrenderer.obj
+ 0001:00007868       ?PostRender@COpenGLRenderer@@UAAJPAUHWND__@@PAUHDC__@@PBUtagSIZE@@PAUXRRECT_WH@@@Z 10008868 f   openglrenderer.obj
+ 0001:000078d8       CreateRenderer             100088d8 f   openglrenderer.obj
+ 0001:000079cc       ??_GCOpenGLRenderer@@MAAPAXI@Z 100089cc f i openglrenderer.obj
+ 0001:000079cc       ??_ECOpenGLRenderer@@MAAPAXI@Z 100089cc f i openglrenderer.obj
+ 0001:00007a00       RegisterDbgZones           10008a00 f   coredll:COREDLL.dll
+ 0001:00007a10       DisableThreadLibraryCalls  10008a10 f   coredll:COREDLL.dll
+ 0001:00007a20       __GetUserKData             10008a20 f   coredll:COREDLL.dll
+ 0001:00007a30       InitializeCriticalSection  10008a30 f   coredll:COREDLL.dll
+ 0001:00007a40       NKDbgPrintfW               10008a40 f   coredll:COREDLL.dll
+ 0001:00007a50       DeleteCriticalSection      10008a50 f   coredll:COREDLL.dll
+ 0001:00007a60       InterlockedDecrement       10008a60 f   coredll:COREDLL.dll
+ 0001:00007a70       InterlockedIncrement       10008a70 f   coredll:COREDLL.dll
+ 0001:00007a80       wsprintfW                  10008a80 f   coredll:COREDLL.dll
+ 0001:00007a90       RegCloseKey                10008a90 f   coredll:COREDLL.dll
+ 0001:00007aa0       RegQueryValueExW           10008aa0 f   coredll:COREDLL.dll
+ 0001:00007ab0       RegOpenKeyExW              10008ab0 f   coredll:COREDLL.dll
+ 0001:00007ac0       EnterCriticalSection       10008ac0 f   coredll:COREDLL.dll
+ 0001:00007ad0       LeaveCriticalSection       10008ad0 f   coredll:COREDLL.dll
+ 0001:00007ae0       GlobalMemoryStatus         10008ae0 f   coredll:COREDLL.dll
+ 0001:00007af0       GetTickCount               10008af0 f   coredll:COREDLL.dll
+ 0001:00007b00       FreeLibrary                10008b00 f   coredll:COREDLL.dll
+ 0001:00007b10       LoadResource               10008b10 f   coredll:COREDLL.dll
+ 0001:00007b20       SizeofResource             10008b20 f   coredll:COREDLL.dll
+ 0001:00007b30       FindResourceW              10008b30 f   coredll:COREDLL.dll
+ 0001:00007b40       LoadLibraryW               10008b40 f   coredll:COREDLL.dll
+ 0001:00007b50       ReleaseDC                  10008b50 f   coredll:COREDLL.dll
+ 0001:00007b60       GetDC                      10008b60 f   coredll:COREDLL.dll
+ 0001:00007b70       GetWindowRect              10008b70 f   coredll:COREDLL.dll
+ 0001:00007b80       InterlockedExchangeAdd     10008b80 f   coredll:COREDLL.dll
+ 0001:00007c94       _DllMainCRTStartup         10008c94 f   corelib0:pegdmain.obj
+ 0001:00007cc4       __GSHandlerCheckCommon     10008cc4 f   corelib0:gshandler.obj
+ 0001:00007d00       __GSHandlerCheck           10008d00 f   corelib0:gshandler.obj
+ 0001:00007d24       __security_init_cookie     10008d24 f   corelib0:seccinit.obj
+ 0001:00007d80       __security_check_cookie    10008d80 f   corelib0:armsecgs.obj
+ 0001:00007d94       __gsfailure                10008d94 f   corelib0:armsecgs.obj
+ 0001:00007ed4       _cexit                     10008ed4 f   corelib0:cexit.obj
+ 0001:00007ef0       _initterm                  10008ef0 f   corelib0:crt0dat.obj
+ 0001:00007f24       _cinit                     10008f24 f   corelib0:crt0dat.obj
+ 0001:00007f58       __utos                     10008f58 f   corelib1:COREDLL.dll
+ 0001:00007f68       __divs                     10008f68 f   corelib1:COREDLL.dll
+ 0001:00007f78       __muls                     10008f78 f   corelib1:COREDLL.dll
+ 0001:00007f88       __adds                     10008f88 f   corelib1:COREDLL.dll
+ 0001:00007f98       __subs                     10008f98 f   corelib1:COREDLL.dll
+ 0001:00007fa8       __stod                     10008fa8 f   corelib1:COREDLL.dll
+ 0001:00007fb8       strcspn                    10008fb8 f   corelib1:COREDLL.dll
+ 0001:00007fc8       strncmp                    10008fc8 f   corelib1:COREDLL.dll
+ 0001:00007fd8       strlen                     10008fd8 f   corelib1:COREDLL.dll
+ 0001:00007fe8       __utod                     10008fe8 f   corelib1:COREDLL.dll
+ 0001:00007ff8       __divd                     10008ff8 f   corelib1:COREDLL.dll
+ 0001:00008008       __muld                     10009008 f   corelib1:COREDLL.dll
+ 0001:00008018       ??3@YAXPAX@Z               10009018 f   corelib1:COREDLL.dll
+ 0001:00008028       ??2@YAPAXI@Z               10009028 f   corelib1:COREDLL.dll
+ 0001:00008038       _XcptFilter                10009038 f   corelib1:COREDLL.dll
+ 0001:00008048       __C_specific_handler       10009048 f   corelib1:COREDLL.dll
+ 0001:00008058       __security_gen_cookie2     10009058 f   corelib1:COREDLL.dll
+ 0001:00008068       __report_gsfailure         10009068 f   corelib1:COREDLL.dll
+ 0001:00008078       free                       10009078 f   corelib1:COREDLL.dll
+ 0001:00008088       InterlockedExchange        10009088 f   coredll:COREDLL.dll
+ 0001:00008098       TerminateProcess           10009098 f   coredll:COREDLL.dll
+ 0001:000080c4       __IMPORT_DESCRIPTOR_COREDLL 100090c4     coredll:COREDLL.dll
+ 0001:000080d8       __IMPORT_DESCRIPTOR_libEGL 100090d8     libEGL:libEGL.dll
+ 0001:000080ec       __IMPORT_DESCRIPTOR_LIBGLESV2 100090ec     libGLESv2:LIBGLESV2.dll
+ 0001:00008100       __NULL_IMPORT_DESCRIPTOR   10009100     coredll:COREDLL.dll
+ 0002:00000000       __imp_RegisterDbgZones     1000a000     coredll:COREDLL.dll
+ 0002:00000004       __imp_DisableThreadLibraryCalls 1000a004     coredll:COREDLL.dll
+ 0002:00000008       __imp___GetUserKData       1000a008     coredll:COREDLL.dll
+ 0002:0000000c       __imp_InitializeCriticalSection 1000a00c     coredll:COREDLL.dll
+ 0002:00000010       __imp_NKDbgPrintfW         1000a010     coredll:COREDLL.dll
+ 0002:00000014       __imp_DeleteCriticalSection 1000a014     coredll:COREDLL.dll
+ 0002:00000018       __imp_InterlockedDecrement 1000a018     coredll:COREDLL.dll
+ 0002:0000001c       __imp_InterlockedIncrement 1000a01c     coredll:COREDLL.dll
+ 0002:00000020       __imp_wsprintfW            1000a020     coredll:COREDLL.dll
+ 0002:00000024       __imp_RegCloseKey          1000a024     coredll:COREDLL.dll
+ 0002:00000028       __imp_RegQueryValueExW     1000a028     coredll:COREDLL.dll
+ 0002:0000002c       __imp_RegOpenKeyExW        1000a02c     coredll:COREDLL.dll
+ 0002:00000030       __imp_EnterCriticalSection 1000a030     coredll:COREDLL.dll
+ 0002:00000034       __imp_LeaveCriticalSection 1000a034     coredll:COREDLL.dll
+ 0002:00000038       __imp_GlobalMemoryStatus   1000a038     coredll:COREDLL.dll
+ 0002:0000003c       __imp_GetTickCount         1000a03c     coredll:COREDLL.dll
+ 0002:00000040       __imp_FreeLibrary          1000a040     coredll:COREDLL.dll
+ 0002:00000044       __imp_LoadResource         1000a044     coredll:COREDLL.dll
+ 0002:00000048       __imp_SizeofResource       1000a048     coredll:COREDLL.dll
+ 0002:0000004c       __imp_FindResourceW        1000a04c     coredll:COREDLL.dll
+ 0002:00000050       __imp_LoadLibraryW         1000a050     coredll:COREDLL.dll
+ 0002:00000054       __imp_ReleaseDC            1000a054     coredll:COREDLL.dll
+ 0002:00000058       __imp_GetDC                1000a058     coredll:COREDLL.dll
+ 0002:0000005c       __imp_GetWindowRect        1000a05c     coredll:COREDLL.dll
+ 0002:00000060       __imp_InterlockedExchangeAdd 1000a060     coredll:COREDLL.dll
+ 0002:00000064       __imp_TerminateProcess     1000a064     coredll:COREDLL.dll
+ 0002:00000068       __imp_InterlockedExchange  1000a068     coredll:COREDLL.dll
+ 0002:0000006c       __imp_free                 1000a06c     corelib1:COREDLL.dll
+ 0002:00000070       __imp___report_gsfailure   1000a070     corelib1:COREDLL.dll
+ 0002:00000074       __imp___security_gen_cookie2 1000a074     corelib1:COREDLL.dll
+ 0002:00000078       __imp___C_specific_handler 1000a078     corelib1:COREDLL.dll
+ 0002:0000007c       __imp__XcptFilter          1000a07c     corelib1:COREDLL.dll
+ 0002:00000080       __imp_??2@YAPAXI@Z         1000a080     corelib1:COREDLL.dll
+ 0002:00000084       __imp_??3@YAXPAX@Z         1000a084     corelib1:COREDLL.dll
+ 0002:00000088       __imp___muld               1000a088     corelib1:COREDLL.dll
+ 0002:0000008c       __imp___divd               1000a08c     corelib1:COREDLL.dll
+ 0002:00000090       __imp___utod               1000a090     corelib1:COREDLL.dll
+ 0002:00000094       __imp_strlen               1000a094     corelib1:COREDLL.dll
+ 0002:00000098       __imp_strncmp              1000a098     corelib1:COREDLL.dll
+ 0002:0000009c       __imp_strcspn              1000a09c     corelib1:COREDLL.dll
+ 0002:000000a0       __imp___stod               1000a0a0     corelib1:COREDLL.dll
+ 0002:000000a4       __imp___subs               1000a0a4     corelib1:COREDLL.dll
+ 0002:000000a8       __imp___adds               1000a0a8     corelib1:COREDLL.dll
+ 0002:000000ac       __imp___muls               1000a0ac     corelib1:COREDLL.dll
+ 0002:000000b0       __imp___divs               1000a0b0     corelib1:COREDLL.dll
+ 0002:000000b4       __imp___utos               1000a0b4     corelib1:COREDLL.dll
+ 0002:000000b8       \177COREDLL_NULL_THUNK_DATA 1000a0b8     coredll:COREDLL.dll
+ 0002:000000bc       __imp_glBindTexture        1000a0bc     libGLESv2:LIBGLESV2.dll
+ 0002:000000c0       __imp_glActiveTexture      1000a0c0     libGLESv2:LIBGLESV2.dll
+ 0002:000000c4       __imp_glUniform1i          1000a0c4     libGLESv2:LIBGLESV2.dll
+ 0002:000000c8       __imp_glVertexAttribPointer 1000a0c8     libGLESv2:LIBGLESV2.dll
+ 0002:000000cc       __imp_glClear              1000a0cc     libGLESv2:LIBGLESV2.dll
+ 0002:000000d0       __imp_glClearColor         1000a0d0     libGLESv2:LIBGLESV2.dll
+ 0002:000000d4       __imp_glGetString          1000a0d4     libGLESv2:LIBGLESV2.dll
+ 0002:000000d8       __imp_glDrawArrays         1000a0d8     libGLESv2:LIBGLESV2.dll
+ 0002:000000dc       __imp_glCreateShader       1000a0dc     libGLESv2:LIBGLESV2.dll
+ 0002:000000e0       __imp_glGetIntegerv        1000a0e0     libGLESv2:LIBGLESV2.dll
+ 0002:000000e4       __imp_glDeleteShader       1000a0e4     libGLESv2:LIBGLESV2.dll
+ 0002:000000e8       __imp_glGetShaderInfoLog   1000a0e8     libGLESv2:LIBGLESV2.dll
+ 0002:000000ec       __imp_glGetShaderiv        1000a0ec     libGLESv2:LIBGLESV2.dll
+ 0002:000000f0       __imp_glCompileShader      1000a0f0     libGLESv2:LIBGLESV2.dll
+ 0002:000000f4       __imp_glShaderSource       1000a0f4     libGLESv2:LIBGLESV2.dll
+ 0002:000000f8       __imp_glGetBooleanv        1000a0f8     libGLESv2:LIBGLESV2.dll
+ 0002:000000fc       __imp_glGetUniformLocation 1000a0fc     libGLESv2:LIBGLESV2.dll
+ 0002:00000100       __imp_glGetProgramiv       1000a100     libGLESv2:LIBGLESV2.dll
+ 0002:00000104       __imp_glLinkProgram        1000a104     libGLESv2:LIBGLESV2.dll
+ 0002:00000108       __imp_glBindAttribLocation 1000a108     libGLESv2:LIBGLESV2.dll
+ 0002:0000010c       __imp_glCreateProgram      1000a10c     libGLESv2:LIBGLESV2.dll
+ 0002:00000110       __imp_glAttachShader       1000a110     libGLESv2:LIBGLESV2.dll
+ 0002:00000114       __imp_glPixelStorei        1000a114     libGLESv2:LIBGLESV2.dll
+ 0002:00000118       __imp_glDisable            1000a118     libGLESv2:LIBGLESV2.dll
+ 0002:0000011c       __imp_glCullFace           1000a11c     libGLESv2:LIBGLESV2.dll
+ 0002:00000120       __imp_glFrontFace          1000a120     libGLESv2:LIBGLESV2.dll
+ 0002:00000124       __imp_glBlendFunc          1000a124     libGLESv2:LIBGLESV2.dll
+ 0002:00000128       __imp_glEnable             1000a128     libGLESv2:LIBGLESV2.dll
+ 0002:0000012c       __imp_glEnableVertexAttribArray 1000a12c     libGLESv2:LIBGLESV2.dll
+ 0002:00000130       __imp_glDeleteTextures     1000a130     libGLESv2:LIBGLESV2.dll
+ 0002:00000134       __imp_glTexSubImage2D      1000a134     libGLESv2:LIBGLESV2.dll
+ 0002:00000138       __imp_glTexImage2D         1000a138     libGLESv2:LIBGLESV2.dll
+ 0002:0000013c       __imp_glTexParameteri      1000a13c     libGLESv2:LIBGLESV2.dll
+ 0002:00000140       __imp_glGenTextures        1000a140     libGLESv2:LIBGLESV2.dll
+ 0002:00000144       __imp_glGetError           1000a144     libGLESv2:LIBGLESV2.dll
+ 0002:00000148       __imp_glUseProgram         1000a148     libGLESv2:LIBGLESV2.dll
+ 0002:0000014c       __imp_glUniformMatrix4fv   1000a14c     libGLESv2:LIBGLESV2.dll
+ 0002:00000150       __imp_glViewport           1000a150     libGLESv2:LIBGLESV2.dll
+ 0002:00000154       __imp_glShaderBinary       1000a154     libGLESv2:LIBGLESV2.dll
+ 0002:00000158       \177LIBGLESV2_NULL_THUNK_DATA 1000a158     libGLESv2:LIBGLESV2.dll
+ 0002:0000015c       __imp_eglGetDisplay        1000a15c     libEGL:libEGL.dll
+ 0002:00000160       __imp_eglInitialize        1000a160     libEGL:libEGL.dll
+ 0002:00000164       __imp_eglBindAPI           1000a164     libEGL:libEGL.dll
+ 0002:00000168       __imp_eglChooseConfig      1000a168     libEGL:libEGL.dll
+ 0002:0000016c       __imp_eglCreateContext     1000a16c     libEGL:libEGL.dll
+ 0002:00000170       __imp_eglSwapInterval      1000a170     libEGL:libEGL.dll
+ 0002:00000174       __imp_eglGetConfigs        1000a174     libEGL:libEGL.dll
+ 0002:00000178       __imp_eglGetConfigAttrib   1000a178     libEGL:libEGL.dll
+ 0002:0000017c       __imp_eglCreateWindowSurface 1000a17c     libEGL:libEGL.dll
+ 0002:00000180       __imp_eglSwapBuffers       1000a180     libEGL:libEGL.dll
+ 0002:00000184       __imp_eglGetCurrentSurface 1000a184     libEGL:libEGL.dll
+ 0002:00000188       __imp_eglGetCurrentDisplay 1000a188     libEGL:libEGL.dll
+ 0002:0000018c       __imp_eglGetCurrentContext 1000a18c     libEGL:libEGL.dll
+ 0002:00000190       __imp_eglGetError          1000a190     libEGL:libEGL.dll
+ 0002:00000194       __imp_eglMakeCurrent       1000a194     libEGL:libEGL.dll
+ 0002:00000198       __imp_eglDestroySurface    1000a198     libEGL:libEGL.dll
+ 0002:0000019c       __imp_eglDestroyContext    1000a19c     libEGL:libEGL.dll
+ 0002:000001a0       __imp_eglTerminate         1000a1a0     libEGL:libEGL.dll
+ 0002:000001a4       __imp_eglReleaseThread     1000a1a4     libEGL:libEGL.dll
+ 0002:000001a8       \177libEGL_NULL_THUNK_DATA 1000a1a8     libEGL:libEGL.dll
+ 0002:000001b8       ?dpCurSettings@@3U_DBGPARAM@@A 1000a1b8     debug.obj
+ 0002:000005fc       __security_cookie          1000a5fc     corelib0:seccinit.obj
+ 0002:00000600       __security_cookie_complement 1000a600     corelib0:seccinit.obj
+ 0002:00000604       ?s_OpenGLCS@COpenGLDevice@@0UCRITICAL_SECTION@@A 1000a604     opengldevice.obj
+ 0002:00000618       ?s_csCreated@COpenGLDevice@@0HA 1000a618     opengldevice.obj
+ 0002:0000061c       ?s_LockCount@COpenGLDevice@@0JA 1000a61c     opengldevice.obj
+ 0002:00000620       ?s_NumInstances@COpenGLDevice@@0IA 1000a620     opengldevice.obj
+ 0002:00000624       ?s_eglDisplay@COpenGLDevice@@0PAXA 1000a624     opengldevice.obj
+ 0002:00000628       ?s_eglContext@COpenGLDevice@@0PAXA 1000a628     opengldevice.obj
+ 0002:0000062c       ?s_eglActiveConfig@COpenGLDevice@@0PAXA 1000a62c     opengldevice.obj
+ 0002:00000630       ?s_eglConfig32bpp@COpenGLDevice@@0PAXA 1000a630     opengldevice.obj
+ 0002:00000634       ?s_eglConfig16bpp@COpenGLDevice@@0PAXA 1000a634     opengldevice.obj
+ 0002:00000638       ?s_uiProgramObject@COpenGLDevice@@0IA 1000a638     opengldevice.obj
+ 0002:0000063c       ?s_uiVertShader@COpenGLDevice@@0IA 1000a63c     opengldevice.obj
+ 0002:00000640       ?s_uiFragShader@COpenGLDevice@@0IA 1000a640     opengldevice.obj
+ 0002:00000644       ?s_matrixProjectionLoc@COpenGLDevice@@0HA 1000a644     opengldevice.obj
+ 0002:00000648       ?s_checkerBoardLoc@COpenGLDevice@@0HA 1000a648     opengldevice.obj
+ 0002:0000064c       ?s_colorConversionLoc@COpenGLDevice@@0HA 1000a64c     opengldevice.obj
+ 0002:00000650       ?g_hInstance@@3PAUHINSTANCE__@@A 1000a650     opengldevice.obj
+ 0002:0000065c       ?s_uTextureMemoryUsage@COpenGLSurface@@1IA 1000a65c     openglsurface.obj
+ 0002:00000660       ?s_uSurfaceCount@COpenGLSurface@@1IA 1000a660     openglsurface.obj
+ 0002:00000664       _exitflag                  1000a664     corelib0:cexit.obj
+ 0002:00000668       __onexitend                1000a668     <common>
+ 0002:0000066c       __onexitbegin              1000a66c     <common>
+ 0002:00000670       g_pcsExit                  1000a670     <common>
+ 0002:00000674       _pRawDllMain               1000a674     <common>
+
+ entry point at        0001:00007c94
+
+ Static symbols
+
+ 0001:00007b98       _DllMainCRTStartupHelper   10008b98 f   corelib0:pegdmain.obj
+ 0001:00007dd8       doexit                     10008dd8 f   corelib0:cexit.obj

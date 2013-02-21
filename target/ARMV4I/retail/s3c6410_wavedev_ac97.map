@@ -1,0 +1,392 @@
+ s3c6410_wavedev_ac97
+
+ Timestamp is 5125b29f (Thu Feb 21 13:37:35 2013)
+
+ Preferred load address is 10000000
+
+ Start         Length     Name                   Class
+ 0001:00000000 00000004H .CRT$XCA                CODE
+ 0001:00000004 00000004H .CRT$XCZ                CODE
+ 0001:00000008 00000004H .CRT$XIA                CODE
+ 0001:0000000c 00000004H .CRT$XIZ                CODE
+ 0001:00000010 00000004H .CRT$XPA                CODE
+ 0001:00000014 00000004H .CRT$XPZ                CODE
+ 0001:00000018 00000004H .CRT$XTA                CODE
+ 0001:0000001c 00000004H .CRT$XTZ                CODE
+ 0001:00000020 00001d7aH .rdata                  CODE
+ 0001:00001d9c 00000031H .rdata$debug            CODE
+ 0001:00001dd0 000061a0H .text                   CODE
+ 0001:00007f70 0000008cH .xdata                  CODE
+ 0001:00007ffc 00000028H .idata$2                CODE
+ 0001:00008024 00000014H .idata$3                CODE
+ 0001:00008038 000000bcH .idata$4                CODE
+ 0001:000080f4 00000016H .idata$6                CODE
+ 0001:00008110 000000c9H .edata                  CODE
+ 0002:00000000 000000bcH .idata$5                DATA
+ 0002:000000bc 00000008H .data                   DATA
+ 0002:000000c8 0000010cH .bss                    DATA
+ 0003:00000000 000005a0H .pdata                  DATA
+
+  Address         Publics by Value              Rva+Base       Lib:Object
+
+ 0000:00000000       ___safe_se_handler_table   00000000     <absolute>
+ 0000:00000000       ___safe_se_handler_count   00000000     <absolute>
+ 0001:00000000       __xc_a                     10001000     corelib0:crt0init.obj
+ 0001:00000004       __xc_z                     10001004     corelib0:crt0init.obj
+ 0001:00000008       __xi_a                     10001008     corelib0:crt0init.obj
+ 0001:0000000c       __xi_z                     1000100c     corelib0:crt0init.obj
+ 0001:00000010       __xp_a                     10001010     corelib0:crt0init.obj
+ 0001:00000014       __xp_z                     10001014     corelib0:crt0init.obj
+ 0001:00000018       __xt_a                     10001018     corelib0:crt0init.obj
+ 0001:0000001c       __xt_z                     1000101c     corelib0:crt0init.obj
+ 0001:0000003c       ??_7StreamContext@@6B@     1000103c     devctxt.obj
+ 0001:00000134       ??_7CMidiStream@@6B@       10001134     devctxt.obj
+ 0001:00000168       ??_7InputStreamContext@@6B@ 10001168     devctxt.obj
+ 0001:000001a4       ??_7OutputStreamContextM8@@6B@ 100011a4     devctxt.obj
+ 0001:000001e0       ??_7OutputStreamContextM16@@6B@ 100011e0     devctxt.obj
+ 0001:0000021c       ??_7OutputStreamContextS8@@6B@ 1000121c     devctxt.obj
+ 0001:00000258       ??_7OutputStreamContextS16@@6B@ 10001258     devctxt.obj
+ 0001:00000294       ??_7InputDeviceContext@@6B@ 10001294     hwctxt.obj
+ 0001:000002a8       ??_7OutputDeviceContext@@6B@ 100012a8     hwctxt.obj
+ 0001:000002bc       ??_C@_1M@HOEINAAB@?$AAW?$AAA?$AAV?$AA1?$AA?3?$AA?$AA@ 100012bc     hwctxt.obj
+ 0001:000002c8       ??_C@_1BI@BHLBGEOK@?$AAP?$AAr?$AAi?$AAo?$AAr?$AAi?$AAt?$AAy?$AA2?$AA5?$AA6?$AA?$AA@ 100012c8     hwctxt.obj
+ 0001:000002e0       ?PitchTable@CMidiNote@@0QBIB 100012e0     midinote.obj
+ 0001:00000310       ?SineTable@CMidiNote@@0QBFB 10001310     midinote.obj
+ 0001:00000514       ??_C@_1BC@MOMKCGGI@?$AAM?$AAi?$AAc?$AA?5?$AAM?$AAu?$AAt?$AAe?$AA?$AA@ 10001514     mixerdrv.obj
+ 0001:00000528       ??_C@_1BG@LAGONMFD@?$AAM?$AAi?$AAc?$AA?5?$AAV?$AAo?$AAl?$AAu?$AAm?$AAe?$AA?$AA@ 10001528     mixerdrv.obj
+ 0001:00000540       ??_C@_1BI@PEAJCPFH@?$AAM?$AAa?$AAs?$AAt?$AAe?$AAr?$AA?5?$AAM?$AAu?$AAt?$AAe?$AA?$AA@ 10001540     mixerdrv.obj
+ 0001:00000558       ??_C@_1BM@DBCMFCBE@?$AAM?$AAa?$AAs?$AAt?$AAe?$AAr?$AA?5?$AAV?$AAo?$AAl?$AAu?$AAm?$AAe?$AA?$AA@ 10001558     mixerdrv.obj
+ 0001:00000574       ??_C@_1BG@OGJPAHBK@?$AAM?$AAi?$AAc?$AAr?$AAo?$AAp?$AAh?$AAo?$AAn?$AAe?$AA?$AA@ 10001574     mixerdrv.obj
+ 0001:0000058c       ??_C@_1CE@BJPEGCKG@?$AAR?$AAe?$AAc?$AAo?$AAr?$AAd?$AAi?$AAn?$AAg?$AA?5?$AAC?$AAo?$AAn?$AAt?$AAr?$AAo?$AAl?$AA?$AA@ 1000158c     mixerdrv.obj
+ 0001:000005b0       ??_C@_1CA@KOFAABPH@?$AAR?$AAe?$AAc?$AAo?$AAr?$AAd?$AAi?$AAn?$AAg?$AA?5?$AAC?$AAo?$AAn?$AAt?$AAr?$AA?$AA@ 100015b0     mixerdrv.obj
+ 0001:000005d0       ??_C@_1BO@FLMICKBM@?$AAV?$AAo?$AAl?$AAu?$AAm?$AAe?$AA?5?$AAC?$AAo?$AAn?$AAt?$AAr?$AAo?$AAl?$AA?$AA@ 100015d0     mixerdrv.obj
+ 0001:00000694       ??_C@_1BI@DKACBKCL@?$AAA?$AAu?$AAd?$AAi?$AAo?$AA?5?$AAM?$AAi?$AAx?$AAe?$AAr?$AA?$AA@ 10001694     mixerdrv.obj
+ 0001:000006b0       ??_C@_1FE@BDJOHFBK@?$AA?$FL?$AAE?$AAR?$AAR?$AAO?$AAR?$AA?$FN?$AA?5?$AA?$CC?$AAw?$AAd?$AAe?$AAv?$AA_?$AAM?$AAX?$AAD?$AAM?$AA_?$AAO?$AAP?$AAE?$AAN?$AA?3?$AA?5?$AAo?$AAu?$AAt?$AA?5?$AAo?$AAf?$AA?5@ 100016b0     mixerdrv.obj
+ 0001:00000708       ??_C@_1EM@DBPFHEAH@?$AA?$FL?$AAE?$AAR?$AAR?$AAO?$AAR?$AA?$FN?$AA?5?$AA?$CC?$AAU?$AAn?$AAs?$AAu?$AAp?$AAp?$AAo?$AAr?$AAt?$AAe?$AAd?$AA?5?$AAm?$AAi?$AAx?$AAe?$AAr?$AA?5?$AAm?$AAe?$AAs?$AAs?$AAa@ 10001708     mixerdrv.obj
+ 0001:00000758       ?GainMap@@3QBKB            10001758     strmctxt.obj
+ 0001:00000a78       ??_C@_1EK@CFJPJKIF@?$AA?$FL?$AAW?$AAA?$AAV?$AA_?$AAI?$AAO?$AAC?$AAo?$AAn?$AAt?$AAr?$AAo?$AAl?$AA?$FN?$AA?5?$AAI?$AAn?$AAv?$AAa?$AAl?$AAi?$AAd?$AA?5?$AAp?$AAa?$AAr?$AAa?$AAm?$AAe?$AAt?$AAe@ 10001a78     wavemain.obj
+ 0001:00000ac8       ??_C@_1IK@FAEOBNEF@?$AA?$FL?$AAD?$AAM?$AAA?$AA?3?$AAE?$AAR?$AAR?$AA?$FN?$AA?5?$AAD?$AAM?$AAA?$AA_?$AAi?$AAn?$AAi?$AAt?$AAi?$AAa?$AAl?$AAi?$AAz?$AAe?$AA_?$AAr?$AAe?$AAg?$AAi?$AAs?$AAt?$AAe@ 10001ac8     s3c6410_dma_lib:s3c6410_dma_controller.obj
+ 0001:00000b54       ??_C@_1CE@PANCBDMF@?$AAS?$AA3?$AAC?$AA6?$AA4?$AA1?$AA0?$AA_?$AAD?$AAM?$AAA?$AA_?$AAM?$AAu?$AAt?$AAe?$AAx?$AA?$AA@ 10001b54     s3c6410_dma_lib:s3c6410_dma_controller.obj
+ 0001:00000b78       ??_C@_1IO@MKJALJFH@?$AA?$FL?$AAD?$AAM?$AAA?$AA?3?$AAE?$AAR?$AAR?$AA?$FN?$AA?5?$AAD?$AAM?$AAA?$AA_?$AAi?$AAn?$AAi?$AAt?$AAi?$AAa?$AAl?$AAi?$AAz?$AAe?$AA_?$AAr?$AAe?$AAg?$AAi?$AAs?$AAt?$AAe@ 10001b78     s3c6410_dma_lib:s3c6410_dma_controller.obj
+ 0001:00000c08       ??_C@_1HO@CKIMBODA@?$AA?$FL?$AAD?$AAM?$AAA?$AA?3?$AAE?$AAR?$AAR?$AA?$FN?$AA?5?$AAD?$AAM?$AAA?$AA_?$AAi?$AAn?$AAi?$AAt?$AAi?$AAa?$AAl?$AAi?$AAz?$AAe?$AA_?$AAc?$AAh?$AAa?$AAn?$AAn?$AAe?$AAl@ 10001c08     s3c6410_dma_lib:s3c6410_dma_controller.obj
+ 0001:00000c88       ??_C@_1GO@KKJCLKBF@?$AA?$FL?$AAD?$AAM?$AAA?$AA?3?$AAE?$AAR?$AAR?$AA?$FN?$AA?5?$AAD?$AAM?$AAA?$AA_?$AAi?$AAn?$AAi?$AAt?$AAi?$AAa?$AAl?$AAi?$AAz?$AAe?$AA_?$AAc?$AAh?$AAa?$AAn?$AAn?$AAe?$AAl@ 10001c88     s3c6410_dma_lib:s3c6410_dma_controller.obj
+ 0001:00000cf8       ??_C@_1HM@LMGFNNBP@?$AA?$FL?$AAD?$AAM?$AAA?$AA?3?$AAE?$AAR?$AAR?$AA?$FN?$AA?5?$AAD?$AAM?$AAA?$AA_?$AAi?$AAn?$AAi?$AAt?$AAi?$AAa?$AAl?$AAi?$AAz?$AAe?$AA_?$AAc?$AAh?$AAa?$AAn?$AAn?$AAe?$AAl@ 10001cf8     s3c6410_dma_lib:s3c6410_dma_controller.obj
+ 0001:00000d78       ??_C@_1IE@NCHNMKHG@?$AA?$FL?$AAD?$AAM?$AAA?$AA?3?$AAE?$AAR?$AAR?$AA?$FN?$AA?5?$AAD?$AAM?$AAA?$AA_?$AAs?$AAe?$AAt?$AA_?$AAc?$AAh?$AAa?$AAn?$AAn?$AAe?$AAl?$AA_?$AAs?$AAo?$AAu?$AAr?$AAc?$AAe@ 10001d78     s3c6410_dma_lib:s3c6410_dma_controller.obj
+ 0001:00000e00       ??_C@_1HO@DNLKJKKK@?$AA?$FL?$AAD?$AAM?$AAA?$AA?3?$AAE?$AAR?$AAR?$AA?$FN?$AA?5?$AAD?$AAM?$AAA?$AA_?$AAs?$AAe?$AAt?$AA_?$AAc?$AAh?$AAa?$AAn?$AAn?$AAe?$AAl?$AA_?$AAs?$AAo?$AAu?$AAr?$AAc?$AAe@ 10001e00     s3c6410_dma_lib:s3c6410_dma_controller.obj
+ 0001:00000e80       ??_C@_1IG@DHKLIBEL@?$AA?$FL?$AAD?$AAM?$AAA?$AA?3?$AAE?$AAR?$AAR?$AA?$FN?$AA?5?$AAD?$AAM?$AAA?$AA_?$AAs?$AAe?$AAt?$AA_?$AAc?$AAh?$AAa?$AAn?$AAn?$AAe?$AAl?$AA_?$AAs?$AAo?$AAu?$AAr?$AAc?$AAe@ 10001e80     s3c6410_dma_lib:s3c6410_dma_controller.obj
+ 0001:00000f08       ??_C@_1HM@OKJGJJLJ@?$AA?$FL?$AAD?$AAM?$AAA?$AA?3?$AAE?$AAR?$AAR?$AA?$FN?$AA?5?$AAD?$AAM?$AAA?$AA_?$AAs?$AAe?$AAt?$AA_?$AAc?$AAh?$AAa?$AAn?$AAn?$AAe?$AAl?$AA_?$AAs?$AAo?$AAu?$AAr?$AAc?$AAe@ 10001f08     s3c6410_dma_lib:s3c6410_dma_controller.obj
+ 0001:00000f88       ??_C@_1IM@JFGGAPEA@?$AA?$FL?$AAD?$AAM?$AAA?$AA?3?$AAE?$AAR?$AAR?$AA?$FN?$AA?5?$AAD?$AAM?$AAA?$AA_?$AAs?$AAe?$AAt?$AA_?$AAc?$AAh?$AAa?$AAn?$AAn?$AAe?$AAl?$AA_?$AAd?$AAe?$AAs?$AAt?$AAn?$AAa@ 10001f88     s3c6410_dma_lib:s3c6410_dma_controller.obj
+ 0001:00001018       ??_C@_1IG@BOPJGECN@?$AA?$FL?$AAD?$AAM?$AAA?$AA?3?$AAE?$AAR?$AAR?$AA?$FN?$AA?5?$AAD?$AAM?$AAA?$AA_?$AAs?$AAe?$AAt?$AA_?$AAc?$AAh?$AAa?$AAn?$AAn?$AAe?$AAl?$AA_?$AAd?$AAe?$AAs?$AAt?$AAn?$AAa@ 10002018     s3c6410_dma_lib:s3c6410_dma_controller.obj
+ 0001:000010a0       ??_C@_1IO@FFLJGBBK@?$AA?$FL?$AAD?$AAM?$AAA?$AA?3?$AAE?$AAR?$AAR?$AA?$FN?$AA?5?$AAD?$AAM?$AAA?$AA_?$AAs?$AAe?$AAt?$AA_?$AAc?$AAh?$AAa?$AAn?$AAn?$AAe?$AAl?$AA_?$AAd?$AAe?$AAs?$AAt?$AAn?$AAa@ 100020a0     s3c6410_dma_lib:s3c6410_dma_controller.obj
+ 0001:00001130       ??_C@_1IE@MMBNNIDI@?$AA?$FL?$AAD?$AAM?$AAA?$AA?3?$AAE?$AAR?$AAR?$AA?$FN?$AA?5?$AAD?$AAM?$AAA?$AA_?$AAs?$AAe?$AAt?$AA_?$AAc?$AAh?$AAa?$AAn?$AAn?$AAe?$AAl?$AA_?$AAd?$AAe?$AAs?$AAt?$AAn?$AAa@ 10002130     s3c6410_dma_lib:s3c6410_dma_controller.obj
+ 0001:000011b8       ??_C@_1IK@HIPKBANA@?$AA?$FL?$AAD?$AAM?$AAA?$AA?3?$AAE?$AAR?$AAR?$AA?$FN?$AA?5?$AAD?$AAM?$AAA?$AA_?$AAs?$AAe?$AAt?$AA_?$AAc?$AAh?$AAa?$AAn?$AAn?$AAe?$AAl?$AA_?$AAt?$AAr?$AAa?$AAn?$AAs?$AAf@ 100021b8     s3c6410_dma_lib:s3c6410_dma_controller.obj
+ 0001:00001248       ??_C@_1LO@FMFEJEFA@?$AA?$FL?$AAD?$AAM?$AAA?$AA?3?$AAE?$AAR?$AAR?$AA?$FN?$AA?5?$AAD?$AAM?$AAA?$AA_?$AAi?$AAn?$AAi?$AAt?$AAi?$AAa?$AAl?$AAi?$AAz?$AAe?$AA_?$AAL?$AAL?$AAI?$AA?$CI?$AA?$CJ?$AA?5?$AA?3@ 10002248     s3c6410_dma_lib:s3c6410_dma_controller.obj
+ 0001:00001308       ??_C@_1GG@HIKCJIKK@?$AA?$FL?$AAD?$AAM?$AAA?$AA?$FN?$AA?5?$AAD?$AAM?$AAA?$AA_?$AAi?$AAn?$AAi?$AAt?$AAi?$AAa?$AAl?$AAi?$AAz?$AAe?$AA_?$AAL?$AAL?$AAI?$AA?$CI?$AA?$CJ?$AA?5?$AA?3?$AA?5?$AAL?$AAL?$AAI@ 10002308     s3c6410_dma_lib:s3c6410_dma_controller.obj
+ 0001:00001370       ??_C@_1HE@KFMNNING@?$AA?$FL?$AAD?$AAM?$AAA?$AA?3?$AAE?$AAR?$AAR?$AA?$FN?$AA?5?$AAD?$AAM?$AAA?$AA_?$AAi?$AAn?$AAi?$AAt?$AAi?$AAa?$AAl?$AAi?$AAz?$AAe?$AA_?$AAL?$AAL?$AAI?$AA?$CI?$AA?$CJ?$AA?5?$AA?3@ 10002370     s3c6410_dma_lib:s3c6410_dma_controller.obj
+ 0001:000013e8       ??_C@_1KO@OODCEMNL@?$AA?$FL?$AAD?$AAM?$AAA?$AA?3?$AAE?$AAR?$AAR?$AA?$FN?$AA?5?$AAD?$AAM?$AAA?$AA_?$AAs?$AAe?$AAt?$AA_?$AAL?$AAL?$AAI?$AA_?$AAe?$AAn?$AAt?$AAr?$AAy?$AA?$CI?$AA?$CJ?$AA?5?$AA?3?$AA?5@ 100023e8     s3c6410_dma_lib:s3c6410_dma_controller.obj
+ 0001:00001498       ??_C@_1KG@NMFFMBCO@?$AA?$FL?$AAD?$AAM?$AAA?$AA?3?$AAE?$AAR?$AAR?$AA?$FN?$AA?5?$AAD?$AAM?$AAA?$AA_?$AAi?$AAn?$AAi?$AAt?$AAi?$AAa?$AAl?$AAi?$AAz?$AAe?$AA_?$AAL?$AAL?$AAI?$AA?$CI?$AA?$CJ?$AA?5?$AA?3@ 10002498     s3c6410_dma_lib:s3c6410_dma_controller.obj
+ 0001:00001540       ??_C@_1LM@KJKDKHBC@?$AA?$FL?$AAD?$AAM?$AAA?$AA?3?$AAE?$AAR?$AAR?$AA?$FN?$AA?5?$AAD?$AAM?$AAA?$AA_?$AAd?$AAm?$AAa?$AAc?$AA0?$AA_?$AAd?$AAi?$AAs?$AAa?$AAb?$AAl?$AAe?$AA?$CI?$AA?$CJ?$AA?5?$AA?3?$AA?5@ 10002540     s3c6410_dma_lib:s3c6410_dma_controller.obj
+ 0001:00001600       ??_C@_1LM@DJIFHCKD@?$AA?$FL?$AAD?$AAM?$AAA?$AA?3?$AAE?$AAR?$AAR?$AA?$FN?$AA?5?$AAD?$AAM?$AAA?$AA_?$AAd?$AAm?$AAa?$AAc?$AA1?$AA_?$AAd?$AAi?$AAs?$AAa?$AAb?$AAl?$AAe?$AA?$CI?$AA?$CJ?$AA?5?$AA?3?$AA?5@ 10002600     s3c6410_dma_lib:s3c6410_dma_controller.obj
+ 0001:000016c0       ??_C@_1GE@PDJOIHBD@?$AA?$FL?$AAD?$AAM?$AAA?$AA?$FN?$AA?5?$AAD?$AAM?$AAA?$AA_?$AAl?$AAo?$AAc?$AAk?$AA?$CI?$AA?$CJ?$AA?5?$AA?3?$AA?5?$AAW?$AAa?$AAi?$AAt?$AAF?$AAo?$AAr?$AAS?$AAi?$AAn?$AAg?$AAl?$AAe@ 100026c0     s3c6410_dma_lib:s3c6410_dma_controller.obj
+ 0001:00001728       ??_C@_1FK@IEMAEEDJ@?$AA?$FL?$AAD?$AAM?$AAA?$AA?$FN?$AA?5?$AAD?$AAM?$AAA?$AA_?$AAu?$AAn?$AAl?$AAo?$AAc?$AAk?$AA?$CI?$AA?$CJ?$AA?5?$AA?3?$AA?5?$AAR?$AAe?$AAl?$AAe?$AAa?$AAs?$AAe?$AAM?$AAu?$AAt?$AAe@ 10002728     s3c6410_dma_lib:s3c6410_dma_controller.obj
+ 0001:00001788       ??_C@_1GI@HKHKEGMD@?$AA?$FL?$AAD?$AAM?$AAA?$AA?3?$AAE?$AAR?$AAR?$AA?$FN?$AA?5?$AAD?$AAM?$AAA?$AA?5?$AAR?$AAe?$AAg?$AAi?$AAs?$AAt?$AAe?$AAr?$AA?5?$AAA?$AAd?$AAd?$AAr?$AAe?$AAs?$AAs?$AA?5?$AAi@ 10002788     s3c6410_dma_lib:s3c6410_dma_controller.obj
+ 0001:000017f0       ??_C@_1HI@NLANJBOM@?$AA?$FL?$AAD?$AAM?$AAA?$AA?3?$AAE?$AAR?$AAR?$AA?$FN?$AA?5?$AAD?$AAM?$AAA?$AA_?$AAr?$AAe?$AAq?$AAu?$AAe?$AAs?$AAt?$AA_?$AAc?$AAh?$AAa?$AAn?$AAn?$AAe?$AAl?$AA?$CI?$AA?$CJ?$AA?5@ 100027f0     s3c6410_dma_lib:s3c6410_dma_controller.obj
+ 0001:00001868       ??_C@_1KC@CGAANLJ@?$AA?$FL?$AAD?$AAM?$AAA?$AA?3?$AAE?$AAR?$AAR?$AA?$FN?$AA?5?$AAD?$AAM?$AAA?$AA_?$AAr?$AAe?$AAq?$AAu?$AAe?$AAs?$AAt?$AA_?$AAc?$AAh?$AAa?$AAn?$AAn?$AAe?$AAl?$AA?$CI?$AA?$CJ?$AA?5@ 10002868     s3c6410_dma_lib:s3c6410_dma_controller.obj
+ 0001:00001910       ??_C@_1KC@IPOIPAFL@?$AA?$FL?$AAD?$AAM?$AAA?$AA?3?$AAE?$AAR?$AAR?$AA?$FN?$AA?5?$AAD?$AAM?$AAA?$AA_?$AAr?$AAe?$AAq?$AAu?$AAe?$AAs?$AAt?$AA_?$AAc?$AAh?$AAa?$AAn?$AAn?$AAe?$AAl?$AA?$CI?$AA?$CJ?$AA?5@ 10002910     s3c6410_dma_lib:s3c6410_dma_controller.obj
+ 0001:000019b8       ??_C@_1HA@IPPBLAGG@?$AA?$FL?$AAD?$AAM?$AAA?$AA?3?$AAE?$AAR?$AAR?$AA?$FN?$AA?5?$AAD?$AAM?$AAA?$AA_?$AAc?$AAh?$AAa?$AAn?$AAn?$AAe?$AAl?$AA_?$AAs?$AAt?$AAa?$AAr?$AAt?$AA?$CI?$AA?$CJ?$AA?5?$AA?3?$AA?5@ 100029b8     s3c6410_dma_lib:s3c6410_dma_controller.obj
+ 0001:00001a28       ??_C@_1HC@GALBDFMI@?$AA?$FL?$AAD?$AAM?$AAA?$AA?3?$AAE?$AAR?$AAR?$AA?$FN?$AA?5?$AAD?$AAM?$AAA?$AA_?$AAc?$AAh?$AAa?$AAn?$AAn?$AAe?$AAl?$AA_?$AAs?$AAt?$AAa?$AAr?$AAt?$AA?$CI?$AA?$CJ?$AA?5?$AA?3?$AA?5@ 10002a28     s3c6410_dma_lib:s3c6410_dma_controller.obj
+ 0001:00001aa0       ??_C@_1HA@NGMCLIC@?$AA?$FL?$AAD?$AAM?$AAA?$AA?3?$AAE?$AAR?$AAR?$AA?$FN?$AA?5?$AAD?$AAM?$AAA?$AA_?$AAc?$AAh?$AAa?$AAn?$AAn?$AAe?$AAl?$AA_?$AAs?$AAt?$AAo?$AAp?$AA?$CI?$AA?$CJ?$AA?5?$AA?3?$AA?5?$AAI@ 10002aa0     s3c6410_dma_lib:s3c6410_dma_controller.obj
+ 0001:00001b10       ??_C@_1IC@KCPNFNJE@?$AA?$FL?$AAD?$AAM?$AAA?$AA?$FN?$AA?5?$AAD?$AAM?$AAA?$AA_?$AAa?$AAl?$AAl?$AAo?$AAc?$AAa?$AAt?$AAe?$AA_?$AAL?$AAL?$AAI?$AA_?$AAc?$AAo?$AAn?$AAt?$AAe?$AAx?$AAt?$AA?$CI?$AA?$CJ@ 10002b10     s3c6410_dma_lib:s3c6410_dma_controller.obj
+ 0001:00001b98       ??_C@_1IO@GILAEHOA@?$AA?$FL?$AAD?$AAM?$AAA?$AA?$FN?$AA?5?$AAD?$AAM?$AAA?$AA_?$AAa?$AAl?$AAl?$AAo?$AAc?$AAa?$AAt?$AAe?$AA_?$AAL?$AAL?$AAI?$AA_?$AAc?$AAo?$AAn?$AAt?$AAe?$AAx?$AAt?$AA?$CI?$AA?$CJ@ 10002b98     s3c6410_dma_lib:s3c6410_dma_controller.obj
+ 0001:00001c28       ??_C@_1HG@EOMBIPEO@?$AA?$FL?$AAD?$AAM?$AAA?$AA?3?$AAE?$AAR?$AAR?$AA?$FN?$AA?5?$AAD?$AAM?$AAA?$AA_?$AAr?$AAe?$AAl?$AAe?$AAa?$AAs?$AAe?$AA_?$AAc?$AAh?$AAa?$AAn?$AAn?$AAe?$AAl?$AA?$CI?$AA?$CJ?$AA?5@ 10002c28     s3c6410_dma_lib:s3c6410_dma_controller.obj
+ 0001:00001ca0       ??_C@_1HG@LNJDKPBK@?$AA?$FL?$AAD?$AAM?$AAA?$AA?$FN?$AA?5?$AAD?$AAM?$AAA?$AA_?$AAi?$AAn?$AAi?$AAt?$AAi?$AAa?$AAl?$AAi?$AAz?$AAe?$AA_?$AAL?$AAL?$AAI?$AA?$CI?$AA?$CJ?$AA?5?$AA?3?$AA?5?$AAL?$AAL?$AAI@ 10002ca0     s3c6410_dma_lib:s3c6410_dma_controller.obj
+ 0001:00001d18       ??_C@_1IC@MMFELOND@?$AA?$FL?$AAD?$AAM?$AAA?$AA?3?$AAE?$AAR?$AAR?$AA?$FN?$AA?5?$AAD?$AAM?$AAA?$AA_?$AAi?$AAn?$AAi?$AAt?$AAi?$AAa?$AAl?$AAi?$AAz?$AAe?$AA_?$AAL?$AAL?$AAI?$AA?$CI?$AA?$CJ?$AA?5?$AA?3@ 10002d18     s3c6410_dma_lib:s3c6410_dma_controller.obj
+ 0001:00001dd0       ?DoCallbackReturnBuffer@StreamContext@@UAAHPAUwavehdr_tag@@@Z 10002dd0 f i devctxt.obj
+ 0001:00001e10       ?DoCallbackStreamOpened@StreamContext@@UAAHXZ 10002e10 f i devctxt.obj
+ 0001:00001e50       ?DoCallbackStreamClosed@StreamContext@@UAAHXZ 10002e50 f i devctxt.obj
+ 0001:00001e8c       ?GainChange@StreamContext@@UAAXXZ 10002e8c f i devctxt.obj
+ 0001:00001ea8       ??_EStreamContext@@UAAPAXI@Z 10002ea8 f i devctxt.obj
+ 0001:00001ea8       ??_GStreamContext@@UAAPAXI@Z 10002ea8 f i devctxt.obj
+ 0001:00001ed0       ?IsSupportedFormat@DeviceContext@@UAAHPAUtWAVEFORMATEX@@@Z 10002ed0 f   devctxt.obj
+ 0001:00001f5c       ?IsSupportedFormat@OutputDeviceContext@@UAAHPAUtWAVEFORMATEX@@@Z 10002f5c f   devctxt.obj
+ 0001:00001f88       ?NewStream@DeviceContext@@QAAXPAVStreamContext@@@Z 10002f88 f   devctxt.obj
+ 0001:00001fa8       ?DeleteStream@DeviceContext@@QAAXPAVStreamContext@@@Z 10002fa8 f   devctxt.obj
+ 0001:00001fc4       ?TransferBuffer@DeviceContext@@QAAPAEPAE0PAK@Z 10002fc4 f   devctxt.obj
+ 0001:00002068       ?RecalcAllGains@DeviceContext@@QAAXXZ 10003068 f   devctxt.obj
+ 0001:000020a0       ?StreamReadyToRender@OutputDeviceContext@@UAAXPAVStreamContext@@@Z 100030a0 f   devctxt.obj
+ 0001:000020bc       ?StreamReadyToRender@InputDeviceContext@@UAAXPAVStreamContext@@@Z 100030bc f   devctxt.obj
+ 0001:000020d8       ?GetDevCaps@OutputDeviceContext@@UAAKPAXK@Z 100030d8 f   devctxt.obj
+ 0001:00002100       ?GetDevCaps@InputDeviceContext@@UAAKPAXK@Z 10003100 f   devctxt.obj
+ 0001:00002128       ?GetExtDevCaps@OutputDeviceContext@@UAAKPAXK@Z 10003128 f   devctxt.obj
+ 0001:00002150       ?GetExtDevCaps@InputDeviceContext@@UAAKPAXK@Z 10003150 f   devctxt.obj
+ 0001:00002158       ?OpenStream@DeviceContext@@QAAKPAUwaveopendesc_tag@@KPAPAVStreamContext@@@Z 10003158 f   devctxt.obj
+ 0001:00002240       ?DoCallbackReturnBuffer@InputStreamContext@@UAAHPAUwavehdr_tag@@@Z 10003240 f i devctxt.obj
+ 0001:0000227c       ?DoCallbackStreamOpened@InputStreamContext@@UAAHXZ 1000327c f i devctxt.obj
+ 0001:000022bc       ?DoCallbackStreamClosed@InputStreamContext@@UAAHXZ 100032bc f i devctxt.obj
+ 0001:000022fc       ??_EInputStreamContext@@UAAPAXI@Z 100032fc f i devctxt.obj
+ 0001:000022fc       ??_GInputStreamContext@@UAAPAXI@Z 100032fc f i devctxt.obj
+ 0001:00002324       ??_ECMidiStream@@UAAPAXI@Z 10003324 f i devctxt.obj
+ 0001:00002324       ??_GCMidiStream@@UAAPAXI@Z 10003324 f i devctxt.obj
+ 0001:0000234c       ??_GOutputStreamContextM8@@UAAPAXI@Z 1000334c f i devctxt.obj
+ 0001:0000234c       ??_EOutputStreamContextM8@@UAAPAXI@Z 1000334c f i devctxt.obj
+ 0001:00002374       ??_GOutputStreamContextM16@@UAAPAXI@Z 10003374 f i devctxt.obj
+ 0001:00002374       ??_EOutputStreamContextM16@@UAAPAXI@Z 10003374 f i devctxt.obj
+ 0001:0000239c       ??_EOutputStreamContextS8@@UAAPAXI@Z 1000339c f i devctxt.obj
+ 0001:0000239c       ??_GOutputStreamContextS8@@UAAPAXI@Z 1000339c f i devctxt.obj
+ 0001:000023c4       ??_EOutputStreamContextS16@@UAAPAXI@Z 100033c4 f i devctxt.obj
+ 0001:000023c4       ??_GOutputStreamContextS16@@UAAPAXI@Z 100033c4 f i devctxt.obj
+ 0001:000023ec       ?CreateStream@InputDeviceContext@@UAAPAVStreamContext@@PAUwaveopendesc_tag@@@Z 100033ec f   devctxt.obj
+ 0001:00002418       ?CreateStream@OutputDeviceContext@@UAAPAVStreamContext@@PAUwaveopendesc_tag@@@Z 10003418 f   devctxt.obj
+ 0001:0000252c       ?GetOutputGain@HardwareContext@@QAAKXZ 1000352c f   hwctxt.obj
+ 0001:00002534       ?SetOutputGain@HardwareContext@@QAAIK@Z 10003534 f   hwctxt.obj
+ 0001:0000254c       ?GetInputGain@HardwareContext@@QAAKXZ 1000354c f   hwctxt.obj
+ 0001:00002554       ?SetInputGain@HardwareContext@@QAAIK@Z 10003554 f   hwctxt.obj
+ 0001:00002580       ?GetOutputMute@HardwareContext@@QAAHXZ 10003580 f   hwctxt.obj
+ 0001:00002588       ?GetInputMute@HardwareContext@@QAAHXZ 10003588 f   hwctxt.obj
+ 0001:00002590       ?SetInputMute@HardwareContext@@QAAIH@Z 10003590 f   hwctxt.obj
+ 0001:000025c0       ?UnMapRegisters@HardwareContext@@IAAHXZ 100035c0 f   hwctxt.obj
+ 0001:00002664       ?MapDMABuffers@HardwareContext@@IAAHXZ 10003664 f   hwctxt.obj
+ 0001:00002710       ?UnMapDMABuffers@HardwareContext@@IAAHXZ 10003710 f   hwctxt.obj
+ 0001:00002768       ?InitOutputDMA@HardwareContext@@IAAHXZ 10003768 f   hwctxt.obj
+ 0001:00002868       ?InitInputDMA@HardwareContext@@IAAHXZ 10003868 f   hwctxt.obj
+ 0001:00002968       ?GetInterruptThreadPriority@HardwareContext@@IAAKXZ 10003968 f   hwctxt.obj
+ 0001:000029d8       ?FillOutputBuffer@HardwareContext@@IAAKH@Z 100039d8 f   hwctxt.obj
+ 0001:00002a98       ?FillInputBuffer@HardwareContext@@IAAKH@Z 10003a98 f   hwctxt.obj
+ 0001:00002b40       ?CodecPowerControl@HardwareContext@@IAAHXZ 10003b40 f   hwctxt.obj
+ 0001:00002b84       ?CodecMuteControl@HardwareContext@@IAAHKH@Z 10003b84 f   hwctxt.obj
+ 0001:00002c34       ??0HardwareContext@@QAA@XZ 10003c34 f   hwctxt.obj
+ 0001:00002cd0       ?PowerDown@HardwareContext@@QAAXXZ 10003cd0 f   hwctxt.obj
+ 0001:00002d0c       ?StopOutputDMA@HardwareContext@@QAAXXZ 10003d0c f   hwctxt.obj
+ 0001:00002d60       ?StartInputDMA@HardwareContext@@QAAHXZ 10003d60 f   hwctxt.obj
+ 0001:00002e24       ?StopInputDMA@HardwareContext@@QAAXXZ 10003e24 f   hwctxt.obj
+ 0001:00002e78       ?SetOutputMute@HardwareContext@@QAAIH@Z 10003e78 f   hwctxt.obj
+ 0001:00002ec8       ?ForceSpeaker@HardwareContext@@QAAKH@Z 10003ec8 f   hwctxt.obj
+ 0001:00002ee4       ?MapRegisters@HardwareContext@@IAAHXZ 10003ee4 f   hwctxt.obj
+ 0001:00002fb8       ?InitAC97@HardwareContext@@IAAHXZ 10003fb8 f   hwctxt.obj
+ 0001:0000300c       ?InitCodec@HardwareContext@@IAAHXZ 1000400c f   hwctxt.obj
+ 0001:0000315c       ?TransferOutputBuffer@HardwareContext@@IAAKK@Z 1000415c f   hwctxt.obj
+ 0001:00003220       ?TransferInputBuffers@HardwareContext@@IAAKK@Z 10004220 f   hwctxt.obj
+ 0001:000032e0       ?Deinitialize@HardwareContext@@QAAHXZ 100042e0 f   hwctxt.obj
+ 0001:00003344       ?PowerUp@HardwareContext@@QAAXXZ 10004344 f   hwctxt.obj
+ 0001:00003388       ?IOControl@HardwareContext@@QAAHKKPAEK0KPAK@Z 10004388 f   hwctxt.obj
+ 0001:00003550       ?StartOutputDMA@HardwareContext@@QAAHXZ 10004550 f   hwctxt.obj
+ 0001:00003648       ?InterruptThreadOutputDMA@HardwareContext@@QAAXXZ 10004648 f   hwctxt.obj
+ 0001:0000375c       ?InterruptThreadInputDMA@HardwareContext@@QAAXXZ 1000475c f   hwctxt.obj
+ 0001:0000384c       ?CallInterruptThreadOutputDMA@@YAXPAVHardwareContext@@@Z 1000484c f   hwctxt.obj
+ 0001:00003854       ?CallInterruptThreadInputDMA@@YAXPAVHardwareContext@@@Z 10004854 f   hwctxt.obj
+ 0001:0000385c       ?InitInterruptThread@HardwareContext@@IAAHXZ 1000485c f   hwctxt.obj
+ 0001:000039e0       ?Initialize@HardwareContext@@QAAHK@Z 100049e0 f   hwctxt.obj
+ 0001:00003b2c       ?CreateHWContext@HardwareContext@@SAHK@Z 10004b2c f   hwctxt.obj
+ 0001:00003b90       ?SetRate@InputStreamContext@@UAAKK@Z 10004b90 f   input.obj
+ 0001:00003bfc       ?Stop@InputStreamContext@@UAAKXZ 10004bfc f   input.obj
+ 0001:00003c30       ?Render2@InputStreamContext@@UAAPAEPAE00@Z 10004c30 f   input.obj
+ 0001:00003da4       ?NoteDone@CMidiStream@@QAAXPAVCMidiNote@@@Z 10004da4 f i midinote.obj
+ 0001:00003de4       ?GainChange@CMidiNote@@QAAXXZ 10004de4 f   midinote.obj
+ 0001:00003e04       ?NoteOff@CMidiNote@@QAAJI@Z 10004e04 f   midinote.obj
+ 0001:00003e38       ?Render2@CMidiNote@@QAAPAEPAE00@Z 10004e38 f   midinote.obj
+ 0001:00003f00       ?NoteOn@CMidiNote@@QAAJPAVCMidiStream@@III@Z 10004f00 f   midinote.obj
+ 0001:00003fb4       ?Render@CMidiNote@@QAAPAEPAE00@Z 10004fb4 f   midinote.obj
+ 0001:00004020       ?GainChange@CMidiStream@@UAAXXZ 10005020 f   midistrm.obj
+ 0001:00004050       ?MapNoteGain@CMidiStream@@QAAKK@Z 10005050 f   midistrm.obj
+ 0001:00004084       ?UpdateTempo@CMidiStream@@QAAJXZ 10005084 f   midistrm.obj
+ 0001:000040e4       ?FindNote@CMidiStream@@QAAPAVCMidiNote@@II@Z 100050e4 f   midistrm.obj
+ 0001:0000412c       ?NoteOn@CMidiStream@@QAAJIII@Z 1000512c f   midistrm.obj
+ 0001:000041f0       ?AllNotesOff@CMidiStream@@QAAJI@Z 100051f0 f   midistrm.obj
+ 0001:0000422c       ?Open@CMidiStream@@UAAJPAVDeviceContext@@PAUwaveopendesc_tag@@K@Z 1000522c f   midistrm.obj
+ 0001:00004318       ?Reset@CMidiStream@@UAAKXZ 10005318 f   midistrm.obj
+ 0001:00004358       ?Close@CMidiStream@@UAAKXZ 10005358 f   midistrm.obj
+ 0001:00004380       ?MidiData@CMidiStream@@QAAJI@Z 10005380 f   midistrm.obj
+ 0001:00004434       ?InternalMidiMessage@CMidiStream@@QAAJI@Z 10005434 f   midistrm.obj
+ 0001:000044dc       ?ProcessMidiStream@CMidiStream@@QAAIXZ 100054dc f   midistrm.obj
+ 0001:0000455c       ?Render@CMidiStream@@UAAPAEPAE00@Z 1000555c f   midistrm.obj
+ 0001:0000463c       ?MidiMessage@CMidiStream@@QAAKI@Z 1000563c f   midistrm.obj
+ 0001:00004694       ?LookupMxLine@@YAPBUtagMXLINEDESC@@G@Z 10005694 f   mixerdrv.obj
+ 0001:000046e0       ?LookupMxControl@@YAHGK@Z  100056e0 f   mixerdrv.obj
+ 0001:00004724       ?CopyMixerControl@@YAXPAUtMIXERCONTROL@@PBUtagMXCONTROLDESC@@K@Z 10005724 f   mixerdrv.obj
+ 0001:0000484c       ?PerformMixerCallbacks@@YAXKK@Z 1000584c f   mixerdrv.obj
+ 0001:000048b0       ?wdev_MXDM_GETDEVCAPS@@YAKPAUtagMIXERCAPS@@K@Z 100058b0 f   mixerdrv.obj
+ 0001:00004924       ?wdev_MXDM_OPEN@@YAKPAKPAUtMIXEROPENDESC@@K@Z 10005924 f   mixerdrv.obj
+ 0001:000049cc       ?wdev_MXDM_CLOSE@@YAKK@Z   100059cc f   mixerdrv.obj
+ 0001:00004a24       ?wdev_MXDM_GETLINEINFO@@YAKPAUtMIXERLINE@@K@Z 10005a24 f   mixerdrv.obj
+ 0001:00004d98       ?wdev_MXDM_GETLINECONTROLS@@YAKPAUtMIXERLINECONTROLS@@K@Z 10005d98 f   mixerdrv.obj
+ 0001:00004f9c       ?wdev_MXDM_GETCONTROLDETAILS@@YAKPAUtMIXERCONTROLDETAILS@@K@Z 10005f9c f   mixerdrv.obj
+ 0001:000051b4       ?wdev_MXDM_SETCONTROLDETAILS@@YAKPAUtMIXERCONTROLDETAILS@@K@Z 100061b4 f   mixerdrv.obj
+ 0001:000053c4       ?HandleMixerMessage@@YAHPAUMMDRV_MESSAGE_PARAMS@@PAK@Z 100063c4 f   mixerdrv.obj
+ 0001:00005488       ?Open@OutputStreamContext@@UAAJPAVDeviceContext@@PAUwaveopendesc_tag@@K@Z 10006488 f   output.obj
+ 0001:000054b8       ?Reset@OutputStreamContext@@UAAKXZ 100064b8 f   output.obj
+ 0001:000054e8       ?SetRate@OutputStreamContext@@UAAKK@Z 100064e8 f   output.obj
+ 0001:0000553c       ?Render@WaveStreamContext@@UAAPAEPAE00@Z 1000653c f   output.obj
+ 0001:000055d4       ?Render2@OutputStreamContextM8@@UAAPAEPAE00@Z 100065d4 f   output.obj
+ 0001:00005710       ?Render2@OutputStreamContextM16@@UAAPAEPAE00@Z 10006710 f   output.obj
+ 0001:00005844       ?Render2@OutputStreamContextS8@@UAAPAEPAE00@Z 10006844 f   output.obj
+ 0001:000059c8       ?Render2@OutputStreamContextS16@@UAAPAEPAE00@Z 100069c8 f   output.obj
+ 0001:00005b38       ?Open@StreamContext@@UAAJPAVDeviceContext@@PAUwaveopendesc_tag@@K@Z 10006b38 f   strmctxt.obj
+ 0001:00005c74       ?AddRef@StreamContext@@QAAJXZ 10006c74 f   strmctxt.obj
+ 0001:00005c88       ?Release@StreamContext@@QAAJXZ 10006c88 f   strmctxt.obj
+ 0001:00005cd4       ?QueueBuffer@StreamContext@@UAAKPAUwavehdr_tag@@@Z 10006cd4 f   strmctxt.obj
+ 0001:00005d84       ?GetNextBuffer@StreamContext@@QAAPAEXZ 10006d84 f   strmctxt.obj
+ 0001:00005e60       ?BreakLoop@StreamContext@@QAAKXZ 10006e60 f   strmctxt.obj
+ 0001:00005eec       ?MapGain@StreamContext@@QAAKK@Z 10006eec f   strmctxt.obj
+ 0001:00005f98       ?GetPos@StreamContext@@UAAKPAUmmtime_tag@@@Z 10006f98 f   strmctxt.obj
+ 0001:0000607c       ?Open@WaveStreamContext@@UAAJPAVDeviceContext@@PAUwaveopendesc_tag@@K@Z 1000707c f   strmctxt.obj
+ 0001:00006138       ?GetRate@WaveStreamContext@@QAAKPAK@Z 10007138 f   strmctxt.obj
+ 0001:00006148       ?Run@StreamContext@@UAAKXZ 10007148 f   strmctxt.obj
+ 0001:00006180       ?Stop@StreamContext@@UAAKXZ 10007180 f   strmctxt.obj
+ 0001:00006190       ?Reset@StreamContext@@UAAKXZ 10007190 f   strmctxt.obj
+ 0001:0000622c       ?Close@StreamContext@@UAAKXZ 1000722c f   strmctxt.obj
+ 0001:0000628c       ?SetSecondaryGainClass@StreamContext@@QAAKK@Z 1000728c f i wavemain.obj
+ 0001:000062c8       DllMain                    100072c8 f   wavemain.obj
+ 0001:000062e0       WAV_Init                   100072e0 f   wavemain.obj
+ 0001:000062f0       WAV_Deinit                 100072f0 f   wavemain.obj
+ 0001:0000630c       WAV_Open                   1000730c f   wavemain.obj
+ 0001:00006334       WAV_Close                  10007334 f   wavemain.obj
+ 0001:00006348       ?WAV_PowerUp@@YAXXZ        10007348 f   wavemain.obj
+ 0001:0000634c       ?WAV_PowerDown@@YAXXZ      1000734c f   wavemain.obj
+ 0001:00006358       ?HandleWaveMessage@@YAHPAUMMDRV_MESSAGE_PARAMS@@PAK@Z 10007358 f   wavemain.obj
+ 0001:000066f8       ?WAV_IOControl@@YAHKKPAEK0KPAK@Z 100076f8 f   wavemain.obj
+ 0001:00006848       AC97_initialize_register_address 10007848 f   s3c6410_ac97_lib:s3c6410_ac97_interface.obj
+ 0001:0000686c       AC97_set_pcmout_transfer_mode 1000786c f   s3c6410_ac97_lib:s3c6410_ac97_interface.obj
+ 0001:000068b8       AC97_set_pcmin_transfer_mode 100078b8 f   s3c6410_ac97_lib:s3c6410_ac97_interface.obj
+ 0001:00006904       AC97_enable_codec_ready_interrupt 10007904 f   s3c6410_ac97_lib:s3c6410_ac97_interface.obj
+ 0001:00006920       AC97_disable_all_interrupt 10007920 f   s3c6410_ac97_lib:s3c6410_ac97_interface.obj
+ 0001:0000693c       AC97_clear_all_interrupt   1000793c f   s3c6410_ac97_lib:s3c6410_ac97_interface.obj
+ 0001:00006958       AC97_get_pcmout_physical_buffer_address 10007958 f   s3c6410_ac97_lib:s3c6410_ac97_interface.obj
+ 0001:00006964       AC97_get_pcmin_physical_buffer_address 10007964 f   s3c6410_ac97_lib:s3c6410_ac97_interface.obj
+ 0001:000069c8       AC97_enable_ACLink_data_transfer 100079c8 f   s3c6410_ac97_lib:s3c6410_ac97_interface.obj
+ 0001:000069f4       AC97_wait_for_codec_ready  100079f4 f   s3c6410_ac97_lib:s3c6410_ac97_interface.obj
+ 0001:00006a44       AC97_write_codec           10007a44 f   s3c6410_ac97_lib:s3c6410_ac97_interface.obj
+ 0001:00006a84       AC97_read_codec            10007a84 f   s3c6410_ac97_lib:s3c6410_ac97_interface.obj
+ 0001:00006ae8       AC97_initialize_ACLink     10007ae8 f   s3c6410_ac97_lib:s3c6410_ac97_interface.obj
+ 0001:00006bb0       DMA_initialize_register_address 10007bb0 f   s3c6410_dma_lib:s3c6410_dma_controller.obj
+ 0001:00006c38       DMA_initialize_channel     10007c38 f   s3c6410_dma_lib:s3c6410_dma_controller.obj
+ 0001:00006e30       DMA_set_channel_source     10007e30 f   s3c6410_dma_lib:s3c6410_dma_controller.obj
+ 0001:00006f18       DMA_set_channel_destination 10007f18 f   s3c6410_dma_lib:s3c6410_dma_controller.obj
+ 0001:00006ffc       DMA_set_channel_transfer_size 10007ffc f   s3c6410_dma_lib:s3c6410_dma_controller.obj
+ 0001:00007074       DMA_set_initial_LLI        10008074 f   s3c6410_dma_lib:s3c6410_dma_controller.obj
+ 0001:0000710c       DMA_set_LLI_entry          1000810c f   s3c6410_dma_lib:s3c6410_dma_controller.obj
+ 0001:0000728c       DMA_set_interrupt_mask     1000828c f   s3c6410_dma_lib:s3c6410_dma_controller.obj
+ 0001:000072a0       DMA_clear_interrupt_mask   100082a0 f   s3c6410_dma_lib:s3c6410_dma_controller.obj
+ 0001:000072b4       DMA_clear_interrupt_pending 100082b4 f   s3c6410_dma_lib:s3c6410_dma_controller.obj
+ 0001:00007308       DMA_request_channel        10008308 f   s3c6410_dma_lib:s3c6410_dma_controller.obj
+ 0001:0000757c       DMA_channel_start          1000857c f   s3c6410_dma_lib:s3c6410_dma_controller.obj
+ 0001:000075fc       DMA_channel_stop           100085fc f   s3c6410_dma_lib:s3c6410_dma_controller.obj
+ 0001:0000774c       DMA_release_channel        1000874c f   s3c6410_dma_lib:s3c6410_dma_controller.obj
+ 0001:00007910       DMA_initialize_LLI         10008910 f   s3c6410_dma_lib:s3c6410_dma_controller.obj
+ 0001:00007990       EnterCriticalSection       10008990 f   coredll:COREDLL.dll
+ 0001:000079a0       LeaveCriticalSection       100089a0 f   coredll:COREDLL.dll
+ 0001:000079b0       DeleteCriticalSection      100089b0 f   coredll:COREDLL.dll
+ 0001:000079c0       DevicePowerNotify          100089c0 f   coredll:COREDLL.dll
+ 0001:000079d0       RegCloseKey                100089d0 f   coredll:COREDLL.dll
+ 0001:000079e0       RegQueryValueExW           100089e0 f   coredll:COREDLL.dll
+ 0001:000079f0       OpenDeviceKey              100089f0 f   coredll:COREDLL.dll
+ 0001:00007a00       InitializeCriticalSection  10008a00 f   coredll:COREDLL.dll
+ 0001:00007a10       SetLastError               10008a10 f   coredll:COREDLL.dll
+ 0001:00007a20       SetInterruptEvent          10008a20 f   coredll:COREDLL.dll
+ 0001:00007a30       InterruptDone              10008a30 f   coredll:COREDLL.dll
+ 0001:00007a40       WaitForSingleObject        10008a40 f   coredll:COREDLL.dll
+ 0001:00007a50       CeSetThreadPriority        10008a50 f   coredll:COREDLL.dll
+ 0001:00007a60       CreateThread               10008a60 f   coredll:COREDLL.dll
+ 0001:00007a70       InterruptInitialize        10008a70 f   coredll:COREDLL.dll
+ 0001:00007a80       CreateEventW               10008a80 f   coredll:COREDLL.dll
+ 0001:00007a90       KernelIoControl            10008a90 f   coredll:COREDLL.dll
+ 0001:00007aa0       NKDbgPrintfW               10008aa0 f   coredll:COREDLL.dll
+ 0001:00007ab0       LocalAlloc                 10008ab0 f   coredll:COREDLL.dll
+ 0001:00007ac0       LocalFree                  10008ac0 f   coredll:COREDLL.dll
+ 0001:00007ad0       __GetUserKData             10008ad0 f   coredll:COREDLL.dll
+ 0001:00007ae0       DisableThreadLibraryCalls  10008ae0 f   coredll:COREDLL.dll
+ 0001:00007af0       GetDirectCallerProcessId   10008af0 f   coredll:COREDLL.dll
+ 0001:00007b00       Sleep                      10008b00 f   coredll:COREDLL.dll
+ 0001:00007b10       CreateMutexW               10008b10 f   coredll:COREDLL.dll
+ 0001:00007b20       ReleaseMutex               10008b20 f   coredll:COREDLL.dll
+ 0001:00007b30       MmUnmapIoSpace             10008b30 f   ceddk:CEDDK.dll
+ 0001:00007b40       HalAllocateCommonBuffer    10008b40 f   ceddk:CEDDK.dll
+ 0001:00007b50       HalFreeCommonBuffer        10008b50 f   ceddk:CEDDK.dll
+ 0001:00007b60       MmMapIoSpace               10008b60 f   ceddk:CEDDK.dll
+ 0001:00007c74       _DllMainCRTStartup         10008c74 f   corelib0:pegdmain.obj
+ 0001:00007da0       _cexit                     10008da0 f   corelib0:cexit.obj
+ 0001:00007dbc       _initterm                  10008dbc f   corelib0:crt0dat.obj
+ 0001:00007df0       _cinit                     10008df0 f   corelib0:crt0dat.obj
+ 0001:00007e24       __security_init_cookie     10008e24 f   corelib0:seccinit.obj
+ 0001:00007e80       _purecall                  10008e80 f   corelib1:COREDLL.dll
+ 0001:00007e90       ??3@YAXPAX@Z               10008e90 f   corelib1:COREDLL.dll
+ 0001:00007ea0       memcpy                     10008ea0 f   corelib1:COREDLL.dll
+ 0001:00007eb0       ??2@YAPAXI@Z               10008eb0 f   corelib1:COREDLL.dll
+ 0001:00007ec0       memset                     10008ec0 f   corelib1:COREDLL.dll
+ 0001:00007ed0       __C_specific_handler       10008ed0 f   corelib1:COREDLL.dll
+ 0001:00007ee0       __rt_udiv64by64            10008ee0 f   corelib1:COREDLL.dll
+ 0001:00007ef0       __rt_udiv                  10008ef0 f   corelib1:COREDLL.dll
+ 0001:00007f00       wcscpy_s                   10008f00 f   corelib1:COREDLL.dll
+ 0001:00007f10       wcscpy                     10008f10 f   corelib1:COREDLL.dll
+ 0001:00007f20       _XcptFilter                10008f20 f   corelib1:COREDLL.dll
+ 0001:00007f30       free                       10008f30 f   corelib1:COREDLL.dll
+ 0001:00007f40       __security_gen_cookie2     10008f40 f   corelib1:COREDLL.dll
+ 0001:00007f50       InterlockedExchange        10008f50 f   coredll:COREDLL.dll
+ 0001:00007f60       TerminateProcess           10008f60 f   coredll:COREDLL.dll
+ 0001:00007ffc       __IMPORT_DESCRIPTOR_COREDLL 10008ffc     coredll:COREDLL.dll
+ 0001:00008010       __IMPORT_DESCRIPTOR_CEDDK  10009010     ceddk:CEDDK.dll
+ 0001:00008024       __NULL_IMPORT_DESCRIPTOR   10009024     coredll:COREDLL.dll
+ 0002:00000000       __imp_HalFreeCommonBuffer  1000a000     ceddk:CEDDK.dll
+ 0002:00000004       __imp_HalAllocateCommonBuffer 1000a004     ceddk:CEDDK.dll
+ 0002:00000008       __imp_MmUnmapIoSpace       1000a008     ceddk:CEDDK.dll
+ 0002:0000000c       __imp_MmMapIoSpace         1000a00c     ceddk:CEDDK.dll
+ 0002:00000010       \177CEDDK_NULL_THUNK_DATA  1000a010     ceddk:CEDDK.dll
+ 0002:00000014       __imp_RegQueryValueExW     1000a014     coredll:COREDLL.dll
+ 0002:00000018       __imp_OpenDeviceKey        1000a018     coredll:COREDLL.dll
+ 0002:0000001c       __imp_InitializeCriticalSection 1000a01c     coredll:COREDLL.dll
+ 0002:00000020       __imp_SetLastError         1000a020     coredll:COREDLL.dll
+ 0002:00000024       __imp_SetInterruptEvent    1000a024     coredll:COREDLL.dll
+ 0002:00000028       __imp_InterruptDone        1000a028     coredll:COREDLL.dll
+ 0002:0000002c       __imp_WaitForSingleObject  1000a02c     coredll:COREDLL.dll
+ 0002:00000030       __imp_CeSetThreadPriority  1000a030     coredll:COREDLL.dll
+ 0002:00000034       __imp_CreateThread         1000a034     coredll:COREDLL.dll
+ 0002:00000038       __imp_InterruptInitialize  1000a038     coredll:COREDLL.dll
+ 0002:0000003c       __imp_RegCloseKey          1000a03c     coredll:COREDLL.dll
+ 0002:00000040       __imp_KernelIoControl      1000a040     coredll:COREDLL.dll
+ 0002:00000044       __imp_NKDbgPrintfW         1000a044     coredll:COREDLL.dll
+ 0002:00000048       __imp_LocalAlloc           1000a048     coredll:COREDLL.dll
+ 0002:0000004c       __imp_LocalFree            1000a04c     coredll:COREDLL.dll
+ 0002:00000050       __imp___GetUserKData       1000a050     coredll:COREDLL.dll
+ 0002:00000054       __imp_DisableThreadLibraryCalls 1000a054     coredll:COREDLL.dll
+ 0002:00000058       __imp_GetDirectCallerProcessId 1000a058     coredll:COREDLL.dll
+ 0002:0000005c       __imp_Sleep                1000a05c     coredll:COREDLL.dll
+ 0002:00000060       __imp_CreateMutexW         1000a060     coredll:COREDLL.dll
+ 0002:00000064       __imp_ReleaseMutex         1000a064     coredll:COREDLL.dll
+ 0002:00000068       __imp_DevicePowerNotify    1000a068     coredll:COREDLL.dll
+ 0002:0000006c       __imp_DeleteCriticalSection 1000a06c     coredll:COREDLL.dll
+ 0002:00000070       __imp_LeaveCriticalSection 1000a070     coredll:COREDLL.dll
+ 0002:00000074       __imp_CreateEventW         1000a074     coredll:COREDLL.dll
+ 0002:00000078       __imp_EnterCriticalSection 1000a078     coredll:COREDLL.dll
+ 0002:0000007c       __imp__purecall            1000a07c     corelib1:COREDLL.dll
+ 0002:00000080       __imp_??3@YAXPAX@Z         1000a080     corelib1:COREDLL.dll
+ 0002:00000084       __imp_memcpy               1000a084     corelib1:COREDLL.dll
+ 0002:00000088       __imp_??2@YAPAXI@Z         1000a088     corelib1:COREDLL.dll
+ 0002:0000008c       __imp_memset               1000a08c     corelib1:COREDLL.dll
+ 0002:00000090       __imp___C_specific_handler 1000a090     corelib1:COREDLL.dll
+ 0002:00000094       __imp___rt_udiv64by64      1000a094     corelib1:COREDLL.dll
+ 0002:00000098       __imp___rt_udiv            1000a098     corelib1:COREDLL.dll
+ 0002:0000009c       __imp_wcscpy_s             1000a09c     corelib1:COREDLL.dll
+ 0002:000000a0       __imp_wcscpy               1000a0a0     corelib1:COREDLL.dll
+ 0002:000000a4       __imp__XcptFilter          1000a0a4     corelib1:COREDLL.dll
+ 0002:000000a8       __imp_free                 1000a0a8     corelib1:COREDLL.dll
+ 0002:000000ac       __imp___security_gen_cookie2 1000a0ac     corelib1:COREDLL.dll
+ 0002:000000b0       __imp_InterlockedExchange  1000a0b0     coredll:COREDLL.dll
+ 0002:000000b4       __imp_TerminateProcess     1000a0b4     coredll:COREDLL.dll
+ 0002:000000b8       \177COREDLL_NULL_THUNK_DATA 1000a0b8     coredll:COREDLL.dll
+ 0002:000000bc       __security_cookie          1000a0bc     corelib0:seccinit.obj
+ 0002:000000c0       __security_cookie_complement 1000a0c0     corelib0:seccinit.obj
+ 0002:0000017c       ?g_pHWContext@@3PAVHardwareContext@@A 1000a17c     hwctxt.obj
+ 0002:00000198       ?g_VolumeSettings@@3U_global_volume@@A 1000a198     mixerdrv.obj
+ 0002:000001c0       _exitflag                  1000a1c0     corelib0:cexit.obj
+ 0002:000001c4       __onexitend                1000a1c4     <common>
+ 0002:000001c8       __onexitbegin              1000a1c8     <common>
+ 0002:000001cc       g_pcsExit                  1000a1cc     <common>
+ 0002:000001d0       _pRawDllMain               1000a1d0     <common>
+
+ entry point at        0001:00007c74
+
+ Static symbols
+
+ 0001:00006970       DelayLoop                  10007970 f   s3c6410_ac97_lib:s3c6410_ac97_interface.obj
+ 0001:00007668       DMA_allocate_LLI_context   10008668 f   s3c6410_dma_lib:s3c6410_dma_controller.obj
+ 0001:00007b78       _DllMainCRTStartupHelper   10008b78 f   corelib0:pegdmain.obj
+ 0001:00007ca4       doexit                     10008ca4 f   corelib0:cexit.obj

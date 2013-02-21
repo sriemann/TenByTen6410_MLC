@@ -1,0 +1,274 @@
+ smdk6410_keypad
+
+ Timestamp is 5125b29d (Thu Feb 21 13:37:33 2013)
+
+ Preferred load address is 10000000
+
+ Start         Length     Name                   Class
+ 0001:00000000 000007f8H .rdata                  CODE
+ 0001:000007f8 0000002cH .rdata$debug            CODE
+ 0001:00000824 00004698H .text                   CODE
+ 0001:00004ebc 000000b8H .xdata                  CODE
+ 0001:00004f74 00000028H .idata$2                CODE
+ 0001:00004f9c 00000014H .idata$3                CODE
+ 0001:00004fb0 00000110H .idata$4                CODE
+ 0001:000050c0 00000016H .idata$6                CODE
+ 0001:000050e0 00000249H .edata                  CODE
+ 0002:00000000 00000110H .idata$5                DATA
+ 0002:00000110 000004d8H .data                   DATA
+ 0002:000005e8 00000434H .bss                    DATA
+ 0003:00000000 00000260H .pdata                  DATA
+
+  Address         Publics by Value              Rva+Base       Lib:Object
+
+ 0000:00000000       ___safe_se_handler_table   00000000     <absolute>
+ 0000:00000000       ___safe_se_handler_count   00000000     <absolute>
+ 0001:00000260       ??_C@_17LIMMJKCA@?$AAK?$AAB?$AAD?$AA?$AA@ 10001260     LayoutManager:LayMgr.obj
+ 0001:00000268       ??_C@_1DA@FKJDDCGN@?$AAK?$AAe?$AAy?$AAb?$AAo?$AAa?$AAr?$AAd?$AA?5?$AAL?$AAa?$AAy?$AAo?$AAu?$AAt?$AA?2?$AAP?$AAr?$AAe?$AAl?$AAo?$AAa?$AAd?$AA?$AA@ 10001268     LayoutManager:LayMgr.obj
+ 0001:00000298       ??_C@_15EFLNJKHH@?$AA?$CF?$AAu?$AA?$AA@ 10001298     LayoutManager:LayMgr.obj
+ 0001:000002a0       ??_C@_19NGFMKOON@?$AA?$CF?$AA0?$AA8?$AAX?$AA?$AA@ 100012a0     LayoutManager:LayMgr.obj
+ 0001:000002ac       ??_C@_1CA@GLIJBCFK@?$AAK?$AAe?$AAy?$AAb?$AAo?$AAa?$AAr?$AAd?$AA?5?$AAL?$AAa?$AAy?$AAo?$AAu?$AAt?$AA?$AA@ 100012ac     LayoutManager:LayMgr.obj
+ 0001:000002cc       ??_C@_1M@LLCLNBHO@?$AA?$CF?$AAs?$AA_?$AA?$CF?$AAs?$AA?$AA@ 100012cc     LayoutManager:LayMgr.obj
+ 0001:000002d8       ??_C@_1EC@PDDNOLEO@?$AAK?$AAe?$AAr?$AAn?$AAe?$AAl?$AA?5?$AAP?$AAr?$AAo?$AAf?$AAi?$AAl?$AAe?$AAr?$AA?5?$AAm?$AAo?$AAd?$AAe?$AA?3?$AA?5?$AAB?$AAu?$AAf?$AAf?$AAe?$AAr?$AAe?$AAd?$AA?$AN?$AA?6@ 100012d8     LayoutManager:profiler.obj
+ 0001:0000031c       ??_C@_1DM@LDFFLEGF@?$AAK?$AAe?$AAr?$AAn?$AAe?$AAl?$AA?5?$AAP?$AAr?$AAo?$AAf?$AAi?$AAl?$AAe?$AAr?$AA?5?$AAm?$AAo?$AAd?$AAe?$AA?3?$AA?5?$AAC?$AAe?$AAL?$AAo?$AAg?$AA?$AN?$AA?6?$AA?$AA@ 1000131c     LayoutManager:profiler.obj
+ 0001:00000358       ??_C@_1EG@OLMAKGJN@?$AAK?$AAe?$AAr?$AAn?$AAe?$AAl?$AA?5?$AAP?$AAr?$AAo?$AAf?$AAi?$AAl?$AAe?$AAr?$AA?5?$AAm?$AAo?$AAd?$AAe?$AA?3?$AA?5?$AAU?$AAn?$AAb?$AAu?$AAf?$AAf?$AAe?$AAr?$AAe?$AAd@ 10001358     LayoutManager:profiler.obj
+ 0001:000005a0       ??_C@_1BC@MIPAGAPN@?$AAP?$AAS?$AA?1?$AA2?$AA?5?$AAN?$AAO?$AAP?$AA?$AA@ 100015a0     Nop_KbdCommon:NopKbd.obj
+ 0001:000005c4       ??_C@_1O@PLFHEEBL@?$AAM?$AAa?$AAt?$AAr?$AAi?$AAx?$AA?$AA@ 100015c4     KeyPadcommon:kbd.obj
+ 0001:000005d4       ??_C@_1BG@MCLLCMGJ@?$AAI?$AAO?$AAC?$AAT?$AAR?$AAL?$AAB?$AAa?$AAs?$AAe?$AA?$AA@ 100015d4     KeyPadcommon:keymatrix.obj
+ 0001:000005ec       ??_C@_1O@IEBMKJOO@?$AAI?$AAO?$AAB?$AAa?$AAs?$AAe?$AA?$AA@ 100015ec     KeyPadcommon:keymatrix.obj
+ 0001:000005fc       ??_C@_1BG@JALEPHAD@?$AAS?$AAY?$AAS?$AAC?$AAO?$AAN?$AAB?$AAa?$AAs?$AAe?$AA?$AA@ 100015fc     KeyPadcommon:keymatrix.obj
+ 0001:00000614       ??_C@_1DC@EACIGNLE@?$AAH?$AAA?$AAR?$AAD?$AAW?$AAA?$AAR?$AAE?$AA?2?$AAD?$AAE?$AAV?$AAI?$AAC?$AAE?$AAM?$AAA?$AAP?$AA?2?$AAK?$AAE?$AAY?$AAB?$AAD?$AA?$AA@ 10001614     KeyPadcommon:keymatrix.obj
+ 0001:00000648       ??_C@_1DO@IGCOCDAF@?$AAi?$AAn?$AAt?$AAe?$AAr?$AAr?$AAu?$AAp?$AAt?$AA?5?$AAi?$AAs?$AA?5?$AAn?$AAo?$AAt?$AA?5?$AAi?$AAn?$AAi?$AAt?$AAi?$AAa?$AAl?$AAi?$AAz?$AAe?$AAd?$AA?6?$AA?$AN?$AA?$AA@ 10001648     KeyPadcommon:keymatrix.obj
+ 0001:00000688       ??_C@_1CO@PDGNADMK@?$AAE?$AAv?$AAe?$AAn?$AAt?$AA?5?$AAi?$AAs?$AA?5?$AAn?$AAo?$AAt?$AA?5?$AAc?$AAr?$AAe?$AAa?$AAt?$AAe?$AAd?$AA?$AN?$AA?6?$AA?$AA@ 10001688     KeyPadcommon:keymatrix.obj
+ 0001:000006b8       ??_C@_1JO@GHJJODBF@?$AAC?$AA?3?$AA?2?$AAW?$AAI?$AAN?$AAC?$AAE?$AA6?$AA0?$AA0?$AA?2?$AAP?$AAL?$AAA?$AAT?$AAF?$AAO?$AAR?$AAM?$AA?2?$AAT?$AAe?$AAn?$AAB?$AAy?$AAT?$AAe?$AAn?$AA6?$AA4?$AA1@ 100016b8     KeyPadcommon:keymatrix.obj
+ 0001:00000758       ??_C@_1CI@OHCJFJPM@?$AAE?$AAR?$AAR?$AAO?$AAR?$AA?3?$AA?5?$AA?$CF?$AAs?$AA?5?$AAl?$AAi?$AAn?$AAe?$AA?5?$AA?$CF?$AAd?$AA?3?$AA?5?$AA?$AA@ 10001758     KeyPadcommon:keymatrix.obj
+ 0001:00000780       ??_C@_1GA@GBJMPNKE@?$AAE?$AAR?$AAR?$AAO?$AAR?$AA?3?$AA?5?$AAF?$AAa?$AAi?$AAl?$AAe?$AAd?$AA?5?$AAt?$AAo?$AA?5?$AAr?$AAe?$AAq?$AAu?$AAe?$AAs?$AAt?$AA?5?$AAt?$AAh?$AAe?$AA?5?$AAI?$AAR?$AAQ@ 10001780     KeyPadcommon:keymatrix.obj
+ 0001:000007e0       ??_C@_1BI@BHLBGEOK@?$AAP?$AAr?$AAi?$AAo?$AAr?$AAi?$AAt?$AAy?$AA2?$AA5?$AA6?$AA?$AA@ 100017e0     KeyPadcommon:keymatrix.obj
+ 0001:00000984       Matrix                     10001984 f   S3C6410_Layout:s3c6410_layout.obj
+ 0001:00001148       KeybdDriverInitStates      10002148 f   LayoutManager:LayMgr.obj
+ 0001:00001170       KeybdDriverGetInfo         10002170 f   LayoutManager:LayMgr.obj
+ 0001:00001310       KeybdDriverSetMode         10002310 f   LayoutManager:LayMgr.obj
+ 0001:000013d4       KeybdDriverPowerHandler    100023d4 f   LayoutManager:LayMgr.obj
+ 0001:000015f0       ?KeybdEventThreadProc@@YAKPAX@Z 100025f0 f   LayoutManager:LayMgr.obj
+ 0001:00001878       ?KeybdEventCallback@@YAXIIH@Z 10002878 f   LayoutManager:LayMgr.obj
+ 0001:00002234       ?GetKeyboardProcAddr@@YAP6AHXZPAUHINSTANCE__@@PBG@Z 10003234 f   LayoutManager:LayMgr.obj
+ 0001:00002c94       KeybdDriverInitializeEx    10003c94 f   LayoutManager:LayMgr.obj
+ 0001:00002f34       LayoutMgrGetKeyboardType   10003f34 f   LayoutManager:LayMgr.obj
+ 0001:00002fb8       LayoutMgrGetKeyboardLayout 10003fb8 f   LayoutManager:LayMgr.obj
+ 0001:00002ffc       LayoutMgrGetKeyboardLayoutName 10003ffc f   LayoutManager:LayMgr.obj
+ 0001:00003074       LayoutMgrGetKeyboardLayoutList 10004074 f   LayoutManager:LayMgr.obj
+ 0001:000032c0       LayoutMgrLoadKeyboardLayout 100042c0 f   LayoutManager:LayMgr.obj
+ 0001:00003508       LayoutMgrActivateKeyboardLayout 10004508 f   LayoutManager:LayMgr.obj
+ 0001:00003584       DllMain                    10004584 f   LayoutManager:LayMgr.obj
+ 0001:0000359c       KeybdDriverVKeyToUnicode   1000459c f   LayoutManager:LayMgr.obj
+ 0001:000038d4       KeybdDriverMapVirtualKey   100048d4 f   LayoutManager:LayMgr.obj
+ 0001:00003a88       ?DoProfilerKey@@YAHG@Z     10004a88 f   LayoutManager:profiler.obj
+ 0001:00003b5c       IL_00000409                10004b5c f   InputLang_0409:IL_0409.obj
+ 0001:00003c48       PS2_AT_00000409            10004c48 f   kbdus_lib:kbdus.obj
+ 0001:00003c80       EventModify                10004c80 f   coredll:COREDLL.dll
+ 0001:00003c90       EnterCriticalSection       10004c90 f   coredll:COREDLL.dll
+ 0001:00003ca0       LeaveCriticalSection       10004ca0 f   coredll:COREDLL.dll
+ 0001:00003cb0       SetLastError               10004cb0 f   coredll:COREDLL.dll
+ 0001:00003cc0       DeviceIoControl            10004cc0 f   coredll:COREDLL.dll
+ 0001:00003cd0       keybd_event                10004cd0 f   coredll:COREDLL.dll
+ 0001:00003ce0       WaitForSingleObject        10004ce0 f   coredll:COREDLL.dll
+ 0001:00003cf0       GetTickCount               10004cf0 f   coredll:COREDLL.dll
+ 0001:00003d00       SetThreadPriority          10004d00 f   coredll:COREDLL.dll
+ 0001:00003d10       WaitForMultipleObjects     10004d10 f   coredll:COREDLL.dll
+ 0001:00003d20       StopDeviceNotifications    10004d20 f   coredll:COREDLL.dll
+ 0001:00003d30       GetLastError               10004d30 f   coredll:COREDLL.dll
+ 0001:00003d40       CloseHandle                10004d40 f   coredll:COREDLL.dll
+ 0001:00003d50       CreateFileW                10004d50 f   coredll:COREDLL.dll
+ 0001:00003d60       ReadMsgQueue               10004d60 f   coredll:COREDLL.dll
+ 0001:00003d70       RequestDeviceNotifications 10004d70 f   coredll:COREDLL.dll
+ 0001:00003d80       CreateMsgQueue             10004d80 f   coredll:COREDLL.dll
+ 0001:00003d90       RegOpenKeyExW              10004d90 f   coredll:COREDLL.dll
+ 0001:00003da0       RegCloseKey                10004da0 f   coredll:COREDLL.dll
+ 0001:00003db0       RegQueryValueExW           10004db0 f   coredll:COREDLL.dll
+ 0001:00003dc0       StringCchCopyW             10004dc0 f   coredll:COREDLL.dll
+ 0001:00003dd0       GetProcAddressW            10004dd0 f   coredll:COREDLL.dll
+ 0001:00003de0       FreeLibrary                10004de0 f   coredll:COREDLL.dll
+ 0001:00003df0       LoadLibraryW               10004df0 f   coredll:COREDLL.dll
+ 0001:00003e00       RegEnumValueW              10004e00 f   coredll:COREDLL.dll
+ 0001:00003e10       LocalFree                  10004e10 f   coredll:COREDLL.dll
+ 0001:00003e20       LocalAlloc                 10004e20 f   coredll:COREDLL.dll
+ 0001:00003e30       DeleteCriticalSection      10004e30 f   coredll:COREDLL.dll
+ 0001:00003e40       CreateThread               10004e40 f   coredll:COREDLL.dll
+ 0001:00003e50       CreateEventW               10004e50 f   coredll:COREDLL.dll
+ 0001:00003e60       InitializeCriticalSection  10004e60 f   coredll:COREDLL.dll
+ 0001:00003e70       CeSafeCopyMemory           10004e70 f   coredll:COREDLL.dll
+ 0001:00003e80       RegDeleteKeyW              10004e80 f   coredll:COREDLL.dll
+ 0001:00003e90       RegSetValueExW             10004e90 f   coredll:COREDLL.dll
+ 0001:00003ea0       RegCreateKeyExW            10004ea0 f   coredll:COREDLL.dll
+ 0001:00003eb0       StringCchLengthW           10004eb0 f   coredll:COREDLL.dll
+ 0001:00003ec0       DisableThreadLibraryCalls  10004ec0 f   coredll:COREDLL.dll
+ 0001:00003ed0       NKDbgPrintfW               10004ed0 f   coredll:COREDLL.dll
+ 0001:00003ee0       ProfileStart               10004ee0 f   coredll:COREDLL.dll
+ 0001:00003ef0       ProfileStop                10004ef0 f   coredll:COREDLL.dll
+ 0001:00003f00       __GSHandlerCheckCommon     10004f00 f   corelib0:gshandler.obj
+ 0001:00003f3c       __GSHandlerCheck           10004f3c f   corelib0:gshandler.obj
+ 0001:00003f60       __security_check_cookie    10004f60 f   corelib0:armsecgs.obj
+ 0001:00003f74       __gsfailure                10004f74 f   corelib0:armsecgs.obj
+ 0001:00003fb8       __GSHandlerCheck_SEH       10004fb8 f   corelib0:gshandlerseh.obj
+ 0001:00004008       memcpy                     10005008 f   corelib1:COREDLL.dll
+ 0001:00004018       wcsrchr                    10005018 f   corelib1:COREDLL.dll
+ 0001:00004028       wcsstr                     10005028 f   corelib1:COREDLL.dll
+ 0001:00004038       memset                     10005038 f   corelib1:COREDLL.dll
+ 0001:00004048       __C_specific_handler       10005048 f   corelib1:COREDLL.dll
+ 0001:00004058       _snwprintf                 10005058 f   corelib1:COREDLL.dll
+ 0001:00004068       wcstoul                    10005068 f   corelib1:COREDLL.dll
+ 0001:00004078       wcscpy                     10005078 f   corelib1:COREDLL.dll
+ 0001:00004088       _wcsicmp                   10005088 f   corelib1:COREDLL.dll
+ 0001:00004098       _wcslwr                    10005098 f   corelib1:COREDLL.dll
+ 0001:000040a8       wcsncat                    100050a8 f   corelib1:COREDLL.dll
+ 0001:000040b8       wcsncpy                    100050b8 f   corelib1:COREDLL.dll
+ 0001:000040c8       wcsncmp                    100050c8 f   corelib1:COREDLL.dll
+ 0001:000040d8       towlower                   100050d8 f   corelib1:COREDLL.dll
+ 0001:000040e8       __report_gsfailure         100050e8 f   corelib1:COREDLL.dll
+ 0001:000040f8       ?PS2_NOP_Entry@@YAHIP6AXIIH@ZPAPAUtagKEYBD_PDD@@@Z 100050f8 f   Nop_KbdCommon:NopKbd.obj
+ 0001:00004404       ?NumPadRemapVKey@@YAIPBU_KEYBD_EVENT@@IPAU1@I@Z 10005404 f   NumPadRmp:NumPadRmp.obj
+ 0001:000044dc       GetAsyncKeyState           100054dc f   coredll:COREDLL.dll
+ 0001:000044ec       IsAPIReady                 100054ec f   coredll:COREDLL.dll
+ 0001:000044fc       ?ReadRegDWORD@@YAXPBG0PAK@Z 100054fc f   KeyPadcommon:kbd.obj
+ 0001:000045cc       ?Matrix_Entry@@YAHIP6AXIIH@ZPAPAUtagKEYBD_PDD@@@Z 100055cc f   KeyPadcommon:kbd.obj
+ 0001:00004648       ?KeybdDriverInitializeAddresses@@YAHXZ 10005648 f   KeyPadcommon:keymatrix.obj
+ 0001:00004794       ?AreAllKeysUp@@YAHXZ       10005794 f   KeyPadcommon:keymatrix.obj
+ 0001:000047e8       ?KScan_ProcState@@YAKHHPAKPAH@Z 100057e8 f   KeyPadcommon:keymatrix.obj
+ 0001:000049b8       ?KeybdPdd_ToggleKeyNotification@@YAXI@Z 100059b8 f   KeyPadcommon:keymatrix.obj
+ 0001:000049bc       ?KScan_ProcIO@@YAXXZ       100059bc f   KeyPadcommon:keymatrix.obj
+ 0001:00004a44       ?KScan_SetINTMode@@YAXXZ   10005a44 f   KeyPadcommon:keymatrix.obj
+ 0001:00004ab0       ?IsrThreadProc@KeyMatrix@@QAAHXZ 10005ab0 f   KeyPadcommon:keymatrix.obj
+ 0001:00004cbc       ?KBDISRThread@@YAKPAVKeyMatrix@@@Z 10005cbc f   KeyPadcommon:keymatrix.obj
+ 0001:00004cd0       ?IsrThreadStart@KeyMatrix@@QAAHXZ 10005cd0 f   KeyPadcommon:keymatrix.obj
+ 0001:00004d1c       ?KeybdPowerOn@KeyMatrix@@QAAHXZ 10005d1c f   KeyPadcommon:keymatrix.obj
+ 0001:00004d8c       ?KeybdPowerOff@KeyMatrix@@QAAHXZ 10005d8c f   KeyPadcommon:keymatrix.obj
+ 0001:00004e0c       ?KeybdPdd_PowerHandler@@YAXH@Z 10005e0c f   KeyPadcommon:keymatrix.obj
+ 0001:00004e3c       Sleep                      10005e3c f   coredll:COREDLL.dll
+ 0001:00004e4c       InterruptDone              10005e4c f   coredll:COREDLL.dll
+ 0001:00004e5c       InterruptInitialize        10005e5c f   coredll:COREDLL.dll
+ 0001:00004e6c       KernelIoControl            10005e6c f   coredll:COREDLL.dll
+ 0001:00004e7c       CeSetThreadPriority        10005e7c f   coredll:COREDLL.dll
+ 0001:00004e8c       MmUnmapIoSpace             10005e8c f   ceddk:CEDDK.dll
+ 0001:00004e9c       MmMapIoSpace               10005e9c f   ceddk:CEDDK.dll
+ 0001:00004eac       ??2@YAPAXI@Z               10005eac f   corelib1:COREDLL.dll
+ 0001:00004f74       __IMPORT_DESCRIPTOR_COREDLL 10005f74     coredll:COREDLL.dll
+ 0001:00004f88       __IMPORT_DESCRIPTOR_CEDDK  10005f88     ceddk:CEDDK.dll
+ 0001:00004f9c       __NULL_IMPORT_DESCRIPTOR   10005f9c     coredll:COREDLL.dll
+ 0002:00000000       __imp_MmUnmapIoSpace       10007000     ceddk:CEDDK.dll
+ 0002:00000004       __imp_MmMapIoSpace         10007004     ceddk:CEDDK.dll
+ 0002:00000008       \177CEDDK_NULL_THUNK_DATA  10007008     ceddk:CEDDK.dll
+ 0002:0000000c       __imp_SetLastError         1000700c     coredll:COREDLL.dll
+ 0002:00000010       __imp_DeviceIoControl      10007010     coredll:COREDLL.dll
+ 0002:00000014       __imp_keybd_event          10007014     coredll:COREDLL.dll
+ 0002:00000018       __imp_WaitForSingleObject  10007018     coredll:COREDLL.dll
+ 0002:0000001c       __imp_GetTickCount         1000701c     coredll:COREDLL.dll
+ 0002:00000020       __imp_SetThreadPriority    10007020     coredll:COREDLL.dll
+ 0002:00000024       __imp_WaitForMultipleObjects 10007024     coredll:COREDLL.dll
+ 0002:00000028       __imp_StopDeviceNotifications 10007028     coredll:COREDLL.dll
+ 0002:0000002c       __imp_GetLastError         1000702c     coredll:COREDLL.dll
+ 0002:00000030       __imp_CloseHandle          10007030     coredll:COREDLL.dll
+ 0002:00000034       __imp_CreateFileW          10007034     coredll:COREDLL.dll
+ 0002:00000038       __imp_ReadMsgQueue         10007038     coredll:COREDLL.dll
+ 0002:0000003c       __imp_RequestDeviceNotifications 1000703c     coredll:COREDLL.dll
+ 0002:00000040       __imp_CreateMsgQueue       10007040     coredll:COREDLL.dll
+ 0002:00000044       __imp_RegOpenKeyExW        10007044     coredll:COREDLL.dll
+ 0002:00000048       __imp_RegCloseKey          10007048     coredll:COREDLL.dll
+ 0002:0000004c       __imp_RegQueryValueExW     1000704c     coredll:COREDLL.dll
+ 0002:00000050       __imp_StringCchCopyW       10007050     coredll:COREDLL.dll
+ 0002:00000054       __imp_GetProcAddressW      10007054     coredll:COREDLL.dll
+ 0002:00000058       __imp_FreeLibrary          10007058     coredll:COREDLL.dll
+ 0002:0000005c       __imp_LoadLibraryW         1000705c     coredll:COREDLL.dll
+ 0002:00000060       __imp_RegEnumValueW        10007060     coredll:COREDLL.dll
+ 0002:00000064       __imp_LocalFree            10007064     coredll:COREDLL.dll
+ 0002:00000068       __imp_LocalAlloc           10007068     coredll:COREDLL.dll
+ 0002:0000006c       __imp_DeleteCriticalSection 1000706c     coredll:COREDLL.dll
+ 0002:00000070       __imp_CreateThread         10007070     coredll:COREDLL.dll
+ 0002:00000074       __imp_CreateEventW         10007074     coredll:COREDLL.dll
+ 0002:00000078       __imp_InitializeCriticalSection 10007078     coredll:COREDLL.dll
+ 0002:0000007c       __imp_CeSafeCopyMemory     1000707c     coredll:COREDLL.dll
+ 0002:00000080       __imp_RegDeleteKeyW        10007080     coredll:COREDLL.dll
+ 0002:00000084       __imp_LeaveCriticalSection 10007084     coredll:COREDLL.dll
+ 0002:00000088       __imp_RegCreateKeyExW      10007088     coredll:COREDLL.dll
+ 0002:0000008c       __imp_StringCchLengthW     1000708c     coredll:COREDLL.dll
+ 0002:00000090       __imp_DisableThreadLibraryCalls 10007090     coredll:COREDLL.dll
+ 0002:00000094       __imp_NKDbgPrintfW         10007094     coredll:COREDLL.dll
+ 0002:00000098       __imp_ProfileStart         10007098     coredll:COREDLL.dll
+ 0002:0000009c       __imp_ProfileStop          1000709c     coredll:COREDLL.dll
+ 0002:000000a0       __imp_memcpy               100070a0     corelib1:COREDLL.dll
+ 0002:000000a4       __imp_wcsrchr              100070a4     corelib1:COREDLL.dll
+ 0002:000000a8       __imp_wcsstr               100070a8     corelib1:COREDLL.dll
+ 0002:000000ac       __imp_memset               100070ac     corelib1:COREDLL.dll
+ 0002:000000b0       __imp___C_specific_handler 100070b0     corelib1:COREDLL.dll
+ 0002:000000b4       __imp___rt_udiv            100070b4     corelib1:COREDLL.dll
+ 0002:000000b8       __imp__snwprintf           100070b8     corelib1:COREDLL.dll
+ 0002:000000bc       __imp_wcstoul              100070bc     corelib1:COREDLL.dll
+ 0002:000000c0       __imp_wcscpy               100070c0     corelib1:COREDLL.dll
+ 0002:000000c4       __imp__wcsicmp             100070c4     corelib1:COREDLL.dll
+ 0002:000000c8       __imp__wcslwr              100070c8     corelib1:COREDLL.dll
+ 0002:000000cc       __imp_wcsncat              100070cc     corelib1:COREDLL.dll
+ 0002:000000d0       __imp_wcsncpy              100070d0     corelib1:COREDLL.dll
+ 0002:000000d4       __imp_wcsncmp              100070d4     corelib1:COREDLL.dll
+ 0002:000000d8       __imp_towlower             100070d8     corelib1:COREDLL.dll
+ 0002:000000dc       __imp___report_gsfailure   100070dc     corelib1:COREDLL.dll
+ 0002:000000e0       __imp_GetAsyncKeyState     100070e0     coredll:COREDLL.dll
+ 0002:000000e4       __imp_IsAPIReady           100070e4     coredll:COREDLL.dll
+ 0002:000000e8       __imp_Sleep                100070e8     coredll:COREDLL.dll
+ 0002:000000ec       __imp_InterruptDone        100070ec     coredll:COREDLL.dll
+ 0002:000000f0       __imp_InterruptInitialize  100070f0     coredll:COREDLL.dll
+ 0002:000000f4       __imp_KernelIoControl      100070f4     coredll:COREDLL.dll
+ 0002:000000f8       __imp_CeSetThreadPriority  100070f8     coredll:COREDLL.dll
+ 0002:000000fc       __imp_EnterCriticalSection 100070fc     coredll:COREDLL.dll
+ 0002:00000100       __imp_RegSetValueExW       10007100     coredll:COREDLL.dll
+ 0002:00000104       __imp_EventModify          10007104     coredll:COREDLL.dll
+ 0002:00000108       __imp_??2@YAPAXI@Z         10007108     corelib1:COREDLL.dll
+ 0002:0000010c       \177COREDLL_NULL_THUNK_DATA 1000710c     coredll:COREDLL.dll
+ 0002:00000110       ?ScanCodeToVKeyTable@@3PAEA 10007110     S3C6410_Layout:s3c6410_layout.obj
+ 0002:0000012c       ?ScanCodeToVKeyExtTable@@3PAEA 1000712c     S3C6410_Layout:s3c6410_layout.obj
+ 0002:00000510       __security_cookie          10007510     corelib0:seccinit.obj
+ 0002:00000514       __security_cookie_complement 10007514     corelib0:seccinit.obj
+ 0002:00000518       ?g_rgpfnPddEntries@@3PAP6AHIP6AXIIH@ZPAPAUtagKEYBD_PDD@@@ZA 10007518     PddList:pddlist.obj
+ 0002:00000548       ?KeyCode@@3PAUKCODE@@A     10007548     KeyPadcommon:keymatrix.obj
+ 0002:00000600       ?g_csEventCallback@@3UCRITICAL_SECTION@@A 10007600     LayoutManager:LayMgr.obj
+ 0002:000009ac       ?v_uiPddId@@3IA            100079ac     KeyPadcommon:kbd.obj
+ 0002:000009b0       ?v_pfnKeybdEvent@@3P6AXIIH@ZA 100079b0     KeyPadcommon:kbd.obj
+ 0002:000009b8       ?KeyState@@3PAKA           100079b8     KeyPadcommon:keymatrix.obj
+ 0002:000009cc       ?KeyChange@@3PAUKSTATE@@A  100079cc     KeyPadcommon:keymatrix.obj
+ 0002:000009f4       ?FaultKey@@3KA             100079f4     KeyPadcommon:keymatrix.obj
+ 0002:000009f8       ?ChangeState@@3PAKA        100079f8     KeyPadcommon:keymatrix.obj
+ 0002:00000a0c       ?Keyboard@@3PAVKeyMatrix@@A 10007a0c     KeyPadcommon:keymatrix.obj
+ 0002:00000a10       ?pGPIOReg@@3PCUS3C6410_GPIO_REG@@C 10007a10     KeyPadcommon:keymatrix.obj
+ 0002:00000a14       ?pKeyPadReg@@3PCUS3C6410_KEYPAD_REG@@C 10007a14     KeyPadcommon:keymatrix.obj
+ 0002:00000a18       ?pSysConReg@@3PCUS3C6410_SYSCON_REG@@C 10007a18     KeyPadcommon:keymatrix.obj
+
+ entry point at        0001:00003584
+
+ Static symbols
+
+ 0001:00000824       ?FindRemappedKey@@YAPBUVirtualKeyMapping@@IPBU1@K@Z 10001824 f   S3C6410_Layout:s3c6410_layout.obj
+ 0001:00000884       ?MatrixUsRemapVKey@@YAIPBU_KEYBD_EVENT@@IPAU1@I@Z 10001884 f   S3C6410_Layout:s3c6410_layout.obj
+ 0001:000009c8       ?ScanCodeToVKey@@YAHIPAPAUScanCodeToVKeyData@@IPAI@Z 100019c8 f   LayoutManager:LayMgr.obj
+ 0001:00000a54       ?ProcessDeadKeys@@YAIPAGPBU_DEADKEY@@GPAIII@Z 10001a54 f   LayoutManager:LayMgr.obj
+ 0001:00000af0       ?ProcessLigature@@YAIPAUtagINPUT_LANGUAGE_INFO@@IIGPAII@Z 10001af0 f   LayoutManager:LayMgr.obj
+ 0001:00000c04       ?GetCharacters@@YAIPAUtagINPUT_LANGUAGE_INFO@@PBU_VK_TO_WCHAR_TABLE@@PBU_VK_TO_WCHARS1@@GIPAII@Z 10001c04 f   LayoutManager:LayMgr.obj
+ 0001:00000db8       ?VKeyToUnicode@@YAIPAUtagINPUT_LANGUAGE_INFO@@IIPAII@Z 10001db8 f   LayoutManager:LayMgr.obj
+ 0001:00000f58       ?AltNumKeyEvent@@YAHIIPAI0@Z 10001f58 f   LayoutManager:LayMgr.obj
+ 0001:000012ac       ?BroadcastToKeyboards@@YAXKPAXK@Z 100022ac f   LayoutManager:LayMgr.obj
+ 0001:00001458       ?CallDLRemapFn@@YAIP6AIPBU_KEYBD_EVENT@@IPAU1@I@Z0I1I@Z 10002458 f   LayoutManager:LayMgr.obj
+ 0001:000014c0       ?SendRemappedEvent@@YAXIIIHPAUtagDEVICE_LAYOUT_INFO@@@Z 100024c0 f   LayoutManager:LayMgr.obj
+ 0001:000018f4       ?KbdNotificationThread@@YAKPAX@Z 100028f4 f   LayoutManager:LayMgr.obj
+ 0001:00001c04       ?GetPreloadInputMethodKey@@YAHIPAPAUHKEY__@@@Z 10002c04 f   LayoutManager:LayMgr.obj
+ 0001:00001cd0       ?GetPreloadInputMethodName@@YAHIPAG@Z 10002cd0 f   LayoutManager:LayMgr.obj
+ 0001:00001d64       ?GetInputMethodInfo@@YAHPBGPAUtagINPUT_LANGUAGE_INFO@@@Z 10002d64 f   LayoutManager:LayMgr.obj
+ 0001:00001ebc       ?GetDefaultInputMethodName@@YAHPAG@Z 10002ebc f   LayoutManager:LayMgr.obj
+ 0001:00002014       ?GenerateModifierToShiftTable@@YAHPAUtagINPUT_LANGUAGE_INFO@@@Z 10003014 f   LayoutManager:LayMgr.obj
+ 0001:000020ec       ?GetImeKeyboardLayout@@YAPAUHKL__@@PAU1@@Z 100030ec f   LayoutManager:LayMgr.obj
+ 0001:000022b8       ?SetInputLanguage@@YAHPAUHKL__@@PAPAU1@@Z 100032b8 f   LayoutManager:LayMgr.obj
+ 0001:000025e8       ?DeviceLayoutMatchesPDD@@YAHPBG00GPAGK@Z 100035e8 f   LayoutManager:LayMgr.obj
+ 0001:000027dc       ?SelectDeviceLayout@@YAHPAGPAUtagKEYBD_PDD@@0K0K@Z 100037dc f   LayoutManager:LayMgr.obj
+ 0001:000029f8       ?SetDeviceLayout@@YAHPAUHKL__@@I@Z 100039f8 f   LayoutManager:LayMgr.obj
+ 0001:00003180       ?IsLayoutLoaded@@YAHPBG@Z  10004180 f   LayoutManager:LayMgr.obj
+ 0001:00003b94       ?ATRemapVKey@@YAIPBU_KEYBD_EVENT@@IPAU1@I@Z 10004b94 f   kbdus_lib:kbdus.obj
+ 0001:0000410c       ?NumPadRemapVKeyDown@@YAIIIIPAU_KEYBD_EVENT@@@Z 1000510c f   NumPadRmp:NumPadRmp.obj
+ 0001:00004280       ?NumPadRemapVKeyUp@@YAIIIIPAU_KEYBD_EVENT@@@Z 10005280 f   NumPadRmp:NumPadRmp.obj
+ 0001:00004580       ?Matrix_PowerHandler@@YAXIH@Z 10005580 f   KeyPadcommon:kbd.obj
+ 0001:00004594       ?Matrix_ToggleLights@@YAXII@Z 10005594 f   KeyPadcommon:kbd.obj

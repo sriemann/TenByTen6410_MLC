@@ -1,0 +1,339 @@
+
+;-----------------------------SsapMp4Parser Filter-------------------------------
+[HKEY_CLASSES_ROOT\Filter\{1A821B27-D2F4-4e22-9496-3C7D0F612EC0}]
+	@="MP4 File Parser"
+
+[HKEY_CLASSES_ROOT\CLSID\{1A821B27-D2F4-4e22-9496-3C7D0F612EC0}]
+	@="MP4 File Parser"
+	"Merit"=dword:00200000
+
+[HKEY_CLASSES_ROOT\CLSID\{1A821B27-D2F4-4e22-9496-3C7D0F612EC0}\InprocServer32]
+	@="SsapMp4Parser.dll"
+	"ThreadingModel"="Both"
+
+[HKEY_CLASSES_ROOT\CLSID\{1A821B27-D2F4-4e22-9496-3C7D0F612EC0}\Pins]
+
+[HKEY_CLASSES_ROOT\CLSID\{1A821B27-D2F4-4e22-9496-3C7D0F612EC0}\Pins\Output]
+	"Direction"=dword:00000001
+;	"IsRendered"=dword:00000000
+;	"AllowedZero"=dword:00000000
+;	"AllowedMany"=dword:00000000
+;	"ConnectsToPin"="Input"
+
+
+[HKEY_CLASSES_ROOT\CLSID\{1A821B27-D2F4-4e22-9496-3C7D0F612EC0}\Pins\Output\Types]
+[HKEY_CLASSES_ROOT\CLSID\{1A821B27-D2F4-4e22-9496-3C7D0F612EC0}\Pins\Output\Types\{e436eb83-524f-11ce-9f53-0020af0ba770}]
+[HKEY_CLASSES_ROOT\CLSID\{1A821B27-D2F4-4e22-9496-3C7D0F612EC0}\Pins\Output\Types\{e436eb83-524f-11ce-9f53-0020af0ba770}\{59fcbec7-524f-11ce-9f53-0020af0ba770}]
+[HKEY_CLASSES_ROOT\CLSID\{1A821B27-D2F4-4e22-9496-3C7D0F612EC0}\Pins\Output\Types\{e436eb83-524f-11ce-9f53-0020af0ba770}\{7807c3af-524f-11ce-9f53-0020af0ba770}]
+;[HKEY_CLASSES_ROOT\CLSID\{1A821B27-D2F4-4e22-9496-3C7D0F612EC0}\Pins\Output\Types\{73647561-0000-0010-8000-00AA00389B71}]
+;[HKEY_CLASSES_ROOT\CLSID\{1A821B27-D2F4-4e22-9496-3C7D0F612EC0}\Pins\Output\Types\{73647561-0000-0010-8000-00AA00389B71}\{00000000-0000-0000-0000-000000000000}]
+
+
+;-----------------------------FileExtractFilter-------------------------------
+[HKEY_CLASSES_ROOT\Filter\{1A821B27-D2F4-4e22-9496-3C7D0F612EC2}]
+	@="MFC FileExtractor"
+
+[HKEY_CLASSES_ROOT\CLSID\{1A821B27-D2F4-4e22-9496-3C7D0F612EC2}]
+	@="MFC FileExtractor"
+	"Merit"=dword:00200000
+
+[HKEY_CLASSES_ROOT\CLSID\{1A821B27-D2F4-4e22-9496-3C7D0F612EC2}\InprocServer32]
+	@="FrameExtractFilter.dll"
+	"ThreadingModel"="Both"
+
+[HKEY_CLASSES_ROOT\CLSID\{1A821B27-D2F4-4e22-9496-3C7D0F612EC2}\Pins]
+
+[HKEY_CLASSES_ROOT\CLSID\{1A821B27-D2F4-4e22-9496-3C7D0F612EC2}\Pins\Output]
+	"Direction"=dword:00000001
+	"IsRendered"=dword:00000000
+	"AllowedZero"=dword:00000000
+	"AllowedMany"=dword:00000000
+	"ConnectsToPin"="Input"
+
+[HKEY_CLASSES_ROOT\CLSID\{1A821B27-D2F4-4e22-9496-3C7D0F612EC2}\Pins\Output\Types]
+[HKEY_CLASSES_ROOT\CLSID\{1A821B27-D2F4-4e22-9496-3C7D0F612EC2}\Pins\Output\Types\{e436eb83-524f-11ce-9f53-0020af0ba770}]
+[HKEY_CLASSES_ROOT\CLSID\{1A821B27-D2F4-4e22-9496-3C7D0F612EC2}\Pins\Output\Types\{e436eb83-524f-11ce-9f53-0020af0ba770}\{59fcbec7-524f-11ce-9f53-0020af0ba770}]
+[HKEY_CLASSES_ROOT\CLSID\{1A821B27-D2F4-4e22-9496-3C7D0F612EC2}\Pins\Output\Types\{e436eb83-524f-11ce-9f53-0020af0ba770}\{7807c3af-524f-11ce-9f53-0020af0ba770}]
+[HKEY_CLASSES_ROOT\CLSID\{1A821B27-D2F4-4e22-9496-3C7D0F612EC2}\Pins\Output\Types\{e436eb83-524f-11ce-9f53-0020af0ba770}\{6e1e6367-524f-11ce-9f53-0020af0ba770}]
+
+
+;-----------------------------MFCDecFilter-------------------------------
+
+[HKEY_CLASSES_ROOT\Filter\{CE12BD3B-710F-4b71-95B4-FCE1ABDF2EC1}]
+	@="MFC Decoder"
+
+[HKEY_CLASSES_ROOT\CLSID\{CE12BD3B-710F-4b71-95B4-FCE1ABDF2EC1}]
+	@="MFC Decoder"
+	"Merit"=dword:00800004
+
+[HKEY_CLASSES_ROOT\CLSID\{CE12BD3B-710F-4b71-95B4-FCE1ABDF2EC1}\InprocServer32]
+	@="MFCDecFilter.dll"
+	"ThreadingModel"="Both"
+
+
+[HKEY_CLASSES_ROOT\CLSID\{CE12BD3B-710F-4b71-95B4-FCE1ABDF2EC1}\Pins]
+
+[HKEY_CLASSES_ROOT\CLSID\{CE12BD3B-710F-4b71-95B4-FCE1ABDF2EC1}\Pins\Output]
+	"Direction"=dword:00000001
+	"IsRendered"=dword:00000000
+	"AllowedZero"=dword:00000000
+	"AllowedMany"=dword:00000000
+	"ConnectsToPin"="Input"
+
+[HKEY_CLASSES_ROOT\CLSID\{CE12BD3B-710F-4b71-95B4-FCE1ABDF2EC1}\Pins\Output\Types]
+[HKEY_CLASSES_ROOT\CLSID\{CE12BD3B-710F-4b71-95B4-FCE1ABDF2EC1}\Pins\Output\Types\{73646976-0000-0010-8000-00AA00389B71}]
+[HKEY_CLASSES_ROOT\CLSID\{CE12BD3B-710F-4b71-95B4-FCE1ABDF2EC1}\Pins\Output\Types\{73646976-0000-0010-8000-00AA00389B71}\{00000000-0000-0000-0000-000000000000}]
+;[HKEY_CLASSES_ROOT\CLSID\{CE12BD3B-710F-4b71-95B4-FCE1ABDF2EC1}\Pins\Output\Types\{73646976-0000-0010-8000-00AA00389B71}\{E436EB7B-524F-11CE-9F53-0020AF0BA770}]
+
+[HKEY_CLASSES_ROOT\CLSID\{CE12BD3B-710F-4b71-95B4-FCE1ABDF2EC1}\Pins\Input]
+	"Direction"=dword:00000000
+	"IsRendered"=dword:00000000
+	"AllowedZero"=dword:00000000
+	"AllowedMany"=dword:00000000
+	"ConnectsToPin"="Output"
+                                                                                                                                                       
+
+[HKEY_CLASSES_ROOT\CLSID\{CE12BD3B-710F-4b71-95B4-FCE1ABDF2EC1}\Pins\Input\Types]
+[HKEY_CLASSES_ROOT\CLSID\{CE12BD3B-710F-4b71-95B4-FCE1ABDF2EC1}\Pins\Input\Types\{e436eb83-524f-11ce-9f53-0020af0ba770}]
+[HKEY_CLASSES_ROOT\CLSID\{CE12BD3B-710F-4b71-95B4-FCE1ABDF2EC1}\Pins\Input\Types\{e436eb83-524f-11ce-9f53-0020af0ba770}\{59fcbec7-524f-11ce-9f53-0020af0ba770}]
+[HKEY_CLASSES_ROOT\CLSID\{CE12BD3B-710F-4b71-95B4-FCE1ABDF2EC1}\Pins\Input\Types\{e436eb83-524f-11ce-9f53-0020af0ba770}\{7807c3af-524f-11ce-9f53-0020af0ba770}]
+[HKEY_CLASSES_ROOT\CLSID\{CE12BD3B-710F-4b71-95B4-FCE1ABDF2EC1}\Pins\Input\Types\{e436eb83-524f-11ce-9f53-0020af0ba770}\{6e1e6367-524f-11ce-9f53-0020af0ba770}]
+[HKEY_CLASSES_ROOT\CLSID\{CE12BD3B-710F-4b71-95B4-FCE1ABDF2EC1}\Pins\Input\Types\{73646976-0000-0010-8000-00AA00389B71}]
+[HKEY_CLASSES_ROOT\CLSID\{CE12BD3B-710F-4b71-95B4-FCE1ABDF2EC1}\Pins\Input\Types\{73646976-0000-0010-8000-00AA00389B71}\{33564D57-0000-0010-8000-00AA00389B71}]
+;WMV3
+[HKEY_CLASSES_ROOT\CLSID\{CE12BD3B-710F-4b71-95B4-FCE1ABDF2EC1}\Pins\Input\Types\{73646976-0000-0010-8000-00AA00389B71}\{33766D77-0000-0010-8000-00AA00389B71}]
+;wmv3
+
+
+;-----------------------------AAC Dec Filter-------------------------------
+[HKEY_CLASSES_ROOT\Filter\{BFA1CC7A-0C0F-4b6d-8858-4D1EC956135F}]
+	@="AAC SBR Enhaced Decoder"
+
+[HKEY_CLASSES_ROOT\CLSID\{BFA1CC7A-0C0F-4b6d-8858-4D1EC956135F}]
+	@="AAC SBR Enhaced Decoder"
+	"Merit"=dword:600000
+
+[HKEY_CLASSES_ROOT\CLSID\{BFA1CC7A-0C0F-4b6d-8858-4D1EC956135F}\InprocServer32]
+	@="AACSBREnhancedDecoder.dll"
+	"ThreadingModel"="Both"
+
+[HKEY_CLASSES_ROOT\CLSID\{BFA1CC7A-0C0F-4b6d-8858-4D1EC956135F}\Pins]
+
+[HKEY_CLASSES_ROOT\CLSID\{BFA1CC7A-0C0F-4b6d-8858-4D1EC956135F}\Pins\Output]
+"Direction"=dword:00000001
+"IsRendered"=dword:00000000
+"AllowedZero"=dword:00000000
+"AllowedMany"=dword:00000000
+"ConnectsToPin"="Input"
+
+
+[HKEY_CLASSES_ROOT\CLSID\{BFA1CC7A-0C0F-4b6d-8858-4D1EC956135F}\Pins\Output\Types\{73647561-0000-0010-8000-00AA00389B71}\{00000001-0000-0010-8000-00AA00389B71}]
+
+[HKEY_CLASSES_ROOT\CLSID\{BFA1CC7A-0C0F-4b6d-8858-4D1EC956135F}\Pins\Input]
+"Direction"=dword:00000000
+"IsRendered"=dword:00000000
+"AllowedZero"=dword:00000000
+"AllowedMany"=dword:00000000
+"ConnectsToPin"="Output"
+                                                                                                                                   
+;{MEDIATYPE_Audio,MEDIASUBTYPE_EAACPLUS}
+[HKEY_CLASSES_ROOT\CLSID\{BFA1CC7A-0C0F-4b6d-8858-4D1EC956135F}\Pins\Input\Types\{73647561-0000-0010-8000-00AA00389B71}\{7f7aa702-7343-49d0-a550-8e0cd7cbde23}]
+
+
+;;-----------------------------AMR Dec Filter-------------------------------
+;[HKEY_CLASSES_ROOT\Filter\{B2BE5E7D-3F4B-42a3-87F7-1AB9FB7F9811}]
+;	@="Amr_Dec920 Filter"
+;
+;[HKEY_CLASSES_ROOT\CLSID\{B2BE5E7D-3F4B-42a3-87F7-1AB9FB7F9811}]
+;	@="Amr_Dec920 Filter"
+;	"Merit"=dword:600000
+;
+;[HKEY_CLASSES_ROOT\CLSID\{B2BE5E7D-3F4B-42a3-87F7-1AB9FB7F9811}\InprocServer32]
+;	@="AMRdec920.dll"
+;	"ThreadingModel"="Both"
+;
+;[HKEY_CLASSES_ROOT\CLSID\{{B2BE5E7D-3F4B-42a3-87F7-1AB9FB7F9811}}\Pins]
+;
+;[HKEY_CLASSES_ROOT\CLSID\{B2BE5E7D-3F4B-42a3-87F7-1AB9FB7F9811}\Pins\Output]
+;"Direction"=dword:00000001
+;"IsRendered"=dword:00000000
+;"AllowedZero"=dword:00000000
+;"AllowedMany"=dword:00000000
+;"ConnectsToPin"="Input"
+;
+;;{MEDIATYPE_Audio, MEDIASUBTYPE_PCM}
+;[HKEY_CLASSES_ROOT\CLSID\{B2BE5E7D-3F4B-42a3-87F7-1AB9FB7F9811}\Pins\Output\Types\{73647561-0000-0010-8000-00AA00389B71}\{00000001-0000-0010-8000-00AA00389B71}]
+;
+;
+;[HKEY_CLASSES_ROOT\CLSID\{B2BE5E7D-3F4B-42a3-87F7-1AB9FB7F9811}\Pins\Input]
+;"Direction"=dword:00000000
+;"IsRendered"=dword:00000000
+;"AllowedZero"=dword:00000000
+;"AllowedMany"=dword:00000000
+;"ConnectsToPin"="Output"                                                                                                                                   
+;
+;;{MEDIATYPE_Audio,MEDIASUBTYPE_AmrDec }
+;[HKEY_CLASSES_ROOT\CLSID\{B2BE5E7D-3F4B-42a3-87F7-1AB9FB7F9811}\Pins\Input\Types\{73647561-0000-0010-8000-00AA00389B71}\{4c7012d9-2e06-4306-8cb0-39996b99f09b}]
+
+
+
+;-----------------------------Media Type (.264)-------------------------------
+
+[HKEY_CLASSES_ROOT\.264]
+@="videofile"
+"Content Type"="video/h264"
+
+
+[HKEY_CLASSES_ROOT\MIME\Database\Content Type\video/h264]
+"Extension"=".264"
+
+
+[HKEY_CLASSES_ROOT\Media Type\Extensions\.264]
+"Source Filter"="{1A821B27-D2F4-4e22-9496-3C7D0F612EC2}"
+
+
+
+;-----------------------------Media Type (.m4v)-------------------------------
+
+[HKEY_CLASSES_ROOT\.m4v]
+@="videofile"
+"Content Type"="video/m4v"
+
+
+[HKEY_CLASSES_ROOT\MIME\Database\Content Type\video/m4v]
+"Extension"=".m4v"
+
+
+[HKEY_CLASSES_ROOT\Media Type\Extensions\.m4v]
+"Source Filter"="{1A821B27-D2F4-4e22-9496-3C7D0F612EC2}"
+
+
+;-----------------------------Media Type (.rcv)-------------------------------
+
+[HKEY_CLASSES_ROOT\.rcv]
+@="videofile"
+"Content Type"="video/vc-1"
+
+
+[HKEY_CLASSES_ROOT\MIME\Database\Content Type\video/vc-1]
+"Extension"=".rcv"
+
+
+[HKEY_CLASSES_ROOT\Media Type\Extensions\.rcv]
+"Source Filter"="{1A821B27-D2F4-4e22-9496-3C7D0F612EC2}"
+
+
+;-----------------------------Media Type (.mp4)-------------------------------
+
+[HKEY_CLASSES_ROOT\.mp4]
+@="videofile"
+"Content Type"="video/mp4"
+
+
+[HKEY_CLASSES_ROOT\MIME\Database\Content Type\video/mp4]
+"Extension"=".mp4"
+
+
+[HKEY_CLASSES_ROOT\Media Type\Extensions\.mp4]
+"Source Filter"="{1A821B27-D2F4-4e22-9496-3C7D0F612EC0}"
+
+;-----------------------------Media Type (.3gp)-------------------------------
+
+[HKEY_CLASSES_ROOT\.3gp]
+@="videofile"
+"Content Type"="video/3gp"
+
+
+[HKEY_CLASSES_ROOT\MIME\Database\Content Type\video/3gp]
+"Extension"=".3gp"
+
+
+[HKEY_CLASSES_ROOT\Media Type\Extensions\.3gp]
+"Source Filter"="{1A821B27-D2F4-4e22-9496-3C7D0F612EC0}"
+
+;-----------------------------Media Type (.3g2)-------------------------------
+
+[HKEY_CLASSES_ROOT\.3g2]
+@="videofile"
+"Content Type"="video/3g2"
+
+
+[HKEY_CLASSES_ROOT\MIME\Database\Content Type\video/3g2]
+"Extension"=".3g2"
+
+
+[HKEY_CLASSES_ROOT\Media Type\Extensions\.3g2]
+"Source Filter"="{1A821B27-D2F4-4e22-9496-3C7D0F612EC0}"
+
+;-----------------------------Media Type (.mov)-------------------------------
+
+[HKEY_CLASSES_ROOT\.mov]
+@="videofile"
+"Content Type"="video/mov"
+
+
+[HKEY_CLASSES_ROOT\MIME\Database\Content Type\video/mov]
+"Extension"=".mov"
+
+
+[HKEY_CLASSES_ROOT\Media Type\Extensions\.mov]
+"Source Filter"="{1A821B27-D2F4-4e22-9496-3C7D0F612EC0}"
+
+
+
+
+;-----------------------------MP4 Splitter filter-------------------------------
+
+[HKEY_CLASSES_ROOT\Filter\{61F47056-E400-43d3-AF1E-AB7DFFD4C4AD}]
+@="MP4 Splitter"
+
+[HKEY_CLASSES_ROOT\CLSID\{61F47056-E400-43d3-AF1E-AB7DFFD4C4AD}]
+@="MP4 Splitter"
+"Merit"=dword:20000000
+
+[HKEY_CLASSES_ROOT\CLSID\{61F47056-E400-43d3-AF1E-AB7DFFD4C4AD}\InprocServer32]
+@="mp4splitter.dll"
+"ThreadingModel"="Both"
+
+[HKEY_CLASSES_ROOT\CLSID\{61F47056-E400-43d3-AF1E-AB7DFFD4C4AD}\Pins\Input]
+;"Direction"=dword:00000000
+;"IsRendered"=dword:00000000
+;"AllowedZero"=dword:00000000
+;"AllowedMany"=dword:00000000
+
+[HKEY_CLASSES_ROOT\CLSID\{61F47056-E400-43d3-AF1E-AB7DFFD4C4AD}\Pins\Input\Types\{e436eb83-524f-11ce-9f53-0020af0ba770}\{08E22ADA-B715-45ed-9D20-7B87750301D4}]
+[HKEY_CLASSES_ROOT\CLSID\{61F47056-E400-43d3-AF1E-AB7DFFD4C4AD}\Pins\Input\Types\{e436eb83-524f-11ce-9f53-0020af0ba770}\{00000000-0000-0000-0000-000000000000}]
+
+[HKEY_CLASSES_ROOT\CLSID\{61F47056-E400-43d3-AF1E-AB7DFFD4C4AD}\Pins\Output]
+"Direction"=dword:00000001
+;"IsRendered"=dword:00000000
+;"AllowedZero"=dword:00000000
+;"AllowedMany"=dword:00000000
+
+[HKEY_CLASSES_ROOT\CLSID\{61F47056-E400-43d3-AF1E-AB7DFFD4C4AD}\Pins\Output\Types\{73646976-0000-0010-8000-00AA00389B71}\{00000000-0000-0000-0000-000000000000}]
+
+
+; MEDIASUBTYPE_MP4
+;[HKEY_CLASSES_ROOT\Media Type\{e436eb83-524f-11ce-9f53-0020af0ba770}\{08E22ADA-B715-45ed-9D20-7B87750301D4}]
+;"0"="4,4,,66747970"
+;"1"="4,4,,6d6f6f76"
+;"2"="4,4,,6d646174"
+;"3"="4,4,,736b6970"
+;"4"="4,12,ffffffff00000000ffffffff,77696465027fe3706d646174"
+;"5"="3,3,,000001"
+;"Source Filter"="{e436ebb5-524f-11ce-9f53-0020af0ba770}"
+
+;-----------------------------Media Type (.mp4)-------------------------------
+
+;[HKEY_CLASSES_ROOT\.mp4]
+;@="videofile"
+;"Content Type"="video/mp4"
+;
+;
+;[HKEY_CLASSES_ROOT\MIME\Database\Content Type\video/mp4]
+;"Extension"=".mp4"
+;
+;
+;[HKEY_CLASSES_ROOT\Media Type\Extensions\.mp4]
+;"Source Filter"="{e436ebb5-524f-11ce-9f53-0020af0ba770}"
+

@@ -1,0 +1,3 @@
+LIBRARY         dm9isa1
+
+EXPORTS         DriverEntry

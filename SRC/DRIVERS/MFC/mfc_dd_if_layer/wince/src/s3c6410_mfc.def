@@ -1,0 +1,10 @@
+LIBRARY    "s3c6410_mfc"
+
+EXPORTS
+    MFC_Init
+    MFC_Deinit
+    MFC_Open
+    MFC_Close
+    MFC_IOControl
+    MFC_PowerUp
+    MFC_PowerDown

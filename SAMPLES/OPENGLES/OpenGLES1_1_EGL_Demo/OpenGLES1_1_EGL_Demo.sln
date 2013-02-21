@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 9.00
+# Visual Studio 2005
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "OpenGLES1_1_EGL_Demo", "OpenGLES1_1_EGL_Demo\OpenGLES1_1_EGL_Demo.vcproj", "{E1A5B435-B8E6-4326-A399-307AF87BBA27}"
+	ProjectSection(WebsiteProperties) = preProject
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.Debug = "False"
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|SDK_SMDK6410 (ARMV4I) = Debug|SDK_SMDK6410 (ARMV4I)
+		Debug|Windows Mobile 6 Professional SDK (ARMV4I) = Debug|Windows Mobile 6 Professional SDK (ARMV4I)
+		Release|SDK_SMDK6410 (ARMV4I) = Release|SDK_SMDK6410 (ARMV4I)
+		Release|Windows Mobile 6 Professional SDK (ARMV4I) = Release|Windows Mobile 6 Professional SDK (ARMV4I)
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E1A5B435-B8E6-4326-A399-307AF87BBA27}.Debug|SDK_SMDK6410 (ARMV4I).ActiveCfg = Debug|SDK_SMDK6410 (ARMV4I)
+		{E1A5B435-B8E6-4326-A399-307AF87BBA27}.Debug|SDK_SMDK6410 (ARMV4I).Build.0 = Debug|SDK_SMDK6410 (ARMV4I)
+		{E1A5B435-B8E6-4326-A399-307AF87BBA27}.Debug|SDK_SMDK6410 (ARMV4I).Deploy.0 = Debug|SDK_SMDK6410 (ARMV4I)
+		{E1A5B435-B8E6-4326-A399-307AF87BBA27}.Debug|Windows Mobile 6 Professional SDK (ARMV4I).ActiveCfg = Debug|Windows Mobile 6 Professional SDK (ARMV4I)
+		{E1A5B435-B8E6-4326-A399-307AF87BBA27}.Debug|Windows Mobile 6 Professional SDK (ARMV4I).Build.0 = Debug|Windows Mobile 6 Professional SDK (ARMV4I)
+		{E1A5B435-B8E6-4326-A399-307AF87BBA27}.Debug|Windows Mobile 6 Professional SDK (ARMV4I).Deploy.0 = Debug|Windows Mobile 6 Professional SDK (ARMV4I)
+		{E1A5B435-B8E6-4326-A399-307AF87BBA27}.Release|SDK_SMDK6410 (ARMV4I).ActiveCfg = Release|SDK_SMDK6410 (ARMV4I)
+		{E1A5B435-B8E6-4326-A399-307AF87BBA27}.Release|SDK_SMDK6410 (ARMV4I).Build.0 = Release|SDK_SMDK6410 (ARMV4I)
+		{E1A5B435-B8E6-4326-A399-307AF87BBA27}.Release|SDK_SMDK6410 (ARMV4I).Deploy.0 = Release|SDK_SMDK6410 (ARMV4I)
+		{E1A5B435-B8E6-4326-A399-307AF87BBA27}.Release|Windows Mobile 6 Professional SDK (ARMV4I).ActiveCfg = Release|Windows Mobile 6 Professional SDK (ARMV4I)
+		{E1A5B435-B8E6-4326-A399-307AF87BBA27}.Release|Windows Mobile 6 Professional SDK (ARMV4I).Build.0 = Release|Windows Mobile 6 Professional SDK (ARMV4I)
+		{E1A5B435-B8E6-4326-A399-307AF87BBA27}.Release|Windows Mobile 6 Professional SDK (ARMV4I).Deploy.0 = Release|Windows Mobile 6 Professional SDK (ARMV4I)
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

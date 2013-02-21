@@ -1,0 +1,52 @@
+
+
+WINCEREL=1
+TARGETNAME=MFCDecFilter
+TARGETDEFNAME=MFCDecFilter.def
+RELEASETYPE=PLATFORM
+DLLENTRY=_DllMainCRTStartup
+TARGETTYPE=DYNLINK
+
+INCLUDES= \
+    $(_WINCEROOT)\public\DirectX\SDK\inc;$(_WINCEROOT)\public\DirectX\SDK\Samples\Dshow\Baseclasses; \
+    $(_WINCEROOT)\public\common\sdk\inc;$(_WINCEROOT)\public\common\oak\inc; \
+    ..\..\LIB\MFCLib\include
+
+
+SOURCELIBS= \
+    $(_WINCEROOT)\public\DirectX\SDK\lib\$(_CPUINDPATH)\strmbase.lib \
+    $(_WINCEROOT)\public\DirectX\SDK\lib\$(_CPUINDPATH)\strmiids.lib \
+    $(_PROJECTROOT)\cesysgen\sdk\lib\$(_CPUINDPATH)\ole32.lib \
+    $(_PROJECTROOT)\cesysgen\sdk\lib\$(_CPUINDPATH)\uuid.lib \
+    $(_PROJECTROOT)\cesysgen\sdk\lib\$(_CPUINDPATH)\coredll.lib \
+
+
+TARGETLIBS= \
+    $(_WINCEROOT)\public\DirectX\SDK\lib\$(_CPUINDPATH)\strmbase.lib \
+    $(_WINCEROOT)\public\DirectX\SDK\lib\$(_CPUINDPATH)\strmiids.lib \
+    $(_PROJECTROOT)\cesysgen\sdk\lib\$(_CPUINDPATH)\ole32.lib \
+    $(_PROJECTROOT)\cesysgen\sdk\lib\$(_CPUINDPATH)\uuid.lib \
+    $(_PROJECTROOT)\cesysgen\sdk\lib\$(_CPUINDPATH)\coredll.lib \
+    $(_TARGETPLATROOT)\lib\$(_CPUINDPATH)\6400MFCLib_s.lib
+
+
+
+SOURCES= \
+    Auxiliary.cpp \
+    fMFCDecFilter.cpp \
+    fMFCDecFilter_ip.cpp \
+    fMFCDecFilter_op.cpp \
+    MFCDecFilter.cpp \
+    MFCDecFilter.rc \
+    CSCFrame.c
+
+FILE_VIEW_INCLUDES_FOLDER= \
+    Stdafx.h \
+    Auxiliary.h \
+    fMFCDecFilter.h \
+    fMFCDecFilter_ip.h \
+    fMFCDecFilter_op.h \
+    MFCDecFilter.h \
+    MFCDecDriver.h \
+    MfcDriver.h \
+

@@ -1,0 +1,41 @@
+ tvout_test
+
+ Timestamp is 5125b2a9 (Thu Feb 21 13:37:45 2013)
+
+ Preferred load address is 00010000
+
+ Start         Length     Name                   Class
+ 0001:00000000 00000088H .rdata                  CODE
+ 0001:00000088 00000027H .rdata$debug            CODE
+ 0001:000000b0 000000b4H .text                   CODE
+ 0001:00000164 00000014H .idata$2                CODE
+ 0001:00000178 00000014H .idata$3                CODE
+ 0001:0000018c 00000014H .idata$4                CODE
+ 0001:000001a0 0000000cH .idata$6                CODE
+ 0001:000001ac 00000000H .edata                  CODE
+ 0002:00000000 00000014H .idata$5                DATA
+ 0003:00000000 00000008H .pdata                  DATA
+
+  Address         Publics by Value              Rva+Base       Lib:Object
+
+ 0000:00000000       ___safe_se_handler_table   00000000     <absolute>
+ 0000:00000000       ___safe_se_handler_count   00000000     <absolute>
+ 0001:0000001c       ??_C@_1CI@FCKCDGPN@?$AA?$FL?$AAE?$AAR?$AAR?$AA?$FN?$AA?5?$AAh?$AAd?$AAc?$AA?5?$AAi?$AAs?$AA?5?$AAN?$AAU?$AAL?$AAL?$AA?$AN?$AA?6?$AA?$AA@ 0001101c     tvout_test.obj
+ 0001:00000048       ??_C@_1EA@CIGFGGJ@?$AA?$FL?$AAI?$AAN?$AAF?$AA?$FN?$AA?5?$AAD?$AAi?$AAs?$AAp?$AAl?$AAa?$AAy?$AA?5?$AAo?$AAu?$AAt?$AAp?$AAu?$AAt?$AA?5?$AAS?$AAw?$AAi?$AAt?$AAc?$AAh?$AAe?$AAd?$AA?$AN?$AA?6?$AA?$AA@ 00011048     tvout_test.obj
+ 0001:000000b0       WinMain                    000110b0 f   tvout_test.obj
+ 0001:00000124       ReleaseDC                  00011124 f   coredll:COREDLL.dll
+ 0001:00000134       NKDbgPrintfW               00011134 f   coredll:COREDLL.dll
+ 0001:00000144       ExtEscape                  00011144 f   coredll:COREDLL.dll
+ 0001:00000154       GetDC                      00011154 f   coredll:COREDLL.dll
+ 0001:00000164       __IMPORT_DESCRIPTOR_COREDLL 00011164     coredll:COREDLL.dll
+ 0001:00000178       __NULL_IMPORT_DESCRIPTOR   00011178     coredll:COREDLL.dll
+ 0002:00000000       __imp_NKDbgPrintfW         00012000     coredll:COREDLL.dll
+ 0002:00000004       __imp_ExtEscape            00012004     coredll:COREDLL.dll
+ 0002:00000008       __imp_GetDC                00012008     coredll:COREDLL.dll
+ 0002:0000000c       __imp_ReleaseDC            0001200c     coredll:COREDLL.dll
+ 0002:00000010       \177COREDLL_NULL_THUNK_DATA 00012010     coredll:COREDLL.dll
+
+ entry point at        0001:000000b0
+
+ Static symbols
+

@@ -1,0 +1,54 @@
+!if 0
+Copyright (c) Microsoft Corporation.  All rights reserved.
+!endif
+!if 0
+Use of this source code is subject to the terms of the Microsoft end-user
+license agreement (EULA) under which you licensed this SOFTWARE PRODUCT.
+If you did not accept the terms of the EULA, you are not authorized to use
+this source code. For a copy of the EULA, please see the LICENSE.RTF on your
+install media.
+!endif
+
+# Copyright (c) 2001-2002 BSQUARE Corporation. All rights reserved.
+# DO NOT REMOVE --- BEGIN EXTERNALLY DEVELOPED SOURCE CODE ID 40973--- DO NOT REMOVE
+
+#  SD Memory Card client driver files
+
+!if ("$(BSP_NOHSMMC_CH0)"=="1")&&("$(BSP_NOHSMMC_CH1)"=="1")
+SKIPBUILD=1
+!endif
+
+SYNCHRONIZE_DRAIN=1
+RELEASETYPE=PLATFORM
+
+TARGETDEFNAME=SDMemory
+DEFFILE=$(TARGETDEFNAME).def
+
+TARGETNAME=SDMemory
+TARGETTYPE=DYNLINK
+
+DLLENTRY=DllEntry
+
+!IF "$(BSP_MOVINAND)" == "1"
+CDEFINES=$(CDEFINES) -D_FOR_MOVI_NAND_
+!ENDIF
+
+CDEFINES=$(CDEFINES) -D_MMC_SPEC_42_
+
+TARGETLIBS= \
+    $(_COMMONOAKROOT)\lib\$(_CPUINDPATH)\ceddk.lib   \
+    $(_SYSGENSDKROOT)\lib\$(_CPUINDPATH)\coredll.lib
+
+SOURCELIBS=    \
+    $(_SYSGENOAKROOT)\lib\$(_CPUINDPATH)\sdcardlib.lib \
+    $(_SYSGENOAKROOT)\lib\$(_CPUINDPATH)\sdhclib.lib \
+    $(_SYSGENOAKROOT)\lib\$(_CPUINDPATH)\sdbus.lib \
+
+INCLUDES=..\HSMMCCh1\s3c6410_hsmmc_lib;$(_TARGETPLATROOT)\src\inc;
+
+SOURCES = SDMemMain.cpp   \
+          SDMemDiskIO.cpp \
+          SDMemCardIO.cpp \
+          
+# DO NOT REMOVE --- END EXTERNALLY DEVELOPED SOURCE CODE ID --- DO NOT REMOVE
+

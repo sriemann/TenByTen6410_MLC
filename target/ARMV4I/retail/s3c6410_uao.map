@@ -1,0 +1,73 @@
+ s3c6410_uao
+
+ Timestamp is 5125b2a0 (Thu Feb 21 13:37:36 2013)
+
+ Preferred load address is 10000000
+
+ Start         Length     Name                   Class
+ 0001:00000000 000001fcH .rdata                  CODE
+ 0001:000001fc 00000028H .rdata$debug            CODE
+ 0001:00000224 00000310H .text                   CODE
+ 0001:00000534 00000014H .idata$2                CODE
+ 0001:00000548 00000014H .idata$3                CODE
+ 0001:0000055c 0000001cH .idata$4                CODE
+ 0001:00000578 0000000cH .idata$6                CODE
+ 0001:00000590 000000d9H .edata                  CODE
+ 0002:00000000 0000001cH .idata$5                DATA
+ 0002:0000001c 00000004H .bss                    DATA
+ 0003:00000000 00000070H .pdata                  DATA
+
+  Address         Publics by Value              Rva+Base       Lib:Object
+
+ 0000:00000000       ___safe_se_handler_table   00000000     <absolute>
+ 0000:00000000       ___safe_se_handler_count   00000000     <absolute>
+ 0001:0000001c       ??_C@_1DI@LFFBPMJL@?$AAD?$AAD?$AA?3?$AA?3?$AAM?$AAU?$AAT?$AAE?$AAX?$AA?5?$AAL?$AAO?$AAC?$AAK?$AA?5?$AAE?$AAR?$AAR?$AAO?$AAR?$AA?5?$AA?3?$AA?5?$AA?$CF?$AAd?$AA?$AN?$AA?6?$AA?$AA@ 1000101c     UAOMisc.obj
+ 0001:00000054       ??_C@_1DM@HFCDHBAJ@?$AAD?$AAD?$AA?3?$AA?3?$AAM?$AAU?$AAT?$AAE?$AAX?$AA?5?$AAU?$AAN?$AAL?$AAO?$AAC?$AAK?$AA?5?$AAE?$AAR?$AAR?$AAO?$AAR?$AA?5?$AA?3?$AA?5?$AA?$CF?$AAd?$AA?$AN?$AA?6?$AA?$AA@ 10001054     UAOMisc.obj
+ 0001:00000090       ??_C@_1EO@BMJIOHOH@?$AAD?$AAD?$AA?3?$AA?3?$AAU?$AAA?$AAO?$AA?5?$AAM?$AAu?$AAt?$AAe?$AAx?$AA?5?$AAI?$AAn?$AAi?$AAt?$AAi?$AAa?$AAl?$AAi?$AAz?$AAe?$AA?5?$AAe?$AAr?$AAr?$AAo?$AAr?$AA?5?$AA?3@ 10001090     UAODriver.obj
+ 0001:000000e0       ??_C@_0O@GNCGNJEC@DD?3?3UAO_Init?6?$AA@ 100010e0     UAODriver.obj
+ 0001:000000f0       ??_C@_0M@GHPHKIEN@UAO_Deinit?6?$AA@ 100010f0     UAODriver.obj
+ 0001:000000fc       ??_C@_0BA@PLHBKBIB@UAO_Open?$CI0x?$CFx?$CJ?6?$AA@ 100010fc     UAODriver.obj
+ 0001:0000010c       ??_C@_0BG@OCDEKKFF@DD?3?3IOCTL_UAO_ENABLE?6?$AA@ 1000110c     UAODriver.obj
+ 0001:00000124       ??_C@_0BH@DDJJKAFO@DD?3?3IOCTL_UAO_DISABLE?6?$AA@ 10001124     UAODriver.obj
+ 0001:00000140       ??_C@_1EE@FMMLOFF@?$AAD?$AAD?$AA?3?$AA?3?$AAU?$AAA?$AAO?$AA?5?$AAI?$AAn?$AAv?$AAa?$AAl?$AAi?$AAd?$AA?5?$AAI?$AAO?$AAC?$AAo?$AAn?$AAt?$AAr?$AAo?$AAl?$AA?$CI?$AA0?$AAx?$AA?$CF?$AAx?$AA?$CJ?$AA?$AN@ 10001140     UAODriver.obj
+ 0001:00000184       ??_C@_1DE@PAKIPLEL@?$AAD?$AAD?$AA?3?$AA?3?$AAU?$AAA?$AAO?$AA?5?$AAM?$AAu?$AAt?$AAe?$AAx?$AA?5?$AAL?$AAo?$AAc?$AAk?$AA?5?$AAF?$AAa?$AAi?$AAl?$AA?$AN?$AA?6?$AA?$AA@ 10001184     UAODriver.obj
+ 0001:000001b8       ??_C@_0L@DNGECIAM@DD?3?3IOCTL?6?$AA@ 100011b8     UAODriver.obj
+ 0001:000001c4       ??_C@_0BA@FFOILGEN@DD?3?3UAO_Write?5?6?$AA@ 100011c4     UAODriver.obj
+ 0001:000001d4       ??_C@_0BC@JJNPMLCL@DD?3?3UAO_PowerUp?5?6?$AA@ 100011d4     UAODriver.obj
+ 0001:000001e8       ??_C@_0BE@LFDKIFFP@DD?3?3UAO_PowerDown?5?6?$AA@ 100011e8     UAODriver.obj
+ 0001:00000224       CreateUAOMutex             10001224 f   UAOMisc.obj
+ 0001:00000250       LockUAOMutex               10001250 f   UAOMisc.obj
+ 0001:00000298       UnlockUAOMutex             10001298 f   UAOMisc.obj
+ 0001:000002dc       DeleteUAOMutex             100012dc f   UAOMisc.obj
+ 0001:000002fc       printD                     100012fc f   UAOMisc.obj
+ 0001:00000310       UAO_Init                   10001310 f   UAODriver.obj
+ 0001:0000035c       UAO_Deinit                 1000135c f   UAODriver.obj
+ 0001:0000037c       UAO_Open                   1000137c f   UAODriver.obj
+ 0001:000003a0       UAO_Close                  100013a0 f   UAODriver.obj
+ 0001:000003a8       UAO_IOControl              100013a8 f   UAODriver.obj
+ 0001:0000044c       UAO_Write                  1000144c f   UAODriver.obj
+ 0001:00000468       UAO_PowerUp                10001468 f   UAODriver.obj
+ 0001:00000480       UAO_PowerDown              10001480 f   UAODriver.obj
+ 0001:00000498       UAO_DllMain                10001498 f   UAODriver.obj
+ 0001:000004a0       UAOEnable                  100014a0 f   UAOSet.obj
+ 0001:000004bc       UAODisable                 100014bc f   UAOSet.obj
+ 0001:000004d4       CreateMutexW               100014d4 f   coredll:COREDLL.dll
+ 0001:000004e4       NKDbgPrintfW               100014e4 f   coredll:COREDLL.dll
+ 0001:000004f4       GetLastError               100014f4 f   coredll:COREDLL.dll
+ 0001:00000504       WaitForSingleObject        10001504 f   coredll:COREDLL.dll
+ 0001:00000514       ReleaseMutex               10001514 f   coredll:COREDLL.dll
+ 0001:00000524       CloseHandle                10001524 f   coredll:COREDLL.dll
+ 0001:00000534       __IMPORT_DESCRIPTOR_COREDLL 10001534     coredll:COREDLL.dll
+ 0001:00000548       __NULL_IMPORT_DESCRIPTOR   10001548     coredll:COREDLL.dll
+ 0002:00000000       __imp_NKDbgPrintfW         10002000     coredll:COREDLL.dll
+ 0002:00000004       __imp_GetLastError         10002004     coredll:COREDLL.dll
+ 0002:00000008       __imp_WaitForSingleObject  10002008     coredll:COREDLL.dll
+ 0002:0000000c       __imp_ReleaseMutex         1000200c     coredll:COREDLL.dll
+ 0002:00000010       __imp_CloseHandle          10002010     coredll:COREDLL.dll
+ 0002:00000014       __imp_CreateMutexW         10002014     coredll:COREDLL.dll
+ 0002:00000018       \177COREDLL_NULL_THUNK_DATA 10002018     coredll:COREDLL.dll
+
+ entry point at        0001:00000498
+
+ Static symbols
+

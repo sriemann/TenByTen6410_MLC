@@ -1,0 +1,50 @@
+1.Add Eboot select LCD type
+  a.)modified \SRC\BOOTLOADER\EBOOT\main.c;
+  b.)modified \SRC\DRIVERS\DISPLAY\DISPLAY_DRV\display_main.cpp;
+  c.)modified \SRC\DRIVERS\DISPLAY\LDI_LIB\s3c6410_ldi.c
+  
+2.Add GPIO driver to control TV OUT and USB Host Power
+  a.)\SRC\DRIVERS\GPIO
+  b.)via IOCOTROL to control TV OUT and USB Host Power
+  
+3.Add Lan IC DM9000 driver
+  a) \SRC\DRIVERS\DM9000A1
+  b) modifed cs1--bank1 in\SRC\OAL\OALLIB\init.c ,EINT7  in intr.c
+  
+4.Add SDIO Wifi driver,mavell 8686
+  a)\SRC\DRIVERS\MAVELL_WIFI
+  
+5.Modified touch driver to improve touch performance
+
+6.According H/W modified HSMMC driver
+  1)HSMMCCh1 use normal interrupt,EINT10
+
+
+7.Add LED driver for led indicator 
+ a.)\SRC\DRIVERS\Led 
+
+8.Add EBOOT DM9000 downloading NK
+ a,)modified \SMDK6410\SRC\BOOTLOADER\EBOOT\main.c and ether.c
+ b,)modified \SMDK6410\SRC\BOOTLOADER\EBOOT\ sources
+ 
+9.Setting RAM SIZE in  SMDK6410.bat
+  a) 128M RAMSIZE set as beloow
+  set BSP_TYPE=%BSP_DRAM128%
+  @REM set BSP_TYPE=%BSP_DRAM256%
+  
+  b) 256M RAMSIZE set as beloow
+  @REM set BSP_TYPE=%BSP_DRAM128%
+  set BSP_TYPE=%BSP_DRAM256%
+  
+  c)modified \SMDK6410\sources.cmn
+  d)modified \SMDK6410\SMDK6410.bat
+  
+10.256M an 128M RAM support 
+   a)modified \SMDK6410\SRC\INC\image_cfg.h
+   b)modified \SMDK6410\SRC\INC\image_cfg.inc
+   c)modified \SMDK6410\SRC\INC\MemParam_mDDR.inc
+   d)modified \SMDK6410\SRC\INC\oemaddrtab_cfg.inc
+   e)modified \SMDK6410\SRC\OAL\OALLIB\init.c
+   f)modified \SMDK6410\SRC\BOOTLOADER\STEPLDR\startup.s
+   g)modified \SMDK6410\SRC\BOOTLOADER\EBOOT\startup.s
+   

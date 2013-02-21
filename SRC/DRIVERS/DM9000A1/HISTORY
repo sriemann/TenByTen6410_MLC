@@ -1,0 +1,16 @@
+****************************************************
+DM9000E\DM9010\DM9000A driver for WinCE 50
+****************************************************
+V3.2.9.1 2006/07
+	-Add connected/disconnected icon
+V3.04 2007/03/09
+	- Test WinCE6.0
+	- Modify the parameter of NdisMRegisterInterrupt in device.cpp
+		if((status=NdisMRegisterInterrupt(
+		&m_InterruptHandle,
+		m_pUpper->GetNdisHandle(),
+		m_szConfigures[CID_IRQ_LEVEL],//m_szConfigures[CID_IRQ_NUMBER],	// or say, irq vector
+		m_szConfigures[CID_IRQ_LEVEL],	// irql level
+		TRUE,		// request ISR
+		(BOOLEAN)m_szConfigures[CID_IRQ_SHARED],		// shared interrupt
+		(KINTERRUPT_MODE)m_szConfigures[CID_IRQ_GEN_TYPE])) != NDIS_STATUS_SUCCESS)	

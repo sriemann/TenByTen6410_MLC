@@ -1,0 +1,46 @@
+//
+// Copyright (c) Samsung Electronics. Co. LTD.  All rights reserved.
+//
+/*++
+THIS CODE AND INFORMATION IS PROVIDED "AS IS" WITHOUT WARRANTY OF
+ANY KIND, EITHER EXPRESSED OR IMPLIED, INCLUDING BUT NOT LIMITED TO
+THE IMPLIED WARRANTIES OF MERCHANTABILITY AND/OR FITNESS FOR A
+PARTICULAR PURPOSE.
+
+*/
+
+
+MEMORY
+;-----------------------------------------------------
+;    NAME        ADDRESS    SIZE        TYPE
+;-----------------------------------------------------
+    PTS         80000000    00020000    RESERVED        ; Page Table    : 128 KB
+    ARGS        80020800    00000800    RESERVED        ; BSP Args    : 2 KB
+    EBOOT       80030000    00080000    RAMIMAGE        ; Eboot Image    : 512 KB
+;    RAM         800B0000    00040000    RAM                ; RAM        : 256 KB
+    RAM         800C0000    00080000    RAM
+
+    STACK       800FC000    00004000    RESERVED        ; Stack        : 16 KB (sharing with Step Loader)
+    BINFS       86C00000    00400000    RESERVED        ; Bin FS        : 4096 KB
+;    BINFS       80180000    00400000    RESERVED
+
+    FLSCACHE    80100000    02F00000    RESERVED        ; FLSCACHE    : 31MB
+    USB_BUF     83000000    03000000    RESERVED
+
+    DISPLAY     87000000    01000000    RESERVED        ; match to config.bib for sharing display library 
+
+CONFIG
+    COMPRESSION=OFF
+    PROFILE=OFF
+    KERNELFIXUPS=ON
+    SRE=ON
+
+    ROMSTART = 80030000
+    ROMWIDTH = 32
+    ROMSIZE = 00080000
+
+MODULES
+;   Name            Path                                                              Memory Type
+;   --------------  ----------------------------------------------                    -----------
+    nk.exe          $(_TARGETPLATROOT)\target\$(_TGTCPU)\$(WINCEDEBUG)\eboot.exe      EBOOT
+

@@ -1,0 +1,42 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 9.00
+# Visual Studio 2005
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "OpenGLES2_0_EGL_Demo", "OpenGLES2_0_EGL_Demo\OpenGLES2_0_EGL_Demo.vcproj", "{41707B19-FF6C-4FF7-9AC6-9DF0C20383AD}"
+	ProjectSection(WebsiteProperties) = preProject
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.Debug = "False"
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|SDK_SMDK6410 (ARMV4I) = Debug|SDK_SMDK6410 (ARMV4I)
+		Debug|Windows Mobile 6 Professional SDK (ARMV4I) = Debug|Windows Mobile 6 Professional SDK (ARMV4I)
+		New Driver|SDK_SMDK6410 (ARMV4I) = New Driver|SDK_SMDK6410 (ARMV4I)
+		New Driver|Windows Mobile 6 Professional SDK (ARMV4I) = New Driver|Windows Mobile 6 Professional SDK (ARMV4I)
+		Release|SDK_SMDK6410 (ARMV4I) = Release|SDK_SMDK6410 (ARMV4I)
+		Release|Windows Mobile 6 Professional SDK (ARMV4I) = Release|Windows Mobile 6 Professional SDK (ARMV4I)
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{41707B19-FF6C-4FF7-9AC6-9DF0C20383AD}.Debug|SDK_SMDK6410 (ARMV4I).ActiveCfg = Debug|SDK_SMDK6410 (ARMV4I)
+		{41707B19-FF6C-4FF7-9AC6-9DF0C20383AD}.Debug|SDK_SMDK6410 (ARMV4I).Build.0 = Debug|SDK_SMDK6410 (ARMV4I)
+		{41707B19-FF6C-4FF7-9AC6-9DF0C20383AD}.Debug|SDK_SMDK6410 (ARMV4I).Deploy.0 = Debug|SDK_SMDK6410 (ARMV4I)
+		{41707B19-FF6C-4FF7-9AC6-9DF0C20383AD}.Debug|Windows Mobile 6 Professional SDK (ARMV4I).ActiveCfg = Debug|Windows Mobile 6 Professional SDK (ARMV4I)
+		{41707B19-FF6C-4FF7-9AC6-9DF0C20383AD}.Debug|Windows Mobile 6 Professional SDK (ARMV4I).Build.0 = Debug|Windows Mobile 6 Professional SDK (ARMV4I)
+		{41707B19-FF6C-4FF7-9AC6-9DF0C20383AD}.Debug|Windows Mobile 6 Professional SDK (ARMV4I).Deploy.0 = Debug|Windows Mobile 6 Professional SDK (ARMV4I)
+		{41707B19-FF6C-4FF7-9AC6-9DF0C20383AD}.New Driver|SDK_SMDK6410 (ARMV4I).ActiveCfg = New Driver|SDK_SMDK6410 (ARMV4I)
+		{41707B19-FF6C-4FF7-9AC6-9DF0C20383AD}.New Driver|SDK_SMDK6410 (ARMV4I).Build.0 = New Driver|SDK_SMDK6410 (ARMV4I)
+		{41707B19-FF6C-4FF7-9AC6-9DF0C20383AD}.New Driver|SDK_SMDK6410 (ARMV4I).Deploy.0 = New Driver|SDK_SMDK6410 (ARMV4I)
+		{41707B19-FF6C-4FF7-9AC6-9DF0C20383AD}.New Driver|Windows Mobile 6 Professional SDK (ARMV4I).ActiveCfg = New Driver|Windows Mobile 6 Professional SDK (ARMV4I)
+		{41707B19-FF6C-4FF7-9AC6-9DF0C20383AD}.New Driver|Windows Mobile 6 Professional SDK (ARMV4I).Build.0 = New Driver|Windows Mobile 6 Professional SDK (ARMV4I)
+		{41707B19-FF6C-4FF7-9AC6-9DF0C20383AD}.New Driver|Windows Mobile 6 Professional SDK (ARMV4I).Deploy.0 = New Driver|Windows Mobile 6 Professional SDK (ARMV4I)
+		{41707B19-FF6C-4FF7-9AC6-9DF0C20383AD}.Release|SDK_SMDK6410 (ARMV4I).ActiveCfg = Release|SDK_SMDK6410 (ARMV4I)
+		{41707B19-FF6C-4FF7-9AC6-9DF0C20383AD}.Release|SDK_SMDK6410 (ARMV4I).Build.0 = Release|SDK_SMDK6410 (ARMV4I)
+		{41707B19-FF6C-4FF7-9AC6-9DF0C20383AD}.Release|SDK_SMDK6410 (ARMV4I).Deploy.0 = Release|SDK_SMDK6410 (ARMV4I)
+		{41707B19-FF6C-4FF7-9AC6-9DF0C20383AD}.Release|Windows Mobile 6 Professional SDK (ARMV4I).ActiveCfg = Release|Windows Mobile 6 Professional SDK (ARMV4I)
+		{41707B19-FF6C-4FF7-9AC6-9DF0C20383AD}.Release|Windows Mobile 6 Professional SDK (ARMV4I).Build.0 = Release|Windows Mobile 6 Professional SDK (ARMV4I)
+		{41707B19-FF6C-4FF7-9AC6-9DF0C20383AD}.Release|Windows Mobile 6 Professional SDK (ARMV4I).Deploy.0 = Release|Windows Mobile 6 Professional SDK (ARMV4I)
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

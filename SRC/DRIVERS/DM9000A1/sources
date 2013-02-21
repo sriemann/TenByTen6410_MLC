@@ -1,0 +1,31 @@
+
+# =================================================
+# Modfied for SMDK6410 by DiaoLiangpeng 2008-12-05
+# =================================================
+
+
+DEFFILE=dm9isa1.def
+TARGETDEFNAME=dm9isa1
+TARGETNAME=dm9isa1
+TARGETTYPE=DYNLINK
+
+
+CDEFINES=$(CDEFINES) -DNDIS_MINIPORT_DRIVER -DDM9000
+
+TARGETLIBS=                                                     \
+   $(_PROJECTROOT)\cesysgen\sdk\lib\$(_TGTCPUTYPE)\$(_TGTCPU)\$(WINCEDEBUG)\ndis.lib      \
+   $(_PROJECTROOT)\cesysgen\sdk\lib\$(_TGTCPUTYPE)\$(_TGTCPU)\$(WINCEDEBUG)\ntcompat.lib  \
+   $(_PROJECTROOT)\cesysgen\sdk\lib\$(_TGTCPUTYPE)\$(_TGTCPU)\$(WINCEDEBUG)\coredll.lib \
+   $(_PROJECTROOT)\cesysgen\oak\lib\$(_TGTCPUTYPE)\$(_TGTCPU)\$(WINCEDEBUG)\ceddk.lib   
+   
+INCLUDES=
+
+SOURCES= dm9isa.cpp\
+         driver.cpp\
+         device.cpp\
+         common.cpp\
+         wince.c
+
+#xref VIGUID {be8ed5a8-f3d5-4f7f-84c8-84498bf447c7}
+#xref VSGUID {66b501a8-d6c0-45b5-a376-c6c9601c0c7d}
+

@@ -1,0 +1,711 @@
+ SDIO8686
+
+ Timestamp is 5125b2a1 (Thu Feb 21 13:37:37 2013)
+
+ Preferred load address is 10000000
+
+ Start         Length     Name                   Class
+ 0001:00000000 000045d8H .rdata                  CODE
+ 0001:000045d8 00000025H .rdata$debug            CODE
+ 0001:00004600 0001c768H .text                   CODE
+ 0001:00020d68 00000080H .xdata                  CODE
+ 0001:00020de8 0000003cH .idata$2                CODE
+ 0001:00020e24 00000014H .idata$3                CODE
+ 0001:00020e38 0000017cH .idata$4                CODE
+ 0001:00020fb4 0000030cH .idata$6                CODE
+ 0001:000212c0 0000011aH .edata                  CODE
+ 0002:00000000 0000017cH .idata$5                DATA
+ 0002:00000180 00025184H .data                   DATA
+ 0002:00025320 00001674H .bss                    DATA
+ 0003:00000000 00000998H .pdata                  DATA
+
+  Address         Publics by Value              Rva+Base       Lib:Object
+
+ 0000:00000000       ___safe_se_handler_table   00000000     <absolute>
+ 0000:00000000       ___safe_se_handler_count   00000000     <absolute>
+ 0001:0000001c       ??_C@_0N@PIKODKJD@BusPowerInD3?$AA@ 1000101c     initproc.obj
+ 0001:0000002c       ??_C@_1BK@OLBMOIJA@?$AAB?$AAu?$AAs?$AAP?$AAo?$AAw?$AAe?$AAr?$AAI?$AAn?$AAD?$AA3?$AA?$AA@ 1000102c     initproc.obj
+ 0001:00000048       ??_C@_0P@DNHDEAMA@AssoRetryTimes?$AA@ 10001048     initproc.obj
+ 0001:00000058       ??_C@_1BO@FOIEPLAF@?$AAA?$AAs?$AAs?$AAo?$AAR?$AAe?$AAt?$AAr?$AAy?$AAT?$AAi?$AAm?$AAe?$AAs?$AA?$AA@ 10001058     initproc.obj
+ 0001:00000078       ??_C@_0BC@DEDBGMNE@AutoDeepSleepTime?$AA@ 10001078     initproc.obj
+ 0001:0000008c       ??_C@_1CE@DFHPHPID@?$AAA?$AAu?$AAt?$AAo?$AAD?$AAe?$AAe?$AAp?$AAS?$AAl?$AAe?$AAe?$AAp?$AAT?$AAi?$AAm?$AAe?$AA?$AA@ 1000108c     initproc.obj
+ 0001:000000b0       ??_C@_0N@ENMGGAE@MacFrameType?$AA@ 100010b0     initproc.obj
+ 0001:000000c0       ??_C@_1BK@ELENNKLK@?$AAM?$AAa?$AAc?$AAF?$AAr?$AAa?$AAm?$AAe?$AAT?$AAy?$AAp?$AAe?$AA?$AA@ 100010c0     initproc.obj
+ 0001:000000dc       ??_C@_0BC@DJNFOPGE@GPIOIntPulsewidth?$AA@ 100010dc     initproc.obj
+ 0001:000000f0       ??_C@_1CE@PAAHADNM@?$AAG?$AAP?$AAI?$AAO?$AAI?$AAn?$AAt?$AAP?$AAu?$AAl?$AAs?$AAe?$AAw?$AAi?$AAd?$AAt?$AAh?$AA?$AA@ 100010f0     initproc.obj
+ 0001:00000114       ??_C@_0BD@BDMFHHFN@GPIOIntTriggerEdge?$AA@ 10001114     initproc.obj
+ 0001:00000128       ??_C@_1CG@OKKGKIMB@?$AAG?$AAP?$AAI?$AAO?$AAI?$AAn?$AAt?$AAT?$AAr?$AAi?$AAg?$AAg?$AAe?$AAr?$AAE?$AAd?$AAg?$AAe?$AA?$AA@ 10001128     initproc.obj
+ 0001:00000150       ??_C@_0BB@PNEPPKAL@GPIOIntPinNumber?$AA@ 10001150     initproc.obj
+ 0001:00000164       ??_C@_1CC@HGJOAEIO@?$AAG?$AAP?$AAI?$AAO?$AAI?$AAn?$AAt?$AAP?$AAi?$AAn?$AAN?$AAu?$AAm?$AAb?$AAe?$AAr?$AA?$AA@ 10001164     initproc.obj
+ 0001:00000188       ??_C@_08MNEOFAPP@UseMfgFw?$AA@ 10001188     initproc.obj
+ 0001:00000194       ??_C@_1BC@JBBCIBFN@?$AAU?$AAs?$AAe?$AAM?$AAf?$AAg?$AAF?$AAw?$AA?$AA@ 10001194     initproc.obj
+ 0001:000001a8       ??_C@_0BC@JLHHCL@RoamScanAlgorithm?$AA@ 100011a8     initproc.obj
+ 0001:000001bc       ??_C@_1CE@JBGCJKCK@?$AAR?$AAo?$AAa?$AAm?$AAS?$AAc?$AAa?$AAn?$AAA?$AAl?$AAg?$AAo?$AAr?$AAi?$AAt?$AAh?$AAm?$AA?$AA@ 100011bc     initproc.obj
+ 0001:000001e0       ??_C@_0BG@HJDCPKOI@RoamDiffRSSIThreshold?$AA@ 100011e0     initproc.obj
+ 0001:000001f8       ??_C@_1CM@NCFOCOFK@?$AAR?$AAo?$AAa?$AAm?$AAD?$AAi?$AAf?$AAf?$AAR?$AAS?$AAS?$AAI?$AAT?$AAh?$AAr?$AAe?$AAs?$AAh?$AAo?$AAl?$AAd?$AA?$AA@ 100011f8     initproc.obj
+ 0001:00000224       ??_C@_0BE@PFJIJPDP@RoamMinScanInterval?$AA@ 10001224     initproc.obj
+ 0001:00000238       ??_C@_1CI@HGKIACIB@?$AAR?$AAo?$AAa?$AAm?$AAM?$AAi?$AAn?$AAS?$AAc?$AAa?$AAn?$AAI?$AAn?$AAt?$AAe?$AAr?$AAv?$AAa?$AAl?$AA?$AA@ 10001238     initproc.obj
+ 0001:00000260       ??_C@_0BE@KEGBCEGC@RoamMaxScanInterval?$AA@ 10001260     initproc.obj
+ 0001:00000274       ??_C@_1CI@FADNMDBO@?$AAR?$AAo?$AAa?$AAm?$AAM?$AAa?$AAx?$AAS?$AAc?$AAa?$AAn?$AAI?$AAn?$AAt?$AAe?$AAr?$AAv?$AAa?$AAl?$AA?$AA@ 10001274     initproc.obj
+ 0001:0000029c       ??_C@_0BE@CGLLBJHH@RoamChannelScanList?$AA@ 1000129c     initproc.obj
+ 0001:000002b0       ??_C@_1CI@FGKOGNAC@?$AAR?$AAo?$AAa?$AAm?$AAC?$AAh?$AAa?$AAn?$AAn?$AAe?$AAl?$AAS?$AAc?$AAa?$AAn?$AAL?$AAi?$AAs?$AAt?$AA?$AA@ 100012b0     initproc.obj
+ 0001:000002d8       ??_C@_0BM@MENFCINH@RoamSignalStrengthThreshold?$AA@ 100012d8     initproc.obj
+ 0001:000002f4       ??_C@_1DI@JBPBJFBK@?$AAR?$AAo?$AAa?$AAm?$AAS?$AAi?$AAg?$AAn?$AAa?$AAl?$AAS?$AAt?$AAr?$AAe?$AAn?$AAg?$AAt?$AAh?$AAT?$AAh?$AAr?$AAe?$AAs?$AAh?$AAo?$AAl?$AAd?$AA?$AA@ 100012f4     initproc.obj
+ 0001:0000032c       ??_C@_0N@NNEFGDLC@SdioFastPath?$AA@ 1000132c     initproc.obj
+ 0001:0000033c       ??_C@_1BK@JLAPDDLG@?$AAS?$AAd?$AAi?$AAo?$AAF?$AAa?$AAs?$AAt?$AAP?$AAa?$AAt?$AAh?$AA?$AA@ 1000133c     initproc.obj
+ 0001:00000358       ??_C@_0BJ@NAAEBJBE@bActiveRoamingwithBGSCAN?$AA@ 10001358     initproc.obj
+ 0001:00000374       ??_C@_1DC@DKGCOPBI@?$AAb?$AAA?$AAc?$AAt?$AAi?$AAv?$AAe?$AAR?$AAo?$AAa?$AAm?$AAi?$AAn?$AAg?$AAw?$AAi?$AAt?$AAh?$AAB?$AAG?$AAS?$AAC?$AAA?$AAN?$AA?$AA@ 10001374     initproc.obj
+ 0001:000003a8       ??_C@_0BB@BNEKFJBP@AdhocAwakePeriod?$AA@ 100013a8     initproc.obj
+ 0001:000003bc       ??_C@_1CC@MFLNBEEG@?$AAA?$AAd?$AAh?$AAo?$AAc?$AAA?$AAw?$AAa?$AAk?$AAe?$AAP?$AAe?$AAr?$AAi?$AAo?$AAd?$AA?$AA@ 100013bc     initproc.obj
+ 0001:000003e0       ??_C@_0N@CFFJACHP@MultipleDTim?$AA@ 100013e0     initproc.obj
+ 0001:000003f0       ??_C@_1BK@BDMKECOG@?$AAM?$AAu?$AAl?$AAt?$AAi?$AAp?$AAl?$AAe?$AAD?$AAT?$AAi?$AAm?$AA?$AA@ 100013f0     initproc.obj
+ 0001:0000040c       ??_C@_0BA@BAHLGHLI@NullPktInterval?$AA@ 1000140c     initproc.obj
+ 0001:0000041c       ??_C@_1CA@DBABBJMK@?$AAN?$AAu?$AAl?$AAl?$AAP?$AAk?$AAt?$AAI?$AAn?$AAt?$AAe?$AAr?$AAv?$AAa?$AAl?$AA?$AA@ 1000141c     initproc.obj
+ 0001:0000043c       ??_C@_08JJHABPHH@ESSID_32?$AA@ 1000143c     initproc.obj
+ 0001:00000448       ??_C@_1BC@BCDJDNBN@?$AAE?$AAS?$AAS?$AAI?$AAD?$AA_?$AA3?$AA2?$AA?$AA@ 10001448     initproc.obj
+ 0001:0000045c       ??_C@_0M@NLEJELMB@DefaultBand?$AA@ 1000145c     initproc.obj
+ 0001:00000468       ??_C@_1BI@JNONLHMO@?$AAD?$AAe?$AAf?$AAa?$AAu?$AAl?$AAt?$AAB?$AAa?$AAn?$AAd?$AA?$AA@ 10001468     initproc.obj
+ 0001:00000480       ??_C@_0O@IICPALBO@DefaultRegion?$AA@ 10001480     initproc.obj
+ 0001:00000490       ??_C@_1BM@BDBCBHEP@?$AAD?$AAe?$AAf?$AAa?$AAu?$AAl?$AAt?$AAR?$AAe?$AAg?$AAi?$AAo?$AAn?$AA?$AA@ 10001490     initproc.obj
+ 0001:000004ac       ??_C@_0N@EKGCPIBF@Enable80211D?$AA@ 100014ac     initproc.obj
+ 0001:000004bc       ??_C@_1BK@JJPELIBK@?$AAE?$AAn?$AAa?$AAb?$AAl?$AAe?$AA8?$AA0?$AA2?$AA1?$AA1?$AAD?$AA?$AA@ 100014bc     initproc.obj
+ 0001:000004d8       ??_C@_0L@CFOGBPOA@RSSI_Range?$AA@ 100014d8     initproc.obj
+ 0001:000004e4       ??_C@_1BG@KOJHPPDC@?$AAR?$AAS?$AAS?$AAI?$AA_?$AAR?$AAa?$AAn?$AAg?$AAe?$AA?$AA@ 100014e4     initproc.obj
+ 0001:000004fc       ??_C@_0BF@MPDCDGKG@ulRSSIThresholdTimer?$AA@ 100014fc     initproc.obj
+ 0001:00000514       ??_C@_1CK@KHFFPKHP@?$AAu?$AAl?$AAR?$AAS?$AAS?$AAI?$AAT?$AAh?$AAr?$AAe?$AAs?$AAh?$AAo?$AAl?$AAd?$AAT?$AAi?$AAm?$AAe?$AAr?$AA?$AA@ 10001514     initproc.obj
+ 0001:00000540       ??_C@_0O@JIAMCJKL@AvoidScanTime?$AA@ 10001540     initproc.obj
+ 0001:00000550       ??_C@_1BM@CNDBLKH@?$AAA?$AAv?$AAo?$AAi?$AAd?$AAS?$AAc?$AAa?$AAn?$AAT?$AAi?$AAm?$AAe?$AA?$AA@ 10001550     initproc.obj
+ 0001:0000056c       ??_C@_0O@LKHLFLHI@SdioIstThread?$AA@ 1000156c     initproc.obj
+ 0001:0000057c       ??_C@_1BM@JHNMEOAI@?$AAS?$AAd?$AAi?$AAo?$AAI?$AAs?$AAt?$AAT?$AAh?$AAr?$AAe?$AAa?$AAd?$AA?$AA@ 1000157c     initproc.obj
+ 0001:00000598       ??_C@_09DCGMOKPM@SetSD4BIT?$AA@ 10001598     initproc.obj
+ 0001:000005a4       ??_C@_1BE@IMEMDCOI@?$AAS?$AAe?$AAt?$AAS?$AAD?$AA4?$AAB?$AAI?$AAT?$AA?$AA@ 100015a4     initproc.obj
+ 0001:000005b8       ??_C@_0BE@IAJFIAJC@LocalListenInterval?$AA@ 100015b8     initproc.obj
+ 0001:000005cc       ??_C@_1CI@EPOCNCCO@?$AAL?$AAo?$AAc?$AAa?$AAl?$AAL?$AAi?$AAs?$AAt?$AAe?$AAn?$AAI?$AAn?$AAt?$AAe?$AAr?$AAv?$AAa?$AAl?$AA?$AA@ 100015cc     initproc.obj
+ 0001:000005f4       ??_C@_0BC@HNAIKKFK@AdhocWiFiDataRate?$AA@ 100015f4     initproc.obj
+ 0001:00000608       ??_C@_1CE@PEEOOCLE@?$AAA?$AAd?$AAh?$AAo?$AAc?$AAW?$AAi?$AAF?$AAi?$AAD?$AAa?$AAt?$AAa?$AAR?$AAa?$AAt?$AAe?$AA?$AA@ 10001608     initproc.obj
+ 0001:0000062c       ??_C@_0BE@GNJAHOCJ@AdhocDefaultChannel?$AA@ 1000162c     initproc.obj
+ 0001:00000640       ??_C@_1CI@KDPBKBPP@?$AAA?$AAd?$AAh?$AAo?$AAc?$AAD?$AAe?$AAf?$AAa?$AAu?$AAl?$AAt?$AAC?$AAh?$AAa?$AAn?$AAn?$AAe?$AAl?$AA?$AA@ 10001640     initproc.obj
+ 0001:00000668       ??_C@_0BB@LKCEBHIP@AdhocDefaultBand?$AA@ 10001668     initproc.obj
+ 0001:0000067c       ??_C@_1CC@NJALAPFP@?$AAA?$AAd?$AAh?$AAo?$AAc?$AAD?$AAe?$AAf?$AAa?$AAu?$AAl?$AAt?$AAB?$AAa?$AAn?$AAd?$AA?$AA@ 1000167c     initproc.obj
+ 0001:000006a0       ??_C@_07NEEDHKIL@WepKey4?$AA@ 100016a0     initproc.obj
+ 0001:000006a8       ??_C@_1BA@KHOFIFHM@?$AAW?$AAe?$AAp?$AAK?$AAe?$AAy?$AA4?$AA?$AA@ 100016a8     initproc.obj
+ 0001:000006b8       ??_C@_07JLACOMEM@WepKey3?$AA@ 100016b8     initproc.obj
+ 0001:000006c0       ??_C@_1BA@DKDCLNMF@?$AAW?$AAe?$AAp?$AAK?$AAe?$AAy?$AA3?$AA?$AA@ 100016c0     initproc.obj
+ 0001:000006d0       ??_C@_07ICBJNNAN@WepKey2?$AA@ 100016d0     initproc.obj
+ 0001:000006d8       ??_C@_1BA@ICIONKKA@?$AAW?$AAe?$AAp?$AAK?$AAe?$AAy?$AA2?$AA?$AA@ 100016d8     initproc.obj
+ 0001:000006e8       ??_C@_07KJDEIOMO@WepKey1?$AA@ 100016e8     initproc.obj
+ 0001:000006f0       ??_C@_1BA@JADLHFEO@?$AAW?$AAe?$AAp?$AAK?$AAe?$AAy?$AA1?$AA?$AA@ 100016f0     initproc.obj
+ 0001:00000700       ??_C@_07CGCHCBBH@TxPower?$AA@ 10001700     initproc.obj
+ 0001:00000708       ??_C@_1BA@PFBHPGLM@?$AAT?$AAx?$AAP?$AAo?$AAw?$AAe?$AAr?$AA?$AA@ 10001708     initproc.obj
+ 0001:00000718       ??_C@_08PCJAMMFJ@TxWepKey?$AA@ 10001718     initproc.obj
+ 0001:00000724       ??_C@_1BC@JFJALHAD@?$AAT?$AAx?$AAW?$AAe?$AAp?$AAK?$AAe?$AAy?$AA?$AA@ 10001724     initproc.obj
+ 0001:00000738       ??_C@_09GJLAAKIG@WepStatus?$AA@ 10001738     initproc.obj
+ 0001:00000744       ??_C@_1BE@FAHLOEJF@?$AAW?$AAe?$AAp?$AAS?$AAt?$AAa?$AAt?$AAu?$AAs?$AA?$AA@ 10001744     initproc.obj
+ 0001:00000758       ??_C@_03EHFKIMEO@QOS?$AA@  10001758     initproc.obj
+ 0001:0000075c       ??_C@_17CEOHMLDL@?$AAQ?$AAO?$AAS?$AA?$AA@ 1000175c     initproc.obj
+ 0001:00000764       ??_C@_06PFCABICD@BTTime?$AA@ 10001764     initproc.obj
+ 0001:0000076c       ??_C@_1O@HGCHFCAA@?$AAB?$AAT?$AAT?$AAi?$AAm?$AAe?$AA?$AA@ 1000176c     initproc.obj
+ 0001:0000077c       ??_C@_0BE@ODOBDDHA@BTTimeShareInterval?$AA@ 1000177c     initproc.obj
+ 0001:00000790       ??_C@_1CI@JHKOMHPO@?$AAB?$AAT?$AAT?$AAi?$AAm?$AAe?$AAS?$AAh?$AAa?$AAr?$AAe?$AAI?$AAn?$AAt?$AAe?$AAr?$AAv?$AAa?$AAl?$AA?$AA@ 10001790     initproc.obj
+ 0001:000007b8       ??_C@_0O@NONKFJPD@BTTrafficType?$AA@ 100017b8     initproc.obj
+ 0001:000007c8       ??_C@_1BM@BADJIFPO@?$AAB?$AAT?$AAT?$AAr?$AAa?$AAf?$AAf?$AAi?$AAc?$AAT?$AAy?$AAp?$AAe?$AA?$AA@ 100017c8     initproc.obj
+ 0001:000007e4       ??_C@_06LCGKIJID@BTMode?$AA@ 100017e4     initproc.obj
+ 0001:000007ec       ??_C@_1O@EMPMKAGN@?$AAB?$AAT?$AAM?$AAo?$AAd?$AAe?$AA?$AA@ 100017ec     initproc.obj
+ 0001:000007fc       ??_C@_0M@JBOBKCDJ@RoamingMode?$AA@ 100017fc     initproc.obj
+ 0001:00000808       ??_C@_1BI@BOFOLBPB@?$AAR?$AAo?$AAa?$AAm?$AAi?$AAn?$AAg?$AAM?$AAo?$AAd?$AAe?$AA?$AA@ 10001808     initproc.obj
+ 0001:00000820       ??_C@_09ILDIIPAG@PowerMode?$AA@ 10001820     initproc.obj
+ 0001:0000082c       ??_C@_1BE@CLCCMCEA@?$AAP?$AAo?$AAw?$AAe?$AAr?$AAM?$AAo?$AAd?$AAe?$AA?$AA@ 1000182c     initproc.obj
+ 0001:00000840       ??_C@_08DGDNKCKF@Preamble?$AA@ 10001840     initproc.obj
+ 0001:0000084c       ??_C@_1BC@CKJMKLIF@?$AAP?$AAr?$AAe?$AAa?$AAm?$AAb?$AAl?$AAe?$AA?$AA@ 1000184c     initproc.obj
+ 0001:00000860       ??_C@_0M@HGDELILO@MaxChanTime?$AA@ 10001860     initproc.obj
+ 0001:0000086c       ??_C@_1BI@EKANLIHG@?$AAM?$AAa?$AAx?$AAC?$AAh?$AAa?$AAn?$AAT?$AAi?$AAm?$AAe?$AA?$AA@ 1000186c     initproc.obj
+ 0001:00000884       ??_C@_07LEHJKNJN@RTSThsd?$AA@ 10001884     initproc.obj
+ 0001:0000088c       ??_C@_1BA@KDPMBHNA@?$AAR?$AAT?$AAS?$AAT?$AAh?$AAs?$AAd?$AA?$AA@ 1000188c     initproc.obj
+ 0001:0000089c       ??_C@_08GBMLBMP@FragThsd?$AA@ 1000189c     initproc.obj
+ 0001:000008a8       ??_C@_1BC@LDMIADPC@?$AAF?$AAr?$AAa?$AAg?$AAT?$AAh?$AAs?$AAd?$AA?$AA@ 100018a8     initproc.obj
+ 0001:000008bc       ??_C@_08NHHNGCBL@DataRate?$AA@ 100018bc     initproc.obj
+ 0001:000008c8       ??_C@_1BC@MDDHCJEN@?$AAD?$AAa?$AAt?$AAa?$AAR?$AAa?$AAt?$AAe?$AA?$AA@ 100018c8     initproc.obj
+ 0001:000008dc       ??_C@_07DMJBFPJJ@Channel?$AA@ 100018dc     initproc.obj
+ 0001:000008e4       ??_C@_1BA@DLAHBHMC@?$AAC?$AAh?$AAa?$AAn?$AAn?$AAe?$AAl?$AA?$AA@ 100018e4     initproc.obj
+ 0001:000008f4       ??_C@_09PAGGNOOM@RxAntenna?$AA@ 100018f4     initproc.obj
+ 0001:00000900       ??_C@_1BE@JCDEKHDB@?$AAR?$AAx?$AAA?$AAn?$AAt?$AAe?$AAn?$AAn?$AAa?$AA?$AA@ 10001900     initproc.obj
+ 0001:00000914       ??_C@_09PNHIKOKL@TxAntenna?$AA@ 10001914     initproc.obj
+ 0001:00000920       ??_C@_1BE@BGBHDKOE@?$AAT?$AAx?$AAA?$AAn?$AAt?$AAe?$AAn?$AAn?$AAa?$AA?$AA@ 10001920     initproc.obj
+ 0001:00000934       ??_C@_08FMFNJNFN@AuthMode?$AA@ 10001934     initproc.obj
+ 0001:00000940       ??_C@_1BC@EIILMKOO@?$AAA?$AAu?$AAt?$AAh?$AAM?$AAo?$AAd?$AAe?$AA?$AA@ 10001940     initproc.obj
+ 0001:00000954       ??_C@_0M@JDOGOHMF@NetworkMode?$AA@ 10001954     initproc.obj
+ 0001:00000960       ??_C@_1BI@PNNNFABE@?$AAN?$AAe?$AAt?$AAW?$AAo?$AAr?$AAk?$AAM?$AAo?$AAd?$AAe?$AA?$AA@ 10001960     initproc.obj
+ 0001:00000978       ??_C@_0M@JCLJBHPL@DesiredSSID?$AA@ 10001978     initproc.obj
+ 0001:00000984       ??_C@_1BI@KLFIKMFH@?$AAD?$AAe?$AAs?$AAi?$AAr?$AAe?$AAd?$AAS?$AAS?$AAI?$AAD?$AA?$AA@ 10001984     initproc.obj
+ 0001:000009ac       ??_C@_1DI@NOIJMPGE@?$AAC?$AAa?$AAn?$AA?8?$AAt?$AA?5?$AAC?$AAr?$AAe?$AAa?$AAt?$AAe?$AA?5?$AAH?$AAw?$AAS?$AAp?$AAe?$AAc?$AA?5?$AAE?$AAV?$AAE?$AAN?$AAT?$AA?5?$AA?6?$AA?$AA@ 100019ac     initproc.obj
+ 0001:000009e4       ??_C@_1O@FDAJHIMO@?$AA3?$AA8?$AA?4?$AAp?$AA3?$AA5?$AA?$AA@ 100019e4     initproc.obj
+ 0001:000009f4       ??_C@_1BM@JBLBDIOG@?$AAD?$AAr?$AAi?$AAv?$AAe?$AAr?$AAV?$AAe?$AAr?$AAs?$AAi?$AAo?$AAn?$AA?$AA@ 100019f4     initproc.obj
+ 0001:00000a10       ??_C@_1BM@KOOMANLA@?$AAC?$AAo?$AAm?$AAm?$AA?2?$AAS?$AAD?$AAI?$AAO?$AA8?$AA6?$AA8?$AA6?$AA?$AA@ 10001a10     initproc.obj
+ 0001:00000a2c       ??_C@_1DM@CMABGJJB@?$AAS?$AAD?$AAI?$AAO?$AA8?$AA6?$AA8?$AA6?$AA?3?$AA?5?$AAF?$AAW?$AA?5?$AAD?$AAo?$AAw?$AAn?$AAl?$AAo?$AAa?$AAd?$AA?3?$AA?5?$AAS?$AAt?$AAa?$AAr?$AAt?$AA?6?$AA?$AA@ 10001a2c     initproc.obj
+ 0001:00000a68       ??_C@_1DI@EFGCLMJD@?$AAS?$AAD?$AAI?$AAO?$AA8?$AA6?$AA8?$AA6?$AA?3?$AA?5?$AAF?$AAW?$AA?5?$AAD?$AAo?$AAw?$AAn?$AAl?$AAo?$AAa?$AAd?$AA?3?$AA?5?$AAE?$AAn?$AAd?$AA?6?$AA?$AA@ 10001a68     initproc.obj
+ 0001:00000db4       ??_C@_1DO@NKFBHMKG@?$AAs?$AAi?$AAz?$AAe?$AAo?$AAf?$AA?$CI?$AAN?$AAD?$AAI?$AAS?$AA_?$AA8?$AA0?$AA2?$AA_?$AA1?$AA1?$AA_?$AAR?$AAA?$AAT?$AAE?$AAS?$AA?$CJ?$AA?$DN?$AA?$CF?$AAx?$AA?$AN?$AA?6?$AA?$AA@ 10001db4     oidproc.obj
+ 0001:00000df4       ??_C@_1DI@EAHJHDB@?$AAB?$AAG?$AA_?$AAS?$AAC?$AAA?$AAN?$AA?5?$AAA?$AAC?$AAT?$AAI?$AAO?$AAN?$AA?$CI?$AAO?$AAI?$AAD?$AA?3?$AA?$CF?$AAx?$AA?$CJ?$AA?3?$AA?$CF?$AAx?$AA?$AN?$AA?6?$AA?$AA@ 10001df4     oidproc.obj
+ 0001:00000e30       ??_C@_1FA@GAJIFBLP@?$AA?5?$AA?5?$AA?5?$AA?5?$AA?5?$AAI?$AAn?$AAv?$AAa?$AAl?$AAi?$AAd?$AA?5?$AAl?$AAe?$AAn?$AAg?$AAt?$AAh?$AA?5?$AA?$FL?$AAI?$AAn?$AA?3?$AA?$CF?$AAd?$AA?0?$AA?5?$AAN?$AAe?$AAe?$AAd@ 10001e30     oidproc.obj
+ 0001:00000e80       ??_C@_0CD@NJACOKMA@Marvell?5W8100?5802?411?5SDIO?5CARD?5N@ 10001e80     oidproc.obj
+ 0001:00000eb4       ??_C@_04NOJCDH@?$CF02x?$AA@ 10001eb4     hwacproc.obj
+ 0001:00000ebc       ??_C@_1BI@FCMLLAGN@?$AA?$CF?$AAd?$AA?4?$AA?$CF?$AAd?$AA?4?$AA?$CF?$AAd?$AA?4?$AA?$CF?$AAd?$AA?$AA@ 10001ebc     hwacproc.obj
+ 0001:00000ed4       ??_C@_1BE@JPLHJILG@?$AAF?$AAW?$AAV?$AAe?$AAr?$AAs?$AAi?$AAo?$AAn?$AA?$AA@ 10001ed4     hwacproc.obj
+ 0001:00000ee8       ??_C@_1DM@OLOEHJIB@?$AA?$FL?$AAW?$AAi?$AAF?$AAi?$AA?$FN?$AA?3?$AA?5?$AAF?$AAi?$AAr?$AAm?$AAw?$AAa?$AAr?$AAe?$AA?5?$AAV?$AAe?$AAr?$AAs?$AAi?$AAo?$AAn?$AA?3?$AA?5?$AA?$CF?$AAs?$AA?6?$AA?$AA@ 10001ee8     hwacproc.obj
+ 0001:00000f24       ??_C@_04FNILJBLP@?$AAP?r?$AB?$AA@ 10001f24     hwacproc.obj
+ 0001:00000f2c       ??_C@_1DK@BHCCBHIL@?$AAE?$AAv?$AAe?$AAn?$AAt?$AA?3?$AA?5?$AA?$CF?$AAx?$AA?5?$AAa?$AAt?$AA?5?$AAT?$AAi?$AAm?$AAe?$AA?5?$AAT?$AAi?$AAc?$AAk?$AA?3?$AA?5?$AA?$CF?$AAx?$AA?$AN?$AA?6?$AA?$AA@ 10001f2c     hwacproc.obj
+ 0001:00000f88       ??_C@_02DPNLHKJD@a?$CL?$AA@ 10001f88     miscproc.obj
+ 0001:00000f8c       ??_C@_0BJ@FHCIMGJA@?2My?5Documents?2EvtLog?4txt?$AA@ 10001f8c     miscproc.obj
+ 0001:00000fd8       ??_C@_1GG@BKANIKE@?$AAE?$AAR?$AAR?$AAO?$AAR?$AA?0?$AA?5?$AAa?$AA?5?$AAp?$AAe?$AAn?$AAd?$AAe?$AAd?$AA?5?$AAR?$AAX?$AA?5?$AAp?$AAa?$AAc?$AAk?$AAe?$AAt?$AA?5?$AAh?$AAa?$AAs?$AA?5?$AAn?$AAo@ 10001fd8     rxproc.obj
+ 0001:00001050       ??_C@_1GA@JNOKMNPN@?$AAM?$AAr?$AAv?$AAD?$AAr?$AAv?$AAS?$AAd?$AAi?$AAo?$AAI?$AAn?$AAt?$AAT?$AAi?$AAm?$AAe?$AAr?$AA?3?$AA?5?$AAP?$AAa?$AAc?$AAk?$AAe?$AAt?$AA?5?$AAi?$AAs?$AA?5?$AAa?$AA?5@ 10002050     intproc.obj
+ 0001:000010d0       ??_C@_1BG@EFMPCBGF@?$AAA?$AAc?$AAt?$AAi?$AAv?$AAe?$AAP?$AAa?$AAt?$AAh?$AA?$AA@ 100020d0     NDISLoader.obj
+ 0001:000010e8       ??_C@_1O@DKPEPPIB@?$AA?2?$AAC?$AAo?$AAm?$AAm?$AA?2?$AA?$AA@ 100020e8     NDISLoader.obj
+ 0001:000010f8       ??_C@_1O@CHBGMNB@?$AA?2?$AAP?$AAa?$AAr?$AAm?$AAs?$AA?$AA@ 100020f8     NDISLoader.obj
+ 0001:00001108       ??_C@_13EBCNDICG@?$AA?3?$AA?$AA@ 10002108     NDISLoader.obj
+ 0001:0000110c       ??_C@_1BC@LDHKIAE@?$AAI?$AAn?$AAs?$AAt?$AAa?$AAn?$AAc?$AAe?$AA?$AA@ 1000210c     NDISLoader.obj
+ 0001:00001150       ??_C@_07OKFNOHP@MRVL?9CW?$AA@ 10002150     wlan_ccx.obj
+ 0001:00001250       rcon                       10002250     rsa32:aesbox.obj
+ 0001:000012c8       S5                         100022c8     rsa32:aesbox.obj
+ 0001:000013c8       S                          100023c8     rsa32:aesbox.obj
+ 0001:000014c8       U4                         100024c8     rsa32:aesbox.obj
+ 0001:000018c8       U3                         100028c8     rsa32:aesbox.obj
+ 0001:00001cc8       U2                         10002cc8     rsa32:aesbox.obj
+ 0001:000020c8       U1                         100030c8     rsa32:aesbox.obj
+ 0001:000024c8       T8                         100034c8     rsa32:aesbox.obj
+ 0001:000028c8       T7                         100038c8     rsa32:aesbox.obj
+ 0001:00002cc8       T6                         10003cc8     rsa32:aesbox.obj
+ 0001:000030c8       T5                         100040c8     rsa32:aesbox.obj
+ 0001:000034c8       T4                         100044c8     rsa32:aesbox.obj
+ 0001:000038c8       T3                         100048c8     rsa32:aesbox.obj
+ 0001:00003cc8       T2                         10004cc8     rsa32:aesbox.obj
+ 0001:000040c8       T1                         100050c8     rsa32:aesbox.obj
+ 0001:000044d8       ??_C@_1FC@FEFIOJFD@?$AA?$CK?$AA?$CK?$AA?$CK?$AA?$CB?$AA?$CB?$AA?$CB?$AA?$CB?$AA?$CB?$AA?$CB?$AAN?$AAd?$AAi?$AAs?$AAR?$AAe?$AAa?$AAd?$AAC?$AAo?$AAn?$AAf?$AAi?$AAg?$AAu?$AAr?$AAa?$AAt?$AAi?$AAo?$AAn?$AA?5?$AA?5@ 100054d8     drvif:SDIOUtil.obj
+ 0001:0000452c       ??_C@_1BE@BIPOOMP@?$AAM?$AAR?$AAV?$AAL?$AA?5?$AAW?$AAi?$AAF?$AAi?$AA?$AA@ 1000552c     drvif:SDIOUtil.obj
+ 0001:00004540       ??_C@_1HI@NHKGAKFF@?$AAR?$AAe?$AAa?$AAd?$AA?5?$AAa?$AAb?$AAn?$AAo?$AAr?$AAm?$AAa?$AAl?$AA?5?$AAS?$AAD?$AAI?$AAO?$AA?5?$AAd?$AAa?$AAt?$AAa?$AA?5?$AAb?$AAl?$AAo?$AAc?$AAk?$AA?5?$AAl?$AAe@ 10005540     drvif:SDIOUtil.obj
+ 0001:000045b8       ??_C@_1BG@HOCOHIJB@?$AAC?$AAl?$AAi?$AAe?$AAn?$AAt?$AAI?$AAn?$AAf?$AAo?$AA?$AA@ 100055b8     SDcardlib:SDMisc.obj
+ 0001:000045d0       ??_C@_17KACEIPNC@?$AAK?$AAe?$AAy?$AA?$AA@ 100055d0     SDcardlib:SDMisc.obj
+ 0001:000046b0       LoaderEntry                100056b0 f   initproc.obj
+ 0001:000046f4       DllEntry                   100056f4 f   initproc.obj
+ 0001:00004724       AddKeyValues               10005724 f   initproc.obj
+ 0001:00004948       InitRoamingMode            10005948 f   initproc.obj
+ 0001:000049f4       MrvDrvAllocateComplete     100059f4 f   initproc.obj
+ 0001:000049f8       InitAdapterObject          100059f8 f   initproc.obj
+ 0001:00004e9c       AllocateAdapterBuffer      10005e9c f   initproc.obj
+ 0001:00004f08       ReadRegistryInfo           10005f08 f   initproc.obj
+ 0001:00005284       InitSyncObjects            10006284 f   initproc.obj
+ 0001:00005528       InitializeWirelessConfig   10006528 f   initproc.obj
+ 0001:00005688       MrvDrvInitialize           10006688 f   initproc.obj
+ 0001:000059e4       DriverEntry                100069e4 f   initproc.obj
+ 0001:00005b18       MrvlDrvQueryCheckPsQueryableOID 10006b18 f   oidproc.obj
+ 0001:00005b54       MrvDrvSetEncryptionStatus  10006b54 f   oidproc.obj
+ 0001:00005d20       ProcessOIDResetChip        10006d20 f   oidproc.obj
+ 0001:00005dc4       ProcessOIDHSCancel         10006dc4 f   oidproc.obj
+ 0001:00005ea0       WaitOIDAccessRespond       10006ea0 f   oidproc.obj
+ 0001:00006000       ProcessOIDDeepSleep        10007000 f   oidproc.obj
+ 0001:000066dc       ProcessOIDRateAdaptRateSet 100076dc f   oidproc.obj
+ 0001:00006814       ProcessOIDDesiredRates     10007814 f   oidproc.obj
+ 0001:00006988       AutoDeepSleepPending       10007988 f   oidproc.obj
+ 0001:000069f4       ProcessOIDStatistics       100079f4 f   oidproc.obj
+ 0001:00006ad8       ProcessOIDGetTxPowerLevel  10007ad8 f   oidproc.obj
+ 0001:00006d6c       ProcessOIDSetTxPowerLevel  10007d6c f   oidproc.obj
+ 0001:00006ed0       ProcessOIDBgScanCfg        10007ed0 f   oidproc.obj
+ 0001:00007028       ProcessOIDHostSleepCfg     10008028 f   oidproc.obj
+ 0001:00007228       ProcessOIDBCATimeshare     10008228 f   oidproc.obj
+ 0001:00007444       MrvDrvQueryInformation     10008444 f   oidproc.obj
+ 0001:00009bb4       MrvDrvSetInformation       1000abb4 f   oidproc.obj
+ 0001:0000ce44       HandleAdhocAES             1000de44 f   hwacproc.obj
+ 0001:0000cf60       HandleBgScanResultEvent    1000df60 f   hwacproc.obj
+ 0001:0000cfd4       HandleMicError             1000dfd4 f   hwacproc.obj
+ 0001:0000d11c       DisconnectDueToMicError    1000e11c f   hwacproc.obj
+ 0001:0000d194       MacEventDisconnected       1000e194 f   hwacproc.obj
+ 0001:0000d340       HandleHardwareSpec         1000e340 f   hwacproc.obj
+ 0001:0000d570       CopyBSSIDInfo              1000e570 f   hwacproc.obj
+ 0001:0000d6b0       MrvDrvAddCurrentSSID       1000e6b0 f   hwacproc.obj
+ 0001:0000da0c       HandleHostPendCommand      1000ea0c f   hwacproc.obj
+ 0001:0000db90       InterpretBSSDescription    1000eb90 f   hwacproc.obj
+ 0001:0000e41c       Deactivate_Host_Sleep_Cfg  1000f41c f   hwacproc.obj
+ 0001:0000e4a8       RemoveTheActiveSsidEntry   1000f4a8 f   hwacproc.obj
+ 0001:0000e6d8       AgeOutTheActiveSsidEntry   1000f6d8 f   hwacproc.obj
+ 0001:0000e7a0       MrvMicDisconnectTimerFunction 1000f7a0 f   hwacproc.obj
+ 0001:0000e7b4       IsInMicErrorPeriod         1000f7b4 f   hwacproc.obj
+ 0001:0000e838       Application_Event_Notify   1000f838 f   hwacproc.obj
+ 0001:0000e88c       Ndis_MediaStatus_Notify    1000f88c f   hwacproc.obj
+ 0001:0000e8c4       Signal_Pending_OID         1000f8c4 f   hwacproc.obj
+ 0001:0000e904       HandleBgScanResponse       1000f904 f   hwacproc.obj
+ 0001:0000ee88       HandleAdHocModeLink        1000fe88 f   hwacproc.obj
+ 0001:0000eef8       HandleScanResponse         1000fef8 f   hwacproc.obj
+ 0001:0000f740       HandleAdHocJoinStart       10010740 f   hwacproc.obj
+ 0001:0000f8bc       HandleAssocReassoc         100108bc f   hwacproc.obj
+ 0001:0000ff40       HandleHostPendGetOid       10010f40 f   hwacproc.obj
+ 0001:00010bc0       HandleHostPendSetOid       10011bc0 f   hwacproc.obj
+ 0001:00010e90       HandleCommandFinishedEvent 10011e90 f   hwacproc.obj
+ 0001:00011550       HandleMACEvent             10012550 f   hwacproc.obj
+ 0001:00011bf8       FreeCmdBuffer              10012bf8 f   cmdproc.obj
+ 0001:00011c88       ReturnCmdNode              10012c88 f   cmdproc.obj
+ 0001:00011cd4       SetCmdCtrlNode             10012cd4 f   cmdproc.obj
+ 0001:00011e04       GetExpectedRetCode         10012e04 f   cmdproc.obj
+ 0001:00011e20       CleanUpCmdCtrlNode         10012e20 f   cmdproc.obj
+ 0001:00011f00       InsertCmdToQueue           10012f00 f   cmdproc.obj
+ 0001:00012040       UpdatePowerSaveState       10013040 f   cmdproc.obj
+ 0001:000121f4       EncryptionStateCheck       100131f4 f   cmdproc.obj
+ 0001:0001222c       AllocateCmdBuffer          1001322c f   cmdproc.obj
+ 0001:00012388       ResetCmdBuffer             10013388 f   cmdproc.obj
+ 0001:0001249c       GetFreeCmdCtrlNode         1001349c f   cmdproc.obj
+ 0001:00012504       DownloadCommand            10013504 f   cmdproc.obj
+ 0001:00012890       GetCmdFromQueueToExecute   10013890 f   cmdproc.obj
+ 0001:00012b64       MrvDrvIndicateConnectStatusTimer 10013b64 f   miscproc.obj
+ 0001:00012b8c       MrvDrvAvoidScanAfterConnectedTimer 10013b8c f   miscproc.obj
+ 0001:00012b9c       MrvDrvTxPktTimerFunction   10013b9c f   miscproc.obj
+ 0001:00012c90       MrvDrvSdioCheckFWReadyTimerFunction 10013c90 f   miscproc.obj
+ 0001:00012db0       ResetSingleTxDoneAck       10013db0 f   miscproc.obj
+ 0001:00012db4       SetMacControl              10013db4 f   miscproc.obj
+ 0001:00012e08       ConvertNDISRateToFWIndex   10013e08 f   miscproc.obj
+ 0001:00012e3c       ConvertFWIndexToNDISRate   10013e3c f   miscproc.obj
+ 0001:00012e54       FindSSIDInPSList           10013e54 f   miscproc.obj
+ 0001:00012ed8       ascii2hex                  10013ed8 f   miscproc.obj
+ 0001:00012f40       RegularIeFilter            10013f40 f   miscproc.obj
+ 0001:00013138       Wpa2RsnIeAdjust            10014138 f   miscproc.obj
+ 0001:000132c0       WpaIeAdjust                100142c0 f   miscproc.obj
+ 0001:00013448       FindAPByBssid              10014448 f   miscproc.obj
+ 0001:000134ac       InfraBssReconnectStop      100144ac f   miscproc.obj
+ 0001:0001351c       DoReConnect                1001451c f   miscproc.obj
+ 0001:0001365c       ReConnectHandler           1001465c f   miscproc.obj
+ 0001:00013734       ResetPmkidCache            10014734 f   miscproc.obj
+ 0001:00013764       SavePmkidToCache           10014764 f   miscproc.obj
+ 0001:000137f0       FindPmkidInCache           100147f0 f   miscproc.obj
+ 0001:00013854       DbgDumpCurrentPmkidCache   10014854 f   miscproc.obj
+ 0001:00013858       PrepareRSNForOsNotify      10014858 f   miscproc.obj
+ 0001:00013a1c       OsNotify_RSN               10014a1c f   miscproc.obj
+ 0001:00013ab4       MrvPrintEventLogToFile     10014ab4 f   miscproc.obj
+ 0001:00013b04       SetUpLowRssiValue          10014b04 f   miscproc.obj
+ 0001:00013b70       SetUpHighRssiValue         10014b70 f   miscproc.obj
+ 0001:00013bdc       SaveCurrentConfig          10014bdc f   miscproc.obj
+ 0001:00013bfc       GetPACFGValue              10014bfc f   miscproc.obj
+ 0001:00013c38       SetRegionCode              10014c38 f   miscproc.obj
+ 0001:00013db8       DownloadGProtectSetting    10014db8 f   miscproc.obj
+ 0001:00013dc8       FindSsidInBgCfg            10014dc8 f   miscproc.obj
+ 0001:00013e3c       FindBSSIDInPSList          10014e3c f   miscproc.obj
+ 0001:00013eac       ReplacePSListEntryByBSSListEntry 10014eac f   miscproc.obj
+ 0001:00013f6c       RemoveAgeOutEntryFromPSList 10014f6c f   miscproc.obj
+ 0001:000140c4       IsValidChannel             100150c4 f   miscproc.obj
+ 0001:0001413c       WaitForSingleObjectWithCancel 1001513c f   miscproc.obj
+ 0001:00014178       SetDsState                 10015178 f   miscproc.obj
+ 0001:000141ac       IsThisDsState              100151ac f   miscproc.obj
+ 0001:000141f0       SetHostPowerState          100151f0 f   miscproc.obj
+ 0001:00014218       IsThisHostPowerState       10015218 f   miscproc.obj
+ 0001:00014250       SelectBgScanConfig         10015250 f   miscproc.obj
+ 0001:00014270       MrvDrvReConnectTimerFunction 10015270 f   miscproc.obj
+ 0001:00014284       MrvDrvCommandTimerFunction 10015284 f   miscproc.obj
+ 0001:000144c0       InfraBssReconnectStart     100154c0 f   miscproc.obj
+ 0001:0001462c       EnableBgScan               1001562c f   miscproc.obj
+ 0001:000146a0       HandleD3toD0               100156a0 f   miscproc.obj
+ 0001:00014778       HandleD0toD3               10015778 f   miscproc.obj
+ 0001:000148f0       SetStationPowerState       100158f0 f   miscproc.obj
+ 0001:00014948       ResetDisconnectStatus      10015948 f   miscproc.obj
+ 0001:00014a48       MrvDrvPnPEventNotify       10015a48 f   pnpproc.obj
+ 0001:00014a4c       IsIndicateDisconnect       10015a4c f   txproc.obj
+ 0001:00014a90       SendNullPacket             10015a90 f   txproc.obj
+ 0001:00014b2c       CheckLastPacketIndication  10015b2c f   txproc.obj
+ 0001:00014b74       SendSinglePacket           10015b74 f   txproc.obj
+ 0001:00014d2c       AllocateSingleTx           10015d2c f   txproc.obj
+ 0001:00014dc8       InitializeTxNodeQ          10015dc8 f   txproc.obj
+ 0001:00014e10       TxPacketDeQueue            10015e10 f   txproc.obj
+ 0001:00014e80       TxPacketDeQueueByLowPriority 10015e80 f   txproc.obj
+ 0001:00014f00       PrepareDownloadPacket      10015f00 f   txproc.obj
+ 0001:000150b4       CCX_SendSinglePacket       100160b4 f   txproc.obj
+ 0001:000151e4       SendOneQueuedPacket        100161e4 f   txproc.obj
+ 0001:000152c8       CleanUpSingleTxBuffer      100162c8 f   txproc.obj
+ 0001:00015398       TxPacketEnQueue            10016398 f   txproc.obj
+ 0001:000154b8       MrvDrvSend                 100164b8 f   txproc.obj
+ 0001:00015798       HandleTxSingleDoneEvent    10016798 f   txproc.obj
+ 0001:00015a68       FreeRxQ                    10016a68 f   rxproc.obj
+ 0001:00015b48       ResetRxPDQ                 10016b48 f   rxproc.obj
+ 0001:00015bd0       GetRxPacketDesc            10016bd0 f i rxproc.obj
+ 0001:00015c80       ReturnRxPacketDesc         10016c80 f i rxproc.obj
+ 0001:00015cec       wlan_compute_rssi          10016cec f i rxproc.obj
+ 0001:00015ec0       HandleRxReadyEvent         10016ec0 f   rxproc.obj
+ 0001:00016024       MrvDrvReturnPacket         10017024 f   rxproc.obj
+ 0001:00016048       AllocateRxQ                10017048 f   rxproc.obj
+ 0001:000162cc       SDNdisSlotEventCallBack    100172cc f   intproc.obj
+ 0001:00016324       SDNdisInterruptCallback    10017324 f   intproc.obj
+ 0001:00016414       MrvIstThread               10017414 f   intproc.obj
+ 0001:0001681c       MakePsCmd                  1001781c f   power.obj
+ 0001:00016990       If_PowerUpDevice           10017990 f   power.obj
+ 0001:000169c4       If_ClearPowerUpBit         100179c4 f   power.obj
+ 0001:000169f8       If_WaitFWPowerUp           100179f8 f   power.obj
+ 0001:00016a60       PSWakeup                   10017a60 f   power.obj
+ 0001:00016ab4       PSSleep                    10017ab4 f   power.obj
+ 0001:00016b08       PSConfirmSleep             10017b08 f   power.obj
+ 0001:00016b5c       SetupDataRate              10017b5c f   cmdsend.obj
+ 0001:00016bbc       CleanupWepKeys             10017bbc f   cmdsend.obj
+ 0001:00016c20       SetupWepKeys               10017c20 f   cmdsend.obj
+ 0001:00016e20       SetupKeyMaterial           10017e20 f   cmdsend.obj
+ 0001:00016f94       FindAPBySSID               10017f94 f   cmdsend.obj
+ 0001:00017234       SetupAdHocStart            10018234 f   cmdsend.obj
+ 0001:00017568       SetupAdHocJoin             10018568 f   cmdsend.obj
+ 0001:0001774c       SetupScanCommand           1001874c f   cmdsend.obj
+ 0001:00017ec0       GetTsfTlvFromScanResult    10018ec0 f   cmdsend.obj
+ 0001:00017f20       AppendTsfTlv               10018f20 f   cmdsend.obj
+ 0001:00017fd4       UpdateTsfTimestamps        10018fd4 f   cmdsend.obj
+ 0001:0001811c       AuthModeMapping            1001911c f   cmdsend.obj
+ 0001:00018174       SetupAssociationExt        10019174 f   cmdsend.obj
+ 0001:00018f68       PrepareAndSendCommand      10019f68 f   cmdsend.obj
+ 0001:0001a450       ?LoadMiniport@@YAHPAU_MINIPORT_INSTANCE_INFO@@@Z 1001b450 f   NDISLoader.obj
+ 0001:0001a62c       ?UnloadMiniport@@YAXPAU_MINIPORT_INSTANCE_INFO@@@Z 1001b62c f   NDISLoader.obj
+ 0001:0001a6d4       ?NDL_Deinit@@YAHK@Z        1001b6d4 f   NDISLoader.obj
+ 0001:0001a730       ?NDL_Init@@YAKK@Z          1001b730 f   NDISLoader.obj
+ 0001:0001a808       ?NDL_IOControl@@YAHKKPAEK0KPAK@Z 1001b808 f   NDISLoader.obj
+ 0001:0001a810       ?NDL_Open@@YAKKKK@Z        1001b810 f   NDISLoader.obj
+ 0001:0001a814       ?NDL_PowerDown@@YAXK@Z     1001b814 f   NDISLoader.obj
+ 0001:0001a818       ?NDL_PowerUp@@YAXK@Z       1001b818 f   NDISLoader.obj
+ 0001:0001a81c       ?NDL_Read@@YAKKPAXK@Z      1001b81c f   NDISLoader.obj
+ 0001:0001a824       ?NDL_Seek@@YAKKJK@Z        1001b824 f   NDISLoader.obj
+ 0001:0001a82c       ?NDL_Write@@YAKKPBXK@Z     1001b82c f   NDISLoader.obj
+ 0001:0001a834       ?NDL_Close@@YAHK@Z         1001b834 f   NDISLoader.obj
+ 0001:0001a83c       MrvDrvReset                1001b83c f   exitproc.obj
+ 0001:0001a8f4       MrvDrvShutdownHandler      1001b8f4 f   exitproc.obj
+ 0001:0001a93c       CleanUpTimers              1001b93c f   exitproc.obj
+ 0001:0001aa44       ResetAdapterObject         1001ba44 f   exitproc.obj
+ 0001:0001ac88       CleanUpStationHW           1001bc88 f   exitproc.obj
+ 0001:0001ad4c       AutoDeepSleepCounter       1001bd4c f   exitproc.obj
+ 0001:0001ae2c       MrvDrvCheckForHang         1001be2c f   exitproc.obj
+ 0001:0001b008       FreeAdapterObject          1001c008 f   exitproc.obj
+ 0001:0001b094       MrvDrvHalt                 1001c094 f   exitproc.obj
+ 0001:0001b128       region_2_code              1001c128 f   wlan_11d.obj
+ 0001:0001b19c       code_2_region              1001c19c f   wlan_11d.obj
+ 0001:0001b1e4       ResetAllScanTypeAndPower   1001c1e4 f   wlan_11d.obj
+ 0001:0001b29c       UpdateScanTypeFromCountryIE 1001c29c f   wlan_11d.obj
+ 0001:0001b6f4       UpdateScanTypeByCountryCode 1001c6f4 f   wlan_11d.obj
+ 0001:0001b914       Enable_11d                 1001c914 f   wlan_11d.obj
+ 0001:0001b97c       SetDomainInfo              1001c97c f   wlan_11d.obj
+ 0001:0001b9e0       Generate_domain_info_11d   1001c9e0 f   wlan_11d.obj
+ 0001:0001bfb8       ccx_send_packet            1001cfb8 f   wlan_ccx.obj
+ 0001:0001c0d4       ccx_set_txpower            1001d0d4 f   wlan_ccx.obj
+ 0001:0001c108       wlan_ccx_free              1001d108 f   wlan_ccx.obj
+ 0001:0001c158       wlan_ccx_setCurMAC         1001d158 f   wlan_ccx.obj
+ 0001:0001c1a4       wlan_ccx_isCurPacket       1001d1a4 f   wlan_ccx.obj
+ 0001:0001c1cc       wlan_ccx_clrCurPacket      1001d1cc f   wlan_ccx.obj
+ 0001:0001c1e0       wlan_ccx_process_bss_elem  1001d1e0 f   wlan_ccx.obj
+ 0001:0001c260       wlan_ccx_getFlags          1001d260 f   wlan_ccx.obj
+ 0001:0001c270       wlan_ccx_setFlags          1001d270 f   wlan_ccx.obj
+ 0001:0001c280       wlan_ccx_getEAPState       1001d280 f   wlan_ccx.obj
+ 0001:0001c290       wlan_ccx_setEAPState       1001d290 f   wlan_ccx.obj
+ 0001:0001c2a0       wlan_ccx_MapAuthMode       1001d2a0 f   wlan_ccx.obj
+ 0001:0001c2e4       wlan_ccx_setRogueAP        1001d2e4 f   wlan_ccx.obj
+ 0001:0001c358       wlan_ccx_sendRogueAPList   1001d358 f   wlan_ccx.obj
+ 0001:0001c3b4       ccx_send                   1001d3b4 f   wlan_ccx.obj
+ 0001:0001c440       wlan_ccx_recTxPower        1001d440 f   wlan_ccx.obj
+ 0001:0001c450       wlan_ccx_assocSuccess      1001d450 f   wlan_ccx.obj
+ 0001:0001c478       wlan_ccx_authSuccess       1001d478 f   wlan_ccx.obj
+ 0001:0001c4b4       wlan_ccx_fillBeaconTable   1001d4b4 f   wlan_ccx.obj
+ 0001:0001c858       wlan_ccx_send_BeaconTable  1001d858 f   wlan_ccx.obj
+ 0001:0001c920       wlan_ccx_parse_iapp        1001d920 f   wlan_ccx.obj
+ 0001:0001ca50       wlan_ccx_cckmStart         1001da50 f   wlan_ccx.obj
+ 0001:0001cad0       wlan_ccx_CCKMRequest       1001dad0 f   wlan_ccx.obj
+ 0001:0001cb84       Find_Ie_Traffic_Stream_Metric 1001db84 f   wlan_ccx.obj
+ 0001:0001cc54       HandleCcxv4S56Event        1001dc54 f   wlan_ccx.obj
+ 0001:0001ce00       FunCcxV4S56TestTimer       1001de00 f   wlan_ccx.obj
+ 0001:0001d1d8       wlan_ccx_RxPktFilter       1001e1d8 f   wlan_ccx.obj
+ 0001:0001d29c       wlan_ccx_init              1001e29c f   wlan_ccx.obj
+ 0001:0001d308       wlan_ccx_process_association_req 1001e308 f   wlan_ccx.obj
+ 0001:0001d518       wmm_cleanup_queues         1001e518 f   wmm.obj
+ 0001:0001d5c8       wmm_get_pkt_priority       1001e5c8 f   wmm.obj
+ 0001:0001d5e4       wmm_update_status_from_cmd_resp 1001e5e4 f   wmm.obj
+ 0001:0001d650       wlan_wmm_enable_ioctl      1001e650 f   wmm.obj
+ 0001:0001d6e8       wlan_roam_query_isConnecting 1001e6e8 f   wlan_roam.obj
+ 0001:0001d6f0       wlan_roam_ScanTableReady   1001e6f0 f   wlan_roam.obj
+ 0001:0001ddb4       wlan_roam_GetReconnectArg  1001edb4 f   wlan_roam.obj
+ 0001:0001ddbc       wlan_Recalculate_APID      1001edbc f   wlan_roam.obj
+ 0001:0001de38       wlan_reconnect_init        1001ee38 f   wlan_roam.obj
+ 0001:0001de70       wlan_reconnect             1001ee70 f   wlan_roam.obj
+ 0001:0001e0c4       wlan_recnnect_set_ap_param 1001f0c4 f   wlan_roam.obj
+ 0001:0001e3d4       wlan_roam_SetScanAlgorithm 1001f3d4 f   wlan_roam.obj
+ 0001:0001e510       wlan_roam_set_state        1001f510 f   wlan_roam.obj
+ 0001:0001e5f0       wlan_roam_init             1001f5f0 f   wlan_roam.obj
+ 0001:0001e6b8       wlan_roam_deinit           1001f6b8 f   wlan_roam.obj
+ 0001:0001e75c       wlan_destroy_thread        1001f75c f   wlan_thread.obj
+ 0001:0001e8bc       wlan_create_thread         1001f8bc f   wlan_thread.obj
+ 0001:0001e98c       CeLogData                  1001f98c f   coredll:COREDLL.dll
+ 0001:0001e99c       StringCchLengthW           1001f99c f   coredll:COREDLL.dll
+ 0001:0001e9ac       StringCchVPrintfW          1001f9ac f   coredll:COREDLL.dll
+ 0001:0001e9bc       DeleteCriticalSection      1001f9bc f   coredll:COREDLL.dll
+ 0001:0001e9cc       InitializeCriticalSection  1001f9cc f   coredll:COREDLL.dll
+ 0001:0001e9dc       DisableThreadLibraryCalls  1001f9dc f   coredll:COREDLL.dll
+ 0001:0001e9ec       RegCloseKey                1001f9ec f   coredll:COREDLL.dll
+ 0001:0001e9fc       LocalFree                  1001f9fc f   coredll:COREDLL.dll
+ 0001:0001ea0c       RegSetValueExW             1001fa0c f   coredll:COREDLL.dll
+ 0001:0001ea1c       LocalAlloc                 1001fa1c f   coredll:COREDLL.dll
+ 0001:0001ea2c       RegCreateKeyExW            1001fa2c f   coredll:COREDLL.dll
+ 0001:0001ea3c       CreateEventW               1001fa3c f   coredll:COREDLL.dll
+ 0001:0001ea4c       WaitForSingleObject        1001fa4c f   coredll:COREDLL.dll
+ 0001:0001ea5c       CreateThread               1001fa5c f   coredll:COREDLL.dll
+ 0001:0001ea6c       NKDbgPrintfW               1001fa6c f   coredll:COREDLL.dll
+ 0001:0001ea7c       EventModify                1001fa7c f   coredll:COREDLL.dll
+ 0001:0001ea8c       GetTickCount               1001fa8c f   coredll:COREDLL.dll
+ 0001:0001ea9c       LeaveCriticalSection       1001fa9c f   coredll:COREDLL.dll
+ 0001:0001eaac       EnterCriticalSection       1001faac f   coredll:COREDLL.dll
+ 0001:0001eabc       TryEnterCriticalSection    1001fabc f   coredll:COREDLL.dll
+ 0001:0001eacc       WaitForMultipleObjects     1001facc f   coredll:COREDLL.dll
+ 0001:0001eadc       CeSetThreadPriority        1001fadc f   coredll:COREDLL.dll
+ 0001:0001eaec       RegDeleteKeyW              1001faec f   coredll:COREDLL.dll
+ 0001:0001eafc       RegQueryValueExW           1001fafc f   coredll:COREDLL.dll
+ 0001:0001eb0c       RegOpenKeyExW              1001fb0c f   coredll:COREDLL.dll
+ 0001:0001eb1c       RegDeleteValueW            1001fb1c f   coredll:COREDLL.dll
+ 0001:0001eb2c       CloseHandle                1001fb2c f   coredll:COREDLL.dll
+ 0001:0001eb3c       Sleep                      1001fb3c f   coredll:COREDLL.dll
+ 0001:0001eb4c       NdisGetSystemUpTime        1001fb4c f   ndis:NDIS.dll
+ 0001:0001eb5c       NdisUnicodeStringToAnsiString 1001fb5c f   ndis:NDIS.dll
+ 0001:0001eb6c       NdisReadConfiguration      1001fb6c f   ndis:NDIS.dll
+ 0001:0001eb7c       NdisReadNetworkAddress     1001fb7c f   ndis:NDIS.dll
+ 0001:0001eb8c       NdisMInitializeTimer       1001fb8c f   ndis:NDIS.dll
+ 0001:0001eb9c       NdisMSleep                 1001fb9c f   ndis:NDIS.dll
+ 0001:0001ebac       NdisAllocateSpinLock       1001fbac f   ndis:NDIS.dll
+ 0001:0001ebbc       NdisMSetAttributesEx       1001fbbc f   ndis:NDIS.dll
+ 0001:0001ebcc       NdisFreeMemory             1001fbcc f   ndis:NDIS.dll
+ 0001:0001ebdc       NdisCloseConfiguration     1001fbdc f   ndis:NDIS.dll
+ 0001:0001ebec       NdisOpenConfiguration      1001fbec f   ndis:NDIS.dll
+ 0001:0001ebfc       NdisAllocateMemoryWithTag  1001fbfc f   ndis:NDIS.dll
+ 0001:0001ec0c       NdisTerminateWrapper       1001fc0c f   ndis:NDIS.dll
+ 0001:0001ec1c       NdisMRegisterMiniport      1001fc1c f   ndis:NDIS.dll
+ 0001:0001ec2c       NdisInitializeWrapper      1001fc2c f   ndis:NDIS.dll
+ 0001:0001ec3c       NdisSetTimer               1001fc3c f   ndis:NDIS.dll
+ 0001:0001ec4c       NdisMCancelTimer           1001fc4c f   ndis:NDIS.dll
+ 0001:0001ec5c       NdisReleaseSpinLock        1001fc5c f   ndis:NDIS.dll
+ 0001:0001ec6c       NdisAcquireSpinLock        1001fc6c f   ndis:NDIS.dll
+ 0001:0001ec7c       NdisMSetPeriodicTimer      1001fc7c f   ndis:NDIS.dll
+ 0001:0001ec8c       NdisQueryPacket            1001fc8c f   ndis:NDIS.dll
+ 0001:0001ec9c       NdisFreePacketPool         1001fc9c f   ndis:NDIS.dll
+ 0001:0001ecac       NdisFreeBufferPool         1001fcac f   ndis:NDIS.dll
+ 0001:0001ecbc       NdisFreePacket             1001fcbc f   ndis:NDIS.dll
+ 0001:0001eccc       NdisFreeBuffer             1001fccc f   ndis:NDIS.dll
+ 0001:0001ecdc       NdisAllocatePacket         1001fcdc f   ndis:NDIS.dll
+ 0001:0001ecec       NdisAllocateBuffer         1001fcec f   ndis:NDIS.dll
+ 0001:0001ecfc       NdisAllocateBufferPool     1001fcfc f   ndis:NDIS.dll
+ 0001:0001ed0c       NdisAllocatePacketPoolEx   1001fd0c f   ndis:NDIS.dll
+ 0001:0001ed1c       NdisRegisterAdapter        1001fd1c f   ndis:NDIS.dll
+ 0001:0001ed2c       NdisDeregisterAdapter      1001fd2c f   ndis:NDIS.dll
+ 0001:0001ed3c       NdisFreeSpinLock           1001fd3c f   ndis:NDIS.dll
+ 0001:0001ed4c       NdisMFreeMapRegisters      1001fd4c f   ndis:NDIS.dll
+ 0001:0001ed5c       sdio_IsFirmwareLoaded      1001fd5c f   drvif:SDIOUtil.obj
+ 0001:0001eddc       sdio_FirmwareDownload      1001fddc f   drvif:SDIOUtil.obj
+ 0001:0001f29c       SDIODownloadPkt            1002029c f   drvif:SDIOUtil.obj
+ 0001:0001f374       sdio_EnableInterrupt       10020374 f   drvif:SDIOUtil.obj
+ 0001:0001f378       sdio_DisableInterrupt      10020378 f   drvif:SDIOUtil.obj
+ 0001:0001f37c       SDNdisGetSDDeviceHandle    1002037c f   drvif:SDIOUtil.obj
+ 0001:0001f488       SDIOInitialization         10020488 f   drvif:SDIOUtil.obj
+ 0001:0001f848       sdio_Initialization        10020848 f   drvif:SDIOUtil.obj
+ 0001:0001f8a0       sdio_GetLengthOfDataBlock  100208a0 f   drvif:SDIOUtil.obj
+ 0001:0001f914       sdio_GetCardStatusAndMacEvent 10020914 f   drvif:SDIOUtil.obj
+ 0001:0001f9c0       sdio_GetDataBlock          100209c0 f   drvif:SDIOUtil.obj
+ 0001:0001fab8       sdio_ReInitCard            10020ab8 f   drvif:SDIOUtil.obj
+ 0001:0001fb58       sdio_PowerUpDevice         10020b58 f   drvif:SDIOUtil.obj
+ 0001:0001fbb4       sdio_ClearPowerUpBit       10020bb4 f   drvif:SDIOUtil.obj
+ 0001:0001fc18       SDIOGetPktTypeAndLength    10020c18 f   drvif:SDIOUtil.obj
+ 0001:0001fd80       SDRegisterClient           10020d80 f   SDcardlib:SDCardApiStubs.obj
+ 0001:0001fe3c       SDGetDeviceHandle          10020e3c f   SDcardlib:SDMisc.obj
+ 0001:0001ff84       SDGetRegPathFromInitContext 10020f84 f   SDcardlib:SDMisc.obj
+ 0001:00020000       ??1SDBusAccess@@QAA@XZ     10021000 f   SDcardlib:busacc.obj
+ 0001:00020030       ?SDBusCallback@SDBusAccess@@CAHKPAXK0KPAKPAU_OVERLAPPED@@@Z 10021030 f   SDcardlib:busacc.obj
+ 0001:0002013c       ?SDRegisterClient__X@SDBusAccess@@CAJPAX0PAU_SDCARD_CLIENT_REGISTRATION_INFO@@@Z 1002113c f   SDcardlib:busacc.obj
+ 0001:00020214       ?SDSynchronousBusRequest__X@SDBusAccess@@CAJPAXEKW4SD_TRANSFER_CLASS@@W4_SD_RESPONSE_TYPE@@PAU_SD_COMMAND_RESPONSE@@KKPAEKKPAU__PHYS_BUFF_LIST@@@Z 10021214 f   SDcardlib:busacc.obj
+ 0001:000202f0       ?SDBusRequestResponse__X@SDBusAccess@@CAJPAXPAU_SD_COMMAND_RESPONSE@@@Z 100212f0 f   SDcardlib:busacc.obj
+ 0001:00020378       ?SDBusRequest__X@SDBusAccess@@CAJPAXEKW4SD_TRANSFER_CLASS@@W4_SD_RESPONSE_TYPE@@KKPAEP6AX0PAU_SD_BUS_REQUEST@@0K@ZKPAPAU4@KKPAU__PHYS_BUFF_LIST@@@Z 10021378 f   SDcardlib:busacc.obj
+ 0001:00020488       ?SDCancelBusRequest__X@SDBusAccess@@CAEPAU_SD_BUS_REQUEST@@@Z 10021488 f   SDcardlib:busacc.obj
+ 0001:000204f8       ?SDFreeBusRequest__X@SDBusAccess@@CAXPAU_SD_BUS_REQUEST@@@Z 100214f8 f   SDcardlib:busacc.obj
+ 0001:00020554       ?SDCardInfoQuery__X@SDBusAccess@@CAJPAXW4SD_INFO_TYPE@@0K@Z 10021554 f   SDcardlib:busacc.obj
+ 0001:000205e0       ?SDReadWriteRegistersDirect__X@SDBusAccess@@CAJPAXW4SD_IO_TRANSFER_TYPE@@EKEPAEK@Z 100215e0 f   SDcardlib:busacc.obj
+ 0001:00020684       ?SDGetTuple__X@SDBusAccess@@CAJPAXEPAEPAKH@Z 10021684 f   SDcardlib:busacc.obj
+ 0001:00020744       ?SDIOConnectInterrupt__X@SDBusAccess@@CAJPAXP6AJ00@Z@Z 10021744 f   SDcardlib:busacc.obj
+ 0001:000207d0       ?SDIODisconnectInterrupt__X@SDBusAccess@@CAXPAX@Z 100217d0 f   SDcardlib:busacc.obj
+ 0001:0002082c       ?SDSetCardFeature__X@SDBusAccess@@CAJPAXW4SD_SET_FEATURE_TYPE@@0K@Z 1002182c f   SDcardlib:busacc.obj
+ 0001:000208b8       SDBusGetClientFunctions    100218b8 f   SDcardlib:busacc.obj
+ 0001:00020910       GetBusAccessHandle         10021910 f   SDcardlib:busacc.obj
+ 0001:0002092c       ??0SDBusAccess@@QAA@PBG@Z  1002192c f   SDcardlib:busacc.obj
+ 0001:000209ec       ?CreateSDBusAcess@@YAPAVSDBusAccess@@PBG@Z 100219ec f   SDcardlib:busacc.obj
+ 0001:00020a68       SDAllocateMemoryWithTag    10021a68 f   SDcardlib:SDMemApi.obj
+ 0001:00020a80       SDFreeMemory               10021a80 f   SDcardlib:SDMemApi.obj
+ 0001:00020a90       svsutil_Alloc              10021a90 f   SDcardlib:utilmem.obj
+ 0001:00020aa0       svsutil_ReAlloc            10021aa0 f   SDcardlib:utilmem.obj
+ 0001:00020ab0       svsutil_Free               10021ab0 f   SDcardlib:utilmem.obj
+ 0001:00020ac0       __GSHandlerCheckCommon     10021ac0 f   corelib0:gshandler.obj
+ 0001:00020afc       __GSHandlerCheck           10021afc f   corelib0:gshandler.obj
+ 0001:00020b20       __security_check_cookie    10021b20 f   corelib0:armsecgs.obj
+ 0001:00020b34       __gsfailure                10021b34 f   corelib0:armsecgs.obj
+ 0001:00020b78       wcscpy                     10021b78 f   corelib1:COREDLL.dll
+ 0001:00020b88       wcslen                     10021b88 f   corelib1:COREDLL.dll
+ 0001:00020b98       memset                     10021b98 f   corelib1:COREDLL.dll
+ 0001:00020ba8       memcpy                     10021ba8 f   corelib1:COREDLL.dll
+ 0001:00020bb8       swprintf                   10021bb8 f   corelib1:COREDLL.dll
+ 0001:00020bc8       wcscat                     10021bc8 f   corelib1:COREDLL.dll
+ 0001:00020bd8       memcmp                     10021bd8 f   corelib1:COREDLL.dll
+ 0001:00020be8       sprintf                    10021be8 f   corelib1:COREDLL.dll
+ 0001:00020bf8       fclose                     10021bf8 f   corelib1:COREDLL.dll
+ 0001:00020c08       fflush                     10021c08 f   corelib1:COREDLL.dll
+ 0001:00020c18       vfwprintf                  10021c18 f   corelib1:COREDLL.dll
+ 0001:00020c28       fopen                      10021c28 f   corelib1:COREDLL.dll
+ 0001:00020c38       __rt_sdiv                  10021c38 f   corelib1:COREDLL.dll
+ 0001:00020c48       __rt_udiv                  10021c48 f   corelib1:COREDLL.dll
+ 0001:00020c58       strchr                     10021c58 f   corelib1:COREDLL.dll
+ 0001:00020c68       strlen                     10021c68 f   corelib1:COREDLL.dll
+ 0001:00020c78       wcstok                     10021c78 f   corelib1:COREDLL.dll
+ 0001:00020c88       _ultow                     10021c88 f   corelib1:COREDLL.dll
+ 0001:00020c98       strncmp                    10021c98 f   corelib1:COREDLL.dll
+ 0001:00020ca8       ??3@YAXPAX@Z               10021ca8 f   corelib1:COREDLL.dll
+ 0001:00020cb8       ??2@YAPAXI@Z               10021cb8 f   corelib1:COREDLL.dll
+ 0001:00020cc8       malloc                     10021cc8 f   corelib1:COREDLL.dll
+ 0001:00020cd8       realloc                    10021cd8 f   corelib1:COREDLL.dll
+ 0001:00020ce8       free                       10021ce8 f   corelib1:COREDLL.dll
+ 0001:00020cf8       __report_gsfailure         10021cf8 f   corelib1:COREDLL.dll
+ 0001:00020d08       GetLastError               10021d08 f   coredll:COREDLL.dll
+ 0001:00020d18       SetLastError               10021d18 f   coredll:COREDLL.dll
+ 0001:00020d28       BusIoControl               10021d28 f   ceddk:CEDDK.dll
+ 0001:00020d38       CloseBusAccessHandle       10021d38 f   ceddk:CEDDK.dll
+ 0001:00020d48       CeDriverMapCallbackFunction 10021d48 f   ceddk:CEDDK.dll
+ 0001:00020d58       CreateBusAccessHandle      10021d58 f   ceddk:CEDDK.dll
+ 0001:00020de8       __IMPORT_DESCRIPTOR_COREDLL 10021de8     coredll:COREDLL.dll
+ 0001:00020dfc       __IMPORT_DESCRIPTOR_NDIS   10021dfc     ndis:NDIS.dll
+ 0001:00020e10       __IMPORT_DESCRIPTOR_CEDDK  10021e10     ceddk:CEDDK.dll
+ 0001:00020e24       __NULL_IMPORT_DESCRIPTOR   10021e24     coredll:COREDLL.dll
+ 0002:00000000       __imp_CloseBusAccessHandle 10023000     ceddk:CEDDK.dll
+ 0002:00000004       __imp_CeDriverMapCallbackFunction 10023004     ceddk:CEDDK.dll
+ 0002:00000008       __imp_CreateBusAccessHandle 10023008     ceddk:CEDDK.dll
+ 0002:0000000c       __imp_BusIoControl         1002300c     ceddk:CEDDK.dll
+ 0002:00000010       \177CEDDK_NULL_THUNK_DATA  10023010     ceddk:CEDDK.dll
+ 0002:00000014       __imp_DisableThreadLibraryCalls 10023014     coredll:COREDLL.dll
+ 0002:00000018       __imp_RegCloseKey          10023018     coredll:COREDLL.dll
+ 0002:0000001c       __imp_LocalFree            1002301c     coredll:COREDLL.dll
+ 0002:00000020       __imp_RegSetValueExW       10023020     coredll:COREDLL.dll
+ 0002:00000024       __imp_LocalAlloc           10023024     coredll:COREDLL.dll
+ 0002:00000028       __imp_RegCreateKeyExW      10023028     coredll:COREDLL.dll
+ 0002:0000002c       __imp_CreateEventW         1002302c     coredll:COREDLL.dll
+ 0002:00000030       __imp_WaitForSingleObject  10023030     coredll:COREDLL.dll
+ 0002:00000034       __imp_CreateThread         10023034     coredll:COREDLL.dll
+ 0002:00000038       __imp_NKDbgPrintfW         10023038     coredll:COREDLL.dll
+ 0002:0000003c       __imp_EventModify          1002303c     coredll:COREDLL.dll
+ 0002:00000040       __imp_InitializeCriticalSection 10023040     coredll:COREDLL.dll
+ 0002:00000044       __imp_LeaveCriticalSection 10023044     coredll:COREDLL.dll
+ 0002:00000048       __imp_EnterCriticalSection 10023048     coredll:COREDLL.dll
+ 0002:0000004c       __imp_TryEnterCriticalSection 1002304c     coredll:COREDLL.dll
+ 0002:00000050       __imp_WaitForMultipleObjects 10023050     coredll:COREDLL.dll
+ 0002:00000054       __imp_CeSetThreadPriority  10023054     coredll:COREDLL.dll
+ 0002:00000058       __imp_RegDeleteKeyW        10023058     coredll:COREDLL.dll
+ 0002:0000005c       __imp_RegQueryValueExW     1002305c     coredll:COREDLL.dll
+ 0002:00000060       __imp_RegOpenKeyExW        10023060     coredll:COREDLL.dll
+ 0002:00000064       __imp_RegDeleteValueW      10023064     coredll:COREDLL.dll
+ 0002:00000068       __imp_CloseHandle          10023068     coredll:COREDLL.dll
+ 0002:0000006c       __imp_Sleep                1002306c     coredll:COREDLL.dll
+ 0002:00000070       __imp_DeleteCriticalSection 10023070     coredll:COREDLL.dll
+ 0002:00000074       __imp_StringCchVPrintfW    10023074     coredll:COREDLL.dll
+ 0002:00000078       __imp_StringCchLengthW     10023078     coredll:COREDLL.dll
+ 0002:0000007c       __imp_GetTickCount         1002307c     coredll:COREDLL.dll
+ 0002:00000080       __imp_SetLastError         10023080     coredll:COREDLL.dll
+ 0002:00000084       __imp_GetLastError         10023084     coredll:COREDLL.dll
+ 0002:00000088       __imp___report_gsfailure   10023088     corelib1:COREDLL.dll
+ 0002:0000008c       __imp_free                 1002308c     corelib1:COREDLL.dll
+ 0002:00000090       __imp_realloc              10023090     corelib1:COREDLL.dll
+ 0002:00000094       __imp_malloc               10023094     corelib1:COREDLL.dll
+ 0002:00000098       __imp_??2@YAPAXI@Z         10023098     corelib1:COREDLL.dll
+ 0002:0000009c       __imp_??3@YAXPAX@Z         1002309c     corelib1:COREDLL.dll
+ 0002:000000a0       __imp_strncmp              100230a0     corelib1:COREDLL.dll
+ 0002:000000a4       __imp__ultow               100230a4     corelib1:COREDLL.dll
+ 0002:000000a8       __imp_wcstok               100230a8     corelib1:COREDLL.dll
+ 0002:000000ac       __imp_strlen               100230ac     corelib1:COREDLL.dll
+ 0002:000000b0       __imp_CeLogData            100230b0     coredll:COREDLL.dll
+ 0002:000000b4       __imp_strchr               100230b4     corelib1:COREDLL.dll
+ 0002:000000b8       __imp___rt_udiv            100230b8     corelib1:COREDLL.dll
+ 0002:000000bc       __imp___rt_sdiv            100230bc     corelib1:COREDLL.dll
+ 0002:000000c0       __imp_fopen                100230c0     corelib1:COREDLL.dll
+ 0002:000000c4       __imp_vfwprintf            100230c4     corelib1:COREDLL.dll
+ 0002:000000c8       __imp_fflush               100230c8     corelib1:COREDLL.dll
+ 0002:000000cc       __imp_fclose               100230cc     corelib1:COREDLL.dll
+ 0002:000000d0       __imp_sprintf              100230d0     corelib1:COREDLL.dll
+ 0002:000000d4       __imp_memcmp               100230d4     corelib1:COREDLL.dll
+ 0002:000000d8       __imp_wcscat               100230d8     corelib1:COREDLL.dll
+ 0002:000000dc       __imp_swprintf             100230dc     corelib1:COREDLL.dll
+ 0002:000000e0       __imp_wcscpy               100230e0     corelib1:COREDLL.dll
+ 0002:000000e4       __imp_wcslen               100230e4     corelib1:COREDLL.dll
+ 0002:000000e8       __imp_memset               100230e8     corelib1:COREDLL.dll
+ 0002:000000ec       __imp_memcpy               100230ec     corelib1:COREDLL.dll
+ 0002:000000f0       \177COREDLL_NULL_THUNK_DATA 100230f0     coredll:COREDLL.dll
+ 0002:000000f4       __imp_NdisMFreeMapRegisters 100230f4     ndis:NDIS.dll
+ 0002:000000f8       __imp_NdisFreeSpinLock     100230f8     ndis:NDIS.dll
+ 0002:000000fc       __imp_NdisDeregisterAdapter 100230fc     ndis:NDIS.dll
+ 0002:00000100       __imp_NdisRegisterAdapter  10023100     ndis:NDIS.dll
+ 0002:00000104       __imp_NdisAllocatePacketPoolEx 10023104     ndis:NDIS.dll
+ 0002:00000108       __imp_NdisAllocateBufferPool 10023108     ndis:NDIS.dll
+ 0002:0000010c       __imp_NdisAllocateBuffer   1002310c     ndis:NDIS.dll
+ 0002:00000110       __imp_NdisAllocatePacket   10023110     ndis:NDIS.dll
+ 0002:00000114       __imp_NdisFreeBuffer       10023114     ndis:NDIS.dll
+ 0002:00000118       __imp_NdisFreePacket       10023118     ndis:NDIS.dll
+ 0002:0000011c       __imp_NdisFreeBufferPool   1002311c     ndis:NDIS.dll
+ 0002:00000120       __imp_NdisQueryPacket      10023120     ndis:NDIS.dll
+ 0002:00000124       __imp_NdisMSetPeriodicTimer 10023124     ndis:NDIS.dll
+ 0002:00000128       __imp_NdisAcquireSpinLock  10023128     ndis:NDIS.dll
+ 0002:0000012c       __imp_NdisReleaseSpinLock  1002312c     ndis:NDIS.dll
+ 0002:00000130       __imp_NdisMCancelTimer     10023130     ndis:NDIS.dll
+ 0002:00000134       __imp_NdisSetTimer         10023134     ndis:NDIS.dll
+ 0002:00000138       __imp_NdisInitializeWrapper 10023138     ndis:NDIS.dll
+ 0002:0000013c       __imp_NdisMRegisterMiniport 1002313c     ndis:NDIS.dll
+ 0002:00000140       __imp_NdisTerminateWrapper 10023140     ndis:NDIS.dll
+ 0002:00000144       __imp_NdisAllocateMemoryWithTag 10023144     ndis:NDIS.dll
+ 0002:00000148       __imp_NdisOpenConfiguration 10023148     ndis:NDIS.dll
+ 0002:0000014c       __imp_NdisCloseConfiguration 1002314c     ndis:NDIS.dll
+ 0002:00000150       __imp_NdisFreeMemory       10023150     ndis:NDIS.dll
+ 0002:00000154       __imp_NdisMSetAttributesEx 10023154     ndis:NDIS.dll
+ 0002:00000158       __imp_NdisAllocateSpinLock 10023158     ndis:NDIS.dll
+ 0002:0000015c       __imp_NdisMSleep           1002315c     ndis:NDIS.dll
+ 0002:00000160       __imp_NdisMInitializeTimer 10023160     ndis:NDIS.dll
+ 0002:00000164       __imp_NdisReadNetworkAddress 10023164     ndis:NDIS.dll
+ 0002:00000168       __imp_NdisReadConfiguration 10023168     ndis:NDIS.dll
+ 0002:0000016c       __imp_NdisUnicodeStringToAnsiString 1002316c     ndis:NDIS.dll
+ 0002:00000170       __imp_NdisGetSystemUpTime  10023170     ndis:NDIS.dll
+ 0002:00000174       __imp_NdisFreePacketPool   10023174     ndis:NDIS.dll
+ 0002:00000178       \177NDIS_NULL_THUNK_DATA   10023178     ndis:NDIS.dll
+ 0002:0000067c       DebugLevel                 1002367c     initproc.obj
+ 0002:00000680       DebugModule                10023680     initproc.obj
+ 0002:000010e0       PsQueryableOID             100240e0     oidproc.obj
+ 0002:00001744       EAPOLStartPacket           10024744     hwacproc.obj
+ 0002:000058d0       wmm_tos2ac                 100288d0     wmm.obj
+ 0002:00006d58       fmimage                    10029d58     drvif:SDIOUtil.obj
+ 0002:00024a68       helperimage                10047a68     drvif:SDIOUtil.obj
+ 0002:000252bc       g_SDClientApiFunctions     100482bc     SDcardlib:SDCardApiStubs.obj
+ 0002:000252f0       g_funcAlloc                100482f0     SDcardlib:utilmem.obj
+ 0002:000252f4       g_funcFree                 100482f4     SDcardlib:utilmem.obj
+ 0002:000252f8       g_funcRealloc              100482f8     SDcardlib:utilmem.obj
+ 0002:000252fc       __security_cookie          100482fc     corelib0:seccinit.obj
+ 0002:00025300       __security_cookie_complement 10048300     corelib0:seccinit.obj
+ 0002:00025320       lptRegImage1               10048320     initproc.obj
+ 0002:00025321       lptRegImage2               10048321     initproc.obj
+ 0002:00025324       MrvDbgfp                   10048324     initproc.obj
+ 0002:00025328       g_fMrvDrvHaltCalled        10048328     initproc.obj
+ 0002:0002532c       g_hLoaderThread            1004832c     initproc.obj
+ 0002:00026964       ?g_pSDBusAccess@@3PAVSDBusAccess@@A 10049964     SDcardlib:busacc.obj
+ 0002:00026974       g_pvAllocData              10049974     SDcardlib:utilmem.obj
+ 0002:00026978       g_pvFreeData               10049978     SDcardlib:utilmem.obj
+ 0002:00026980       LoaderCriticalSection      10049980     <common>
+
+ entry point at        0001:000046f4
+
+ Static symbols
+
+ 0001:00004608       CeLogMsg                   10005608 f   initproc.obj
+ 0001:00005eec       HandleSSIDScan             10006eec f   oidproc.obj
+ 0001:00006284       ProcessOIDMrvlAssoc        10007284 f   oidproc.obj
+ 0001:0000d268       HandleADDTSResponse        1000e268 f   hwacproc.obj
+ 0001:0000d8a8       ExtractSecuritymode        1000e8a8 f   hwacproc.obj
+ 0001:0000d93c       HandleRSSI                 1000e93c f   hwacproc.obj
+ 0001:0000e618       AgeOutSsidEntry            1000f618 f   hwacproc.obj
+ 0001:0001bc50       append_ccx_aironet_ie      1001cc50 f   wlan_ccx.obj
+ 0001:0001bd28       ccx_freePacketBuffer       1001cd28 f   wlan_ccx.obj
+ 0001:0001bdec       ccx_allocatePacketBuffer   1001cdec f   wlan_ccx.obj
+ 0001:0001d718       wlan_roam_BGScan_CurrentSSID 1001e718 f   wlan_roam.obj
+ 0001:0001da48       wlan_roam_BGScan_SetInterval 1001ea48 f   wlan_roam.obj
+ 0001:0001da50       wlan_roam_BGScan_SetScanDone 1001ea50 f   wlan_roam.obj
+ 0001:0001da68       wlan_roam_UseBGScan        1001ea68 f   wlan_roam.obj
+ 0001:0001dae4       wlan_roam_NScan_SetInterval 1001eae4 f   wlan_roam.obj
+ 0001:0001daec       wlan_roam_NScan_SetScanDone 1001eaec f   wlan_roam.obj
+ 0001:0001db04       wlan_roam_UseNormalScan    1001eb04 f   wlan_roam.obj
+ 0001:0001dc4c       mrv_roam_FindNextAP        1001ec4c f   wlan_roam.obj
+ 0001:0001e0d4       wlan_roam_BGScan_Init      1001f0d4 f   wlan_roam.obj
+ 0001:0001e164       wlan_roam_UpdateScanTable  1001f164 f   wlan_roam.obj
+ 0001:0001e1f8       mrv_roam_Thread            1001f1f8 f   wlan_roam.obj
+ 0001:0001e840       threadHandle               1001f840 f   wlan_thread.obj

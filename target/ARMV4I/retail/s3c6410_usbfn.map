@@ -1,0 +1,657 @@
+ s3c6410_usbfn
+
+ Timestamp is 5125b29d (Thu Feb 21 13:37:33 2013)
+
+ Preferred load address is 10000000
+
+ Start         Length     Name                   Class
+ 0001:00000000 00000004H .CRT$XCA                CODE
+ 0001:00000004 00000004H .CRT$XCU                CODE
+ 0001:00000008 00000004H .CRT$XCZ                CODE
+ 0001:0000000c 00000004H .CRT$XIA                CODE
+ 0001:00000010 00000004H .CRT$XIZ                CODE
+ 0001:00000014 00000004H .CRT$XPA                CODE
+ 0001:00000018 00000004H .CRT$XPZ                CODE
+ 0001:0000001c 00000004H .CRT$XTA                CODE
+ 0001:00000020 00000004H .CRT$XTZ                CODE
+ 0001:00000030 00000e80H .rdata                  CODE
+ 0001:00000eb0 0000002aH .rdata$debug            CODE
+ 0001:00000edc 0000db5cH .text                   CODE
+ 0001:0000ea38 00000010H .text$yc                CODE
+ 0001:0000ea48 00000018H .text$yd                CODE
+ 0001:0000ea60 00000110H .xdata                  CODE
+ 0001:0000eb70 00000028H .idata$2                CODE
+ 0001:0000eb98 00000014H .idata$3                CODE
+ 0001:0000ebac 0000015cH .idata$4                CODE
+ 0001:0000ed08 00000016H .idata$6                CODE
+ 0001:0000ed20 000000cfH .edata                  CODE
+ 0002:00000000 0000015cH .idata$5                DATA
+ 0002:00000160 00000494H .data                   DATA
+ 0002:00000600 00000064H .bss                    DATA
+ 0003:00000000 00000ad8H .pdata                  DATA
+
+  Address         Publics by Value              Rva+Base       Lib:Object
+
+ 0000:00000000       ___safe_se_handler_count   00000000     <absolute>
+ 0000:00000000       ___safe_se_handler_table   00000000     <absolute>
+ 0001:00000000       __xc_a                     10001000     corelib0:crt0init.obj
+ 0001:00000008       __xc_z                     10001008     corelib0:crt0init.obj
+ 0001:0000000c       __xi_a                     1000100c     corelib0:crt0init.obj
+ 0001:00000010       __xi_z                     10001010     corelib0:crt0init.obj
+ 0001:00000014       __xp_a                     10001014     corelib0:crt0init.obj
+ 0001:00000018       __xp_z                     10001018     corelib0:crt0init.obj
+ 0001:0000001c       __xt_a                     1000101c     corelib0:crt0init.obj
+ 0001:00000020       __xt_z                     10001020     corelib0:crt0init.obj
+ 0001:00000050       ??_C@_1GC@MIJCAPDC@?$AA?$CF?$AA0?$AA8?$AAx?$AA?9?$AA?$CF?$AA0?$AA4?$AAx?$AA?9?$AA?$CF?$AA0?$AA4?$AAx?$AA?9?$AA?$CF?$AA0?$AA2?$AAx?$AA?$CF?$AA0?$AA2?$AAx?$AA?9?$AA?$CF?$AA0?$AA2?$AAx?$AA?$CF?$AA0?$AA2?$AAx@ 10001050     usbfn.obj
+ 0001:000000b8       ??_C@_1EK@NLFENOND@?$AAE?$AA2?$AAB?$AAD?$AAC?$AA3?$AA7?$AA2?$AA?9?$AA5?$AA9?$AA8?$AAF?$AA?9?$AA4?$AA6?$AA1?$AA9?$AA?9?$AAB?$AAC?$AA5?$AA0?$AA?9?$AA5?$AA4?$AAB?$AA3?$AAF?$AA7?$AA8?$AA4@ 100010b8     usbfn.obj
+ 0001:00000108       ??_C@_1FI@DFJOBEFF@?$AA?$FL?$AAU?$AAF?$AAN?$AAP?$AAD?$AAD?$AA?$FN?$AA?5?$AAT?$AAX?$AA?5?$AA?$CG?$AA?5?$AAR?$AAX?$AA?5?$AAF?$AAI?$AAF?$AAO?$AA?5?$AAF?$AAl?$AAu?$AAs?$AAh?$AA?5?$AAT?$AAi?$AAm?$AAe@ 10001108     s3c6410otgdevice.obj
+ 0001:00000160       ??_C@_1EO@HOHANKMG@?$AA?$FL?$AAU?$AAF?$AAN?$AAP?$AAD?$AAD?$AA?$FN?$AA?5?$AAS?$AAo?$AAf?$AAt?$AAC?$AAo?$AAr?$AAe?$AAR?$AAe?$AAs?$AAe?$AAt?$AA?5?$AAT?$AAi?$AAm?$AAe?$AAO?$AAu?$AAt?$AA?5?$AAE@ 10001160     s3c6410otgdevice.obj
+ 0001:000001b0       ??_C@_1JM@LFFHGLEI@?$AA?$FL?$AAU?$AAF?$AAN?$AAP?$AAD?$AAD?$AA?$FN?$AA?5?$AAT?$AAX?$AA?5?$AAF?$AAI?$AAF?$AAO?$AA?5?$AAN?$AAo?$AAt?$AA?5?$AAE?$AAm?$AAp?$AAt?$AAy?$AA?5?$AAE?$AAr?$AAr?$AAo?$AAr@ 100011b0     s3c6410otgdevice.obj
+ 0001:0000024c       ??_C@_1CM@GHDBMLFD@?$AA?$FL?$AAU?$AAF?$AAN?$AAP?$AAD?$AAD?$AA?$FN?$AA?5?$AAU?$AAS?$AAB?$AA_?$AAT?$AAE?$AAS?$AAT?$AA_?$AAJ?$AA?$AN?$AA?6?$AA?$AA@ 1000124c     s3c6410otgdevice.obj
+ 0001:00000278       ??_C@_1CM@KLJLMLMN@?$AA?$FL?$AAU?$AAF?$AAN?$AAP?$AAD?$AAD?$AA?$FN?$AA?5?$AAU?$AAS?$AAB?$AA_?$AAT?$AAE?$AAS?$AAT?$AA_?$AAK?$AA?$AN?$AA?6?$AA?$AA@ 10001278     s3c6410otgdevice.obj
+ 0001:000002a4       ??_C@_1DI@LIDCBLML@?$AA?$FL?$AAU?$AAF?$AAN?$AAP?$AAD?$AAD?$AA?$FN?$AA?5?$AAU?$AAS?$AAB?$AA_?$AAT?$AAE?$AAS?$AAT?$AA_?$AAS?$AAE?$AA0?$AA_?$AAN?$AAA?$AAK?$AA?$AN?$AA?6?$AA?$AA@ 100012a4     s3c6410otgdevice.obj
+ 0001:000002dc       ??_C@_1CM@LHIGEIDN@?$AA?$FL?$AAU?$AAF?$AAN?$AAP?$AAD?$AAD?$AA?$FN?$AA?5?$AAD?$AAC?$AAT?$AAL?$AA?3?$AA?5?$AA0?$AAx?$AA?$CF?$AAx?$AA?$AN?$AA?6?$AA?$AA@ 100012dc     s3c6410otgdevice.obj
+ 0001:00000308       ??_C@_1DG@OHPOENO@?$AA?$FL?$AAU?$AAF?$AAN?$AAP?$AAD?$AAD?$AA?$FN?$AA?5?$AAU?$AAS?$AAB?$AA_?$AAT?$AAE?$AAS?$AAT?$AA_?$AAP?$AAA?$AAC?$AAK?$AAE?$AAT?$AA?$AN?$AA?6?$AA?$AA@ 10001308     s3c6410otgdevice.obj
+ 0001:00000340       ??_C@_1DK@CLEDFIO@?$AA?$FL?$AAU?$AAF?$AAN?$AAP?$AAD?$AAD?$AA?$FN?$AA?5?$AAT?$AAE?$AAS?$AAT?$AA_?$AAF?$AAO?$AAR?$AAC?$AAE?$AA_?$AAE?$AAN?$AAA?$AAB?$AAL?$AAE?$AA?$AN?$AA?6?$AA?$AA@ 10001340     s3c6410otgdevice.obj
+ 0001:00000380       ??_C@_1EC@MOKLPACL@?$AA?$FL?$AAU?$AAF?$AAN?$AAP?$AAD?$AAD?$AA?$FN?$AA?5?$AAU?$AAS?$AAB?$AA_?$AAF?$AAE?$AAA?$AAT?$AAU?$AAR?$AAE?$AA_?$AAT?$AAE?$AAS?$AAT?$AA_?$AAM?$AAO?$AAD?$AAE?$AA?$AN?$AA?6@ 10001380     s3c6410otgdevice.obj
+ 0001:000003c4       ??_C@_1DG@FKBOLIMD@?$AAR?$AAI?$AAN?$AAG?$AA?5?$AAB?$AAU?$AAF?$AAF?$AAE?$AAR?$AA?5?$AAS?$AAT?$AAA?$AAT?$AAE?$AA?5?$AA?3?$AA?5?$AAF?$AAU?$AAL?$AAL?$AA?$AN?$AA?6?$AA?$AA@ 100013c4     s3c6410otgdevice.obj
+ 0001:00000400       ??_C@_1FM@KKCEFIEC@?$AAC?$AAl?$AAe?$AAa?$AAr?$AA?5?$AAN?$AAA?$AAK?$AA?5?$AAT?$AAi?$AAm?$AAe?$AAO?$AAu?$AAt?$AA?5?$AAE?$AAr?$AAr?$AAo?$AAr?$AA?5?$AA?$CF?$AAd?$AA?5?$AA?$FL?$AAH?$AAa?$AAn?$AAd@ 10001400     s3c6410otgdevice.obj
+ 0001:0000045c       ??_C@_1DA@LKJEOCIC@?$AA?$FL?$AAU?$AAF?$AAN?$AAP?$AAD?$AAD?$AA?$FN?$AA?5?$AAR?$AAE?$AAS?$AAE?$AAT?$AA?5?$AAA?$AAg?$AAa?$AAi?$AAn?$AA?5?$AA?$AN?$AA?6?$AA?$AA@ 1000145c     s3c6410otgdevice.obj
+ 0001:0000048c       ??_C@_1DG@LEOKAENJ@?$AA?$FL?$AAU?$AAF?$AAN?$AAP?$AAD?$AAD?$AA?$FN?$AA?5?$AAR?$AAE?$AAS?$AAE?$AAT?$AA?5?$AAE?$AAx?$AAe?$AAp?$AAt?$AAi?$AAo?$AAn?$AA?5?$AA?$AN?$AA?6?$AA?$AA@ 1000148c     s3c6410otgdevice.obj
+ 0001:000004c4       ??_C@_1DM@NOLMOIOA@?$AA?$FL?$AAU?$AAF?$AAN?$AAP?$AAD?$AAD?$AA?$FN?$AA?5?$AAO?$AAT?$AAG?$AA?5?$AAC?$AAa?$AAb?$AAl?$AAe?$AA?5?$AAA?$AAt?$AAt?$AAa?$AAc?$AAh?$AAe?$AAd?$AA?$AN?$AA?6?$AA?$AA@ 100014c4     s3c6410otgdevice.obj
+ 0001:00000500       ??_C@_1DM@BAJEIPED@?$AA?$FL?$AAU?$AAF?$AAN?$AAP?$AAD?$AAD?$AA?$FN?$AA?5?$AAO?$AAT?$AAG?$AA?5?$AAC?$AAa?$AAb?$AAl?$AAe?$AA?5?$AAD?$AAe?$AAt?$AAa?$AAc?$AAh?$AAe?$AAd?$AA?$AN?$AA?6?$AA?$AA@ 10001500     s3c6410otgdevice.obj
+ 0001:00000540       ??_C@_1EM@NCLCKHMJ@?$AA?$FL?$AAU?$AAF?$AAN?$AAP?$AAD?$AAD?$AA?$FN?$AA?5?$AAI?$AAN?$AAT?$AA_?$AAS?$AAD?$AAE?$AA_?$AAE?$AAX?$AAE?$AAP?$AAT?$AAI?$AAO?$AAN?$AA?5?$AAO?$AAc?$AAc?$AAu?$AAr?$AAe@ 10001540     s3c6410otgdevice.obj
+ 0001:0000058c       ??_C@_1DE@NPOCBDJN@?$AA?$FL?$AAU?$AAF?$AAN?$AAP?$AAD?$AAD?$AA?$FN?$AAE?$AAP?$AA?$CF?$AAd?$AA?5?$AAi?$AAs?$AA?5?$AAr?$AAu?$AAn?$AAn?$AAi?$AAn?$AAg?$AA?$AN?$AA?6?$AA?$AA@ 1000158c     s3c6410otgdevice.obj
+ 0001:000005c0       ??_C@_1EK@PDCLKEKH@?$AA?$FL?$AAU?$AAF?$AAN?$AAP?$AAD?$AAD?$AA?$FN?$AA?5?$AAT?$AAr?$AAa?$AAn?$AAs?$AAm?$AAi?$AAt?$AAt?$AAi?$AAn?$AAg?$AA?5?$AAE?$AAP?$AA?5?$AA0?$AAx?$AA?$CF?$AAx?$AA?5?$AA?3?$AA?5@ 100015c0     s3c6410otgdevice.obj
+ 0001:00000610       ??_C@_1EK@HEKDEHIJ@?$AA?$FL?$AAU?$AAF?$AAN?$AAP?$AAD?$AAD?$AA?$FN?$AA?5?$AAT?$AAr?$AAa?$AAn?$AAs?$AAm?$AAi?$AAt?$AA?5?$AAR?$AAe?$AAa?$AAd?$AAy?$AA?5?$AAC?$AAo?$AAu?$AAn?$AAt?$AA?5?$AA?3?$AA?5@ 10001610     s3c6410otgdevice.obj
+ 0001:0000065c       ??_C@_1DC@GNIBAMBM@?$AA?$FL?$AAU?$AAF?$AAN?$AAP?$AAD?$AAD?$AA?$FN?$AA?5?$AAT?$AAi?$AAm?$AAe?$AA?5?$AAO?$AAu?$AAt?$AA?5?$AAE?$AAP?$AA?$CF?$AAd?$AA?$AN?$AA?6?$AA?$AA@ 1000165c     s3c6410otgdevice.obj
+ 0001:00000690       ??_C@_1DA@CHAFKAFF@?$AA?$FL?$AAU?$AAF?$AAN?$AAP?$AAD?$AAD?$AA?$FN?$AA?5?$AAT?$AAi?$AAm?$AAe?$AA?5?$AAO?$AAu?$AAt?$AA?5?$AAE?$AAP?$AA0?$AA?$AN?$AA?6?$AA?$AA@ 10001690     s3c6410otgdevice.obj
+ 0001:000006c0       ??_C@_1DK@GMJGICGO@?$AAS?$AA3?$AAC?$AA6?$AA4?$AA1?$AA0?$AAU?$AAs?$AAb?$AAF?$AAn?$AA?$CB?$AAM?$AAa?$AAp?$AAR?$AAe?$AAg?$AAi?$AAs?$AAt?$AAe?$AAr?$AAS?$AAe?$AAt?$AA?3?$AA?$AA@ 100016c0     s3c6410otgdevice.obj
+ 0001:000006fc       ??_C@_1DE@DHGHNKAF@?$AA?$CF?$AAs?$AA?5?$AAM?$AAm?$AAM?$AAa?$AAp?$AAI?$AAo?$AAS?$AAp?$AAa?$AAc?$AAe?$AA?3?$AA?5?$AAF?$AAA?$AAI?$AAL?$AAE?$AAD?$AA?$AN?$AA?6?$AA?$AA@ 100016fc     s3c6410otgdevice.obj
+ 0001:00000730       ??_C@_1GM@MIPLKBIG@?$AAE?$AAR?$AAR?$AAO?$AAR?$AA?5?$AA?3?$AA?5?$AAR?$AAi?$AAn?$AAg?$AA?5?$AAS?$AAt?$AAa?$AAt?$AAe?$AA?5?$AAi?$AAs?$AA?5?$AAn?$AAo?$AAt?$AA?5?$AAv?$AAa?$AAl?$AAu?$AAd?$AA?$CI@ 10001730     s3c6410otgdevice.obj
+ 0001:000007a0       ??_C@_1GC@CMPLGILC@?$AAR?$AAi?$AAn?$AAg?$AA?5?$AAb?$AAu?$AAf?$AAf?$AAe?$AAr?$AA?5?$AAi?$AAs?$AA?5?$AAb?$AAu?$AAf?$AAf?$AAe?$AAr?$AAi?$AAn?$AAg?$AA?4?$AA?4?$AA?4?$AA?5?$AAL?$AAa?$AAt?$AAe@ 100017a0     s3c6410otgdevice.obj
+ 0001:00000804       ??_C@_1DE@EOJEAJEH@?$AA?$FL?$AAU?$AAF?$AAN?$AAP?$AAD?$AAD?$AA?$FN?$AA?5?$AAU?$AAS?$AAB?$AA_?$AAP?$AAO?$AAW?$AAE?$AAR?$AA?5?$AA?3?$AA?5?$AAD?$AA4?$AA?$AN?$AA?6?$AA?$AA@ 10001804     s3c6410otgdevice.obj
+ 0001:00000838       ??_C@_1DE@MKNOAHLN@?$AA?$FL?$AAU?$AAF?$AAN?$AAP?$AAD?$AAD?$AA?$FN?$AA?5?$AAU?$AAS?$AAB?$AA_?$AAP?$AAO?$AAW?$AAE?$AAR?$AA?5?$AA?3?$AA?5?$AAD?$AA0?$AA?$AN?$AA?6?$AA?$AA@ 10001838     s3c6410otgdevice.obj
+ 0001:00000870       ??_C@_1GA@IDBDJDFJ@?$AA?$FL?$AAU?$AAF?$AAN?$AAP?$AAD?$AAD?$AA?$FN?$AA?5?$AAU?$AAS?$AAB?$AA?5?$AAF?$AAu?$AAn?$AAc?$AAt?$AAi?$AAo?$AAn?$AA?5?$AAC?$AAl?$AAa?$AAs?$AAs?$AA?5?$AAR?$AAe?$AAa?$AAd@ 10001870     s3c6410otgdevice.obj
+ 0001:000008d0       ??_C@_1FI@LKFIHJP@?$AA?$FL?$AAU?$AAF?$AAN?$AAP?$AAD?$AAD?$AA?$FN?$AA?5?$AAU?$AAS?$AAB?$AA?5?$AAR?$AAN?$AAD?$AAI?$AAS?$AA?5?$AAF?$AAu?$AAn?$AAc?$AAt?$AAi?$AAo?$AAn?$AA?5?$AAC?$AAl?$AAa?$AAs@ 100018d0     s3c6410otgdevice.obj
+ 0001:00000928       ??_C@_1FK@PMNHFCKA@?$AA?$FL?$AAU?$AAF?$AAN?$AAP?$AAD?$AAD?$AA?$FN?$AA?5?$AAU?$AAS?$AAB?$AA?5?$AAS?$AAe?$AAr?$AAi?$AAa?$AAl?$AA?5?$AAF?$AAu?$AAn?$AAc?$AAt?$AAi?$AAo?$AAn?$AA?5?$AAC?$AAl?$AAa@ 10001928     s3c6410otgdevice.obj
+ 0001:00000988       ??_C@_1GG@MDFJDFAD@?$AA?$FL?$AAU?$AAF?$AAN?$AAP?$AAD?$AAD?$AA?$FN?$AA?5?$AAU?$AAS?$AAB?$AA?5?$AAM?$AAa?$AAs?$AAs?$AA?5?$AAS?$AAt?$AAo?$AAr?$AAa?$AAg?$AAe?$AA?5?$AAF?$AAu?$AAn?$AAc?$AAt?$AAi@ 10001988     s3c6410otgdevice.obj
+ 0001:000009f0       ??_C@_1CG@CMJBFBCL@?$AAm?$AAa?$AAs?$AAs?$AA_?$AAs?$AAt?$AAo?$AAr?$AAa?$AAg?$AAe?$AA_?$AAc?$AAl?$AAa?$AAs?$AAs?$AA?$AA@ 100019f0     s3c6410otgdevice.obj
+ 0001:00000a18       ??_C@_1CG@LCALMJOI@?$AAM?$AAa?$AAs?$AAs?$AA_?$AAS?$AAt?$AAo?$AAr?$AAa?$AAg?$AAe?$AA_?$AAC?$AAl?$AAa?$AAs?$AAs?$AA?$AA@ 10001a18     s3c6410otgdevice.obj
+ 0001:00000a40       ??_C@_1BK@PKPBCFOP@?$AAs?$AAe?$AAr?$AAi?$AAa?$AAl?$AA_?$AAc?$AAl?$AAa?$AAs?$AAs?$AA?$AA@ 10001a40     s3c6410otgdevice.obj
+ 0001:00000a5c       ??_C@_1BK@GNBFEOKG@?$AAS?$AAe?$AAr?$AAi?$AAa?$AAl?$AA_?$AAC?$AAl?$AAa?$AAs?$AAs?$AA?$AA@ 10001a5c     s3c6410otgdevice.obj
+ 0001:00000a78       ??_C@_1M@IBKFONJJ@?$AAr?$AAn?$AAd?$AAi?$AAs?$AA?$AA@ 10001a78     s3c6410otgdevice.obj
+ 0001:00000a84       ??_C@_1M@IICBPNOP@?$AAR?$AAN?$AAD?$AAI?$AAS?$AA?$AA@ 10001a84     s3c6410otgdevice.obj
+ 0001:00000a90       ??_C@_1EG@MICEMIP@?$AA?$FL?$AAU?$AAF?$AAN?$AAP?$AAD?$AAD?$AA?$FN?$AA?5?$AAU?$AAS?$AAB?$AA?5?$AAD?$AAR?$AAI?$AAV?$AAE?$AAR?$AA?5?$AAV?$AAE?$AAR?$AAS?$AAI?$AAO?$AAN?$AA?5?$AA?3?$AA?5?$AA?$CF?$AAd@ 10001a90     s3c6410otgdevice.obj
+ 0001:00000ad8       ??_C@_1EO@PMIIGHK@?$AA?$FL?$AAU?$AAF?$AAN?$AAP?$AAD?$AAD?$AA?$FN?$AA?5?$AAI?$AAn?$AAv?$AAa?$AAl?$AAi?$AAd?$AAe?$AA?5?$AAA?$AAd?$AAd?$AAr?$AAe?$AAs?$AAs?$AA?5?$AA?9?$AA?5?$AAb?$AAA?$AAd?$AAd@ 10001ad8     s3c6410otgdevice.obj
+ 0001:00000b88       ??_C@_1BI@BHLBGEOK@?$AAP?$AAr?$AAi?$AAo?$AAr?$AAi?$AAt?$AAy?$AA2?$AA5?$AA6?$AA?$AA@ 10001b88     s3c6410otgdevice.obj
+ 0001:00000ba0       ??_C@_1DE@DIJHIDFH@?$AA?$FL?$AAU?$AAF?$AAN?$AAP?$AAD?$AAD?$AA?$FN?$AA?5?$AAd?$AAi?$AAi?$AA?4?$AAd?$AAw?$AAI?$AAr?$AAq?$AA?5?$AA?$DN?$AA?5?$AA?$CF?$AAd?$AA?6?$AA?$AN?$AA?$AA@ 10001ba0     s3c6410otgdevice.obj
+ 0001:00000bd4       ??_7CPipeBase@@6B@         10001bd4     ufnmdd:pipe.obj
+ 0001:00000bf4       ??_7CStaticPipe@@6B@       10001bf4     ufnmdd:pipe.obj
+ 0001:00000c14       ??_7CDynamicPipe@@6B@      10001c14     ufnmdd:pipe.obj
+ 0001:00000c34       ??_7SVSTree@@6B@           10001c34     ufnmdd:utilmemf.obj
+ 0001:00000c44       ??_7CUfnBusDevice@@6B@     10001c44     ufnmdd:ufnbus.obj
+ 0001:00000c64       ??_C@_1BK@BFIEKNFP@?$AAF?$AAr?$AAi?$AAe?$AAn?$AAd?$AAl?$AAy?$AAN?$AAa?$AAm?$AAe?$AA?$AA@ 10001c64     ufnmdd:ufnbus.obj
+ 0001:00000c80       ??_7CUfnBus@@6B@           10001c80     ufnmdd:ufnbus.obj
+ 0001:00000ce0       ??_C@_1M@LLKDCKCI@?$AAU?$AAS?$AAB?$AAF?$AAN?$AA?$AA@ 10001ce0     ufnmdd:ufnbus.obj
+ 0001:00000cec       ??_C@_1BA@FGOFGFHE@?$AA?$CF?$AAs?$AA_?$AA?$CF?$AAd?$AA_?$AA0?$AA?$AA@ 10001cec     ufnmdd:ufnbus.obj
+ 0001:00000cfc       ??_C@_1DK@HJDLAGJ@?$AA?2?$AAD?$AAr?$AAi?$AAv?$AAe?$AAr?$AAs?$AA?2?$AAU?$AAS?$AAB?$AA?2?$AAF?$AAu?$AAn?$AAc?$AAt?$AAi?$AAo?$AAn?$AAD?$AAr?$AAi?$AAv?$AAe?$AAr?$AAs?$AA?$AA@ 10001cfc     ufnmdd:ufnbus.obj
+ 0001:00000d38       ??_C@_1M@DFKENGJN@?$AA?$CF?$AAs?$AA?2?$AA?$CF?$AAs?$AA?$AA@ 10001d38     ufnmdd:ufnbus.obj
+ 0001:00000d44       ??_C@_1CI@MGKPCHDE@?$AAD?$AAe?$AAf?$AAa?$AAu?$AAl?$AAt?$AAC?$AAl?$AAi?$AAe?$AAn?$AAt?$AAD?$AAr?$AAi?$AAv?$AAe?$AAr?$AA?$AA@ 10001d44     ufnmdd:ufnbus.obj
+ 0001:00000d6c       ??_C@_1CC@COLLGMBE@?$AAD?$AAe?$AAf?$AAa?$AAu?$AAl?$AAt?$AAC?$AAl?$AAi?$AAe?$AAn?$AAt?$AAK?$AAe?$AAy?$AA?$AA@ 10001d6c     ufnmdd:ufnbus.obj
+ 0001:00000d90       ??_C@_17DJMMGLBL@?$AAD?$AAl?$AAl?$AA?$AA@ 10001d90     ufnmdd:ufnbus.obj
+ 0001:00000d98       ??_7CRefObject@@6B@        10001d98     ufnmdd:DefBus.obj
+ 0001:00000d9c       ??_C@_1M@OAJFFPML@?$AAF?$AAl?$AAa?$AAg?$AAs?$AA?$AA@ 10001d9c     ufnmdd:DefBus.obj
+ 0001:00000da8       ??_C@_1M@PJMPBMAL@?$AAO?$AAr?$AAd?$AAe?$AAr?$AA?$AA@ 10001da8     ufnmdd:DefBus.obj
+ 0001:00000db4       ??_C@_1BA@KDCCGFJM@?$AAB?$AAu?$AAs?$AAN?$AAa?$AAm?$AAe?$AA?$AA@ 10001db4     ufnmdd:DefBus.obj
+ 0001:00000dc4       ??_C@_1BI@CDNKGHCP@?$AA?$CF?$AAs?$AA_?$AA?$CF?$AAd?$AA_?$AA?$CF?$AAd?$AA_?$AA?$CF?$AAd?$AA?$AA@ 10001dc4     ufnmdd:DefBus.obj
+ 0001:00000ddc       ??_C@_1BE@PMMIAJMN@?$AAB?$AAu?$AAs?$AAP?$AAa?$AAr?$AAe?$AAn?$AAt?$AA?$AA@ 10001ddc     ufnmdd:DefBus.obj
+ 0001:00000df0       ??_C@_1BM@MHMIAMLB@?$AAI?$AAn?$AAt?$AAe?$AAr?$AAf?$AAa?$AAc?$AAe?$AAT?$AAy?$AAp?$AAe?$AA?$AA@ 10001df0     ufnmdd:DefBus.obj
+ 0001:00000e0c       ??_7DeviceFolder@@6B@      10001e0c     ufnmdd:DefBus.obj
+ 0001:00000e2c       ??_C@_1M@JLADBBAF@?$AAE?$AAn?$AAt?$AAr?$AAy?$AA?$AA@ 10001e2c     ufnmdd:DefBus.obj
+ 0001:00000e38       ??_7DefaultBusDriver@@6B@  10001e38     ufnmdd:DefBus.obj
+ 0001:00000e94       ??_C@_1BA@HABJOAEE@?$AAU?$AAN?$AAK?$AAN?$AAO?$AAW?$AAN?$AA?$AA@ 10001e94     ufnmdd:DefBus.obj
+ 0001:00000ea4       ??_C@_1M@KCNCFNNL@?$AA$?$AAb?$AAu?$AAs?$AA?2?$AA?$AA@ 10001ea4     ufnmdd:DefBus.obj
+ 0001:00000ee4       ?GetUSBfnHandle@@YAPAXXZ   10001ee4 f   usbfn.obj
+ 0001:0000106c       ?USBCurrentDriver@@YAHPAU_UFN_CLIENT_INFO@@@Z 1000206c f   usbfn.obj
+ 0001:00002b20       ?UfnPdd_IssueTransfer@@YAKPAXKPAU_STransfer@@@Z 10003b20 f   s3c6410otgdevice.obj
+ 0001:00002b40       ?UfnPdd_AbortTransfer@@YAKPAXKPAU_STransfer@@@Z 10003b40 f   s3c6410otgdevice.obj
+ 0001:00002c08       ?SetOtgDevicePower@@YAHPAUCTRL_PDD_CONTEXT@@W4_CEDEVICE_POWER_STATE@@@Z 10003c08 f   s3c6410otgdevice.obj
+ 0001:00002ff8       ?UfnPdd_Deinit@@YAKPAX@Z   10003ff8 f   s3c6410otgdevice.obj
+ 0001:00003014       ?UfnPdd_Start@@YAKPAX@Z    10004014 f   s3c6410otgdevice.obj
+ 0001:00003324       ?UfnPdd_Stop@@YAKPAX@Z     10004324 f   s3c6410otgdevice.obj
+ 0001:00003444       ?UfnPdd_IsConfigurationSupportable@@YAKPAXW4_UFN_BUS_SPEED@@PAU_UFN_CONFIGURATION@@@Z 10004444 f   s3c6410otgdevice.obj
+ 0001:0000344c       ?UfnPdd_IsEndpointSupportable@@YAKPAXKW4_UFN_BUS_SPEED@@PAU_USB_ENDPOINT_DESCRIPTOR@@EEE@Z 1000444c f   s3c6410otgdevice.obj
+ 0001:0000359c       ?UfnPdd_ClearEndpointStall@@YAKPAXK@Z 1000459c f   s3c6410otgdevice.obj
+ 0001:00003618       ?UfnPdd_InitEndpoint@@YAKPAXKW4_UFN_BUS_SPEED@@PAU_USB_ENDPOINT_DESCRIPTOR@@0EEE@Z 10004618 f   s3c6410otgdevice.obj
+ 0001:000037a0       ?UfnPdd_DeinitEndpoint@@YAKPAXK@Z 100047a0 f   s3c6410otgdevice.obj
+ 0001:000037ec       ?UfnPdd_StallEndpoint@@YAKPAXK@Z 100047ec f   s3c6410otgdevice.obj
+ 0001:000038d4       ?UfnPdd_SendControlStatusHandshake@@YAKPAXK@Z 100048d4 f   s3c6410otgdevice.obj
+ 0001:00003990       ?UfnPdd_SetAddress@@YAKPAXE@Z 10004990 f   s3c6410otgdevice.obj
+ 0001:000039f8       ?UfnPdd_IsEndpointHalted@@YAKPAXKPAH@Z 100049f8 f   s3c6410otgdevice.obj
+ 0001:00003a90       ?UfnPdd_InitiateRemoteWakeup@@YAKPAX@Z 10004a90 f   s3c6410otgdevice.obj
+ 0001:00003b4c       ?UfnPdd_RegisterDevice@@YAKPAXPBU_USB_DEVICE_DESCRIPTOR@@PBU_UFN_CONFIGURATION@@PBU_USB_CONFIGURATION_DESCRIPTOR@@123PBU_UFN_STRING_SET@@K@Z 10004b4c f   s3c6410otgdevice.obj
+ 0001:00003b54       ?UfnPdd_DeregisterDevice@@YAKPAX@Z 10004b54 f   s3c6410otgdevice.obj
+ 0001:00003b5c       ?UfnPdd_PowerDown@@YAXPAX@Z 10004b5c f   s3c6410otgdevice.obj
+ 0001:00003b60       ?UfnPdd_PowerUp@@YAXPAX@Z  10004b60 f   s3c6410otgdevice.obj
+ 0001:00003b64       ?UfnPdd_IOControl@@YAKPAXW4_IOCTL_SOURCE@@KPAEK2KPAK@Z 10004b64 f   s3c6410otgdevice.obj
+ 0001:00003bd4       UfnPdd_Init                10004bd4 f   s3c6410otgdevice.obj
+ 0001:00003e34       UfnPdd_DllEntry            10004e34 f   s3c6410otgdevice.obj
+ 0001:00003e3c       ?SetChildDevicePowerState@CUfnBus@@QAAHW4_CEDEVICE_POWER_STATE@@@Z 10004e3c f i ufnmdd:ufnmdd.obj
+ 0001:00003e88       ?FindPipe@@YAPAVCPipeBase@@PAUUFN_MDD_CONTEXT@@K@Z 10004e88 f   ufnmdd:ufnmdd.obj
+ 0001:00003eec       ?UfnMdd_Start@@YAKPAXP6AH0KK@Z0PAPAX@Z 10004eec f   ufnmdd:ufnmdd.obj
+ 0001:00004098       ?DoStop@@YAKPAUUFN_MDD_CONTEXT@@@Z 10005098 f   ufnmdd:ufnmdd.obj
+ 0001:00004168       ?UfnMdd_Stop@@YAKPAX@Z     10005168 f   ufnmdd:ufnmdd.obj
+ 0001:000041ac       ?DoDeregisterDevice@@YAKPAUUFN_MDD_CONTEXT@@@Z 100051ac f   ufnmdd:ufnmdd.obj
+ 0001:00004254       ?UfnMdd_DeregisterDevice@@YAKPAX@Z 10005254 f   ufnmdd:ufnmdd.obj
+ 0001:000042ac       ?UfnMdd_OpenPipe@@YAKPAXKPAPAX@Z 100052ac f   ufnmdd:ufnmdd.obj
+ 0001:000043b8       ?UfnMdd_ClosePipe@@YAKPAX0@Z 100053b8 f   ufnmdd:ufnmdd.obj
+ 0001:00004434       ?UfnMdd_GetTransferStatus@@YAKPAX0PAK1@Z 10005434 f   ufnmdd:ufnmdd.obj
+ 0001:000044b8       ?UfnMdd_AbortTransfer@@YAKPAX0@Z 100054b8 f   ufnmdd:ufnmdd.obj
+ 0001:00004524       ?UfnMdd_CloseTransfer@@YAKPAX0@Z 10005524 f   ufnmdd:ufnmdd.obj
+ 0001:00004584       ?UfnMdd_IssueTransfer@@YAKPAX0P6AK0@Z0KK0K0PAPAX@Z 10005584 f   ufnmdd:ufnmdd.obj
+ 0001:00004650       ?UfnMdd_StallPipe@@YAKPAX0@Z 10005650 f   ufnmdd:ufnmdd.obj
+ 0001:000046ac       ?UfnMdd_ClearPipeStall@@YAKPAX0@Z 100056ac f   ufnmdd:ufnmdd.obj
+ 0001:00004708       ?UfnMdd_InitiateRemoteWakeup@@YAKPAX@Z 10005708 f   ufnmdd:ufnmdd.obj
+ 0001:0000476c       ?UfnMdd_SendControlStatusHandshake@@YAKPAX@Z 1000576c f   ufnmdd:ufnmdd.obj
+ 0001:000048e4       UFN_PowerDown              100058e4 f   ufnmdd:ufnmdd.obj
+ 0001:00004918       UFN_PowerUp                10005918 f   ufnmdd:ufnmdd.obj
+ 0001:00004954       UFN_IOControl              10005954 f   ufnmdd:ufnmdd.obj
+ 0001:00004aa4       ?SendDeviceNotification@@YAHP6AHPAXKK@Z0KK@Z 10005aa4 f   ufnmdd:ufnmdd.obj
+ 0001:00004b08       ?_Buynode@?$list@KVallocator@ce@@@ce@@IAAPAU_Node@12@PAU312@@Z 10005b08 f i ufnmdd:ufnmdd.obj
+ 0001:00004b5c       ?Open@CReg@@QAAHPAUHKEY__@@PBGK@Z 10005b5c f i ufnmdd:ufnmdd.obj
+ 0001:00004bcc       ?UfnMdd_RegisterDevice@@YAKPAXPAU_USB_DEVICE_DESCRIPTOR@@PAU_UFN_CONFIGURATION@@12PBU_UFN_STRING_SET@@K@Z 10005bcc f   ufnmdd:ufnmdd.obj
+ 0001:00004e78       ?GetClientFunctions@@YAKPAU_UFN_FUNCTIONS@@@Z 10005e78 f   ufnmdd:ufnmdd.obj
+ 0001:00004f30       ??_G?$fixed_block_allocator@$0BE@@ce@@QAAPAXI@Z 10005f30 f i ufnmdd:ufnmdd.obj
+ 0001:00004f78       ?erase@?$list@KVallocator@ce@@@ce@@QAA?AViterator@12@V312@@Z 10005f78 f i ufnmdd:ufnmdd.obj
+ 0001:00004fcc       ?erase@?$list@KVallocator@ce@@@ce@@QAA?AViterator@12@V312@0@Z 10005fcc f i ufnmdd:ufnmdd.obj
+ 0001:00005038       ?get_lock@?$singleton@V?$free_list@$0GE@Vallocator@ce@@@ce@@$03V?$static_allocator@V?$free_list@$0GE@Vallocator@ce@@@ce@@$03@2@@ce@@KAAAVcritical_section@2@XZ 10006038 f i ufnmdd:ufnmdd.obj
+ 0001:00005090       DllEntry                   10006090 f   ufnmdd:ufnmdd.obj
+ 0001:00005118       ?remove@?$list@KVallocator@ce@@@ce@@QAAXABK@Z 10006118 f i ufnmdd:ufnmdd.obj
+ 0001:0000518c       ??$push_back@K@?$list@KVallocator@ce@@@ce@@QAA_NABK@Z 1000618c f i ufnmdd:ufnmdd.obj
+ 0001:000051d8       ??$Deinit@P6AHK@Z@COpenList@@QAAXP6AHK@Z@Z 100061d8 f i ufnmdd:ufnmdd.obj
+ 0001:00005238       ?AddContext@COpenList@@QAA_NK@Z 10006238 f i ufnmdd:ufnmdd.obj
+ 0001:00005280       ?RemoveContext@COpenList@@QAAXK@Z 10006280 f i ufnmdd:ufnmdd.obj
+ 0001:000052c0       ??_GCOpenList@@QAAPAXI@Z   100062c0 f i ufnmdd:ufnmdd.obj
+ 0001:0000530c       UFN_Open                   1000630c f   ufnmdd:ufnmdd.obj
+ 0001:00005394       UFN_Close                  10006394 f   ufnmdd:ufnmdd.obj
+ 0001:000054b8       UFN_Init                   100064b8 f   ufnmdd:ufnmdd.obj
+ 0001:000056d8       UFN_Deinit                 100066d8 f   ufnmdd:ufnmdd.obj
+ 0001:00005728       ?GetInterfaceClass@CConfiguration@@QAAPAVCInterface@@KK@Z 10006728 f i ufnmdd:pipe.obj
+ 0001:0000577c       ?GetConfigurationClass@CDevice@@QBAPAVCConfiguration@@K@Z 1000677c f i ufnmdd:pipe.obj
+ 0001:000057d4       ?OwningInterface@CStaticPipe@@UBAKW4_UFN_BUS_SPEED@@K@Z 100067d4 f   ufnmdd:pipe.obj
+ 0001:000057e4       ?IsPartOfInterface@CStaticPipe@@UBAHW4_UFN_BUS_SPEED@@KK@Z 100067e4 f   ufnmdd:pipe.obj
+ 0001:0000583c       ?GetEndpointDescriptor@CStaticPipe@@UBAPAU_USB_ENDPOINT_DESCRIPTOR@@W4_UFN_BUS_SPEED@@@Z 1000683c f   ufnmdd:pipe.obj
+ 0001:0000584c       ?Reset@CStaticPipe@@UAAXXZ 1000684c f   ufnmdd:pipe.obj
+ 0001:00005898       ?IsReserved@CStaticPipe@@UBAHW4_UFN_BUS_SPEED@@KKK@Z 10006898 f   ufnmdd:pipe.obj
+ 0001:000058ac       ?Reserve@CStaticPipe@@UAAXW4_UFN_BUS_SPEED@@HKKKPAU_USB_ENDPOINT_DESCRIPTOR@@@Z 100068ac f   ufnmdd:pipe.obj
+ 0001:0000595c       ?GetEndpointAddress@CPipeBase@@QBAKXZ 1000695c f   ufnmdd:pipe.obj
+ 0001:000059a8       ?GetTransferStatus@CPipeBase@@SAKPBVCUfnMddTransfer@@PAK1@Z 100069a8 f   ufnmdd:pipe.obj
+ 0001:000059f8       ?Stall@CPipeBase@@QAAKXZ   100069f8 f   ufnmdd:pipe.obj
+ 0001:00005a48       ?ClearStall@CPipeBase@@QAAKXZ 10006a48 f   ufnmdd:pipe.obj
+ 0001:00005a98       ?SendControlStatusHandshake@CPipeBase@@QAAKXZ 10006a98 f   ufnmdd:pipe.obj
+ 0001:00005ae0       ?ValidatePipeHandle@CPipeBase@@SAKPBV1@@Z 10006ae0 f   ufnmdd:pipe.obj
+ 0001:00005b54       ?_InitializeDescr@?$fixed_block_allocator@$07@ce@@IBA_NI@Z 10006b54 f i ufnmdd:pipe.obj
+ 0001:00005bb8       ?_Buynode@?$list@U?$pair@KK@std@@Vallocator@ce@@@ce@@IAAPAU_Node@12@PAU312@@Z 10006bb8 f i ufnmdd:pipe.obj
+ 0001:00005c0c       ?_Buynode@?$list@U?$pair@KPAU_USB_ENDPOINT_DESCRIPTOR@@@std@@Vallocator@ce@@@ce@@IAAPAU_Node@12@PAU312@@Z 10006c0c f i ufnmdd:pipe.obj
+ 0001:00005c60       ?_InitializeDescr@?$fixed_block_allocator@$0BE@@ce@@IBA_NI@Z 10006c60 f i ufnmdd:pipe.obj
+ 0001:00005cc4       ?GetInterface@CDescriptors@@QAAKW4_UFN_BUS_SPEED@@KPAK@Z 10006cc4 f i ufnmdd:pipe.obj
+ 0001:00005d10       ?IsReserved@CPipeBase@@UBAHW4_UFN_BUS_SPEED@@@Z 10006d10 f   ufnmdd:pipe.obj
+ 0001:00005db8       ?Open@CPipeBase@@QAAKW4_UFN_BUS_SPEED@@PAU_USB_ENDPOINT_DESCRIPTOR@@@Z 10006db8 f   ufnmdd:pipe.obj
+ 0001:00005ed8       ?push@?$interlocked_stack@PAXV?$fixed_block_allocator@$07@ce@@@@QAA_NABQAX@Z 10006ed8 f i ufnmdd:pipe.obj
+ 0001:00005f58       ?pop@?$interlocked_stack@PAXV?$fixed_block_allocator@$07@ce@@@@QAA_NAAPAX@Z 10006f58 f i ufnmdd:pipe.obj
+ 0001:00005fc4       ?erase@?$list@U?$pair@KK@std@@Vallocator@ce@@@ce@@QAA?AViterator@12@V312@@Z 10006fc4 f i ufnmdd:pipe.obj
+ 0001:00006018       ?erase@?$list@U?$pair@KK@std@@Vallocator@ce@@@ce@@QAA?AViterator@12@V312@0@Z 10007018 f i ufnmdd:pipe.obj
+ 0001:00006084       ?erase@?$list@U?$pair@KPAU_USB_ENDPOINT_DESCRIPTOR@@@std@@Vallocator@ce@@@ce@@QAA?AViterator@12@V312@@Z 10007084 f i ufnmdd:pipe.obj
+ 0001:000060d8       ?erase@?$list@U?$pair@KPAU_USB_ENDPOINT_DESCRIPTOR@@@std@@Vallocator@ce@@@ce@@QAA?AViterator@12@V312@0@Z 100070d8 f i ufnmdd:pipe.obj
+ 0001:00006144       ??$insert@U?$pair@Viterator@?$list@U?$pair@KK@std@@Vallocator@ce@@@ce@@I@std@@@?$vector@U?$pair@Viterator@?$list@U?$pair@KK@std@@Vallocator@ce@@@ce@@I@std@@Vallocator@ce@@U?$incremental_growth@$09@4@@ce@@QAA_NPAU?$pair@Viterator@?$list@U?$pair@KK@std@@Vallocator@ce@@@ce@@I@std@@IABU23@@Z 10007144 f i ufnmdd:pipe.obj
+ 0001:000062dc       ??$insert@U?$pair@Viterator@?$list@U?$pair@KPAU_USB_ENDPOINT_DESCRIPTOR@@@std@@Vallocator@ce@@@ce@@I@std@@@?$vector@U?$pair@Viterator@?$list@U?$pair@KPAU_USB_ENDPOINT_DESCRIPTOR@@@std@@Vallocator@ce@@@ce@@I@std@@Vallocator@ce@@U?$incremental_growth@$09@4@@ce@@QAA_NPAU?$pair@Viterator@?$list@U?$pair@KPAU_USB_ENDPOINT_DESCRIPTOR@@@std@@Vallocator@ce@@@ce@@I@std@@IABU23@@Z 100072dc f i ufnmdd:pipe.obj
+ 0001:00006474       ?deallocate@?$CFreePool@$03V?$fixed_block_allocator@$07@ce@@Utransfer_funcs@@@@QAAXPAXI@Z 10007474 f i ufnmdd:pipe.obj
+ 0001:00006514       ?erase@?$hash@V?$hash_map_traits@KKU?$hash_traits@K@ce@@Vallocator@2@@details@ce@@@details@ce@@QAA?AViterator@?$list@U?$pair@KK@std@@Vallocator@ce@@@3@V453@@Z 10007514 f i ufnmdd:pipe.obj
+ 0001:00006588       ?clear@?$hash@V?$hash_map_traits@KKU?$hash_traits@K@ce@@Vallocator@2@@details@ce@@@details@ce@@QAAXXZ 10007588 f i ufnmdd:pipe.obj
+ 0001:000065dc       ?find@?$hash@V?$hash_map_traits@KKU?$hash_traits@K@ce@@Vallocator@2@@details@ce@@@details@ce@@QAA?AViterator@?$list@U?$pair@KK@std@@Vallocator@ce@@@3@ABK@Z 100075dc f i ufnmdd:pipe.obj
+ 0001:0000665c       ?find@?$hash@V?$hash_map_traits@KKU?$hash_traits@K@ce@@Vallocator@2@@details@ce@@@details@ce@@QBA?AVconst_iterator@?$list@U?$pair@KK@std@@Vallocator@ce@@@3@ABK@Z 1000765c f i ufnmdd:pipe.obj
+ 0001:000066dc       ?find@?$hash@V?$hash_map_traits@KPAU_USB_ENDPOINT_DESCRIPTOR@@U?$hash_traits@K@ce@@Vallocator@3@@details@ce@@@details@ce@@QBA?AVconst_iterator@?$list@U?$pair@KPAU_USB_ENDPOINT_DESCRIPTOR@@@std@@Vallocator@ce@@@3@ABK@Z 100076dc f i ufnmdd:pipe.obj
+ 0001:0000675c       ?PopulateCache@?$CFreePool@$03V?$fixed_block_allocator@$07@ce@@Utransfer_funcs@@@@IAAXXZ 1000775c f i ufnmdd:pipe.obj
+ 0001:00006804       ??0?$list@PAVCUfnMddTransfer@@V?$fixed_block_allocator@$0BE@@ce@@@ce@@QAA@ABV?$fixed_block_allocator@$0BE@@1@@Z 10007804 f i ufnmdd:pipe.obj
+ 0001:00006848       ?insert@?$hash@V?$hash_map_traits@KKU?$hash_traits@K@ce@@Vallocator@2@@details@ce@@@details@ce@@QAA?AViterator@?$list@U?$pair@KK@std@@Vallocator@ce@@@3@ABU?$pair@KK@std@@@Z 10007848 f i ufnmdd:pipe.obj
+ 0001:00006934       ?erase@?$list@PAVCUfnMddTransfer@@V?$fixed_block_allocator@$0BE@@ce@@@ce@@QAA?AViterator@12@V312@@Z 10007934 f i ufnmdd:pipe.obj
+ 0001:00006990       ?erase@?$vector@U?$pair@Viterator@?$list@U?$pair@KK@std@@Vallocator@ce@@@ce@@I@std@@Vallocator@ce@@U?$incremental_growth@$09@4@@ce@@QAAXPAU?$pair@Viterator@?$list@U?$pair@KK@std@@Vallocator@ce@@@ce@@I@std@@0@Z 10007990 f i ufnmdd:pipe.obj
+ 0001:000069f0       ?erase@?$vector@U?$pair@Viterator@?$list@U?$pair@KPAU_USB_ENDPOINT_DESCRIPTOR@@@std@@Vallocator@ce@@@ce@@I@std@@Vallocator@ce@@U?$incremental_growth@$09@4@@ce@@QAAXPAU?$pair@Viterator@?$list@U?$pair@KPAU_USB_ENDPOINT_DESCRIPTOR@@@std@@Vallocator@ce@@@ce@@I@std@@0@Z 100079f0 f i ufnmdd:pipe.obj
+ 0001:00006a50       ?erase@?$list@PAVCUfnMddTransfer@@V?$fixed_block_allocator@$0BE@@ce@@@ce@@QAA?AViterator@12@V312@0@Z 10007a50 f i ufnmdd:pipe.obj
+ 0001:00006abc       ??$resize@U?$pair@Viterator@?$list@U?$pair@KK@std@@Vallocator@ce@@@ce@@I@std@@@?$vector@U?$pair@Viterator@?$list@U?$pair@KK@std@@Vallocator@ce@@@ce@@I@std@@Vallocator@ce@@U?$incremental_growth@$09@4@@ce@@QAA_NIABU?$pair@Viterator@?$list@U?$pair@KK@std@@Vallocator@ce@@@ce@@I@std@@@Z 10007abc f i ufnmdd:pipe.obj
+ 0001:00006b10       ??$resize@U?$pair@Viterator@?$list@U?$pair@KPAU_USB_ENDPOINT_DESCRIPTOR@@@std@@Vallocator@ce@@@ce@@I@std@@@?$vector@U?$pair@Viterator@?$list@U?$pair@KPAU_USB_ENDPOINT_DESCRIPTOR@@@std@@Vallocator@ce@@@ce@@I@std@@Vallocator@ce@@U?$incremental_growth@$09@4@@ce@@QAA_NIABU?$pair@Viterator@?$list@U?$pair@KPAU_USB_ENDPOINT_DESCRIPTOR@@@std@@Vallocator@ce@@@ce@@I@std@@@Z 10007b10 f i ufnmdd:pipe.obj
+ 0001:00006b64       ?_Buynode@?$list@PAVCUfnMddTransfer@@V?$fixed_block_allocator@$0BE@@ce@@@ce@@IAAPAU_Node@12@PAU312@@Z 10007b64 f i ufnmdd:pipe.obj
+ 0001:00006bd4       ?OwningInterface@CDynamicPipe@@UBAKW4_UFN_BUS_SPEED@@K@Z 10007bd4 f   ufnmdd:pipe.obj
+ 0001:00006c58       ?IsPartOfInterface@CDynamicPipe@@UBAHW4_UFN_BUS_SPEED@@KK@Z 10007c58 f   ufnmdd:pipe.obj
+ 0001:00006d10       ?IsReserved@CDynamicPipe@@UBAHW4_UFN_BUS_SPEED@@KKK@Z 10007d10 f   ufnmdd:pipe.obj
+ 0001:00006e40       ?GetEndpointDescriptor@CDynamicPipe@@UBAPAU_USB_ENDPOINT_DESCRIPTOR@@W4_UFN_BUS_SPEED@@@Z 10007e40 f   ufnmdd:pipe.obj
+ 0001:00006f4c       ?FreeTransfer@CPipeBase@@QAAXPAVCUfnMddTransfer@@@Z 10007f4c f   ufnmdd:pipe.obj
+ 0001:00006f64       ?allocate@?$CFreePool@$03V?$fixed_block_allocator@$07@ce@@Utransfer_funcs@@@@QAAPAXI@Z 10007f64 f i ufnmdd:pipe.obj
+ 0001:00007044       ?erase@?$hash@V?$hash_map_traits@KPAU_USB_ENDPOINT_DESCRIPTOR@@U?$hash_traits@K@ce@@Vallocator@3@@details@ce@@@details@ce@@QAA?AViterator@?$list@U?$pair@KPAU_USB_ENDPOINT_DESCRIPTOR@@@std@@Vallocator@ce@@@3@V453@@Z 10008044 f i ufnmdd:pipe.obj
+ 0001:000070b8       ?clear@?$hash@V?$hash_map_traits@KPAU_USB_ENDPOINT_DESCRIPTOR@@U?$hash_traits@K@ce@@Vallocator@3@@details@ce@@@details@ce@@QAAXXZ 100080b8 f i ufnmdd:pipe.obj
+ 0001:0000710c       ?find@?$hash@V?$hash_map_traits@KPAU_USB_ENDPOINT_DESCRIPTOR@@U?$hash_traits@K@ce@@Vallocator@3@@details@ce@@@details@ce@@QAA?AViterator@?$list@U?$pair@KPAU_USB_ENDPOINT_DESCRIPTOR@@@std@@Vallocator@ce@@@3@ABK@Z 1000810c f i ufnmdd:pipe.obj
+ 0001:0000718c       ?insert@?$hash@V?$hash_map_traits@KPAU_USB_ENDPOINT_DESCRIPTOR@@U?$hash_traits@K@ce@@Vallocator@3@@details@ce@@@details@ce@@QAA?AViterator@?$list@U?$pair@KPAU_USB_ENDPOINT_DESCRIPTOR@@@std@@Vallocator@ce@@@3@ABU?$pair@KPAU_USB_ENDPOINT_DESCRIPTOR@@@std@@@Z 1000818c f i ufnmdd:pipe.obj
+ 0001:00007278       ?Reset@CDynamicPipe@@UAAXXZ 10008278 f   ufnmdd:pipe.obj
+ 0001:000072c0       ??1?$list@PAVCUfnMddTransfer@@V?$fixed_block_allocator@$0BE@@ce@@@ce@@QAA@XZ 100082c0 f i ufnmdd:pipe.obj
+ 0001:0000730c       ??0?$hash@V?$hash_map_traits@KKU?$hash_traits@K@ce@@Vallocator@2@@details@ce@@@details@ce@@QAA@I@Z 1000830c f i ufnmdd:pipe.obj
+ 0001:0000737c       ??0?$hash@V?$hash_map_traits@KPAU_USB_ENDPOINT_DESCRIPTOR@@U?$hash_traits@K@ce@@Vallocator@3@@details@ce@@@details@ce@@QAA@I@Z 1000837c f i ufnmdd:pipe.obj
+ 0001:000073ec       ??$push_back@PAVCUfnMddTransfer@@@?$list@PAVCUfnMddTransfer@@V?$fixed_block_allocator@$0BE@@ce@@@ce@@QAA_NABQAVCUfnMddTransfer@@@Z 100083ec f i ufnmdd:pipe.obj
+ 0001:00007438       ??1?$hash@V?$hash_map_traits@KKU?$hash_traits@K@ce@@Vallocator@2@@details@ce@@@details@ce@@QAA@XZ 10008438 f i ufnmdd:pipe.obj
+ 0001:0000747c       ??1?$hash@V?$hash_map_traits@KPAU_USB_ENDPOINT_DESCRIPTOR@@U?$hash_traits@K@ce@@Vallocator@3@@details@ce@@@details@ce@@QAA@XZ 1000847c f i ufnmdd:pipe.obj
+ 0001:000074c0       ?Reserve@CDynamicPipe@@UAAXW4_UFN_BUS_SPEED@@HKKKPAU_USB_ENDPOINT_DESCRIPTOR@@@Z 100084c0 f   ufnmdd:pipe.obj
+ 0001:00007734       ?TransferComplete@CPipeBase@@QAAKPAVCUfnMddTransfer@@H@Z 10008734 f   ufnmdd:pipe.obj
+ 0001:00007830       ??0CPipeBase@@QAA@KPAU_UFN_PDD_INTERFACE_INFO@@PAVCFreeTransferList@@PAUUFN_MDD_CONTEXT@@@Z 10008830 f   ufnmdd:pipe.obj
+ 0001:0000789c       ??0CStaticPipe@@QAA@KPAU_UFN_PDD_INTERFACE_INFO@@PAVCFreeTransferList@@PAUUFN_MDD_CONTEXT@@@Z 1000889c f   ufnmdd:pipe.obj
+ 0001:000078d8       ??1CDynamicPipe@@UAA@XZ    100088d8 f   ufnmdd:pipe.obj
+ 0001:0000793c       ?IssueTransfer@CPipeBase@@QAAKP6AKPAX@Z0KK0KPAPAVCUfnMddTransfer@@0@Z 1000893c f   ufnmdd:pipe.obj
+ 0001:00007b78       ?AbortTransfer@CPipeBase@@QAAKPAVCUfnMddTransfer@@@Z 10008b78 f   ufnmdd:pipe.obj
+ 0001:00007c0c       ?CloseTransfer@CPipeBase@@QAAKPAVCUfnMddTransfer@@@Z 10008c0c f   ufnmdd:pipe.obj
+ 0001:00007c58       ??_ECPipeBase@@UAAPAXI@Z   10008c58 f i ufnmdd:pipe.obj
+ 0001:00007c58       ??_GCPipeBase@@UAAPAXI@Z   10008c58 f i ufnmdd:pipe.obj
+ 0001:00007c94       ??_GCStaticPipe@@UAAPAXI@Z 10008c94 f i ufnmdd:pipe.obj
+ 0001:00007c94       ??_ECStaticPipe@@UAAPAXI@Z 10008c94 f i ufnmdd:pipe.obj
+ 0001:00007cd0       ??0CDynamicPipe@@QAA@KPAU_UFN_PDD_INTERFACE_INFO@@PAVCFreeTransferList@@PAUUFN_MDD_CONTEXT@@@Z 10008cd0 f   ufnmdd:pipe.obj
+ 0001:00007d48       ??_GCDynamicPipe@@UAAPAXI@Z 10008d48 f i ufnmdd:pipe.obj
+ 0001:00007d48       ??_ECDynamicPipe@@UAAPAXI@Z 10008d48 f i ufnmdd:pipe.obj
+ 0001:00007d70       ?AbortAllTransfers@CPipeBase@@QAAXXZ 10008d70 f   ufnmdd:pipe.obj
+ 0001:00007dc0       ?Close@CPipeBase@@QAAKXZ   10008dc0 f   ufnmdd:pipe.obj
+ 0001:00007e8c       ?ValidateDescriptor@CDescriptors@@SAKPAU_USB_DEVICE_DESCRIPTOR@@PAU_UFN_CONFIGURATION@@01PBU_UFN_STRING_SET@@K@Z 10008e8c f   ufnmdd:descript.obj
+ 0001:00007f1c       ?RegisterDevice@CDescriptors@@QAAKPAUUFN_MDD_CONTEXT@@@Z 10008f1c f   ufnmdd:descript.obj
+ 0001:000080b0       ?GetDeviceDescriptor@CDescriptors@@QAAPBU_USB_DEVICE_DESCRIPTOR@@W4_UFN_BUS_SPEED@@@Z 100090b0 f   ufnmdd:descript.obj
+ 0001:000080c8       ?CloneStrings@CDescriptors@@SAKPBU_UFN_STRING_SET@@KPAPAU2@@Z 100090c8 f   ufnmdd:descript.obj
+ 0001:00008288       ??_I@YAXPAXIHP6AX0@Z@Z     10009288 f i ufnmdd:descript.obj
+ 0001:000082c0       ?ValidateDescriptor@CConfiguration@@SAKW4_UFN_BUS_SPEED@@PAU_UFN_CONFIGURATION@@@Z 100092c0 f   ufnmdd:descript.obj
+ 0001:00008308       ?FreeUfnConfigTree@CConfiguration@@SAXPAU_UFN_CONFIGURATION@@@Z 10009308 f   ufnmdd:descript.obj
+ 0001:000083c8       ?ValidateDescriptor@CInterface@@SAKW4_UFN_BUS_SPEED@@PAU_UFN_INTERFACE@@@Z 100093c8 f   ufnmdd:descript.obj
+ 0001:00008410       ??1CMddEndpoint@@QAA@XZ    10009410 f   ufnmdd:descript.obj
+ 0001:00008414       ?IsSupportable@CMddEndpoint@@QAAKPAUUFN_MDD_CONTEXT@@W4_UFN_BUS_SPEED@@EEE@Z 10009414 f   ufnmdd:descript.obj
+ 0001:00008528       ?ValidatePacketSize@CMddEndpoint@@CAHW4_UFN_BUS_SPEED@@PAU_USB_ENDPOINT_DESCRIPTOR@@@Z 10009528 f   ufnmdd:descript.obj
+ 0001:0000860c       ?Serialize@CMddEndpoint@@QAAKPAEKPAK@Z 1000960c f   ufnmdd:descript.obj
+ 0001:00008694       ?InitializeEndpointZeroDescriptor@CMddEndpoint@@SAXEPAU_USB_ENDPOINT_DESCRIPTOR@@@Z 10009694 f   ufnmdd:descript.obj
+ 0001:000086b0       ?ProcessGetDescriptor@CDescriptors@@QAA?AW4CONTROL_RESPONSE@@W4_UFN_BUS_SPEED@@U_USB_DEVICE_REQUEST@@KHPAPAXPAK@Z 100096b0 f   ufnmdd:descript.obj
+ 0001:00008928       ?CopyUfnConfigTree@CConfiguration@@SAKPAU_UFN_CONFIGURATION@@0@Z 10009928 f   ufnmdd:descript.obj
+ 0001:00008bc4       ?Init@CInterface@@QAAKW4_UFN_BUS_SPEED@@PAU_UFN_INTERFACE@@@Z 10009bc4 f   ufnmdd:descript.obj
+ 0001:00008c84       ?Serialize@CInterface@@QAAKPAEKPAK@Z 10009c84 f   ufnmdd:descript.obj
+ 0001:00008d7c       ?IsSupportable@CInterface@@QAAKPAUUFN_MDD_CONTEXT@@W4_UFN_BUS_SPEED@@E@Z 10009d7c f   ufnmdd:descript.obj
+ 0001:00008df8       ?ValidateDescriptor@CMddEndpoint@@SAKW4_UFN_BUS_SPEED@@PAU_UFN_ENDPOINT@@@Z 10009df8 f   ufnmdd:descript.obj
+ 0001:00008e48       ?IsEndpointZeroSupportable@CMddEndpoint@@SAKPAUUFN_MDD_CONTEXT@@W4_UFN_BUS_SPEED@@PAU_USB_DEVICE_DESCRIPTOR@@@Z 10009e48 f   ufnmdd:descript.obj
+ 0001:00008edc       ?Clone@CDevice@@QAAKPAV1@@Z 10009edc f   ufnmdd:descript.obj
+ 0001:00008f80       ?Init@CConfiguration@@QAAKW4_UFN_BUS_SPEED@@PAU_UFN_CONFIGURATION@@@Z 10009f80 f   ufnmdd:descript.obj
+ 0001:00009064       ?IsSupportable@CConfiguration@@QAAKPAUUFN_MDD_CONTEXT@@W4_UFN_BUS_SPEED@@PAU_USB_DEVICE_DESCRIPTOR@@@Z 1000a064 f   ufnmdd:descript.obj
+ 0001:00009174       ?Serialize@CConfiguration@@QAAKPAEKPAK@Z 1000a174 f   ufnmdd:descript.obj
+ 0001:00009274       ?GenerateTotalConfigDescriptor@CConfiguration@@QAAKXZ 1000a274 f   ufnmdd:descript.obj
+ 0001:000092f4       ?ValidateDescriptorAndChildren@CInterface@@SAKW4_UFN_BUS_SPEED@@PAU_UFN_INTERFACE@@@Z 1000a2f4 f   ufnmdd:descript.obj
+ 0001:0000934c       ?Init@CDevice@@QAAKW4_UFN_BUS_SPEED@@PAU_USB_DEVICE_DESCRIPTOR@@PAU_UFN_CONFIGURATION@@@Z 1000a34c f   ufnmdd:descript.obj
+ 0001:00009428       ?GenerateTotalConfigDescriptors@CDevice@@QAAKXZ 1000a428 f   ufnmdd:descript.obj
+ 0001:0000947c       ?IsSupportable@CDevice@@QAAKPAUUFN_MDD_CONTEXT@@W4_UFN_BUS_SPEED@@@Z 1000a47c f   ufnmdd:descript.obj
+ 0001:00009500       ??_ECInterface@@QAAPAXI@Z  1000a500 f i ufnmdd:descript.obj
+ 0001:0000959c       ?ValidateDescriptorAndChildren@CConfiguration@@SAKW4_UFN_BUS_SPEED@@PAU_UFN_CONFIGURATION@@@Z 1000a59c f   ufnmdd:descript.obj
+ 0001:00009644       ?Init@CDescriptors@@QAAKPAU_USB_DEVICE_DESCRIPTOR@@PAU_UFN_CONFIGURATION@@01PBU_UFN_STRING_SET@@K@Z 1000a644 f   ufnmdd:descript.obj
+ 0001:00009694       ?IsSupportable@CDescriptors@@QAAKPAUUFN_MDD_CONTEXT@@@Z 1000a694 f   ufnmdd:descript.obj
+ 0001:00009754       ?ValidateDescriptorAndChildren@CDevice@@SAKW4_UFN_BUS_SPEED@@PAU_USB_DEVICE_DESCRIPTOR@@PAU_UFN_CONFIGURATION@@@Z 1000a754 f   ufnmdd:descript.obj
+ 0001:000097f8       ??1CConfiguration@@QAA@XZ  1000a7f8 f   ufnmdd:descript.obj
+ 0001:0000982c       ?ValidateDescriptorAndChildren@CDescriptors@@SAKPAU_USB_DEVICE_DESCRIPTOR@@PAU_UFN_CONFIGURATION@@01PBU_UFN_STRING_SET@@K@Z 1000a82c f   ufnmdd:descript.obj
+ 0001:00009890       ??_ECConfiguration@@QAAPAXI@Z 1000a890 f i ufnmdd:descript.obj
+ 0001:00009900       ??1CDevice@@QAA@XZ         1000a900 f   ufnmdd:descript.obj
+ 0001:00009974       ??0CDescriptors@@QAA@XZ    1000a974 f   ufnmdd:descript.obj
+ 0001:000099e8       ??1CDescriptors@@QAA@XZ    1000a9e8 f   ufnmdd:descript.obj
+ 0001:00009a18       ?Clone@CDescriptors@@QAAKPAPAV1@@Z 1000aa18 f   ufnmdd:descript.obj
+ 0001:00009b28       ?AddRef@CUfnMddTransfer@@QAAXXZ 1000ab28 f   ufnmdd:transfer.obj
+ 0001:00009b3c       ?Release@CUfnMddTransfer@@QAAXXZ 1000ab3c f   ufnmdd:transfer.obj
+ 0001:00009b64       ?Init@CUfnMddTransfer@@QAAXKPAXKK0P6AK0@Z0PAVCPipeBase@@@Z 1000ab64 f   ufnmdd:transfer.obj
+ 0001:00009bbc       ?CallCompletionRoutine@CUfnMddTransfer@@QAAXXZ 1000abbc f   ufnmdd:transfer.obj
+ 0001:00009c04       ?ReferenceTransferHandle@CUfnMddTransfer@@SAKPAV1@@Z 1000ac04 f   ufnmdd:transfer.obj
+ 0001:00009c78       ?ConvertFromPddTransfer@CUfnMddTransfer@@SAPAV1@PAU_STransfer@@@Z 1000ac78 f   ufnmdd:transfer.obj
+ 0001:00009c80       ?Prev@SVSTree@@QAAPAVSVSTNode@@PAV2@@Z 1000ac80 f i ufnmdd:utilmemf.obj
+ 0001:00009ce4       ?LocateLeftNeighbor@SVSTree@@QAAPAVSVSTNode@@K@Z 1000ace4 f i ufnmdd:utilmemf.obj
+ 0001:00009d60       svsutil_AllocFixedMemDescrSynch 1000ad60 f   ufnmdd:utilmemf.obj
+ 0001:00009dd4       svsutil_GetFixed           1000add4 f   ufnmdd:utilmemf.obj
+ 0001:00009eac       svsutil_FreeFixed          1000aeac f   ufnmdd:utilmemf.obj
+ 0001:00009eec       svsutil_ReleaseFixedNonEmpty 1000aeec f   ufnmdd:utilmemf.obj
+ 0001:00009f6c       svsutil_ReleaseFixedEmpty  1000af6c f   ufnmdd:utilmemf.obj
+ 0001:00009fa8       ?DeleteSubtree@SVSTree@@IAAXPAVSVSTNode@@@Z 1000afa8 f i ufnmdd:utilmemf.obj
+ 0001:00009fe8       ??0SVSTree@@QAA@I@Z        1000afe8 f i ufnmdd:utilmemf.obj
+ 0001:0000a090       ?Next@SVSTree@@QAAPAVSVSTNode@@PAV2@@Z 1000b090 f i ufnmdd:utilmemf.obj
+ 0001:0000a0f4       ?EnumStart@SVSTree@@UAAKXZ 1000b0f4 f i ufnmdd:utilmemf.obj
+ 0001:0000a12c       ?EnumNext@SVSTree@@UAAKK@Z 1000b12c f i ufnmdd:utilmemf.obj
+ 0001:0000a13c       ?EnumGetData@SVSTree@@UAAPAXK@Z 1000b13c f i ufnmdd:utilmemf.obj
+ 0001:0000a144       ?EnumGetKey@SVSTree@@UAAKK@Z 1000b144 f i ufnmdd:utilmemf.obj
+ 0001:0000a14c       ??1SVSTree@@QAA@XZ         1000b14c f i ufnmdd:utilmemf.obj
+ 0001:0000a1b0       ?SVSNewTree@@YAPAVSVSTree@@I@Z 1000b1b0 f i ufnmdd:utilmemf.obj
+ 0001:0000a4c0       svsutil_CompactFixed       1000b4c0 f   ufnmdd:utilmemf.obj
+ 0001:0000a4f4       svsutil_Initialize         1000b4f4 f   ufnmdd:utilmem.obj
+ 0001:0000a4f8       svsutil_DeInitialize       1000b4f8 f   ufnmdd:utilmem.obj
+ 0001:0000a4fc       svsutil_Alloc              1000b4fc f   ufnmdd:utilmem.obj
+ 0001:0000a50c       svsutil_ReAlloc            1000b50c f   ufnmdd:utilmem.obj
+ 0001:0000a51c       svsutil_Free               1000b51c f   ufnmdd:utilmem.obj
+ 0001:0000a52c       ?DeRef@CRefObject@@QAAKXZ  1000b52c f i ufnmdd:ufnbus.obj
+ 0001:0000a570       ?IOControl@DefaultBusDriver@@UAAHKPAEK0KPAK@Z 1000b570 f i ufnmdd:ufnbus.obj
+ 0001:0000a5b4       ??0CUfnBusDevice@@QAA@PBG000KPAX@Z 1000b5b4 f   ufnmdd:ufnbus.obj
+ 0001:0000a62c       ?Init@DeviceFolder@@UAAHXZ 1000b62c f i ufnmdd:ufnbus.obj
+ 0001:0000a640       ?SetPowerState@DeviceFolder@@UAAHW4_CEDEVICE_POWER_STATE@@@Z 1000b640 f i ufnmdd:ufnbus.obj
+ 0001:0000a64c       ?GetPowerState@DeviceFolder@@UAA?AW4_CEDEVICE_POWER_STATE@@XZ 1000b64c f i ufnmdd:ufnbus.obj
+ 0001:0000a654       ?Init@CUfnBusDevice@@UAAHXZ 1000b654 f i ufnmdd:ufnbus.obj
+ 0001:0000a670       ??_ECUfnBusDevice@@UAAPAXI@Z 1000b670 f i ufnmdd:ufnbus.obj
+ 0001:0000a670       ??_GCUfnBusDevice@@UAAPAXI@Z 1000b670 f i ufnmdd:ufnbus.obj
+ 0001:0000a850       ??0CUfnBus@@QAA@PBGPAUUFN_MDD_CONTEXT@@@Z 1000b850 f   ufnmdd:ufnbus.obj
+ 0001:0000a88c       ?PowerUp@DefaultBusDriver@@UAAHXZ 1000b88c f i ufnmdd:ufnbus.obj
+ 0001:0000a894       ?PowerDown@DefaultBusDriver@@UAAHXZ 1000b894 f i ufnmdd:ufnbus.obj
+ 0001:0000a89c       ?Close@DefaultBusDriver@@UAAHXZ 1000b89c f i ufnmdd:ufnbus.obj
+ 0001:0000a8a4       ?IsChildRemoved@DefaultBusDriver@@UAAHPBG@Z 1000b8a4 f i ufnmdd:ufnbus.obj
+ 0001:0000a8b4       ?Init@CUfnBus@@UAAHXZ      1000b8b4 f   ufnmdd:ufnbus.obj
+ 0001:0000a95c       ?CreateChild@CUfnBus@@IAAKPBGPAPAVCUfnBusDevice@@@Z 1000b95c f   ufnmdd:ufnbus.obj
+ 0001:0000aa58       ?OpenFunctionKey@CUfnBus@@SAKPAPAUHKEY__@@@Z 1000ba58 f   ufnmdd:ufnbus.obj
+ 0001:0000aa8c       ?TranslateChildBusAddr@CUfnBus@@UAAHPAU_CE_BUS_TRANSLATE_BUS_ADDR@@@Z 1000ba8c f   ufnmdd:ufnbus.obj
+ 0001:0000ab2c       ?TranslateChildSystemAddr@CUfnBus@@UAAHPAU_CE_BUS_TRANSLATE_SYSTEM_ADDR@@@Z 1000bb2c f   ufnmdd:ufnbus.obj
+ 0001:0000abcc       ?SetChildDevicePowerState@CUfnBus@@UAAHPAU_CE_BUS_POWER_STATE@@PAPAVDeviceFolder@@@Z 1000bbcc f   ufnmdd:ufnbus.obj
+ 0001:0000ac80       ?GetChildDevicePowerState@CUfnBus@@UAAHPAU_CE_BUS_POWER_STATE@@PAPAVDeviceFolder@@@Z 1000bc80 f   ufnmdd:ufnbus.obj
+ 0001:0000ad1c       ?SetChildDeviceConfigurationData@CUfnBus@@UAAHPAU_CE_BUS_DEVICE_CONFIGURATION_DATA@@PAPAVDeviceFolder@@@Z 1000bd1c f   ufnmdd:ufnbus.obj
+ 0001:0000adb8       ?GetChildDeviceConfigurationData@CUfnBus@@UAAHPAU_CE_BUS_DEVICE_CONFIGURATION_DATA@@PAPAVDeviceFolder@@@Z 1000bdb8 f   ufnmdd:ufnbus.obj
+ 0001:0000ae54       ?GetBusNamePrefix@CUfnBus@@UAAKPAGK@Z 1000be54 f   ufnmdd:ufnbus.obj
+ 0001:0000ae88       ?GetDefaultClientKey@CUfnBus@@QAAXPAGK@Z 1000be88 f   ufnmdd:ufnbus.obj
+ 0001:0000af10       ?GetDefaultClientName@CUfnBus@@QAAKPAGK@Z 1000bf10 f   ufnmdd:ufnbus.obj
+ 0001:0000afd8       ?PostInit@CUfnBus@@UAAHXZ  1000bfd8 f   ufnmdd:ufnbus.obj
+ 0001:0000b0f4       ?IOControl@CUfnBus@@UAAHPAUUFN_MDD_BUS_OPEN_CONTEXT@@KPAEK1KPAK@Z 1000c0f4 f   ufnmdd:ufnbus.obj
+ 0001:0000b724       ??0?$CFreePool@$03V?$fixed_block_allocator@$07@ce@@Utransfer_funcs@@@@QAA@I@Z 1000c724 f i ufnmdd:ufnbus.obj
+ 0001:0000b788       ??1?$CFreePool@$03V?$fixed_block_allocator@$07@ce@@Utransfer_funcs@@@@QAA@XZ 1000c788 f i ufnmdd:ufnbus.obj
+ 0001:0000b850       ?CleanUpAfterClient@CUfnBus@@IAAKXZ 1000c850 f   ufnmdd:ufnbus.obj
+ 0001:0000b99c       ?ActivateChild@CUfnBus@@UAAHPBG@Z 1000c99c f   ufnmdd:ufnbus.obj
+ 0001:0000ba8c       ?DeactivateChild@CUfnBus@@UAAHPBG@Z 1000ca8c f   ufnmdd:ufnbus.obj
+ 0001:0000bab8       ??1CUfnBus@@UAA@XZ         1000cab8 f   ufnmdd:ufnbus.obj
+ 0001:0000bb00       ??_ECUfnBus@@UAAPAXI@Z     1000cb00 f i ufnmdd:ufnbus.obj
+ 0001:0000bb00       ??_GCUfnBus@@UAAPAXI@Z     1000cb00 f i ufnmdd:ufnbus.obj
+ 0001:0000be70       ?GetDefaultInterfaceCount@CConfiguration@@QBAKXZ 1000ce70 f i ufnmdd:enum.obj
+ 0001:0000bebc       ?SetInterface@CConfiguration@@QAAKKK@Z 1000cebc f i ufnmdd:enum.obj
+ 0001:0000bf08       ?ResetInterfaces@CConfiguration@@QAAXXZ 1000cf08 f i ufnmdd:enum.obj
+ 0001:0000bf4c       ?SetConfiguration@CDevice@@QAAKK@Z 1000cf4c f i ufnmdd:enum.obj
+ 0001:0000c6b8       ?compact@?$CFreePool@$03V?$fixed_block_allocator@$07@ce@@Utransfer_funcs@@@@QAAXXZ 1000d6b8 f i ufnmdd:enum.obj
+ 0001:0000c770       ?UfnMdd_Notify@@YAHPAXKK@Z 1000d770 f   ufnmdd:enum.obj
+ 0001:0000cad4       ?TreeInsert@SVSTree@@IAAXPAVSVSTNode@@@Z 1000dad4 f i ufnmdd:utiltree.obj
+ 0001:0000cb48       ?LeftRotate@SVSTree@@IAAXPAVSVSTNode@@@Z 1000db48 f i ufnmdd:utiltree.obj
+ 0001:0000cba4       ?RightRotate@SVSTree@@IAAXPAVSVSTNode@@@Z 1000dba4 f i ufnmdd:utiltree.obj
+ 0001:0000cc00       ?Insert@SVSTree@@QAAPAVSVSTNode@@KPAX@Z 1000dc00 f   ufnmdd:utiltree.obj
+ 0001:0000cd50       ??_ECRefObject@@UAAPAXI@Z  1000dd50 f i ufnmdd:DefBus.obj
+ 0001:0000cd50       ??_GCRefObject@@UAAPAXI@Z  1000dd50 f i ufnmdd:DefBus.obj
+ 0001:0000cd78       ??0CRegistryEdit@@QAA@PAUHKEY__@@PBG@Z 1000dd78 f i ufnmdd:DefBus.obj
+ 0001:0000cdc8       ?GetRegValue@CRegistryEdit@@QAAHPBGPAEK@Z 1000ddc8 f i ufnmdd:DefBus.obj
+ 0001:0000ce18       ?TranslateBusAddr@DefaultBusDriver@@QAAHW4_INTERFACE_TYPE@@KT_LARGE_INTEGER@@PAKPAT3@@Z 1000de18 f i ufnmdd:DefBus.obj
+ 0001:0000ce90       ?TranslateSystemAddr@DefaultBusDriver@@QAAHW4_INTERFACE_TYPE@@KT_LARGE_INTEGER@@PAT3@@Z 1000de90 f i ufnmdd:DefBus.obj
+ 0001:0000cef8       ??0DeviceFolder@@QAA@PBG0KKKKPAXK0@Z 1000def8 f   ufnmdd:DefBus.obj
+ 0001:0000d19c       ?LoadDevice@DeviceFolder@@UAAHXZ 1000e19c f   ufnmdd:DefBus.obj
+ 0001:0000d320       ?UnloadDevice@DeviceFolder@@UAAHXZ 1000e320 f   ufnmdd:DefBus.obj
+ 0001:0000d358       ?SetConfigurationData@DeviceFolder@@UAAHPAU_CE_BUS_DEVICE_CONFIGURATION_DATA@@@Z 1000e358 f   ufnmdd:DefBus.obj
+ 0001:0000d3c4       ?GetConfigurationData@DeviceFolder@@UAAHPAU_CE_BUS_DEVICE_CONFIGURATION_DATA@@@Z 1000e3c4 f   ufnmdd:DefBus.obj
+ 0001:0000d430       ??0DefaultBusDriver@@QAA@PBG@Z 1000e430 f   ufnmdd:DefBus.obj
+ 0001:0000d48c       ?PostInit@DefaultBusDriver@@UAAHXZ 1000e48c f i ufnmdd:DefBus.obj
+ 0001:0000d494       ?Init@DefaultBusDriver@@UAAHXZ 1000e494 f   ufnmdd:DefBus.obj
+ 0001:0000d4b0       ??1DefaultBusDriver@@UAA@XZ 1000e4b0 f   ufnmdd:DefBus.obj
+ 0001:0000d558       ?TranslateChildBusAddr@DefaultBusDriver@@UAAHPAU_CE_BUS_TRANSLATE_BUS_ADDR@@@Z 1000e558 f   ufnmdd:DefBus.obj
+ 0001:0000d5a4       ?TranslateChildSystemAddr@DefaultBusDriver@@UAAHPAU_CE_BUS_TRANSLATE_SYSTEM_ADDR@@@Z 1000e5a4 f   ufnmdd:DefBus.obj
+ 0001:0000d5e8       ?SetChildDeviceConfigurationData@DefaultBusDriver@@UAAHPAU_CE_BUS_DEVICE_CONFIGURATION_DATA@@PAPAVDeviceFolder@@@Z 1000e5e8 f   ufnmdd:DefBus.obj
+ 0001:0000d644       ?GetChildDeviceConfigurationData@DefaultBusDriver@@UAAHPAU_CE_BUS_DEVICE_CONFIGURATION_DATA@@PAPAVDeviceFolder@@@Z 1000e644 f   ufnmdd:DefBus.obj
+ 0001:0000d6a0       ?SetChildDevicePowerState@DefaultBusDriver@@UAAHPAU_CE_BUS_POWER_STATE@@PAPAVDeviceFolder@@@Z 1000e6a0 f   ufnmdd:DefBus.obj
+ 0001:0000d714       ?GetChildDevicePowerState@DefaultBusDriver@@UAAHPAU_CE_BUS_POWER_STATE@@PAPAVDeviceFolder@@@Z 1000e714 f   ufnmdd:DefBus.obj
+ 0001:0000d78c       ?ActivateChild@DefaultBusDriver@@UAAHPBG@Z 1000e78c f   ufnmdd:DefBus.obj
+ 0001:0000d7dc       ?DeactivateChild@DefaultBusDriver@@UAAHPBG@Z 1000e7dc f   ufnmdd:DefBus.obj
+ 0001:0000d82c       ?GetBusNamePrefix@DefaultBusDriver@@UAAKPAGK@Z 1000e82c f   ufnmdd:DefBus.obj
+ 0001:0000d884       ?FastIOControl@DefaultBusDriver@@UAAHKPAEK0KPAKPAPAVDeviceFolder@@@Z 1000e884 f   ufnmdd:DefBus.obj
+ 0001:0000dcac       ?GetChildByName@DefaultBusDriver@@UAAPAVDeviceFolder@@PBGPAPAV2@@Z 1000ecac f   ufnmdd:DefBus.obj
+ 0001:0000ddbc       ?InsertChild@DefaultBusDriver@@UAAHPAVDeviceFolder@@@Z 1000edbc f   ufnmdd:DefBus.obj
+ 0001:0000de44       ?RemoveChildByName@DefaultBusDriver@@UAAHPBG@Z 1000ee44 f   ufnmdd:DefBus.obj
+ 0001:0000dea4       ?RemoveChildByFolder@DefaultBusDriver@@UAAHPAVDeviceFolder@@@Z 1000eea4 f   ufnmdd:DefBus.obj
+ 0001:0000df40       ?Open@DefaultBusDriver@@UAAHKK@Z 1000ef40 f   ufnmdd:DefBus.obj
+ 0001:0000df50       ??1DeviceFolder@@UAA@XZ    1000ef50 f   ufnmdd:DefBus.obj
+ 0001:0000e00c       ??_EDefaultBusDriver@@UAAPAXI@Z 1000f00c f i ufnmdd:DefBus.obj
+ 0001:0000e00c       ??_GDefaultBusDriver@@UAAPAXI@Z 1000f00c f i ufnmdd:DefBus.obj
+ 0001:0000e034       ??_EDeviceFolder@@UAAPAXI@Z 1000f034 f i ufnmdd:DefBus.obj
+ 0001:0000e034       ??_GDeviceFolder@@UAAPAXI@Z 1000f034 f i ufnmdd:DefBus.obj
+ 0001:0000e05c       MmUnmapIoSpace             1000f05c f   ceddk:CEDDK.dll
+ 0001:0000e06c       MmMapIoSpace               1000f06c f   ceddk:CEDDK.dll
+ 0001:0000e07c       SetDevicePowerState        1000f07c f   ceddk:CEDDK.dll
+ 0001:0000e08c       CloseBusAccessHandle       1000f08c f   ceddk:CEDDK.dll
+ 0001:0000e09c       CreateBusAccessHandle      1000f09c f   ceddk:CEDDK.dll
+ 0001:0000e0ac       BusChildIoControl          1000f0ac f   ceddk:CEDDK.dll
+ 0001:0000e0bc       HalTranslateBusAddress     1000f0bc f   ceddk:CEDDK.dll
+ 0001:0000e0cc       TranslateBusAddr           1000f0cc f   ceddk:CEDDK.dll
+ 0001:0000e0dc       HalTranslateSystemAddress  1000f0dc f   ceddk:CEDDK.dll
+ 0001:0000e0ec       TranslateSystemAddr        1000f0ec f   ceddk:CEDDK.dll
+ 0001:0000e0fc       HalSetBusDataByOffset      1000f0fc f   ceddk:CEDDK.dll
+ 0001:0000e10c       HalGetBusDataByOffset      1000f10c f   ceddk:CEDDK.dll
+ 0001:0000e11c       CloseHandle                1000f11c f   coredll:COREDLL.dll
+ 0001:0000e12c       CreateFileW                1000f12c f   coredll:COREDLL.dll
+ 0001:0000e13c       FindFirstDevice            1000f13c f   coredll:COREDLL.dll
+ 0001:0000e14c       DeviceIoControl            1000f14c f   coredll:COREDLL.dll
+ 0001:0000e15c       EventModify                1000f15c f   coredll:COREDLL.dll
+ 0001:0000e16c       LeaveCriticalSection       1000f16c f   coredll:COREDLL.dll
+ 0001:0000e17c       EnterCriticalSection       1000f17c f   coredll:COREDLL.dll
+ 0001:0000e18c       NKDbgPrintfW               1000f18c f   coredll:COREDLL.dll
+ 0001:0000e19c       Sleep                      1000f19c f   coredll:COREDLL.dll
+ 0001:0000e1ac       GetLastError               1000f1ac f   coredll:COREDLL.dll
+ 0001:0000e1bc       WaitForSingleObject        1000f1bc f   coredll:COREDLL.dll
+ 0001:0000e1cc       InterruptDone              1000f1cc f   coredll:COREDLL.dll
+ 0001:0000e1dc       CeSetThreadPriority        1000f1dc f   coredll:COREDLL.dll
+ 0001:0000e1ec       SetInterruptEvent          1000f1ec f   coredll:COREDLL.dll
+ 0001:0000e1fc       KernelIoControl            1000f1fc f   coredll:COREDLL.dll
+ 0001:0000e20c       LocalFree                  1000f20c f   coredll:COREDLL.dll
+ 0001:0000e21c       DeleteCriticalSection      1000f21c f   coredll:COREDLL.dll
+ 0001:0000e22c       InterruptDisable           1000f22c f   coredll:COREDLL.dll
+ 0001:0000e23c       AllocPhysMem               1000f23c f   coredll:COREDLL.dll
+ 0001:0000e24c       CreateThread               1000f24c f   coredll:COREDLL.dll
+ 0001:0000e25c       InterruptInitialize        1000f25c f   coredll:COREDLL.dll
+ 0001:0000e26c       CreateEventW               1000f26c f   coredll:COREDLL.dll
+ 0001:0000e27c       FreePhysMem                1000f27c f   coredll:COREDLL.dll
+ 0001:0000e28c       InitializeCriticalSection  1000f28c f   coredll:COREDLL.dll
+ 0001:0000e29c       RegCloseKey                1000f29c f   coredll:COREDLL.dll
+ 0001:0000e2ac       RegQueryValueExW           1000f2ac f   coredll:COREDLL.dll
+ 0001:0000e2bc       DDKReg_GetIsrInfo          1000f2bc f   coredll:COREDLL.dll
+ 0001:0000e2cc       LocalAlloc                 1000f2cc f   coredll:COREDLL.dll
+ 0001:0000e2dc       OpenDeviceKey              1000f2dc f   coredll:COREDLL.dll
+ 0001:0000e2ec       SetLastError               1000f2ec f   coredll:COREDLL.dll
+ 0001:0000e2fc       RegOpenKeyExW              1000f2fc f   coredll:COREDLL.dll
+ 0001:0000e30c       DisableThreadLibraryCalls  1000f30c f   coredll:COREDLL.dll
+ 0001:0000e31c       InterlockedCompareExchange 1000f31c f   coredll:COREDLL.dll
+ 0001:0000e32c       InterlockedExchange        1000f32c f   coredll:COREDLL.dll
+ 0001:0000e33c       InterlockedIncrement       1000f33c f   coredll:COREDLL.dll
+ 0001:0000e34c       InterlockedDecrement       1000f34c f   coredll:COREDLL.dll
+ 0001:0000e35c       StringCchCopyW             1000f35c f   coredll:COREDLL.dll
+ 0001:0000e36c       StringCchPrintfW           1000f36c f   coredll:COREDLL.dll
+ 0001:0000e37c       GetDeviceInformationByDeviceHandle 1000f37c f   coredll:COREDLL.dll
+ 0001:0000e38c       RegSetValueExW             1000f38c f   coredll:COREDLL.dll
+ 0001:0000e39c       LoadLibraryW               1000f39c f   coredll:COREDLL.dll
+ 0001:0000e3ac       RegEnumKeyExW              1000f3ac f   coredll:COREDLL.dll
+ 0001:0000e3bc       ActivateDeviceEx           1000f3bc f   coredll:COREDLL.dll
+ 0001:0000e3cc       FreeLibrary                1000f3cc f   coredll:COREDLL.dll
+ 0001:0000e3dc       GetProcAddressW            1000f3dc f   coredll:COREDLL.dll
+ 0001:0000e3ec       LoadDriver                 1000f3ec f   coredll:COREDLL.dll
+ 0001:0000e3fc       GetTickCount               1000f3fc f   coredll:COREDLL.dll
+ 0001:0000e40c       DeactivateDevice           1000f40c f   coredll:COREDLL.dll
+ 0001:0000e41c       GetDeviceHandleFromContext 1000f41c f   coredll:COREDLL.dll
+ 0001:0000e42c       _DllEntryCRTStartup        1000f42c f   corelib0:pegdentry.obj
+ 0001:0000e474       __GSHandlerCheckCommon     1000f474 f   corelib0:gshandler.obj
+ 0001:0000e4b0       __GSHandlerCheck           1000f4b0 f   corelib0:gshandler.obj
+ 0001:0000e4d4       __security_init_cookie     1000f4d4 f   corelib0:seccinit.obj
+ 0001:0000e530       __security_check_cookie    1000f530 f   corelib0:armsecgs.obj
+ 0001:0000e544       __gsfailure                1000f544 f   corelib0:armsecgs.obj
+ 0001:0000e590       _onexit                    1000f590 f   corelib0:onexit.obj
+ 0001:0000e718       atexit                     1000f718 f   corelib0:onexit.obj
+ 0001:0000e834       _cexit                     1000f834 f   corelib0:cexit.obj
+ 0001:0000e850       _initterm                  1000f850 f   corelib0:crt0dat.obj
+ 0001:0000e884       _cinit                     1000f884 f   corelib0:crt0dat.obj
+ 0001:0000e8b8       swscanf                    1000f8b8 f   corelib1:COREDLL.dll
+ 0001:0000e8c8       memset                     1000f8c8 f   corelib1:COREDLL.dll
+ 0001:0000e8d8       memcpy                     1000f8d8 f   corelib1:COREDLL.dll
+ 0001:0000e8e8       __rt_udiv                  1000f8e8 f   corelib1:COREDLL.dll
+ 0001:0000e8f8       wcscmp                     1000f8f8 f   corelib1:COREDLL.dll
+ 0001:0000e908       ??2@YAPAXI@Z               1000f908 f   corelib1:COREDLL.dll
+ 0001:0000e918       ??3@YAXPAX@Z               1000f918 f   corelib1:COREDLL.dll
+ 0001:0000e928       __C_specific_handler       1000f928 f   corelib1:COREDLL.dll
+ 0001:0000e938       _purecall                  1000f938 f   corelib1:COREDLL.dll
+ 0001:0000e948       wcsncpy                    1000f948 f   corelib1:COREDLL.dll
+ 0001:0000e958       wcslen                     1000f958 f   corelib1:COREDLL.dll
+ 0001:0000e968       ??_V@YAXPAX@Z              1000f968 f   corelib1:COREDLL.dll
+ 0001:0000e978       ??_U@YAPAXI@Z              1000f978 f   corelib1:COREDLL.dll
+ 0001:0000e988       malloc                     1000f988 f   corelib1:COREDLL.dll
+ 0001:0000e998       realloc                    1000f998 f   corelib1:COREDLL.dll
+ 0001:0000e9a8       free                       1000f9a8 f   corelib1:COREDLL.dll
+ 0001:0000e9b8       _wcsdup                    1000f9b8 f   corelib1:COREDLL.dll
+ 0001:0000e9c8       wcscpy                     1000f9c8 f   corelib1:COREDLL.dll
+ 0001:0000e9d8       _wcsicmp                   1000f9d8 f   corelib1:COREDLL.dll
+ 0001:0000e9e8       _wcsnicmp                  1000f9e8 f   corelib1:COREDLL.dll
+ 0001:0000e9f8       __security_gen_cookie2     1000f9f8 f   corelib1:COREDLL.dll
+ 0001:0000ea08       __report_gsfailure         1000fa08 f   corelib1:COREDLL.dll
+ 0001:0000ea18       _msize                     1000fa18 f   corelib1:COREDLL.dll
+ 0001:0000ea28       TerminateProcess           1000fa28 f   coredll:COREDLL.dll
+ 0001:0000ea48       ??__Fcs@?1??get_lock@?$singleton@V?$free_list@$0GE@Vallocator@ce@@@ce@@$03V?$static_allocator@V?$free_list@$0GE@Vallocator@ce@@@ce@@$03@2@@ce@@KAAAVcritical_section@2@XZ@YAXXZ 1000fa48 f i ufnmdd:ufnmdd.obj
+ 0001:0000eb70       __IMPORT_DESCRIPTOR_CEDDK  1000fb70     ceddk:CEDDK.dll
+ 0001:0000eb84       __IMPORT_DESCRIPTOR_COREDLL 1000fb84     coredll:COREDLL.dll
+ 0001:0000eb98       __NULL_IMPORT_DESCRIPTOR   1000fb98     ceddk:CEDDK.dll
+ 0002:00000000       __imp_MmUnmapIoSpace       10010000     ceddk:CEDDK.dll
+ 0002:00000004       __imp_MmMapIoSpace         10010004     ceddk:CEDDK.dll
+ 0002:00000008       __imp_SetDevicePowerState  10010008     ceddk:CEDDK.dll
+ 0002:0000000c       __imp_CloseBusAccessHandle 1001000c     ceddk:CEDDK.dll
+ 0002:00000010       __imp_CreateBusAccessHandle 10010010     ceddk:CEDDK.dll
+ 0002:00000014       __imp_BusChildIoControl    10010014     ceddk:CEDDK.dll
+ 0002:00000018       __imp_HalTranslateBusAddress 10010018     ceddk:CEDDK.dll
+ 0002:0000001c       __imp_TranslateBusAddr     1001001c     ceddk:CEDDK.dll
+ 0002:00000020       __imp_HalTranslateSystemAddress 10010020     ceddk:CEDDK.dll
+ 0002:00000024       __imp_TranslateSystemAddr  10010024     ceddk:CEDDK.dll
+ 0002:00000028       __imp_HalSetBusDataByOffset 10010028     ceddk:CEDDK.dll
+ 0002:0000002c       __imp_HalGetBusDataByOffset 1001002c     ceddk:CEDDK.dll
+ 0002:00000030       \177CEDDK_NULL_THUNK_DATA  10010030     ceddk:CEDDK.dll
+ 0002:00000034       __imp_CloseHandle          10010034     coredll:COREDLL.dll
+ 0002:00000038       __imp_CreateFileW          10010038     coredll:COREDLL.dll
+ 0002:0000003c       __imp_FindFirstDevice      1001003c     coredll:COREDLL.dll
+ 0002:00000040       __imp_DeviceIoControl      10010040     coredll:COREDLL.dll
+ 0002:00000044       __imp_EventModify          10010044     coredll:COREDLL.dll
+ 0002:00000048       __imp_LeaveCriticalSection 10010048     coredll:COREDLL.dll
+ 0002:0000004c       __imp_EnterCriticalSection 1001004c     coredll:COREDLL.dll
+ 0002:00000050       __imp_NKDbgPrintfW         10010050     coredll:COREDLL.dll
+ 0002:00000054       __imp_Sleep                10010054     coredll:COREDLL.dll
+ 0002:00000058       __imp_GetLastError         10010058     coredll:COREDLL.dll
+ 0002:0000005c       __imp_WaitForSingleObject  1001005c     coredll:COREDLL.dll
+ 0002:00000060       __imp_InterruptDone        10010060     coredll:COREDLL.dll
+ 0002:00000064       __imp_CeSetThreadPriority  10010064     coredll:COREDLL.dll
+ 0002:00000068       __imp_SetInterruptEvent    10010068     coredll:COREDLL.dll
+ 0002:0000006c       __imp_KernelIoControl      1001006c     coredll:COREDLL.dll
+ 0002:00000070       __imp_LocalFree            10010070     coredll:COREDLL.dll
+ 0002:00000074       __imp_DeleteCriticalSection 10010074     coredll:COREDLL.dll
+ 0002:00000078       __imp_InterruptDisable     10010078     coredll:COREDLL.dll
+ 0002:0000007c       __imp_AllocPhysMem         1001007c     coredll:COREDLL.dll
+ 0002:00000080       __imp_CreateThread         10010080     coredll:COREDLL.dll
+ 0002:00000084       __imp_InterruptInitialize  10010084     coredll:COREDLL.dll
+ 0002:00000088       __imp_CreateEventW         10010088     coredll:COREDLL.dll
+ 0002:0000008c       __imp_FreePhysMem          1001008c     coredll:COREDLL.dll
+ 0002:00000090       __imp_InitializeCriticalSection 10010090     coredll:COREDLL.dll
+ 0002:00000094       __imp_RegCloseKey          10010094     coredll:COREDLL.dll
+ 0002:00000098       __imp_RegQueryValueExW     10010098     coredll:COREDLL.dll
+ 0002:0000009c       __imp_DDKReg_GetIsrInfo    1001009c     coredll:COREDLL.dll
+ 0002:000000a0       __imp_LocalAlloc           100100a0     coredll:COREDLL.dll
+ 0002:000000a4       __imp_OpenDeviceKey        100100a4     coredll:COREDLL.dll
+ 0002:000000a8       __imp_SetLastError         100100a8     coredll:COREDLL.dll
+ 0002:000000ac       __imp_RegOpenKeyExW        100100ac     coredll:COREDLL.dll
+ 0002:000000b0       __imp_DisableThreadLibraryCalls 100100b0     coredll:COREDLL.dll
+ 0002:000000b4       __imp_InterlockedCompareExchange 100100b4     coredll:COREDLL.dll
+ 0002:000000b8       __imp_InterlockedExchange  100100b8     coredll:COREDLL.dll
+ 0002:000000bc       __imp_InterlockedIncrement 100100bc     coredll:COREDLL.dll
+ 0002:000000c0       __imp_InterlockedDecrement 100100c0     coredll:COREDLL.dll
+ 0002:000000c4       __imp_StringCchCopyW       100100c4     coredll:COREDLL.dll
+ 0002:000000c8       __imp_StringCchPrintfW     100100c8     coredll:COREDLL.dll
+ 0002:000000cc       __imp_GetDeviceInformationByDeviceHandle 100100cc     coredll:COREDLL.dll
+ 0002:000000d0       __imp_RegSetValueExW       100100d0     coredll:COREDLL.dll
+ 0002:000000d4       __imp_LoadLibraryW         100100d4     coredll:COREDLL.dll
+ 0002:000000d8       __imp_RegEnumKeyExW        100100d8     coredll:COREDLL.dll
+ 0002:000000dc       __imp_ActivateDeviceEx     100100dc     coredll:COREDLL.dll
+ 0002:000000e0       __imp_FreeLibrary          100100e0     coredll:COREDLL.dll
+ 0002:000000e4       __imp_GetProcAddressW      100100e4     coredll:COREDLL.dll
+ 0002:000000e8       __imp_LoadDriver           100100e8     coredll:COREDLL.dll
+ 0002:000000ec       __imp_GetTickCount         100100ec     coredll:COREDLL.dll
+ 0002:000000f0       __imp_DeactivateDevice     100100f0     coredll:COREDLL.dll
+ 0002:000000f4       __imp_GetDeviceHandleFromContext 100100f4     coredll:COREDLL.dll
+ 0002:000000f8       __imp_swscanf              100100f8     corelib1:COREDLL.dll
+ 0002:000000fc       __imp_memset               100100fc     corelib1:COREDLL.dll
+ 0002:00000100       __imp_memcpy               10010100     corelib1:COREDLL.dll
+ 0002:00000104       __imp___rt_udiv            10010104     corelib1:COREDLL.dll
+ 0002:00000108       __imp_wcscmp               10010108     corelib1:COREDLL.dll
+ 0002:0000010c       __imp_??2@YAPAXI@Z         1001010c     corelib1:COREDLL.dll
+ 0002:00000110       __imp_??3@YAXPAX@Z         10010110     corelib1:COREDLL.dll
+ 0002:00000114       __imp___C_specific_handler 10010114     corelib1:COREDLL.dll
+ 0002:00000118       __imp__purecall            10010118     corelib1:COREDLL.dll
+ 0002:0000011c       __imp_wcsncpy              1001011c     corelib1:COREDLL.dll
+ 0002:00000120       __imp_wcslen               10010120     corelib1:COREDLL.dll
+ 0002:00000124       __imp_??_V@YAXPAX@Z        10010124     corelib1:COREDLL.dll
+ 0002:00000128       __imp_??_U@YAPAXI@Z        10010128     corelib1:COREDLL.dll
+ 0002:0000012c       __imp_malloc               1001012c     corelib1:COREDLL.dll
+ 0002:00000130       __imp_realloc              10010130     corelib1:COREDLL.dll
+ 0002:00000134       __imp_free                 10010134     corelib1:COREDLL.dll
+ 0002:00000138       __imp__wcsdup              10010138     corelib1:COREDLL.dll
+ 0002:0000013c       __imp_wcscpy               1001013c     corelib1:COREDLL.dll
+ 0002:00000140       __imp__wcsicmp             10010140     corelib1:COREDLL.dll
+ 0002:00000144       __imp__wcsnicmp            10010144     corelib1:COREDLL.dll
+ 0002:00000148       __imp___security_gen_cookie2 10010148     corelib1:COREDLL.dll
+ 0002:0000014c       __imp___report_gsfailure   1001014c     corelib1:COREDLL.dll
+ 0002:00000150       __imp__msize               10010150     corelib1:COREDLL.dll
+ 0002:00000154       __imp_TerminateProcess     10010154     coredll:COREDLL.dll
+ 0002:00000158       \177COREDLL_NULL_THUNK_DATA 10010158     coredll:COREDLL.dll
+ 0002:00000160       ?ahwTestPkt@@3PAGA         10010160     s3c6410otgdevice.obj
+ 0002:00000198       dpCurSettings              10010198     s3c6410otgdevice.obj
+ 0002:000005e0       g_funcAlloc                100105e0     ufnmdd:utilmem.obj
+ 0002:000005e4       g_funcFree                 100105e4     ufnmdd:utilmem.obj
+ 0002:000005e8       g_funcRealloc              100105e8     ufnmdd:utilmem.obj
+ 0002:000005ec       __security_cookie          100105ec     corelib0:seccinit.obj
+ 0002:000005f0       __security_cookie_complement 100105f0     corelib0:seccinit.obj
+ 0002:00000600       ?g_pUDCBase@@3PCEC         10010600     s3c6410otgdevice.obj
+ 0002:00000610       ?s_rgbBuffer@?$CTransferQueue@VCUfnMddTransfer@@@@0PAEA 10010610     ufnmdd:ufnmdd.obj
+ 0002:0000062c       ?s_pListStructAllocator@?$CTransferQueue@VCUfnMddTransfer@@@@0PAV?$fixed_block_allocator@$0BE@@ce@@A 1001062c     ufnmdd:ufnmdd.obj
+ 0002:00000630       ??_B?1??get_lock@?$singleton@V?$free_list@$0GE@Vallocator@ce@@@ce@@$03V?$static_allocator@V?$free_list@$0GE@Vallocator@ce@@@ce@@$03@2@@ce@@KAAAVcritical_section@2@XZ@51 10010630     ufnmdd:ufnmdd.obj
+ 0002:00000634       ?cs@?1??get_lock@?$singleton@V?$free_list@$0GE@Vallocator@ce@@@ce@@$03V?$static_allocator@V?$free_list@$0GE@Vallocator@ce@@@ce@@$03@2@@ce@@KAAAVcritical_section@3@XZ@4V43@A 10010634     ufnmdd:ufnmdd.obj
+ 0002:00000648       ?_factory@?$singleton@V?$free_list@$0GE@Vallocator@ce@@@ce@@$03V?$static_allocator@V?$free_list@$0GE@Vallocator@ce@@@ce@@$03@2@@ce@@1Ulock_factory@12@A 10010648     ufnmdd:ufnmdd.obj
+ 0002:0000064c       g_pvAllocData              1001064c     ufnmdd:utilmem.obj
+ 0002:00000650       g_pvFreeData               10010650     ufnmdd:utilmem.obj
+ 0002:00000654       _exitflag                  10010654     corelib0:cexit.obj
+ 0002:00000658       __onexitend                10010658     <common>
+ 0002:0000065c       __onexitbegin              1001065c     <common>
+ 0002:00000660       g_pcsExit                  10010660     <common>
+
+ entry point at        0001:0000e42c
+
+ Static symbols
+
+ 0001:000010dc       ?EnableEndpointInterrupt@@YAXPAUCTRL_PDD_CONTEXT@@KK@Z 100020dc f   s3c6410otgdevice.obj
+ 0001:0000114c       ?DisableEndpointInterrupt@@YAXPAUCTRL_PDD_CONTEXT@@KK@Z 1000214c f   s3c6410otgdevice.obj
+ 0001:000011bc       ?ResetEndpoint@@YAXPAUCTRL_PDD_CONTEXT@@PAUEP_STATUS@@@Z 100021bc f   s3c6410otgdevice.obj
+ 0001:0000122c       ?InitDevice@@YAXPAUCTRL_PDD_CONTEXT@@@Z 1000222c f   s3c6410otgdevice.obj
+ 0001:0000131c       ?ResetDevice@@YAXPAUCTRL_PDD_CONTEXT@@@Z 1000231c f   s3c6410otgdevice.obj
+ 0001:000013b4       ?WatiForTxFIFOEmpty@@YAHK@Z 100023b4 f   s3c6410otgdevice.obj
+ 0001:00001434       ?CheckForUSBTestModeRequest@@YAHPAUCTRL_PDD_CONTEXT@@@Z 10002434 f   s3c6410otgdevice.obj
+ 0001:0000172c       ?HandleEndpoint0Event@@YAXPAUCTRL_PDD_CONTEXT@@@Z 1000272c f   s3c6410otgdevice.obj
+ 0001:000019c0       ?HandleOutEvent@@YAXPAUCTRL_PDD_CONTEXT@@K@Z 100029c0 f   s3c6410otgdevice.obj
+ 0001:00001bec       ?HandleInEvent@@YAXPAUCTRL_PDD_CONTEXT@@K@Z 10002bec f   s3c6410otgdevice.obj
+ 0001:00001d00       ?HandleReset@@YAXPAUCTRL_PDD_CONTEXT@@@Z 10002d00 f   s3c6410otgdevice.obj
+ 0001:00001f44       ?HandleUSBBusIrq@@YAXPAUCTRL_PDD_CONTEXT@@K@Z 10002f44 f   s3c6410otgdevice.obj
+ 0001:00002194       ?HandleUSBEvent@@YAXPAUCTRL_PDD_CONTEXT@@@Z 10003194 f   s3c6410otgdevice.obj
+ 0001:0000257c       ?MapRegisterSet@@YAKPAUCTRL_PDD_CONTEXT@@@Z 1000357c f   s3c6410otgdevice.obj
+ 0001:00002650       ?ISTMain@@YAKPAX@Z         10003650 f   s3c6410otgdevice.obj
+ 0001:00002750       ?StartTransfer@@YAXPAUCTRL_PDD_CONTEXT@@PAUEP_STATUS@@PAU_STransfer@@@Z 10003750 f   s3c6410otgdevice.obj
+ 0001:00002dd4       ?SetPowerState@@YA?AW4_CEDEVICE_POWER_STATE@@PAUCTRL_PDD_CONTEXT@@W41@@Z 10003dd4 f   s3c6410otgdevice.obj
+ 0001:00002f20       ?FreeCtrlrContext@@YAXPAUCTRL_PDD_CONTEXT@@@Z 10003f20 f   s3c6410otgdevice.obj
+ 0001:000047b8       ?IsPddInterfaceInfoValid@@YAHPAU_UFN_PDD_INTERFACE_INFO@@@Z 100057b8 f   ufnmdd:ufnmdd.obj
+ 0001:0000540c       ?FreeContext@@YAXPAUUFN_MDD_CONTEXT@@@Z 1000640c f   ufnmdd:ufnmdd.obj
+ 0001:00007e2c       ?FillBuffer@@YAKPAPAEPAKPBXK@Z 10008e2c f   ufnmdd:descript.obj
+ 0001:0000a248       ?svsutil_CompactFixed_Worker@@YAXPAUFixedMemDescr@@@Z 1000b248 f   ufnmdd:utilmemf.obj
+ 0001:0000a6a4       ?GetUfnDescription@@YAHPAUHKEY__@@PAGK@Z 1000b6a4 f   ufnmdd:ufnbus.obj
+ 0001:0000a710       ?AllocEndpoints@@YAKPAUUFN_MDD_CONTEXT@@@Z 1000b710 f   ufnmdd:ufnbus.obj
+ 0001:0000bb28       ?EnumTransferComplete@@YAKPAX@Z 1000cb28 f   ufnmdd:enum.obj
+ 0001:0000bb80       ?SetupTx@@YAXPAUUFN_MDD_CONTEXT@@PAXKK@Z 1000cb80 f   ufnmdd:enum.obj
+ 0001:0000bbe0       ?ProcessGetDescriptor@@YA?AW4CONTROL_RESPONSE@@PAUUFN_MDD_CONTEXT@@U_USB_DEVICE_REQUEST@@K@Z 1000cbe0 f   ufnmdd:enum.obj
+ 0001:0000bc64       ?ProcessSetAddress@@YA?AW4CONTROL_RESPONSE@@PAUUFN_MDD_CONTEXT@@U_USB_DEVICE_REQUEST@@K@Z 1000cc64 f   ufnmdd:enum.obj
+ 0001:0000bcbc       ?ProcessClearFeature@@YA?AW4CONTROL_RESPONSE@@PAUUFN_MDD_CONTEXT@@U_USB_DEVICE_REQUEST@@K@Z 1000ccbc f   ufnmdd:enum.obj
+ 0001:0000bd8c       ?ProcessSetFeature@@YA?AW4CONTROL_RESPONSE@@PAUUFN_MDD_CONTEXT@@U_USB_DEVICE_REQUEST@@K@Z 1000cd8c f   ufnmdd:enum.obj
+ 0001:0000bf90       ?ProcessGetConfiguration@@YA?AW4CONTROL_RESPONSE@@PAUUFN_MDD_CONTEXT@@U_USB_DEVICE_REQUEST@@K@Z 1000cf90 f   ufnmdd:enum.obj
+ 0001:0000bfdc       ?ProcessGetInterface@@YA?AW4CONTROL_RESPONSE@@PAUUFN_MDD_CONTEXT@@U_USB_DEVICE_REQUEST@@K@Z 1000cfdc f   ufnmdd:enum.obj
+ 0001:0000c060       ?ProcessGetStatus@@YA?AW4CONTROL_RESPONSE@@PAUUFN_MDD_CONTEXT@@U_USB_DEVICE_REQUEST@@K@Z 1000d060 f   ufnmdd:enum.obj
+ 0001:0000c1d0       ?ProcessSetConfiguration@@YA?AW4CONTROL_RESPONSE@@PAUUFN_MDD_CONTEXT@@U_USB_DEVICE_REQUEST@@K@Z 1000d1d0 f   ufnmdd:enum.obj
+ 0001:0000c3ec       ?ProcessSetInterface@@YA?AW4CONTROL_RESPONSE@@PAUUFN_MDD_CONTEXT@@U_USB_DEVICE_REQUEST@@K@Z 1000d3ec f   ufnmdd:enum.obj
+ 0001:0000c560       ?ProcessRequest@@YA?AW4CONTROL_RESPONSE@@PAUUFN_MDD_CONTEXT@@U_USB_DEVICE_REQUEST@@K@Z 1000d560 f   ufnmdd:enum.obj
+ 0001:0000e738       doexit                     1000f738 f   corelib0:cexit.obj
+ 0001:0000ea38       ??__E?_factory@?$singleton@V?$free_list@$0GE@Vallocator@ce@@@ce@@$03V?$static_allocator@V?$free_list@$0GE@Vallocator@ce@@@ce@@$03@2@@ce@@1Ulock_factory@12@A@@YAXXZ 1000fa38 f   ufnmdd:ufnmdd.obj

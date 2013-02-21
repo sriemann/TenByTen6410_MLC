@@ -1,0 +1,7 @@
+LIBRARY     CMM
+
+EXPORTS CMM_Init
+    CMM_Deinit
+    CMM_Open
+    CMM_Close
+    CMM_IOControl

@@ -1,0 +1,37 @@
+!if 0
+Copyright (c) Microsoft Corporation.  All rights reserved.
+!endif
+!if 0
+Use of this source code is subject to the terms of the Microsoft end-user
+license agreement (EULA) under which you licensed this SOFTWARE PRODUCT.
+If you did not accept the terms of the EULA, you are not authorized to use
+this source code. For a copy of the EULA, please see the LICENSE.RTF on your
+install media.
+!endif
+
+!if "$(BSP_NOHSMMC_CH1)"=="1"
+SKIPBUILD=1
+!endif
+
+TARGETNAME=s3c6410_hsmmc1_lib
+TARGETTYPE=LIBRARY
+
+!IF "$(BSP_MOVINAND)" == "1"
+CDEFINES=$(CDEFINES) -D_FOR_MOVI_NAND_
+!ENDIF
+
+!IF "$(BSP_HSMMC_CH1_8BIT)" == "1"
+CDEFINES=$(CDEFINES) -D_SMDK6410_CH1_8BIT_
+!ENDIF
+
+CDEFINES=$(CDEFINES) -D_MMC_SPEC_42_ -D_SMDK6410_CH1_EXTCD_ # -D_SMDK6410_CH1_WP_
+
+TARGETLIBS= \
+    $(_COMMONOAKROOT)\lib\$(_CPUINDPATH)\ceddk.lib    \
+
+SOURCES=\
+        SDHCDma.cpp \
+        SDHCSlot.cpp    \
+        SDHC.cpp    \
+        SDHCMain.cpp
+

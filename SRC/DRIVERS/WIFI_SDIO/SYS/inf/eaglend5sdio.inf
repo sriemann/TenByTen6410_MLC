@@ -1,0 +1,82 @@
+[Version]                  ; Required section
+Signature = "$Windows NT$"
+Provider = "Marvell"
+CESignature = "$Windows CE$"
+
+[CEDevice.pocket.arm]
+ProcessorType  = 2577
+UnsupportedPlatforms = "HPC","Jupiter"
+VersionMin = 4.00 ; version 4.0
+VersionMax = 4.99
+
+[DefaultInstall]           ; Required section
+AddReg = RegSettings.All
+CopyFiles = Files.ARM
+
+[Files.ARM]
+EAGLEND5SDIO.dll,,,0
+
+
+[SourceDisksNames]                   ; Required section
+1 = ,"Common files",,.
+
+
+[SourceDisksFiles]         ; Required section
+EAGLEND5SDIO.dll=1
+
+
+[DestinationDirs]             ; Required section
+;Shortcuts.All = 0,%CE2%\Help  ; set to \Windows\Help
+Files.ARM = 0,%CE2%        ; \Windows
+
+[CEStrings]                ; Required section
+AppName = EagleSDIO
+InstallDir = %CE2%
+
+[RegSettings.All]
+HKLM,Drivers\SDCARD\ClientDrivers\Custom\MANF-02DF-CARDID-9103-FUNC-1,Dll,0x00000000,"Eaglend5SDIO.dll"
+HKLM,Drivers\SDCARD\ClientDrivers\Custom\MANF-02DF-CARDID-9103-FUNC-1,Prefix,0x00000000,"NDL"
+HKLM,Drivers\SDCARD\ClientDrivers\Custom\MANF-02DF-CARDID-9103-FUNC-1,Instance0,0x00000000,"Eaglend5SDIO:Eaglend5SDIO1"
+
+HKLM,Comm\Eaglend5SDIO,DisplayName,0x00000000,"Marvell 802.11 SDIO Adapter"
+HKLM,Comm\Eaglend5SDIO,Group,0x00000000,"NDIS"
+HKLM,Comm\Eaglend5SDIO,ImagePath,0x00000000,"EAGLEND5SDIO.dll"
+
+HKLM,Comm\Eaglend5SDIO\Linkage,Route,0x00010000,"Eaglend5SDIO1"
+
+HKLM,Comm\Eaglend5SDIO1,DisplayName,0x00000000,"Marvell 802.11 SDIO Adapter"
+HKLM,Comm\Eaglend5SDIO1,Group,0x00000000,"NDIS"
+HKLM,Comm\Eaglend5SDIO1,ImagePath,0x00000000,"EAGLEND5SDIO.dll"
+
+HKLM,Comm\Eaglend5SDIO1\Parms,BusNumber,0x00010001,0
+HKLM,Comm\Eaglend5SDIO1\Parms,BusType,0x00010001,0	; WinCE4.x only
+HKLM,Comm\Tcpip\Linkage,Bind,0x00010000,"ppp","Eaglend5SDIO1"
+
+; setup card parameters
+HKLM,Comm\Eaglend5SDIO1\Parms,NetworkAddress,0x00000000,""
+HKLM,Comm\Eaglend5SDIO1\Parms,"PowerMode",0x00010001,0
+HKLM,Comm\Eaglend5SDIO1\Parms,"ExtendedScan",0x00010001,0
+HKLM,Comm\Eaglend5SDIO1\Parms,"FragThsd",0x00010001,0x92A
+HKLM,Comm\Eaglend5SDIO1\Parms,"RTSThsd",0x00010001,0x92A
+HKLM,Comm\Eaglend5SDIO1\Parms,"MaxChanTime",0x00010001,100
+HKLM,Comm\Eaglend5SDIO1\Parms,"DTIMNum",0x00010001,1
+; following is for BT co-existence testing
+HKLM,Comm\Eaglend5SDIO1\Parms,"BTMode",0x00010001,0
+HKLM,Comm\Eaglend5SDIO1\Parms,"BTAntennaConfig",0x00010001,0
+HKLM,Comm\Eaglend5SDIO1\Parms,"BTFrequencyConfig",0x00010001,0
+HKLM,Comm\Eaglend5SDIO1\Parms,"BTWLANTxPriorityLo",0x00010001,0
+HKLM,Comm\Eaglend5SDIO1\Parms,"BTWLANTxPriorityHi",0x00010001,0
+HKLM,Comm\Eaglend5SDIO1\Parms,"BTWLANRxPriorityLo",0x00010001,0
+HKLM,Comm\Eaglend5SDIO1\Parms,"BTWLANRxPriorityHi",0x00010001,0
+
+; default TCP/IP parameters
+HKLM,Comm\Eaglend5SDIO1\Parms\TcpIp,"EnableDHCP",0x00010001,1
+HKLM,Comm\Eaglend5SDIO1\Parms\TcpIp,"DefaultGateway",0x00010000,""
+HKLM,Comm\Eaglend5SDIO1\Parms\TcpIp,"UseZeroBroadcast",0x00010001,0
+HKLM,Comm\Eaglend5SDIO1\Parms\TcpIp,"IpAddress",0x00010000,"0.0.0.0"
+HKLM,Comm\Eaglend5SDIO1\Parms\TcpIp,"Subnetmask",0x00010000,"255.255.255.0"
+
+
+
+
+

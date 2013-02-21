@@ -1,0 +1,35 @@
+!if 0
+Use of this source code is subject to the terms of the Microsoft end-user
+license agreement (EULA) under which you licensed this SOFTWARE PRODUCT.
+If you did not accept the terms of the EULA, you are not authorized to use
+this source code. For a copy of the EULA, please see the LICENSE.RTF on your
+install media.
+!endif
+!IF 0
+
+
+Module Name:
+
+    sources.
+
+Abstract:
+
+    This file specifies the target component being built and the list of
+    sources files needed to build that component.  Also specifies optional
+    compiler switches and libraries that are unique for the component being
+    built.
+
+
+!ENDIF
+
+TARGETNAME = s3c6410_disp_lib
+TARGETTYPE = LIBRARY
+
+RELEASETYPE = PLATFORM
+WINCEOEM = 1
+
+INCLUDES=$(INCLUDES);$(_TARGETPLATROOT)\src\inc;..\INC
+
+SOURCES=    \
+            s3c6410_display_con.c    \
+

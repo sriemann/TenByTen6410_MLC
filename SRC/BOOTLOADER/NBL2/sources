@@ -1,0 +1,51 @@
+!if 0
+Copyright (c) Microsoft Corporation.  All rights reserved.
+!endif
+!if 0
+Use of this source code is subject to the terms of the Microsoft end-user
+license agreement (EULA) under which you licensed this SOFTWARE PRODUCT.
+If you did not accept the terms of the EULA, you are not authorized to use
+this source code. For a copy of the EULA, please see the LICENSE.RTF on your
+install media.
+!endif
+
+TARGETNAME=nbl2
+TARGETTYPE=PROGRAM
+RELEASETYPE=PLATFORM
+EXEENTRY=StartUp
+
+WINCECPU=1
+NOMIPS16CODE=1
+
+INCLUDES=$(INCLUDES);$(_TARGETPLATROOT)\src\inc;    \
+                    $(_TARGETPLATROOT)\Src\Whimory\Inc;  \
+                    $(_TARGETPLATROOT)\Src\Whimory\Core\VFL
+                   
+ADEFINES=-pd "_TGTCPU SETS \"$(_TGTCPU)\"" $(ADEFINES)
+CDEFINES= $(CDEFINES) -DPPSH_PROTOCOL_NOTIMEOUT -DCOREDLL
+LDEFINES=-subsystem:native /DEBUG /DEBUGTYPE:CV /FIXED:NO
+
+TARGETLIBS= \
+    $(_PLATCOMMONLIB)\$(_CPUDEPPATH)\s3c6410_system_lib_sec_v1.lib    \
+	$(_PLATCOMMONLIB)\$(_CPUINDPATH)\oal_kitl.lib               \
+	$(_PLATCOMMONLIB)\$(_CPUINDPATH)\oal_log.lib                \
+	$(_PLATCOMMONLIB)\$(_CPUINDPATH)\oal_blnk.lib               \
+	$(_TARGETPLATROOT)\lib\$(_CPUINDPATH)\s3c6410_pm.lib  \
+	$(_COMMONOAKROOT)\lib\$(_CPUINDPATH)\ddk_io.lib           \
+	$(_COMMONOAKROOT)\lib\$(_CPUINDPATH)\gsnull.lib           \
+	$(_COMMONOAKROOT)\lib\$(_CPUINDPATH)\fulllibc.lib		\
+	$(_TARGETPLATROOT)\Src\Whimory\Lib\$(_CPUINDPATH)\WMRGlobal.lib		  \
+	$(_TARGETPLATROOT)\Src\Whimory\Lib\$(_CPUINDPATH)\$(WMR_FIL)_$(WMR_NAND_SUPPORT)_FIL.lib		  \
+#	$(_TARGETPLATROOT)\Src\Whimory\Lib\$(_CPUINDPATH)\WinCEWMROAM.lib	\
+	$(_TARGETPLATROOT)\Src\Whimory\Lib\$(_CPUINDPATH)\OSLessWMROAM.lib		  \
+	$(_PLATCOMMONLIB)\$(_CPUINDPATH)\oal_blmemory_arm.lib       \
+
+
+SOURCES= \
+    startup.s   \
+    util.s      \
+	debug.c	  \
+    main.c      \
+
+WINCETARGETFILES=nbl2_romimage
+

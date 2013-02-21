@@ -1,0 +1,152 @@
+;
+; Copyright (c) Microsoft Corporation.  All rights reserved.
+;
+; Use of this sample source code is subject to the terms of the 
+; Software License Agreement (SLA) under which you licensed this software product.
+; If you did not accept the terms of the license agreement, 
+; you are not authorized to use this sample source code. 
+; THE SAMPLE SOURCE CODE IS PROVIDED "AS IS", WITH NO WARRANTIES OR INDEMNITIES.
+;
+
+MEMORY
+
+IF IMGMULTIXIP !
+
+#define     NKNAME       NK
+#define     RAMNAME      RAM
+#define     NKSTART      80100000
+
+#define     NKLEN        04F00000    ; 79MB (Max size, to match image_cfg.* files. This will be auto-sized)
+#define     RAMSTART     85000000
+#define     RAMLEN       01900000    ; 25MB (Will be auto-sized from the end of NK)
+
+
+;   Single XIP
+;-----------------------------------------------------
+;   NAME        ADDRESS     SIZE            TYPE
+;-----------------------------------------------------
+    $(NKNAME)   $(NKSTART)  $(NKLEN)        RAMIMAGE
+    $(RAMNAME)  $(RAMSTART) $(RAMLEN)       RAM
+
+ENDIF
+
+
+IF IMGMULTIXIP
+
+#define     NKNAME          XIPKERNEL
+#define     SYSTEMNAME      NK
+#define     RAMNAME         RAM
+
+#define     NKSTART         80100000
+
+IF IMGPROFILER
+#define     NKLEN           00600000
+
+#define     SYSTEMSTART     80700000
+#define     SYSTEMLEN       038FC000
+
+#define     RAMSTART        80700000
+#define     RAMLEN          06200000
+
+ELSE
+#define     NKLEN           00400000
+
+#define     SYSTEMSTART     80500000
+#define     SYSTEMLEN       03AFC000
+
+#define     RAMSTART        80500000
+#define     RAMLEN          06400000
+
+ENDIF
+
+#define     CHAINSTART      83FFC000
+#define     CHAINLEN        00004000
+
+;   Multiple XIP
+;-----------------------------------------------------
+;   NAME            ADDRESS         SIZE            TYPE
+;-----------------------------------------------------
+    $(NKNAME)       $(NKSTART)      $(NKLEN)        RAMIMAGE
+    $(SYSTEMNAME)   $(SYSTEMSTART)  $(SYSTEMLEN)    NANDIMAGE
+    $(RAMNAME)      $(RAMSTART)     $(RAMLEN)       RAM
+    CHAIN           $(CHAINSTART)   $(CHAINLEN)     RESERVED
+
+ENDIF
+
+ 
+; Common RAM areas
+
+    AUD_DMA     80002000    00002000        RESERVED
+    TEMPS       80010000    00010000        RESERVED
+    ARGS        80020800    00000800        RESERVED
+    DBGSER_DMA  80022000    00002000        RESERVED
+    SER_DMA     80024000    00002000        RESERVED
+    IR_DMA      80026000    00002000        RESERVED
+    SLEEP       80028000    00002000        RESERVED
+    EDBG        80030000    00020000        RESERVED
+    DISPLAY     86900000    00C00000        RESERVED
+    MFC_JPEG    87500000    00800000        RESERVED
+    CMM         87D00000    00300000        RESERVED
+
+
+
+
+CONFIG                  ; Other System Configuration for making image
+
+    COMPRESSION=ON      ; Binary compression for minimizing download transfer data
+                        ; With Compression, single NK.BIN image can hang when sleep/wakeup
+    KERNELFIXUPS=ON     ; Kernel address fixup
+    AUTOSIZE=ON         ; ROM and RAM size will be resizing automatically for padding region
+
+IF IMGMULTIXIP
+
+    ROM_AUTOSIZE=OFF     ; you can measure how much rom is needed to each binary image if you set this flag as ON
+    RAM_AUTOSIZE=OFF     ; RAM size will be resizing automatically only when ROM_AUTOSIZE is ON
+    DLLADDR_AUTOSIZE=ON
+
+    XIPSCHAIN=$(CHAINSTART)
+
+    AUTOSIZE_ROMGAP=10000
+    AUTOSIZE_DLLADDRGAP=0
+    AUTOSIZE_DLLDATAADDRGAP=0
+    AUTOSIZE_DLLCODEADDRGAP=0
+
+;
+; ROMFLAGS is a bitmask of options for the kernel
+;   ROMFLAGS    0x0000
+;   ROMFLAGS    0x0001      Disallow Paging
+;   ROMFLAGS    0x0010      Trust Module only
+;
+    ROMFLAGS=0
+    
+    
+ELSE
+
+IF IMGTRUSTROMONLY
+    ROMFLAGS=10
+ELSE
+    ROMFLAGS=00
+ENDIF   ; END of IMGTRUSTROMONLY
+    ROMSTART = $(NKSTART)
+    ROMWIDTH = 32
+    ROMSIZE = $(NKLEN)
+
+ENDIF   ; END of IMGMULTIXIP
+
+IF IMGPROFILER
+    PROFILE=ON
+ELSE
+    PROFILE=OFF
+ENDIF
+
+IF PRJ_ENABLE_FSMOUNTASROOT
+                                ; Flash file system at Root. 
+    FSRAMPERCENT=0x00000010     ; ObjectStore RAM percentage can be very small, giving more program RAM
+ELSE
+    FSRAMPERCENT=0x25252525     ; Set memory division to ~15% for store and remainder for program RAM
+ENDIF
+
+
+IF IMGMULTIXIP
+#include "$(_TARGETPLATROOT)\FILES\MultipleXIP.bib"
+ENDIF

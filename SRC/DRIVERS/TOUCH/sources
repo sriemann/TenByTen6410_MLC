@@ -1,0 +1,39 @@
+!if 0
+Copyright (c) 2007. Samsung Electronics, co. ltd  All rights reserved.
+!endif
+
+!if "$(BSP_NOTOUCH)" == "1"
+SKIPBUILD=1
+!endif
+
+SYNCHRONIZE_DRAIN = 1
+
+TARGETNAME = s3c6410_touch
+TARGETTYPE = DYNLINK
+
+RELEASETYPE = PLATFORM
+DLLENTRY = _DllMainCRTStartup
+
+PREPROCESSDEFFILE = 1
+
+DEFFILE=$(_COMMONOAKROOT)\inc\touch.def
+
+INCLUDES = $(INCLUDES);$(_TARGETPLATROOT)\src\inc;
+
+TARGETLIBS =    \
+    $(_COMMONSDKROOT)\lib\$(_CPUINDPATH)\coredll.lib    \
+    $(_COMMONOAKROOT)\lib\$(_CPUINDPATH)\ceddk.lib    \
+
+SOURCELIBS =    \
+#    $(_COMMONOAKROOT)\lib\$(_CPUINDPATH)\tch_cal.lib    \
+#    $(_COMMONOAKROOT)\lib\$(_CPUINDPATH)\tchmdd.lib
+
+SOURCES =    \
+    tchmain.c  \
+    tchbasic.c \
+    calibrat.c   \
+    largenum.c   \
+    s3c6410_touch.cpp
+
+
+

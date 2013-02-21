@@ -1,0 +1,24 @@
+!if 0
+    File:   sources
+
+    Author: AP Development Team
+
+	COPYRIGHT (c) 2006 SAMSUNG ELECTRONICS CO., LTD. ALL RIGHTS RESERVED
+!endif
+
+TARGETNAME=PseudoVFL
+
+RELEASETYPE=CUSTOM
+
+TARGETTYPE=LIBRARY
+
+WINCEOEM=1
+
+TARGETPATH=..\..\Lib\$(_TGTCPU)\$(WINCEDEBUG)
+
+INCLUDES=$(INCLUDES);..\inc;..\..\inc;..\..\Core\VFL;..\..\OAM\WinCE;
+
+CDEFINES=$(CDEFINES)
+
+SOURCES= \
+        PseudoVFL.c  \

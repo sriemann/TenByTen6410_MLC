@@ -1,0 +1,44 @@
+;
+; Copyright (c) Microsoft Corporation.  All rights reserved.
+;
+;
+; Use of this source code is subject to the terms of the Microsoft end-user
+; license agreement (EULA) under which you licensed this SOFTWARE PRODUCT.
+; If you did not accept the terms of the EULA, you are not authorized to use
+; this source code. For a copy of the EULA, please see the LICENSE.RTF on your
+; install media.
+;
+; NOTE: The Steppingstone loader can only be 4096 bytes in length max.  Romimage
+;       will need to create and page-align the .pdata section and the linker generates
+;       a 1-page header on the file.  In this .bib file we'll call the size 0x3000,
+;       but we'll post-process the .nb0 file to remove the .pdata section and the header.
+;
+; NOTE: The Steppingstone loader and the IPL are concatenated and stored in the
+;       first two SmartMedia NAND flash blocks.  If the size of either loader is
+;       altered in the .bib file, the bootloader code will need to be updated as
+;       it makes an assumption about the first two NAND flash blocks being reserved.
+;
+
+MEMORY
+;   Name     Start      Size    Type
+; -------   --------  --------  ----
+	STEPLDR_IROM_SD    0c000000  00002000  RAMIMAGE
+	RAM		500F0000	0000C000	RAM			; RAM	: 48 KB
+	STACK		500FC000	00004000	RESERVED		; Stack	: 16 KB (sharing with Eboot)
+
+CONFIG
+	COMPRESSION = OFF
+	PROFILE      = OFF
+	KERNELFIXUPS = ON
+	ROMOFFSET=FFFFF000
+
+	ROMSTART = 0C000000
+ENDIF
+	ROMWIDTH = 32
+	ROMSIZE  = 00002000
+
+MODULES
+;   Name        Path                                                               Memory Type
+;   ----------  --------------------------------------------------------------     -----------
+    nk.exe      $(_TARGETPLATROOT)\target\$(_TGTCPU)\$(WINCEDEBUG)\Stepldr_IROM_SD.exe     STEPLDR_IROM_SD
+

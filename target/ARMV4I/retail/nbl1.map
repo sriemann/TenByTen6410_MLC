@@ -1,0 +1,58 @@
+ nbl1
+
+ Timestamp is 5125b2a3 (Thu Feb 21 13:37:39 2013)
+
+ Preferred load address is 00010000
+
+ Start         Length     Name                   Class
+ 0001:00000000 00000420H .astart                 CODE
+ 0001:00000420 00000060H .rdata                  CODE
+ 0001:00000480 00000021H .rdata$debug            CODE
+ 0001:000004a4 00000980H .text                   CODE
+ 0001:00000e24 00000004H .xdata                  CODE
+ 0001:00000e28 00000014H .idata$2                CODE
+ 0001:00000e3c 00000014H .idata$3                CODE
+ 0001:00000e50 00000008H .idata$4                CODE
+ 0001:00000e58 0000000cH .idata$6                CODE
+ 0001:00000e64 00000000H .edata                  CODE
+ 0002:00000000 00000008H .idata$5                DATA
+ 0002:00000008 00000008H .data                   DATA
+ 0002:00000010 00000002H .bss                    DATA
+ 0003:00000000 00000058H .pdata                  DATA
+
+  Address         Publics by Value              Rva+Base       Lib:Object
+
+ 0000:00000000       ___safe_se_handler_table   00000000     <absolute>
+ 0000:00000000       ___safe_se_handler_count   00000000     <absolute>
+ 0001:00000000       StartUp                    00011000 f   startup.obj
+ 0001:000001fc       System_SetSyncMode         000111fc f   startup.obj
+ 0001:00000240       System_SetAsyncMode        00011240 f   startup.obj
+ 0001:0000028c       InitDMC                    0001128c f   startup.obj
+ 0001:0000043c       pTOC                       0001143c     main.obj
+ 0001:00000440       aSlotTable                 00011440     utils.obj
+ 0001:000004a4       main                       000114a4 f   main.obj
+ 0001:000005d4       NAND_Reset                 000115d4 f   nand.obj
+ 0001:00000640       CorrectECC8Data            00011640 f   nand.obj
+ 0001:00000810       Read_DeviceID              00011810 f   nand.obj
+ 0001:000008f4       NAND_Init                  000118f4 f   nand.obj
+ 0001:00000988       NAND_Read                  00011988 f   nand.obj
+ 0001:00000c60       _Read_512Byte              00011c60 f   nand_opt.obj
+ 0001:00000ca0       _Write_Dummy_Byte_AllFF    00011ca0 f   nand_opt.obj
+ 0001:00000cc8       Port_Init                  00011cc8 f   utils.obj
+ 0001:00000d24       Led_Display                00011d24 f   utils.obj
+ 0001:00000d5c       __GSHandlerCheckCommon     00011d5c f   fulllibc:gshandler.obj
+ 0001:00000d98       __GSHandlerCheck           00011d98 f   fulllibc:gshandler.obj
+ 0001:00000dbc       __security_check_cookie    00011dbc f   fulllibc:armsecgs.obj
+ 0001:00000dd0       __gsfailure                00011dd0 f   fulllibc:armsecgs.obj
+ 0001:00000e14       __report_gsfailure         00011e14 f   corelibc:COREDLL.dll
+ 0001:00000e28       __IMPORT_DESCRIPTOR_COREDLL 00011e28     corelibc:COREDLL.dll
+ 0001:00000e3c       __NULL_IMPORT_DESCRIPTOR   00011e3c     corelibc:COREDLL.dll
+ 0002:00000000       __imp___report_gsfailure   00012000     corelibc:COREDLL.dll
+ 0002:00000004       \177COREDLL_NULL_THUNK_DATA 00012004     corelibc:COREDLL.dll
+ 0002:00000008       __security_cookie          00012008     corelibc:seccinit.obj
+ 0002:0000000c       __security_cookie_complement 0001200c     corelibc:seccinit.obj
+
+ entry point at        0001:00000000
+
+ Static symbols
+

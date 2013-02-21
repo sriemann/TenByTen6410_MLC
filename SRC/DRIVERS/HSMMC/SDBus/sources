@@ -1,0 +1,61 @@
+!if 0
+Copyright (c) Microsoft Corporation.  All rights reserved.
+!endif
+!if 0
+Use of this source code is subject to the terms of the Microsoft end-user
+license agreement (EULA) under which you licensed this SOFTWARE PRODUCT.
+If you did not accept the terms of the EULA, you are not authorized to use
+this source code. For a copy of the EULA, please see the LICENSE.RTF on your
+install media.
+!endif
+
+# Copyright (c) 2001-2004 BSQUARE Corporation. All rights reserved
+# DO NOT REMOVE --- BEGIN EXTERNALLY DEVELOPED SOURCE CODE ID 40973--- DO NOT REMOVE
+
+# Bus Driver files
+
+!if ("$(BSP_NOHSMMC_CH0)"=="1")&&("$(BSP_NOHSMMC_CH1)"=="1")
+SKIPBUILD=1
+!endif
+
+SYNCHRONIZE_DRAIN=1
+RELEASETYPE=PLATFORM
+TARGETDEFNAME=SDBus2
+DEFFILE=$(TARGETDEFNAME).def
+
+TARGETNAME=SDBus2
+TARGETTYPE=DYNLINK
+
+DLLENTRY=DllEntry
+
+!IF "$(BSP_MOVINAND)" == "1"
+CDEFINES=$(CDEFINES) -D_FOR_MOVI_NAND_
+!ENDIF
+!IF "$(BSP_NO_SDIO_WIFI)" == "1"
+CDEFINES=$(CDEFINES) -D_MMC_SPEC_42_ -D_FASTPATH_ENABLE_
+!ELSE
+CDEFINES=$(CDEFINES) -D_MMC_SPEC_42_ -D_FASTPATH_ENABLE_ -D_SDIO_WIFI_
+!ENDIF
+TARGETLIBS= \
+    $(_COMMONOAKROOT)\lib\$(_CPUINDPATH)\ceddk.lib   \
+    $(_COMMONSDKROOT)\lib\$(_CPUINDPATH)\coredll.lib
+
+SOURCELIBS=    \
+    $(_COMMONOAKROOT)\lib\$(_CPUINDPATH)\sdcardlib.lib \
+    $(_COMMONOAKROOT)\lib\$(_CPUINDPATH)\sdhclib.lib \
+    $(_COMMONOAKROOT)\lib\$(_CPUINDPATH)\sdbus.lib \
+    $(_COMMONOAKROOT)\lib\$(_CPUINDPATH)\defbuslib.lib    \
+
+INCLUDES=..\HSMMCCh1\s3c6410_hsmmc_lib;$(_TARGETPLATROOT)\src\inc;
+
+SOURCES = sdbusreq.cpp \
+    sddevice.cpp \
+    sdbus.cpp \
+    sdslot.cpp \
+    sdclient.cpp \
+    sddevinf.cpp \
+    sdiofeat.cpp \
+    sdworki.cpp \
+    sddebug.cpp \
+
+# DO NOT REMOVE --- END EXTERNALLY DEVELOPED SOURCE CODE ID --- DO NOT REMOVE

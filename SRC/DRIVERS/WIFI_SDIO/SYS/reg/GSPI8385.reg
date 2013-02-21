@@ -1,0 +1,85 @@
+; Copyright (c) 2005 Marvell Corporation.  All rights reserved.
+;
+;
+; THIS CODE AND INFORMATION IS PROVIDED "AS IS" WITH
+; WARRANTY OF ANY KIND, EITHER EXPRESSED OR IMPLIED, 
+; INCLUDING BUT NOT LIMITED TO THE IMPLIED WARRANTIES OF 
+; MERCHANTABILITY AND/OR FITNESS FOR A PARTICULAR PURPOSE.
+;
+
+
+; registry keys for the NDIS driver
+[HKEY_LOCAL_MACHINE\Comm\GSPI8385]
+   "DisplayName"="Marvell 802.11 GSPI Adapter"
+   "Group"="NDIS"
+   "ImagePath"="GSPI8385.dll"
+
+[HKEY_LOCAL_MACHINE\Comm\GSPI8385\Linkage]
+   "Route"=multi_sz:"GSPI83851"
+
+    ; instance 1 information
+[HKEY_LOCAL_MACHINE\Comm\GSPI83851]
+   "DisplayName"="Marvell 802.11 GSPI Adapter"
+   "Group"="NDIS"
+   "ImagePath"="GSPI8385.dll"
+	
+    ; instance 1 parameters
+[HKEY_LOCAL_MACHINE\Comm\GSPI83851\Parms]
+   "BusNumber"=dword:0
+   "BusType"=dword:0
+IF _WINCEOSVER=400
+      ; .NET needs this bus type
+   "BusType"=dword:0
+ENDIF
+
+IF _WINCEOSVER=410
+       ; .NET needs this bus type
+   "BusType"=dword:0
+ENDIF
+
+IF _WINCEOSVER=420
+       ; .NET needs this bus type
+   "BusType"=dword:0
+ENDIF
+
+
+IF _WINCEOSVER=300
+       ; CE 3.0 or PocketPC needs this bus type
+   "BusType"=dword:8
+ENDIF
+
+
+    ; TCPIP linkage to instance 1 adapter
+[HKEY_LOCAL_MACHINE\Comm\Tcpip\Linkage]
+    "Bind"=multi_sz:"ppp","GSPI83851"
+
+    ; default TCPIP settings for this instance
+[HKEY_LOCAL_MACHINE\Comm\GSPI83851\Parms\TcpIp]
+   "EnableDHCP"=dword:1
+   ; This should be MULTI_SZ
+   "DefaultGateway"=""
+   ; Use zero for broadcast address? (or 255.255.255.255)
+   "UseZeroBroadcast"=dword:0
+   ; Thus should be MULTI_SZ, the IP address list
+   "IpAddress"="0.0.0.0"
+   ; This should be MULTI_SZ, the subnet masks for the above IP addresses
+   "Subnetmask"="0.0.0.0"
+
+;[HKEY_LOCAL_MACHINE\Drivers\BuiltIn\GSPI8385]
+;   "Order"=dword:21
+;   "Dll"="GSPI8385.dll"     ; use the "streams" interface portion to load the NDIS portion
+;   "Prefix"="NDL"
+       ; a dd instance key for each instance that can be added
+       ; "InstanceX" = "<Miniport Name>:<Miniport Instance>"
+   ;"Instance0"="GSPI8385:GSPI83851"      ; first instance - must match \comm\GSPI8385X 
+   ;"Instance1"="GSPI8385:GSPI83852"      ; second instance
+   
+[HKEY_LOCAL_MACHINE\Comm\GSPI83851\Parms]
+   "PowerMode"=dword:0
+   "ExtendedScan"=dword:0
+   "FragThsd"=dword:2000
+   "RTSThsd"=dword:2000
+   "ESSID_32"=dword:1
+   "Allow_Multicast"=dword:0
+
+ 

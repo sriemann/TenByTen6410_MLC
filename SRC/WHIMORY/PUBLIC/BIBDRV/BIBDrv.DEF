@@ -1,0 +1,13 @@
+; Copyright (c) 1999-2000 Microsoft Corporation.  All rights reserved.
+LIBRARY 	BIBDrv
+
+EXPORTS DSK_Init
+	DSK_Deinit
+	DSK_Open
+	DSK_Close
+	DSK_Read
+	DSK_Write
+	DSK_Seek
+	DSK_IOControl
+	DSK_PowerDown
+	DSK_PowerUp

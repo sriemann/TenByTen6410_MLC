@@ -1,0 +1,150 @@
+ s3c6410_cmm
+
+ Timestamp is 5125b2a0 (Thu Feb 21 13:37:36 2013)
+
+ Preferred load address is 10000000
+
+ Start         Length     Name                   Class
+ 0001:00000000 000010acH .rdata                  CODE
+ 0001:000010ac 00000028H .rdata$debug            CODE
+ 0001:000010d4 00001078H .text                   CODE
+ 0001:0000214c 00000074H .xdata                  CODE
+ 0001:000021c0 00000028H .idata$2                CODE
+ 0001:000021e8 00000014H .idata$3                CODE
+ 0001:000021fc 0000004cH .idata$4                CODE
+ 0001:00002248 00000016H .idata$6                CODE
+ 0001:00002260 00000097H .edata                  CODE
+ 0002:00000000 0000004cH .idata$5                DATA
+ 0002:00000060 0000004cH .bss                    DATA
+ 0003:00000000 000000b0H .pdata                  DATA
+
+  Address         Publics by Value              Rva+Base       Lib:Object
+
+ 0000:00000000       ___safe_se_handler_count   00000000     <absolute>
+ 0000:00000000       ___safe_se_handler_table   00000000     <absolute>
+ 0001:000000b0       ??_C@_1FA@MILLCGCH@?$AA?$FL?$AAC?$AAM?$AAM?$AA_?$AAD?$AAe?$AAI?$AAn?$AAi?$AAt?$AA?$FN?$AA?5?$AAC?$AAM?$AAM?$AA?5?$AAI?$AAn?$AAv?$AAa?$AAl?$AAi?$AAd?$AA?5?$AAI?$AAn?$AAp?$AAu?$AAt?$AA?5?$AAH@ 100010b0     CMMDriver.obj
+ 0001:00000100       ??_C@_0BJ@NMDIMELJ@?$FLCMM_DeInit?$FN?5CMM_Deinit?6?$AA@ 10001100     CMMDriver.obj
+ 0001:00000120       ??_C@_0EE@HLDNDLMP@?$FL?$CFd?$FNInsertNodeToAllocList?$CIp_addr@ 10001120     CMMDriver.obj
+ 0001:00000164       ??_C@_0BL@EEOMHDPD@end?5InsertNodeToAllocList?6?$AA@ 10001164     CMMDriver.obj
+ 0001:00000180       ??_C@_0DH@KIDNLNAL@?$FL?$CFd?$FNInsertNodeToFreeList?$CIstartAd@ 10001180     CMMDriver.obj
+ 0001:000001b8       ??_C@_1GA@DMCKNKHG@?$AAC?$AAM?$AAM?$AA?5?$AAD?$AAe?$AAl?$AAe?$AAt?$AAe?$AAN?$AAo?$AAd?$AAe?$AAF?$AAr?$AAo?$AAm?$AAA?$AAl?$AAl?$AAo?$AAc?$AAL?$AAi?$AAs?$AAt?$AA?5?$AAe?$AAx?$AAc?$AAe@ 100011b8     CMMDriver.obj
+ 0001:00000218       ??_C@_1FO@IKPMNJOF@?$AA?$FL?$AAC?$AAM?$AAM?$AA?$FN?$AA?5?$AAD?$AAe?$AAl?$AAe?$AAt?$AAe?$AAN?$AAo?$AAd?$AAe?$AAF?$AAr?$AAo?$AAm?$AAA?$AAl?$AAl?$AAo?$AAc?$AAL?$AAi?$AAs?$AAt?$AA?5?$AA?3?$AA?3@ 10001218     CMMDriver.obj
+ 0001:00000278       ??_C@_0EG@DNFFJCJM@?$FL?$CFd?$FNDeleteNodeFromAllocList?$CIp_ad@ 10001278     CMMDriver.obj
+ 0001:000002c0       ??_C@_1FO@JHAGLLAK@?$AAC?$AAM?$AAM?$AA?5?$AAD?$AAe?$AAl?$AAe?$AAt?$AAe?$AAN?$AAo?$AAd?$AAe?$AAF?$AAr?$AAo?$AAm?$AAF?$AAr?$AAe?$AAe?$AAL?$AAi?$AAs?$AAt?$AA?5?$AAe?$AAx?$AAc?$AAe?$AAp@ 100012c0     CMMDriver.obj
+ 0001:00000320       ??_C@_1FM@BHBOPFCM@?$AA?$FL?$AAC?$AAM?$AAM?$AA?$FN?$AA?5?$AAD?$AAe?$AAl?$AAe?$AAt?$AAe?$AAN?$AAo?$AAd?$AAe?$AAF?$AAr?$AAo?$AAm?$AAF?$AAr?$AAe?$AAe?$AAL?$AAi?$AAs?$AAt?$AA?5?$AA?3?$AA?3?$AA?5@ 10001320     CMMDriver.obj
+ 0001:0000037c       ??_C@_0DJ@PFCEDBHL@?$FL?$CFd?$FNDeleteNodeFromFreeList?$CIstart@ 1000137c     CMMDriver.obj
+ 0001:000003b8       ??_C@_1FA@BPCCNCCA@?$AAC?$AAM?$AAM?$AA?5?$AAR?$AAe?$AAl?$AAe?$AAa?$AAs?$AAe?$AAA?$AAl?$AAl?$AAo?$AAc?$AAM?$AAe?$AAm?$AA?5?$AAe?$AAx?$AAc?$AAe?$AAp?$AAt?$AAi?$AAo?$AAn?$AA?5?$AAo?$AAc@ 100013b8     CMMDriver.obj
+ 0001:00000408       ??_C@_1MI@NOIONJFH@?$AA?$FL?$AA?$CF?$AAd?$AA?$FN?$AA?$FL?$AAC?$AAM?$AAM?$AA_?$AAC?$AAl?$AAo?$AAs?$AAe?$AA?$FN?$AA?5?$AAC?$AAM?$AAM?$AA?5?$AAV?$AAi?$AAr?$AAt?$AAu?$AAa?$AAl?$AAF?$AAr?$AAe?$AAe?$AAE@ 10001408     CMMDriver.obj
+ 0001:000004d0       ??_C@_0BE@EPNHGIFD@decommit?5CodecAddr?6?$AA@ 100014d0     CMMDriver.obj
+ 0001:000004e8       ??_C@_0EK@OIIIDLKA@find?5merge?5area?5?$CB?$CB?5?$CI?5node1?9?$DOstar@ 100014e8     CMMDriver.obj
+ 0001:00000538       ??_C@_0EK@POAKJODF@find?5merge?5area?5?$CB?$CB?5?$CI?5node1?9?$DOstar@ 10001538     CMMDriver.obj
+ 0001:00000584       ??_C@_0CF@FDACJDCL@match?5?3?5startAddr?$CI0x?$CF08x?$CJ?5size?$CI?$CF@ 10001584     CMMDriver.obj
+ 0001:000005ac       ??_C@_1CK@KMGEIFME@?$AAA?$AAl?$AAl?$AA?5?$AAm?$AAe?$AAm?$AAo?$AAr?$AAy?$AA?5?$AAi?$AAs?$AA?5?$AAg?$AAo?$AAn?$AAe?$AA?$AN?$AA?6?$AA?$AA@ 100015ac     CMMDriver.obj
+ 0001:000005d8       ??_C@_0BE@KKEOMGMH@request?5Size?5?3?5?$CFld?6?$AA@ 100015d8     CMMDriver.obj
+ 0001:000005ec       ??_C@_0BN@BJHDKKMI@v_addr?5?3?50x?$CFx?5p_addr?5?3?50x?$CFx?6?$AA@ 100015ec     CMMDriver.obj
+ 0001:00000610       ??_C@_1EI@GDABJLCH@?$AA?$FL?$AAC?$AAM?$AAM?$AA?3?$AAE?$AAR?$AAR?$AA?$FN?$AA?5?$AAT?$AAh?$AAe?$AAr?$AAe?$AA?5?$AAi?$AAs?$AA?5?$AAn?$AAo?$AA?5?$AAm?$AAo?$AAr?$AAe?$AA?5?$AAm?$AAe?$AAm?$AAo?$AAr@ 10001610     CMMDriver.obj
+ 0001:00000658       ??_C@_0BC@ENJJAMPE@GetCodecVirAddr?5?6?$AA@ 10001658     CMMDriver.obj
+ 0001:0000066c       ??_C@_0DB@HGEAOJGP@?5?5?5?5?5?$FLFreeList?$FN?$FL?$CFd?$FN?5startAddr?5?3?5@ 1000166c     CMMDriver.obj
+ 0001:000006a0       ??_C@_0FJ@FJBNEPNG@?5?5?5?5?5?$FLAllocList?$FN?$FL?$CFd?$FN?5inst_no?5?3?5?$CF@ 100016a0     CMMDriver.obj
+ 0001:00000700       ??_C@_1EK@BGMDLGF@?$AA?$FL?$AAC?$AAM?$AAM?$AA_?$AAI?$AAn?$AAi?$AAt?$AA?$FN?$AA?5?$AAM?$AAm?$AAM?$AAa?$AAp?$AAI?$AAo?$AAS?$AAp?$AAa?$AAc?$AAe?$AA?5?$AAf?$AAa?$AAi?$AAl?$AAe?$AAd?$AA?3?$AA?5@ 10001700     CMMDriver.obj
+ 0001:00000750       ??_C@_1FM@LEPNBNGB@?$AA?$FL?$AAC?$AAM?$AAM?$AA_?$AAI?$AAn?$AAi?$AAt?$AA?$FN?$AA?5?$AAC?$AAM?$AAM?$AA?5?$AAM?$AAu?$AAt?$AAe?$AAx?$AA?5?$AAI?$AAn?$AAi?$AAt?$AAi?$AAa?$AAl?$AAi?$AAz?$AAe?$AA?5@ 10001750     CMMDriver.obj
+ 0001:000007ac       ??_C@_0N@NJBPOID@?6?$FLCMM_Init?$FN?6?$AA@ 100017ac     CMMDriver.obj
+ 0001:000007c0       ??_C@_0FJ@CAJGGBDL@?6?$CK?$CK?$CK?$CK?$CK?$CK?$CK?$CK?$CK?$CK?$CK?$CK?$CK?$CK?$CK?$CK?$CK?$CK?$CK?$CK?$CK?$CK?$CK?$CK?$CK?$CK?$CK?$CK?$CK?6?$FL@ 100017c0     CMMDriver.obj
+ 0001:00000820       ??_C@_1FA@KPGBBMNI@?$AA?$FL?$AAC?$AAM?$AAM?$AA_?$AAI?$AAn?$AAi?$AAt?$AA?$FN?$AA?5?$AAC?$AAo?$AAd?$AAe?$AAc?$AAM?$AAe?$AAm?$AA?5?$AAa?$AAl?$AAl?$AAo?$AAc?$AAa?$AAt?$AAo?$AAp?$AAn?$AA?5?$AAf@ 10001820     CMMDriver.obj
+ 0001:00000870       ??_C@_1EC@ELBEPCHB@?$AA?$FL?$AAC?$AAM?$AAM?$AA_?$AAO?$AAp?$AAe?$AAn?$AA?$FN?$AA?5?$AAC?$AAM?$AAM?$AA?5?$AAM?$AAu?$AAt?$AAe?$AAx?$AA?5?$AAL?$AAo?$AAc?$AAk?$AA?5?$AAF?$AAa?$AAi?$AAl?$AA?$AN?$AA?6@ 10001870     CMMDriver.obj
+ 0001:000008b4       ??_C@_0CE@JJOGNEF@?$FL?$CFd?$FN?$FLCMM?5Close?$FN?5MergeFragmentati@ 100018b4     CMMDriver.obj
+ 0001:000008d8       ??_C@_1FC@IJOAPHMP@?$AAC?$AAM?$AAM?$AA_?$AAC?$AAl?$AAo?$AAs?$AAe?$AA?3?$AAE?$AAx?$AAc?$AAe?$AAp?$AAt?$AAi?$AAo?$AAn?$AA?5?$AAi?$AAn?$AA?5?$AAr?$AAe?$AAl?$AAe?$AAa?$AAs?$AAi?$AAn?$AAg@ 100018d8     CMMDriver.obj
+ 0001:0000092c       ??_C@_0BC@BKMKECKC@?$FL?$CFd?$FN?$FLCMM?5Close?$FN?5?6?$AA@ 1000192c     CMMDriver.obj
+ 0001:00000940       ??_C@_0ED@NJDEKKDP@?$FLCMM_Close?$FN?5CodecMem?9?$DOinst_no?5?3?5@ 10001940     CMMDriver.obj
+ 0001:00000988       ??_C@_1EE@BAMAGDMK@?$AA?$FL?$AAC?$AAM?$AAM?$AA_?$AAC?$AAl?$AAo?$AAs?$AAe?$AA?$FN?$AA?5?$AAC?$AAM?$AAM?$AA?5?$AAM?$AAu?$AAt?$AAe?$AAx?$AA?5?$AAL?$AAo?$AAc?$AAk?$AA?5?$AAF?$AAa?$AAi?$AAl?$AA?$AN@ 10001988     CMMDriver.obj
+ 0001:000009d0       ??_C@_1FO@KJOBELDJ@?$AA?$FL?$AAC?$AAM?$AAM?$AA_?$AAI?$AAO?$AAC?$AAo?$AAn?$AAt?$AAr?$AAo?$AAl?$AA?$FN?$AA?5?$AAI?$AAn?$AAv?$AAa?$AAl?$AAi?$AAd?$AA?5?$AAI?$AAn?$AAp?$AAu?$AAt?$AA?5?$AAb?$AAu@ 100019d0     CMMDriver.obj
+ 0001:00000a30       ??_C@_1HG@FLBBLHAA@?$AA?$FL?$AAC?$AAM?$AAM?$AA_?$AAI?$AAO?$AAC?$AAo?$AAn?$AAt?$AAr?$AAo?$AAl?$AA?$FN?$AA?5?$AAI?$AAO?$AAC?$AAT?$AAL?$AA_?$AAC?$AAO?$AAD?$AAE?$AAC?$AA_?$AAM?$AAE?$AAM?$AA_@ 10001a30     CMMDriver.obj
+ 0001:00000aa8       ??_C@_1GO@DMANMDPI@?$AA?$FL?$AAC?$AAM?$AAM?$AA_?$AAI?$AAO?$AAC?$AAo?$AAn?$AAt?$AAr?$AAo?$AAl?$AA?$FN?$AA?3?$AA?5?$AAe?$AAx?$AAc?$AAe?$AAp?$AAt?$AAi?$AAo?$AAn?$AA?5?$AAi?$AAn?$AA?5?$AAI?$AAO@ 10001aa8     CMMDriver.obj
+ 0001:00000b18       ??_C@_1HC@CNGNMNJL@?$AA?$FL?$AAC?$AAM?$AAM?$AA_?$AAI?$AAO?$AAC?$AAo?$AAn?$AAt?$AAr?$AAo?$AAl?$AA?$FN?$AA?3?$AA?5?$AAM?$AAe?$AAm?$AAo?$AAr?$AAy?$AA?5?$AAV?$AAi?$AAr?$AAt?$AAu?$AAa?$AAl?$AAC@ 10001b18     CMMDriver.obj
+ 0001:00000b90       ??_C@_1HC@DPBFLKNF@?$AA?$FL?$AAC?$AAM?$AAM?$AA_?$AAI?$AAO?$AAC?$AAo?$AAn?$AAt?$AAr?$AAo?$AAl?$AA?$FN?$AA?3?$AA?5?$AAM?$AAe?$AAm?$AAo?$AAr?$AAy?$AA?5?$AAV?$AAi?$AAr?$AAt?$AAu?$AAa?$AAl?$AAA@ 10001b90     CMMDriver.obj
+ 0001:00000c04       ??_C@_0CI@DLMNDLBH@?$FLIOCTL_CODEC_MEM_ALLOC?$FN?5buffSize@ 10001c04     CMMDriver.obj
+ 0001:00000c2c       ??_C@_0CM@JMEBGKLD@?6?$FL?$CFd?$FN?$FLCMM_IOControl?$FN?5IOCTL_CODEC@ 10001c2c     CMMDriver.obj
+ 0001:00000c58       ??_C@_0CL@DLEINEJB@?6?$FL?$CFd?$FN?$FLCMM_IOControl?$FN?5IOCTL_CODEC@ 10001c58     CMMDriver.obj
+ 0001:00000c84       ??_C@_0CE@BFMDEMAI@?$FLCMM_IOControl?$FN?5free?5adder?5?3?50x?$CF@ 10001c84     CMMDriver.obj
+ 0001:00000ca8       ??_C@_0DF@DABDCJEH@?6?$FLCMM_IOControl?$FN?5IOCTL_CODEC_CAC@ 10001ca8     CMMDriver.obj
+ 0001:00000ce0       ??_C@_1JC@HJELABBA@?$AA?$FL?$AAC?$AAM?$AAM?$AA_?$AAI?$AAO?$AAC?$AAo?$AAn?$AAt?$AAr?$AAo?$AAl?$AA?$FN?$AA?5?$AAI?$AAO?$AAC?$AAT?$AAL?$AA_?$AAC?$AAO?$AAD?$AAE?$AAC?$AA_?$AAG?$AAE?$AAT?$AA_@ 10001ce0     CMMDriver.obj
+ 0001:00000d78       ??_C@_1HE@DMHGGBGK@?$AA?$FL?$AAC?$AAM?$AAM?$AA_?$AAI?$AAO?$AAC?$AAo?$AAn?$AAt?$AAr?$AAo?$AAl?$AA?$FN?$AA?3?$AA?5?$AAe?$AAx?$AAc?$AAe?$AAp?$AAt?$AAi?$AAo?$AAn?$AA?5?$AAi?$AAn?$AA?5?$AAI?$AAO@ 10001d78     CMMDriver.obj
+ 0001:00000df0       ??_C@_1GA@BCLCONAB@?$AA?$FL?$AAC?$AAM?$AAM?$AA_?$AAI?$AAO?$AAC?$AAo?$AAn?$AAt?$AAr?$AAo?$AAl?$AA?$FN?$AA?5?$AAi?$AAn?$AAv?$AAa?$AAl?$AAi?$AAd?$AA?5?$AAv?$AAi?$AAr?$AAt?$AAu?$AAa?$AAl?$AA?5@ 10001df0     CMMDriver.obj
+ 0001:00000e50       ??_C@_0CP@LHDGOBKD@?6?$FLCMM_IOControl?$FN?5IOCTL_CODEC_CAC@ 10001e50     CMMDriver.obj
+ 0001:00000e80       ??_C@_1GI@NCHHDAFE@?$AA?$FL?$AA?$CF?$AAd?$AA?$FN?$AA?$FL?$AAC?$AAM?$AAM?$AA_?$AAI?$AAO?$AAC?$AAo?$AAn?$AAt?$AAr?$AAo?$AAl?$AA?$FN?$AA?5?$AAi?$AAn?$AAv?$AAa?$AAl?$AAi?$AAd?$AA?5?$AAv?$AAi?$AAr?$AAt@ 10001e80     CMMDriver.obj
+ 0001:00000ee8       ??_C@_0CK@PJNNPLDL@?6?$FLCMM_IOControl?$FN?5IOCTL_CODEC_CAC@ 10001ee8     CMMDriver.obj
+ 0001:00000f14       ??_C@_0CF@PKEMPFGL@?$FLCMM_IOControl?$FN?5flush?5adder?5?3?50x@ 10001f14     CMMDriver.obj
+ 0001:00000f40       ??_C@_1FA@CHMPCAOM@?$AA?$FL?$AAC?$AAM?$AAM?$AA_?$AAI?$AAO?$AAC?$AAo?$AAn?$AAt?$AAr?$AAo?$AAl?$AA?$FN?$AA?5?$AAC?$AAM?$AAM?$AA?5?$AAI?$AAn?$AAv?$AAa?$AAl?$AAi?$AAd?$AA?5?$AAI?$AAO?$AAC?$AAo@ 10001f40     CMMDriver.obj
+ 0001:00000f90       ??_C@_1EM@EOECPAGC@?$AA?$FL?$AAC?$AAM?$AAM?$AA_?$AAI?$AAO?$AAC?$AAo?$AAn?$AAt?$AAr?$AAo?$AAl?$AA?$FN?$AA?5?$AAC?$AAM?$AAM?$AA?5?$AAM?$AAu?$AAt?$AAe?$AAx?$AA?5?$AAL?$AAo?$AAc?$AAk?$AA?5?$AAF@ 10001f90     CMMDriver.obj
+ 0001:00000fe0       ??_C@_1FG@HNKEAJ@?$AA?$FL?$AAC?$AAM?$AAM?$AA_?$AAI?$AAO?$AAC?$AAo?$AAn?$AAt?$AAr?$AAo?$AAl?$AA?$FN?$AA?5?$AAC?$AAM?$AAM?$AA?5?$AAI?$AAn?$AAv?$AAa?$AAl?$AAi?$AAd?$AA?5?$AAI?$AAn?$AAp?$AAu@ 10001fe0     CMMDriver.obj
+ 0001:00001038       ??_C@_1DI@LFFBPMJL@?$AAD?$AAD?$AA?3?$AA?3?$AAM?$AAU?$AAT?$AAE?$AAX?$AA?5?$AAL?$AAO?$AAC?$AAK?$AA?5?$AAE?$AAR?$AAR?$AAO?$AAR?$AA?5?$AA?3?$AA?5?$AA?$CF?$AAd?$AA?$AN?$AA?6?$AA?$AA@ 10002038     CMMMisc.obj
+ 0001:00001070       ??_C@_1DM@HFCDHBAJ@?$AAD?$AAD?$AA?3?$AA?3?$AAM?$AAU?$AAT?$AAE?$AAX?$AA?5?$AAU?$AAN?$AAL?$AAO?$AAC?$AAK?$AA?5?$AAE?$AAR?$AAR?$AAO?$AAR?$AA?5?$AA?3?$AA?5?$AA?$CF?$AAd?$AA?$AN?$AA?6?$AA?$AA@ 10002070     CMMMisc.obj
+ 0001:000010d4       CMM_Deinit                 100020d4 f   CMMDriver.obj
+ 0001:00001118       CMM_DllMain                10002118 f   CMMDriver.obj
+ 0001:0000161c       CMM_Init                   1000261c f   CMMDriver.obj
+ 0001:00001798       CMM_Open                   10002798 f   CMMDriver.obj
+ 0001:00001854       CMM_Close                  10002854 f   CMMDriver.obj
+ 0001:00001a34       CMM_IOControl              10002a34 f   CMMDriver.obj
+ 0001:00001f20       CreateCMMmutex             10002f20 f   CMMMisc.obj
+ 0001:00001f4c       LockCMMMutex               10002f4c f   CMMMisc.obj
+ 0001:00001f94       UnlockCMMMutex             10002f94 f   CMMMisc.obj
+ 0001:00001fd8       DeleteCMMMutex             10002fd8 f   CMMMisc.obj
+ 0001:00001ff8       printD                     10002ff8 f   CMMMisc.obj
+ 0001:0000200c       CleanInvalidateCacheRange  1000300c f   MemCacheFlush.obj
+ 0001:0000201c       CleanCacheRange            1000301c f   MemCacheFlush.obj
+ 0001:0000202c       InvalidateCacheRange       1000302c f   MemCacheFlush.obj
+ 0001:0000203c       __GetUserKData             1000303c f   coredll:COREDLL.dll
+ 0001:0000204c       NKDbgPrintfW               1000304c f   coredll:COREDLL.dll
+ 0001:0000205c       VirtualFreeEx              1000305c f   coredll:COREDLL.dll
+ 0001:0000206c       GetLastError               1000306c f   coredll:COREDLL.dll
+ 0001:0000207c       VirtualCopyEx              1000307c f   coredll:COREDLL.dll
+ 0001:0000208c       VirtualAllocEx             1000308c f   coredll:COREDLL.dll
+ 0001:0000209c       GetDirectCallerProcessId   1000309c f   coredll:COREDLL.dll
+ 0001:000020ac       CeSafeCopyMemory           100030ac f   coredll:COREDLL.dll
+ 0001:000020bc       CreateMutexW               100030bc f   coredll:COREDLL.dll
+ 0001:000020cc       WaitForSingleObject        100030cc f   coredll:COREDLL.dll
+ 0001:000020dc       ReleaseMutex               100030dc f   coredll:COREDLL.dll
+ 0001:000020ec       CloseHandle                100030ec f   coredll:COREDLL.dll
+ 0001:000020fc       MmMapIoSpace               100030fc f   CEDDK:CEDDK.dll
+ 0001:0000210c       free                       1000310c f   corelib1:COREDLL.dll
+ 0001:0000211c       __C_specific_handler       1000311c f   corelib1:COREDLL.dll
+ 0001:0000212c       malloc                     1000312c f   corelib1:COREDLL.dll
+ 0001:0000213c       memset                     1000313c f   corelib1:COREDLL.dll
+ 0001:000021c0       __IMPORT_DESCRIPTOR_COREDLL 100031c0     coredll:COREDLL.dll
+ 0001:000021d4       __IMPORT_DESCRIPTOR_CEDDK  100031d4     CEDDK:CEDDK.dll
+ 0001:000021e8       __NULL_IMPORT_DESCRIPTOR   100031e8     coredll:COREDLL.dll
+ 0002:00000000       __imp_MmMapIoSpace         10004000     CEDDK:CEDDK.dll
+ 0002:00000004       \177CEDDK_NULL_THUNK_DATA  10004004     CEDDK:CEDDK.dll
+ 0002:00000008       __imp_VirtualFreeEx        10004008     coredll:COREDLL.dll
+ 0002:0000000c       __imp_GetLastError         1000400c     coredll:COREDLL.dll
+ 0002:00000010       __imp_VirtualCopyEx        10004010     coredll:COREDLL.dll
+ 0002:00000014       __imp_VirtualAllocEx       10004014     coredll:COREDLL.dll
+ 0002:00000018       __imp_GetDirectCallerProcessId 10004018     coredll:COREDLL.dll
+ 0002:0000001c       __imp_NKDbgPrintfW         1000401c     coredll:COREDLL.dll
+ 0002:00000020       __imp_CreateMutexW         10004020     coredll:COREDLL.dll
+ 0002:00000024       __imp_WaitForSingleObject  10004024     coredll:COREDLL.dll
+ 0002:00000028       __imp_ReleaseMutex         10004028     coredll:COREDLL.dll
+ 0002:0000002c       __imp_CloseHandle          1000402c     coredll:COREDLL.dll
+ 0002:00000030       __imp_CeSafeCopyMemory     10004030     coredll:COREDLL.dll
+ 0002:00000034       __imp___GetUserKData       10004034     coredll:COREDLL.dll
+ 0002:00000038       __imp_free                 10004038     corelib1:COREDLL.dll
+ 0002:0000003c       __imp___C_specific_handler 1000403c     corelib1:COREDLL.dll
+ 0002:00000040       __imp_malloc               10004040     corelib1:COREDLL.dll
+ 0002:00000044       __imp_memset               10004044     corelib1:COREDLL.dll
+ 0002:00000048       \177COREDLL_NULL_THUNK_DATA 10004048     coredll:COREDLL.dll
+ 0002:00000064       AllocMemHead               10004064     <common>
+ 0002:00000068       FreeMemHead                10004068     <common>
+ 0002:0000006c       FreeMemTail                1000406c     <common>
+ 0002:00000070       AllocMemTail               10004070     <common>
+ 0002:00000080       instanceNo                 10004080     <common>
+ 0002:000000a8       CachedVirAddr              100040a8     <common>
+
+ entry point at        0001:00001118
+
+ Static symbols
+
+ 0001:00001128       DeleteNodeFromAllocList    10002128 f   CMMDriver.obj
+ 0001:000011ec       DeleteNodeFromFreeList     100021ec f   CMMDriver.obj
+ 0001:0000129c       ReleaseAllocMem            1000229c f   CMMDriver.obj
+ 0001:0000139c       GetCodecVirAddr            1000239c f   CMMDriver.obj
+ 0001:00001560       PrintList                  10002560 f   CMMDriver.obj

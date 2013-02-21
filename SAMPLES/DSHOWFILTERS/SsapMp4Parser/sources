@@ -1,0 +1,50 @@
+
+
+SYNCHRONIZE_DRAIN=1
+
+WINCEREL=1
+TARGETNAME=SsapMp4Parser
+TARGETDEFNAME=SsapMp4Parser.def
+RELEASETYPE=PLATFORM
+DLLENTRY=_DllMainCRTStartup
+TARGETTYPE=DYNLINK
+CDEFINES=$(CDEFINES) -DSsapMp4Parser_EXPORTS -DSIMON_CHANGED
+INCLUDES= \
+  $(_WINCEROOT)\public\DirectX\SDK\inc;$(_WINCEROOT)\public\DirectX\SDK\Samples\Dshow\Baseclasses; \
+  $(_WINCEROOT)\public\common\sdk\inc;$(_WINCEROOT)\public\common\oak\inc; \
+    ..\mpeg4ip_mp4v2\include;..\mpeg4ip_mp4v2\include\mpeg4ip;
+
+
+TARGETLIBS= \
+  $(_WINCEROOT)\public\DirectX\SDK\lib\$(_CPUINDPATH)\strmbase.lib \
+  $(_WINCEROOT)\public\DirectX\SDK\lib\$(_CPUINDPATH)\strmiids.lib \
+  $(_PROJECTROOT)\cesysgen\sdk\lib\$(_CPUINDPATH)\ole32.lib \
+  $(_PROJECTROOT)\cesysgen\sdk\lib\$(_CPUINDPATH)\uuid.lib \
+  $(_PROJECTROOT)\cesysgen\sdk\lib\$(_CPUINDPATH)\coredll.lib \
+  $(_COMMONSDKROOT)\lib\$(_CPUINDPATH)\ws2.lib    \
+
+SOURCELIBS=\
+  $(_WINCEROOT)\public\DirectX\SDK\lib\$(_CPUINDPATH)\strmbase.lib \
+  $(_WINCEROOT)\public\DirectX\SDK\lib\$(_CPUINDPATH)\strmiids.lib \
+  $(_PROJECTROOT)\cesysgen\sdk\lib\$(_CPUINDPATH)\ole32.lib \
+  $(_PROJECTROOT)\cesysgen\sdk\lib\$(_CPUINDPATH)\uuid.lib \
+  $(_PROJECTROOT)\cesysgen\sdk\lib\$(_CPUINDPATH)\coredll.lib \
+        $(_TARGETPLATROOT)\lib\$(_CPUINDPATH)\libmp4v2.lib    \
+
+
+SOURCES= \
+    get_videoinfo.c        \
+    Auxiliary.cpp        \
+    fSsapMp4Parser.cpp    \
+    fSsapMp4Parser_VideoOp.cpp \
+    fSsapMp4Parser_AudioOp.cpp \
+    SsapMp4Parser.cpp \
+    SsapMp4Parser.rc \
+
+
+FILE_VIEW_INCLUDES_FOLDER= \
+    Stdafx.h \
+    Auxiliary.h \
+    fSsapMp4Parser_VideoOp.h \
+    fSsapMp4Parser_AudioOp.h \    
+

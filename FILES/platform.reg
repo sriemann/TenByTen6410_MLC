@@ -1,0 +1,1095 @@
+;
+; Copyright (c) Microsoft Corporation.  All rights reserved.
+;
+; Use of this sample source code is subject to the terms of the 
+; Software License Agreement (SLA) under which you licensed this software product.
+; If you did not accept the terms of the license agreement, 
+; you are not authorized to use this sample source code. 
+; THE SAMPLE SOURCE CODE IS PROVIDED "AS IS", WITH NO WARRANTIES OR INDEMNITIES.
+;
+
+; Our variables
+#define BUILTIN_ROOT HKEY_LOCAL_MACHINE\Drivers\BuiltIn
+#define DRIVERS_DIR $(_PUBLICROOT)\common\oak\drivers
+
+;-------------------------------------------------------------------------
+; @CESYSGEN IF WCESHELLFE_MODULES_CTLPNL
+; This registry setting controls the checkboxes displayed in the Sounds CPL
+; under "enable clicks & taps". Set bit0 if you have a keyboard, set bit1 if
+; you have a touch screen. Set bit2 if you have HW buttons (NOTE: for now
+; HW buttons are mutually exclusive with the keyboard)
+[HKEY_LOCAL_MACHINE\ControlPanel]
+;   "InputConfig"=dword:1       ; 1 => keybd only
+    "InputConfig"=dword:2       ; 2 => touch screen only
+;   "InputConfig"=dword:3       ; 3 => keybd and touch screen
+; @CESYSGEN ENDIF WCESHELLFE_MODULES_CTLPNL
+;-------------------------------------------------------------------------
+
+
+;-------------------------------------------------------------------------
+; @CESYSGEN IF WCESHELLFE_MODULES_EXPLORER
+; This registry setting controls display of the Explorer's suspend menu button
+[HKEY_LOCAL_MACHINE\Explorer]
+    "Suspend"=dword:1
+
+; Disable Suspend
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Power]
+    "BattPowerOff"=dword:0
+    "ExtPowerOff"=dword:0
+    "WakeupPowerOff"=dword:0
+    "ScreenPowerOff"=dword:0
+; @CESYSGEN ENDIF WCESHELLFE_MODULES_EXPLORER
+;-------------------------------------------------------------------------
+
+
+
+;------------ Display Driver -------------------------------------------------
+; @CESYSGEN IF CE_MODULES_DISPLAY
+IF BSP_NODISPLAY !
+[HKEY_LOCAL_MACHINE\Drivers\Display\s3c6410\Config]
+    "DisplayDll"="s3c6410_disp.dll"
+
+[HKEY_LOCAL_MACHINE\System\GDI\Drivers]
+    "Display"="s3c6410_disp.dll"
+
+; Settings to rotate the screen by 0 degrees clockwise upon download
+[HKEY_LOCAL_MACHINE\System\GDI\Rotation]
+    "Angle"=dword:0
+
+; GWES will pass this value to the Display driver; the driver will open the
+; key to which it points to read its configuration.
+[HKEY_LOCAL_MACHINE\System\GDI\DisplayCandidates]
+    "Candidate10"="Drivers\\Display\\s3c6410\\Config"
+
+; Let GWES save/restore video memory during suspend/resume
+[HKEY_LOCAL_MACHINE\SYSTEM\GWE]
+;   "PORepaint"=dword:0 - the display driver handles everything
+;   "PORepaint"=dword:1 - gwe should save and restore the bits
+;   "PORepaint"=dword:2 - gwe should invalidate and repaint
+;   "PORepaint"=dword:3 - gwe and driver need to save video memory
+    "PORepaint"=dword:1
+
+ENDIF BSP_NODISPLAY !
+; @CESYSGEN ENDIF CE_MODULES_DISPLAY
+;-------------------------------------------------------------------------
+
+;------------ Touch Driver -------------------------------------------------
+; @CESYSGEN IF CE_MODULES_POINTER
+IF BSP_NOTOUCH !
+[HKEY_LOCAL_MACHINE\HARDWARE\DEVICEMAP\TOUCH]
+    "DriverName"="s3c6410_touch.dll"
+    "MaxCalError"=dword:10
+ENDIF BSP_NOTOUCH !
+; @CESYSGEN ENDIF CE_MODULES_POINTER
+;-------------------------------------------------------------------------
+
+
+;--------------Key Board Driver---------------------------------------------
+; @CESYSGEN IF CE_MODULES_KEYBD
+
+IF BSP_NOKEYPAD
+
+IF BSP_NOKEYBD !
+;
+; Include NOP Keyboard drivers if platform keypad driver is not being used
+; (To enable HID and RDP scenarios)
+;
+#define DEFINE_KEYBOARD_TYPE
+#include "$(DRIVERS_DIR)\keybd\keybd.reg"
+#include "$(DRIVERS_DIR)\keybd\LayMgr.reg"
+ENDIF BSP_NOKEYBD !
+
+ELSE
+;
+; Using platform keypad driver
+;
+#include "$(_TARGETPLATROOT)\Src\drivers\keybd\keybd.reg"
+#include "$(_TARGETPLATROOT)\Src\drivers\keybd\LayMgr.reg"
+
+ENDIF BSP_NOKEYPAD
+
+; @CESYSGEN ENDIF CE_MODULES_KEYBD
+;------------------------------------------------------------------------------
+
+
+;------------ Direct3D Mobile -----------------------------------------------
+; @CESYSGEN IF DIRECTX_MODULES_D3DM
+IF BSP_NOD3DM !
+[HKEY_LOCAL_MACHINE\System\D3DM\Drivers]
+    "LocalHook"="d3dm_sedrv.dll"
+ENDIF BSP_NOD3DM !
+; @CESYSGEN ENDIF DIRECTX_MODULES_D3DM
+;-------------------------------------------------------------------------
+
+
+;-------------------------------------------------------------------------
+; HIVE BOOT SECTION
+
+[HKEY_LOCAL_MACHINE\Drivers\Resources\IRQ]
+    "Identifier"=dword:1
+    "Minimum"=dword:1
+    "Space"=dword:20
+    "Ranges"="1-0x20"
+
+[HKEY_LOCAL_MACHINE\Drivers\Resources\IO]
+    "Identifier"=dword:2
+    "Minimum"=dword:0
+    "Space"=dword:10000
+    "Ranges"="0-0xFFFF"
+
+IF IMGHIVEREG
+[HKEY_LOCAL_MACHINE\Init\BootVars]
+    "Flags"=dword:3
+   "RegistryFlags"=dword:1 ;
+ENDIF IMGHIVEREG
+
+IF IMGHIVEREG
+[HKEY_LOCAL_MACHINE\System\ObjectStore\RegFlush]
+    "SpawnThread"=dword:1
+    "FlushPriority256"=dword:FF
+    "ActivityThreshold"=dword:100
+    "FlushPeriod"=dword:2710    
+ENDIF IMGHIVEREG
+; END HIVE BOOT SECTION
+;-------------------------------------------------------------------------
+
+
+;-------------------------------------------------------------------------
+; @CESYSGEN IF CE_MODULES_DEVICE
+
+
+;-------------- NAND Flash Block Device Driver ----------------------------------
+; @CESYSGEN IF CE_MODULES_FSDMGR
+; HIVE BOOT SECTION
+IF BSP_IROM_SDMMC_CH0_BOOT !
+IF BSP_IROM_SDMMC_CH1_BOOT !
+IF BSP_NONANDFS !
+
+[HKEY_LOCAL_MACHINE\Drivers\BuiltIn\NANDFLASH]
+    "Prefix"="DSK"
+    "Dll"="nandflash.dll"
+    "Index"=dword:1
+    "Order"=dword:0
+    "Profile"="NANDFLASH"
+    "IClass"="{A4E7EDDA-E575-4252-9D6B-4195D48BB865}"
+IF IMGHIVEREG
+    "Flags"=dword:1000
+ENDIF IMGHIVEREG
+
+[HKEY_LOCAL_MACHINE\System\StorageManager\Profiles\NANDFLASH]
+    "PartitionDriver"="mspart.dll"
+    "Name"="Microsoft Flash Disk"
+    "AutoFormat"=dword:1
+    "AutoPart"=dword:1
+
+; @CESYSGEN IF CE_MODULES_BINFS
+
+[HKEY_LOCAL_MACHINE\System\StorageManager\Profiles\NANDFLASH]
+    "DefaultFileSystem"="BINFS"
+
+[HKEY_LOCAL_MACHINE\System\StorageManager\Profiles\NANDFLASH\BINFS]
+    "MountHidden"=dword:1
+    "MountAsROM"=dword:1
+
+; @CESYSGEN ENDIF CE_MODULES_BINFS
+
+[HKEY_LOCAL_MACHINE\System\StorageManager\Profiles\NANDFLASH\FATFS]
+    "FormatExfat"=dword:1
+    "DisableAutoScan"=dword:1
+    "CheckForFormat"=dword:1
+    "EnableWriteBack"=dword:1
+    "Folder"="NandFlash"
+    "MountAsRoot"=dword:1       ; for ROM-only file system. This will work only when PRJ_ENABLE_FSMOUNTASROOT=1
+IF IMGHIVEREG
+    "MountAsBootable"=dword:1   ; for (persistent) Hive-based registry. This will work only when PRJ_ENABLE_FSREGHIVE=1
+ENDIF IMGHIVEREG
+
+
+[HKEY_LOCAL_MACHINE\System\StorageManager\Profiles\NANDFLASH\FATFS\Filters\CacheFilt]
+    "Dll"="cachefilt.dll"
+    "LockIOBuffers"=dword:1
+
+ENDIF BSP_NONANDFS !
+
+IF BSP_POCKETMORY
+
+[HKEY_LOCAL_MACHINE\System\StorageManager\AutoLoad\SMFlash]
+	"DriverPath"="Drivers\\BlockDevice\\SMFlash"
+	"LoadFlags"=dword:1
+	"BootPhase"=dword:0
+	"MountFlags"=dword:11
+IF IMGHIVEREG
+	"MountAsBootable"=dword:1
+ENDIF IMGHIVEREG
+
+[HKEY_LOCAL_MACHINE\Drivers\BlockDevice\SMFlash]
+	"Prefix"="DSK"
+	"Dll"="BIBDrv.dll"
+	"Order"=dword:0
+	"Ioctl"=dword:4
+	"Profile"="SMFlash"
+	"FriendlyName"="Samsung Flash Driver"
+	"MountFlags"=dword:11
+	"BootPhase"=dword:0
+IF IMGHIVEREG
+	"Flags"=dword:1000
+ENDIF IMGHIVEREG
+
+; Bind BINFS to the block driver
+[HKEY_LOCAL_MACHINE\System\StorageManager\Profiles\SMFlash]
+	"DefaultFileSystem"="BINFS"
+	"PartitionDriver"="mspart.dll"
+	"AutoMount"=dword:1
+	"AutoPart"=dword:1
+	"MountFlags"=dword:11
+	"Folder"="ResidentFlash"
+	"Name"="Samsung Flash Disk"
+	"BootPhase"=dword:0
+
+[HKEY_LOCAL_MACHINE\System\StorageManager\Profiles\SMFlash\BINFS]
+    "MountHidden"=dword:1
+    "MountAsROM"=dword:1
+
+[HKEY_LOCAL_MACHINE\System\StorageManager\AutoLoad\SMFlash\Filters\CacheFilt]
+    "Dll"="cachefilt.dll"
+    "LockIOBuffers"=dword:1
+
+
+[HKEY_LOCAL_MACHINE\Drivers\BuiltIn\FDSK]
+   "Prefix"="DSK"
+   "Dll"="ONDisk.dll"
+   "Order"=dword:1
+;   "Index"=dword:1
+   "IClass"=multi_sz:"{A4E7EDDA-E575-4252-9D6B-4195D48BB865}"
+   "Profile"="FDSK"
+   "BmlVolumeId"=dword:0	; BML volume ID = 0
+   "BmlPartitionId"=dword:8	; BML parition ID = PARTITION_ID_FILESYSTEM
+   "WMRStartSector"=dword:0
+   "WMRNumOfSector"=dword:10000	; 32MByte
+   "ONDSectorShift"=dword:2     ; (512 << 2) : 2K Page
+IF IMGHIVEREG
+   "Flags"=dword:1000
+ENDIF IMGHIVEREG
+
+[HKEY_LOCAL_MACHINE\System\StorageManager\Profiles\FDSK]
+    "DefaultFileSystem"="FATFS"
+    "PartitionDriver"="mspart.dll"
+    "Name"="PocketMory MLC Disk"
+    "AutoMount"=dword:1
+    "AutoPart"=dword:1
+    "AutoFormat"=dword:1
+;    "MountFlags"=dword:0
+;    "Ioctl"=dword:4
+
+[HKEY_LOCAL_MACHINE\System\StorageManager\Profiles\FDSK\FATFS]
+    "FriendlyName"="PocketMory FAT FileSystem"
+;    "Dll"="fatfsd.dll"
+    "Flags"=dword:00000014			; FATFS_ENABLE_BACKUP_FAT | FATFS_DISABLE_AUTOSCAN
+    "Folder"="PocketMory"
+    "FormatExfat"=dword:1
+;    "EnableCacheWarm"=dword:0
+    "CheckForFormat"=dword:1
+    "EnableWriteBack"=dword:1
+    "MountAsRoot"=dword:1		; for ROM-only file system
+    "DisableAutoScan"=dword:1
+IF IMGHIVEREG
+   "MountAsBootable"=dword:1
+ENDIF IMGHIVEREG
+
+[HKEY_LOCAL_MACHINE\System\StorageManager\AutoLoad\FDSK\Filters\CacheFilt]
+    "Dll"="cachefilt.dll"
+    "LockIOBuffers"=dword:1
+
+[HKEY_LOCAL_MACHINE\System\StorageManager\Profiles\FDSK\FATFS\Filters\CacheFilt]
+    "Dll"="cachefilt.dll"
+    "LockIOBuffers"=dword:1
+
+;----------------------------------------------------------------------------
+; 2nd FAT Area
+;----------------------------------------------------------------------------
+
+[HKEY_LOCAL_MACHINE\Drivers\BuiltIn\FDSK1]
+   "Prefix"="DSK"
+   "Dll"="ONDisk.dll"
+   "Order"=dword:1
+;   "Index"=dword:1
+   "IClass"=multi_sz:"{A4E7EDDA-E575-4252-9D6B-4195D48BB865}"
+   "Profile"="FDSK1"
+   "BmlVolumeId"=dword:0		; BML volume ID = 0
+   "BmlPartitionId"=dword:9	; BML parition ID = PARTITION_ID_FILESYSTEM1
+   "WMRStartSector"=dword:10000
+   "WMRNumOfSector"=dword:ffffffff	; last location
+   "ONDSectorShift"=dword:2     ; (512 << 2) : 2K Page
+IF IMGHIVEREG
+   "Flags"=dword:1000
+ENDIF IMGHIVEREG
+
+[HKEY_LOCAL_MACHINE\System\StorageManager\Profiles\FDSK1]
+    "DefaultFileSystem"="FATFS"
+    "PartitionDriver"="mspart.dll"
+    "Name"="PocketMory MLC Disk1"
+    "AutoMount"=dword:1
+    "AutoPart"=dword:1
+    "AutoFormat"=dword:1
+;    "MountFlags"=dword:0
+;    "Ioctl"=dword:4
+
+[HKEY_LOCAL_MACHINE\System\StorageManager\Profiles\FDSK1\FATFS]
+    "FriendlyName"="PocketMory FAT FileSystem1"
+;    "Dll"="fatfsd.dll"
+    "Flags"=dword:00000014			; FATFS_ENABLE_BACKUP_FAT | FATFS_DISABLE_AUTOSCAN
+    "Folder"="PocketMory1"
+    "FormatExfat"=dword:1
+;    "EnableCacheWarm"=dword:0
+    "CheckForFormat"=dword:1
+    "EnableWriteBack"=dword:1
+    "DisableAutoScan"=dword:1
+
+[HKEY_LOCAL_MACHINE\System\StorageManager\AutoLoad\FDSK1\Filters\CacheFilt]
+    "Dll"="cachefilt.dll"
+    "LockIOBuffers"=dword:1
+
+[HKEY_LOCAL_MACHINE\System\StorageManager\Profiles\FDSK1\FATFS\Filters\CacheFilt]
+    "Dll"="cachefilt.dll"
+    "LockIOBuffers"=dword:1
+
+ENDIF BSP_POCKETMORY
+ENDIF BSP_IROM_SDMMC_CH1_BOOT !
+ENDIF BSP_IROM_SDMMC_CH0_BOOT !
+
+; END HIVE BOOT SECTION
+; @CESYSGEN ENDIF CE_MODULES_FSDMGR
+;-------------------------------------------------------------------------
+
+
+;-------------- HSMMC/SD Device Driver ---------------------------------------
+; @CESYSGEN IF CE_MODULES_SDBUS
+IF BSP_IROM_SDMMC_CH0_BOOT !
+IF BSP_NOHSMMC_CH0 !
+[HKEY_LOCAL_MACHINE\Drivers\BuiltIn\HSMMC0]
+    "InterfaceType"=dword:0                 ; Internal
+    "Order"=dword:15
+    "Dll"="s3c6410_hsmmc0.dll"
+    "Prefix"="HSC"
+    "ObjectCreationProc"="CreateHSMMCHCCh0Object"
+    "MemBase"=dword:7C200000
+    "MemLen"=dword:100
+    "Irq"=dword:5E                          ; HSMMC0 Virtual IRQ = 94 (0x5E), Physical IRQ = 56
+    "BaseClockFrequency"=dword:2DC6C00      ; 5B8D800->96MHz, 2DC6C00->48MHz, 16E3600->24MHz, B71B00->12MHz
+    "TimeoutClockFrequency"=dword:2DC6C00       ; 5B8D800->96MHz, 2DC6C00->48MHz, 16E3600->24MHz, B71B00->12MHz
+ENDIF BSP_NOHSMMC_CH0 !
+ENDIF BSP_IROM_SDMMC_CH0_BOOT !
+
+IF BSP_IROM_SDMMC_CH1_BOOT !
+IF BSP_NOHSMMC_CH1 !
+[HKEY_LOCAL_MACHINE\Drivers\BuiltIn\HSMMC1]
+    "InterfaceType"=dword:0                 ; Internal
+    "Order"=dword:15
+    "Dll"="s3c6410_hsmmc1.dll"
+    "Prefix"="HSC"
+    "ObjectCreationProc"="CreateHSMMCHCCh1Object"
+    "MemBase"=dword:7C300000
+    "MemLen"=dword:100
+    "Irq"=dword:5F                          ; HSMMC1 Virtual IRQ = 95 (0x5F), Physical IRQ = 57
+    "BaseClockFrequency"=dword:2DC6C00      ; 5B8D800->96MHz, 2DC6C00->48MHz, 16E3600->24MHz, B71B00->12MHz
+    "TimeoutClockFrequency"=dword:2DC6C00       ; 5B8D800->96MHz, 2DC6C00->48MHz, 16E3600->24MHz, B71B00->12MHz
+ENDIF BSP_NOHSMMC_CH1 !
+ENDIF BSP_IROM_SDMMC_CH1_BOOT !
+
+; @CESYSGEN IF CE_MODULES_SDMEMORY
+IF BSP_NOHSMMC_CH0 ! || BSP_NOHSMMC_CH1 !
+  ; SD Memory Storage class driver
+[HKEY_LOCAL_MACHINE\Drivers\SDCARD\ClientDrivers\Class\SDMemory_Class]
+    "Dll"="SDMemory.dll"
+    "Prefix"="DSK"
+    "BlockTransferSize"=dword:40    ; send no more than 64 blocks of data per bus transfer
+;   "SingleBlockWrites"=dword:1     ; alternatively force the driver to use single block access
+;   "IdleTimeout"=dword:7D0           ; 2000 milliseconds
+;   "IdlePowerState"=dword:2            ; 0 == D0, 1 == D1, etc.
+;   "DisablePowerManagement"=""     ; if value present, then disable (remove value to enable)
+    "Profile"="SDMemory"
+    "IClass"=multi_sz:"{A4E7EDDA-E575-4252-9D6B-4195D48BB865}",
+                      "{8DD679CE-8AB4-43c8-A14A-EA4963FAA715}"
+
+; SD Memory Storage class driver to support high capacity sd memory cards.
+[HKEY_LOCAL_MACHINE\Drivers\SDCARD\ClientDrivers\Class\SDMemory_Class\High_Capacity]
+    "Dll"="SDMemory.dll"
+    "Prefix"="DSK"
+    "BlockTransferSize"=dword:40    ; send no more than 64 blocks of data per bus transfer
+;   "SingleBlockWrites"=dword:1     ; alternatively force the driver to use single block access
+;   "IdleTimeout"=dword:7D0           ; 2000 milliseconds
+;   "IdlePowerState"=dword:2            ; 0 == D0, 1 == D1, etc.
+;   "DisablePowerManagement"=""     ; if value present, then disable (remove value to enable)
+    "Profile"="SDMemory"
+    "IClass"=multi_sz:"{A4E7EDDA-E575-4252-9D6B-4195D48BB865}",
+                      "{8DD679CE-8AB4-43c8-A14A-EA4963FAA715}"
+
+  ; SD Memory Storage class driver to be manageable by Power Manager
+[HKEY_LOCAL_MACHINE\Drivers\BuiltIn\SDMemory]
+   "Dll"="SDMemory.dll"
+   "Prefix"="DSK"
+   "Profile"="SDMemory"
+   "IClass"=multi_sz:"{A4E7EDDA-E575-4252-9D6B-4195D48BB865}",
+                     "{8DD679CE-8AB4-43c8-A14A-EA4963FAA715}"
+
+; MMC Storage Class Driver
+[HKEY_LOCAL_MACHINE\Drivers\SDCARD\ClientDrivers\Class\MMC_Class]
+    "Dll"="SDMemory.dll"
+    "Prefix"="DSK"
+    "BlockTransferSize"=dword:40        ; send no more than 64 blocks of data per bus transfer
+;   "SingleBlockWrites"=dword:1     ; alternatively force the driver to use single block access
+;   "IdleTimeout"=dword:7D0         ; milliseconds
+;   "IdlePowerState"=dword:2            ; 0 == D0, 1 == D1, etc.
+;   "DisablePowerManagement"=""     ; if value present, then disable (remove value to enable)
+    "Profile"="MMC"
+    "IClass"=multi_sz:"{A4E7EDDA-E575-4252-9D6B-4195D48BB865}",
+                      "{8DD679CE-8AB4-43c8-A14A-EA4963FAA715}"
+
+ENDIF BSP_NOHSMMC_CH0 ! || BSP_NOHSMMC_CH1 !
+; @CESYSGEN ENDIF CE_MODULES_SDMEMORY
+; @CESYSGEN ENDIF CE_MODULES_SDBUS
+;---------------------------------------------------------------------------
+
+
+[HKEY_LOCAL_MACHINE\System\StorageManager]
+    "Dll"="fsdmgr.dll"
+    "PNPUnloadDelay"=dword:20
+;-------------- CF ATAPI Device Driver ---------------------------------------
+; @CESYSGEN IF CE_MODULES_ATAPI
+IF BSP_NOCFATAPI !
+[HKEY_LOCAL_MACHINE\Drivers\BuiltIn\6410_CF]
+    "Prefix"="IDE"
+    "Dll"="s3c6410_cf_atapi.dll"
+    "Order"=dword:15
+    "Class"=dword:01
+    "SubClass"=dword:01
+    "ConfigEntry"="GenericConfig"       ; PCI configuration entry point ;;maybe not required
+    "Legacy"=dword:01               ; legacy, use Irq for primary and Irq+1 for secondary ;;maybe not required
+    "Irq"=dword:54                  ; CFCon Virtual IRQ = 84 (0x54), Physical IRQ = 46
+    "SysIntr"=dword:00              ; SysIntr not specified
+    "DMAAlignment"=dword:04         ; default DMA alignment
+    "SoftResetTimeout"=dword:5          ; ATA/ATAPI spec defines 31s ceiling; this is too long
+    "StatusPollCycles"=dword:100        ; Status register DRQ/BSY polling; 256 poll cycles
+    "StatusPollsPerCycle"=dword:20      ; Status register DRQ/BSY polling; 32 polls per cycle
+    "StatusPollCyclePause"=dword:05     ; Status register DRQ/BSY polling; 5 milliseconds between poll cycles
+    "IoBase"=multi_sz:"0x70300000","0x70300000"
+    "IoLen"=multi_sz:"0x1998","0x1998"
+    "RegisterStride"=dword:4            ; Ref. Board ATA register stride; register block is word-contiguous
+    "InterfaceType"=dword:0         ; Internal
+    "DeviceControlOffset"=dword:20
+    "AlternateStatusOffset"=dword:20
+    "DeviceId"=dword:00
+    "SpawnFunction"="CreateRomi"        ; Reference Board specific instantiation function
+
+[HKEY_LOCAL_MACHINE\Drivers\BuiltIn\6410_CF\Device0]
+    "Prefix"="DSK"
+    "Dll"="s3c6410_cf_atapi.dll"
+    "Order"=dword:16
+    "IClass"=multi_sz:"{A4E7EDDA-E575-4252-9D6B-4195D48BB865}",
+     "{8DD679CE-8AB4-43c8-A14A-EA4963FAA715}"
+    "InterruptDriven"=dword:00          ; en(1) dis(0)able interrupt driven I/O
+    "DMA"=dword:01                  ; Enable DMA. PDMA and UDMA is supported
+    "DoubleBufferSize"=dword:10000      ; 128 sector (65536 byte) double buffer
+    "DrqDataBlockSize"=dword:200        ; 1 sector (512 byte) DRQ data block
+    "WriteCache"=dword:01               ; enable on-disk write cache
+    "LookAhead"=dword:01                ; enable on-disk look-ahead
+    "DeviceId"=dword:00             ; device 0, i.e., primary master
+    "TransferMode"=dword:ff         ; use mode 0;
+    "EnablePDMA"=dword:1                ; 0 = PIO, 1 = PDMA. We recommend PDMA mode.
+    "EnableUDMA"=dword:1                ; 0 = PIO, 1 = UDMA. We recommend UDMA mode.
+    "IndirectMode"=dword:0          ; 0 = Direct, 1 = Indirect. (To use UDMA, It should be '0'. UDMA is only working on DIRECT MODE.)
+
+
+[HKEY_LOCAL_MACHINE\System\StorageManager\Profiles\6410_CF]
+    "Name"="CF Type Storage"
+    "Folder"="CFDisk"
+
+[HKEY_LOCAL_MACHINE\System\StorageManager\Profiles\6410_CF\FATFS]
+;   "EnableFatCacheWarm"=dword:0
+
+ENDIF BSP_NOCFATAPI !
+; @CESYSGEN ENDIF CE_MODULES_ATAPI
+;---------------------------------------------------------------------------
+
+
+;------------ Power Control Driver -------------------------------------------
+; @CESYSGEN IF DEVICE_PMIF
+[HKEY_LOCAL_MACHINE\Drivers\BuiltIn\PowerControl]
+    "Dll"="s3c6410_PwrCon.dll"
+    "Prefix"="PWC"
+    "Order"=dword:1
+    "Index"=dword:0
+    "FriendlyName"="S3C6410 Power Control Driver"
+; @CESYSGEN ENDIF DEVICE_PMIF
+;-------------------------------------------------------------------------
+
+
+;------------ Power Button Driver -------------------------------------------
+; @CESYSGEN IF DEVICE_PMIF
+IF BSP_NOPWRBTN !
+[HKEY_LOCAL_MACHINE\Drivers\BuiltIn\PowerButton]
+    "Dll"="smdk6410_PwrBtn.dll"
+    "Prefix"="PWR"
+    "Order"=dword:2
+    "FriendlyName"="SMDK6410 Power Button Driver"
+;   "IClass"="{A32942B7-920C-486b-B0E6-92A702A99B35}"   ; Power-manageable generic
+ENDIF BSP_NOPWRBTN !
+; @CESYSGEN ENDIF DEVICE_PMIF
+;-------------------------------------------------------------------------
+
+
+;------------ Video Engine Driver -------------------------------------------
+; @CESYSGEN IF CE_MODULES_DISPLAY
+[HKEY_LOCAL_MACHINE\Drivers\BuiltIn\VideoEngine]
+    "Dll"="s3c6410_Video.dll"
+    "Prefix"="VDE"
+    "Order"=dword:2
+    "Index"=dword:0
+    "FriendlyName"="S3C6410 Video Engine Driver"
+; @CESYSGEN ENDIF CE_MODULES_DISPLAY
+;-------------------------------------------------------------------------
+
+;------------ I2C Bus Driver ------------------------------------------------
+IF BSP_NOI2C !
+;; I2C Bus Driver
+[HKEY_LOCAL_MACHINE\Drivers\BuiltIn\IIC]
+    "Prefix"="IIC"
+    "Dll"="s3c6410_iic.dll"
+    "Order"=dword:1				; 5 -> 1, Now LDI depends on this
+    "Index"=dword:0
+    "Mode"=dword:1              ; Mode: 0 = POLLING, 1 = INTERRUPT
+    "SlaveAddress"=dword:0      ; Bus Driver's Slave Address
+    "FriendlyName"="IIC Bus Driver"
+    "IClass"="{A32942B7-920C-486b-B0E6-92A702A99B35}"   ; Power-manageable generic
+ENDIF BSP_NOI2C !
+;-------------------------------------------------------------------------
+
+
+;-------------- Wave Device Driver -----------------------------------------
+; @CESYSGEN IF CE_MODULES_WAVEAPI
+IF BSP_NOAUDIO !
+[HKEY_LOCAL_MACHINE\Drivers\BuiltIn\Audio]
+    "Prefix"="WAV"
+    "Dll"="s3c6410_wavedev.dll"
+    "Priority256"=dword:95
+    "Index"=dword:1
+    "Order"=dword:10
+    "IClass"=multi_sz:"{37168569-61C4-45fd-BD54-9442C7DBA46F}","{A32942B7-920C-486b-B0E6-92A702A99B35}"
+
+[HKEY_LOCAL_MACHINE\Audio\SoftwareMixer]
+    "BufferSize"=dword:1000
+    "Priority256"=dword:96
+
+[HKEY_LOCAL_MACHINE\Drivers\BuiltIn\WAPIMAN\]
+    "Priority256"=dword:97
+
+ENDIF BSP_NOAUDIO !
+; @CESYSGEN ENDIF CE_MODULES_WAVEAPI
+;-------------------------------------------------------------------------
+
+
+;------------ USB Function Driver -------------------------------------------
+; @CESYSGEN IF CE_MODULES_USBFN
+IF BSP_NOUSBFN !
+IF BSP_KITL != USBSERIAL
+
+[HKEY_LOCAL_MACHINE\Drivers\BuiltIn\SC6410USBFN]
+    "Dll"="s3c6410_usbfn.dll"
+    "Prefix"="UFN"
+    "Order"=dword:20
+    "Priority256"=dword:64
+    "Irq"=dword:60              ; USB OTG Virtual IRQ = 96 (0x60), Physical IRQ = 58
+    "BusIoctl"=dword:2a0048
+    "IClass"=multi_sz:"{E2BDC372-598F-4619-BC50-54B3F7848D35}=%b","{6F40791D-300E-44E4-BC38-E0E63CA8375C}=%b"
+
+[HKEY_LOCAL_MACHINE\Drivers\USB\FunctionDrivers]
+    "DefaultClientDriver"=-         ; erase previous default
+
+;------------ USB Function Serial Driver --------------------------------------
+IF BSP_USBFNCLASS == SERIAL
+
+[HKEY_LOCAL_MACHINE\Drivers\USB\FunctionDrivers]
+    "DefaultClientDriver"="Serial_Class"
+
+[HKEY_LOCAL_MACHINE\Drivers\USB\FunctionDrivers\Serial_Class]
+    "FriendlyName"=LOC_USBFN_SERIAL_NAME
+    "idVendor"=dword:0547
+    "Manufacturer"=LOC_USBFN_SERIAL_MANUFACTURER
+    "idProduct"=dword:2720
+    "Product"=LOC_USBFN_SERIAL_PRODUCT
+    "Index"=dword:5
+
+ENDIF BSP_USBFNCLASS
+;-------------------------------------------------------------------------
+
+;------------ USB Function Mass Stroge Driver ---------------------------------
+IF BSP_USBFNCLASS == MASS_STORAGE
+
+[HKEY_LOCAL_MACHINE\Drivers\USB\FunctionDrivers]
+    "DefaultClientDriver"="Mass_Storage_Class"
+
+[HKEY_LOCAL_MACHINE\Drivers\USB\FunctionDrivers\Mass_Storage_Class]
+    "Dll"="usbmsfn.dll"
+    "InterfaceSubClass"=dword:06
+    "InterfaceProtocol"=dword:50
+    "DeviceName"="DSK3:"
+    "FriendlyName"="Mass Storage"
+    "idVendor"=dword:045E
+    "Manufacturer"="Generic Manufacturer (PROTOTYPE--Remember to change idVendor)"
+    "idProduct"=dword:FFFF
+    "Product"="Generic Mass Storage (PROTOTYPE--Remember to change idVendor)"
+    "bcdDevice"=dword:0
+    "Removable"=dword:1
+;ENDIF BSP_USBFNCLASS
+
+[HKEY_LOCAL_MACHINE\Drivers\SDCARD\ClientDrivers\Class\SDMemory_Class]
+    "Index"=dword:3
+
+[HKEY_LOCAL_MACHINE\Drivers\SDCARD\ClientDrivers\Class\SDMemory_Class\High_Capacity]
+    "Index"=dword:3
+
+[HKEY_LOCAL_MACHINE\Drivers\SDCARD\ClientDrivers\Class\MMC_Class]
+    "Index"=dword:3
+;-------------------------------------------------------------------------
+ENDIF BSP_USBFNCLASS
+
+[HKEY_CURRENT_USER\ControlPanel\Comm]
+    "Cnct"="`USB"
+
+ENDIF
+ENDIF BSP_NOUSBFN !
+; @CESYSGEN ENDIF CE_MODULES_USBFN
+;-------------------------------------------------------------------------
+
+;------------ USB Host Driver ---------------------------------------------------
+; @CESYSGEN IF CE_MODULES_USBD
+IF BSP_NOUSBHCD !
+[HKEY_LOCAL_MACHINE\Drivers\BuiltIn\OHCI]
+    "InterfaceType"=dword:0     ; Internal
+    "Prefix"="HCD"
+    "Dll"="s3c6410_ohci2.dll"
+    "Index"=dword:1
+    "Order"=dword:30
+    "Irq"=dword:55              ; USB Host Virtual IRQ = 85 (0x55), Physical IRQ = 47
+    "SysIntr"=dword:11          ; (SYSINTR_FIRMWARE+1)
+    "MemBase"=dword:74300000
+    "MemLen"=dword:1000
+    "UseExistingSettings"=dword:0
+    "HcdCapability"=dword:4     ; HCD_SUSPEND_ON_REQUEST
+
+ENDIF BSP_NOUSBHCD !
+; @CESYSGEN ENDIF CE_MODULES_USBD
+;-------------------------------------------------------------------------
+
+
+;------------ Camera Capture Filter Driver ------------------------------------
+IF BSP_NOCAMERA !
+[HKEY_LOCAL_MACHINE\Drivers\BuiltIn\CameraDriver]
+    "Prefix"="CAM"
+    "Dll"="smdk6410_camera.dll"
+    "Order"=dword:30
+    "Index"=dword:1
+    "IClass"=multi_sz: "{CB998A05-122C-4166-846A-933E4D7E3C86}","{A32942B7-920C-486b-B0E6-92A702A99B35}"
+
+[HKEY_LOCAL_MACHINE\Software\Microsoft\DirectX\DirectShow\Capture]
+    "Prefix"="PIN"
+    "Dll"="smdk6410_camera.dll"
+    "IClass"="{C9D092D6-827A-45E2-8144-DE1982BFC3A8}"
+
+[HKEY_LOCAL_MACHINE\Drivers\Capture\Camera]
+    "MemoryModel"=dword:2
+    "PinCount"=dword:3
+
+ENDIF BSP_NOCAMERA!
+;-------------------------------------------------------------------------
+
+
+;------------ High Speed SPI Driver ------------------------------------------
+IF BSP_NOSPI !
+[HKEY_LOCAL_MACHINE\Drivers\BuiltIn\spi]
+    "Prefix"="SPI"
+    "Dll"="s3c6410_spi.dll"
+    "Index"=dword:1
+    "Order"=dword:30
+ENDIF BSP_NOSPI !
+;-------------------------------------------------------------------------
+
+
+;--------------- Serial / IrDA Driver -----------------------------------------
+; @CESYSGEN IF CE_MODULES_SERIAL
+IF BSP_NOSERIAL !
+
+;IF BSP_NOUART0 !
+;IF BSP_KITL != SERIAL_UART0
+;IF BSP_DEBUGPORT != SERIAL_UART0
+;--------------- UART0 (Physical COM1 Port) ----------------------------------
+[HKEY_LOCAL_MACHINE\Drivers\BuiltIn\Serial0]
+    "DeviceArrayIndex"=dword:0
+    "Irq"=dword:3D              ; UART0 Virtual IRQ = 61 (0x3D), Physical IRQ = 37
+    "MemBase"=dword:7F005000
+    "MemLen"=dword:40
+;   "ISTTimeouts"=dword:200     ; every 512 ticks checking Modem status.
+    "Prefix"="COM"
+    "Index"=dword:1
+    "Dll"="smdk6410_serial.dll"
+    "Order"=dword:5
+    "Port"="COM1"
+    "DeviceType"=dword:0
+    "FriendlyName"=LOC_DISPLAYNAME_COM1
+    "Tsp"="unimodem.dll"
+    "IClass"="{CC5195AC-BA49-48a0-BE17-DF6D1B0173DD}"
+    "DevConfig"=hex: 10,00, 00,00, 05,00,00,00, 10,01,00,00, 00,4B,00,00, 00,00, 08, 00, 00, 00,00,00,00
+;--------------------------------------------------------------------------
+;ENDIF
+;ENDIF
+;ENDIF
+
+;IF BSP_NOUART1 !
+;IF BSP_KITL != SERIAL_UART1
+;IF BSP_DEBUGPORT != SERIAL_UART1
+;--------------- UART1 (Physical COM2 Port) ----------------------------------
+[HKEY_LOCAL_MACHINE\Drivers\BuiltIn\Serial1]
+    "DeviceArrayIndex"=dword:1
+    "Irq"=dword:3E              ; UART1 Virtual IRQ = 62 (0x3E), Physical IRQ = 38
+    "MemBase"=dword:7F005400
+    "MemLen"=dword:40
+;   "ISTTimeouts"=dword:200     ; every 512 ticks checking Modem status.
+    "Prefix"="COM"
+    "Index"=dword:2
+    "Dll"="smdk6410_serial.dll"
+    "Order"=dword:5
+    "Port"="COM2"
+    "DeviceType"=dword:0
+    "FriendlyName"=LOC_DISPLAYNAME_COM2
+    "Tsp"="unimodem.dll"
+    "IClass"="{CC5195AC-BA49-48a0-BE17-DF6D1B0173DD}"
+    "DevConfig"=hex: 10,00, 00,00, 05,00,00,00, 10,01,00,00, 00,4B,00,00, 00,00, 08, 00, 00, 00,00,00,00
+    
+; @CESYSGEN IF CE_MODULES_BTHUART
+IF BSP_BLUETOOTH_BUILTIN_UART
+    "RxBufferSize"=dword:2000   ; extra buffer size as a workaround for a BTHUART/SerialMDD bug
+ENDIF
+; @CESYSGEN ENDIF CE_MODULES_BTHUART
+
+;--------------------------------------------------------------------------
+;ENDIF
+;ENDIF
+;ENDIF
+
+;IF BSP_NOUART2 !
+;IF BSP_KITL != SERIAL_UART2
+;IF BSP_NOIRDA2
+;--------------- UART2 (Physical COM2 Port) ----------------------------------
+[HKEY_LOCAL_MACHINE\Drivers\BuiltIn\Serial2]
+    "DeviceArrayIndex"=dword:2
+    "Irq"=dword:3F              ; UART2 Virtual IRQ = 63 (0x3F), Physical IRQ = 39
+    "MemBase"=dword:7F005800
+    "MemLen"=dword:40
+;       "ISTTimeouts"=dword:200     ; every 512 ticks checking Modem status.
+    "Prefix"="COM"
+    "Index"=dword:3
+    "Dll"="smdk6410_serial.dll"
+    "Order"=dword:5
+    "Port"="COM3"
+    "DeviceType"=dword:0
+    "FriendlyName"=LOC_DISPLAYNAME_COM3
+    "Tsp"="unimodem.dll"
+    "IClass"="{CC5195AC-BA49-48a0-BE17-DF6D1B0173DD}"
+    "DevConfig"=hex: 10,00, 00,00, 05,00,00,00, 10,01,00,00, 00,4B,00,00, 00,00, 08, 00, 00, 00,00,00,00
+;--------------------------------------------------------------------------
+;ENDIF
+;ENDIF
+;ENDIF
+
+;IF BSP_NOUART3 !
+;IF BSP_KITL != SERIAL_UART3
+;IF BSP_NOIRDA3
+;--------------- UART3 (Physical COM2 Port) ----------------------------------
+[HKEY_LOCAL_MACHINE\Drivers\BuiltIn\Serial3]
+    "DeviceArrayIndex"=dword:3
+    "Irq"=dword:40              ; UART3 Virtual IRQ = 64 (0x40), Physical IRQ = 40
+    "MemBase"=dword:7F005C00
+    "MemLen"=dword:40
+;   "ISTTimeouts"=dword:200     ; every 512 ticks checking Modem status.
+    "Prefix"="COM"
+    "Index"=dword:4
+    "Dll"="smdk6410_serial.dll"
+    "Order"=dword:5
+    "Port"="COM4"
+    "DeviceType"=dword:0
+    "FriendlyName"=LOC_DISPLAYNAME_COM4
+    "Tsp"="unimodem.dll"
+    "IClass"="{CC5195AC-BA49-48a0-BE17-DF6D1B0173DD}"
+    "DevConfig"=hex: 10,00, 00,00, 05,00,00,00, 10,01,00,00, 00,4B,00,00, 00,00, 08, 00, 00, 00,00,00,00
+;--------------------------------------------------------------------------
+;ENDIF
+;ENDIF
+;ENDIF
+
+
+ENDIF BSP_NOSERIAL !
+; @CESYSGEN ENDIF CE_MODULES_SERIAL
+;--------------------------------------------------------------------------
+
+
+;
+; MFC, JPG, CMM, UAO Drivers depend on CORESTRA for printing debug messages
+;
+; @CESYSGEN IF COREDLL_CORESTRA
+;-------------- MFC Driver -----------------------------------------------------
+IF BSP_NOMFC !
+[HKEY_LOCAL_MACHINE\Drivers\BuiltIn\MFC]
+    "Dll"="s3c6410_mfc.dll"
+    "Prefix"="MFC"
+    "Index"=dword:1
+    "Order"=dword:30
+    "IClass"="{A32942B7-920C-486b-B0E6-92A702A99B35}"   ; Power-manageable generic
+ENDIF BSP_NOMFC !
+;------------------------------------------------------------------------------
+
+;--------------Jpeg Driver---------------------------------------------
+IF BSP_NOJPEG !
+[HKEY_LOCAL_MACHINE\Drivers\Builtin\JPG]
+    "Dll"="s3c6410_jpeg.dll"
+    "Prefix"="JPG"
+    "Index"=dword:1
+    "Order"=dword:30
+ENDIF BSP_NOJPEG !
+;------------------------------------------------------------------------------
+
+
+;-------------- CMM Driver -----------------------------------------------------
+IF BSP_NOCMM !
+[HKEY_LOCAL_MACHINE\Drivers\Builtin\CMM]
+    "Dll"="s3c6410_cmm.dll"
+    "Prefix"="CMM"
+    "Index"=dword:1
+    "Order"=dword:30
+ENDIF BSP_NOCMM !
+;------------------------------------------------------------------------------ 
+
+;-------------- UAO Driver -----------------------------------------------------
+IF BSP_NOUAO !
+[HKEY_LOCAL_MACHINE\Drivers\Builtin\UAO]
+    "Dll"="s3c6410_uao.dll"
+    "Prefix"="UAO"
+    "Index"=dword:1
+    "Order"=dword:30
+ENDIF BSP_NOUAO !
+;------------------------------------
+; @CESYSGEN ENDIF COREDLL_CORESTRA
+
+;--------------OpenGLES2.0 Driver---------------------------------------------
+IF BSP_NOOES !
+[HKEY_LOCAL_MACHINE\Drivers\BuiltIn\FIMG]
+    "Dll"="s3c6410_fimg.dll"
+    "Prefix"="GLE"
+    "Index"=dword:1
+    "Order"=dword:5              ; Make driver load early on so that we can get enough contiguous memory
+    "AllocblkNum"=dword:4        ; Number of blocks. This also implies the number of concurrent applications possible
+                                 ;     since each application uses a new block of memory
+    "AllocblkSize"=dword:400000  ; 4MB per block
+    "FriendlyName" = "GLES Driver"
+    "Ioctl" = dword:0
+    "DeviceArrayIndex"=dword:1
+    "IClass"="{A32942B7-920C-486b-B0E6-92A702A99B35}"   ; Power-manageable generic
+ENDIF BSP_NOOES !
+;------------------------------------------------------------------------------
+
+;-- backlight driver ----------------------------------------------------------------
+; @CESYSGEN IF DEVICE_PMIF
+IF BSP_NOBACKLIGHT !
+[HKEY_LOCAL_MACHINE\Drivers\BuiltIn\Backlight]
+    "Index"=dword:1
+    "Prefix"="BKL"
+    "Dll"="backlight.dll"
+    "Flags"=dword:00010000
+    "Index"=dword:1
+    "Order"=dword:40
+    "IClass"="{A32942B7-920C-486b-B0E6-92A702A99B35}"
+
+[HKEY_CURRENT_USER\ControlPanel\Backlight]
+    "BatteryTimeout"=dword:3c   ;For battery, unit is sec,  0x3c == 60(dec) - It means that backlight will be turned off after 60 seconds,
+    "BacklightOnTap"=dword:1
+    "ACTimeout"=dword:258       ;For AC Power, unit is sec,     0x258 == 600(dec),
+    "ACBacklightOnTap"=dword:1
+
+[HKEY_CURRENT_USER\ControlPanel\Backlight]
+    "OnOff"=dword:00000001
+    "Brightness"=dword:00000032         ;the brightness of backlight while OS use Battery Power
+    "ACBrightness"=dword:00000040           ;the brightness of backlight while OS use AC power.
+    "ACTimeoutUnchecked"=dword:00000000     ;temporary store ACTimeout
+    "ACBacklightOnTap"=dword:00000001
+    "BatteryTimeoutUnchecked"=dword:00000000    ;temporary store BatteryTimeout
+    "ExtOnOff"=dword:00000001
+ENDIF BSP_NOBACKLIGHT !
+; @CESYSGEN ENDIF DEVICE_PMIF
+;------------------------------------------------------------------------------
+
+
+;-------------- iROM SDMMC Drivers ----------------------------------
+; @CESYSGEN IF CE_MODULES_FSDMGR
+IF BSP_IROM_SDMMC_CH0_BOOT == "1" || BSP_IROM_SDMMC_CH1_BOOT == "1"
+; HIVE BOOT SECTION
+[HKEY_LOCAL_MACHINE\Drivers\BuiltIn\SDBOOT]
+    "Prefix"="DSK"
+    "Dll"="BIBDrv.dll"
+    "Index"=dword:1
+    "Order"=dword:0
+    "Profile"="SDBOOT"
+    "IClass"="{A4E7EDDA-E575-4252-9D6B-4195D48BB865}"
+
+
+[HKEY_LOCAL_MACHINE\System\StorageManager\Profiles\SDBOOT]
+    "DefaultFileSystem"="BINFS"
+    "PartitionDriver"="mspart.dll"
+    "Name"="Samsung SD Boot Device"
+
+[HKEY_LOCAL_MACHINE\System\StorageManager\Profiles\SDBOOT\BINFS]
+    "MountHidden"=dword:1
+    "MountAsROM"=dword:1
+
+[HKEY_LOCAL_MACHINE\System\StorageManager\AutoLoad\SDBOOT\Filters\CacheFilt]
+    "Dll"="cachefilt.dll"
+    "LockIOBuffers"=dword:1
+
+[HKEY_LOCAL_MACHINE\Drivers\BuiltIn\HSMMCDRV]
+   "Prefix"="DSK"
+   "Dll"="HSMMC.dll"
+   "Order"=dword:0
+;   "Index"=dword:3
+   "Profile"="HSMMC"
+   "IClass"="{A4E7EDDA-E575-4252-9D6B-4195D48BB865}"
+IF IMGHIVEREG
+   "Flags"=dword:1000
+ENDIF IMGHIVEREG
+
+[HKEY_LOCAL_MACHINE\System\StorageManager\Profiles\HSMMC]
+    "DefaultFileSystem"="FATFS"
+    "PartitionDriver"="mspart.dll"
+    "Name"="SDMMC"
+    "Folder"="SDMMCDisk"
+    "AutoMount"=dword:1
+    "AutoPart"=dword:1
+    "AutoFormat"=dword:1
+
+[HKEY_LOCAL_MACHINE\System\StorageManager\Profiles\HSMMC\FATFS]
+    "FormatExfat"=dword:1
+    "Flags"=dword:14                ; deprecated in CE6.0 (0x4 : FATFS_DISABLE_AUTOSCAN, 0x10 : FATFS_ENABLE_BACKUP_FAT)
+    "CheckForFormat"=dword:1
+    "EnableWriteBack"=dword:1
+    "MountAsRoot"=dword:1       ; for ROM-only file system
+IF IMGHIVEREG
+    "MountAsBootable"=dword:1       ; for Hive-based registry
+ENDIF IMGHIVEREG
+
+[HKEY_LOCAL_MACHINE\System\StorageManager\AutoLoad\HSMMC\Filters\CacheFilt]
+    "Dll"="cachefilt.dll"
+    "LockIOBuffers"=dword:1
+
+[HKEY_LOCAL_MACHINE\System\StorageManager\Profiles\HSMMC\FATFS\Filters\CacheFilt]
+    "Dll"="cachefilt.dll"
+    "LockIOBuffers"=dword:1
+    
+; END HIVE BOOT SECTION
+ENDIF BSP_IROM_SDMMC_CH0_BOOT == "1" || BSP_IROM_SDMMC_CH1_BOOT == "1"
+
+; @CESYSGEN ENDIF CE_MODULES_FSDMGR
+;-------------------------------------------------------------------------
+
+
+; @CESYSGEN ENDIF CE_MODULES_DEVICE
+;-------------------------------------------------------------------------
+
+IF SAMPLES_DSHOWFILTERS
+#include "$(_TARGETPLATROOT)\FILES\mfc_filter.reg"
+ENDIF SAMPLES_DSHOWFILTERS
+
+#include "$(_TARGETPLATROOT)\FILES\rasbook.reg"
+
+; Silverlight XRRendererOpenGL Options, This is not included in common.reg
+IF BSP_XRPLUGIN_OPENGL
+[HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\XamlRenderOpenGL]
+    "16BitTextures"=dword:0
+    "16BitWindow"=dword:1           ; Need for 16Bpp Primary Surface System
+    "Checkerboard"=dword:0
+
+ENDIF BSP_XRPLUGIN_OPENGL
+IF BSP_NODM9000A1 !
+#include "$(_TARGETPLATROOT)\SRC\DRIVERS\DM9000A1\dm9isa1.reg"
+ENDIF BSP_NODM9000A1 !
+;-------------------- Led --------------------
+IF BSP_NO_LED !
+[HKEY_LOCAL_MACHINE\Drivers\BuiltIn\led]
+    "Dll"="NAV_LED.dll"
+	  "Prefix"="LED"
+	  "Order"=dword:0
+    "Index"=dword:1
+ENDIF BSP_NO_LED !
+;-------------------- GPIO --------------------
+IF BSP_NOGPIO !
+[HKEY_LOCAL_MACHINE\Drivers\BuiltIn\GPIO]
+    "Dll"="GPIO.dll"
+    "Prefix"="PIO"
+    "Order"=dword:0
+    "Index"=dword:1  
+    "FriendlyName" = "GPIO Driver"
+ENDIF BSP_NOGPIO !
+
+IF BSP_NOEXTPOWERCTL !
+#include "$(_winceroot)\platform\tenbyten6410_mlc\src\drivers\extpowerctl\extpowerctl_drv\epctl.reg"
+ENDIF BSP_NOEXTPOWERCTL !
+;IF BSP_NO_SDIO_WIFI
+#include "$(_TARGETPLATROOT)\Src\Drivers\MAVELL_WIFI\SDIO8686.reg"
+;ENDIF BSP_NO_SDIO_WIFI !
+
+
+;============wave Volume=================
+[HKEY_CURRENT_USER\ControlPanel\Volume]
+        "Volume"=dword:FFFFFFFF ; 0=off, 0xFFFFFFFF=maximum 
+
+[HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Power\Timeouts]
+; @CESYSGEN IF PM_PM_DEFAULT_PDD
+    "ACUserIdle"=dword:0      ; in seconds
+    "ACSystemIdle"=dword:0    ; in seconds
+    "ACSuspend"=dword:0       ; in seconds
+    "BattUserIdle"=dword:0      ; in seconds
+    "BattSystemIdle"=dword:0   ; in seconds
+    "BattSuspend"=dword:0      ; in seconds
+    "BattPowerOff"=dword:0
+	"ExtPowerOff"=dword:0
+	"WakeupPowerOff"=dword:0
+	"ScreenPowerOff"=dword:0
+; @CESYSGEN ENDIF PM_PM_DEFAULT_PDD
+
+--------------------HIVE BASE REGISTRY----------------------------------------------------------
+; @CESYSGEN IF FILESYS_FSREGHIVE   
+; HIVE BOOT SECTION
+[HKEY_LOCAL_MACHINE\init\BootVars]
+   		"SystemHive"="Documents and Settings\\system.hv"
+   		"ProfileDir"="Documents and Settings"
+   		"Start DevMgr" = dword:1 
+   		"DefaultUser" = "default" 
+    	"RegistryFlags" = dword:1 
+      "Flags"=dword:3  
+
+; END HIVE BOOT SECTION
+; @CESYSGEN ENDIF FILESYS_FSREGHIVE
+
+;=======================================================================================
+
+;=================net setting===========
+ [HKEY_CURRENT_USER\Software\Microsoft\Internet Explorer\Main]
+    "Start Page"="http://www.hiteg.com"
+    "Search Page"="http://www.google.com"
+    
+[HKEY_LOCAL_MACHINE\Software\Microsoft\Windows\CurrentVersion\Internet Settings\5.0\User Agent]
+		"Template"="Same as Windows XP"
+
+[HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Internet Settings]
+    "EnableAutodial"=dword:0
+    
+;============wave Volume=================
+[HKEY_CURRENT_USER\ControlPanel\Volume]
+        "Volume"=dword:FFFFFFFF ; 0=off, 0xFFFFFFFF=maximum 
+  

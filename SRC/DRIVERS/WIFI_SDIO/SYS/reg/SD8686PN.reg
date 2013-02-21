@@ -1,0 +1,66 @@
+    ; registry keys for the Streams portion of the driver
+[HKEY_LOCAL_MACHINE\Drivers\SDCARD\ClientDrivers\Custom\MANF-02DF-CARDID-9103-FUNC-1]
+   "Dll"="SD8686PN.dll"     ; use the "streams" interface portion to load the NDIS portion
+   "Prefix"="NDL"
+       ; a dd instance key for each instance that can be added
+       ; "InstanceX" = "<Miniport Name>:<Miniport Instance>"
+   "Instance0"="SD8686PN:SD8686PN1"
+   
+    ; registry keys for the NDIS driver
+[HKEY_LOCAL_MACHINE\Comm\SD8686PN]
+   "DisplayName"="Marvell SD8686PN Wireless Card"
+   "Group"="NDIS"
+   "ImagePath"="SD8686PN.dll"
+
+[HKEY_LOCAL_MACHINE\Comm\SD8686PN\Linkage]
+   "Route"=multi_sz:"SD8686PN1"
+
+    ; instance 1 information
+[HKEY_LOCAL_MACHINE\Comm\SD8686PN1]
+   "DisplayName"="Marvell SD8686PN Wireless Card"
+   "Group"="NDIS"
+   "ImagePath"="SD8686PN.dll"
+	
+    ; instance 1 parameters
+[HKEY_LOCAL_MACHINE\Comm\SD8686PN1\Parms]
+   "BusNumber"=dword:0
+   "BusType"=dword:0
+
+    ; TCPIP linkage to instance 1 adapter
+[HKEY_LOCAL_MACHINE\Comm\Tcpip\Linkage]
+    "Bind"=multi_sz:"ppp","SD8686PN1"
+   
+    ; setup card parameters
+[HKEY_LOCAL_MACHINE\Comm\SD8686PN1\Parms]
+   "PowerMode"=dword:0
+   "ExtendedScan"=dword:1
+   "FragThsd"=dword:2346
+   "RTSThsd"=dword:2346
+       ; following is for BT co-existence testing
+   "BTMode"=dword:0
+   "BTAntennaConfig"=dword:0
+   "BTFrequencyConfig"=dword:0
+   "BTWLANTxPriorityLo"=dword:0
+   "BTWLANTxPriorityHi"=dword:0
+   "BTWLANRxPriorityLo"=dword:0
+   "BTWLANRxPriorityHi"=dword:0
+       ; adhoc starter default channel
+   "AdhocDefaultChannel"=dword:6
+       ; adhoc starter WiFi test datarate modify or not 
+   "AdhocWiFiDataRate"=dword:0
+       ; 4Bit mode
+   "SetSD4BIT"=dword:0
+
+    ; default TCPIP settings for this instance
+[HKEY_LOCAL_MACHINE\Comm\SD8686PN1\Parms\TcpIp]
+   "EnableDHCP"=dword:1
+       ; This should be MULTI_SZ
+   "DefaultGateway"=""
+       ; Use zero for broadcast address? (or 255.255.255.255)
+   "UseZeroBroadcast"=dword:0
+       ; Thus should be MULTI_SZ, the IP address list
+   "IpAddress"="0.0.0.0"
+       ; This should be MULTI_SZ, the subnet masks for the above IP addresses
+   "Subnetmask"="255.255.255.0"
+
+  

@@ -1,0 +1,277 @@
+ dm9isa1
+
+ Timestamp is 5125b2a2 (Thu Feb 21 13:37:38 2013)
+
+ Preferred load address is 10000000
+
+ Start         Length     Name                   Class
+ 0001:00000000 00000004H .CRT$XCA                CODE
+ 0001:00000004 00000004H .CRT$XCZ                CODE
+ 0001:00000008 00000004H .CRT$XIA                CODE
+ 0001:0000000c 00000004H .CRT$XIZ                CODE
+ 0001:00000010 00000004H .CRT$XPA                CODE
+ 0001:00000014 00000004H .CRT$XPZ                CODE
+ 0001:00000018 00000004H .CRT$XTA                CODE
+ 0001:0000001c 00000004H .CRT$XTZ                CODE
+ 0001:00000020 0000040bH .rdata                  CODE
+ 0001:0000042c 00000024H .rdata$debug            CODE
+ 0001:00000450 00003a8cH .text                   CODE
+ 0001:00003edc 00000020H .xdata                  CODE
+ 0001:00003efc 0000003cH .idata$2                CODE
+ 0001:00003f38 00000014H .idata$3                CODE
+ 0001:00003f4c 000000bcH .idata$4                CODE
+ 0001:00004008 000001e4H .idata$6                CODE
+ 0001:000041f0 0000004aH .edata                  CODE
+ 0002:00000000 000000bcH .idata$5                DATA
+ 0002:000000c0 0000014cH .data                   DATA
+ 0002:0000020c 00000018H .bss                    DATA
+ 0003:00000000 00000330H .pdata                  DATA
+
+  Address         Publics by Value              Rva+Base       Lib:Object
+
+ 0000:00000000       ___safe_se_handler_table   00000000     <absolute>
+ 0000:00000000       ___safe_se_handler_count   00000000     <absolute>
+ 0001:00000000       __xc_a                     10001000     corelib0:crt0init.obj
+ 0001:00000004       __xc_z                     10001004     corelib0:crt0init.obj
+ 0001:00000008       __xi_a                     10001008     corelib0:crt0init.obj
+ 0001:0000000c       __xi_z                     1000100c     corelib0:crt0init.obj
+ 0001:00000010       __xp_a                     10001010     corelib0:crt0init.obj
+ 0001:00000014       __xp_z                     10001014     corelib0:crt0init.obj
+ 0001:00000018       __xt_a                     10001018     corelib0:crt0init.obj
+ 0001:0000001c       __xt_z                     1000101c     corelib0:crt0init.obj
+ 0001:0000003c       ??_C@_1BE@JJMPHOLO@?$AAI?$AAr?$AAq?$AAN?$AAu?$AAm?$AAb?$AAe?$AAr?$AA?$AA@ 1000103c     dm9isa.obj
+ 0001:00000050       ??_C@_1BA@IAFFGNG@?$AAI?$AAo?$AAR?$AAa?$AAn?$AAg?$AAe?$AA?$AA@ 10001050     dm9isa.obj
+ 0001:00000060       ??_C@_1BE@IMGCPOOB@?$AAI?$AAo?$AAA?$AAd?$AAd?$AAr?$AAe?$AAs?$AAs?$AA?$AA@ 10001060     dm9isa.obj
+ 0001:00000074       ??_C@_1BM@DBMOMGL@?$AAA?$AAd?$AAa?$AAp?$AAt?$AAe?$AAr?$AAN?$AAu?$AAm?$AAb?$AAe?$AAr?$AA?$AA@ 10001074     dm9isa.obj
+ 0001:00000090       ??_C@_1BG@NAEHOPJJ@?$AAR?$AAe?$AAc?$AAv?$AAB?$AAu?$AAf?$AAf?$AAe?$AAr?$AA?$AA@ 10001090     dm9isa.obj
+ 0001:000000a8       ??_C@_1BG@EPKKDGEH@?$AAX?$AAm?$AAi?$AAt?$AAB?$AAu?$AAf?$AAf?$AAe?$AAr?$AA?$AA@ 100010a8     dm9isa.obj
+ 0001:000000c0       ??_C@_1CM@CAEMLAMD@?$AAB?$AAu?$AAf?$AAf?$AAe?$AAr?$AAP?$AAh?$AAy?$AAs?$AAi?$AAc?$AAa?$AAl?$AAA?$AAd?$AAd?$AAr?$AAe?$AAs?$AAs?$AA?$AA@ 100010c0     dm9isa.obj
+ 0001:000000ec       ??_C@_1BG@PCNFFOOE@?$AAS?$AAl?$AAo?$AAt?$AAN?$AAu?$AAm?$AAb?$AAe?$AAr?$AA?$AA@ 100010ec     dm9isa.obj
+ 0001:00000104       ??_C@_1BO@NKCALJEK@?$AAC?$AAo?$AAn?$AAn?$AAe?$AAc?$AAt?$AAi?$AAo?$AAn?$AAT?$AAy?$AAp?$AAe?$AA?$AA@ 10001104     dm9isa.obj
+ 0001:00000128       ??_7NIC_DEVICE_OBJECT@@6B@ 10001128     dm9isa.obj
+ 0001:000001e0       ??_7C_DM9000@@6B@          100011e0     dm9isa.obj
+ 0001:000002a8       ??_C@_03HPADHAHE@N?1A?$AA@ 100012a8     dm9isa.obj
+ 0001:000002ac       ??_C@_0P@FCENDPO@Unknown?5device?$AA@ 100012ac     dm9isa.obj
+ 0001:000002bc       ??_C@_1DO@IEAPMGNM@?$AA?$FL?$AAd?$AAm?$AA9?$AA?3?$AA?5?$AAC?$AAh?$AAi?$AAp?$AA?5?$AAs?$AAi?$AAg?$AAn?$AAa?$AAt?$AAu?$AAr?$AAe?$AA?5?$AAi?$AAs?$AA?5?$AA?$CF?$AA0?$AA8?$AAX?$AA?$AN?$AA?6?$AA?$AA@ 100012bc     dm9isa.obj
+ 0001:000002fc       ??_C@_0BL@BLOGHFBJ@Davicom?5Semiconductor?0?5Inc?$AA@ 100012fc     driver.obj
+ 0001:00000318       ??_7NIC_DRIVER_OBJECT@@6B@ 10001318     driver.obj
+ 0001:00000358       ??_C@_0N@HAOMBGEI@Device?5error?$AA@ 10001358     driver.obj
+ 0001:00000368       ??_C@_0BE@PMJFEMCP@Insufficient?5memory?$AA@ 10001368     driver.obj
+ 0001:0000037c       ??_C@_0CI@KEMPKEBL@?$CK?$CK?$CK?5Error?5in?5retriving?5configura@ 1000137c     driver.obj
+ 0001:000003a4       ??_C@_0BP@PANLKOMJ@Error?5in?5opening?5configuration?$AA@ 100013a4     driver.obj
+ 0001:000003c4       ??_C@_0BC@KNMBDOID@Unsupported?5media?$AA@ 100013c4     driver.obj
+ 0001:000003d8       ??_C@_0BJ@GJCOIDMC@Error?5in?5creating?5device?$AA@ 100013d8     driver.obj
+ 0001:000003f4       ??_C@_0BG@EKKLKDPI@Fails?5to?5map?5io?5space?$AA@ 100013f4     device.obj
+ 0001:0000040c       ??_C@_0BP@IMCKHPLH@Error?5in?5registering?5interrupt?$AA@ 1000140c     device.obj
+ 0001:00000450       ?Dequeue@CQueue@@QAAPAU_CQUEUE_GEN_HEADER@@XZ 10001450 f i dm9isa.obj
+ 0001:00000498       ??0NIC_DEVICE_OBJECT@@QAA@PAVNIC_DRIVER_OBJECT@@PAX@Z 10001498 f i dm9isa.obj
+ 0001:000005cc       ?DeviceQueryInformation@NIC_DEVICE_OBJECT@@UAAHPAHKPAXKPAK2@Z 100015cc f i dm9isa.obj
+ 0001:000005d4       ?DeviceSetInformation@NIC_DEVICE_OBJECT@@UAAHPAHKPAXKPAK2@Z 100015d4 f i dm9isa.obj
+ 0001:000005dc       ?DeviceHardwareStatus@NIC_DEVICE_OBJECT@@UAAKXZ 100015dc f i dm9isa.obj
+ 0001:000005e4       ?DeviceEnableTransmit@NIC_DEVICE_OBJECT@@UAAXXZ 100015e4 f i dm9isa.obj
+ 0001:000005e8       ?DeviceDisableTransmit@NIC_DEVICE_OBJECT@@UAAXXZ 100015e8 f i dm9isa.obj
+ 0001:000005ec       ??0C_DM9000@@QAA@PAVNIC_DRIVER_OBJECT@@PAX@Z 100015ec f i dm9isa.obj
+ 0001:00000634       ?DevicePCIID@C_DM9000@@UAAKXZ 10001634 f i dm9isa.obj
+ 0001:0000063c       ?DeviceEnableTransmit@C_DM9000@@UAAXXZ 1000163c f i dm9isa.obj
+ 0001:00000648       ?DeviceDisableTransmit@C_DM9000@@UAAXXZ 10001648 f i dm9isa.obj
+ 0001:00000654       ?DeviceHalt@C_DM9000@@UAAXXZ 10001654 f i dm9isa.obj
+ 0001:00000658       ?DeviceQueryTxResources@C_DM9000@@UAAHXZ 10001658 f i dm9isa.obj
+ 0001:00000670       ?DeviceConfigureParameters@C_DM9000@@UAAPAU_CONFIG_PARAMETER@@XZ 10001670 f   dm9isa.obj
+ 0001:0000067c       ?DeviceSetEepromFormat@C_DM9000@@UAAXXZ 1000167c f   dm9isa.obj
+ 0001:00000698       ?DeviceWritePort@C_DM9000@@UAAKKK@Z 10001698 f   dm9isa.obj
+ 0001:000006e4       ?DeviceReadPort@C_DM9000@@UAAKK@Z 100016e4 f   dm9isa.obj
+ 0001:0000072c       ?DeviceReadEeprom@C_DM9000@@UAAGK@Z 1000172c f   dm9isa.obj
+ 0001:00000808       ?DeviceWriteEeprom@C_DM9000@@UAAGKG@Z 10001808 f   dm9isa.obj
+ 0001:000008dc       ?DeviceReadPhy@C_DM9000@@UAAGKK@Z 100018dc f   dm9isa.obj
+ 0001:000009ac       ?DeviceWritePhy@C_DM9000@@UAAGKKG@Z 100019ac f   dm9isa.obj
+ 0001:00000a7c       ?DeviceReadData@C_DM9000@@UAAKXZ 10001a7c f   dm9isa.obj
+ 0001:00000aac       ?DeviceReadDataWithoutIncrement@C_DM9000@@UAAKXZ 10001aac f   dm9isa.obj
+ 0001:00000b48       ?DeviceReadString@C_DM9000@@UAAPAEPAEH@Z 10001b48 f   dm9isa.obj
+ 0001:00000c24       ?DeviceWriteString@C_DM9000@@UAAPAEPAEH@Z 10001c24 f   dm9isa.obj
+ 0001:00000d00       ?DeviceEnableInterrupt@C_DM9000@@UAAXXZ 10001d00 f   dm9isa.obj
+ 0001:00000d24       ?DeviceDisableInterrupt@C_DM9000@@UAAXXZ 10001d24 f   dm9isa.obj
+ 0001:00000d48       ?DeviceEnableReceive@C_DM9000@@UAAXXZ 10001d48 f   dm9isa.obj
+ 0001:00000d80       ?DeviceDisableReceive@C_DM9000@@UAAXXZ 10001d80 f   dm9isa.obj
+ 0001:00000db8       ?DeviceGetInterruptStatus@C_DM9000@@UAAKXZ 10001db8 f   dm9isa.obj
+ 0001:00000ddc       ?DeviceSetInterruptStatus@C_DM9000@@UAAKK@Z 10001ddc f   dm9isa.obj
+ 0001:00000e00       ?DeviceGetReceiveStatus@C_DM9000@@UAAKXZ 10001e00 f   dm9isa.obj
+ 0001:00000e2c       ?DeviceStart@C_DM9000@@UAAXXZ 10001e2c f   dm9isa.obj
+ 0001:00000f64       ?EDeviceInitialize@C_DM9000@@UAAXH@Z 10001f64 f   dm9isa.obj
+ 0001:000010cc       ?DeviceResetPHYceiver@C_DM9000@@UAAXXZ 100020cc f   dm9isa.obj
+ 0001:000010d8       ?DeviceOnSetupFilter@C_DM9000@@UAAHK@Z 100020d8 f   dm9isa.obj
+ 0001:000012e0       ?DeviceInterruptEventHandler@C_DM9000@@UAAXK@Z 100022e0 f   dm9isa.obj
+ 0001:000013b4       ?DeviceHardwareStatus@C_DM9000@@UAAKXZ 100023b4 f   dm9isa.obj
+ 0001:000013c8       ?DeviceSend@C_DM9000@@UAAHPAU_CQUEUE_GEN_HEADER@@@Z 100023c8 f   dm9isa.obj
+ 0001:000014cc       ?Dm9LookupRxBuffers@C_DM9000@@UAAHXZ 100024cc f   dm9isa.obj
+ 0001:00001638       DeviceEntry                10002638 f   dm9isa.obj
+ 0001:00001678       ?EDeviceRegisterIoSpace@C_DM9000@@UAAXXZ 10002678 f   dm9isa.obj
+ 0001:000017f8       ?EDeviceValidateConfigurations@C_DM9000@@UAAXXZ 100027f8 f   dm9isa.obj
+ 0001:000018dc       ?DeviceReset@C_DM9000@@UAAXXZ 100028dc f   dm9isa.obj
+ 0001:00001a48       ?DriverStart@NIC_DRIVER_OBJECT@@UAAXXZ 10002a48 f   driver.obj
+ 0001:00001a68       ?DriverIndication@NIC_DRIVER_OBJECT@@UAAXK@Z 10002a68 f   driver.obj
+ 0001:00001ad0       ?DriverIsr@NIC_DRIVER_OBJECT@@UAAXPAE0@Z 10002ad0 f   driver.obj
+ 0001:00001b64       ?DriverInterruptHandler@NIC_DRIVER_OBJECT@@UAAXXZ 10002b64 f   driver.obj
+ 0001:00001ba8       ?DriverQueryInformation@NIC_DRIVER_OBJECT@@UAAHKPAXKPAK1@Z 10002ba8 f   driver.obj
+ 0001:00002304       ?DriverSetInformation@NIC_DRIVER_OBJECT@@UAAHKPAXKPAK1@Z 10003304 f   driver.obj
+ 0001:00002428       ?DriverEnableInterrupt@NIC_DRIVER_OBJECT@@UAAXXZ 10003428 f   driver.obj
+ 0001:00002448       ?DriverDisableInterrupt@NIC_DRIVER_OBJECT@@UAAXXZ 10003448 f   driver.obj
+ 0001:00002468       ?DriverCheckForHang@NIC_DRIVER_OBJECT@@UAAHXZ 10003468 f   driver.obj
+ 0001:0000249c       ?DriverHalt@NIC_DRIVER_OBJECT@@UAAXXZ 1000349c f   driver.obj
+ 0001:000024bc       ?DriverReset@NIC_DRIVER_OBJECT@@UAAHPAE@Z 100034bc f   driver.obj
+ 0001:0000250c       ?DriverSend@NIC_DRIVER_OBJECT@@UAAHPAU_NDIS_PACKET@@I@Z 1000350c f   driver.obj
+ 0001:00002658       ?DriverReceiveIndication@NIC_DRIVER_OBJECT@@UAAXHPAXH@Z 10003658 f   driver.obj
+ 0001:000026b8       ?DriverSendCompleted@NIC_DRIVER_OBJECT@@UAAXPAU_CQUEUE_GEN_HEADER@@@Z 100036b8 f   driver.obj
+ 0001:000026f8       MiniportISRHandler         100036f8 f   driver.obj
+ 0001:0000273c       MiniportInterruptHandler   1000373c f   driver.obj
+ 0001:00002770       MiniportQueryInformation   10003770 f   driver.obj
+ 0001:000027bc       MiniportSetInformation     100037bc f   driver.obj
+ 0001:00002808       MiniportCheckForHang       10003808 f   driver.obj
+ 0001:00002840       MiniportHalt               10003840 f   driver.obj
+ 0001:00002874       MiniportReset              10003874 f   driver.obj
+ 0001:000028b4       MiniportSend               100038b4 f   driver.obj
+ 0001:000028e8       ??0NIC_DRIVER_OBJECT@@QAA@PAX0@Z 100038e8 f i driver.obj
+ 0001:0000294c       ?DriverIsOutOfResource@NIC_DRIVER_OBJECT@@UAAHXZ 1000394c f i driver.obj
+ 0001:00002954       ?EDriverInitialize@NIC_DRIVER_OBJECT@@UAAXPAHPAIPAW4_NDIS_MEDIUM@@I@Z 10003954 f   driver.obj
+ 0001:00002ea0       MiniportInitialize         10003ea0 f   driver.obj
+ 0001:00002ff4       DriverEntry                10003ff4 f   driver.obj
+ 0001:0000310c       ?DeviceCalculateCRC32@NIC_DEVICE_OBJECT@@QAAKPAEHH@Z 1000410c f   device.obj
+ 0001:000031a8       ?DeviceMacAddress@NIC_DEVICE_OBJECT@@UAAPAEPAE@Z 100041a8 f   device.obj
+ 0001:000031e4       ?DeviceVendorID@NIC_DEVICE_OBJECT@@UAAGXZ 100041e4 f   device.obj
+ 0001:000031f8       ?DeviceProductID@NIC_DEVICE_OBJECT@@UAAGXZ 100041f8 f   device.obj
+ 0001:0000320c       ?DeviceRegisterAdapter@NIC_DEVICE_OBJECT@@UAAXXZ 1000420c f   device.obj
+ 0001:00003258       ?DeviceReportStatistics@NIC_DEVICE_OBJECT@@QAAXKK@Z 10004258 f   device.obj
+ 0001:00003270       ?DeviceRetriveConfigurations@NIC_DEVICE_OBJECT@@UAAXPAX@Z 10004270 f   device.obj
+ 0001:00003340       ?DeviceSetDefaultSettings@NIC_DEVICE_OBJECT@@UAAXXZ 10004340 f   device.obj
+ 0001:000033f0       ?EDeviceLoadEeprom@NIC_DEVICE_OBJECT@@UAAXXZ 100043f0 f   device.obj
+ 0001:00003440       ?DevicePolling@NIC_DEVICE_OBJECT@@QAAHKKKKK@Z 10004440 f   device.obj
+ 0001:000034a0       ?SetConnectionStatus@NIC_DEVICE_OBJECT@@IAAX_N@Z 100044a0 f   device.obj
+ 0001:00003524       ?DeviceCheckForHang@NIC_DEVICE_OBJECT@@UAAHXZ 10004524 f   device.obj
+ 0001:00003640       DeviceTimerTrunkRoutine    10004640 f   device.obj
+ 0001:0000367c       ?DeviceInitializeTimer@NIC_DEVICE_OBJECT@@UAAXXZ 1000467c f   device.obj
+ 0001:000036a4       ?DeviceCancelTimer@NIC_DEVICE_OBJECT@@UAAXXZ 100046a4 f   device.obj
+ 0001:000036c4       ?DeviceSetTimer@NIC_DEVICE_OBJECT@@UAAXK@Z 100046c4 f   device.obj
+ 0001:000036d8       ?DeviceOnTimer@NIC_DEVICE_OBJECT@@UAAXXZ 100046d8 f   device.obj
+ 0001:000036dc       ?EDeviceRegisterIoSpace@NIC_DEVICE_OBJECT@@UAAXXZ 100046dc f   device.obj
+ 0001:00003780       ?EDeviceRegisterInterrupt@NIC_DEVICE_OBJECT@@UAAXXZ 10004780 f   device.obj
+ 0001:0000383c       NdisFreeMemory             1000483c f   ndis:NDIS.dll
+ 0001:0000384c       NdisInitializeString       1000484c f   ndis:NDIS.dll
+ 0001:0000385c       NdisAllocateSpinLock       1000485c f   ndis:NDIS.dll
+ 0001:0000386c       NdisFreeSpinLock           1000486c f   ndis:NDIS.dll
+ 0001:0000387c       NdisAcquireSpinLock        1000487c f   ndis:NDIS.dll
+ 0001:0000388c       NdisReleaseSpinLock        1000488c f   ndis:NDIS.dll
+ 0001:0000389c       NdisStallExecution         1000489c f   ndis:NDIS.dll
+ 0001:000038ac       NdisQueryPacket            100048ac f   ndis:NDIS.dll
+ 0001:000038bc       NdisCloseConfiguration     100048bc f   ndis:NDIS.dll
+ 0001:000038cc       NdisOpenConfiguration      100048cc f   ndis:NDIS.dll
+ 0001:000038dc       NdisTerminateWrapper       100048dc f   ndis:NDIS.dll
+ 0001:000038ec       NdisMRegisterMiniport      100048ec f   ndis:NDIS.dll
+ 0001:000038fc       NdisInitializeWrapper      100048fc f   ndis:NDIS.dll
+ 0001:0000390c       NdisMSetAttributesEx       1000490c f   ndis:NDIS.dll
+ 0001:0000391c       NdisReadNetworkAddress     1000491c f   ndis:NDIS.dll
+ 0001:0000392c       NdisReadConfiguration      1000492c f   ndis:NDIS.dll
+ 0001:0000393c       NdisMInitializeTimer       1000493c f   ndis:NDIS.dll
+ 0001:0000394c       NdisMCancelTimer           1000494c f   ndis:NDIS.dll
+ 0001:0000395c       NdisSetTimer               1000495c f   ndis:NDIS.dll
+ 0001:0000396c       NdisMRegisterInterrupt     1000496c f   ndis:NDIS.dll
+ 0001:0000397c       InitializeCriticalSection  1000497c f   coredll:COREDLL.dll
+ 0001:0000398c       DeleteCriticalSection      1000498c f   coredll:COREDLL.dll
+ 0001:0000399c       TryEnterCriticalSection    1000499c f   coredll:COREDLL.dll
+ 0001:000039ac       EnterCriticalSection       100049ac f   coredll:COREDLL.dll
+ 0001:000039bc       LeaveCriticalSection       100049bc f   coredll:COREDLL.dll
+ 0001:000039cc       NKDbgPrintfW               100049cc f   coredll:COREDLL.dll
+ 0001:000039dc       DisableThreadLibraryCalls  100049dc f   coredll:COREDLL.dll
+ 0001:000039ec       MmMapIoSpace               100049ec f   ceddk:CEDDK.dll
+ 0001:000039fc       DllMain                    100049fc f   corelib0:dllmain.obj
+ 0001:00003b18       _DllMainCRTStartup         10004b18 f   corelib0:pegdmain.obj
+ 0001:00003b48       __GSHandlerCheckCommon     10004b48 f   corelib0:gshandler.obj
+ 0001:00003b84       __GSHandlerCheck           10004b84 f   corelib0:gshandler.obj
+ 0001:00003ba8       __security_init_cookie     10004ba8 f   corelib0:seccinit.obj
+ 0001:00003c04       __security_check_cookie    10004c04 f   corelib0:armsecgs.obj
+ 0001:00003c18       __gsfailure                10004c18 f   corelib0:armsecgs.obj
+ 0001:00003d58       _cexit                     10004d58 f   corelib0:cexit.obj
+ 0001:00003d74       _initterm                  10004d74 f   corelib0:crt0dat.obj
+ 0001:00003da8       _cinit                     10004da8 f   corelib0:crt0dat.obj
+ 0001:00003ddc       memset                     10004ddc f   corelib1:COREDLL.dll
+ 0001:00003dec       _purecall                  10004dec f   corelib1:COREDLL.dll
+ 0001:00003dfc       __rt_sdiv                  10004dfc f   corelib1:COREDLL.dll
+ 0001:00003e0c       ??3@YAXPAX@Z               10004e0c f   corelib1:COREDLL.dll
+ 0001:00003e1c       ??2@YAPAXI@Z               10004e1c f   corelib1:COREDLL.dll
+ 0001:00003e2c       longjmp                    10004e2c f   corelib1:COREDLL.dll
+ 0001:00003e3c       setjmp                     10004e3c f   corelib1:COREDLL.dll
+ 0001:00003e4c       memcpy                     10004e4c f   corelib1:COREDLL.dll
+ 0001:00003e5c       malloc                     10004e5c f   corelib1:COREDLL.dll
+ 0001:00003e6c       _XcptFilter                10004e6c f   corelib1:COREDLL.dll
+ 0001:00003e7c       __C_specific_handler       10004e7c f   corelib1:COREDLL.dll
+ 0001:00003e8c       __security_gen_cookie2     10004e8c f   corelib1:COREDLL.dll
+ 0001:00003e9c       __report_gsfailure         10004e9c f   corelib1:COREDLL.dll
+ 0001:00003eac       free                       10004eac f   corelib1:COREDLL.dll
+ 0001:00003ebc       InterlockedExchange        10004ebc f   coredll:COREDLL.dll
+ 0001:00003ecc       TerminateProcess           10004ecc f   coredll:COREDLL.dll
+ 0001:00003efc       __IMPORT_DESCRIPTOR_NDIS   10004efc     ndis:NDIS.dll
+ 0001:00003f10       __IMPORT_DESCRIPTOR_COREDLL 10004f10     coredll:COREDLL.dll
+ 0001:00003f24       __IMPORT_DESCRIPTOR_CEDDK  10004f24     ceddk:CEDDK.dll
+ 0001:00003f38       __NULL_IMPORT_DESCRIPTOR   10004f38     ndis:NDIS.dll
+ 0002:00000000       __imp_MmMapIoSpace         10006000     ceddk:CEDDK.dll
+ 0002:00000004       \177CEDDK_NULL_THUNK_DATA  10006004     ceddk:CEDDK.dll
+ 0002:00000008       __imp_InterlockedExchange  10006008     coredll:COREDLL.dll
+ 0002:0000000c       __imp_free                 1000600c     corelib1:COREDLL.dll
+ 0002:00000010       __imp___report_gsfailure   10006010     corelib1:COREDLL.dll
+ 0002:00000014       __imp___security_gen_cookie2 10006014     corelib1:COREDLL.dll
+ 0002:00000018       __imp___C_specific_handler 10006018     corelib1:COREDLL.dll
+ 0002:0000001c       __imp__XcptFilter          1000601c     corelib1:COREDLL.dll
+ 0002:00000020       __imp_TerminateProcess     10006020     coredll:COREDLL.dll
+ 0002:00000024       __imp_memcpy               10006024     corelib1:COREDLL.dll
+ 0002:00000028       __imp_setjmp               10006028     corelib1:COREDLL.dll
+ 0002:0000002c       __imp_longjmp              1000602c     corelib1:COREDLL.dll
+ 0002:00000030       __imp_??2@YAPAXI@Z         10006030     corelib1:COREDLL.dll
+ 0002:00000034       __imp_??3@YAXPAX@Z         10006034     corelib1:COREDLL.dll
+ 0002:00000038       __imp___rt_sdiv            10006038     corelib1:COREDLL.dll
+ 0002:0000003c       __imp__purecall            1000603c     corelib1:COREDLL.dll
+ 0002:00000040       __imp_memset               10006040     corelib1:COREDLL.dll
+ 0002:00000044       __imp_malloc               10006044     corelib1:COREDLL.dll
+ 0002:00000048       __imp_NKDbgPrintfW         10006048     coredll:COREDLL.dll
+ 0002:0000004c       __imp_InitializeCriticalSection 1000604c     coredll:COREDLL.dll
+ 0002:00000050       __imp_DeleteCriticalSection 10006050     coredll:COREDLL.dll
+ 0002:00000054       __imp_TryEnterCriticalSection 10006054     coredll:COREDLL.dll
+ 0002:00000058       __imp_EnterCriticalSection 10006058     coredll:COREDLL.dll
+ 0002:0000005c       __imp_LeaveCriticalSection 1000605c     coredll:COREDLL.dll
+ 0002:00000060       __imp_DisableThreadLibraryCalls 10006060     coredll:COREDLL.dll
+ 0002:00000064       \177COREDLL_NULL_THUNK_DATA 10006064     coredll:COREDLL.dll
+ 0002:00000068       __imp_NdisMRegisterInterrupt 10006068     ndis:NDIS.dll
+ 0002:0000006c       __imp_NdisSetTimer         1000606c     ndis:NDIS.dll
+ 0002:00000070       __imp_NdisMCancelTimer     10006070     ndis:NDIS.dll
+ 0002:00000074       __imp_NdisMInitializeTimer 10006074     ndis:NDIS.dll
+ 0002:00000078       __imp_NdisReadConfiguration 10006078     ndis:NDIS.dll
+ 0002:0000007c       __imp_NdisReadNetworkAddress 1000607c     ndis:NDIS.dll
+ 0002:00000080       __imp_NdisMSetAttributesEx 10006080     ndis:NDIS.dll
+ 0002:00000084       __imp_NdisInitializeWrapper 10006084     ndis:NDIS.dll
+ 0002:00000088       __imp_NdisMRegisterMiniport 10006088     ndis:NDIS.dll
+ 0002:0000008c       __imp_NdisTerminateWrapper 1000608c     ndis:NDIS.dll
+ 0002:00000090       __imp_NdisOpenConfiguration 10006090     ndis:NDIS.dll
+ 0002:00000094       __imp_NdisCloseConfiguration 10006094     ndis:NDIS.dll
+ 0002:00000098       __imp_NdisQueryPacket      10006098     ndis:NDIS.dll
+ 0002:0000009c       __imp_NdisStallExecution   1000609c     ndis:NDIS.dll
+ 0002:000000a0       __imp_NdisReleaseSpinLock  100060a0     ndis:NDIS.dll
+ 0002:000000a4       __imp_NdisAcquireSpinLock  100060a4     ndis:NDIS.dll
+ 0002:000000a8       __imp_NdisFreeSpinLock     100060a8     ndis:NDIS.dll
+ 0002:000000ac       __imp_NdisAllocateSpinLock 100060ac     ndis:NDIS.dll
+ 0002:000000b0       __imp_NdisInitializeString 100060b0     ndis:NDIS.dll
+ 0002:000000b4       __imp_NdisFreeMemory       100060b4     ndis:NDIS.dll
+ 0002:000000b8       \177NDIS_NULL_THUNK_DATA   100060b8     ndis:NDIS.dll
+ 0002:000000c0       ?g_szDm9ConfigParams@@3PAU_CONFIG_PARAMETER@@A 100060c0     dm9isa.obj
+ 0002:00000160       ?gszNICSupportedOid@@3PAKA 10006160     driver.obj
+ 0002:00000204       __security_cookie          10006204     corelib0:seccinit.obj
+ 0002:00000208       __security_cookie_complement 10006208     corelib0:seccinit.obj
+ 0002:0000020c       ?_gpExpData@@3PAU_EXCEPTION_DATA@@A 1000620c     common.obj
+ 0002:00000210       _exitflag                  10006210     corelib0:cexit.obj
+ 0002:00000214       __onexitend                10006214     <common>
+ 0002:00000218       __onexitbegin              10006218     <common>
+ 0002:0000021c       g_pcsExit                  1000621c     <common>
+ 0002:00000220       _pRawDllMain               10006220     <common>
+
+ entry point at        0001:00003b18
+
+ Static symbols
+
+ 0001:00003a1c       _DllMainCRTStartupHelper   10004a1c f   corelib0:pegdmain.obj
+ 0001:00003c5c       doexit                     10004c5c f   corelib0:cexit.obj

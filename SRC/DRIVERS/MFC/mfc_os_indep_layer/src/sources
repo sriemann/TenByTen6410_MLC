@@ -1,0 +1,65 @@
+!if 0
+Use of this source code is subject to the terms of the Microsoft end-user
+license agreement (EULA) under which you licensed this SOFTWARE PRODUCT.
+If you did not accept the terms of the EULA, you are not authorized to use
+this source code. For a copy of the EULA, please see the LICENSE.RTF on your
+install media.
+!endif
+!IF 0
+
+
+Module Name:
+
+    sources.
+
+Abstract:
+
+    This file specifies the target component being built and the list of
+    sources files needed to build that component.  Also specifies optional
+    compiler switches and libraries that are unique for the component being
+    built.
+
+
+!ENDIF
+
+!if "$(BSP_NOMFC)" == "1"
+SKIPBUILD=1
+!endif
+
+SYNCHRONIZE_DRAIN = 1
+
+TARGETNAME = mfc_os_indep_layer
+TARGETTYPE = LIBRARY
+
+RELEASETYPE = PLATFORM
+WINCEOEM = 1
+
+CDEFINES=$(CDEFINES) -DCNM_PM -DDIVX_ENABLE=1
+INCLUDES=$(INCLUDES);..\..\mfc_os_dep_layer\include;..\..\mfc_dd_if_layer\wince\include;..\include;
+
+SOURCES=    \
+            BitProcBuf.c    \
+            DataBuf.c \
+            FramBufMgr.c \
+            MFC_HW_Init.c \
+            MFC_Instance.c \
+            MFC_Inst_Pool.c \
+            MfcSfr.c \
+            Prism_S_V13E.c \
+            
+ARM_SOURCES= \
+        CacheOpr.s    \
+        
+FILE_VIEW_INCLUDES_FOLDER= \
+    ..\include\BitProcBuf.h \
+    ..\include\Prism_S.h \
+    ..\include\MfcTypes.h \
+    ..\include\MfcSfr.h \
+    ..\include\MfcConfig.h \
+    ..\include\MFC_Instance.h \
+    ..\include\MFC_Inst_Pool.h \
+    ..\include\MFC_HW_Init.h \
+    ..\include\Mfc.h \
+    ..\include\FramBufMgr.h \
+    ..\include\DataBuf.h \
+

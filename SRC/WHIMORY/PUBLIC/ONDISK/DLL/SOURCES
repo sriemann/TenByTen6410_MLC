@@ -1,0 +1,30 @@
+!if 0
+    File:   sources
+
+    Author: AP Development Team
+
+	COPYRIGHT (c) 2006 SAMSUNG ELECTRONICS CO., LTD. ALL RIGHTS RESERVED
+!endif
+
+TARGETNAME=ONDisk
+TARGETTYPE=DYNLINK
+RELEASETYPE=PLATFORM
+WINCEOEM=1
+DLLENTRY=_DllMainCRTStartup
+DEFFILE=ONDisk.def
+
+INCLUDES=$(INCLUDES);$(_TARGETPLATROOT)\Src\Whimory\inc;$(_TARGETPLATROOT)\Src\inc;$(_TARGETPLATROOT)\Src\Whimory\Core\VFL;$(_TARGETPLATROOT)\Src\Whimory\Public\Inc;
+CDEFINES=$(CDEFINES)
+LDEFINES=-subsystem:native /DEBUG /DEBUGTYPE:CV /FIXED:NO
+
+SOURCES=
+
+TARGETLIBS=	\
+            $(_TARGETPLATROOT)\Src\Whimory\Lib\$(_CPUDEPPATH)\ONDisk_core.lib   \
+            $(_TARGETPLATROOT)\Src\Whimory\Lib\$(_CPUDEPPATH)\ONDisk_misc.lib   \
+			$(_PUBLICROOT)\common\oak\lib\$(_CPUINDPATH)\storeapi.lib		\
+			$(_COMMONSDKROOT)\lib\$(_CPUINDPATH)\coredll.lib		\
+			$(_COMMONSDKROOT)\lib\$(_CPUINDPATH)\corelibc.lib		\
+			$(_TARGETPLATROOT)\Src\Whimory\lib\$(_CPUDEPPATH)\PseudoVFL.lib \
+			$(_TARGETPLATROOT)\Src\Whimory\lib\$(_CPUDEPPATH)\PseudoFTL.lib \
+

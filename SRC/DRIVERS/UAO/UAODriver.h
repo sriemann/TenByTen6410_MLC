@@ -1,0 +1,21 @@
+//
+// Copyright (c) Samsung Electronics. Co. LTD.  All rights reserved.
+//
+/*++
+THIS CODE AND INFORMATION IS PROVIDED "AS IS" WITHOUT WARRANTY OF
+ANY KIND, EITHER EXPRESSED OR IMPLIED, INCLUDING BUT NOT LIMITED TO
+THE IMPLIED WARRANTIES OF MERCHANTABILITY AND/OR FITNESS FOR A
+PARTICULAR PURPOSE.
+
+*/
+
+
+#ifndef __UAO_DRIVER_H__
+#define __UAO_DRIVER_H__
+
+#include <windows.h>
+
+#define IOCTL_UAO_ENABLE            (0x00800030)
+#define IOCTL_UAO_DISABLE            (0x00800031)
+
+#endif /*__UAO_DRIVER_H__*/

@@ -1,0 +1,47 @@
+!if 0
+Copyright (c) Microsoft Corporation.  All rights reserved.
+!endif
+!if 0
+Use of this sample source code is subject to the terms of the 
+Software License Agreement (SLA) under which you licensed this software product.
+If you did not accept the terms of the license agreement, 
+you are not authorized to use this sample source code. 
+THE SAMPLE SOURCE CODE IS PROVIDED "AS IS", WITH NO WARRANTIES OR INDEMNITIES.
+!endif
+
+!if "$(BSP_NOAUDIO)" == "1"
+SKIPBUILD=1
+!endif
+
+SYNCHRONIZE_DRAIN=1
+
+TARGETNAME=s3c6410_wavedev_ac97
+RELEASETYPE=PLATFORM
+TARGETTYPE=DYNLINK
+DLLENTRY=_DllMainCRTStartup
+
+DEFFILE=wavedev.def
+
+INCLUDES=$(INCLUDES);    \
+        $(_TARGETPLATROOT)\src\drivers\Wavedev\s3c6410_ac97_lib;    \
+        $(_TARGETPLATROOT)\src\drivers\DMA\s3c6410_dma_lib;        \
+
+TARGETLIBS= \
+    $(_COMMONSDKROOT)\lib\$(_CPUINDPATH)\coredll.lib \
+    $(_COMMONOAKROOT)\lib\$(_CPUINDPATH)\ceddk.lib    \
+
+SOURCELIBS=\
+    $(_TARGETPLATROOT)\lib\$(_CPUINDPATH)\s3c6410_ac97_lib.lib    \
+    $(_TARGETPLATROOT)\lib\$(_CPUINDPATH)\s3c6410_dma_lib.lib    \
+
+SOURCES= \
+    devctxt.cpp    \
+    hwctxt.cpp    \
+    input.cpp        \
+    midinote.cpp    \
+    midistrm.cpp    \
+    mixerdrv.cpp    \
+    output.cpp    \
+    strmctxt.cpp    \
+    wavemain.cpp
+

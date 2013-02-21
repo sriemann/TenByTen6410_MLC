@@ -1,0 +1,31 @@
+;
+; Copyright (c) Microsoft Corporation.  All rights reserved.
+;
+;
+; Use of this source code is subject to the terms of the Microsoft end-user
+; license agreement (EULA) under which you licensed this SOFTWARE PRODUCT.
+; If you did not accept the terms of the EULA, you are not authorized to use
+; this source code. For a copy of the EULA, please see the LICENSE.RTF on your
+; install media.
+;
+
+
+#define    NKSTART      80100000    ; Kernel Start Address this must be in RAM address
+#define    NKLEN        02800000    ; 40MB (This may be minimized by OEM )
+                                    ; If OEM want to minize kernel region then modify common.bib on public folder
+                                    ; Sample common.bib is included in etc folder
+                                    ; This must be adjusted, whenever you make image to get minimized kernel binary size.
+#define    SYSTEMSTART  82900000    ; You must adjust this start point to be contigious 
+#define    SYSTEMLEN    004FC000    ; Also may need to adjust this for other image region or CHAIN region
+#define    APPSTART     82DFC000    ; You must adjust this start point to be contigious 
+#define    APPLEN       00200000    ; Also may need to adjust this for other image region or CHAIN region
+#define    CHAIN_ADDRESS    82FFC000
+IF SYSGEN_BINFS !
+#define    RAMSTART     84000000    ; If you do not use BINFS, this must be shrinked to remain memory size 
+#define    RAMLEN       01900000    ; 27MB (Will be auto-sized from the end of NK)
+ELSE
+#define    RAMSTART     82000000    ; NK end address
+#define    RAMLEN       03D00000    ; 89MB (Will be auto-sized from the end of NK, but must be overlapped with reserved memory
+ENDIF   ; END of SYSGEN_BINFS !
+#define    CHAIN_LENGTH     00004000
+

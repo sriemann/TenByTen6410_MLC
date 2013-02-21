@@ -1,0 +1,10 @@
+LIBRARY     UAO
+
+EXPORTS UAO_Init
+    UAO_Deinit
+    UAO_Open
+    UAO_Close
+    UAO_Write
+    UAO_IOControl
+    UAO_PowerDown
+    UAO_PowerUp

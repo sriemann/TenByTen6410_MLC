@@ -1,0 +1,47 @@
+
+SYNCHRONIZE_DRAIN=1
+
+WINCEREL=1
+TARGETNAME=FrameExtractFilter
+TARGETDEFNAME=FrameExtractFilter.def
+RELEASETYPE=PLATFORM
+DLLENTRY=_DllMainCRTStartup
+TARGETTYPE=DYNLINK
+CDEFINES=$(CDEFINES) -DFrameExtractFilter_EXPORTS
+INCLUDES= \
+    $(_WINCEROOT)\public\DirectX\SDK\inc;$(_WINCEROOT)\public\DirectX\SDK\Samples\Dshow\Baseclasses; \
+    $(_WINCEROOT)\public\common\sdk\inc;$(_WINCEROOT)\public\common\oak\inc; \
+    ..\..\LIB\MMFrameExtractLib;
+
+
+TARGETLIBS= \
+  $(_WINCEROOT)\public\DirectX\SDK\lib\$(_CPUINDPATH)\strmbase.lib \
+  $(_WINCEROOT)\public\DirectX\SDK\lib\$(_CPUINDPATH)\strmiids.lib \
+  $(_PROJECTROOT)\cesysgen\sdk\lib\$(_CPUINDPATH)\ole32.lib \
+  $(_PROJECTROOT)\cesysgen\sdk\lib\$(_CPUINDPATH)\uuid.lib \
+  $(_PROJECTROOT)\cesysgen\sdk\lib\$(_CPUINDPATH)\coredll.lib \
+
+SOURCELIBS=\
+  $(_WINCEROOT)\public\DirectX\SDK\lib\$(_CPUINDPATH)\strmbase.lib \
+  $(_WINCEROOT)\public\DirectX\SDK\lib\$(_CPUINDPATH)\strmiids.lib \
+  $(_PROJECTROOT)\cesysgen\sdk\lib\$(_CPUINDPATH)\ole32.lib \
+  $(_PROJECTROOT)\cesysgen\sdk\lib\$(_CPUINDPATH)\uuid.lib \
+  $(_PROJECTROOT)\cesysgen\sdk\lib\$(_CPUINDPATH)\coredll.lib \
+        $(_TARGETPLATROOT)\lib\$(_CPUINDPATH)\MMFrameExtract.lib    \
+
+
+SOURCES= \
+    Auxiliary.cpp \
+    fFrameExtractFilter.cpp \
+    fFrameExtractFilter_op.cpp \
+    FrameExtractFilter.cpp \
+    FrameExtractFilter.rc \
+
+
+FILE_VIEW_INCLUDES_FOLDER= \
+    Stdafx.h \
+    Auxiliary.h \
+    fFrameExtractFilter.h \
+    fFrameExtractFilter_op.h \
+    FrameExtractFilter.h \
+

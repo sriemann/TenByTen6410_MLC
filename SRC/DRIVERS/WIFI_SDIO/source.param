@@ -1,0 +1,11 @@
+# 
+# (c) Marvell Semiconductor, Inc., 
+# 
+#uncomment and compile in debug mode for dbg msg file 
+#CDEFINES=$(CDEFINES)  -DMRVL_PRINT_DBG_MSG 
+#to replace dbg msg with RETAILMSG 
+CDEFINES=$(CDEFINES)  -DDBG_MSG_TO_RETAILMSG 
+#DBG_MSG_TO_DEBUGMSG is only effective when CUSTOM_ADHOC is defined. 
+#When this is defined, please don't define DBG_MSG_TO_RETAILMSG. 
+#CDEFINES=$(CDEFINES) -DDBG_MSG_TO_DEBUGMSG 
+CDEFINES=$(CDEFINES)  -DWINCEOSVER=$(_WINCEOSVER) 

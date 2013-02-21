@@ -1,0 +1,100 @@
+!if 0
+Use of this source code is subject to the terms of the Microsoft end-user
+license agreement (EULA) under which you licensed this SOFTWARE PRODUCT.
+If you did not accept the terms of the EULA, you are not authorized to use
+this source code. For a copy of the EULA, please see the LICENSE.RTF on your
+install media.
+!endif
+!IF 0
+
+
+Module Name:
+
+    sources.
+
+Abstract:
+
+    This file specifies the target component being built and the list of
+    sources files needed to build that component.  Also specifies optional
+    compiler switches and libraries that are unique for the component being
+    built.
+
+!ENDIF
+
+
+WINCEREL=1
+
+TARGETNAME = libmp4v2
+TARGETTYPE = LIBRARY
+
+RELEASETYPE = PLATFORM
+
+INCLUDES= \
+    $(_WINCEROOT)\public\common\sdk\inc;$(_WINCEROOT)\public\common\oak\inc; \
+    ..\include;    ..\include\mpeg4ip
+
+CDEFINES=$(CDEFINES) -D_WIN32 -DSIMON_CHANGED  /EHs-c-
+
+
+SOURCES=    3gp.cpp                    \
+            atom_amr.cpp            \
+            atom_avc1.cpp            \
+            atom_avcC.cpp            \
+            atom_d263.cpp            \
+            atom_damr.cpp            \
+            atom_dref.cpp            \
+            atom_elst.cpp            \
+            atom_enca.cpp            \
+            atom_encv.cpp            \
+            atom_free.cpp            \
+            atom_ftyp.cpp            \
+            atom_hdlr.cpp            \
+            atom_hinf.cpp            \
+            atom_hnti.cpp            \
+            atom_href.cpp            \
+            atom_mdat.cpp            \
+            atom_mdhd.cpp            \
+            atom_meta.cpp            \
+            atom_mp4s.cpp            \
+            atom_mp4v.cpp            \
+            atom_mvhd.cpp            \
+            atom_ohdr.cpp            \
+            atom_root.cpp            \
+            atom_rtp.cpp            \
+            atom_s263.cpp            \
+            atom_sdp.cpp            \
+            atom_smi.cpp            \
+            atom_sound.cpp            \
+            atom_standard.cpp        \
+            atom_stbl.cpp            \
+            atom_stdp.cpp            \
+            atom_stsc.cpp            \
+            atom_stsd.cpp            \
+            atom_stsz.cpp            \
+            atom_tfhd.cpp            \
+            atom_tkhd.cpp            \
+            atom_treftype.cpp        \
+            atom_trun.cpp            \
+            atom_udta.cpp            \
+            atom_url.cpp            \
+            atom_urn.cpp            \
+            atom_video.cpp            \
+            atom_vmhd.cpp            \
+            descriptors.cpp            \
+            isma.cpp                \
+            mp4.cpp                    \
+            mp4atom.cpp                \
+            mp4container.cpp        \
+            mp4descriptor.cpp        \
+            mp4file.cpp                \
+            mp4file_io.cpp            \
+            mp4info.cpp                \
+            mp4meta.cpp                \
+            mp4property.cpp            \
+            mp4track.cpp            \
+            mp4util.cpp                \
+            ocidescriptors.cpp        \
+            odcommands.cpp            \
+            qosqualifiers.cpp        \
+            rtphint.cpp
+

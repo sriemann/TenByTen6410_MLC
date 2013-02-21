@@ -1,0 +1,38 @@
+# Copyright (c) Microsoft Corporation.  All rights reserved.
+# Use of this source code is subject to the terms of the Microsoft end-user
+# license agreement (EULA) under which you licensed this SOFTWARE PRODUCT.
+# If you did not accept the terms of the EULA, you are not authorized to use
+# this source code. For a copy of the EULA, please see the LICENSE.RTF on your
+# install media.
+# TARGETTYPE=LIBRARY
+# CONDITIONAL_INCLUDES=devemul.h
+
+TARGETNAME=DrvIf
+DRIVER_SELECT=-DIF_SDIO
+TARGETTYPE=LIBRARY
+RELEASETYPE=PLATFORM
+
+EXT_INCLUDES= \
+  .\; \
+  ..\..\WLAN; \
+!IF "$(_WINCEOSVER)" == "600"
+  $(_PLATFORMROOT)\COMMON\SRC\SOC\PXA27X_MS_V1\INC; \
+  $(_PLATFORMROOT)\COMMON\SRC\SOC\PXA27X_MS_V1\XLLP\INC;\
+!ENDIF
+  $(_PROJECTROOT)\cesysgen\sdk\inc; \
+  $(_PROJECTROOT)\cesysgen\ddk\inc; \
+  $(_PROJECTROOT)\cesysgen\oak\inc; \
+  ..\..\IO\$(WIFI_DEVIF)\PXA270; \
+  $(_PUBLICROOT)\COMMON\OAK\CSP\$(_TGTCPUFAMILY)\INTEL\PXA27X\INC; \
+  $(_PUBLICROOT)\COMMON\OAK\CSP\$(_TGTCPUFAMILY)\INTEL\PXA27X\XLLP\INC;
+
+!include ..\..\source.param
+
+
+SOURCES= \
+  SDIOUtil.c \
+
+FILE_VIEW_INCLUDES_FOLDER= \
+  sdio.h \
+	sdio_if.h \
+	Firmware.h

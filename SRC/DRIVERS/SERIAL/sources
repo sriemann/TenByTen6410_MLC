@@ -1,0 +1,54 @@
+# Copyright (c) Microsoft Corporation.  All rights reserved.
+# Use of this source code is subject to the terms of the Microsoft end-user
+# license agreement (EULA) under which you licensed this SOFTWARE PRODUCT.
+# If you did not accept the terms of the EULA, you are not authorized to use
+# this source code. For a copy of the EULA, please see the LICENSE.RTF on your
+# install media.
+# xref VIGUID {549CAC8D_8AF0_4789_9ACF_2BB92599470D}
+# xref VSGUID {0601CE65_BF4D_453A_966B_E20250AD2E8E}
+
+!IF "$(BSP_NOSERIAL)" == "1"
+SKIPBUILD=1
+!ENDIF
+
+!IF "$(BSP_NOIRDA2)" == "1"
+CDEFINES=$(CDEFINES) -DBSP_NOIRDA2
+!ENDIF
+
+!IF "$(BSP_NOIRDA3)" == "1"
+CDEFINES=$(CDEFINES) -DBSP_NOIRDA3
+!ENDIF
+
+WINCEOEM=1
+
+TARGETNAME=smdk6410_serial
+TARGETTYPE=DYNLINK
+RELEASETYPE=PLATFORM
+
+DEFFILE=serial.def
+DLLENTRY=_DllEntryCRTStartup
+
+TARGETLIBS= \
+    $(_SYSGENSDKROOT)\lib\$(_CPUINDPATH)\coredll.lib \
+    $(_SYSGENOAKROOT)\lib\$(_CPUINDPATH)\ceddk.lib
+
+SOURCELIBS= \
+    $(_SYSGENOAKROOT)\lib\$(_CPUINDPATH)\serpddcm.lib \
+    $(_SYSGENOAKROOT)\lib\$(_CPUINDPATH)\com_mdd2.lib\
+    $(_TARGETPLATROOT)\lib\$(_CPUINDPATH)\s3c6410_dma_lib.lib\
+	
+#CDEFINES=$(CDEFINES) -DUSE_NEW_SERIAL_MODEL
+#CDEFINES=$(CDEFINES) -DUSE_DMA
+#CDEFINES=$(CDEFINES) -D_LOOPBACK
+#CDEFINES=$(CDEFINES) -D_DBGMSG
+
+INCLUDES = $(INCLUDES);$(_TARGETPLATROOT)\src\inc;$(_TARGETPLATROOT)\SRC\DRIVERS\DMA\s3c6410_dma_lib
+
+SOURCES= \
+    ser_smdk6410.cpp \
+    pdds3c6410_ser.cpp\
+    pddS3C6410_ser_dma.cpp\
+
+#xref VIGUID {549CAC8D_8AF0_4789_9ACF_2BB92599470D}
+#xref VSGUID {0601CE65_BF4D_453A_966B_E20250AD2E8E}
+

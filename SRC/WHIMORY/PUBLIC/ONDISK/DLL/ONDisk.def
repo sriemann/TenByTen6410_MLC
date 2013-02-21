@@ -1,0 +1,19 @@
+;
+;	File:   ONDisk.def
+;
+;   Author: Flash Software
+;
+;	COPYRIGHT (c) 2006 SAMSUNG ELECTRONICS CO., LTD. ALL RIGHTS RESERVED
+
+LIBRARY 	ONDisk
+
+EXPORTS DSK_Init
+	DSK_Deinit
+	DSK_Open
+	DSK_Close
+	DSK_Read
+	DSK_Write
+	DSK_Seek
+	DSK_IOControl
+	DSK_PowerDown
+	DSK_PowerUp

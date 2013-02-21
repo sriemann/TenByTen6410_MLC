@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CatalogFile xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" RequiredVersion="6.00" xsi:schemaLocation="urn:Microsoft.PlatformBuilder/Catalog PbcXml600.xsd" xmlns="urn:Microsoft.PlatformBuilder/Catalog">
+  <FileInformation Id="FileInformation:HITEG:TenByTen6410_MLC">
+    <Title>TenByTen6410_MLC</Title>
+    <Description>TenByTen6410_MLC BSP Catalog Items</Description>
+    <Comment>SMDK6410 Catalog file for s3c6410</Comment>
+    <Vendor>HITEG</Vendor>
+    <OSVersion>6.00</OSVersion>
+    <FileVersion>0.1</FileVersion>
+  </FileInformation>
+  <Bsp Id="Bsp:HITEG:TenByTen6410_MLC:ARMV4I">
+    <Title>TenByTen6410_MLC: ARMV4I</Title>
+    <Description>TenByTen6410_MLC</Description>
+    <PlatformDirectory>TenByTen6410_MLC</PlatformDirectory>
+    <CpuId>Cpu:ARMV4I</CpuId>
+    <BspItemId>Item:HITEG:smdk6410_camera:SMDK6410_SMDK6410_MLC_TenByTen6410_MLC</BspItemId>
+    <BspItemId>Item:HITEG:s3c6410_disp:SMDK6410_SMDK6410_MLC_TenByTen6410_MLC</BspItemId>
+    <BspItemId>Item:HITEG:ExtPowerCTL:SMDK6410_SMDK6410_MLC_TenByTen6410_MLC</BspItemId>
+    <BspItemId>Item:HITEG:s3c6410_Video:SMDK6410_SMDK6410_MLC_TenByTen6410_MLC</BspItemId>
+    <BspItemId>Item:HITEG:smdk6410_keypad:SMDK6410_SMDK6410_MLC_TenByTen6410_MLC</BspItemId>
+    <BspItemId>Item:HITEG:s3c6410_PwrCon:SMDK6410_SMDK6410_MLC_TenByTen6410_MLC</BspItemId>
+    <BspItemId>Item:HITEG:smdk6410_PwrBtn:SMDK6410_SMDK6410_MLC_TenByTen6410_MLC</BspItemId>
+    <BspItemId>Item:HITEG:s3c6410_spi:SMDK6410_SMDK6410_MLC_TenByTen6410_MLC</BspItemId>
+    <BspItemId>Item:HITEG:smdk6410_serial:SMDK6410_SMDK6410_MLC_TenByTen6410_MLC</BspItemId>
+    <BspItemId>Item:HITEG:s3c6410_usbfn:SMDK6410_SMDK6410_MLC_TenByTen6410_MLC</BspItemId>
+    <BspItemId>Item:HITEG:s3c6410_ohci2:SMDK6410_SMDK6410_MLC_TenByTen6410_MLC</BspItemId>
+    <BspItemId>Item:HITEG:s3c6410_hsmmc0:SMDK6410_SMDK6410_MLC_TenByTen6410_MLC</BspItemId>
+    <BspItemId>Item:HITEG:s3c6410_hsmmc1:SMDK6410_SMDK6410_MLC_TenByTen6410_MLC</BspItemId>
+    <BspItemId>Item:HITEG:s3c6410_touch:SMDK6410_SMDK6410_MLC_TenByTen6410_MLC</BspItemId>
+    <BspItemId>Item:HITEG:s3c6410_jpeg:SMDK6410_SMDK6410_MLC_TenByTen6410_MLC</BspItemId>
+    <BspItemId>Item:HITEG:s3c6410_mfc:SMDK6410_SMDK6410_MLC_TenByTen6410_MLC</BspItemId>
+    <BspItemId>Item:HITEG:s3c6410_wavedev_iis:SMDK6410_SMDK6410_MLC_TenByTen6410_MLC</BspItemId>
+    <BspItemId>Item:HITEG:s3c6410_wavedev_ac97:SMDK6410_SMDK6410_MLC_TenByTen6410_MLC</BspItemId>
+    <BspItemId>Item:HITEG:FMD:SMDK6410_SMDK6410_MLC_TenByTen6410_MLC</BspItemId>
+    <BspItemId>Item:HITEG:EthernetBootloader:SMDK6410_SMDK6410_MLC_TenByTen6410_MLC</BspItemId>
+  </Bsp>
+  <Item Id="Item:HITEG:smdk6410_camera:SMDK6410_SMDK6410_MLC_TenByTen6410_MLC">
+    <Title>#Samsung:SMDK6410:Camera:Title</Title>
+    <Type>BspSpecific</Type>
+    <SysgenVariable>SYSGEN_DSHOW_CAPTURE</SysgenVariable>
+    <SupportedCpuId>Cpu:ARMV4I</SupportedCpuId>
+    <Module>smdk6410_camera.dll</Module>
+    <Location>\Device Driver\Camera</Location>
+    <SourceCode>
+      <Title>$(_WINCEROOT)\PLATFORM\TENBYTEN6410_MLC\SRC\DRIVERS\CAMERA</Title>
+      <Path>$(_WINCEROOT)\PLATFORM\TENBYTEN6410_MLC\SRC\DRIVERS\CAMERA</Path>
+    </SourceCode>
+  </Item>
+  <Item Id="Item:HITEG:s3c6410_disp:SMDK6410_SMDK6410_MLC_TenByTen6410_MLC">
+    <Title>#Samsung:SMDK6410:Display:Title</Title>
+    <Type>BspSpecific</Type>
+    <SysgenVariable>SYSGEN_D3DM,SYSGEN_DDRAW</SysgenVariable>
+    <SupportedCpuId>Cpu:ARMV4I</SupportedCpuId>
+    <Module>s3c6410_disp.dll</Module>
+    <Location>Device Driver\Display</Location>
+    <SourceCode>
+      <Title>$(_WINCEROOT)\PLATFORM\TENBYTEN6410_MLC\SRC\DRIVERS\DISPLAY\S3C6410_DISP_DRV</Title>
+      <Path>$(_WINCEROOT)\PLATFORM\TENBYTEN6410_MLC\SRC\DRIVERS\DISPLAY\S3C6410_DISP_DRV</Path>
+    </SourceCode>
+  </Item>
+  <Item Id="Item:HITEG:ExtPowerCTL:SMDK6410_SMDK6410_MLC_TenByTen6410_MLC">
+    <Title>#Samsung:SMDK6410:ExtPowerCTL:Title</Title>
+    <Type>BspSpecific</Type>
+    <SupportedCpuId>Cpu:ARMV4I</SupportedCpuId>
+    <Module>epctl.dll</Module>
+    <Location>Device Driver\ExtPowerCTL</Location>
+    <SourceCode>
+      <Title>$(_WINCEROOT)\PLATFORM\TENBYTEN6410_MLC\SRC\ExtPowerCTL\ExtPowerCTL_DRV</Title>
+      <Path>$(_WINCEROOT)\PLATFORM\TENBYTEN6410_MLC\SRC\DRIVERS\ExtPowerCTL\ExtPowerCTL_DRV</Path>
+    </SourceCode>
+  </Item>
+  <Item Id="Item:HITEG:s3c6410_Video:SMDK6410_SMDK6410_MLC_TenByTen6410_MLC">
+    <Title>#Samsung:SMDK6410:Video:Title</Title>
+    <Type>BspSpecific</Type>
+    <SupportedCpuId>Cpu:ARMV4I</SupportedCpuId>
+    <Module>s3c6410_Video.dll</Module>
+    <Location>Device Driver\Display</Location>
+    <SourceCode>
+      <Title>$(_WINCEROOT)\PLATFORM\TENBYTEN6410_MLC\SRC\DRIVERS\DISPLAY\S3C6410_VIDEO_DRV</Title>
+      <Path>$(_WINCEROOT)\PLATFORM\TENBYTEN6410_MLC\SRC\DRIVERS\DISPLAY\S3C6410_VIDEO_DRV</Path>
+    </SourceCode>
+  </Item>
+  <Item Id="Item:HITEG:smdk6410_keypad:SMDK6410_SMDK6410_MLC_TenByTen6410_MLC">
+    <Title>#Samsung:SMDK6410:Keypad:Title</Title>
+    <Type>BspSpecific</Type>
+    <SupportedCpuId>Cpu:ARMV4I</SupportedCpuId>
+    <Module>smdk6410_keypad.dll</Module>
+    <Location>Device Driver\Keybd</Location>
+    <SourceCode>
+      <Title>$(_WINCEROOT)\PLATFORM\TENBYTEN6410_MLC\SRC\DRIVERS\KEYBD\KBDS3C6410</Title>
+      <Path>$(_WINCEROOT)\PLATFORM\TENBYTEN6410_MLC\SRC\DRIVERS\KEYBD\KBDS3C6410</Path>
+    </SourceCode>
+  </Item>
+  <Item Id="Item:HITEG:s3c6410_PwrCon:SMDK6410_SMDK6410_MLC_TenByTen6410_MLC">
+    <Title>#Samsung:SMDK6410:PowerControl:Title</Title>
+    <Type>BspSpecific</Type>
+    <SupportedCpuId>Cpu:ARMV4I</SupportedCpuId>
+    <Module>s3c6410_PwrCon.dll</Module>
+    <Location>Device Driver\PowerControl</Location>
+    <SourceCode>
+      <Title>$(_WINCEROOT)\PLATFORM\TENBYTEN6410_MLC\SRC\DRIVERS\POWERCONTROL</Title>
+      <Path>$(_WINCEROOT)\PLATFORM\TENBYTEN6410_MLC\SRC\DRIVERS\POWERCONTROL</Path>
+    </SourceCode>
+  </Item>
+  <Item Id="Item:HITEG:smdk6410_PwrBtn:SMDK6410_SMDK6410_MLC_TenByTen6410_MLC">
+    <Title>#Samsung:SMDK6410:PowerButton:Title</Title>
+    <Type>BspSpecific</Type>
+    <SupportedCpuId>Cpu:ARMV4I</SupportedCpuId>
+    <Module>smdk6410_PwrBtn.dll</Module>
+    <Location>Device Driver\PowerButton</Location>
+    <SourceCode>
+      <Title>$(_WINCEROOT)\PLATFORM\TENBYTEN6410_MLC\SRC\DRIVERS\POWERBUTTON</Title>
+      <Path>$(_WINCEROOT)\PLATFORM\TENBYTEN6410_MLC\SRC\DRIVERS\POWERBUTTON</Path>
+    </SourceCode>
+  </Item>
+  <Item Id="Item:HITEG:s3c6410_spi:SMDK6410_SMDK6410_MLC_TenByTen6410_MLC">
+    <Title>#Samsung:SMDK6410:SPI:Title</Title>
+    <Type>BspSpecific</Type>
+    <SupportedCpuId>Cpu:ARMV4I</SupportedCpuId>
+    <Module>s3c6410_spi.dll</Module>
+    <Location>Device Driver\Spi</Location>
+    <SourceCode>
+      <Title>$(_WINCEROOT)\PLATFORM\TENBYTEN6410_MLC\SRC\DRIVERS\SPI</Title>
+      <Path>$(_WINCEROOT)\PLATFORM\TENBYTEN6410_MLC\SRC\DRIVERS\SPI</Path>
+    </SourceCode>
+  </Item>
+  <Item Id="Item:HITEG:smdk6410_serial:SMDK6410_SMDK6410_MLC_TenByTen6410_MLC">
+    <Title>#Samsung:SMDK6410:Serial:Title</Title>
+    <Type>BspSpecific</Type>
+    <SupportedCpuId>Cpu:ARMV4I</SupportedCpuId>
+    <Module>smdk6410_serial.dll</Module>
+    <Location>Device Driver\Serial</Location>
+    <SourceCode>
+      <Title>$(_WINCEROOT)\PLATFORM\TENBYTEN6410_MLC\SRC\DRIVERS\SERIAL</Title>
+      <Path>$(_WINCEROOT)\PLATFORM\TENBYTEN6410_MLC\SRC\DRIVERS\SERIAL</Path>
+    </SourceCode>
+  </Item>
+  <Item Id="Item:HITEG:s3c6410_usbfn:SMDK6410_SMDK6410_MLC_TenByTen6410_MLC">
+    <Title>#Samsung:SMDK6410:USBFunction:Title</Title>
+    <Type>BspSpecific</Type>
+    <SysgenVariable>SYSGEN_USBFN</SysgenVariable>
+    <SupportedCpuId>Cpu:ARMV4I</SupportedCpuId>
+    <Module>s3c6410_usbfn.dll</Module>
+    <Location>Device Driver\Otg</Location>
+    <SourceCode>
+      <Title>$(_WINCEROOT)\PLATFORM\TENBYTEN6410_MLC\SRC\DRIVERS\OTG\DEVICE</Title>
+      <Path>$(_WINCEROOT)\PLATFORM\TENBYTEN6410_MLC\SRC\DRIVERS\OTG\DEVICE</Path>
+    </SourceCode>
+  </Item>
+  <Item Id="Item:HITEG:s3c6410_ohci2:SMDK6410_SMDK6410_MLC_TenByTen6410_MLC">
+    <Title>#Samsung:SMDK6410:USBHost(OHCI):Title</Title>
+    <Type>BspSpecific</Type>
+    <SupportedCpuId>Cpu:ARMV4I</SupportedCpuId>
+    <Module>s3c6410_ohci2.dll</Module>
+    <Location>Device Driver\USB Host Driver</Location>
+    <SourceCode>
+      <Title>$(_WINCEROOT)\PLATFORM\TENBYTEN6410_MLC\SRC\DRIVERS\USB\HCD</Title>
+      <Path>$(_WINCEROOT)\PLATFORM\TENBYTEN6410_MLC\SRC\DRIVERS\USB\HCD</Path>
+    </SourceCode>
+  </Item>
+  <Item Id="Item:HITEG:s3c6410_hsmmc0:SMDK6410_SMDK6410_MLC_TenByTen6410_MLC">
+    <Title>#Samsung:SMDK6410:HSMMC0:Title</Title>
+    <Type>BspSpecific</Type>
+    <SysgenVariable>IMGSDBUS2,SYSGEN_SD_MEMORY</SysgenVariable>
+    <SupportedCpuId>Cpu:ARMV4I</SupportedCpuId>
+    <Module>s3c6410_hsmmc0.dll</Module>
+    <Location>Device Driver\HSMMC</Location>
+    <SourceCode>
+      <Title>$(_WINCEROOT)\PLATFORM\TENBYTEN6410_MLC\SRC\DRIVERS\HSMMC\HSMMCCH0\S3C6410_HSMMC_DRV</Title>
+      <Path>$(_WINCEROOT)\PLATFORM\TENBYTEN6410_MLC\SRC\DRIVERS\HSMMC\HSMMCCH0\S3C6410_HSMMC_DRV</Path>
+    </SourceCode>
+  </Item>
+  <Item Id="Item:HITEG:s3c6410_hsmmc1:SMDK6410_SMDK6410_MLC_TenByTen6410_MLC">
+    <Title>#Samsung:SMDK6410:HSMMC1:Title</Title>
+    <Type>BspSpecific</Type>
+    <SysgenVariable>IMGSDBUS2,SYSGEN_SD_MEMORY</SysgenVariable>
+    <SupportedCpuId>Cpu:ARMV4I</SupportedCpuId>
+    <Module>s3c6410_hsmmc1.dll</Module>
+    <Location>Device Driver\HSMMC</Location>
+    <SourceCode>
+      <Title>$(_WINCEROOT)\PLATFORM\TENBYTEN6410_MLC\SRC\DRIVERS\HSMMC\HSMMCCH1\S3C6410_HSMMC_DRV</Title>
+      <Path>$(_WINCEROOT)\PLATFORM\TENBYTEN6410_MLC\SRC\DRIVERS\HSMMC\HSMMCCH1\S3C6410_HSMMC_DRV</Path>
+    </SourceCode>
+  </Item>
+  <Item Id="Item:HITEG:s3c6410_touch:SMDK6410_SMDK6410_MLC_TenByTen6410_MLC">
+    <Title>#Samsung:SMDK6410:Touch:Title</Title>
+    <Type>BspSpecific</Type>
+    <SupportedCpuId>Cpu:ARMV4I</SupportedCpuId>
+    <Module>s3c6410_touch.dll</Module>
+    <Location>Device Driver\Touch</Location>
+    <SourceCode>
+      <Title>$(_WINCEROOT)\PLATFORM\TENBYTEN6410_MLC\SRC\DRIVERS\TOUCH</Title>
+      <Path>$(_WINCEROOT)\PLATFORM\TENBYTEN6410_MLC\SRC\DRIVERS\TOUCH</Path>
+    </SourceCode>
+  </Item>
+  <Item Id="Item:HITEG:s3c6410_jpeg:SMDK6410_SMDK6410_MLC_TenByTen6410_MLC">
+    <Title>#Samsung:SMDK6410:Jpeg:Title</Title>
+    <Type>BspSpecific</Type>
+    <SupportedCpuId>Cpu:ARMV4I</SupportedCpuId>
+    <Module>s3c6410_jpeg.dll</Module>
+    <Location>Device Driver\Multimedia</Location>
+    <SourceCode>
+      <Title>$(_WINCEROOT)\PLATFORM\TENBYTEN6410_MLC\SRC\DRIVERS\JPEG</Title>
+      <Path>$(_WINCEROOT)\PLATFORM\TENBYTEN6410_MLC\SRC\DRIVERS\JPEG</Path>
+    </SourceCode>
+  </Item>
+  <Item Id="Item:HITEG:s3c6410_mfc:SMDK6410_SMDK6410_MLC_TenByTen6410_MLC">
+    <Title>#Samsung:SMDK6410:MFC:Title</Title>
+    <Type>BspSpecific</Type>
+    <Location>Device Driver\Multimedia</Location>
+    <SourceCode>
+      <Title>$(_WINCEROOT)\PLATFORM\TENBYTEN6410_MLC\SRC\DRIVERS\MFC</Title>
+      <Path>$(_WINCEROOT)\PLATFORM\TENBYTEN6410_MLC\SRC\DRIVERS\MFC</Path>
+    </SourceCode>
+    <SourceCode>
+      <Title>$(_WINCEROOT)\PLATFORM\TENBYTEN6410_MLC\SRC\DRIVERS\UAO</Title>
+      <Path>$(_WINCEROOT)\PLATFORM\TENBYTEN6410_MLC\SRC\DRIVERS\UAO</Path>
+    </SourceCode>
+    <SourceCode>
+      <Title>$(_WINCEROOT)\PLATFORM\TENBYTEN6410_MLC\SRC\DRIVERS\CMM</Title>
+      <Path>$(_WINCEROOT)\PLATFORM\TENBYTEN6410_MLC\SRC\DRIVERS\CMM</Path>
+    </SourceCode>
+  </Item>
+  <Item Id="Item:HITEG:s3c6410_wavedev_iis:SMDK6410_SMDK6410_MLC_TenByTen6410_MLC">
+    <Title>#Samsung:SMDK6410:Audio_IIS:Title</Title>
+    <Type>BspSpecific</Type>
+    <SupportedCpuId>Cpu:ARMV4I</SupportedCpuId>
+    <Module>s3c6410_wavedev_iis.dll</Module>
+    <ChooseOneGroup>true</ChooseOneGroup>
+    <Location>Device Driver\Wavedev</Location>
+    <SourceCode>
+      <Title>$(_WINCEROOT)\PLATFORM\TENBYTEN6410_MLC\SRC\DRIVERS\WAVEDEV\S3C6410_IIS_DRV</Title>
+      <Path>$(_WINCEROOT)\PLATFORM\TENBYTEN6410_MLC\SRC\DRIVERS\WAVEDEV\S3C6410_IIS_DRV</Path>
+    </SourceCode>
+  </Item>
+  <Item Id="Item:HITEG:s3c6410_wavedev_ac97:SMDK6410_SMDK6410_MLC_TenByTen6410_MLC">
+    <Title>#Samsung:SMDK6410:Audio_AC97:Title</Title>
+    <Type>BspSpecific</Type>
+    <SupportedCpuId>Cpu:ARMV4I</SupportedCpuId>
+    <Module>s3c6410_wavedev_ac97.dll</Module>
+    <ChooseOneGroup>true</ChooseOneGroup>
+    <Location>Device Driver\Wavedev</Location>
+    <SourceCode>
+      <Title>$(_WINCEROOT)\PLATFORM\TENBYTEN6410_MLC\SRC\DRIVERS\WAVEDEV\S3C6410_AC97_DRV</Title>
+      <Path>$(_WINCEROOT)\PLATFORM\TENBYTEN6410_MLC\SRC\DRIVERS\WAVEDEV\S3C6410_AC97_DRV</Path>
+    </SourceCode>
+  </Item>
+  <Item Id="Item:HITEG:FMD:SMDK6410_SMDK6410_MLC_TenByTen6410_MLC">
+    <Title>#Samsung:SMDK6410:NAND_FMD:Title</Title>
+    <Type>BspSpecific</Type>
+    <Variable>BSP_NONANDFS!</Variable>
+    <Module>nandflash.dll</Module>
+    <Location>Device Driver\NANDFLASH</Location>
+  </Item>
+  <Item Id="Item:HITEG:EthernetBootloader:SMDK6410_SMDK6410_MLC_TenByTen6410_MLC">
+    <Title>#Samsung:SMDK6410:EthernetBootloader(eboot):Title</Title>
+    <Description>#Samsung:SMDK6410:EthernetBootloader(eboot):Description</Description>
+    <Type>BspSpecific</Type>
+    <Location />
+    <SourceCode>
+      <Title>#SAMSUNG:SMDK6410:EBOOTSOURCECODE:TITLE</Title>
+      <Path>$(_WINCEROOT)\PLATFORM\TENBYTEN6410_MLC\SRC\BOOTLOADER\EBOOT</Path>
+    </SourceCode>
+  </Item>
+</CatalogFile>

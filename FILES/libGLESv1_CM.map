@@ -1,0 +1,1706 @@
+ libGLESv1_CM
+
+ Timestamp is 4a236f3b (Mon Jun 01 15:03:39 2009)
+
+ Preferred load address is 10000000
+
+ Start         Length     Name                   Class
+ 0001:00000000 00000004H .CRT$XCA                CODE
+ 0001:00000004 00000004H .CRT$XCZ                CODE
+ 0001:00000008 00000004H .CRT$XIA                CODE
+ 0001:0000000c 00000004H .CRT$XIZ                CODE
+ 0001:00000010 00000004H .CRT$XPA                CODE
+ 0001:00000014 00000004H .CRT$XPZ                CODE
+ 0001:00000018 00000004H .CRT$XTA                CODE
+ 0001:0000001c 00000004H .CRT$XTZ                CODE
+ 0001:00000020 0001003aH .rdata                  CODE
+ 0001:0001005c 00000029H .rdata$debug            CODE
+ 0001:000100a0 0005aa8cH .text                   CODE
+ 0001:0006ab2c 00000020H .xdata                  CODE
+ 0001:0006ab4c 00000028H .idata$2                CODE
+ 0001:0006ab74 00000014H .idata$3                CODE
+ 0001:0006ab88 00000164H .idata$4                CODE
+ 0001:0006acec 00000114H .idata$6                CODE
+ 0001:0006ae00 00000ea1H .edata                  CODE
+ 0002:00000000 00000164H .idata$5                DATA
+ 0002:00000168 000001a8H .data                   DATA
+ 0002:00000310 00003f6cH .bss                    DATA
+ 0003:00000000 00001d60H .pdata                  DATA
+
+  Address         Publics by Value              Rva+Base       Lib:Object
+
+ 0000:00000000       ___safe_se_handler_count   00000000     <absolute>
+ 0000:00000000       ___safe_se_handler_table   00000000     <absolute>
+ 0001:00000000       __xc_a                     10001000     corelib0:crt0init.obj
+ 0001:00000004       __xc_z                     10001004     corelib0:crt0init.obj
+ 0001:00000008       __xi_a                     10001008     corelib0:crt0init.obj
+ 0001:0000000c       __xi_z                     1000100c     corelib0:crt0init.obj
+ 0001:00000010       __xp_a                     10001010     corelib0:crt0init.obj
+ 0001:00000014       __xp_z                     10001014     corelib0:crt0init.obj
+ 0001:00000018       __xt_a                     10001018     corelib0:crt0init.obj
+ 0001:0000001c       __xt_z                     1000101c     corelib0:crt0init.obj
+ 0001:0000009c       maxInt                     1000109c     glgets.obj
+ 0001:000000a0       ??_C@_0BL@ILKAPFNP@1?41?5?$CIlib?5version?511?402?434?$CJ?$AA@ 100010a0     glgets.obj
+ 0001:000000ec       ??_C@_1CA@GFMDGHEP@?$AAg?$AAl?$AAP?$AAo?$AAi?$AAn?$AAt?$AAS?$AAi?$AAz?$AAe?$AA?5?$AA?5?$AA?$AN?$AA?6?$AA?$AA@ 100010ec     glmisc.obj
+ 0001:0000012c       ??_C@_1BM@LEAJJAKB@?$AAg?$AAl?$AAC?$AAo?$AAl?$AAo?$AAr?$AA4?$AAx?$AA?5?$AA?5?$AA?$AN?$AA?6?$AA?$AA@ 1000112c     glvertex.obj
+ 0001:00000148       ??_C@_1DE@BIJDKBDJ@?$AAg?$AAl?$AAP?$AAo?$AAi?$AAn?$AAt?$AAS?$AAi?$AAz?$AAe?$AAP?$AAo?$AAi?$AAn?$AAt?$AAe?$AAr?$AAO?$AAE?$AAS?$AA?5?$AA?5?$AA?$AN?$AA?6?$AA?$AA@ 10001148     glvertex.obj
+ 0001:0000017c       ??_C@_1DI@JMNKHAKJ@?$AAg?$AAl?$AAM?$AAa?$AAt?$AAr?$AAi?$AAx?$AAI?$AAn?$AAd?$AAe?$AAx?$AAP?$AAo?$AAi?$AAn?$AAt?$AAe?$AAr?$AAO?$AAE?$AAS?$AA?5?$AA?5?$AA?$AN?$AA?6?$AA?$AA@ 1000117c     glvertex.obj
+ 0001:000001b4       ??_C@_1CO@MJCJFMKL@?$AAg?$AAl?$AAW?$AAe?$AAi?$AAg?$AAh?$AAt?$AAP?$AAo?$AAi?$AAn?$AAt?$AAe?$AAr?$AAO?$AAE?$AAS?$AA?5?$AA?5?$AA?$AN?$AA?6?$AA?$AA@ 100011b4     glvertex.obj
+ 0001:000001f8       ??_C@_0DEL@LCNHHIDN@?6?$CD?9?9?9?9?9?9?9?9?9?9?9?9?9?9?9?9?9?9?9?9?9?9?9?9?9?9?9?9?9?9@ 100011f8     loadshader.obj
+ 0001:00000548       ??_C@_0COJ@CJGPLELN@?$CD?9?9?9?9?9?9?9?9?9?9?9?9?9?9?9?9?9?9?9?9?9?9?9?9?9?9?9?9?9?9?9@ 10001548     loadshader.obj
+ 0001:00000838       ??_C@_0CGP@NLAODEMN@?6?$CD?9?9?9?9?9?9?9?9?9?9?9?9?9?9?9?9?9?9?9?9?9?9?9?9?9?9?9?9?9?9@ 10001838     loadshader.obj
+ 0001:00000aa8       ??_C@_0CAO@ONIDFEMA@?6?$CD?9?9?9?9?9?9?9?9?9?9?9?9?9?9?9?9?9?9?9?9?9?9?9?9?9?9?9?9?9?9@ 10001aa8     loadshader.obj
+ 0001:00000cb8       ??_C@_0CAG@JPCGNMAK@?6?$CD?9?9?9?9?9?9?9?9?9?9?9?9?9?9?9?9?9?9?9?9?9?9?9?9?9?9?9?9?9?9@ 10001cb8     loadshader.obj
+ 0001:00000ec0       ??_C@_0DMK@BIODDKOF@?6?$CD?9?9?9?9?9?9?9?9?9?9?9?9?9?9?9?9?9?9?9?9?9?9?9?9?9?9?9?9?9?9@ 10001ec0     loadshader.obj
+ 0001:00001290       ??_C@_0CGIG@GIDKBAH@?1?1Joydeep?6uniform?5mat4?5ModelView@ 10002290     loadshader.obj
+ 0001:00003918       ??_C@_0DGJA@LBFNFIHH@?$CDifdef?5GL_ES?6precision?5highp?5flo@ 10004918     loadshader.obj
+ 0001:0000c0cc       ATTRIB_LOC_Vertex          1000d0cc     loadshader.obj
+ 0001:0000c0d0       ATTRIB_LOC_Color           1000d0d0     loadshader.obj
+ 0001:0000c0d4       ATTRIB_LOC_Normal          1000d0d4     loadshader.obj
+ 0001:0000c0d8       ATTRIB_LOC_MultiTexCoord   1000d0d8     loadshader.obj
+ 0001:0000c0e0       ATTRIB_LOC_PointSize       1000d0e0     loadshader.obj
+ 0001:0000c0e4       ??_C@_0BA@PFLEPDB@ModelViewMatrix?$AA@ 1000d0e4     loadshader.obj
+ 0001:0000c0f4       ??_C@_0BK@DEBBPGHA@ModelViewProjectionMatrix?$AA@ 1000d0f4     loadshader.obj
+ 0001:0000c110       ??_C@_0BB@JKLCLJEP@TextureMatrix?$FL0?$FN?$AA@ 1000d110     loadshader.obj
+ 0001:0000c124       ??_C@_0BB@JLHANDHI@TextureMatrix?$FL1?$FN?$AA@ 1000d124     loadshader.obj
+ 0001:0000c138       ??_C@_0N@CINNHGPB@NormalMatrix?$AA@ 1000d138     loadshader.obj
+ 0001:0000c148       ??_C@_0N@EOOMJPOC@PointEnabled?$AA@ 1000d148     loadshader.obj
+ 0001:0000c158       ??_C@_0L@GFLKIJDA@Point?4size?$AA@ 1000d158     loadshader.obj
+ 0001:0000c164       ??_C@_0O@DAJIKKAD@Point?4sizeMin?$AA@ 1000d164     loadshader.obj
+ 0001:0000c174       ??_C@_0O@CCBDEOGM@Point?4sizeMax?$AA@ 1000d174     loadshader.obj
+ 0001:0000c184       ??_C@_0BI@ENLIDIIG@Point?4fadeThresholdSize?$AA@ 1000d184     loadshader.obj
+ 0001:0000c19c       ??_C@_0CC@EPHADOFI@Point?4distanceConstantAttenuatio@ 1000d19c     loadshader.obj
+ 0001:0000c1c0       ??_C@_0CA@EEMCNAPA@Point?4distanceLinearAttenuation?$AA@ 1000d1c0     loadshader.obj
+ 0001:0000c1e0       ??_C@_0CD@BHGCIFHO@Point?4distanceQuadraticAttenuati@ 1000d1e0     loadshader.obj
+ 0001:0000c204       ??_C@_0BL@NCMFIFNC@FrontNBackMaterial?4ambient?$AA@ 1000d204     loadshader.obj
+ 0001:0000c220       ??_C@_0BL@GAJFDOMO@FrontNBackMaterial?4diffuse?$AA@ 1000d220     loadshader.obj
+ 0001:0000c23c       ??_C@_0BM@KELGAAHO@FrontNBackMaterial?4specular?$AA@ 1000d23c     loadshader.obj
+ 0001:0000c258       ??_C@_0BF@CAIJNBPG@colorMaterialEnabled?$AA@ 1000d258     loadshader.obj
+ 0001:0000c270       ??_C@_0BN@BCBPDIAI@FrontNBackMaterial?4shininess?$AA@ 1000d270     loadshader.obj
+ 0001:0000c290       ??_C@_0BH@CPLBGOOP@LightSource?$FL0?$FN?4ambient?$AA@ 1000d290     loadshader.obj
+ 0001:0000c2a8       ??_C@_0BH@JNOBNFPD@LightSource?$FL0?$FN?4diffuse?$AA@ 1000d2a8     loadshader.obj
+ 0001:0000c2c0       ??_C@_0BI@PMCDDIIE@LightSource?$FL0?$FN?4specular?$AA@ 1000d2c0     loadshader.obj
+ 0001:0000c2d8       ??_C@_0BI@CDPHAEIB@LightSource?$FL0?$FN?4position?$AA@ 1000d2d8     loadshader.obj
+ 0001:0000c2f0       ??_C@_0BN@HPADNILK@LightSource?$FL0?$FN?4spotDirection?$AA@ 1000d2f0     loadshader.obj
+ 0001:0000c310       ??_C@_0BM@OOPNHDPO@LightSource?$FL0?$FN?4spotExponent?$AA@ 1000d310     loadshader.obj
+ 0001:0000c32c       ??_C@_0BK@OFJIEGG@LightSource?$FL0?$FN?4spotCutoff?$AA@ 1000d32c     loadshader.obj
+ 0001:0000c348       ??_C@_0BN@LJOOLJKM@LightSource?$FL0?$FN?4spotCosCutoff?$AA@ 1000d348     loadshader.obj
+ 0001:0000c368       ??_C@_0CD@BHFFMBFJ@LightSource?$FL0?$FN?4constantAttenuati@ 1000d368     loadshader.obj
+ 0001:0000c38c       ??_C@_0CB@EFLDLFJA@LightSource?$FL0?$FN?4linearAttenuation@ 1000d38c     loadshader.obj
+ 0001:0000c3b0       ??_C@_0CE@GADNJABH@LightSource?$FL0?$FN?4quadraticAttenuat@ 1000d3b0     loadshader.obj
+ 0001:0000c3d4       ??_C@_0BN@JLDIPBNJ@LightSource?$FL0?$FN?4isDirectional?$AA@ 1000d3d4     loadshader.obj
+ 0001:0000c3f4       ??_C@_0BH@OODPLBCP@LightSource?$FL1?$FN?4ambient?$AA@ 1000d3f4     loadshader.obj
+ 0001:0000c40c       ??_C@_0BH@FMGPAKDD@LightSource?$FL1?$FN?4diffuse?$AA@ 1000d40c     loadshader.obj
+ 0001:0000c424       ??_C@_0BI@GHIGHEOL@LightSource?$FL1?$FN?4specular?$AA@ 1000d424     loadshader.obj
+ 0001:0000c43c       ??_C@_0BI@LIFCEIOO@LightSource?$FL1?$FN?4position?$AA@ 1000d43c     loadshader.obj
+ 0001:0000c454       ??_C@_0BN@PIKFBDPJ@LightSource?$FL1?$FN?4spotDirection?$AA@ 1000d454     loadshader.obj
+ 0001:0000c474       ??_C@_0BM@EAJFOCGP@LightSource?$FL1?$FN?4spotExponent?$AA@ 1000d474     loadshader.obj
+ 0001:0000c490       ??_C@_0BK@JDFGGFBA@LightSource?$FL1?$FN?4spotCutoff?$AA@ 1000d490     loadshader.obj
+ 0001:0000c4ac       ??_C@_0BN@DOEIHCOP@LightSource?$FL1?$FN?4spotCosCutoff?$AA@ 1000d4ac     loadshader.obj
+ 0001:0000c4cc       ??_C@_0CD@IMCGCLIN@LightSource?$FL1?$FN?4constantAttenuati@ 1000d4cc     loadshader.obj
+ 0001:0000c4f0       ??_C@_0CB@NKGJDGAO@LightSource?$FL1?$FN?4linearAttenuation@ 1000d4f0     loadshader.obj
+ 0001:0000c514       ??_C@_0CE@OBBIPFDA@LightSource?$FL1?$FN?4quadraticAttenuat@ 1000d514     loadshader.obj
+ 0001:0000c538       ??_C@_0BN@BMJODKJK@LightSource?$FL1?$FN?4isDirectional?$AA@ 1000d538     loadshader.obj
+ 0001:0000c558       ??_C@_0BH@HHNNNHCO@LightSource?$FL2?$FN?4ambient?$AA@ 1000d558     loadshader.obj
+ 0001:0000c570       ??_C@_0BH@MFINGMDC@LightSource?$FL2?$FN?4diffuse?$AA@ 1000d570     loadshader.obj
+ 0001:0000c588       ??_C@_0BI@BABIKGBL@LightSource?$FL2?$FN?4specular?$AA@ 1000d588     loadshader.obj
+ 0001:0000c5a0       ??_C@_0BI@MPMMJKBO@LightSource?$FL2?$FN?4position?$AA@ 1000d5a0     loadshader.obj
+ 0001:0000c5b8       ??_C@_0BN@KLDPEIHN@LightSource?$FL2?$FN?4spotDirection?$AA@ 1000d5b8     loadshader.obj
+ 0001:0000c5d8       ??_C@_0BM@GJFNFGJN@LightSource?$FL2?$FN?4spotExponent?$AA@ 1000d5d8     loadshader.obj
+ 0001:0000c5f4       ??_C@_0BK@OPDHEAML@LightSource?$FL2?$FN?4spotCutoff?$AA@ 1000d5f4     loadshader.obj
+ 0001:0000c610       ??_C@_0BN@GNNCCJGL@LightSource?$FL2?$FN?4spotCosCutoff?$AA@ 1000d610     loadshader.obj
+ 0001:0000c630       ??_C@_0CD@PKMDBCLA@LightSource?$FL2?$FN?4constantAttenuati@ 1000d630     loadshader.obj
+ 0001:0000c654       ??_C@_0CB@KBHHLEON@LightSource?$FL2?$FN?4linearAttenuation@ 1000d654     loadshader.obj
+ 0001:0000c678       ??_C@_0CE@LJAGFMBI@LightSource?$FL2?$FN?4quadraticAttenuat@ 1000d678     loadshader.obj
+ 0001:0000c69c       ??_C@_0BN@EPAEGBBO@LightSource?$FL2?$FN?4isDirectional?$AA@ 1000d69c     loadshader.obj
+ 0001:0000c6bc       ??_C@_0BH@LGFDAIOO@LightSource?$FL3?$FN?4ambient?$AA@ 1000d6bc     loadshader.obj
+ 0001:0000c6d4       ??_C@_0BH@EADLDPC@LightSource?$FL3?$FN?4diffuse?$AA@ 1000d6d4     loadshader.obj
+ 0001:0000c6ec       ??_C@_0BI@ILLNOKHE@LightSource?$FL3?$FN?4specular?$AA@ 1000d6ec     loadshader.obj
+ 0001:0000c704       ??_C@_0BI@FEGJNGHB@LightSource?$FL3?$FN?4position?$AA@ 1000d704     loadshader.obj
+ 0001:0000c71c       ??_C@_0BN@CMJJIDDO@LightSource?$FL3?$FN?4spotDirection?$AA@ 1000d71c     loadshader.obj
+ 0001:0000c73c       ??_C@_0BM@MHDFMHAM@LightSource?$FL3?$FN?4spotExponent?$AA@ 1000d73c     loadshader.obj
+ 0001:0000c758       ??_C@_0BK@HCDIKBLN@LightSource?$FL3?$FN?4spotCutoff?$AA@ 1000d758     loadshader.obj
+ 0001:0000c774       ??_C@_0BN@OKHEOCCI@LightSource?$FL3?$FN?4spotCosCutoff?$AA@ 1000d774     loadshader.obj
+ 0001:0000c794       ??_C@_0CD@GBLAPIGE@LightSource?$FL3?$FN?4constantAttenuati@ 1000d794     loadshader.obj
+ 0001:0000c7b8       ??_C@_0CB@DOKNDHHD@LightSource?$FL3?$FN?4linearAttenuation@ 1000d7b8     loadshader.obj
+ 0001:0000c7dc       ??_C@_0CE@DICDDJDP@LightSource?$FL3?$FN?4quadraticAttenuat@ 1000d7dc     loadshader.obj
+ 0001:0000c800       ??_C@_0BN@MIKCKKFN@LightSource?$FL3?$FN?4isDirectional?$AA@ 1000d800     loadshader.obj
+ 0001:0000c820       ??_C@_0BH@JPGIBNGN@LightSource?$FL4?$FN?4ambient?$AA@ 1000d820     loadshader.obj
+ 0001:0000c838       ??_C@_0BH@CNDIKGHB@LightSource?$FL4?$FN?4diffuse?$AA@ 1000d838     loadshader.obj
+ 0001:0000c850       ??_C@_0BI@PPCFADPL@LightSource?$FL4?$FN?4specular?$AA@ 1000d850     loadshader.obj
+ 0001:0000c868       ??_C@_0BI@CAPBDPPO@LightSource?$FL4?$FN?4position?$AA@ 1000d868     loadshader.obj
+ 0001:0000c880       ??_C@_0BN@MALPPHF@LightSource?$FL4?$FN?4spotDirection?$AA@ 1000d880     loadshader.obj
+ 0001:0000c8a0       ??_C@_0BM@DKMMDPHJ@LightSource?$FL4?$FN?4spotExponent?$AA@ 1000d8a0     loadshader.obj
+ 0001:0000c8bc       ??_C@_0BK@BHPFALHN@LightSource?$FL4?$FN?4spotCutoff?$AA@ 1000d8bc     loadshader.obj
+ 0001:0000c8d8       ??_C@_0BN@MKOGJOGD@LightSource?$FL4?$FN?4spotCosCutoff?$AA@ 1000d8d8     loadshader.obj
+ 0001:0000c8f8       ??_C@_0CD@BHAJGAMK@LightSource?$FL4?$FN?4constantAttenuati@ 1000d8f8     loadshader.obj
+ 0001:0000c91c       ??_C@_0CB@FHEKLBCL@LightSource?$FL4?$FN?4linearAttenuation@ 1000d91c     loadshader.obj
+ 0001:0000c940       ??_C@_0CE@JDLAOEI@LightSource?$FL4?$FN?4quadraticAttenuat@ 1000d940     loadshader.obj
+ 0001:0000c964       ??_C@_0BN@OIDANGBG@LightSource?$FL4?$FN?4isDirectional?$AA@ 1000d964     loadshader.obj
+ 0001:0000c984       ??_C@_0BH@FOOGMCKN@LightSource?$FL5?$FN?4ambient?$AA@ 1000d984     loadshader.obj
+ 0001:0000c99c       ??_C@_0BH@OMLGHJLB@LightSource?$FL5?$FN?4diffuse?$AA@ 1000d99c     loadshader.obj
+ 0001:0000c9b4       ??_C@_0BI@GEIAEPJE@LightSource?$FL5?$FN?4specular?$AA@ 1000d9b4     loadshader.obj
+ 0001:0000c9cc       ??_C@_0BI@LLFEHDJB@LightSource?$FL5?$FN?4position?$AA@ 1000d9cc     loadshader.obj
+ 0001:0000c9e4       ??_C@_0BN@ILKNDEDG@LightSource?$FL5?$FN?4spotDirection?$AA@ 1000d9e4     loadshader.obj
+ 0001:0000ca04       ??_C@_0BM@JEKEKOOI@LightSource?$FL5?$FN?4spotExponent?$AA@ 1000da04     loadshader.obj
+ 0001:0000ca20       ??_C@_0BK@IKPKOKAL@LightSource?$FL5?$FN?4spotCutoff?$AA@ 1000da20     loadshader.obj
+ 0001:0000ca3c       ??_C@_0BN@ENEAFFCA@LightSource?$FL5?$FN?4spotCosCutoff?$AA@ 1000da3c     loadshader.obj
+ 0001:0000ca5c       ??_C@_0CD@IMHKIKBO@LightSource?$FL5?$FN?4constantAttenuati@ 1000da5c     loadshader.obj
+ 0001:0000ca80       ??_C@_0CB@MIJADCLF@LightSource?$FL5?$FN?4linearAttenuation@ 1000da80     loadshader.obj
+ 0001:0000caa4       ??_C@_0CE@IIBOGLGP@LightSource?$FL5?$FN?4quadraticAttenuat@ 1000daa4     loadshader.obj
+ 0001:0000cac8       ??_C@_0BN@GPJGBNFF@LightSource?$FL5?$FN?4isDirectional?$AA@ 1000dac8     loadshader.obj
+ 0001:0000cae8       ??_C@_0BH@MHAEKEKM@LightSource?$FL6?$FN?4ambient?$AA@ 1000dae8     loadshader.obj
+ 0001:0000cb00       ??_C@_0BH@HFFEBPLA@LightSource?$FL6?$FN?4diffuse?$AA@ 1000db00     loadshader.obj
+ 0001:0000cb18       ??_C@_0BI@BDBOJNGE@LightSource?$FL6?$FN?4specular?$AA@ 1000db18     loadshader.obj
+ 0001:0000cb30       ??_C@_0BI@MMMKKBGB@LightSource?$FL6?$FN?4position?$AA@ 1000db30     loadshader.obj
+ 0001:0000cb48       ??_C@_0BN@NIDHGPLC@LightSource?$FL6?$FN?4spotDirection?$AA@ 1000db48     loadshader.obj
+ 0001:0000cb68       ??_C@_0BM@LNGMBKBK@LightSource?$FL6?$FN?4spotExponent?$AA@ 1000db68     loadshader.obj
+ 0001:0000cb84       ??_C@_0BK@PGJLMPNA@LightSource?$FL6?$FN?4spotCutoff?$AA@ 1000db84     loadshader.obj
+ 0001:0000cba0       ??_C@_0BN@BONKAOKE@LightSource?$FL6?$FN?4spotCosCutoff?$AA@ 1000dba0     loadshader.obj
+ 0001:0000cbc0       ??_C@_0CD@PKJPLDCD@LightSource?$FL6?$FN?4constantAttenuati@ 1000dbc0     loadshader.obj
+ 0001:0000cbe4       ??_C@_0CB@LDIOLAFG@LightSource?$FL6?$FN?4linearAttenuation@ 1000dbe4     loadshader.obj
+ 0001:0000cc08       ??_C@_0CE@NAAAMCEH@LightSource?$FL6?$FN?4quadraticAttenuat@ 1000dc08     loadshader.obj
+ 0001:0000cc2c       ??_C@_0BN@DMAMEGNB@LightSource?$FL6?$FN?4isDirectional?$AA@ 1000dc2c     loadshader.obj
+ 0001:0000cc4c       ??_C@_0BH@GIKHLGM@LightSource?$FL7?$FN?4ambient?$AA@ 1000dc4c     loadshader.obj
+ 0001:0000cc64       ??_C@_0BH@LENKMAHA@LightSource?$FL7?$FN?4diffuse?$AA@ 1000dc64     loadshader.obj
+ 0001:0000cc7c       ??_C@_0BI@IILLNBAL@LightSource?$FL7?$FN?4specular?$AA@ 1000dc7c     loadshader.obj
+ 0001:0000cc94       ??_C@_0BI@FHGPONAO@LightSource?$FL7?$FN?4position?$AA@ 1000dc94     loadshader.obj
+ 0001:0000ccac       ??_C@_0BN@FPJBKEPB@LightSource?$FL7?$FN?4spotDirection?$AA@ 1000dcac     loadshader.obj
+ 0001:0000cccc       ??_C@_0BM@BDAEILIL@LightSource?$FL7?$FN?4spotExponent?$AA@ 1000dccc     loadshader.obj
+ 0001:0000cce8       ??_C@_0BK@GLJECOKG@LightSource?$FL7?$FN?4spotCutoff?$AA@ 1000dce8     loadshader.obj
+ 0001:0000cd04       ??_C@_0BN@JJHMMFOH@LightSource?$FL7?$FN?4spotCosCutoff?$AA@ 1000dd04     loadshader.obj
+ 0001:0000cd24       ??_C@_0CD@GBOMFJPH@LightSource?$FL7?$FN?4constantAttenuati@ 1000dd24     loadshader.obj
+ 0001:0000cd48       ??_C@_0CB@CMFEDDMI@LightSource?$FL7?$FN?4linearAttenuation@ 1000dd48     loadshader.obj
+ 0001:0000cd6c       ??_C@_0CE@FBCFKHGA@LightSource?$FL7?$FN?4quadraticAttenuat@ 1000dd6c     loadshader.obj
+ 0001:0000cd90       ??_C@_0BN@LLKKINJC@LightSource?$FL7?$FN?4isDirectional?$AA@ 1000dd90     loadshader.obj
+ 0001:0000cdb0       ??_C@_0BA@EMJOMJGG@LightingEnabled?$AA@ 1000ddb0     loadshader.obj
+ 0001:0000cdc0       ??_C@_0N@GDEBJOMP@numLightUsed?$AA@ 1000ddc0     loadshader.obj
+ 0001:0000cdd0       ??_C@_0CH@GALICACJ@FrontNBackLightModelProduct?4scen@ 1000ddd0     loadshader.obj
+ 0001:0000cdf8       ??_C@_0BA@FEOBDIEN@TexEnv?$FL0?$FN?4color?$AA@ 1000ddf8     loadshader.obj
+ 0001:0000ce08       ??_C@_0P@MKKIHDLF@TexEnv?$FL0?$FN?4mode?$AA@ 1000de08     loadshader.obj
+ 0001:0000ce18       ??_C@_0BF@BCNHCCGJ@TexEnv?$FL0?$FN?4combineRgb?$AA@ 1000de18     loadshader.obj
+ 0001:0000ce30       ??_C@_0BH@FDPPJNJD@TexEnv?$FL0?$FN?4combineAlpha?$AA@ 1000de30     loadshader.obj
+ 0001:0000ce48       ??_C@_0BE@IFELGIFH@TexEnv?$FL0?$FN?4srcRgb?$FL0?$FN?$AA@ 1000de48     loadshader.obj
+ 0001:0000ce5c       ??_C@_0BE@IEIJACGA@TexEnv?$FL0?$FN?4srcRgb?$FL1?$FN?$AA@ 1000de5c     loadshader.obj
+ 0001:0000ce70       ??_C@_0BE@IGMPLMDJ@TexEnv?$FL0?$FN?4srcRgb?$FL2?$FN?$AA@ 1000de70     loadshader.obj
+ 0001:0000ce84       ??_C@_0BG@HHNECJK@TexEnv?$FL0?$FN?4srcAlpha?$FL0?$FN?$AA@ 1000de84     loadshader.obj
+ 0001:0000ce9c       ??_C@_0BG@GLPCIKN@TexEnv?$FL0?$FN?4srcAlpha?$FL1?$FN?$AA@ 1000de9c     loadshader.obj
+ 0001:0000ceb4       ??_C@_0BG@EPJJGPE@TexEnv?$FL0?$FN?4srcAlpha?$FL2?$FN?$AA@ 1000deb4     loadshader.obj
+ 0001:0000cecc       ??_C@_0BI@BHEKPFN@TexEnv?$FL0?$FN?4operandRgb?$FL0?$FN?$AA@ 1000decc     loadshader.obj
+ 0001:0000cee4       ??_C@_0BI@LGMFGK@TexEnv?$FL0?$FN?4operandRgb?$FL1?$FN?$AA@ 1000dee4     loadshader.obj
+ 0001:0000cefc       ??_C@_0BI@CPAHLDD@TexEnv?$FL0?$FN?4operandRgb?$FL2?$FN?$AA@ 1000defc     loadshader.obj
+ 0001:0000cf14       ??_C@_0BK@PIJCHJDM@TexEnv?$FL0?$FN?4operandAlpha?$FL0?$FN?$AA@ 1000df14     loadshader.obj
+ 0001:0000cf30       ??_C@_0BK@PJFABDAL@TexEnv?$FL0?$FN?4operandAlpha?$FL1?$FN?$AA@ 1000df30     loadshader.obj
+ 0001:0000cf4c       ??_C@_0BK@PLBGKNFC@TexEnv?$FL0?$FN?4operandAlpha?$FL2?$FN?$AA@ 1000df4c     loadshader.obj
+ 0001:0000cf68       ??_C@_0BD@HEFEACCM@TexEnv?$FL0?$FN?4rgbScale?$AA@ 1000df68     loadshader.obj
+ 0001:0000cf7c       ??_C@_0BF@MIACBIJI@TexEnv?$FL0?$FN?4alphaScale?$AA@ 1000df7c     loadshader.obj
+ 0001:0000cf94       ??_C@_0BA@EDJKCMAO@TexEnv?$FL1?$FN?4color?$AA@ 1000df94     loadshader.obj
+ 0001:0000cfa4       ??_C@_0P@GACHDCL@TexEnv?$FL1?$FN?4mode?$AA@ 1000dfa4     loadshader.obj
+ 0001:0000cfb4       ??_C@_0BF@IPNIMDBP@TexEnv?$FL1?$FN?4combineRgb?$AA@ 1000dfb4     loadshader.obj
+ 0001:0000cfcc       ??_C@_0BH@PNJHAMAC@TexEnv?$FL1?$FN?4combineAlpha?$AA@ 1000dfcc     loadshader.obj
+ 0001:0000cfe4       ??_C@_0BE@FINNLBNC@TexEnv?$FL1?$FN?4srcRgb?$FL0?$FN?$AA@ 1000dfe4     loadshader.obj
+ 0001:0000cff8       ??_C@_0BE@FJBPNLOF@TexEnv?$FL1?$FN?4srcRgb?$FL1?$FN?$AA@ 1000dff8     loadshader.obj
+ 0001:0000d00c       ??_C@_0BE@FLFJGFLM@TexEnv?$FL1?$FN?4srcRgb?$FL2?$FN?$AA@ 1000e00c     loadshader.obj
+ 0001:0000d020       ??_C@_0BG@LOIGJJHC@TexEnv?$FL1?$FN?4srcAlpha?$FL0?$FN?$AA@ 1000e020     loadshader.obj
+ 0001:0000d038       ??_C@_0BG@LPEEPDEF@TexEnv?$FL1?$FN?4srcAlpha?$FL1?$FN?$AA@ 1000e038     loadshader.obj
+ 0001:0000d050       ??_C@_0BG@LNACENBM@TexEnv?$FL1?$FN?4srcAlpha?$FL2?$FN?$AA@ 1000e050     loadshader.obj
+ 0001:0000d068       ??_C@_0BI@IGNCGEBO@TexEnv?$FL1?$FN?4operandRgb?$FL0?$FN?$AA@ 1000e068     loadshader.obj
+ 0001:0000d080       ??_C@_0BI@IHBAAOCJ@TexEnv?$FL1?$FN?4operandRgb?$FL1?$FN?$AA@ 1000e080     loadshader.obj
+ 0001:0000d098       ??_C@_0BI@IFFGLAHA@TexEnv?$FL1?$FN?4operandRgb?$FL2?$FN?$AA@ 1000e098     loadshader.obj
+ 0001:0000d0b0       ??_C@_0BK@CPHAPJGE@TexEnv?$FL1?$FN?4operandAlpha?$FL0?$FN?$AA@ 1000e0b0     loadshader.obj
+ 0001:0000d0cc       ??_C@_0BK@COLCJDFD@TexEnv?$FL1?$FN?4operandAlpha?$FL1?$FN?$AA@ 1000e0cc     loadshader.obj
+ 0001:0000d0e8       ??_C@_0BK@CMPECNAK@TexEnv?$FL1?$FN?4operandAlpha?$FL2?$FN?$AA@ 1000e0e8     loadshader.obj
+ 0001:0000d104       ??_C@_0BD@OPPBEOED@TexEnv?$FL1?$FN?4rgbScale?$AA@ 1000e104     loadshader.obj
+ 0001:0000d118       ??_C@_0BF@FFANPJOO@TexEnv?$FL1?$FN?4alphaScale?$AA@ 1000e118     loadshader.obj
+ 0001:0000d130       ??_C@_0BE@FOKJOEGL@Texture2DEnabled?$FL0?$FN?$AA@ 1000e130     loadshader.obj
+ 0001:0000d144       ??_C@_0BE@FPGLIOFM@Texture2DEnabled?$FL1?$FN?$AA@ 1000e144     loadshader.obj
+ 0001:0000d158       ??_C@_0L@JBKKCKMG@TexImages0?$AA@ 1000e158     loadshader.obj
+ 0001:0000d164       ??_C@_0L@IILBBLIH@TexImages1?$AA@ 1000e164     loadshader.obj
+ 0001:0000d170       ??_C@_0M@LNIIMMK@Fog?4density?$AA@ 1000e170     loadshader.obj
+ 0001:0000d17c       ??_C@_07CMPBDGMP@Fog?4end?$AA@ 1000e17c     loadshader.obj
+ 0001:0000d184       ??_C@_09PDNHAHMC@Fog?4color?$AA@ 1000e184     loadshader.obj
+ 0001:0000d190       ??_C@_09MAFOAKEK@Fog?4scale?$AA@ 1000e190     loadshader.obj
+ 0001:0000d19c       ??_C@_08JLLBJNFB@Fog?4mode?$AA@ 1000e19c     loadshader.obj
+ 0001:0000d1a8       ??_C@_0L@BGLIMCBP@FogEnabled?$AA@ 1000e1a8     loadshader.obj
+ 0001:0000d1b4       ??_C@_0BL@LIKKPFPK@unable?5to?5allocate?5memeory?$AA@ 1000e1b4     loadshader.obj
+ 0001:0000d1d0       ??_C@_07KJFPOMFC@?$CFs?3?5?$CFs?6?$AA@ 1000e1d0     loadshader.obj
+ 0001:0000d1d8       ??_C@_0BD@KAJAFKFC@GL_STACK_UNDERFLOW?$AA@ 1000e1d8     loadshader.obj
+ 0001:0000d1ec       ??_C@_0BB@JMBJBKGI@GL_OUT_OF_MEMORY?$AA@ 1000e1ec     loadshader.obj
+ 0001:0000d200       ??_C@_0CB@IHDHGOIH@GL_INVALID_FRAMEBUFFER_OPERATION@ 1000e200     loadshader.obj
+ 0001:0000d224       ??_C@_0BA@EEBAGKCP@UNKNOWN?5ERROR?$CB?$CB?$AA@ 1000e224     loadshader.obj
+ 0001:0000d234       ??_C@_0BC@DLCDMCHH@GL_STACK_OVERFLOW?$AA@ 1000e234     loadshader.obj
+ 0001:0000d248       ??_C@_0BF@NFNGKHIL@GL_INVALID_OPERATION?$AA@ 1000e248     loadshader.obj
+ 0001:0000d260       ??_C@_0BB@HDIPJELP@GL_INVALID_VALUE?$AA@ 1000e260     loadshader.obj
+ 0001:0000d274       ??_C@_0BA@LLPLHEDK@GL_INVALID_ENUM?$AA@ 1000e274     loadshader.obj
+ 0001:0000d284       ??_C@_0BA@GJPIEEAH@?6?5index?5?$DN?5?$CFd?5?6?6?$AA@ 1000e284     loadshader.obj
+ 0001:0000d294       ??_C@_0BK@BOALBECG@Attrib?5?$CFd?5?$CI?$CFs?$CJ?5?9?$DO?5loc?5?$CFd?6?$AA@ 1000e294     loadshader.obj
+ 0001:0000d2b0       ??_C@_0BG@JONCAFML@Post?5fs?5attach?5shader?$AA@ 1000e2b0     loadshader.obj
+ 0001:0000d2c8       ??_C@_0BG@IJIDJMLG@Post?5vs?5attach?5shader?$AA@ 1000e2c8     loadshader.obj
+ 0001:0000d2e0       ??_C@_0BB@GFNFHDFD@Post?5fs?5bin?5load?$AA@ 1000e2e0     loadshader.obj
+ 0001:0000d2f4       ??_C@_0BB@GJMNJOKP@Post?5vs?5bin?5load?$AA@ 1000e2f4     loadshader.obj
+ 0001:0000d308       ??_C@_0P@KNBFPEOF@Post?5prog?5Link?$AA@ 1000e308     loadshader.obj
+ 0001:0000d318       ??_C@_0BH@IJDALLKP@?6Program?5info?5log?3?6?$CFs?6?$AA@ 1000e318     loadshader.obj
+ 0001:0000d330       ??_C@_06LEBKBMLE@Vertex?$AA@ 1000e330     loadshader.obj
+ 0001:0000d338       ??_C@_05PDOBBJNA@Color?$AA@ 1000e338     loadshader.obj
+ 0001:0000d340       ??_C@_06EFAGIKOH@Normal?$AA@ 1000e340     loadshader.obj
+ 0001:0000d348       ??_C@_0P@PHLKDOMB@MultiTexCoord0?$AA@ 1000e348     loadshader.obj
+ 0001:0000d358       ??_C@_0P@OOKBAPIA@MultiTexCoord1?$AA@ 1000e358     loadshader.obj
+ 0001:0000d368       ??_C@_0N@MCBEMOIG@ATTRIB?5MAP?3?6?$AA@ 1000e368     loadshader.obj
+ 0001:0000d378       ??_C@_0BE@EPLIGMAK@set?5current?5program?$AA@ 1000e378     loadshader.obj
+ 0001:0000d3ac       treeSize                   1000e3ac     render.obj
+ 0001:0000d3b0       totalShaderCount           1000e3b0     render.obj
+ 0001:0000d3b4       ??_C@_0CH@FAPJMPPA@where?5the?5hell?5is?5the?5memory?5all@ 1000e3b4     render.obj
+ 0001:0000d3dc       ??_C@_0L@LLHJIHFC@FrontColor?$AA@ 1000e3dc     render.obj
+ 0001:0000d3e8       ??_C@_0DG@GNMHABAN@GL_OES_matrix_palette?5GL_EXT_tex@ 1000e3e8     render.obj
+ 0001:0000d420       ??_C@_0DM@HNNOOEDB@ERROR?3?5Sharing?5texture?5object?5wi@ 1000e420     render.obj
+ 0001:0000d47c       ??_C@_0BC@LBGBAENB@lockGLSharedState?$AA@ 1000e47c     FIMGlib:glCore.obj
+ 0001:0000d490       ??_C@_0BJ@HNFHCEOA@lockGLSharedTextureState?$AA@ 1000e490     FIMGlib:glCore.obj
+ 0001:0000d4ac       ??_C@_0BE@MCBGFHJM@unlockGLSharedState?$AA@ 1000e4ac     FIMGlib:glCore.obj
+ 0001:0000d4c0       ??_C@_0BL@OAOJHJKN@unlockGLSharedTextureState?$AA@ 1000e4c0     FIMGlib:glCore.obj
+ 0001:0000d4dc       ??_C@_03GJAMENNA@2?40?$AA@ 1000e4dc     FIMGlib:glCore.obj
+ 0001:0000d4e0       ??_C@_0BE@GBEPIMGC@Samsung?5Electronics?$AA@ 1000e4e0     FIMGlib:glCore.obj
+ 0001:0000d4f4       ??_C@_04MPAIHFON@FIMG?$AA@ 1000e4f4     FIMGlib:glCore.obj
+ 0001:0000d500       ??_C@_0LA@KGBKFEEP@OES_read_format?5OES_compressed_p@ 1000e500     FIMGlib:glCore.obj
+ 0001:0000d5b0       ??_C@_04BOFMJCLK@1?400?$AA@ 1000e5b0     FIMGlib:glCore.obj
+ 0001:0000d5b8       ??_C@_0L@GDOKCFIG@FimgFinish?$AA@ 1000e5b8     FIMGlib:glCore.obj
+ 0001:0000d5c4       ??_C@_07NPIGCBB@set_err?$AA@ 1000e5c4     FIMGlib:glCore.obj
+ 0001:0000d5cc       ??_C@_0DA@PFPHBDGJ@ERROR?3?5ctx?5is?5NULL?3?5?$CFs?5line?3?$CFd?5p@ 1000e5cc     FIMGlib:glCore.obj
+ 0001:0000d5fc       ??_C@_0BE@LLLCIIOO@glBlendFuncSeparate?$AA@ 1000e5fc     FIMGlib:glCore.obj
+ 0001:0000d610       ??_C@_0N@CIOACEPJ@OGL2_glClear?$AA@ 1000e610     FIMGlib:glCore.obj
+ 0001:0000d620       ??_C@_0BC@CDBHDDMD@OGL2_glClearColor?$AA@ 1000e620     FIMGlib:glCore.obj
+ 0001:0000d634       ??_C@_0BD@GGGMNJEL@OGL2_glClearDepthf?$AA@ 1000e634     FIMGlib:glCore.obj
+ 0001:0000d648       ??_C@_0BE@DKOBKDBF@OGL2_glClearStencil?$AA@ 1000e648     FIMGlib:glCore.obj
+ 0001:0000d65c       ??_C@_0BB@CKFLNIEP@OGL2_glColorMask?$AA@ 1000e65c     FIMGlib:glCore.obj
+ 0001:0000d670       ??_C@_0BA@CECFFDBP@OGL2_glCullFace?$AA@ 1000e670     FIMGlib:glCore.obj
+ 0001:0000d680       ??_C@_0BB@MFKFMPPH@OGL2_glDepthFunc?$AA@ 1000e680     FIMGlib:glCore.obj
+ 0001:0000d694       ??_C@_0BB@LBCJIEAF@OGL2_glDepthMask?$AA@ 1000e694     FIMGlib:glCore.obj
+ 0001:0000d6a8       ??_C@_0BD@KJCJMHBD@OGL2_glDepthRangef?$AA@ 1000e6a8     FIMGlib:glCore.obj
+ 0001:0000d6bc       ??_C@_0P@HNFBKLME@OGL2_glDisable?$AA@ 1000e6bc     FIMGlib:glCore.obj
+ 0001:0000d6cc       ??_C@_0CA@OINFBHJO@OGL2_glDisableVertexAttribArray?$AA@ 1000e6cc     FIMGlib:glCore.obj
+ 0001:0000d6ec       ??_C@_0CA@PMIKCIEO@false?5?$CG?$CG?5?$CCInvalid?5enum?5in?5mode?$CC?$AA@ 1000e6ec     FIMGlib:glCore.obj
+ 0001:0000d70c       ??_C@_0BJ@JIPMFCIP@?$DO?$DOASSERTION?5FAILED?3?5?$CFs?5?6?$AA@ 1000e70c     FIMGlib:glCore.obj
+ 0001:0000d728       ??_C@_0O@DFGCGBL@OGL2_glEnable?$AA@ 1000e728     FIMGlib:glCore.obj
+ 0001:0000d738       ??_C@_0BP@DBIOFFFI@OGL2_glEnableVertexAttribArray?$AA@ 1000e738     FIMGlib:glCore.obj
+ 0001:0000d758       ??_C@_0BJ@BMNIOHHN@Type?5of?5Sampler?5unknown?6?$AA@ 1000e758     FIMGlib:glCore.obj
+ 0001:0000d774       ??_C@_08IIGNJOLP@error?5?1n?$AA@ 1000e774     FIMGlib:glCore.obj
+ 0001:0000d780       ??_C@_0L@JECHCCPJ@stateFlush?$AA@ 1000e780     FIMGlib:glCore.obj
+ 0001:0000d790       ??_C@_0EB@HECDNPIE@?5the?5value?5of?5the?5texUNit?5is?5gre@ 1000e790     FIMGlib:glCore.obj
+ 0001:0000d7d4       ??_C@_0CM@DPCLCBLM@?6WARNING?3?5state?5has?5not?5been?5flu@ 1000e7d4     FIMGlib:glCore.obj
+ 0001:0000d800       ??_C@_0O@NIDOIGOO@OGL2_glFinish?$AA@ 1000e800     FIMGlib:glCore.obj
+ 0001:0000d810       ??_C@_0N@IHLLGPBA@OGL2_glFlush?$AA@ 1000e810     FIMGlib:glCore.obj
+ 0001:0000d820       ??_C@_0BB@JKCJOGII@OGL2_glFrontFace?$AA@ 1000e820     FIMGlib:glCore.obj
+ 0001:0000d834       ??_C@_0BM@IDGBHKLF@OGL2_glGetBufferParameteriv?$AA@ 1000e834     FIMGlib:glCore.obj
+ 0001:0000d850       ??_C@_0BA@GLHECOKK@OGL2_glGetError?$AA@ 1000e850     FIMGlib:glCore.obj
+ 0001:0000d860       ??_C@_0BL@NJEPIADH@2?40?5?$CIlib?5version?520?402?424?$CJ?$AA@ 1000e860     FIMGlib:glCore.obj
+ 0001:0000d87c       ??_C@_0BB@PONEIMJJ@OGL2_glGetString?$AA@ 1000e87c     FIMGlib:glCore.obj
+ 0001:0000d890       ??_C@_0BC@FNLDMAPG@GetVertexAttribfv?$AA@ 1000e890     FIMGlib:glCore.obj
+ 0001:0000d8a4       ??_C@_0BP@EIACGFJP@OGL2_glGetVertexAttribPointerv?$AA@ 1000e8a4     FIMGlib:glCore.obj
+ 0001:0000d8c4       ??_C@_0M@CHHJLPPO@OGL2_glHint?$AA@ 1000e8c4     FIMGlib:glCore.obj
+ 0001:0000d8d0       ??_C@_0BA@JBCHCOAN@OGL2_glIsBuffer?$AA@ 1000e8d0     FIMGlib:glCore.obj
+ 0001:0000d8e0       ??_C@_0BB@JMEJFIBK@OGL2_glIsEnabled?$AA@ 1000e8e0     FIMGlib:glCore.obj
+ 0001:0000d8f4       ??_C@_0BB@DEIDAKEO@OGL2_glLineWidth?$AA@ 1000e8f4     FIMGlib:glCore.obj
+ 0001:0000d908       ??_C@_0BD@KIFIJBCF@OGL2_glPixelStorei?$AA@ 1000e908     FIMGlib:glCore.obj
+ 0001:0000d91c       ??_C@_0BF@JDMDGAOO@OGL2_glPolygonOffset?$AA@ 1000e91c     FIMGlib:glCore.obj
+ 0001:0000d934       ??_C@_0BC@OPPGNJIP@OGL2_glReadPixels?$AA@ 1000e934     FIMGlib:glCore.obj
+ 0001:0000d948       ??_C@_0BG@DGJBBCJB@OGL2_glSampleCoverage?$AA@ 1000e948     FIMGlib:glCore.obj
+ 0001:0000d960       ??_C@_0P@PIFCCDJC@OGL2_glScissor?$AA@ 1000e960     FIMGlib:glCore.obj
+ 0001:0000d970       ??_C@_0BG@FCMNCEIA@glStencilFuncSeparate?$AA@ 1000e970     FIMGlib:glCore.obj
+ 0001:0000d988       ??_C@_0BG@MMKPIEJI@glStencilMaskSeparate?$AA@ 1000e988     FIMGlib:glCore.obj
+ 0001:0000d9a0       ??_C@_0BE@GAPLDNGF@glStencilOpSeparate?$AA@ 1000e9a0     FIMGlib:glCore.obj
+ 0001:0000d9b4       ??_C@_0BE@DPDMCNJK@OGL2_glAlphaFuncEXP?$AA@ 1000e9b4     FIMGlib:glCore.obj
+ 0001:0000d9c8       ??_C@_0BC@KJLMENOG@OGL2_glLogicOpEXP?$AA@ 1000e9c8     FIMGlib:glCore.obj
+ 0001:0000d9dc       ??_C@_0BG@ODOPLDOK@OGL2_glVertexAttrib4f?$AA@ 1000e9dc     FIMGlib:glCore.obj
+ 0001:0000d9f4       ??_C@_0BL@MFMGFAOA@OGL2_glVertexAttribPointer?$AA@ 1000e9f4     FIMGlib:glCore.obj
+ 0001:0000da10       ??_C@_0BA@JFGMBHIM@OGL2_glViewport?$AA@ 1000ea10     FIMGlib:glCore.obj
+ 0001:0000da20       ??_C@_0BC@NLHPPBNP@OGL2_glBindBuffer?$AA@ 1000ea20     FIMGlib:glCore.obj
+ 0001:0000da34       ??_C@_0BC@HFEMBGHB@OGL2_glGenBuffers?$AA@ 1000ea34     FIMGlib:glCore.obj
+ 0001:0000da48       ??_C@_0BF@PGAOMHCB@OGL2_glBufferSubData?$AA@ 1000ea48     FIMGlib:glCore.obj
+ 0001:0000da60       ??_C@_0CA@KNJBCHNB@Depth?5Buffer?5is?5allocated?50x?$CFx?6?$AA@ 1000ea60     FIMGlib:glCore.obj
+ 0001:0000da80       ??_C@_0BE@LDEGHGFI@GLES2SetSurfaceData?$AA@ 1000ea80     FIMGlib:glCore.obj
+ 0001:0000da94       ??_C@_0DA@IJKLONAE@ERROR?3?5ctx?5is?50?5while?5trying?5to?5@ 1000ea94     FIMGlib:glCore.obj
+ 0001:0000dac8       ??_C@_0EH@DNDKBPDE@?6WARNING?3?5state?5has?5not?5been?5flu@ 1000eac8     FIMGlib:glCore.obj
+ 0001:0000db10       ??_C@_0BC@OJHEPABB@OGL2_glDrawArrays?$AA@ 1000eb10     FIMGlib:glCore.obj
+ 0001:0000db24       ??_C@_0BE@FPILDHCO@OGL2_glDrawElements?$AA@ 1000eb24     FIMGlib:glCore.obj
+ 0001:0000db38       ??_C@_0BD@OBLEEBOJ@OGL2_glGetBooleanv?$AA@ 1000eb38     FIMGlib:glCore.obj
+ 0001:0000db4c       ??_C@_0BB@DLBLMBGM@OGL2_glGetFloatv?$AA@ 1000eb4c     FIMGlib:glCore.obj
+ 0001:0000db60       ??_C@_0BD@NADNIHF@OGL2_glGetIntegerv?$AA@ 1000eb60     FIMGlib:glCore.obj
+ 0001:0000db74       ??_C@_0BF@KKEJPFLC@OGL2_glDeleteBuffers?$AA@ 1000eb74     FIMGlib:glCore.obj
+ 0001:0000db8c       ??_C@_0BC@FCNCMOHO@OGL2_glBufferData?$AA@ 1000eb8c     FIMGlib:glCore.obj
+ 0001:0000dba0       ??_C@_1M@HFJKIAIF@?$AAG?$AAL?$AAE?$AA1?$AA?3?$AA?$AA@ 1000eba0     FIMGlib:glCore.obj
+ 0001:0000dbac       ??_C@_0BJ@BEPCLIH@SharedState?3?3SharedState?$AA@ 1000ebac     FIMGlib:glCore.obj
+ 0001:0000dbc8       ??_C@_0GM@LGIMALLH@sharedStateRefCount?5?$DN?$DN?50?5?$CG?$CG?5?$CCThe@ 1000ebc8     FIMGlib:glCore.obj
+ 0001:0000dc34       ??_C@_0BD@HOGJEGDH@GLES2CreateContext?$AA@ 1000ec34     FIMGlib:glCore.obj
+ 0001:0000dc48       ??_C@_0BE@PDDFIPGE@GLES2DestroyContext?$AA@ 1000ec48     FIMGlib:glCore.obj
+ 0001:0000dc5c       ??_C@_0BO@NELGKIEA@ERROR?3?5unexpected?5wrap?5mode?$CB?6?$AA@ 1000ec5c     FIMGlib:glTex.obj
+ 0001:0000dc7c       ??_C@_0BA@BDEGHOGN@OUT?5OF?5MEMORY?5?6?$AA@ 1000ec7c     FIMGlib:glTex.obj
+ 0001:0000dc90       ??_C@_0ED@MNEHNKHC@false?5?$CG?$CG?5?$CCsubimage?5called?5but?5me@ 1000ec90     FIMGlib:glTex.obj
+ 0001:0000dcd8       ??_C@_0EB@FLKGLLEK@false?5?$CG?$CG?5?$CCundetermined?5mimfilter@ 1000ecd8     FIMGlib:glTex.obj
+ 0001:0000dd20       ??_C@_0FD@HIIPJIAC@pState?9?$DOsharedState?9?$DOsharedState@ 1000ed20     FIMGlib:glTex.obj
+ 0001:0000dd78       ??_C@_0EO@FAJLEIBN@?5?5?6?5trying?5to?5acqire?5a?5texture?5o@ 1000ed78     FIMGlib:glTex.obj
+ 0001:0000ddc8       ??_C@_0BH@INCBEKCN@TextureObject?3?3acquire?$AA@ 1000edc8     FIMGlib:glTex.obj
+ 0001:0000dde0       ??_C@_0EJ@DGEKNMFB@?5zero?5can?5not?5be?5released?5?4?5shou@ 1000ede0     FIMGlib:glTex.obj
+ 0001:0000de2c       ??_C@_0CL@FDMDEJEE@images?4tex2D?$FLi?$FN?4height?5?$CB?$DN?5currHe@ 1000ee2c     FIMGlib:glTex.obj
+ 0001:0000de58       ??_C@_0CJ@IMBKCDHE@images?4tex2D?$FLi?$FN?4width?5?$CB?$DN?5currWid@ 1000ee58     FIMGlib:glTex.obj
+ 0001:0000de88       ??_C@_0EH@GHLCFNKI@images?4tex2D?$FLi?$FN?4internalFormat?5?$CB@ 1000ee88     FIMGlib:glTex.obj
+ 0001:0000ded0       ??_C@_0CI@GJKLJFML@images?4tex2D?$FLi?$FN?4isUsed?5?$CB?$DN?5GL_TRU@ 1000eed0     FIMGlib:glTex.obj
+ 0001:0000def8       ??_C@_0CI@KMICNHCO@false?5?$CG?$CG?5?$CCundetermined?5byte?5per?5@ 1000eef8     FIMGlib:glTex.obj
+ 0001:0000df20       ??_C@_0DP@LCPMFJDD@false?5?$CG?$CG?5?$CCUnhandled?5or?5unexpecte@ 1000ef20     FIMGlib:glTex.obj
+ 0001:0000df60       ??_C@_0DB@PFDIFNCO@unsupported?5PxFmt?5?5as?5external?5m@ 1000ef60     FIMGlib:glTex.obj
+ 0001:0000df98       ??_C@_0FA@HJIGNKOB@false?5?$CG?$CG?5?$CCGetPixelSize?$CC?$CG?$CG?5?$CCUnhan@ 1000ef98     FIMGlib:glTex.obj
+ 0001:0000dfe8       ??_C@_0EI@IMEMPEOD@false?5?$CG?$CG?5?$CCundetermined?5texture?5f@ 1000efe8     FIMGlib:glTex.obj
+ 0001:0000e030       ??_C@_0EJ@JBFOCFIB@?5should?5not?5have?5reached?5the?5end@ 1000f030     FIMGlib:glTex.obj
+ 0001:0000e07c       ??_C@_0BN@MJFNGJD@false?5?$CG?$CG?5?$CCUnexpected?5target?$CC?$AA@ 1000f07c     FIMGlib:glTex.obj
+ 0001:0000e0a0       ??_C@_0GG@GAJEIDMH@false?5?$CG?$CG?5?$CC?5getImageDataLocation?5@ 1000f0a0     FIMGlib:glTex.obj
+ 0001:0000e108       ??_C@_0DB@LEJKENOA@false?5?$CG?$CG?5?$CC?5unbale?5to?5get?5the?5mem@ 1000f108     FIMGlib:glTex.obj
+ 0001:0000e13c       ??_C@_0DP@OCOILPAM@false?5?$CG?$CG?5?$CCglCopyTexImage2D?$CC?5?$CG?$CG?5?$CC@ 1000f13c     FIMGlib:glTex.obj
+ 0001:0000e17c       ??_C@_0BJ@GHICCLGN@OGL2_glGetTexParameteriv?$AA@ 1000f17c     FIMGlib:glTex.obj
+ 0001:0000e198       ??_C@_0BJ@BGNBDFEN@Unable?5to?5get?5new?5chunk?6?$AA@ 1000f198     FIMGlib:glTex.obj
+ 0001:0000e1b4       ??_C@_0BC@BBOAEFBB@?6?5image?5compiled?5?$AA@ 1000f1b4     FIMGlib:glTex.obj
+ 0001:0000e1c8       ??_C@_0BN@BIBMPBGJ@ImageSize?$FLLevel?5?$DN?5?$CFd?$FN?5?$DN?5?$CFd?5?6?$AA@ 1000f1c8     FIMGlib:glTex.obj
+ 0001:0000e1e8       ??_C@_0BO@DFHJDLGH@offSetSize?$FLLevel?5?$DN?5?$CFd?$FN?5?$DN?5?$CFd?5?6?$AA@ 1000f1e8     FIMGlib:glTex.obj
+ 0001:0000e208       ??_C@_0O@IILEGFGF@pImgBuf?5?$DN?5?$CFp?6?$AA@ 1000f208     FIMGlib:glTex.obj
+ 0001:0000e218       ??_C@_0BD@MMHGBKDG@Offsets?$FL?$CFd?$FN?5?$DN?5?$CFd?5?6?$AA@ 1000f218     FIMGlib:glTex.obj
+ 0001:0000e230       ??_C@_0EA@NNIDJKPC@texObjrefCount?5?$DO?$DN?5?91?5?$CG?$CG?5?$CC?5ref?5co@ 1000f230     FIMGlib:glTex.obj
+ 0001:0000e270       ??_C@_0BH@HBLINMA@TextureObject?3?3release?$AA@ 1000f270     FIMGlib:glTex.obj
+ 0001:0000e288       ??_C@_0CC@LMDDFLLE@?$CIprog?5?$CB?$DN?50?$CJ?5?$CG?$CG?5?$CCProg?5ptr?5is?50?$CB?2n@ 1000f288     FIMGlib:glShaderApi.obj
+ 0001:0000e2ac       ??_C@_0BI@IGGJNIIE@updateCurrentExecutable?$AA@ 1000f2ac     FIMGlib:glShaderApi.obj
+ 0001:0000e2c4       ?_C@?1??_Nullstr@?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@CAPBDXZ@4DB 1000f2c4     FIMGlib:glShaderApi.obj
+ 0001:0000e2c8       ??_C@_0EA@KGLFANJ@?$CIshaderIt?9?$DOshaderPtr?5?$CB?$DN?50?$CJ?5?$CG?$CG?5?$CCs@ 1000f2c8     FIMGlib:glShaderApi.obj
+ 0001:0000e308       ??_C@_0EA@EIHEEDII@?$CIprogIt?9?$DOprogramPtr?5?$CB?$DN?50?$CJ?5?$CG?$CG?5?$CCpr@ 1000f308     FIMGlib:glShaderApi.obj
+ 0001:0000e348       ??_C@_0BE@CIJFPCFB@OGL2_glAttachShader?$AA@ 1000f348     FIMGlib:glShaderApi.obj
+ 0001:0000e35c       ??_C@_0DA@ICHPLJAA@?$CIprogIt?9?$DOprogramPtr?5?$CB?$DN?50?$CJ?5?$CG?$CG?5?$CCPr@ 1000f35c     FIMGlib:glShaderApi.obj
+ 0001:0000e38c       ??_C@_0BK@NJPEAFIC@OGL2_glBindAttribLocation?$AA@ 1000f38c     FIMGlib:glShaderApi.obj
+ 0001:0000e3a8       ??_C@_0DC@IKCKMKIO@false?5?$CG?$CG?5?$CCShader?5type?5is?5not?5ver@ 1000f3a8     FIMGlib:glShaderApi.obj
+ 0001:0000e3dc       ??_C@_0BK@LGLPDFNB@OGL2_glGetUniformLocation?$AA@ 1000f3dc     FIMGlib:glShaderApi.obj
+ 0001:0000e3f8       ??_C@_0CF@FNPLNADD@false?5?$CG?$CG?5?$CCunrecognized?5header?5ty@ 1000f3f8     FIMGlib:glShaderApi.obj
+ 0001:0000e420       ??_C@_0CE@LEPDCJJJ@Unsupported?5Shader?5binary?5versio@ 1000f420     FIMGlib:glShaderApi.obj
+ 0001:0000e444       ??_C@_0CI@LFDNOCIC@false?5?$CG?$CG?5?$CCShader?5type?5is?5not?5VS?5@ 1000f444     FIMGlib:glShaderApi.obj
+ 0001:0000e46c       ??_C@_0DC@NJILBNIO@?$CIshaderIt?$FLi?$FN?9?$DOshaderPtr?$CB?$DN0?$CJ?5?$CG?$CG?5?$CC@ 1000f46c     FIMGlib:glShaderApi.obj
+ 0001:0000e4a0       ??_C@_0BE@BHNDPJBL@OGL2_glShaderBinary?$AA@ 1000f4a0     FIMGlib:glShaderApi.obj
+ 0001:0000e4b4       ??_C@_0CN@BOJLNNM@?$CIprogIt?9?$DOprogramPtr?$CB?$DN0?$CJ?5?$CG?$CG?5?$CCprog@ 1000f4b4     FIMGlib:glShaderApi.obj
+ 0001:0000e4e4       ??_C@_0BJ@GGMIJPMJ@OGL2_glGetProgramInfoLog?$AA@ 1000f4e4     FIMGlib:glShaderApi.obj
+ 0001:0000e500       ??_C@_0CD@DIFAMDPB@?$CIprog?5?$CB?$DN?50?$CJ?5?$CG?$CG?5?$CCProgramPtr?5is?50?$CB@ 1000f500     FIMGlib:glShaderApi.obj
+ 0001:0000e524       ??_C@_0O@JNNHKGDJ@setUniformMat?$AA@ 1000f524     FIMGlib:glShaderApi.obj
+ 0001:0000e538       ??_C@_0EM@JANGHKLJ@false?$CG?$CG?$CCsampler?5entry?5does?5not?5e@ 1000f538     FIMGlib:glShaderApi.obj
+ 0001:0000e584       ??_C@_0CL@EALMGOB@uniform?4fsRegSet?5?$DN?$DN?5DCL_REGSET_C@ 1000f584     FIMGlib:glShaderApi.obj
+ 0001:0000e5b0       ??_C@_0CL@ELPBICKK@uniform?4vsRegSet?5?$DN?$DN?5DCL_REGSET_C@ 1000f5b0     FIMGlib:glShaderApi.obj
+ 0001:0000e5dc       ??_C@_0O@BIEFFKON@setUniformVec?$AA@ 1000f5dc     FIMGlib:glShaderApi.obj
+ 0001:0000e5ec       ??_C@_0BB@FNCPMMJC@OGL2_glUniform1i?$AA@ 1000f5ec     FIMGlib:glShaderApi.obj
+ 0001:0000e600       ??_C@_0BB@NKLHNAFN@OGL2_glUniform1f?$AA@ 1000f600     FIMGlib:glShaderApi.obj
+ 0001:0000e688       ??_C@_0DD@JAIGAJCH@?$CIoldProgIt?9?$DOprogramPtr?5?$CB?$DN?50?$CJ?5?$CG?$CG?5@ 1000f688     FIMGlib:glShaderApi.obj
+ 0001:0000e6c0       ??_C@_0FM@CFFOGPKP@?$CIoldProgIt?9?$DOtype?5?$DN?$DN?5PROGRAM?$CJ?5?$CG?$CG?5@ 1000f6c0     FIMGlib:glShaderApi.obj
+ 0001:0000e720       ??_C@_0GH@MPGLBMAF@?$CIoldProgIt?5?$CB?$DN?5ctx?9?$DOshaderProgNam@ 1000f720     FIMGlib:glShaderApi.obj
+ 0001:0000e788       ??_C@_0DB@PEGCPIIG@?$CIprogIt?9?$DOprogramPtr?5?$CB?$DN?50?$CJ?5?$CG?$CG?5?$CCPr@ 1000f788     FIMGlib:glShaderApi.obj
+ 0001:0000e7bc       ??_C@_0BC@MNIKDJHJ@OGL2_glUseProgram?$AA@ 1000f7bc     FIMGlib:glShaderApi.obj
+ 0001:0000e7d0       ??_C@_0BJ@EFFJAFFO@OGL2_glGetAttribLocation?$AA@ 1000f7d0     FIMGlib:glShaderApi.obj
+ 0001:0000e7ec       ??_C@_0BN@HIAIKLPE@LINK?5FAILED?3?5shader?5missing?6?$AA@ 1000f7ec     FIMGlib:glShaderApi.obj
+ 0001:0000e80c       ??_C@_0BB@BGPHOOHE@LINK?5SUCCESSFUL?6?$AA@ 1000f80c     FIMGlib:glShaderApi.obj
+ 0001:0000e820       ??_C@_0CO@MFJIKFHG@LINK?5FAILED?3?5fragment?5shader?5is?5@ 1000f820     FIMGlib:glShaderApi.obj
+ 0001:0000e850       ??_C@_0CM@BODDCFFN@LINK?5FAILED?3?5vertex?5shader?5is?5no@ 1000f850     FIMGlib:glShaderApi.obj
+ 0001:0000e87c       ??_C@_0BD@MCJELLDO@OGL2_glLinkProgram?$AA@ 1000f87c     FIMGlib:glShaderApi.obj
+ 0001:0000e890       ??_C@_0DC@OCLICHKE@?$CIvaryingNum?$CB?$DN0?$CJ?$CG?$CG?$CCvarying?5Num?5?$DN?5@ 1000f890     FIMGlib:glShaderApi.obj
+ 0001:0000e8c4       ??_C@_0M@LBFKDGNK@gl_Position?$AA@ 1000f8c4     FIMGlib:glShaderApi.obj
+ 0001:0000e8d0       ??_C@_0BP@OEDHIHPJ@OGL2_glVaryingInterpolationEXP?$AA@ 1000f8d0     FIMGlib:glShaderApi.obj
+ 0001:0000e8f0       ??_C@_0CC@FOADLKKC@OGL2_glGetVaryingInterpolationEX@ 1000f8f0     FIMGlib:glShaderApi.obj
+ 0001:0000e914       ??_C@_0BF@MNDJILJD@OGL2_glCreateProgram?$AA@ 1000f914     FIMGlib:glShaderApi.obj
+ 0001:0000e92c       ??_C@_0BE@JLCIMDJI@OGL2_glCreateShader?$AA@ 1000f92c     FIMGlib:glShaderApi.obj
+ 0001:0000e940       ??_C@_0DI@HIJNCPHO@?6?$DO?$DOChunk?5Allocator?5ERROR?3?5unable@ 1000f940     FIMGlib:ChunkAlloc.obj
+ 0001:0000e978       ??_C@_0DB@LDJGNFDH@?6?$DO?$DOChunk?5Allocator?5ERROR?3?5Not?5en@ 1000f978     FIMGlib:ChunkAlloc.obj
+ 0001:0000e9ac       ??_C@_0DK@BPODHBNN@?6?$DO?$DOChunk?5Allocator?5ERROR?3?5NodeMa@ 1000f9ac     FIMGlib:ChunkAlloc.obj
+ 0001:0000e9e8       ??_C@_0DH@KMDBIOON@?6?$DO?$DOChunk?5Allocator?5ERROR?3?5FreeNo@ 1000f9e8     FIMGlib:ChunkAlloc.obj
+ 0001:0000ea20       ??_C@_0DJ@BFGGAOOA@Total?5Texture?5Size?5?$CFd?5Byte?5?$CFd?5KB@ 1000fa20     FIMGlib:ChunkAlloc.obj
+ 0001:0000ea5c       ??_C@_0DJ@MEDBNKHI@?6?9?9?9?9?9?9?9?9?9?9?9?9?9?9?9?9?9?9?9?9?9?9?9?9?9?9?9?9?9?9?9@ 1000fa5c     FIMGlib:ChunkAlloc.obj
+ 0001:0000ea98       ??_C@_0DG@MGINMKCH@?6?5?$FL?$CFd?$FN?5use?5flag?3?5?$CFd?0?5start?3?5?$CFd?0?5@ 1000fa98     FIMGlib:ChunkAlloc.obj
+ 0001:0000ead0       ??_C@_0DI@LAEFCJOH@?6?9?9?9?9?9?9?9?9?9?9?9?9?9?9?9?9?9?9?9?9?9?9?9?9?9?9?9?9?9?9?9@ 1000fad0     FIMGlib:ChunkAlloc.obj
+ 0001:0000eb08       ??_C@_0CJ@GMJGNECH@?6?$DN?$DN?$DN?$DN?$DN?$DN?$DNChunk?3?3PrintChunkBlckInf@ 1000fb08     FIMGlib:ChunkAlloc.obj
+ 0001:0000eb34       ??_C@_1BI@LCGMBKLK@?$AAD?$AAy?$AAn?$AAA?$AAl?$AAl?$AAo?$AAc?$AAM?$AAa?$AAx?$AA?$AA@ 1000fb34     FIMGlib:ChunkAlloc.obj
+ 0001:0000eb4c       ??_C@_1CK@MLHBNBFK@?$AAD?$AAr?$AAi?$AAv?$AAe?$AAr?$AAs?$AA?2?$AAB?$AAu?$AAi?$AAl?$AAt?$AAI?$AAn?$AA?2?$AAF?$AAI?$AAM?$AAG?$AA?$AA@ 1000fb4c     FIMGlib:ChunkAlloc.obj
+ 0001:0000eb78       ??_C@_0EJ@NIPIBDBI@?6ChunkAlloc?5will?5use?5dynamic?5all@ 1000fb78     FIMGlib:ChunkAlloc.obj
+ 0001:0000ebc4       ??_C@_0CC@ELIHPLGP@?6?$CB?5Total?5Chunk?5Alloc?5count?5?3?5?$CFd?5@ 1000fbc4     FIMGlib:ChunkAlloc.obj
+ 0001:0000ebe8       ??_C@_0CB@NJHBJMCE@?$CB?5Total?5Chunk?5Alloc?5size?5?5?3?5?$CFd?5?6@ 1000fbe8     FIMGlib:ChunkAlloc.obj
+ 0001:0000ec0c       ??_C@_0CG@LHJBCMBJ@?6?$DN?$DN?$DN?$DN?$DN?$DN?$DNDestory?5All?5Chunk?5Block?$DN@ 1000fc0c     FIMGlib:ChunkAlloc.obj
+ 0001:0000ec34       ??_C@_0DA@BGFOINJK@?6?$FLChunk?5Allocator?$FN?5?$CFd?5blocks?5?$CIbl@ 1000fc34     FIMGlib:ChunkAlloc.obj
+ 0001:0000ec64       ??_C@_0DK@NJMKAJEH@?6?$DO?$DOChunk?5Allocator?5ERROR?3?5unable@ 1000fc64     FIMGlib:ChunkAlloc.obj
+ 0001:0000eca0       ??_C@_0CL@GIOHCANO@?6Threre?5is?5no?5more?5s3c?9g3d?5drive@ 1000fca0     FIMGlib:ChunkAlloc.obj
+ 0001:0000eccc       ??_C@_0CD@NKNJLINF@request?5?$CFd?5Byte?5?$CFd?5KB?5size?5memor@ 1000fccc     FIMGlib:ChunkAlloc.obj
+ 0001:0000ecf0       ??_C@_0ED@IJAMDENL@?6?$DO?$DOChunk?5Allocator?5ERROR?3?5unable@ 1000fcf0     FIMGlib:ChunkAlloc.obj
+ 0001:0000ed34       ??_C@_0BK@COIEHILN@?6no?5more?5virtual?5address?6?$AA@ 1000fd34     FIMGlib:ChunkAlloc.obj
+ 0001:0000ed50       ??_C@_0CG@GDIPGING@?6?$DN?$DN?$DN?$DN?$DN?$DNChunk?3?3InsertChunkBlock?$DN?$DN@ 1000fd50     FIMGlib:ChunkAlloc.obj
+ 0001:0000ed78       ??_C@_0CC@MNINHABL@don?8t?5found?5chunkblock?5to?5destro@ 1000fd78     FIMGlib:ChunkAlloc.obj
+ 0001:0000ed9c       ??_C@_0DE@COFACEA@There?5is?5no?5chunkblock?4?5so?5canno@ 1000fd9c     FIMGlib:ChunkAlloc.obj
+ 0001:0000edd0       ??_C@_0DB@HOILCJDK@?6?$DN?$DN?$DN?$DN?$DN?$DN?$DN?$DN?$DN?$DN?5Chunk?3?3RemoveChunkBl@ 1000fdd0     FIMGlib:ChunkAlloc.obj
+ 0001:0000ee04       ??_C@_0CN@DPPGOGGH@?6?$DO?$DOChunk?5Allocator?5ERROR?3?5wrong?5@ 1000fe04     FIMGlib:ChunkAlloc.obj
+ 0001:0000ee34       ??_C@_0CN@GNKDLBLC@?6?$DO?$DOChunk?5Allocator?5ERROR?3?5do?5not@ 1000fe34     FIMGlib:ChunkAlloc.obj
+ 0001:0000ee64       ??_C@_0DI@HMFLFHHG@?6?$DO?$DOChunk?5Allocator?5ERROR?3?5unable@ 1000fe64     FIMGlib:ChunkAlloc.obj
+ 0001:0000ee9c       ??_C@_0CB@MGONIAFF@?$CB?5Total?5Chunk?5Alloc?5count?5?3?5?$CFd?5?6@ 1000fe9c     FIMGlib:ChunkAlloc.obj
+ 0001:0000eec0       ??_C@_0CL@BBAIHGJK@?6?$FLChunkError?$FN?5There?5is?5no?5alloca@ 1000fec0     FIMGlib:ChunkAlloc.obj
+ 0001:0000eeec       ??_C@_0CE@MBNEODFL@?6?$DN?$DN?$DN?$DN?$DN?$DN?$DN?$DN?$DN?$DN?5Chunk?3?3New?5?$DN?$DN?$DN?$DN?$DN?$DN?$DN?$DN?$DN@ 1000feec     FIMGlib:ChunkAlloc.obj
+ 0001:0000ef10       ??_C@_0DE@BIDOMMJG@ChunkAlloc?5allocate?5?$CFd?5bytes?5usi@ 1000ff10     FIMGlib:ChunkAlloc.obj
+ 0001:0000ef44       ??_C@_0DB@CLAOLHJJ@ChunkAlloc?5allocate?5?$CFd?5bytes?5usi@ 1000ff44     FIMGlib:ChunkAlloc.obj
+ 0001:0000ef78       ??_C@_0CG@LOGLNHNO@pAddr?5?$CFp?5vAddr?5?$CFp?5size?5?$CFd?5Byte?0?5@ 1000ff78     FIMGlib:ChunkAlloc.obj
+ 0001:0000efa0       ??_C@_0BG@BMGOCJAI@Head?5Node?5?$CFp?0?5Node?5?$CFp?$AA@ 1000ffa0     FIMGlib:ChunkAlloc.obj
+ 0001:0000efb8       ??_C@_0CP@BPJKMPOE@ChunkAlloc?5free?5?$CFd?5bytes?5from?5Re@ 1000ffb8     FIMGlib:ChunkAlloc.obj
+ 0001:0000efe8       ??_C@_0CM@BDBEGBFL@ChunkAlloc?5free?5?$CFd?5bytes?5using?5F@ 1000ffe8     FIMGlib:ChunkAlloc.obj
+ 0001:0000f014       ??_C@_0BO@BFDFHECE@?6?$DN?$DN?$DN?$DN?$DN?$DN?$DN?$DNChunk?3?3Free?$DN?$DN?$DN?$DN?$DN?$DN?$DN?$DN?6?$AA@ 10010014     FIMGlib:ChunkAlloc.obj
+ 0001:0000f034       ??_C@_1DI@DOMNLBDM@?$AA?$FL?$AAF?$AAI?$AAM?$AAG?$AA?$FN?$AA?5?$AAM?$AAu?$AAt?$AAe?$AAx?$AA?5?$AAi?$AAs?$AA?5?$AAn?$AAo?$AAt?$AA?5?$AAe?$AAx?$AAi?$AAs?$AAt?$AA?4?$AA?6?$AA?$AA@ 10010034     FIMGlib:platform.obj
+ 0001:0000f06c       ??_C@_1DK@JMHLPDDF@?$AA?$FL?$AAF?$AAI?$AAM?$AAG?$AA?$FN?$AA?5?$AAM?$AAu?$AAt?$AAe?$AAx?$AA?5?$AAa?$AAl?$AAr?$AAe?$AAa?$AAd?$AAy?$AA?5?$AAe?$AAx?$AAi?$AAs?$AAt?$AA?4?$AA?6?$AA?$AA@ 1001006c     FIMGlib:platform.obj
+ 0001:0000f0a8       ??_C@_1BO@ICIALGBJ@?$AAF?$AAI?$AAM?$AAG?$AA3?$AAD?$AAS?$AAF?$AAR?$AAM?$AAu?$AAt?$AAe?$AAx?$AA?$AA@ 100100a8     FIMGlib:platform.obj
+ 0001:0000f0c8       ??_C@_09BAACALNO@glfFinish?$AA@ 100100c8     FIMGlib:glFimg.obj
+ 0001:0000f0d4       ??_C@_0BJ@KDNODOBO@0?$CG?$CG?$CCUnexpected?5logicop?$CB?$CC?$AA@ 100100d4     FIMGlib:glFimg.obj
+ 0001:0000f0f0       ??_C@_0DO@HNEFJJDH@ERROR?3?5unexpected?5bit?5depth?$CB?5col@ 100100f0     FIMGlib:glFimg.obj
+ 0001:0000f130       ??_C@_0DO@PCJNAJEP@ERROR?3?5unknown?5pixel?5format?$CB?5col@ 10010130     FIMGlib:glFimg.obj
+ 0001:0000f170       ??_C@_09NCPHIBLG@indx?5?$DO?$DN?50?$AA@ 10010170     FIMGlib:glFimg.obj
+ 0001:0000f17c       ??_C@_0BF@CPGGPCCL@WARNING?3?5null?5data?5?6?$AA@ 1001017c     FIMGlib:glFimg.obj
+ 0001:0000f194       ??_C@_0BJ@NOEPFEPL@first?5?$DO?$DN?50?5?$CG?$CG?5count?5?$DO?$DN?50?$AA@ 10010194     FIMGlib:glFimg.obj
+ 0001:0000f1b0       ??_C@_0L@OGCHHCEC@count?5?$DO?$DN?50?$AA@ 100101b0     FIMGlib:glFimg.obj
+ 0001:0000f1c0       ??_C@_0EM@MIOCDDGD@ERROR?3?5unknown?5pixel?5format?$CB?5fra@ 100101c0     FIMGlib:glFimg.obj
+ 0001:0000f20c       ??_C@_0DP@BJCAKJMA@?$CIfbo?$CB?$DN0?$CJ?5?$CG?$CG?5?$CC?2n?5framebuffList?5ha@ 1001020c     FIMGlib:glFramebufferObject.obj
+ 0001:0000f250       ??_C@_0GA@PDKNIAKF@?$CIit?$CB?$DN?5framebuffList?4end?$CI?$CJ?$CJ?5?$CG?$CG?5?$CC?2@ 10010250     FIMGlib:glFramebufferObject.obj
+ 0001:0000f2b0       ??_C@_0CB@NKKPELLE@FBOAttachmentPointState?3?3getInfo@ 100102b0     FIMGlib:glFramebufferObject.obj
+ 0001:0000f2d4       ??_C@_0CL@OMEOEOBF@false?5?$CG?$CG?5?$CCInvalid?5fbo?5bound?5as?5c@ 100102d4     FIMGlib:glFramebufferObject.obj
+ 0001:0000f300       ??_C@_0BL@CCMBAAL@Warning?0?5fb?5not?5renderable?$AA@ 10010300     FIMGlib:glFramebufferObject.obj
+ 0001:0000f31c       ??_C@_09HFBMMMKA@getFBData?$AA@ 1001031c     FIMGlib:glFramebufferObject.obj
+ 0001:0000f328       ??_C@_0EG@ICPIENJD@ERROR?3?5convertFromDepthStencil?3?5@ 10010328     FIMGlib:pixel.obj
+ 0001:0000f370       ??_C@_0EC@KGKPAOJ@ERROR?3?5getDepthStencilMask?3?5unkn@ 10010370     FIMGlib:pixel.obj
+ 0001:0000f3b4       ??_C@_0DI@BMGOBKGD@ERROR?3?5pixelSize?3?5unknown?5destin@ 100103b4     FIMGlib:pixel.obj
+ 0001:0000f3ec       ??_C@_0CL@OJNPHHNB@ERROR?3?5unknown?5destination?5pixel@ 100103ec     FIMGlib:pixel.obj
+ 0001:0000f418       ??_C@_0CN@ICEKKODN@ERROR?3?5unknown?5destination?5pixel@ 10010418     FIMGlib:pixel.obj
+ 0001:0000f448       ??_C@_0CH@EDFNMK@ERROR?3?5unknown?5FRAMEBUFFER?5forma@ 10010448     FIMGlib:pixel.obj
+ 0001:0000f470       ??_C@_0DI@GNDEAKJB@?6?5the?5format?5passed?5and?5the?5colo@ 10010470     FIMGlib:pixel.obj
+ 0001:0000f4a8       ??_C@_0DJ@MDKGNGEG@ERROR?3?5unknown?1unsupported?5desti@ 100104a8     FIMGlib:pixel.obj
+ 0001:0000f4e4       ??_C@_0DE@HBKLCJFC@ERROR?3?5unknown?1unsupported?5sourc@ 100104e4     FIMGlib:pixel.obj
+ 0001:0000f5fc       ??_C@_00CNPNBAHC@?$AA@     100105fc     FIMGlib:glShader.obj
+ 0001:0000f600       ??_C@_0BA@IIMFCEJG@GL_SAMPLER_CUBE?$AA@ 10010600     FIMGlib:glShader.obj
+ 0001:0000f610       ??_C@_0O@DGIMCAEM@GL_SAMPLER_3D?$AA@ 10010610     FIMGlib:glShader.obj
+ 0001:0000f620       ??_C@_0O@DHEOEKHL@GL_SAMPLER_2D?$AA@ 10010620     FIMGlib:glShader.obj
+ 0001:0000f630       ??_C@_0O@EEJJKNLO@GL_FLOAT_MAT4?$AA@ 10010630     FIMGlib:glShader.obj
+ 0001:0000f640       ??_C@_0O@LNIDLHJ@GL_FLOAT_MAT3?$AA@ 10010640     FIMGlib:glShader.obj
+ 0001:0000f650       ??_C@_0O@BCMDAKDI@GL_FLOAT_MAT2?$AA@ 10010650     FIMGlib:glShader.obj
+ 0001:0000f660       ??_C@_0N@CJJPMBDC@GL_BOOL_VEC4?$AA@ 10010660     FIMGlib:glShader.obj
+ 0001:0000f670       ??_C@_0N@GGNOFHPF@GL_BOOL_VEC3?$AA@ 10010670     FIMGlib:glShader.obj
+ 0001:0000f680       ??_C@_0N@HPMFGGLE@GL_BOOL_VEC2?$AA@ 10010680     FIMGlib:glShader.obj
+ 0001:0000f690       ??_C@_0M@OCJHHBAN@GL_INT_VEC4?$AA@ 10010690     FIMGlib:glShader.obj
+ 0001:0000f69c       ??_C@_0M@KNNGOHMK@GL_INT_VEC3?$AA@ 1001069c     FIMGlib:glShader.obj
+ 0001:0000f6a8       ??_C@_0M@LEMNNGIL@GL_INT_VEC2?$AA@ 100106a8     FIMGlib:glShader.obj
+ 0001:0000f6b4       ??_C@_07BLIMHPL@GL_BOOL?$AA@ 100106b4     FIMGlib:glShader.obj
+ 0001:0000f6bc       ??_C@_0O@MFKCCJIP@GL_FLOAT_VEC4?$AA@ 100106bc     FIMGlib:glShader.obj
+ 0001:0000f6cc       ??_C@_0O@IKODLPEI@GL_FLOAT_VEC3?$AA@ 100106cc     FIMGlib:glShader.obj
+ 0001:0000f6dc       ??_C@_0O@JDPIIOAJ@GL_FLOAT_VEC2?$AA@ 100106dc     FIMGlib:glShader.obj
+ 0001:0000f6ec       ??_C@_06GDCJNGFG@GL_INT?$AA@ 100106ec     FIMGlib:glShader.obj
+ 0001:0000f6f4       ??_C@_08CAFAKAJG@GL_FLOAT?$AA@ 100106f4     FIMGlib:glShader.obj
+ 0001:0000f700       ??_C@_0BB@JAKEHDNF@numSlotsUsed?$CB?$DN?50?$AA@ 10010700     FIMGlib:glShader.obj
+ 0001:0000f714       ??_C@_0BJ@JIHGGLOB@0?5?$CG?$CG?5?$CCShaderPtr?5is?50?$CB?$CB?$CB?$CC?$AA@ 10010714     FIMGlib:glShader.obj
+ 0001:0000f730       ??_C@_0DE@IHGEAFJE@?$CItype?5?$CB?$DN?5INVALID_SHADER?$CJ?$CG?$CG?$CCShade@ 10010730     FIMGlib:glShader.obj
+ 0001:0000f768       ??_C@_0GG@BBGAONBP@LINK?5ERROR?3?5two?5variables?5in?5a?5V@ 10010768     FIMGlib:glShader.obj
+ 0001:0000f7d0       ??_C@_0BJ@DOLBABKJ@LINK?5ERROR?3?5FS?5varying?5?$DM?$AA@ 100107d0     FIMGlib:glShader.obj
+ 0001:0000f7ec       ??_C@_0BJ@IKLGKHHD@LINK?5ERROR?3?5VS?5varying?5?$DM?$AA@ 100107ec     FIMGlib:glShader.obj
+ 0001:0000f808       ??_C@_0BJ@JAAEOFPE@?$DO?5register?5out?5of?5range?6?$AA@ 10010808     FIMGlib:glShader.obj
+ 0001:0000f824       ??_C@_0BM@GIBIHBLH@?$CIvsReg?$CB?$DN?91?$CJ?5?$CG?$CG?$CCvsReg?5is?5?91?$CC?$AA@ 10010824     FIMGlib:glShader.obj
+ 0001:0000f840       ??_C@_0O@MPCJJLAI@gl_PointCoord?$AA@ 10010840     FIMGlib:glShader.obj
+ 0001:0000f850       ??_C@_0BK@JOJHMMLE@UniformTable?3?3getLocation?$AA@ 10010850     FIMGlib:glShader.obj
+ 0001:0000f86c       ??_C@_0CK@GDMFNNAB@LINK?5FAILED?3?5type?5mismatch?5for?5v@ 1001086c     FIMGlib:glShader.obj
+ 0001:0000f898       ??_C@_09PEJBFDKL@?5VStype?3?5?$AA@ 10010898     FIMGlib:glShader.obj
+ 0001:0000f8a4       ??_C@_09FIFBBBNK@?5FStype?3?5?$AA@ 100108a4     FIMGlib:glShader.obj
+ 0001:0000f8b0       ??_C@_01EEMJAFIK@?6?$AA@   100108b0     FIMGlib:glShader.obj
+ 0001:0000f8b4       ??_C@_0DP@DHMFJJHK@LINK?5FAILED?3?5no?5matching?5varying@ 100108b4     FIMGlib:glShader.obj
+ 0001:0000f8f4       ??_C@_0CC@BPJCDECE@LINK?5FAILED?3?5unknown?5varying?5typ@ 100108f4     FIMGlib:glShader.obj
+ 0001:0000f918       ??_C@_0DC@FHCAOIIH@FAILED?3?5No?5free?5locations?5found?5@ 10010918     FIMGlib:glShader.obj
+ 0001:0000f94c       ??_C@_0BE@FMLMHBMM@FAILED?3?5collision?$CB?6?$AA@ 1001094c     FIMGlib:glShader.obj
+ 0001:0000f960       ??_C@_0CM@CJEDCPCO@LINK?5FAILED?3?5Number?5of?5attribute@ 10010960     FIMGlib:glShader.obj
+ 0001:0000f98c       ??_C@_0CL@DGJCMKFN@LINK?5FAILED?3?5Overflowing?5attrib?5@ 1001098c     FIMGlib:glShader.obj
+ 0001:0000f9b8       ??_C@_0FF@KBDMHBGK@?$CI?$CIvsRegIndex?$CLnumSlots?91?$CJ?$DMMAX_VER@ 100109b8     FIMGlib:glShader.obj
+ 0001:0000fa10       ??_C@_0CF@PNPGEPNP@LINK?5FAILED?3?5Mismatched?5uniform?5@ 10010a10     FIMGlib:glShader.obj
+ 0001:0000fa38       ??_C@_0DH@IPFAHJAM@false?5?$CG?$CG?5?$CCInternal?5error?3?5var?5st@ 10010a38     FIMGlib:glShader.obj
+ 0001:0000fa70       ??_C@_0EC@GFEFINEN@LINK?5FAILED?3?5Uniform?5name?5for?5ba@ 10010a70     FIMGlib:glShader.obj
+ 0001:0000fab4       ??_C@_0BP@KNMFFIPH@false?5?$CG?$CG?5?$CCDuplicate?5var?5name?$CB?$CC?$AA@ 10010ab4     FIMGlib:glShader.obj
+ 0001:0000fad4       ??_C@_0CK@OIHNAHBH@LINK?5FAILED?3?5Duplicate?5uniform?5n@ 10010ad4     FIMGlib:glShader.obj
+ 0001:0000fb00       ??_C@_0GC@PBEDHKOE@LINK?5FAILED?3?5Internal?5Error?4?5The@ 10010b00     FIMGlib:glShader.obj
+ 0001:0000fb68       ??_C@_0HO@GKLCPMAL@?$CIbt?9?$DOregclass?5?$DN?$DN?5DCL_REGSET_CONS@ 10010b68     FIMGlib:glShader.obj
+ 0001:0000fbe8       ??_C@_0CH@BLPNKILJ@INTERNAL?5ERROR?3?5unknown?5variable@ 10010be8     FIMGlib:glShader.obj
+ 0001:0000fc10       ??_C@_0EM@IECLALCI@LINK?5FAILED?3?5Uniform?5name?5for?5ar@ 10010c10     FIMGlib:glShader.obj
+ 0001:0000fc5c       ??_C@_0BF@JOHCDIPF@it?9?$DOsecond?4size?5?$DO?$DN?50?$AA@ 10010c5c     FIMGlib:glShader.obj
+ 0001:0000fc78       ??_C@_0ED@BPDDNMCA@?$CI?$CIstride?5?$CG?50x3?$CJ?$DN?$DN0?$CJ?5?$CG?$CG?5?$CCSampler?5@ 10010c78     FIMGlib:glShader.obj
+ 0001:0000fcc0       ??_C@_0HO@FECJAAHH@?$CIat?9?$DOregclass?5?$DN?$DN?5DCL_REGSET_CONS@ 10010cc0     FIMGlib:glShader.obj
+ 0001:0000fd40       ??_C@_04KBDJOJNB@?$FL?$CFd?$FN?$AA@ 10010d40     FIMGlib:glShader.obj
+ 0001:0000fd48       ??_C@_0N@IDDEBJCE@gl_PointSize?$AA@ 10010d48     FIMGlib:glShader.obj
+ 0001:0000fd58       ??_C@_0N@PNLLEOHM@gl_FragCoord?$AA@ 10010d58     FIMGlib:glShader.obj
+ 0001:0000fd68       ??_C@_0BK@CLBGGFDL@Unsupported?5sampler?5type?6?$AA@ 10010d68     FIMGlib:glShader.obj
+ 0001:0000fd84       ??_C@_0BH@GGLJICKK@Exceeded?5FS?5samplers?$CB?6?$AA@ 10010d84     FIMGlib:glShader.obj
+ 0001:0000fd9c       ??_C@_0BH@LLOMG@Exceeded?5VS?5samplers?$CB?6?$AA@ 10010d9c     FIMGlib:glShader.obj
+ 0001:0000fdb4       ??_C@_0DH@JODFONCE@INTERNAL?5ERROR?3?5TexDim?5var?5gener@ 10010db4     FIMGlib:glShader.obj
+ 0001:0000fdf0       ??_C@_0EA@GBNJGNKK@INTERNAL?5WARNING?3?5TexDim?5used?5fo@ 10010df0     FIMGlib:glShader.obj
+ 0001:0000fe30       ??_C@_06KHLBPCON@TexDim?$AA@ 10010e30     FIMGlib:glShader.obj
+ 0001:0000fe38       ??_C@_0BM@GMAEFOGK@false?5?$CG?$CG?5?$CCunexpected?5sType?$CC?$AA@ 10010e38     FIMGlib:glShader.obj
+ 0001:0000fe58       ??_C@_0FI@FMLJHEFF@?$CIsType?5?$DN?$DN?5shaderHeaderType?$CIbin?$CJ?$CJ@ 10010e58     FIMGlib:glShader.obj
+ 0001:0000feb0       ??_C@_0BN@CKGAPEMH@bin?5?$CG?$CG?5?$CCBin?5shaderPtr?5is?50?$CB?$CC?$AA@ 10010eb0     FIMGlib:glShader.obj
+ 0001:0000fed0       ??_C@_0BI@GPFLAHDO@ProgramVars?3?3insertVars?$AA@ 10010ed0     FIMGlib:glShader.obj
+ 0001:0000fee8       ??_C@_0BP@KMCANGHO@ShaderProgNameList?3?3freeUnused?$AA@ 10010ee8     FIMGlib:glShader.obj
+ 0001:0000ff08       ??_C@_0CJ@FNOGMCGA@false?5?$CG?$CG?5?$CCTrying?5to?5attach?5null?5@ 10010f08     FIMGlib:glShader.obj
+ 0001:0000ff34       ??_C@_0BG@HHMIANB@Program?3?3attachShader?$AA@ 10010f34     FIMGlib:glShader.obj
+ 0001:0000ff4c       ??_C@_0BN@PEBFNDGC@Unable?5to?5allocate?5?$CFd?5bytes?6?$AA@ 10010f4c     GPIlib:GPI_wince.obj
+ 0001:0000ff70       ??_C@_0EA@LJKCCKCA@Received?5an?5alloc?5request?5of?5siz@ 10010f70     GPIlib:GPI_wince.obj
+ 0001:0000ffb0       ??_C@_0BH@FLIKCLHL@Unable?5to?5free?5memory?6?$AA@ 10010fb0     GPIlib:GPI_wince.obj
+ 0001:0000ffc8       ??_C@_0CI@ODNNEIEG@Unable?5to?5free?5memory?5for?5depth?5@ 10010fc8     GPIlib:GPI_wince.obj
+ 0001:0000fff0       ??_C@_0DL@FANLJNNA@Unable?5to?5allocate?5?$CFd?5bytes?5for?5@ 10010ff0     GPIlib:GPI_wince.obj
+ 0001:0001002c       ??_C@_0CO@CDFMBLOB@Unable?5to?5allocate?5?$CFd?5bytes?5for?5@ 1001102c     GPIlib:GPI_wince.obj
+ 0001:000100a0       InitBufferList             100110a0 f   glbuffer.obj
+ 0001:00010108       GetBufferIndex             10011108 f   glbuffer.obj
+ 0001:00010134       GetBufferName              10011134 f   glbuffer.obj
+ 0001:00010184       GetBufferObject            10011184 f   glbuffer.obj
+ 0001:000101e0       glBindBuffer               100111e0 f   glbuffer.obj
+ 0001:00010200       glBufferData               10011200 f   glbuffer.obj
+ 0001:00010220       glBufferSubData            10011220 f   glbuffer.obj
+ 0001:00010240       glDeleteBuffers            10011240 f   glbuffer.obj
+ 0001:00010260       glGenBuffers               10011260 f   glbuffer.obj
+ 0001:00010280       glIsBuffer                 10011280 f   glbuffer.obj
+ 0001:000102a0       glGetBufferParameteriv     100112a0 f   glbuffer.obj
+ 0001:000102c0       glClearColor               100112c0 f   glclear.obj
+ 0001:000102e0       glClearDepthf              100112e0 f   glclear.obj
+ 0001:00010300       glClear                    10011300 f   glclear.obj
+ 0001:00010310       glClearColorx              10011310 f   glclear.obj
+ 0001:00010384       glClearDepthx              10011384 f   glclear.obj
+ 0001:000103a0       glClearStencil             100113a0 f   glclear.obj
+ 0001:000103b0       glClipPlanef               100113b0 f   glclip.obj
+ 0001:00010448       glGetClipPlanef            10011448 f   glclip.obj
+ 0001:000104c0       glClipPlanex               100114c0 f   glclip.obj
+ 0001:0001057c       glGetClipPlanex            1001157c f   glclip.obj
+ 0001:00010638       InitLight                  10011638 f   glcolor.obj
+ 0001:000106e0       InitMaterial               100116e0 f   glcolor.obj
+ 0001:00010748       glLightModelf              10011748 f   glcolor.obj
+ 0001:000107ac       glLightModelfv             100117ac f   glcolor.obj
+ 0001:00010848       glLightfv                  10011848 f   glcolor.obj
+ 0001:00010b00       glColorMask                10011b00 f   glcolor.obj
+ 0001:00010b10       glFogfv                    10011b10 f   glcolor.obj
+ 0001:00010cb0       glShadeModel               10011cb0 f   glcolor.obj
+ 0001:00010ce0       glLightModelx              10011ce0 f   glcolor.obj
+ 0001:00010d38       glLightModelxv             10011d38 f   glcolor.obj
+ 0001:00010e00       glLightxv                  10011e00 f   glcolor.obj
+ 0001:00010fa4       glMaterialfv               10011fa4 f   glcolor.obj
+ 0001:0001113c       glMaterialxv               1001213c f   glcolor.obj
+ 0001:0001140c       glFogxv                    1001240c f   glcolor.obj
+ 0001:000115e0       glLightf                   100125e0 f   glcolor.obj
+ 0001:00011690       glFogf                     10012690 f   glcolor.obj
+ 0001:00011724       glLightx                   10012724 f   glcolor.obj
+ 0001:00011758       glMaterialf                10012758 f   glcolor.obj
+ 0001:000117c0       glMaterialx                100127c0 f   glcolor.obj
+ 0001:00011848       glFogx                     10012848 f   glcolor.obj
+ 0001:000118dc       glDisable                  100128dc f   glenable.obj
+ 0001:00011cd8       glEnableClientState        10012cd8 f   glenable.obj
+ 0001:00011de8       glDisableClientState       10012de8 f   glenable.obj
+ 0001:00011ef8       glEnable                   10012ef8 f   glenable.obj
+ 0001:000122fc       glIsEnabled                100132fc f   glenable.obj
+ 0001:00012630       glGetFixedv                10013630 f   glgets.obj
+ 0001:00012684       glGetFloatv                10013684 f   glgets.obj
+ 0001:000126d8       glGetLightfv               100136d8 f   glgets.obj
+ 0001:0001283c       glGetMaterialfv            1001383c f   glgets.obj
+ 0001:00012958       glGetTexEnvfv              10013958 f   glgets.obj
+ 0001:000129c0       glGetTexParameterfv        100139c0 f   glgets.obj
+ 0001:000129d0       glGetBooleanv              100139d0 f   glgets.obj
+ 0001:00012a24       glGetError                 10013a24 f   glgets.obj
+ 0001:00012a6c       glGetLightxv               10013a6c f   glgets.obj
+ 0001:00012d40       glGetMaterialxv            10013d40 f   glgets.obj
+ 0001:00012d44       glGetPointerv              10013d44 f   glgets.obj
+ 0001:00012d98       glGetIntegerv              10013d98 f   glgets.obj
+ 0001:0001322c       glGetString                1001422c f   glgets.obj
+ 0001:000132b8       glGetTexEnviv              100142b8 f   glgets.obj
+ 0001:00013308       glGetTexEnvxv              10014308 f   glgets.obj
+ 0001:00013360       glGetTexParameteriv        10014360 f   glgets.obj
+ 0001:00013380       glGetTexParameterxv        10014380 f   glgets.obj
+ 0001:00013390       InverseTranspose           10014390 f   glimplmatrix.obj
+ 0001:00013644       InverseMatrix33            10014644 f   glimplmatrix.obj
+ 0001:00013b38       MultMatrix44               10014b38 f   glimplmatrix.obj
+ 0001:00013bfc       WeightedSum                10014bfc f   glimplmatrix.obj
+ 0001:00013ce8       MultMatrix4f               10014ce8 f   glimplmatrix.obj
+ 0001:00014538       InitializeMatrixState      10015538 f   glmatrix.obj
+ 0001:000145f4       GetCurrentMatrix           100155f4 f   glmatrix.obj
+ 0001:000146ac       MultMatrices               100156ac f   glmatrix.obj
+ 0001:000147f0       glMatrixMode               100157f0 f   glmatrix.obj
+ 0001:00014864       glPopMatrix                10015864 f   glmatrix.obj
+ 0001:0001495c       glPushMatrix               1001595c f   glmatrix.obj
+ 0001:00014a98       glRotatef                  10015a98 f   glmatrix.obj
+ 0001:00014de4       glScalef                   10015de4 f   glmatrix.obj
+ 0001:00014ed0       glTranslatef               10015ed0 f   glmatrix.obj
+ 0001:00014fb8       glOrthof                   10015fb8 f   glmatrix.obj
+ 0001:00015194       glLoadMatrixf              10016194 f   glmatrix.obj
+ 0001:00015224       glFrustumf                 10016224 f   glmatrix.obj
+ 0001:00015448       glLoadIdentity             10016448 f   glmatrix.obj
+ 0001:000154dc       glMultMatrixf              100164dc f   glmatrix.obj
+ 0001:00015614       glOrthox                   10016614 f   glmatrix.obj
+ 0001:000156c4       glFrustumx                 100166c4 f   glmatrix.obj
+ 0001:00015774       glMultMatrixx              10016774 f   glmatrix.obj
+ 0001:00015874       glTranslatex               10016874 f   glmatrix.obj
+ 0001:000158cc       glScalex                   100168cc f   glmatrix.obj
+ 0001:00015924       glRotatex                  10016924 f   glmatrix.obj
+ 0001:00015998       glLoadMatrixx              10016998 f   glmatrix.obj
+ 0001:00015a7c       glCurrentPaletteMatrixOES  10016a7c f   glmatrix.obj
+ 0001:00015ac4       glLoadPaletteFromModelViewMatrixOES 10016ac4 f   glmatrix.obj
+ 0001:00015b20       glDepthRangef              10016b20 f   glmisc.obj
+ 0001:00015b30       glDepthRangex              10016b30 f   glmisc.obj
+ 0001:00015be0       glPolygonOffset            10016be0 f   glmisc.obj
+ 0001:00015c00       glCullFace                 10016c00 f   glmisc.obj
+ 0001:00015c20       glFrontFace                10016c20 f   glmisc.obj
+ 0001:00015c30       glHint                     10016c30 f   glmisc.obj
+ 0001:00015d40       glPixelStorei              10016d40 f   glmisc.obj
+ 0001:00015d50       glPolygonOffsetx           10016d50 f   glmisc.obj
+ 0001:00015d8c       glReadPixels               10016d8c f   glmisc.obj
+ 0001:00015dc0       glViewport                 10016dc0 f   glmisc.obj
+ 0001:00015de0       glLineWidth                10016de0 f   glmisc.obj
+ 0001:00015df0       glPointSize                10016df0 f   glmisc.obj
+ 0001:00015e2c       glLineWidthx               10016e2c f   glmisc.obj
+ 0001:00015e48       glPointSizex               10016e48 f   glmisc.obj
+ 0001:00015e98       glPointParameterf          10016e98 f   glmisc.obj
+ 0001:00015f34       glPointParameterfv         10016f34 f   glmisc.obj
+ 0001:0001601c       glPointParameterxv         1001701c f   glmisc.obj
+ 0001:00016190       glPointParameterx          10017190 f   glmisc.obj
+ 0001:00016220       glAlphaFunc                10017220 f   glPerFragment.obj
+ 0001:00016240       glBlendFunc                10017240 f   glPerFragment.obj
+ 0001:00016250       glAlphaFuncx               10017250 f   glPerFragment.obj
+ 0001:00016280       glDepthFunc                10017280 f   glPerFragment.obj
+ 0001:000162a0       glDepthMask                100172a0 f   glPerFragment.obj
+ 0001:000162c0       glStencilFunc              100172c0 f   glPerFragment.obj
+ 0001:000162e0       glStencilMask              100172e0 f   glPerFragment.obj
+ 0001:00016300       glStencilOp                10017300 f   glPerFragment.obj
+ 0001:00016320       glSampleCoverage           10017320 f   glPerFragment.obj
+ 0001:00016330       glSampleCoveragex          10017330 f   glPerFragment.obj
+ 0001:00016360       glScissor                  10017360 f   glPerFragment.obj
+ 0001:00016380       glLogicOp                  10017380 f   glPerFragment.obj
+ 0001:00016390       GetTypeSize                10017390 f   glvertex.obj
+ 0001:000163d8       glColor4f                  100173d8 f   glvertex.obj
+ 0001:0001644c       glColor4x                  1001744c f   glvertex.obj
+ 0001:00016524       glColor4ub                 10017524 f   glvertex.obj
+ 0001:000165f0       glNormal3f                 100175f0 f   glvertex.obj
+ 0001:0001662c       glNormal3x                 1001762c f   glvertex.obj
+ 0001:0001669c       glPointSizePointerOES      1001769c f   glvertex.obj
+ 0001:000167a8       glMatrixIndexPointerOES    100177a8 f   glvertex.obj
+ 0001:000168cc       glWeightPointerOES         100178cc f   glvertex.obj
+ 0001:00016a74       hashmap_hash               10017a74 f   hashmap.obj
+ 0001:00016b30       hashmap_put                10017b30 f   hashmap.obj
+ 0001:00016c40       hashmap_get                10017c40 f   hashmap.obj
+ 0001:00016d04       hashmap_new                10017d04 f   hashmap.obj
+ 0001:00016d80       makeUniformTree            10017d80 f   loadshader.obj
+ 0001:00017e8c       matTranspose               10018e8c f   loadshader.obj
+ 0001:00017f24       loadShader2                10018f24 f   loadshader.obj
+ 0001:000181b4       MultMatrixNor3f            100191b4 f   nmatrix.obj
+ 0001:0001866c       ShaderInit                 1001966c f   pointer.obj
+ 0001:000186b4       glVertexPointer            100196b4 f   pointer.obj
+ 0001:000186f4       glNormalPointer            100196f4 f   pointer.obj
+ 0001:00018734       glColorPointer             10019734 f   pointer.obj
+ 0001:00018774       glTexCoordPointer          10019774 f   pointer.obj
+ 0001:00018800       InitMatrices               10019800 f   render.obj
+ 0001:00018ab0       setShaderSelectInfo        10019ab0 f   render.obj
+ 0001:00018b4c       multVector                 10019b4c f   render.obj
+ 0001:00018c28       addVector                  10019c28 f   render.obj
+ 0001:00018d0c       UniformsInit               10019d0c f   render.obj
+ 0001:00019d98       glDrawElements             1001ad98 f   render.obj
+ 0001:00019ee0       glFinish                   1001aee0 f   render.obj
+ 0001:00019f00       glFlush                    1001af00 f   render.obj
+ 0001:00019f10       CopyToFloat                1001af10 f   render.obj
+ 0001:00019f50       CopyToFixed                1001af50 f   render.obj
+ 0001:00019fd4       CopyToInt                  1001afd4 f   render.obj
+ 0001:0001a034       CopyToBool                 1001b034 f   render.obj
+ 0001:0001a100       CopyToFloatS               1001b100 f   render.obj
+ 0001:0001a108       CopyToFixedS               1001b108 f   render.obj
+ 0001:0001a134       CopyToIntS                 1001b134 f   render.obj
+ 0001:0001a150       CopyToBoolS                1001b150 f   render.obj
+ 0001:0001a18c       CopyToFloatE               1001b18c f   render.obj
+ 0001:0001a1c0       CopyToFixedE               1001b1c0 f   render.obj
+ 0001:0001a1e0       CopyToIntE                 1001b1e0 f   render.obj
+ 0001:0001a200       CopyToBoolE                1001b200 f   render.obj
+ 0001:0001a20c       GetStateAttrib             1001b20c f   render.obj
+ 0001:0001c074       CreateStateGLES11          1001d074 f   render.obj
+ 0001:0001c2b8       glDrawArrays               1001d2b8 f   render.obj
+ 0001:0001c3a4       InitTextureList            1001d3a4 f   gltex.obj
+ 0001:0001c440       glBindTexture              1001d440 f   gltex.obj
+ 0001:0001c460       glDeleteTextures           1001d460 f   gltex.obj
+ 0001:0001c480       glGenTextures              1001d480 f   gltex.obj
+ 0001:0001c4a0       glIsTexture                1001d4a0 f   gltex.obj
+ 0001:0001c4b0       glActiveTexture            1001d4b0 f   gltex.obj
+ 0001:0001c520       glMultiTexCoord4f          1001d520 f   gltex.obj
+ 0001:0001c5e4       glMultiTexCoord4x          1001d5e4 f   gltex.obj
+ 0001:0001c680       glClientActiveTexture      1001d680 f   gltex.obj
+ 0001:0001c6a0       glTexEnvfv                 1001d6a0 f   gltex.obj
+ 0001:0001cc38       glTexEnviv                 1001dc38 f   gltex.obj
+ 0001:0001d138       glTexEnvxv                 1001e138 f   gltex.obj
+ 0001:0001d6a0       glTexParameterf            1001e6a0 f   gltex.obj
+ 0001:0001d6c0       glTexParameteri            1001e6c0 f   gltex.obj
+ 0001:0001d6d0       glTexParameterx            1001e6d0 f   gltex.obj
+ 0001:0001d700       glTexParameterfv           1001e700 f   gltex.obj
+ 0001:0001d720       glTexParameteriv           1001e720 f   gltex.obj
+ 0001:0001d730       glTexParameterxv           1001e730 f   gltex.obj
+ 0001:0001d75c       glCopyTexImage2D           1001e75c f   gltex.obj
+ 0001:0001d794       glCopyTexSubImage2D        1001e794 f   gltex.obj
+ 0001:0001d7cc       glTexImage2D               1001e7cc f   gltex.obj
+ 0001:0001d80c       glTexSubImage2D            1001e80c f   gltex.obj
+ 0001:0001d84c       glCompressedTexImage2D     1001e84c f   gltex.obj
+ 0001:0001d884       glCompressedTexSubImage2D  1001e884 f   gltex.obj
+ 0001:0001d8e0       glMapTexture               1001e8e0 f   gltex.obj
+ 0001:0001d8f0       glUnmapTexture             1001e8f0 f   gltex.obj
+ 0001:0001d904       glTexEnvf                  1001e904 f   gltex.obj
+ 0001:0001d968       glTexEnvi                  1001e968 f   gltex.obj
+ 0001:0001d9cc       glTexEnvx                  1001e9cc f   gltex.obj
+ 0001:0001da30       GLES11SetSurfaceData       1001ea30 f   eglInterface.obj
+ 0001:0001da60       GLES11CreateContext        1001ea60 f   eglInterface.obj
+ 0001:0001da70       GLES11SetContext           1001ea70 f   eglInterface.obj
+ 0001:0001da88       GLES11DestroyContext       1001ea88 f   eglInterface.obj
+ 0001:0001dac8       GetGLstate20               1001eac8 f   eglInterface.obj
+ 0001:0001dae0       ?printf@Plat@@SAHPBDZZ     1001eae0 f i FIMGlib:glCore.obj
+ 0001:0001db00       ?InitFallBackTexObjects@SharedTextureState@@QAAXXZ 1001eb00 f i FIMGlib:glCore.obj
+ 0001:0001e024       ?unlockGLSharedTextureState@@YAXPAUOGLState@@@Z 1001f024 f i FIMGlib:glCore.obj
+ 0001:0001e3a0       ?FimgFinish@@YA?AW4glfError@@PAUOGLState@@@Z 1001f3a0 f   FIMGlib:glCore.obj
+ 0001:0001e3dc       ?set_err@@YAXI@Z           1001f3dc f   FIMGlib:glCore.obj
+ 0001:0001e434       ?set_err@@YAXPAUOGLState@@I@Z 1001f434 f   FIMGlib:glCore.obj
+ 0001:0001e44c       glBlendFuncSeparate        1001f44c f   FIMGlib:glCore.obj
+ 0001:0001e600       OGL2_glClear               1001f600 f   FIMGlib:glCore.obj
+ 0001:0001e730       OGL2_glClearColor          1001f730 f   FIMGlib:glCore.obj
+ 0001:0001e868       OGL2_glClearDepthf         1001f868 f   FIMGlib:glCore.obj
+ 0001:0001e8f0       OGL2_glClearStencil        1001f8f0 f   FIMGlib:glCore.obj
+ 0001:0001e93c       OGL2_glColorMask           1001f93c f   FIMGlib:glCore.obj
+ 0001:0001e9a0       OGL2_glCullFace            1001f9a0 f   FIMGlib:glCore.obj
+ 0001:0001ea6c       OGL2_glDepthFunc           1001fa6c f   FIMGlib:glCore.obj
+ 0001:0001eb34       OGL2_glDepthMask           1001fb34 f   FIMGlib:glCore.obj
+ 0001:0001eb80       OGL2_glDepthRangef         1001fb80 f   FIMGlib:glCore.obj
+ 0001:0001ec44       OGL2_glDisable             1001fc44 f   FIMGlib:glCore.obj
+ 0001:0001ee08       OGL2_glDisableVertexAttribArray 1001fe08 f   FIMGlib:glCore.obj
+ 0001:0001eeb8       ?isDrawVertexCountValid@@YA_NIH@Z 1001feb8 f   FIMGlib:glCore.obj
+ 0001:0001ef88       OGL2_glEnable              1001ff88 f   FIMGlib:glCore.obj
+ 0001:0001f14c       OGL2_glEnableVertexAttribArray 1002014c f   FIMGlib:glCore.obj
+ 0001:0001f1fc       ?stateFlush@@YA_NPAUOGLState@@@Z 100201fc f   FIMGlib:glCore.obj
+ 0001:0001f478       OGL2_glFinish              10020478 f   FIMGlib:glCore.obj
+ 0001:0001f4f4       OGL2_glFlush               100204f4 f   FIMGlib:glCore.obj
+ 0001:0001f568       OGL2_glFrontFace           10020568 f   FIMGlib:glCore.obj
+ 0001:0001f61c       OGL2_glGetBufferParameteriv 1002061c f   FIMGlib:glCore.obj
+ 0001:0001f7b4       OGL2_glGetError            100207b4 f   FIMGlib:glCore.obj
+ 0001:0001f804       OGL2_glGetString           10020804 f   FIMGlib:glCore.obj
+ 0001:0001f904       ?GetVertexAttribfv@@YAIIIPAM@Z 10020904 f   FIMGlib:glCore.obj
+ 0001:0001fae0       OGL2_glGetVertexAttribfv   10020ae0 f   FIMGlib:glCore.obj
+ 0001:0001faf0       OGL2_glGetVertexAttribiv   10020af0 f   FIMGlib:glCore.obj
+ 0001:0001fb5c       OGL2_glGetVertexAttribPointerv 10020b5c f   FIMGlib:glCore.obj
+ 0001:0001fc9c       OGL2_glHint                10020c9c f   FIMGlib:glCore.obj
+ 0001:0001fd98       OGL2_glIsBuffer            10020d98 f   FIMGlib:glCore.obj
+ 0001:0001fe28       OGL2_glIsEnabled           10020e28 f   FIMGlib:glCore.obj
+ 0001:0001ffc4       OGL2_glLineWidth           10020fc4 f   FIMGlib:glCore.obj
+ 0001:00020078       OGL2_glPixelStorei         10021078 f   FIMGlib:glCore.obj
+ 0001:00020180       OGL2_glPolygonOffset       10021180 f   FIMGlib:glCore.obj
+ 0001:000201d0       OGL2_glReadPixels          100211d0 f   FIMGlib:glCore.obj
+ 0001:0002052c       OGL2_glSampleCoverage      1002152c f   FIMGlib:glCore.obj
+ 0001:000205c0       OGL2_glScissor             100215c0 f   FIMGlib:glCore.obj
+ 0001:0002068c       glStencilOpSeparate        1002168c f   FIMGlib:glCore.obj
+ 0001:00020874       OGL2_glAlphaFuncEXP        10021874 f   FIMGlib:glCore.obj
+ 0001:00020934       OGL2_glLogicOpEXP          10021934 f   FIMGlib:glCore.obj
+ 0001:000209ec       OGL2_glVertexAttrib4f      100219ec f   FIMGlib:glCore.obj
+ 0001:00020ab0       OGL2_glVertexAttrib4fv     10021ab0 f   FIMGlib:glCore.obj
+ 0001:00020b4c       OGL2_glVertexAttribPointer 10021b4c f   FIMGlib:glCore.obj
+ 0001:00020c70       OGL2_glViewport            10021c70 f   FIMGlib:glCore.obj
+ 0001:00020d38       OGL2_glBindBuffer          10021d38 f   FIMGlib:glCore.obj
+ 0001:00020f78       OGL2_glGenBuffers          10021f78 f   FIMGlib:glCore.obj
+ 0001:00021044       OGL2_glBufferSubData       10022044 f   FIMGlib:glCore.obj
+ 0001:000211e0       GLES2ChunkNew              100221e0 f   FIMGlib:glCore.obj
+ 0001:00021228       GLES2ChunkFree             10022228 f   FIMGlib:glCore.obj
+ 0001:00021248       GLES2DepthNew              10022248 f   FIMGlib:glCore.obj
+ 0001:000212a0       GLES2DepthFree             100222a0 f   FIMGlib:glCore.obj
+ 0001:000212b0       ?InitEGLInterfaceFunction@@YAXXZ 100222b0 f   FIMGlib:glCore.obj
+ 0001:000213dc       ?_Lrotate@?$_Tree@IU?$pair@$$CBIPAURenderbufferObject@@@std@@U_Kfn@?$map@IPAURenderbufferObject@@U?$less@I@std@@V?$allocator@PAURenderbufferObject@@@3@@2@U?$less@I@2@V?$allocator@PAURenderbufferObject@@@2@@std@@IAAXPAU_Node@12@@Z 100223dc f i FIMGlib:glCore.obj
+ 0001:0002145c       ?_Max@?$_Tree@IU?$pair@$$CBIPAURenderbufferObject@@@std@@U_Kfn@?$map@IPAURenderbufferObject@@U?$less@I@std@@V?$allocator@PAURenderbufferObject@@@3@@2@U?$less@I@2@V?$allocator@PAURenderbufferObject@@@2@@std@@KAPAU_Node@12@PAU312@@Z 1002245c f i FIMGlib:glCore.obj
+ 0001:00021498       ?_Rrotate@?$_Tree@IU?$pair@$$CBIPAURenderbufferObject@@@std@@U_Kfn@?$map@IPAURenderbufferObject@@U?$less@I@std@@V?$allocator@PAURenderbufferObject@@@3@@2@U?$less@I@2@V?$allocator@PAURenderbufferObject@@@2@@std@@IAAXPAU_Node@12@@Z 10022498 f i FIMGlib:glCore.obj
+ 0001:00021520       ?_Max@?$_Tree@IU?$pair@$$CBIPAUFramebufferObject@@@std@@U_Kfn@?$map@IPAUFramebufferObject@@U?$less@I@std@@V?$allocator@PAUFramebufferObject@@@3@@2@U?$less@I@2@V?$allocator@PAUFramebufferObject@@@2@@std@@KAPAU_Node@12@PAU312@@Z 10022520 f i FIMGlib:glCore.obj
+ 0001:0002155c       ?_Max@?$_Tree@IIU_Kfn@?$set@IU?$less@I@std@@V?$allocator@I@2@@std@@U?$less@I@3@V?$allocator@I@3@@std@@KAPAU_Node@12@PAU312@@Z 1002255c f i FIMGlib:glCore.obj
+ 0001:00021598       ?_Inc@const_iterator@?$_Tree@IU?$pair@$$CBIPAUFramebufferObject@@@std@@U_Kfn@?$map@IPAUFramebufferObject@@U?$less@I@std@@V?$allocator@PAUFramebufferObject@@@3@@2@U?$less@I@2@V?$allocator@PAUFramebufferObject@@@2@@std@@QAAXXZ 10022598 f i FIMGlib:glCore.obj
+ 0001:0002163c       ?_Inc@const_iterator@?$_Tree@IIU_Kfn@?$set@IU?$less@I@std@@V?$allocator@I@2@@std@@U?$less@I@3@V?$allocator@I@3@@std@@QAAXXZ 1002263c f i FIMGlib:glCore.obj
+ 0001:000216e0       GLES2SetSurfaceData        100226e0 f   FIMGlib:glCore.obj
+ 0001:000217b4       OGL2_glBlendFunc           100227b4 f   FIMGlib:glCore.obj
+ 0001:000217cc       OGL2_glDrawArrays          100227cc f   FIMGlib:glCore.obj
+ 0001:00021990       OGL2_glDrawElements        10022990 f   FIMGlib:glCore.obj
+ 0001:00021b68       OGL2_glGetBooleanv         10022b68 f   FIMGlib:glCore.obj
+ 0001:00022eb4       OGL2_glGetFloatv           10023eb4 f   FIMGlib:glCore.obj
+ 0001:0002408c       OGL2_glGetIntegerv         1002508c f   FIMGlib:glCore.obj
+ 0001:000254ec       OGL2_glStencilFunc         100264ec f   FIMGlib:glCore.obj
+ 0001:000255c0       OGL2_glStencilMask         100265c0 f   FIMGlib:glCore.obj
+ 0001:00025610       OGL2_glStencilOp           10026610 f   FIMGlib:glCore.obj
+ 0001:00025634       OGL2_glVertexAttrib1f      10026634 f   FIMGlib:glCore.obj
+ 0001:0002565c       OGL2_glVertexAttrib3f      1002665c f   FIMGlib:glCore.obj
+ 0001:0002567c       OGL2_glDeleteBuffers       1002667c f   FIMGlib:glCore.obj
+ 0001:000257f4       OGL2_glBufferData          100267f4 f   FIMGlib:glCore.obj
+ 0001:00025a28       ?_Lrotate@?$_Tree@IU?$pair@$$CBIPAUFramebufferObject@@@std@@U_Kfn@?$map@IPAUFramebufferObject@@U?$less@I@std@@V?$allocator@PAUFramebufferObject@@@3@@2@U?$less@I@2@V?$allocator@PAUFramebufferObject@@@2@@std@@IAAXPAU_Node@12@@Z 10026a28 f i FIMGlib:glCore.obj
+ 0001:00025aa8       ?_Rrotate@?$_Tree@IU?$pair@$$CBIPAUFramebufferObject@@@std@@U_Kfn@?$map@IPAUFramebufferObject@@U?$less@I@std@@V?$allocator@PAUFramebufferObject@@@3@@2@U?$less@I@2@V?$allocator@PAUFramebufferObject@@@2@@std@@IAAXPAU_Node@12@@Z 10026aa8 f i FIMGlib:glCore.obj
+ 0001:00025b30       ?_Lrotate@?$_Tree@IIU_Kfn@?$set@IU?$less@I@std@@V?$allocator@I@2@@std@@U?$less@I@3@V?$allocator@I@3@@std@@IAAXPAU_Node@12@@Z 10026b30 f i FIMGlib:glCore.obj
+ 0001:00025bb0       ?_Rrotate@?$_Tree@IIU_Kfn@?$set@IU?$less@I@std@@V?$allocator@I@2@@std@@U?$less@I@3@V?$allocator@I@3@@std@@IAAXPAU_Node@12@@Z 10026bb0 f i FIMGlib:glCore.obj
+ 0001:00025c38       DllMain                    10026c38 f   FIMGlib:glCore.obj
+ 0001:00025df8       ?_Inc@const_iterator@?$_Tree@IU?$pair@$$CBIPAURenderbufferObject@@@std@@U_Kfn@?$map@IPAURenderbufferObject@@U?$less@I@std@@V?$allocator@PAURenderbufferObject@@@3@@2@U?$less@I@2@V?$allocator@PAURenderbufferObject@@@2@@std@@QAAXXZ 10026df8 f i FIMGlib:glCore.obj
+ 0001:00025e9c       ?_Erase@?$_Tree@IU?$pair@$$CBIPAURenderbufferObject@@@std@@U_Kfn@?$map@IPAURenderbufferObject@@U?$less@I@std@@V?$allocator@PAURenderbufferObject@@@3@@2@U?$less@I@2@V?$allocator@PAURenderbufferObject@@@2@@std@@IAAXPAU_Node@12@@Z 10026e9c f i FIMGlib:glCore.obj
+ 0001:00025ef0       ?_Erase@?$_Tree@IU?$pair@$$CBIPAUFramebufferObject@@@std@@U_Kfn@?$map@IPAUFramebufferObject@@U?$less@I@std@@V?$allocator@PAUFramebufferObject@@@3@@2@U?$less@I@2@V?$allocator@PAUFramebufferObject@@@2@@std@@IAAXPAU_Node@12@@Z 10026ef0 f i FIMGlib:glCore.obj
+ 0001:00025f44       ?_Erase@?$_Tree@IIU_Kfn@?$set@IU?$less@I@std@@V?$allocator@I@2@@std@@U?$less@I@3@V?$allocator@I@3@@std@@IAAXPAU_Node@12@@Z 10026f44 f i FIMGlib:glCore.obj
+ 0001:00025f98       ?erase@?$_Tree@IU?$pair@$$CBIPAUFramebufferObject@@@std@@U_Kfn@?$map@IPAUFramebufferObject@@U?$less@I@std@@V?$allocator@PAUFramebufferObject@@@3@@2@U?$less@I@2@V?$allocator@PAUFramebufferObject@@@2@@std@@QAA?AViterator@12@V312@@Z 10026f98 f i FIMGlib:glCore.obj
+ 0001:0002646c       ?erase@?$_Tree@IIU_Kfn@?$set@IU?$less@I@std@@V?$allocator@I@2@@std@@U?$less@I@3@V?$allocator@I@3@@std@@QAA?AViterator@12@V312@@Z 1002746c f i FIMGlib:glCore.obj
+ 0001:00026940       ?erase@?$_Tree@IU?$pair@$$CBIPAUFramebufferObject@@@std@@U_Kfn@?$map@IPAUFramebufferObject@@U?$less@I@std@@V?$allocator@PAUFramebufferObject@@@3@@2@U?$less@I@2@V?$allocator@PAUFramebufferObject@@@2@@std@@QAA?AViterator@12@V312@0@Z 10027940 f i FIMGlib:glCore.obj
+ 0001:00026ae0       ?erase@?$_Tree@IIU_Kfn@?$set@IU?$less@I@std@@V?$allocator@I@2@@std@@U?$less@I@3@V?$allocator@I@3@@std@@QAA?AViterator@12@V312@0@Z 10027ae0 f i FIMGlib:glCore.obj
+ 0001:00026c80       ?erase@?$_Tree@IU?$pair@$$CBIPAURenderbufferObject@@@std@@U_Kfn@?$map@IPAURenderbufferObject@@U?$less@I@std@@V?$allocator@PAURenderbufferObject@@@3@@2@U?$less@I@2@V?$allocator@PAURenderbufferObject@@@2@@std@@QAA?AViterator@12@V312@@Z 10027c80 f i FIMGlib:glCore.obj
+ 0001:00027154       ?erase@?$_Tree@IU?$pair@$$CBIPAURenderbufferObject@@@std@@U_Kfn@?$map@IPAURenderbufferObject@@U?$less@I@std@@V?$allocator@PAURenderbufferObject@@@3@@2@U?$less@I@2@V?$allocator@PAURenderbufferObject@@@2@@std@@QAA?AViterator@12@V312@0@Z 10028154 f i FIMGlib:glCore.obj
+ 0001:000272f4       ?setDefaults@RenderbufferState@@QAAXXZ 100282f4 f i FIMGlib:glCore.obj
+ 0001:000273e8       ??0SharedTextureState@@QAA@XZ 100283e8 f i FIMGlib:glCore.obj
+ 0001:000274f0       ??1SharedTextureState@@QAA@XZ 100284f0 f i FIMGlib:glCore.obj
+ 0001:000275d4       ??1OGLState@@QAA@XZ        100285d4 f i FIMGlib:glCore.obj
+ 0001:000276dc       ??0RenderbufferState@@QAA@XZ 100286dc f i FIMGlib:glCore.obj
+ 0001:00027780       GLES2CreateContext         10028780 f   FIMGlib:glCore.obj
+ 0001:00027918       ?DestroyContext@@YAEPAUOGLState@@@Z 10028918 f   FIMGlib:glCore.obj
+ 0001:00027a7c       GLES2DestroyContext        10028a7c f   FIMGlib:glCore.obj
+ 0001:00027ac8       ?calculateMipmapOffset@@YA?AW4FGL_ErrorTag@@PAIII0@Z 10028ac8 f i FIMGlib:glTex.obj
+ 0001:00027b38       ?calculateMipmapOffsetS3TC@@YA?AW4FGL_ErrorTag@@PAIII0@Z 10028b38 f i FIMGlib:glTex.obj
+ 0001:00027bcc       ?calculateMipmapOffsetYUV@@YA?AW4FGL_ErrorTag@@PAIII0@Z 10028bcc f i FIMGlib:glTex.obj
+ 0001:00027df8       ?transferImageFromTexChunckToImageChunck@@YAXPAVTextureObject@@@Z 10028df8 f i FIMGlib:glTex.obj
+ 0001:000280cc       ?getImageDataLocation@@YAPAEPAVTextureObject@@PAUImage@@HH@Z 100290cc f   FIMGlib:glTex.obj
+ 0001:00028194       ?isMipmapFilter@@YAEI@Z    10029194 f   FIMGlib:glTex.obj
+ 0001:00028230       OGL2_glActiveTexture       10029230 f   FIMGlib:glTex.obj
+ 0001:00028278       ?DetermineTextureFormat@@YA?AW4PxFmt@@IIPAW41@@Z 10029278 f   FIMGlib:glTex.obj
+ 0001:0002842c       ?reset@TextureObject@@QAAXXZ 1002942c f   FIMGlib:glTex.obj
+ 0001:000284d8       ?Init@TextureObject@@QAAXHI@Z 100294d8 f   FIMGlib:glTex.obj
+ 0001:000285f4       ?acquire@TextureObject@@QAAXPAUOGLState@@@Z 100295f4 f i FIMGlib:glTex.obj
+ 0001:00028684       ?IsComplete@TextureObject@@QAAEPAH@Z 10029684 f   FIMGlib:glTex.obj
+ 0001:00028b28       ?updateTexFGLState@TextureObject@@QAAEXZ 10029b28 f   FIMGlib:glTex.obj
+ 0001:00029044       ?GetPixSize@@YAII@Z        1002a044 f   FIMGlib:glTex.obj
+ 0001:000290e8       ?CheckFormatTypeCombination@@YAIII@Z 1002a0e8 f   FIMGlib:glTex.obj
+ 0001:0002923c       ?determineFormatAndType@@YAXPAI0W4PxFmt@@@Z 1002a23c f i FIMGlib:glTex.obj
+ 0001:000292f8       GLES2ReleaseTexImage       1002a2f8 f   FIMGlib:glTex.obj
+ 0001:000293e8       ?GetPixelSize@@YAHII@Z     1002a3e8 f   FIMGlib:glTex.obj
+ 0001:000296d8       ?GetTexNameArrayIndex@@YAHI_N@Z 1002a6d8 f   FIMGlib:glTex.obj
+ 0001:00029798       ?SwapRB@@YAXPAEIIHHHHHHHHHH@Z 1002a798 f   FIMGlib:glTex.obj
+ 0001:0002986c       ?_Dec@const_iterator@?$_Tree@IIU_Kfn@?$set@IU?$less@I@std@@V?$allocator@I@2@@std@@U?$less@I@3@V?$allocator@I@3@@std@@QAAXXZ 1002a86c f i FIMGlib:glTex.obj
+ 0001:00029924       ?getImageDataLocation@@YAPAEPAVTextureObject@@HHHHHIIHH@Z 1002a924 f   FIMGlib:glTex.obj
+ 0001:00029be4       OGL2_glIsTexture           1002abe4 f   FIMGlib:glTex.obj
+ 0001:00029c54       ?InitLocalTextureState@@YAXPAUOGLState@@@Z 1002ac54 f   FIMGlib:glTex.obj
+ 0001:0002a010       ?Delete@TextureObject@@QAAXXZ 1002b010 f   FIMGlib:glTex.obj
+ 0001:0002a29c       ?CompiledSize@TextureObject@@AAAHXZ 1002b29c f i FIMGlib:glTex.obj
+ 0001:0002a398       ?GetTextureObject@@YAPAVTextureObject@@I_NH@Z 1002b398 f   FIMGlib:glTex.obj
+ 0001:0002a4f0       GLES2BindTexImage          1002b4f0 f   FIMGlib:glTex.obj
+ 0001:0002a6d8       OGL2_glMapTexture          1002b6d8 f   FIMGlib:glTex.obj
+ 0001:0002a850       OGL2_glUnmapTexture        1002b850 f   FIMGlib:glTex.obj
+ 0001:0002a8f8       ?_Ubound@?$_Tree@IIU_Kfn@?$set@IU?$less@I@std@@V?$allocator@I@2@@std@@U?$less@I@3@V?$allocator@I@3@@std@@IBAPAU_Node@12@ABI@Z 1002b8f8 f i FIMGlib:glTex.obj
+ 0001:0002a954       OGL2_glTexParameteri       1002b954 f   FIMGlib:glTex.obj
+ 0001:0002ab78       OGL2_glTexParameteriv      1002bb78 f   FIMGlib:glTex.obj
+ 0001:0002abc0       OGL2_glTexParameterf       1002bbc0 f   FIMGlib:glTex.obj
+ 0001:0002abec       OGL2_glTexParameterfv      1002bbec f   FIMGlib:glTex.obj
+ 0001:0002ac3c       OGL2_glTexImage2D          1002bc3c f   FIMGlib:glTex.obj
+ 0001:0002aea8       OGL2_glTexSubImage2D       1002bea8 f   FIMGlib:glTex.obj
+ 0001:0002b0e4       OGL2_glCopyTexImage2D      1002c0e4 f   FIMGlib:glTex.obj
+ 0001:0002b49c       OGL2_glCopyTexSubImage2D   1002c49c f   FIMGlib:glTex.obj
+ 0001:0002b7d8       OGL2_glCompressedTexImage2D 1002c7d8 f   FIMGlib:glTex.obj
+ 0001:0002bba0       OGL2_glCompressedTexSubImage2D 1002cba0 f   FIMGlib:glTex.obj
+ 0001:0002be9c       OGL2_glGetTexParameteriv   1002ce9c f   FIMGlib:glTex.obj
+ 0001:0002bfe0       OGL2_glGetTexParameterfv   1002cfe0 f   FIMGlib:glTex.obj
+ 0001:0002bff0       ?Compile@TextureObject@@QAAEXZ 1002cff0 f   FIMGlib:glTex.obj
+ 0001:0002c7b8       ?GetTexObject@@YAPAVTextureObject@@I@Z 1002d7b8 f   FIMGlib:glTex.obj
+ 0001:0002c834       ??$_Distance@Viterator@?$_Tree@IIU_Kfn@?$set@IU?$less@I@std@@V?$allocator@I@2@@std@@U?$less@I@3@V?$allocator@I@3@@std@@I@std@@YAXViterator@?$_Tree@IIU_Kfn@?$set@IU?$less@I@std@@V?$allocator@I@2@@std@@U?$less@I@3@V?$allocator@I@3@@0@0AAIUbidirectional_iterator_tag@0@@Z 1002d834 f i FIMGlib:glTex.obj
+ 0001:0002c890       ??$_Distance@Vconst_iterator@?$_Tree@IIU_Kfn@?$set@IU?$less@I@std@@V?$allocator@I@2@@std@@U?$less@I@3@V?$allocator@I@3@@std@@I@std@@YAXVconst_iterator@?$_Tree@IIU_Kfn@?$set@IU?$less@I@std@@V?$allocator@I@2@@std@@U?$less@I@3@V?$allocator@I@3@@0@0AAIUbidirectional_iterator_tag@0@@Z 1002d890 f i FIMGlib:glTex.obj
+ 0001:0002c8ec       ?equal_range@?$_Tree@IIU_Kfn@?$set@IU?$less@I@std@@V?$allocator@I@2@@std@@U?$less@I@3@V?$allocator@I@3@@std@@QAA?AU?$pair@Viterator@?$_Tree@IIU_Kfn@?$set@IU?$less@I@std@@V?$allocator@I@2@@std@@U?$less@I@3@V?$allocator@I@3@@std@@V123@@2@ABI@Z 1002d8ec f i FIMGlib:glTex.obj
+ 0001:0002c960       ?equal_range@?$_Tree@IIU_Kfn@?$set@IU?$less@I@std@@V?$allocator@I@2@@std@@U?$less@I@3@V?$allocator@I@3@@std@@QBA?AU?$pair@Vconst_iterator@?$_Tree@IIU_Kfn@?$set@IU?$less@I@std@@V?$allocator@I@2@@std@@U?$less@I@3@V?$allocator@I@3@@std@@V123@@2@ABI@Z 1002d960 f i FIMGlib:glTex.obj
+ 0001:0002c9d4       ?_Insert@?$_Tree@IIU_Kfn@?$set@IU?$less@I@std@@V?$allocator@I@2@@std@@U?$less@I@3@V?$allocator@I@3@@std@@IAA?AViterator@12@PAU_Node@12@0ABI@Z 1002d9d4 f i FIMGlib:glTex.obj
+ 0001:0002cd78       ?insert@?$_Tree@IIU_Kfn@?$set@IU?$less@I@std@@V?$allocator@I@2@@std@@U?$less@I@3@V?$allocator@I@3@@std@@QAA?AU?$pair@Viterator@?$_Tree@IIU_Kfn@?$set@IU?$less@I@std@@V?$allocator@I@2@@std@@U?$less@I@3@V?$allocator@I@3@@std@@_N@2@ABI@Z 1002dd78 f i FIMGlib:glTex.obj
+ 0001:0002cefc       ?erase@?$set@IU?$less@I@std@@V?$allocator@I@2@@std@@QAAIABI@Z 1002defc f i FIMGlib:glTex.obj
+ 0001:0002cf54       ?getTextureNames@@YAEPAUSharedTextureState@@HPAI@Z 1002df54 f   FIMGlib:glTex.obj
+ 0001:0002d054       OGL2_glGenTextures         1002e054 f   FIMGlib:glTex.obj
+ 0001:0002d124       ?release@TextureObject@@QAAXPAUOGLState@@@Z 1002e124 f i FIMGlib:glTex.obj
+ 0001:0002d240       ?releaseBoundTextures@@YAXPAUOGLState@@@Z 1002e240 f   FIMGlib:glTex.obj
+ 0001:0002d30c       OGL2_glBindTexture         1002e30c f   FIMGlib:glTex.obj
+ 0001:0002d734       OGL2_glDeleteTextures      1002e734 f   FIMGlib:glTex.obj
+ 0001:0002dab4       ?DeInitLocalTextureState@@YAXPAUOGLState@@@Z 1002eab4 f   FIMGlib:glTex.obj
+ 0001:0002dd48       ?updateCurrentExecutable@@YA_NXZ 1002ed48 f   FIMGlib:glShaderApi.obj
+ 0001:0002de20       ??$setValues@MM$00@@YAXPAMPAUUniformVar@@PBXHH@Z 1002ee20 f i FIMGlib:glShaderApi.obj
+ 0001:0002df08       ??$setValues@MM$01@@YAXPAMPAUUniformVar@@PBXHH@Z 1002ef08 f i FIMGlib:glShaderApi.obj
+ 0001:0002dff0       ??$setValuesBool@MM$00@@YAXPAMPAUUniformVar@@PBXHH@Z 1002eff0 f i FIMGlib:glShaderApi.obj
+ 0001:0002e168       ??$setValuesBool@MM$01@@YAXPAMPAUUniformVar@@PBXHH@Z 1002f168 f i FIMGlib:glShaderApi.obj
+ 0001:0002e2e0       ??$setValues@MH$00@@YAXPAMPAUUniformVar@@PBXHH@Z 1002f2e0 f i FIMGlib:glShaderApi.obj
+ 0001:0002e3f4       ??$setValues@MH$01@@YAXPAMPAUUniformVar@@PBXHH@Z 1002f3f4 f i FIMGlib:glShaderApi.obj
+ 0001:0002e508       ??$setValuesBool@MH$00@@YAXPAMPAUUniformVar@@PBXHH@Z 1002f508 f i FIMGlib:glShaderApi.obj
+ 0001:0002e658       ??$setValuesBool@MH$01@@YAXPAMPAUUniformVar@@PBXHH@Z 1002f658 f i FIMGlib:glShaderApi.obj
+ 0001:0002e7a8       OGL2_glAttachShader        1002f7a8 f   FIMGlib:glShaderApi.obj
+ 0001:0002e8d0       OGL2_glBindAttribLocation  1002f8d0 f   FIMGlib:glShaderApi.obj
+ 0001:0002e9ec       OGL2_glGetUniformLocation  1002f9ec f   FIMGlib:glShaderApi.obj
+ 0001:0002eacc       OGL2_glShaderBinary        1002facc f   FIMGlib:glShaderApi.obj
+ 0001:0002ed00       ?_Tidy@?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@AAAX_N@Z 1002fd00 f i FIMGlib:glShaderApi.obj
+ 0001:0002ed70       OGL2_glGetProgramInfoLog   1002fd70 f   FIMGlib:glShaderApi.obj
+ 0001:0002eea4       ?setUniformMat@@YAXHHPBXI@Z 1002fea4 f   FIMGlib:glShaderApi.obj
+ 0001:0002f15c       ?setUniformVec@@YAXHHPBXI@Z 1003015c f   FIMGlib:glShaderApi.obj
+ 0001:0002f68c       OGL2_glUniform1i           1003068c f   FIMGlib:glShaderApi.obj
+ 0001:0002f700       OGL2_glUniform1f           10030700 f   FIMGlib:glShaderApi.obj
+ 0001:0002f770       OGL2_glUniform3fv          10030770 f   FIMGlib:glShaderApi.obj
+ 0001:0002f790       OGL2_glUniform4fv          10030790 f   FIMGlib:glShaderApi.obj
+ 0001:0002f7b0       OGL2_glUniformMatrix3fv    100307b0 f   FIMGlib:glShaderApi.obj
+ 0001:0002f7f4       OGL2_glUniformMatrix4fv    100307f4 f   FIMGlib:glShaderApi.obj
+ 0001:0002f838       ??1?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QAA@XZ 10030838 f i FIMGlib:glShaderApi.obj
+ 0001:0002f8a0       ?_Inc@const_iterator@?$_Tree@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@U?$pair@$$CBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@UNameInfo@@@2@U_Kfn@?$map@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@UNameInfo@@U?$less@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@2@V?$allocator@UNameInfo@@@2@@2@U?$less@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@2@V?$allocator@UNameInfo@@@2@@std@@QAAXXZ 100308a0 f i FIMGlib:glShaderApi.obj
+ 0001:0002f94c       ?_Copy@?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@AAAXI@Z 1003094c f i FIMGlib:glShaderApi.obj
+ 0001:0002fa68       ?_Ucopy@?$vector@UShaderProgramNameMap@@V?$allocator@UShaderProgramNameMap@@@std@@@std@@IAAPAUShaderProgramNameMap@@PBU3@0PAU3@@Z 10030a68 f i FIMGlib:glShaderApi.obj
+ 0001:0002faa8       ??1Executable@@QAA@XZ      10030aa8 f i FIMGlib:glShaderApi.obj
+ 0001:0002fb64       ?_Grow@?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@AAA_NI_N@Z 10030b64 f i FIMGlib:glShaderApi.obj
+ 0001:0002fca0       ??$?8DU?$char_traits@D@std@@V?$allocator@D@1@@std@@YA_NABV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@0@PBD@Z 10030ca0 f i FIMGlib:glShaderApi.obj
+ 0001:0002fd10       ??0Executable@@QAA@XZ      10030d10 f i FIMGlib:glShaderApi.obj
+ 0001:0002fd68       OGL2_glUseProgram          10030d68 f   FIMGlib:glShaderApi.obj
+ 0001:0002ff48       ?append@?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QAAAAV12@ABV12@II@Z 10030f48 f i FIMGlib:glShaderApi.obj
+ 0001:0002fff8       ?assign@?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QAAAAV12@PBD@Z 10030ff8 f i FIMGlib:glShaderApi.obj
+ 0001:00030054       ?insert@?$vector@UShaderProgramNameMap@@V?$allocator@UShaderProgramNameMap@@@std@@@std@@QAAXPAUShaderProgramNameMap@@IABU3@@Z 10031054 f i FIMGlib:glShaderApi.obj
+ 0001:000303b0       ??0?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QAA@PBDABV?$allocator@D@1@@Z 100313b0 f i FIMGlib:glShaderApi.obj
+ 0001:00030418       ?append@?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QAAAAV12@PBD@Z 10031418 f i FIMGlib:glShaderApi.obj
+ 0001:000304a0       ?erase@?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QAAAAV12@II@Z 100314a0 f i FIMGlib:glShaderApi.obj
+ 0001:00030568       OGL2_glGetAttribLocation   10031568 f   FIMGlib:glShaderApi.obj
+ 0001:00030780       OGL2_glLinkProgram         10031780 f   FIMGlib:glShaderApi.obj
+ 0001:00030b78       OGL2_glVaryingInterpolationEXP 10031b78 f   FIMGlib:glShaderApi.obj
+ 0001:00030e04       OGL2_glGetVaryingInterpolationEXP 10031e04 f   FIMGlib:glShaderApi.obj
+ 0001:0003103c       OGL2_glCreateProgram       1003203c f   FIMGlib:glShaderApi.obj
+ 0001:000310e8       OGL2_glCreateShader        100320e8 f   FIMGlib:glShaderApi.obj
+ 0001:000311e0       extRegisterMemAllocFunc    100321e0 f   FIMGlib:memext.obj
+ 0001:00031200       extRegisterMemFreeFunc     10032200 f   FIMGlib:memext.obj
+ 0001:00031210       ??0Chunk@@QAA@IIIPAU_Node@@0PAX@Z 10032210 f   FIMGlib:Chunk.obj
+ 0001:00031240       ?GetPhyAddr@Chunk@@QAAPAXXZ 10032240 f   FIMGlib:Chunk.obj
+ 0001:00031260       ?GetVirtAddr@Chunk@@QAAPAXXZ 10032260 f   FIMGlib:Chunk.obj
+ 0001:00031280       ?GetSize@Chunk@@QAAIXZ     10032280 f   FIMGlib:Chunk.obj
+ 0001:000312a0       ??1Chunk@@QAA@XZ           100322a0 f   FIMGlib:Chunk.obj
+ 0001:000312c0       ??2Chunk@@SAPAXI@Z         100322c0 f   FIMGlib:Chunk.obj
+ 0001:000312d0       ??3Chunk@@SAXPAX@Z         100322d0 f   FIMGlib:Chunk.obj
+ 0001:000312e4       ?ChunkLogMessage@@YAXIPBDZZ 100322e4 f   FIMGlib:ChunkAlloc.obj
+ 0001:00031320       ?FindFreeNode@NodeManager@@QAAIXZ 10032320 f   FIMGlib:ChunkAlloc.obj
+ 0001:000313d4       ?CreateNode@NodeManager@@QAAPAU_Node@@II@Z 100323d4 f   FIMGlib:ChunkAlloc.obj
+ 0001:00031488       ?FreeNode@NodeManager@@QAAXPAU_Node@@0@Z 10032488 f   FIMGlib:ChunkAlloc.obj
+ 0001:000315e0       ?PrintChunkBlockInfo@ChunkAlloc@@QAAXI@Z 100325e0 f   FIMGlib:ChunkAlloc.obj
+ 0001:000316c0       ?ReadFromRegistry@@YAHPAI@Z 100326c0 f   FIMGlib:ChunkAlloc.obj
+ 0001:00031784       ??0ChunkAlloc@@QAA@PAX0II@Z 10032784 f   FIMGlib:ChunkAlloc.obj
+ 0001:00031860       ?DestroyAllChunkBlock@ChunkAlloc@@AAA_NXZ 10032860 f   FIMGlib:ChunkAlloc.obj
+ 0001:00031920       ?InsertChunkBlock@ChunkAlloc@@QAAPAU__ChunkBlockList@@XZ 10032920 f   FIMGlib:ChunkAlloc.obj
+ 0001:00031aa0       ?RemoveChunkBlock@ChunkAlloc@@QAA_NPAU_Node@@@Z 10032aa0 f   FIMGlib:ChunkAlloc.obj
+ 0001:00031c24       ?New@ChunkAlloc@@QAAPAVChunk@@I@Z 10032c24 f   FIMGlib:ChunkAlloc.obj
+ 0001:00031f58       ?Free@ChunkAlloc@@QAAXPAVChunk@@@Z 10032f58 f   FIMGlib:ChunkAlloc.obj
+ 0001:000320d8       ??1ChunkAlloc@@QAA@XZ      100330d8 f   FIMGlib:ChunkAlloc.obj
+ 0001:00032120       ?initMutex@Plat@@SAXPAUCRITICAL_SECTION@@PBD@Z 10033120 f   FIMGlib:platform.obj
+ 0001:00032140       ?DeinitMutex@Plat@@SAXPAUCRITICAL_SECTION@@PBD@Z 10033140 f   FIMGlib:platform.obj
+ 0001:00032150       ?drawLock@Plat@@SAXPAUCRITICAL_SECTION@@PBD@Z 10033150 f   FIMGlib:platform.obj
+ 0001:000321cc       ?drawUnlock@Plat@@SAXPAUCRITICAL_SECTION@@PBD@Z 100331cc f   FIMGlib:platform.obj
+ 0001:00032200       ?lock@Plat@@SAXPAUCRITICAL_SECTION@@PBD@Z 10033200 f   FIMGlib:platform.obj
+ 0001:00032220       ?unlock@Plat@@SAXPAUCRITICAL_SECTION@@PBD@Z 10033220 f   FIMGlib:platform.obj
+ 0001:00032230       ?memset_long@Plat@@SAXPAXII@Z 10033230 f   FIMGlib:platform.obj
+ 0001:0003229c       ?memset_long@Plat@@SAXPAXIII@Z 1003329c f   FIMGlib:platform.obj
+ 0001:000322e8       ?memset_short@Plat@@SAXPAXIII@Z 100332e8 f i FIMGlib:glFimg.obj
+ 0001:000323cc       ?glfInit@@YA?AW4glfError@@PAUOGLState@@@Z 100333cc f   FIMGlib:glFimg.obj
+ 0001:0003241c       ?glfFinish@@YA?AW4glfError@@PAUOGLState@@@Z 1003341c f   FIMGlib:glFimg.obj
+ 0001:000324a8       ?glfSetVertexShader@@YA?AW4glfError@@PAUOGLState@@@Z 100334a8 f   FIMGlib:glFimg.obj
+ 0001:00032684       ?glfSetFragShader@@YA?AW4glfError@@PAUOGLState@@@Z 10033684 f   FIMGlib:glFimg.obj
+ 0001:00032720       ?glfSetDrawMode@@YA?AW4glfError@@PAUOGLState@@I@Z 10033720 f   FIMGlib:glFimg.obj
+ 0001:00032858       ?glfSetPrimEngine@@YA?AW4glfError@@PAUOGLState@@@Z 10033858 f   FIMGlib:glFimg.obj
+ 0001:00032950       ?glfSetTextureUnit@@YA?AW4glfError@@PAUOGLState@@@Z 10033950 f   FIMGlib:glFimg.obj
+ 0001:00032a94       ?glfSetAttribOrderVertexCount@@YAXABUAttribInfo@@_NH@Z 10033a94 f i FIMGlib:glFimg.obj
+ 0001:00032b68       ?glfTransfer_GenericVertex@@YAXABUAttribInfo@@HH@Z 10033b68 f i FIMGlib:glFimg.obj
+ 0001:00032bcc       ?glfTransfer_VertexArray@@YAXAAUAttribInfo@@HH@Z 10033bcc f   FIMGlib:glFimg.obj
+ 0001:00032d84       ?glfTransfer_IndependentPrimitives@@YAXPAUOGLState@@ABUAttribInfo@@IHH@Z 10033d84 f   FIMGlib:glFimg.obj
+ 0001:000337cc       ??$glfTransfer_IndependentIndexedPrimitives@I@@YAXPAUOGLState@@ABUAttribInfo@@IPBIH@Z 100347cc f i FIMGlib:glFimg.obj
+ 0001:00033ec4       ??$glfTransfer_VertexElements@I@@YAXAAUAttribInfo@@PBIH@Z 10034ec4 f i FIMGlib:glFimg.obj
+ 0001:00033f9c       ??$glfTransfer_IndependentIndexedPrimitives@G@@YAXPAUOGLState@@ABUAttribInfo@@IPBGH@Z 10034f9c f i FIMGlib:glFimg.obj
+ 0001:00034698       ??$glfTransfer_VertexElements@G@@YAXAAUAttribInfo@@PBGH@Z 10035698 f i FIMGlib:glFimg.obj
+ 0001:00034774       ??$glfTransfer_IndependentIndexedPrimitives@E@@YAXPAUOGLState@@ABUAttribInfo@@IPBEH@Z 10035774 f i FIMGlib:glFimg.obj
+ 0001:00034e78       ??$glfTransfer_VertexElements@E@@YAXAAUAttribInfo@@PBEH@Z 10035e78 f i FIMGlib:glFimg.obj
+ 0001:00034f58       ?glfClear@@YA?AW4glfError@@PAUOGLState@@I@Z 10035f58 f   FIMGlib:glFimg.obj
+ 0001:00035400       ?glfSetHostIf@@YA?AW4glfError@@PAUOGLState@@PAUAttribInfo@@_NE@Z 10036400 f   FIMGlib:glFimg.obj
+ 0001:000355ac       ?glfSetRasterEngine@@YA?AW4glfError@@PAUOGLState@@@Z 100365ac f   FIMGlib:glFimg.obj
+ 0001:000357d8       ?glfSetPerFragUnit@@YA?AW4glfError@@PAUOGLState@@@Z 100367d8 f   FIMGlib:glFimg.obj
+ 0001:00035f50       ?glfGetAttribInfo@@YA?AW4glfError@@PAUOGLState@@PAUAttribInfo@@_N@Z 10036f50 f   FIMGlib:glFimg.obj
+ 0001:000363e4       ?glfDraw@@YA?AW4glfError@@PAUOGLState@@IHH@Z 100373e4 f   FIMGlib:glFimg.obj
+ 0001:0003656c       ??$glfDrawElements@I@@YA?AW4glfError@@PAUOGLState@@IHPBI@Z 1003756c f i FIMGlib:glFimg.obj
+ 0001:00036704       ??$glfDrawElements@G@@YA?AW4glfError@@PAUOGLState@@IHPBG@Z 10037704 f i FIMGlib:glFimg.obj
+ 0001:0003689c       ??$glfDrawElements@E@@YA?AW4glfError@@PAUOGLState@@IHPBE@Z 1003789c f i FIMGlib:glFimg.obj
+ 0001:00036a34       ?glfSetState@@YA?AW4glfError@@PAUOGLState@@@Z 10037a34 f   FIMGlib:glFimg.obj
+ 0001:00036c38       ?glfDrawElements@@YA?AW4glfError@@PAUOGLState@@IHIPBX@Z 10037c38 f   FIMGlib:glFimg.obj
+ 0001:00036cac       ?glfFlush@@YA?AW4glfError@@PAUOGLState@@@Z 10037cac f   FIMGlib:glFimg.obj
+ 0001:00036d9c       ?find@?$_Tree@IU?$pair@$$CBIPAURenderbufferObject@@@std@@U_Kfn@?$map@IPAURenderbufferObject@@U?$less@I@std@@V?$allocator@PAURenderbufferObject@@@3@@2@U?$less@I@2@V?$allocator@PAURenderbufferObject@@@2@@std@@QAA?AViterator@12@ABI@Z 10037d9c f i FIMGlib:glFramebufferObject.obj
+ 0001:00036e64       ?find@?$_Tree@IU?$pair@$$CBIPAUFramebufferObject@@@std@@U_Kfn@?$map@IPAUFramebufferObject@@U?$less@I@std@@V?$allocator@PAUFramebufferObject@@@3@@2@U?$less@I@2@V?$allocator@PAUFramebufferObject@@@2@@std@@QAA?AViterator@12@ABI@Z 10037e64 f i FIMGlib:glFramebufferObject.obj
+ 0001:00036f2c       ?clear@NameManager@@QAAXXZ 10037f2c f   FIMGlib:glFramebufferObject.obj
+ 0001:00036f60       ?getRBO@RenderbufferState@@QAA_NIPAPAURenderbufferObject@@@Z 10037f60 f i FIMGlib:glFramebufferObject.obj
+ 0001:00036fd4       ?setDefaults@FramebufferState@@QAAXXZ 10037fd4 f   FIMGlib:glFramebufferObject.obj
+ 0001:000370f0       ?detachAttachment@FramebufferState@@QAAXII@Z 100380f0 f   FIMGlib:glFramebufferObject.obj
+ 0001:00037210       ?detachTexture@FramebufferState@@QAAXI@Z 10038210 f   FIMGlib:glFramebufferObject.obj
+ 0001:0003722c       ?getInfo@FBOAttachmentPointState@@QAA?AURTInfo@@XZ 1003822c f   FIMGlib:glFramebufferObject.obj
+ 0001:000373ec       ??0FramebufferState@@QAA@XZ 100383ec f   FIMGlib:glFramebufferObject.obj
+ 0001:00037490       ?status@FramebufferObject@@QAAIXZ 10038490 f   FIMGlib:glFramebufferObject.obj
+ 0001:000377ec       ?isFBrenderable@@YA_NPAUOGLState@@@Z 100387ec f   FIMGlib:glFramebufferObject.obj
+ 0001:000378c8       ?getFBData@@YA?AUFramebufferData@@XZ 100388c8 f   FIMGlib:glFramebufferObject.obj
+ 0001:00037b64       ?convertFromDepthStencil@@YAIW4PxFmt@@MH@Z 10038b64 f   FIMGlib:pixel.obj
+ 0001:00037bec       ?getDepthStencilMask@@YAIW4PxFmt@@_NE@Z 10038bec f   FIMGlib:pixel.obj
+ 0001:00037c64       ?pixelSize@@YAIW4PxFmt@@@Z 10038c64 f   FIMGlib:pixel.obj
+ 0001:00037cdc       ?translateGLInternal@@YA?AW4PxFmt@@II@Z 10038cdc f   FIMGlib:pixel.obj
+ 0001:00037de4       ?translateToFglPixelFormat@@YA?AW4FGL_PixelFormatTag@@W4PxFmt@@@Z 10038de4 f   FIMGlib:pixel.obj
+ 0001:00037e50       ?translateToGLenum@@YAIW4PxFmt@@@Z 10038e50 f   FIMGlib:pixel.obj
+ 0001:00037ee0       ?determineTypeFormat@@YAIHH@Z 10038ee0 f   FIMGlib:pixel.obj
+ 0001:00037ff0       ?determinePixelBitSize@@YAHW4PxFmt@@W4colorType@@@Z 10038ff0 f   FIMGlib:pixel.obj
+ 0001:000381b4       ??$convertPixelsCore@UPxARGB8@@U1@@@YAXPAXHHHIIIPBXHHHIIIHHHHHH@Z 100391b4 f i FIMGlib:pixel.obj
+ 0001:00038364       ??$convertPixelsCore@UPxARGB0888@@UPxARGB8@@@@YAXPAXHHHIIIPBXHHHIIIHHHHHH@Z 10039364 f i FIMGlib:pixel.obj
+ 0001:00038518       ??$convertPixelsCore@UPxRGB8@@UPxARGB8@@@@YAXPAXHHHIIIPBXHHHIIIHHHHHH@Z 10039518 f i FIMGlib:pixel.obj
+ 0001:000386c0       ??$convertPixelsCore@UPxARGB4@@UPxARGB8@@@@YAXPAXHHHIIIPBXHHHIIIHHHHHH@Z 100396c0 f i FIMGlib:pixel.obj
+ 0001:00038880       ??$convertPixelsCore@UPxRGB565@@UPxARGB8@@@@YAXPAXHHHIIIPBXHHHIIIHHHHHH@Z 10039880 f i FIMGlib:pixel.obj
+ 0001:00038a34       ??$convertPixelsCore@UPxRGB5@@UPxARGB8@@@@YAXPAXHHHIIIPBXHHHIIIHHHHHH@Z 10039a34 f i FIMGlib:pixel.obj
+ 0001:00038bec       ??$convertPixelsCore@UPxARGB1555@@UPxARGB8@@@@YAXPAXHHHIIIPBXHHHIIIHHHHHH@Z 10039bec f i FIMGlib:pixel.obj
+ 0001:00038dc0       ??$convertPixelsCore@UPxLUMINANCE8@@UPxARGB8@@@@YAXPAXHHHIIIPBXHHHIIIHHHHHH@Z 10039dc0 f i FIMGlib:pixel.obj
+ 0001:00038f30       ??$convertPixelsCore@UPxLUMINANCE_ALPHA88@@UPxARGB8@@@@YAXPAXHHHIIIPBXHHHIIIHHHHHH@Z 10039f30 f i FIMGlib:pixel.obj
+ 0001:000390bc       ??$convertPixelsCore@UPxLUMINANCE_ALPHA80@@UPxARGB8@@@@YAXPAXHHHIIIPBXHHHIIIHHHHHH@Z 1003a0bc f i FIMGlib:pixel.obj
+ 0001:00039244       ??$convertPixelsCore@UPxLUMINANCE_ALPHA08@@UPxARGB8@@@@YAXPAXHHHIIIPBXHHHIIIHHHHHH@Z 1003a244 f i FIMGlib:pixel.obj
+ 0001:000393cc       ??$convertPixelsCore@UPxABGR8@@UPxARGB8@@@@YAXPAXHHHIIIPBXHHHIIIHHHHHH@Z 1003a3cc f i FIMGlib:pixel.obj
+ 0001:0003957c       ??$convertPixelsCore@UPxBGR8@@UPxARGB8@@@@YAXPAXHHHIIIPBXHHHIIIHHHHHH@Z 1003a57c f i FIMGlib:pixel.obj
+ 0001:00039728       ??$convertPixelsCore@UPxRGBA4@@UPxARGB8@@@@YAXPAXHHHIIIPBXHHHIIIHHHHHH@Z 1003a728 f i FIMGlib:pixel.obj
+ 0001:000398e8       ??$convertPixelsCore@UPxRGBA5551@@UPxARGB8@@@@YAXPAXHHHIIIPBXHHHIIIHHHHHH@Z 1003a8e8 f i FIMGlib:pixel.obj
+ 0001:00039ac0       ??$convertPixelsCore@UPxALPHA_LIMUNANCE88@@UPxARGB8@@@@YAXPAXHHHIIIPBXHHHIIIHHHHHH@Z 1003aac0 f i FIMGlib:pixel.obj
+ 0001:00039c4c       ??$convertPixelsCore@UPxALPHA8@@UPxARGB8@@@@YAXPAXHHHIIIPBXHHHIIIHHHHHH@Z 1003ac4c f i FIMGlib:pixel.obj
+ 0001:00039dbc       ??$convertPixelsCore@UPxARGB8@@UPxARGB0888@@@@YAXPAXHHHIIIPBXHHHIIIHHHHHH@Z 1003adbc f i FIMGlib:pixel.obj
+ 0001:00039f70       ??$convertPixelsCore@UPxARGB0888@@U1@@@YAXPAXHHHIIIPBXHHHIIIHHHHHH@Z 1003af70 f i FIMGlib:pixel.obj
+ 0001:0003a124       ??$convertPixelsCore@UPxRGB8@@UPxARGB0888@@@@YAXPAXHHHIIIPBXHHHIIIHHHHHH@Z 1003b124 f i FIMGlib:pixel.obj
+ 0001:0003a2cc       ??$convertPixelsCore@UPxARGB4@@UPxARGB0888@@@@YAXPAXHHHIIIPBXHHHIIIHHHHHH@Z 1003b2cc f i FIMGlib:pixel.obj
+ 0001:0003a484       ??$convertPixelsCore@UPxRGB565@@UPxARGB0888@@@@YAXPAXHHHIIIPBXHHHIIIHHHHHH@Z 1003b484 f i FIMGlib:pixel.obj
+ 0001:0003a638       ??$convertPixelsCore@UPxRGB5@@UPxARGB0888@@@@YAXPAXHHHIIIPBXHHHIIIHHHHHH@Z 1003b638 f i FIMGlib:pixel.obj
+ 0001:0003a7f0       ??$convertPixelsCore@UPxARGB1555@@UPxARGB0888@@@@YAXPAXHHHIIIPBXHHHIIIHHHHHH@Z 1003b7f0 f i FIMGlib:pixel.obj
+ 0001:0003a9ac       ??$convertPixelsCore@UPxLUMINANCE8@@UPxARGB0888@@@@YAXPAXHHHIIIPBXHHHIIIHHHHHH@Z 1003b9ac f i FIMGlib:pixel.obj
+ 0001:0003ab1c       ??$convertPixelsCore@UPxLUMINANCE_ALPHA88@@UPxARGB0888@@@@YAXPAXHHHIIIPBXHHHIIIHHHHHH@Z 1003bb1c f i FIMGlib:pixel.obj
+ 0001:0003aca4       ??$convertPixelsCore@UPxLUMINANCE_ALPHA80@@UPxARGB0888@@@@YAXPAXHHHIIIPBXHHHIIIHHHHHH@Z 1003bca4 f i FIMGlib:pixel.obj
+ 0001:0003ae2c       ??$convertPixelsCore@UPxLUMINANCE_ALPHA08@@UPxARGB0888@@@@YAXPAXHHHIIIPBXHHHIIIHHHHHH@Z 1003be2c f i FIMGlib:pixel.obj
+ 0001:0003aee4       ??$convertPixelsCore@UPxABGR8@@UPxARGB0888@@@@YAXPAXHHHIIIPBXHHHIIIHHHHHH@Z 1003bee4 f i FIMGlib:pixel.obj
+ 0001:0003b098       ??$convertPixelsCore@UPxBGR8@@UPxARGB0888@@@@YAXPAXHHHIIIPBXHHHIIIHHHHHH@Z 1003c098 f i FIMGlib:pixel.obj
+ 0001:0003b244       ??$convertPixelsCore@UPxRGBA4@@UPxARGB0888@@@@YAXPAXHHHIIIPBXHHHIIIHHHHHH@Z 1003c244 f i FIMGlib:pixel.obj
+ 0001:0003b3f0       ??$convertPixelsCore@UPxRGBA5551@@UPxARGB0888@@@@YAXPAXHHHIIIPBXHHHIIIHHHHHH@Z 1003c3f0 f i FIMGlib:pixel.obj
+ 0001:0003b5a8       ??$convertPixelsCore@UPxALPHA_LIMUNANCE88@@UPxARGB0888@@@@YAXPAXHHHIIIPBXHHHIIIHHHHHH@Z 1003c5a8 f i FIMGlib:pixel.obj
+ 0001:0003b730       ??$convertPixelsCore@UPxALPHA8@@UPxARGB0888@@@@YAXPAXHHHIIIPBXHHHIIIHHHHHH@Z 1003c730 f i FIMGlib:pixel.obj
+ 0001:0003b7d8       ??$convertPixelsCore@UPxARGB8@@UPxRGB8@@@@YAXPAXHHHIIIPBXHHHIIIHHHHHH@Z 1003c7d8 f i FIMGlib:pixel.obj
+ 0001:0003b98c       ??$convertPixelsCore@UPxARGB0888@@UPxRGB8@@@@YAXPAXHHHIIIPBXHHHIIIHHHHHH@Z 1003c98c f i FIMGlib:pixel.obj
+ 0001:0003bb40       ??$convertPixelsCore@UPxRGB8@@U1@@@YAXPAXHHHIIIPBXHHHIIIHHHHHH@Z 1003cb40 f i FIMGlib:pixel.obj
+ 0001:0003bce8       ??$convertPixelsCore@UPxARGB4@@UPxRGB8@@@@YAXPAXHHHIIIPBXHHHIIIHHHHHH@Z 1003cce8 f i FIMGlib:pixel.obj
+ 0001:0003bea0       ??$convertPixelsCore@UPxRGB565@@UPxRGB8@@@@YAXPAXHHHIIIPBXHHHIIIHHHHHH@Z 1003cea0 f i FIMGlib:pixel.obj
+ 0001:0003c054       ??$convertPixelsCore@UPxRGB5@@UPxRGB8@@@@YAXPAXHHHIIIPBXHHHIIIHHHHHH@Z 1003d054 f i FIMGlib:pixel.obj
+ 0001:0003c20c       ??$convertPixelsCore@UPxARGB1555@@UPxRGB8@@@@YAXPAXHHHIIIPBXHHHIIIHHHHHH@Z 1003d20c f i FIMGlib:pixel.obj
+ 0001:0003c3c8       ??$convertPixelsCore@UPxLUMINANCE8@@UPxRGB8@@@@YAXPAXHHHIIIPBXHHHIIIHHHHHH@Z 1003d3c8 f i FIMGlib:pixel.obj
+ 0001:0003c538       ??$convertPixelsCore@UPxLUMINANCE_ALPHA88@@UPxRGB8@@@@YAXPAXHHHIIIPBXHHHIIIHHHHHH@Z 1003d538 f i FIMGlib:pixel.obj
+ 0001:0003c6c0       ??$convertPixelsCore@UPxLUMINANCE_ALPHA80@@UPxRGB8@@@@YAXPAXHHHIIIPBXHHHIIIHHHHHH@Z 1003d6c0 f i FIMGlib:pixel.obj
+ 0001:0003c848       ??$convertPixelsCore@UPxLUMINANCE_ALPHA08@@UPxRGB8@@@@YAXPAXHHHIIIPBXHHHIIIHHHHHH@Z 1003d848 f i FIMGlib:pixel.obj
+ 0001:0003c900       ??$convertPixelsCore@UPxABGR8@@UPxRGB8@@@@YAXPAXHHHIIIPBXHHHIIIHHHHHH@Z 1003d900 f i FIMGlib:pixel.obj
+ 0001:0003cab4       ??$convertPixelsCore@UPxBGR8@@UPxRGB8@@@@YAXPAXHHHIIIPBXHHHIIIHHHHHH@Z 1003dab4 f i FIMGlib:pixel.obj
+ 0001:0003cc60       ??$convertPixelsCore@UPxRGBA4@@UPxRGB8@@@@YAXPAXHHHIIIPBXHHHIIIHHHHHH@Z 1003dc60 f i FIMGlib:pixel.obj
+ 0001:0003ce0c       ??$convertPixelsCore@UPxRGBA5551@@UPxRGB8@@@@YAXPAXHHHIIIPBXHHHIIIHHHHHH@Z 1003de0c f i FIMGlib:pixel.obj
+ 0001:0003cfc4       ??$convertPixelsCore@UPxALPHA_LIMUNANCE88@@UPxRGB8@@@@YAXPAXHHHIIIPBXHHHIIIHHHHHH@Z 1003dfc4 f i FIMGlib:pixel.obj
+ 0001:0003d14c       ??$convertPixelsCore@UPxALPHA8@@UPxRGB8@@@@YAXPAXHHHIIIPBXHHHIIIHHHHHH@Z 1003e14c f i FIMGlib:pixel.obj
+ 0001:0003d1f4       ??$convertPixelsCore@UPxARGB8@@UPxARGB4@@@@YAXPAXHHHIIIPBXHHHIIIHHHHHH@Z 1003e1f4 f i FIMGlib:pixel.obj
+ 0001:0003d3c4       ??$convertPixelsCore@UPxARGB0888@@UPxARGB4@@@@YAXPAXHHHIIIPBXHHHIIIHHHHHH@Z 1003e3c4 f i FIMGlib:pixel.obj
+ 0001:0003d584       ??$convertPixelsCore@UPxRGB8@@UPxARGB4@@@@YAXPAXHHHIIIPBXHHHIIIHHHHHH@Z 1003e584 f i FIMGlib:pixel.obj
+ 0001:0003d740       ??$convertPixelsCore@UPxARGB4@@U1@@@YAXPAXHHHIIIPBXHHHIIIHHHHHH@Z 1003e740 f i FIMGlib:pixel.obj
+ 0001:0003d924       ??$convertPixelsCore@UPxRGB565@@UPxARGB4@@@@YAXPAXHHHIIIPBXHHHIIIHHHHHH@Z 1003e924 f i FIMGlib:pixel.obj
+ 0001:0003dae8       ??$convertPixelsCore@UPxRGB5@@UPxARGB4@@@@YAXPAXHHHIIIPBXHHHIIIHHHHHH@Z 1003eae8 f i FIMGlib:pixel.obj
+ 0001:0003dcb0       ??$convertPixelsCore@UPxARGB1555@@UPxARGB4@@@@YAXPAXHHHIIIPBXHHHIIIHHHHHH@Z 1003ecb0 f i FIMGlib:pixel.obj
+ 0001:0003dea0       ??$convertPixelsCore@UPxLUMINANCE8@@UPxARGB4@@@@YAXPAXHHHIIIPBXHHHIIIHHHHHH@Z 1003eea0 f i FIMGlib:pixel.obj
+ 0001:0003e00c       ??$convertPixelsCore@UPxLUMINANCE_ALPHA88@@UPxARGB4@@@@YAXPAXHHHIIIPBXHHHIIIHHHHHH@Z 1003f00c f i FIMGlib:pixel.obj
+ 0001:0003e19c       ??$convertPixelsCore@UPxLUMINANCE_ALPHA80@@UPxARGB4@@@@YAXPAXHHHIIIPBXHHHIIIHHHHHH@Z 1003f19c f i FIMGlib:pixel.obj
+ 0001:0003e310       ??$convertPixelsCore@UPxLUMINANCE_ALPHA08@@UPxARGB4@@@@YAXPAXHHHIIIPBXHHHIIIHHHHHH@Z 1003f310 f i FIMGlib:pixel.obj
+ 0001:0003e488       ??$convertPixelsCore@UPxABGR8@@UPxARGB4@@@@YAXPAXHHHIIIPBXHHHIIIHHHHHH@Z 1003f488 f i FIMGlib:pixel.obj
+ 0001:0003e658       ??$convertPixelsCore@UPxBGR8@@UPxARGB4@@@@YAXPAXHHHIIIPBXHHHIIIHHHHHH@Z 1003f658 f i FIMGlib:pixel.obj
+ 0001:0003e81c       ??$convertPixelsCore@UPxRGBA4@@UPxARGB4@@@@YAXPAXHHHIIIPBXHHHIIIHHHHHH@Z 1003f81c f i FIMGlib:pixel.obj
+ 0001:0003e9f8       ??$convertPixelsCore@UPxRGBA5551@@UPxARGB4@@@@YAXPAXHHHIIIPBXHHHIIIHHHHHH@Z 1003f9f8 f i FIMGlib:pixel.obj
+ 0001:0003ebe8       ??$convertPixelsCore@UPxALPHA_LIMUNANCE88@@UPxARGB4@@@@YAXPAXHHHIIIPBXHHHIIIHHHHHH@Z 1003fbe8 f i FIMGlib:pixel.obj
+ 0001:0003ed78       ??$convertPixelsCore@UPxALPHA8@@UPxARGB4@@@@YAXPAXHHHIIIPBXHHHIIIHHHHHH@Z 1003fd78 f i FIMGlib:pixel.obj
+ 0001:0003eee4       ??$convertPixelsCore@UPxARGB8@@UPxRGB565@@@@YAXPAXHHHIIIPBXHHHIIIHHHHHH@Z 1003fee4 f i FIMGlib:pixel.obj
+ 0001:0003f0b0       ??$convertPixelsCore@UPxARGB0888@@UPxRGB565@@@@YAXPAXHHHIIIPBXHHHIIIHHHHHH@Z 100400b0 f i FIMGlib:pixel.obj
+ 0001:0003f27c       ??$convertPixelsCore@UPxRGB8@@UPxRGB565@@@@YAXPAXHHHIIIPBXHHHIIIHHHHHH@Z 1004027c f i FIMGlib:pixel.obj
+ 0001:0003f43c       ??$convertPixelsCore@UPxARGB4@@UPxRGB565@@@@YAXPAXHHHIIIPBXHHHIIIHHHHHH@Z 1004043c f i FIMGlib:pixel.obj
+ 0001:0003f608       ??$convertPixelsCore@UPxRGB565@@U1@@@YAXPAXHHHIIIPBXHHHIIIHHHHHH@Z 10040608 f i FIMGlib:pixel.obj
+ 0001:0003f7d4       ??$convertPixelsCore@UPxRGB5@@UPxRGB565@@@@YAXPAXHHHIIIPBXHHHIIIHHHHHH@Z 100407d4 f i FIMGlib:pixel.obj
+ 0001:0003f9a0       ??$convertPixelsCore@UPxARGB1555@@UPxRGB565@@@@YAXPAXHHHIIIPBXHHHIIIHHHHHH@Z 100409a0 f i FIMGlib:pixel.obj
+ 0001:0003fb6c       ??$convertPixelsCore@UPxLUMINANCE8@@UPxRGB565@@@@YAXPAXHHHIIIPBXHHHIIIHHHHHH@Z 10040b6c f i FIMGlib:pixel.obj
+ 0001:0003fcdc       ??$convertPixelsCore@UPxLUMINANCE_ALPHA88@@UPxRGB565@@@@YAXPAXHHHIIIPBXHHHIIIHHHHHH@Z 10040cdc f i FIMGlib:pixel.obj
+ 0001:0003fe5c       ??$convertPixelsCore@UPxLUMINANCE_ALPHA80@@UPxRGB565@@@@YAXPAXHHHIIIPBXHHHIIIHHHHHH@Z 10040e5c f i FIMGlib:pixel.obj
+ 0001:0003ffdc       ??$convertPixelsCore@UPxLUMINANCE_ALPHA08@@UPxRGB565@@@@YAXPAXHHHIIIPBXHHHIIIHHHHHH@Z 10040fdc f i FIMGlib:pixel.obj
+ 0001:00040094       ??$convertPixelsCore@UPxABGR8@@UPxRGB565@@@@YAXPAXHHHIIIPBXHHHIIIHHHHHH@Z 10041094 f i FIMGlib:pixel.obj
+ 0001:00040260       ??$convertPixelsCore@UPxBGR8@@UPxRGB565@@@@YAXPAXHHHIIIPBXHHHIIIHHHHHH@Z 10041260 f i FIMGlib:pixel.obj
+ 0001:0004042c       ??$convertPixelsCore@UPxRGBA4@@UPxRGB565@@@@YAXPAXHHHIIIPBXHHHIIIHHHHHH@Z 1004142c f i FIMGlib:pixel.obj
+ 0001:000405f8       ??$convertPixelsCore@UPxRGBA5551@@UPxRGB565@@@@YAXPAXHHHIIIPBXHHHIIIHHHHHH@Z 100415f8 f i FIMGlib:pixel.obj
+ 0001:000407c8       ??$convertPixelsCore@UPxALPHA_LIMUNANCE88@@UPxRGB565@@@@YAXPAXHHHIIIPBXHHHIIIHHHHHH@Z 100417c8 f i FIMGlib:pixel.obj
+ 0001:00040948       ??$convertPixelsCore@UPxALPHA8@@UPxRGB565@@@@YAXPAXHHHIIIPBXHHHIIIHHHHHH@Z 10041948 f i FIMGlib:pixel.obj
+ 0001:000409f0       ??$convertPixelsCore@UPxARGB8@@UPxRGB5@@@@YAXPAXHHHIIIPBXHHHIIIHHHHHH@Z 100419f0 f i FIMGlib:pixel.obj
+ 0001:00040bbc       ??$convertPixelsCore@UPxARGB0888@@UPxRGB5@@@@YAXPAXHHHIIIPBXHHHIIIHHHHHH@Z 10041bbc f i FIMGlib:pixel.obj
+ 0001:00040d88       ??$convertPixelsCore@UPxRGB8@@UPxRGB5@@@@YAXPAXHHHIIIPBXHHHIIIHHHHHH@Z 10041d88 f i FIMGlib:pixel.obj
+ 0001:00040f48       ??$convertPixelsCore@UPxARGB4@@UPxRGB5@@@@YAXPAXHHHIIIPBXHHHIIIHHHHHH@Z 10041f48 f i FIMGlib:pixel.obj
+ 0001:00041114       ??$convertPixelsCore@UPxRGB565@@UPxRGB5@@@@YAXPAXHHHIIIPBXHHHIIIHHHHHH@Z 10042114 f i FIMGlib:pixel.obj
+ 0001:000412e0       ??$convertPixelsCore@UPxRGB5@@U1@@@YAXPAXHHHIIIPBXHHHIIIHHHHHH@Z 100422e0 f i FIMGlib:pixel.obj
+ 0001:000414ac       ??$convertPixelsCore@UPxARGB1555@@UPxRGB5@@@@YAXPAXHHHIIIPBXHHHIIIHHHHHH@Z 100424ac f i FIMGlib:pixel.obj
+ 0001:00041678       ??$convertPixelsCore@UPxLUMINANCE8@@UPxRGB5@@@@YAXPAXHHHIIIPBXHHHIIIHHHHHH@Z 10042678 f i FIMGlib:pixel.obj
+ 0001:000417e8       ??$convertPixelsCore@UPxLUMINANCE_ALPHA88@@UPxRGB5@@@@YAXPAXHHHIIIPBXHHHIIIHHHHHH@Z 100427e8 f i FIMGlib:pixel.obj
+ 0001:00041968       ??$convertPixelsCore@UPxLUMINANCE_ALPHA80@@UPxRGB5@@@@YAXPAXHHHIIIPBXHHHIIIHHHHHH@Z 10042968 f i FIMGlib:pixel.obj
+ 0001:00041ae8       ??$convertPixelsCore@UPxLUMINANCE_ALPHA08@@UPxRGB5@@@@YAXPAXHHHIIIPBXHHHIIIHHHHHH@Z 10042ae8 f i FIMGlib:pixel.obj
+ 0001:00041ba0       ??$convertPixelsCore@UPxABGR8@@UPxRGB5@@@@YAXPAXHHHIIIPBXHHHIIIHHHHHH@Z 10042ba0 f i FIMGlib:pixel.obj
+ 0001:00041d6c       ??$convertPixelsCore@UPxBGR8@@UPxRGB5@@@@YAXPAXHHHIIIPBXHHHIIIHHHHHH@Z 10042d6c f i FIMGlib:pixel.obj
+ 0001:00041f38       ??$convertPixelsCore@UPxRGBA4@@UPxRGB5@@@@YAXPAXHHHIIIPBXHHHIIIHHHHHH@Z 10042f38 f i FIMGlib:pixel.obj
+ 0001:00042104       ??$convertPixelsCore@UPxRGBA5551@@UPxRGB5@@@@YAXPAXHHHIIIPBXHHHIIIHHHHHH@Z 10043104 f i FIMGlib:pixel.obj
+ 0001:000422d4       ??$convertPixelsCore@UPxALPHA_LIMUNANCE88@@UPxRGB5@@@@YAXPAXHHHIIIPBXHHHIIIHHHHHH@Z 100432d4 f i FIMGlib:pixel.obj
+ 0001:00042454       ??$convertPixelsCore@UPxALPHA8@@UPxRGB5@@@@YAXPAXHHHIIIPBXHHHIIIHHHHHH@Z 10043454 f i FIMGlib:pixel.obj
+ 0001:000424fc       ??$convertPixelsCore@UPxARGB8@@UPxARGB1555@@@@YAXPAXHHHIIIPBXHHHIIIHHHHHH@Z 100434fc f i FIMGlib:pixel.obj
+ 0001:000426e0       ??$convertPixelsCore@UPxARGB0888@@UPxARGB1555@@@@YAXPAXHHHIIIPBXHHHIIIHHHHHH@Z 100436e0 f i FIMGlib:pixel.obj
+ 0001:000428ac       ??$convertPixelsCore@UPxRGB8@@UPxARGB1555@@@@YAXPAXHHHIIIPBXHHHIIIHHHHHH@Z 100438ac f i FIMGlib:pixel.obj
+ 0001:00042a6c       ??$convertPixelsCore@UPxARGB4@@UPxARGB1555@@@@YAXPAXHHHIIIPBXHHHIIIHHHHHH@Z 10043a6c f i FIMGlib:pixel.obj
+ 0001:00042c64       ??$convertPixelsCore@UPxRGB565@@UPxARGB1555@@@@YAXPAXHHHIIIPBXHHHIIIHHHHHH@Z 10043c64 f i FIMGlib:pixel.obj
+ 0001:00042e30       ??$convertPixelsCore@UPxRGB5@@UPxARGB1555@@@@YAXPAXHHHIIIPBXHHHIIIHHHHHH@Z 10043e30 f i FIMGlib:pixel.obj
+ 0001:00042ffc       ??$convertPixelsCore@UPxARGB1555@@U1@@@YAXPAXHHHIIIPBXHHHIIIHHHHHH@Z 10043ffc f i FIMGlib:pixel.obj
+ 0001:000431fc       ??$convertPixelsCore@UPxLUMINANCE8@@UPxARGB1555@@@@YAXPAXHHHIIIPBXHHHIIIHHHHHH@Z 100441fc f i FIMGlib:pixel.obj
+ 0001:0004336c       ??$convertPixelsCore@UPxLUMINANCE_ALPHA88@@UPxARGB1555@@@@YAXPAXHHHIIIPBXHHHIIIHHHHHH@Z 1004436c f i FIMGlib:pixel.obj
+ 0001:00043504       ??$convertPixelsCore@UPxLUMINANCE_ALPHA80@@UPxARGB1555@@@@YAXPAXHHHIIIPBXHHHIIIHHHHHH@Z 10044504 f i FIMGlib:pixel.obj
+ 0001:00043684       ??$convertPixelsCore@UPxLUMINANCE_ALPHA08@@UPxARGB1555@@@@YAXPAXHHHIIIPBXHHHIIIHHHHHH@Z 10044684 f i FIMGlib:pixel.obj
+ 0001:00043808       ??$convertPixelsCore@UPxABGR8@@UPxARGB1555@@@@YAXPAXHHHIIIPBXHHHIIIHHHHHH@Z 10044808 f i FIMGlib:pixel.obj
+ 0001:000439ec       ??$convertPixelsCore@UPxBGR8@@UPxARGB1555@@@@YAXPAXHHHIIIPBXHHHIIIHHHHHH@Z 100449ec f i FIMGlib:pixel.obj
+ 0001:00043bb8       ??$convertPixelsCore@UPxRGBA4@@UPxARGB1555@@@@YAXPAXHHHIIIPBXHHHIIIHHHHHH@Z 10044bb8 f i FIMGlib:pixel.obj
+ 0001:00043da8       ??$convertPixelsCore@UPxRGBA5551@@UPxARGB1555@@@@YAXPAXHHHIIIPBXHHHIIIHHHHHH@Z 10044da8 f i FIMGlib:pixel.obj
+ 0001:00043fbc       ??$convertPixelsCore@UPxALPHA_LIMUNANCE88@@UPxARGB1555@@@@YAXPAXHHHIIIPBXHHHIIIHHHHHH@Z 10044fbc f i FIMGlib:pixel.obj
+ 0001:00044154       ??$convertPixelsCore@UPxALPHA8@@UPxARGB1555@@@@YAXPAXHHHIIIPBXHHHIIIHHHHHH@Z 10045154 f i FIMGlib:pixel.obj
+ 0001:000442cc       ??$convertPixelsCore@UPxARGB8@@UPxLUMINANCE8@@@@YAXPAXHHHIIIPBXHHHIIIHHHHHH@Z 100452cc f i FIMGlib:pixel.obj
+ 0001:0004444c       ??$convertPixelsCore@UPxARGB0888@@UPxLUMINANCE8@@@@YAXPAXHHHIIIPBXHHHIIIHHHHHH@Z 1004544c f i FIMGlib:pixel.obj
+ 0001:000445cc       ??$convertPixelsCore@UPxRGB8@@UPxLUMINANCE8@@@@YAXPAXHHHIIIPBXHHHIIIHHHHHH@Z 100455cc f i FIMGlib:pixel.obj
+ 0001:00044750       ??$convertPixelsCore@UPxARGB4@@UPxLUMINANCE8@@@@YAXPAXHHHIIIPBXHHHIIIHHHHHH@Z 10045750 f i FIMGlib:pixel.obj
+ 0001:000448c0       ??$convertPixelsCore@UPxRGB565@@UPxLUMINANCE8@@@@YAXPAXHHHIIIPBXHHHIIIHHHHHH@Z 100458c0 f i FIMGlib:pixel.obj
+ 0001:00044a30       ??$convertPixelsCore@UPxRGB5@@UPxLUMINANCE8@@@@YAXPAXHHHIIIPBXHHHIIIHHHHHH@Z 10045a30 f i FIMGlib:pixel.obj
+ 0001:00044ba0       ??$convertPixelsCore@UPxARGB1555@@UPxLUMINANCE8@@@@YAXPAXHHHIIIPBXHHHIIIHHHHHH@Z 10045ba0 f i FIMGlib:pixel.obj
+ 0001:00044d10       ??$convertPixelsCore@UPxLUMINANCE8@@U1@@@YAXPAXHHHIIIPBXHHHIIIHHHHHH@Z 10045d10 f i FIMGlib:pixel.obj
+ 0001:00044e68       ??$convertPixelsCore@UPxLUMINANCE_ALPHA88@@UPxLUMINANCE8@@@@YAXPAXHHHIIIPBXHHHIIIHHHHHH@Z 10045e68 f i FIMGlib:pixel.obj
+ 0001:00044fc4       ??$convertPixelsCore@UPxLUMINANCE_ALPHA80@@UPxLUMINANCE8@@@@YAXPAXHHHIIIPBXHHHIIIHHHHHH@Z 10045fc4 f i FIMGlib:pixel.obj
+ 0001:00045120       ??$convertPixelsCore@UPxLUMINANCE_ALPHA08@@UPxLUMINANCE8@@@@YAXPAXHHHIIIPBXHHHIIIHHHHHH@Z 10046120 f i FIMGlib:pixel.obj
+ 0001:000451d8       ??$convertPixelsCore@UPxABGR8@@UPxLUMINANCE8@@@@YAXPAXHHHIIIPBXHHHIIIHHHHHH@Z 100461d8 f i FIMGlib:pixel.obj
+ 0001:00045358       ??$convertPixelsCore@UPxBGR8@@UPxLUMINANCE8@@@@YAXPAXHHHIIIPBXHHHIIIHHHHHH@Z 10046358 f i FIMGlib:pixel.obj
+ 0001:000454e0       ??$convertPixelsCore@UPxRGBA4@@UPxLUMINANCE8@@@@YAXPAXHHHIIIPBXHHHIIIHHHHHH@Z 100464e0 f i FIMGlib:pixel.obj
+ 0001:00045650       ??$convertPixelsCore@UPxRGBA5551@@UPxLUMINANCE8@@@@YAXPAXHHHIIIPBXHHHIIIHHHHHH@Z 10046650 f i FIMGlib:pixel.obj
+ 0001:000457c0       ??$convertPixelsCore@UPxALPHA_LIMUNANCE88@@UPxLUMINANCE8@@@@YAXPAXHHHIIIPBXHHHIIIHHHHHH@Z 100467c0 f i FIMGlib:pixel.obj
+ 0001:0004591c       ??$convertPixelsCore@UPxALPHA8@@UPxLUMINANCE8@@@@YAXPAXHHHIIIPBXHHHIIIHHHHHH@Z 1004691c f i FIMGlib:pixel.obj
+ 0001:000459c4       ??$convertPixelsCore@UPxARGB8@@UPxLUMINANCE_ALPHA88@@@@YAXPAXHHHIIIPBXHHHIIIHHHHHH@Z 100469c4 f i FIMGlib:pixel.obj
+ 0001:00045b60       ??$convertPixelsCore@UPxARGB0888@@UPxLUMINANCE_ALPHA88@@@@YAXPAXHHHIIIPBXHHHIIIHHHHHH@Z 10046b60 f i FIMGlib:pixel.obj
+ 0001:00045cec       ??$convertPixelsCore@UPxRGB8@@UPxLUMINANCE_ALPHA88@@@@YAXPAXHHHIIIPBXHHHIIIHHHHHH@Z 10046cec f i FIMGlib:pixel.obj
+ 0001:00045e7c       ??$convertPixelsCore@UPxARGB4@@UPxLUMINANCE_ALPHA88@@@@YAXPAXHHHIIIPBXHHHIIIHHHHHH@Z 10046e7c f i FIMGlib:pixel.obj
+ 0001:00046004       ??$convertPixelsCore@UPxRGB565@@UPxLUMINANCE_ALPHA88@@@@YAXPAXHHHIIIPBXHHHIIIHHHHHH@Z 10047004 f i FIMGlib:pixel.obj
+ 0001:00046174       ??$convertPixelsCore@UPxRGB5@@UPxLUMINANCE_ALPHA88@@@@YAXPAXHHHIIIPBXHHHIIIHHHHHH@Z 10047174 f i FIMGlib:pixel.obj
+ 0001:000462e8       ??$convertPixelsCore@UPxARGB1555@@UPxLUMINANCE_ALPHA88@@@@YAXPAXHHHIIIPBXHHHIIIHHHHHH@Z 100472e8 f i FIMGlib:pixel.obj
+ 0001:0004647c       ??$convertPixelsCore@UPxLUMINANCE8@@UPxLUMINANCE_ALPHA88@@@@YAXPAXHHHIIIPBXHHHIIIHHHHHH@Z 1004747c f i FIMGlib:pixel.obj
+ 0001:000465d8       ??$convertPixelsCore@UPxLUMINANCE_ALPHA88@@U1@@@YAXPAXHHHIIIPBXHHHIIIHHHHHH@Z 100475d8 f i FIMGlib:pixel.obj
+ 0001:00046748       ??$convertPixelsCore@UPxLUMINANCE_ALPHA80@@UPxLUMINANCE_ALPHA88@@@@YAXPAXHHHIIIPBXHHHIIIHHHHHH@Z 10047748 f i FIMGlib:pixel.obj
+ 0001:000468b0       ??$convertPixelsCore@UPxLUMINANCE_ALPHA08@@UPxLUMINANCE_ALPHA88@@@@YAXPAXHHHIIIPBXHHHIIIHHHHHH@Z 100478b0 f i FIMGlib:pixel.obj
+ 0001:00046a20       ??$convertPixelsCore@UPxABGR8@@UPxLUMINANCE_ALPHA88@@@@YAXPAXHHHIIIPBXHHHIIIHHHHHH@Z 10047a20 f i FIMGlib:pixel.obj
+ 0001:00046bbc       ??$convertPixelsCore@UPxBGR8@@UPxLUMINANCE_ALPHA88@@@@YAXPAXHHHIIIPBXHHHIIIHHHHHH@Z 10047bbc f i FIMGlib:pixel.obj
+ 0001:00046d4c       ??$convertPixelsCore@UPxRGBA4@@UPxLUMINANCE_ALPHA88@@@@YAXPAXHHHIIIPBXHHHIIIHHHHHH@Z 10047d4c f i FIMGlib:pixel.obj
+ 0001:00046ed8       ??$convertPixelsCore@UPxRGBA5551@@UPxLUMINANCE_ALPHA88@@@@YAXPAXHHHIIIPBXHHHIIIHHHHHH@Z 10047ed8 f i FIMGlib:pixel.obj
+ 0001:00047064       ??$convertPixelsCore@UPxALPHA_LIMUNANCE88@@UPxLUMINANCE_ALPHA88@@@@YAXPAXHHHIIIPBXHHHIIIHHHHHH@Z 10048064 f i FIMGlib:pixel.obj
+ 0001:000471d4       ??$convertPixelsCore@UPxALPHA8@@UPxLUMINANCE_ALPHA88@@@@YAXPAXHHHIIIPBXHHHIIIHHHHHH@Z 100481d4 f i FIMGlib:pixel.obj
+ 0001:00047338       ??$convertPixelsCore@UPxARGB8@@UPxLUMINANCE_ALPHA80@@@@YAXPAXHHHIIIPBXHHHIIIHHHHHH@Z 10048338 f i FIMGlib:pixel.obj
+ 0001:000474c4       ??$convertPixelsCore@UPxARGB0888@@UPxLUMINANCE_ALPHA80@@@@YAXPAXHHHIIIPBXHHHIIIHHHHHH@Z 100484c4 f i FIMGlib:pixel.obj
+ 0001:00047650       ??$convertPixelsCore@UPxRGB8@@UPxLUMINANCE_ALPHA80@@@@YAXPAXHHHIIIPBXHHHIIIHHHHHH@Z 10048650 f i FIMGlib:pixel.obj
+ 0001:000477e0       ??$convertPixelsCore@UPxARGB4@@UPxLUMINANCE_ALPHA80@@@@YAXPAXHHHIIIPBXHHHIIIHHHHHH@Z 100487e0 f i FIMGlib:pixel.obj
+ 0001:00047954       ??$convertPixelsCore@UPxRGB565@@UPxLUMINANCE_ALPHA80@@@@YAXPAXHHHIIIPBXHHHIIIHHHHHH@Z 10048954 f i FIMGlib:pixel.obj
+ 0001:00047ac4       ??$convertPixelsCore@UPxRGB5@@UPxLUMINANCE_ALPHA80@@@@YAXPAXHHHIIIPBXHHHIIIHHHHHH@Z 10048ac4 f i FIMGlib:pixel.obj
+ 0001:00047c38       ??$convertPixelsCore@UPxARGB1555@@UPxLUMINANCE_ALPHA80@@@@YAXPAXHHHIIIPBXHHHIIIHHHHHH@Z 10048c38 f i FIMGlib:pixel.obj
+ 0001:00047dac       ??$convertPixelsCore@UPxLUMINANCE8@@UPxLUMINANCE_ALPHA80@@@@YAXPAXHHHIIIPBXHHHIIIHHHHHH@Z 10048dac f i FIMGlib:pixel.obj
+ 0001:00047f08       ??$convertPixelsCore@UPxLUMINANCE_ALPHA88@@UPxLUMINANCE_ALPHA80@@@@YAXPAXHHHIIIPBXHHHIIIHHHHHH@Z 10048f08 f i FIMGlib:pixel.obj
+ 0001:00048070       ??$convertPixelsCore@UPxLUMINANCE_ALPHA80@@U1@@@YAXPAXHHHIIIPBXHHHIIIHHHHHH@Z 10049070 f i FIMGlib:pixel.obj
+ 0001:000481d8       ??$convertPixelsCore@UPxLUMINANCE_ALPHA08@@UPxLUMINANCE_ALPHA80@@@@YAXPAXHHHIIIPBXHHHIIIHHHHHH@Z 100491d8 f i FIMGlib:pixel.obj
+ 0001:00048290       ??$convertPixelsCore@UPxABGR8@@UPxLUMINANCE_ALPHA80@@@@YAXPAXHHHIIIPBXHHHIIIHHHHHH@Z 10049290 f i FIMGlib:pixel.obj
+ 0001:0004841c       ??$convertPixelsCore@UPxBGR8@@UPxLUMINANCE_ALPHA80@@@@YAXPAXHHHIIIPBXHHHIIIHHHHHH@Z 1004941c f i FIMGlib:pixel.obj
+ 0001:000485ac       ??$convertPixelsCore@UPxRGBA4@@UPxLUMINANCE_ALPHA80@@@@YAXPAXHHHIIIPBXHHHIIIHHHHHH@Z 100495ac f i FIMGlib:pixel.obj
+ 0001:0004871c       ??$convertPixelsCore@UPxRGBA5551@@UPxLUMINANCE_ALPHA80@@@@YAXPAXHHHIIIPBXHHHIIIHHHHHH@Z 1004971c f i FIMGlib:pixel.obj
+ 0001:0004888c       ??$convertPixelsCore@UPxALPHA_LIMUNANCE88@@UPxLUMINANCE_ALPHA80@@@@YAXPAXHHHIIIPBXHHHIIIHHHHHH@Z 1004988c f i FIMGlib:pixel.obj
+ 0001:000489f4       ??$convertPixelsCore@UPxALPHA8@@UPxLUMINANCE_ALPHA80@@@@YAXPAXHHHIIIPBXHHHIIIHHHHHH@Z 100499f4 f i FIMGlib:pixel.obj
+ 0001:00048a9c       ??$convertPixelsCore@UPxARGB8@@UPxLUMINANCE_ALPHA08@@@@YAXPAXHHHIIIPBXHHHIIIHHHHHH@Z 10049a9c f i FIMGlib:pixel.obj
+ 0001:00048c24       ??$convertPixelsCore@UPxARGB0888@@UPxLUMINANCE_ALPHA08@@@@YAXPAXHHHIIIPBXHHHIIIHHHHHH@Z 10049c24 f i FIMGlib:pixel.obj
+ 0001:00048ce8       ??$convertPixelsCore@UPxRGB8@@UPxLUMINANCE_ALPHA08@@@@YAXPAXHHHIIIPBXHHHIIIHHHHHH@Z 10049ce8 f i FIMGlib:pixel.obj
+ 0001:00048dac       ??$convertPixelsCore@UPxARGB4@@UPxLUMINANCE_ALPHA08@@@@YAXPAXHHHIIIPBXHHHIIIHHHHHH@Z 10049dac f i FIMGlib:pixel.obj
+ 0001:00048f1c       ??$convertPixelsCore@UPxRGB565@@UPxLUMINANCE_ALPHA08@@@@YAXPAXHHHIIIPBXHHHIIIHHHHHH@Z 10049f1c f i FIMGlib:pixel.obj
+ 0001:00048fd4       ??$convertPixelsCore@UPxRGB5@@UPxLUMINANCE_ALPHA08@@@@YAXPAXHHHIIIPBXHHHIIIHHHHHH@Z 10049fd4 f i FIMGlib:pixel.obj
+ 0001:0004908c       ??$convertPixelsCore@UPxARGB1555@@UPxLUMINANCE_ALPHA08@@@@YAXPAXHHHIIIPBXHHHIIIHHHHHH@Z 1004a08c f i FIMGlib:pixel.obj
+ 0001:000491fc       ??$convertPixelsCore@UPxLUMINANCE8@@UPxLUMINANCE_ALPHA08@@@@YAXPAXHHHIIIPBXHHHIIIHHHHHH@Z 1004a1fc f i FIMGlib:pixel.obj
+ 0001:000492a4       ??$convertPixelsCore@UPxLUMINANCE_ALPHA88@@UPxLUMINANCE_ALPHA08@@@@YAXPAXHHHIIIPBXHHHIIIHHHHHH@Z 1004a2a4 f i FIMGlib:pixel.obj
+ 0001:0004940c       ??$convertPixelsCore@UPxLUMINANCE_ALPHA80@@UPxLUMINANCE_ALPHA08@@@@YAXPAXHHHIIIPBXHHHIIIHHHHHH@Z 1004a40c f i FIMGlib:pixel.obj
+ 0001:000494c4       ??$convertPixelsCore@UPxLUMINANCE_ALPHA08@@U1@@@YAXPAXHHHIIIPBXHHHIIIHHHHHH@Z 1004a4c4 f i FIMGlib:pixel.obj
+ 0001:0004962c       ??$convertPixelsCore@UPxABGR8@@UPxLUMINANCE_ALPHA08@@@@YAXPAXHHHIIIPBXHHHIIIHHHHHH@Z 1004a62c f i FIMGlib:pixel.obj
+ 0001:000497b4       ??$convertPixelsCore@UPxBGR8@@UPxLUMINANCE_ALPHA08@@@@YAXPAXHHHIIIPBXHHHIIIHHHHHH@Z 1004a7b4 f i FIMGlib:pixel.obj
+ 0001:0004987c       ??$convertPixelsCore@UPxRGBA4@@UPxLUMINANCE_ALPHA08@@@@YAXPAXHHHIIIPBXHHHIIIHHHHHH@Z 1004a87c f i FIMGlib:pixel.obj
+ 0001:000499f0       ??$convertPixelsCore@UPxRGBA5551@@UPxLUMINANCE_ALPHA08@@@@YAXPAXHHHIIIPBXHHHIIIHHHHHH@Z 1004a9f0 f i FIMGlib:pixel.obj
+ 0001:00049b64       ??$convertPixelsCore@UPxALPHA_LIMUNANCE88@@UPxLUMINANCE_ALPHA08@@@@YAXPAXHHHIIIPBXHHHIIIHHHHHH@Z 1004ab64 f i FIMGlib:pixel.obj
+ 0001:00049ccc       ??$convertPixelsCore@UPxALPHA8@@UPxLUMINANCE_ALPHA08@@@@YAXPAXHHHIIIPBXHHHIIIHHHHHH@Z 1004accc f i FIMGlib:pixel.obj
+ 0001:00049e28       ??$convertPixelsCore@UPxARGB8@@UPxABGR8@@@@YAXPAXHHHIIIPBXHHHIIIHHHHHH@Z 1004ae28 f i FIMGlib:pixel.obj
+ 0001:00049fd8       ??$convertPixelsCore@UPxARGB0888@@UPxABGR8@@@@YAXPAXHHHIIIPBXHHHIIIHHHHHH@Z 1004afd8 f i FIMGlib:pixel.obj
+ 0001:0004a18c       ??$convertPixelsCore@UPxRGB8@@UPxABGR8@@@@YAXPAXHHHIIIPBXHHHIIIHHHHHH@Z 1004b18c f i FIMGlib:pixel.obj
+ 0001:0004a334       ??$convertPixelsCore@UPxARGB4@@UPxABGR8@@@@YAXPAXHHHIIIPBXHHHIIIHHHHHH@Z 1004b334 f i FIMGlib:pixel.obj
+ 0001:0004a4f8       ??$convertPixelsCore@UPxRGB565@@UPxABGR8@@@@YAXPAXHHHIIIPBXHHHIIIHHHHHH@Z 1004b4f8 f i FIMGlib:pixel.obj
+ 0001:0004a6ac       ??$convertPixelsCore@UPxRGB5@@UPxABGR8@@@@YAXPAXHHHIIIPBXHHHIIIHHHHHH@Z 1004b6ac f i FIMGlib:pixel.obj
+ 0001:0004a864       ??$convertPixelsCore@UPxARGB1555@@UPxABGR8@@@@YAXPAXHHHIIIPBXHHHIIIHHHHHH@Z 1004b864 f i FIMGlib:pixel.obj
+ 0001:0004aa3c       ??$convertPixelsCore@UPxLUMINANCE8@@UPxABGR8@@@@YAXPAXHHHIIIPBXHHHIIIHHHHHH@Z 1004ba3c f i FIMGlib:pixel.obj
+ 0001:0004aba4       ??$convertPixelsCore@UPxLUMINANCE_ALPHA88@@UPxABGR8@@@@YAXPAXHHHIIIPBXHHHIIIHHHHHH@Z 1004bba4 f i FIMGlib:pixel.obj
+ 0001:0004ad2c       ??$convertPixelsCore@UPxLUMINANCE_ALPHA80@@UPxABGR8@@@@YAXPAXHHHIIIPBXHHHIIIHHHHHH@Z 1004bd2c f i FIMGlib:pixel.obj
+ 0001:0004aeac       ??$convertPixelsCore@UPxLUMINANCE_ALPHA08@@UPxABGR8@@@@YAXPAXHHHIIIPBXHHHIIIHHHHHH@Z 1004beac f i FIMGlib:pixel.obj
+ 0001:0004b034       ??$convertPixelsCore@UPxABGR8@@U1@@@YAXPAXHHHIIIPBXHHHIIIHHHHHH@Z 1004c034 f i FIMGlib:pixel.obj
+ 0001:0004b1e4       ??$convertPixelsCore@UPxBGR8@@UPxABGR8@@@@YAXPAXHHHIIIPBXHHHIIIHHHHHH@Z 1004c1e4 f i FIMGlib:pixel.obj
+ 0001:0004b390       ??$convertPixelsCore@UPxRGBA4@@UPxABGR8@@@@YAXPAXHHHIIIPBXHHHIIIHHHHHH@Z 1004c390 f i FIMGlib:pixel.obj
+ 0001:0004b554       ??$convertPixelsCore@UPxRGBA5551@@UPxABGR8@@@@YAXPAXHHHIIIPBXHHHIIIHHHHHH@Z 1004c554 f i FIMGlib:pixel.obj
+ 0001:0004b72c       ??$convertPixelsCore@UPxALPHA_LIMUNANCE88@@UPxABGR8@@@@YAXPAXHHHIIIPBXHHHIIIHHHHHH@Z 1004c72c f i FIMGlib:pixel.obj
+ 0001:0004b8b4       ??$convertPixelsCore@UPxALPHA8@@UPxABGR8@@@@YAXPAXHHHIIIPBXHHHIIIHHHHHH@Z 1004c8b4 f i FIMGlib:pixel.obj
+ 0001:0004ba24       ??$convertPixelsCore@UPxARGB8@@UPxBGR8@@@@YAXPAXHHHIIIPBXHHHIIIHHHHHH@Z 1004ca24 f i FIMGlib:pixel.obj
+ 0001:0004bbe8       ??$convertPixelsCore@UPxARGB0888@@UPxBGR8@@@@YAXPAXHHHIIIPBXHHHIIIHHHHHH@Z 1004cbe8 f i FIMGlib:pixel.obj
+ 0001:0004bdac       ??$convertPixelsCore@UPxRGB8@@UPxBGR8@@@@YAXPAXHHHIIIPBXHHHIIIHHHHHH@Z 1004cdac f i FIMGlib:pixel.obj
+ 0001:0004bf64       ??$convertPixelsCore@UPxARGB4@@UPxBGR8@@@@YAXPAXHHHIIIPBXHHHIIIHHHHHH@Z 1004cf64 f i FIMGlib:pixel.obj
+ 0001:0004c120       ??$convertPixelsCore@UPxRGB565@@UPxBGR8@@@@YAXPAXHHHIIIPBXHHHIIIHHHHHH@Z 1004d120 f i FIMGlib:pixel.obj
+ 0001:0004c2d8       ??$convertPixelsCore@UPxRGB5@@UPxBGR8@@@@YAXPAXHHHIIIPBXHHHIIIHHHHHH@Z 1004d2d8 f i FIMGlib:pixel.obj
+ 0001:0004c494       ??$convertPixelsCore@UPxARGB1555@@UPxBGR8@@@@YAXPAXHHHIIIPBXHHHIIIHHHHHH@Z 1004d494 f i FIMGlib:pixel.obj
+ 0001:0004c654       ??$convertPixelsCore@UPxLUMINANCE8@@UPxBGR8@@@@YAXPAXHHHIIIPBXHHHIIIHHHHHH@Z 1004d654 f i FIMGlib:pixel.obj
+ 0001:0004c7d4       ??$convertPixelsCore@UPxLUMINANCE_ALPHA88@@UPxBGR8@@@@YAXPAXHHHIIIPBXHHHIIIHHHHHH@Z 1004d7d4 f i FIMGlib:pixel.obj
+ 0001:0004c964       ??$convertPixelsCore@UPxLUMINANCE_ALPHA80@@UPxBGR8@@@@YAXPAXHHHIIIPBXHHHIIIHHHHHH@Z 1004d964 f i FIMGlib:pixel.obj
+ 0001:0004caf4       ??$convertPixelsCore@UPxLUMINANCE_ALPHA08@@UPxBGR8@@@@YAXPAXHHHIIIPBXHHHIIIHHHHHH@Z 1004daf4 f i FIMGlib:pixel.obj
+ 0001:0004cbac       ??$convertPixelsCore@UPxABGR8@@UPxBGR8@@@@YAXPAXHHHIIIPBXHHHIIIHHHHHH@Z 1004dbac f i FIMGlib:pixel.obj
+ 0001:0004cd70       ??$convertPixelsCore@UPxBGR8@@U1@@@YAXPAXHHHIIIPBXHHHIIIHHHHHH@Z 1004dd70 f i FIMGlib:pixel.obj
+ 0001:0004cf28       ??$convertPixelsCore@UPxRGBA4@@UPxBGR8@@@@YAXPAXHHHIIIPBXHHHIIIHHHHHH@Z 1004df28 f i FIMGlib:pixel.obj
+ 0001:0004d0e0       ??$convertPixelsCore@UPxRGBA5551@@UPxBGR8@@@@YAXPAXHHHIIIPBXHHHIIIHHHHHH@Z 1004e0e0 f i FIMGlib:pixel.obj
+ 0001:0004d2a0       ??$convertPixelsCore@UPxALPHA_LIMUNANCE88@@UPxBGR8@@@@YAXPAXHHHIIIPBXHHHIIIHHHHHH@Z 1004e2a0 f i FIMGlib:pixel.obj
+ 0001:0004d430       ??$convertPixelsCore@UPxALPHA8@@UPxBGR8@@@@YAXPAXHHHIIIPBXHHHIIIHHHHHH@Z 1004e430 f i FIMGlib:pixel.obj
+ 0001:0004d4d8       ??$convertPixelsCore@UPxARGB8@@UPxRGBA4@@@@YAXPAXHHHIIIPBXHHHIIIHHHHHH@Z 1004e4d8 f i FIMGlib:pixel.obj
+ 0001:0004d6a8       ??$convertPixelsCore@UPxARGB0888@@UPxRGBA4@@@@YAXPAXHHHIIIPBXHHHIIIHHHHHH@Z 1004e6a8 f i FIMGlib:pixel.obj
+ 0001:0004d86c       ??$convertPixelsCore@UPxRGB8@@UPxRGBA4@@@@YAXPAXHHHIIIPBXHHHIIIHHHHHH@Z 1004e86c f i FIMGlib:pixel.obj
+ 0001:0004da24       ??$convertPixelsCore@UPxARGB4@@UPxRGBA4@@@@YAXPAXHHHIIIPBXHHHIIIHHHHHH@Z 1004ea24 f i FIMGlib:pixel.obj
+ 0001:0004dc00       ??$convertPixelsCore@UPxRGB565@@UPxRGBA4@@@@YAXPAXHHHIIIPBXHHHIIIHHHHHH@Z 1004ec00 f i FIMGlib:pixel.obj
+ 0001:0004ddc8       ??$convertPixelsCore@UPxRGB5@@UPxRGBA4@@@@YAXPAXHHHIIIPBXHHHIIIHHHHHH@Z 1004edc8 f i FIMGlib:pixel.obj
+ 0001:0004df94       ??$convertPixelsCore@UPxARGB1555@@UPxRGBA4@@@@YAXPAXHHHIIIPBXHHHIIIHHHHHH@Z 1004ef94 f i FIMGlib:pixel.obj
+ 0001:0004e184       ??$convertPixelsCore@UPxLUMINANCE8@@UPxRGBA4@@@@YAXPAXHHHIIIPBXHHHIIIHHHHHH@Z 1004f184 f i FIMGlib:pixel.obj
+ 0001:0004e2f0       ??$convertPixelsCore@UPxLUMINANCE_ALPHA88@@UPxRGBA4@@@@YAXPAXHHHIIIPBXHHHIIIHHHHHH@Z 1004f2f0 f i FIMGlib:pixel.obj
+ 0001:0004e474       ??$convertPixelsCore@UPxLUMINANCE_ALPHA80@@UPxRGBA4@@@@YAXPAXHHHIIIPBXHHHIIIHHHHHH@Z 1004f474 f i FIMGlib:pixel.obj
+ 0001:0004e5e8       ??$convertPixelsCore@UPxLUMINANCE_ALPHA08@@UPxRGBA4@@@@YAXPAXHHHIIIPBXHHHIIIHHHHHH@Z 1004f5e8 f i FIMGlib:pixel.obj
+ 0001:0004e758       ??$convertPixelsCore@UPxABGR8@@UPxRGBA4@@@@YAXPAXHHHIIIPBXHHHIIIHHHHHH@Z 1004f758 f i FIMGlib:pixel.obj
+ 0001:0004e930       ??$convertPixelsCore@UPxBGR8@@UPxRGBA4@@@@YAXPAXHHHIIIPBXHHHIIIHHHHHH@Z 1004f930 f i FIMGlib:pixel.obj
+ 0001:0004eaf8       ??$convertPixelsCore@UPxRGBA4@@U1@@@YAXPAXHHHIIIPBXHHHIIIHHHHHH@Z 1004faf8 f i FIMGlib:pixel.obj
+ 0001:0004ecdc       ??$convertPixelsCore@UPxRGBA5551@@UPxRGBA4@@@@YAXPAXHHHIIIPBXHHHIIIHHHHHH@Z 1004fcdc f i FIMGlib:pixel.obj
+ 0001:0004eecc       ??$convertPixelsCore@UPxALPHA_LIMUNANCE88@@UPxRGBA4@@@@YAXPAXHHHIIIPBXHHHIIIHHHHHH@Z 1004fecc f i FIMGlib:pixel.obj
+ 0001:0004f050       ??$convertPixelsCore@UPxALPHA8@@UPxRGBA4@@@@YAXPAXHHHIIIPBXHHHIIIHHHHHH@Z 10050050 f i FIMGlib:pixel.obj
+ 0001:0004f1b4       ??$convertPixelsCore@UPxARGB8@@UPxRGBA5551@@@@YAXPAXHHHIIIPBXHHHIIIHHHHHH@Z 100501b4 f i FIMGlib:pixel.obj
+ 0001:0004f384       ??$convertPixelsCore@UPxARGB0888@@UPxRGBA5551@@@@YAXPAXHHHIIIPBXHHHIIIHHHHHH@Z 10050384 f i FIMGlib:pixel.obj
+ 0001:0004f554       ??$convertPixelsCore@UPxRGB8@@UPxRGBA5551@@@@YAXPAXHHHIIIPBXHHHIIIHHHHHH@Z 10050554 f i FIMGlib:pixel.obj
+ 0001:0004f718       ??$convertPixelsCore@UPxARGB4@@UPxRGBA5551@@@@YAXPAXHHHIIIPBXHHHIIIHHHHHH@Z 10050718 f i FIMGlib:pixel.obj
+ 0001:0004f900       ??$convertPixelsCore@UPxRGB565@@UPxRGBA5551@@@@YAXPAXHHHIIIPBXHHHIIIHHHHHH@Z 10050900 f i FIMGlib:pixel.obj
+ 0001:0004fad0       ??$convertPixelsCore@UPxRGB5@@UPxRGBA5551@@@@YAXPAXHHHIIIPBXHHHIIIHHHHHH@Z 10050ad0 f i FIMGlib:pixel.obj
+ 0001:0004fca0       ??$convertPixelsCore@UPxARGB1555@@UPxRGBA5551@@@@YAXPAXHHHIIIPBXHHHIIIHHHHHH@Z 10050ca0 f i FIMGlib:pixel.obj
+ 0001:0004fe94       ??$convertPixelsCore@UPxLUMINANCE8@@UPxRGBA5551@@@@YAXPAXHHHIIIPBXHHHIIIHHHHHH@Z 10050e94 f i FIMGlib:pixel.obj
+ 0001:00050004       ??$convertPixelsCore@UPxLUMINANCE_ALPHA88@@UPxRGBA5551@@@@YAXPAXHHHIIIPBXHHHIIIHHHHHH@Z 10051004 f i FIMGlib:pixel.obj
+ 0001:00050194       ??$convertPixelsCore@UPxLUMINANCE_ALPHA80@@UPxRGBA5551@@@@YAXPAXHHHIIIPBXHHHIIIHHHHHH@Z 10051194 f i FIMGlib:pixel.obj
+ 0001:00050314       ??$convertPixelsCore@UPxLUMINANCE_ALPHA08@@UPxRGBA5551@@@@YAXPAXHHHIIIPBXHHHIIIHHHHHH@Z 10051314 f i FIMGlib:pixel.obj
+ 0001:00050488       ??$convertPixelsCore@UPxABGR8@@UPxRGBA5551@@@@YAXPAXHHHIIIPBXHHHIIIHHHHHH@Z 10051488 f i FIMGlib:pixel.obj
+ 0001:00050660       ??$convertPixelsCore@UPxBGR8@@UPxRGBA5551@@@@YAXPAXHHHIIIPBXHHHIIIHHHHHH@Z 10051660 f i FIMGlib:pixel.obj
+ 0001:00050830       ??$convertPixelsCore@UPxRGBA4@@UPxRGBA5551@@@@YAXPAXHHHIIIPBXHHHIIIHHHHHH@Z 10051830 f i FIMGlib:pixel.obj
+ 0001:00050a1c       ??$convertPixelsCore@UPxRGBA5551@@U1@@@YAXPAXHHHIIIPBXHHHIIIHHHHHH@Z 10051a1c f i FIMGlib:pixel.obj
+ 0001:00050c1c       ??$convertPixelsCore@UPxALPHA_LIMUNANCE88@@UPxRGBA5551@@@@YAXPAXHHHIIIPBXHHHIIIHHHHHH@Z 10051c1c f i FIMGlib:pixel.obj
+ 0001:00050dac       ??$convertPixelsCore@UPxALPHA8@@UPxRGBA5551@@@@YAXPAXHHHIIIPBXHHHIIIHHHHHH@Z 10051dac f i FIMGlib:pixel.obj
+ 0001:00050f14       ??$convertPixelsCore@UPxARGB8@@UPxALPHA_LIMUNANCE88@@@@YAXPAXHHHIIIPBXHHHIIIHHHHHH@Z 10051f14 f i FIMGlib:pixel.obj
+ 0001:000510b0       ??$convertPixelsCore@UPxARGB0888@@UPxALPHA_LIMUNANCE88@@@@YAXPAXHHHIIIPBXHHHIIIHHHHHH@Z 100520b0 f i FIMGlib:pixel.obj
+ 0001:0005123c       ??$convertPixelsCore@UPxRGB8@@UPxALPHA_LIMUNANCE88@@@@YAXPAXHHHIIIPBXHHHIIIHHHHHH@Z 1005223c f i FIMGlib:pixel.obj
+ 0001:000513cc       ??$convertPixelsCore@UPxARGB4@@UPxALPHA_LIMUNANCE88@@@@YAXPAXHHHIIIPBXHHHIIIHHHHHH@Z 100523cc f i FIMGlib:pixel.obj
+ 0001:00051554       ??$convertPixelsCore@UPxRGB565@@UPxALPHA_LIMUNANCE88@@@@YAXPAXHHHIIIPBXHHHIIIHHHHHH@Z 10052554 f i FIMGlib:pixel.obj
+ 0001:000516c4       ??$convertPixelsCore@UPxRGB5@@UPxALPHA_LIMUNANCE88@@@@YAXPAXHHHIIIPBXHHHIIIHHHHHH@Z 100526c4 f i FIMGlib:pixel.obj
+ 0001:00051838       ??$convertPixelsCore@UPxARGB1555@@UPxALPHA_LIMUNANCE88@@@@YAXPAXHHHIIIPBXHHHIIIHHHHHH@Z 10052838 f i FIMGlib:pixel.obj
+ 0001:000519cc       ??$convertPixelsCore@UPxLUMINANCE8@@UPxALPHA_LIMUNANCE88@@@@YAXPAXHHHIIIPBXHHHIIIHHHHHH@Z 100529cc f i FIMGlib:pixel.obj
+ 0001:00051b28       ??$convertPixelsCore@UPxLUMINANCE_ALPHA88@@UPxALPHA_LIMUNANCE88@@@@YAXPAXHHHIIIPBXHHHIIIHHHHHH@Z 10052b28 f i FIMGlib:pixel.obj
+ 0001:00051c98       ??$convertPixelsCore@UPxLUMINANCE_ALPHA80@@UPxALPHA_LIMUNANCE88@@@@YAXPAXHHHIIIPBXHHHIIIHHHHHH@Z 10052c98 f i FIMGlib:pixel.obj
+ 0001:00051e00       ??$convertPixelsCore@UPxLUMINANCE_ALPHA08@@UPxALPHA_LIMUNANCE88@@@@YAXPAXHHHIIIPBXHHHIIIHHHHHH@Z 10052e00 f i FIMGlib:pixel.obj
+ 0001:00051f70       ??$convertPixelsCore@UPxABGR8@@UPxALPHA_LIMUNANCE88@@@@YAXPAXHHHIIIPBXHHHIIIHHHHHH@Z 10052f70 f i FIMGlib:pixel.obj
+ 0001:0005210c       ??$convertPixelsCore@UPxBGR8@@UPxALPHA_LIMUNANCE88@@@@YAXPAXHHHIIIPBXHHHIIIHHHHHH@Z 1005310c f i FIMGlib:pixel.obj
+ 0001:0005229c       ??$convertPixelsCore@UPxRGBA4@@UPxALPHA_LIMUNANCE88@@@@YAXPAXHHHIIIPBXHHHIIIHHHHHH@Z 1005329c f i FIMGlib:pixel.obj
+ 0001:00052428       ??$convertPixelsCore@UPxRGBA5551@@UPxALPHA_LIMUNANCE88@@@@YAXPAXHHHIIIPBXHHHIIIHHHHHH@Z 10053428 f i FIMGlib:pixel.obj
+ 0001:000525b4       ??$convertPixelsCore@UPxALPHA_LIMUNANCE88@@U1@@@YAXPAXHHHIIIPBXHHHIIIHHHHHH@Z 100535b4 f i FIMGlib:pixel.obj
+ 0001:00052724       ??$convertPixelsCore@UPxALPHA8@@UPxALPHA_LIMUNANCE88@@@@YAXPAXHHHIIIPBXHHHIIIHHHHHH@Z 10053724 f i FIMGlib:pixel.obj
+ 0001:00052888       ??$convertPixelsCore@UPxARGB8@@UPxALPHA8@@@@YAXPAXHHHIIIPBXHHHIIIHHHHHH@Z 10053888 f i FIMGlib:pixel.obj
+ 0001:00052a08       ??$convertPixelsCore@UPxARGB0888@@UPxALPHA8@@@@YAXPAXHHHIIIPBXHHHIIIHHHHHH@Z 10053a08 f i FIMGlib:pixel.obj
+ 0001:00052acc       ??$convertPixelsCore@UPxRGB8@@UPxALPHA8@@@@YAXPAXHHHIIIPBXHHHIIIHHHHHH@Z 10053acc f i FIMGlib:pixel.obj
+ 0001:00052b90       ??$convertPixelsCore@UPxARGB4@@UPxALPHA8@@@@YAXPAXHHHIIIPBXHHHIIIHHHHHH@Z 10053b90 f i FIMGlib:pixel.obj
+ 0001:00052d00       ??$convertPixelsCore@UPxRGB565@@UPxALPHA8@@@@YAXPAXHHHIIIPBXHHHIIIHHHHHH@Z 10053d00 f i FIMGlib:pixel.obj
+ 0001:00052db8       ??$convertPixelsCore@UPxRGB5@@UPxALPHA8@@@@YAXPAXHHHIIIPBXHHHIIIHHHHHH@Z 10053db8 f i FIMGlib:pixel.obj
+ 0001:00052e70       ??$convertPixelsCore@UPxARGB1555@@UPxALPHA8@@@@YAXPAXHHHIIIPBXHHHIIIHHHHHH@Z 10053e70 f i FIMGlib:pixel.obj
+ 0001:00052fe0       ??$convertPixelsCore@UPxLUMINANCE8@@UPxALPHA8@@@@YAXPAXHHHIIIPBXHHHIIIHHHHHH@Z 10053fe0 f i FIMGlib:pixel.obj
+ 0001:00053088       ??$convertPixelsCore@UPxLUMINANCE_ALPHA88@@UPxALPHA8@@@@YAXPAXHHHIIIPBXHHHIIIHHHHHH@Z 10054088 f i FIMGlib:pixel.obj
+ 0001:000531e8       ??$convertPixelsCore@UPxLUMINANCE_ALPHA80@@UPxALPHA8@@@@YAXPAXHHHIIIPBXHHHIIIHHHHHH@Z 100541e8 f i FIMGlib:pixel.obj
+ 0001:000532a0       ??$convertPixelsCore@UPxLUMINANCE_ALPHA08@@UPxALPHA8@@@@YAXPAXHHHIIIPBXHHHIIIHHHHHH@Z 100542a0 f i FIMGlib:pixel.obj
+ 0001:00053400       ??$convertPixelsCore@UPxABGR8@@UPxALPHA8@@@@YAXPAXHHHIIIPBXHHHIIIHHHHHH@Z 10054400 f i FIMGlib:pixel.obj
+ 0001:00053580       ??$convertPixelsCore@UPxBGR8@@UPxALPHA8@@@@YAXPAXHHHIIIPBXHHHIIIHHHHHH@Z 10054580 f i FIMGlib:pixel.obj
+ 0001:00053648       ??$convertPixelsCore@UPxRGBA4@@UPxALPHA8@@@@YAXPAXHHHIIIPBXHHHIIIHHHHHH@Z 10054648 f i FIMGlib:pixel.obj
+ 0001:000537b8       ??$convertPixelsCore@UPxRGBA5551@@UPxALPHA8@@@@YAXPAXHHHIIIPBXHHHIIIHHHHHH@Z 100547b8 f i FIMGlib:pixel.obj
+ 0001:00053928       ??$convertPixelsCore@UPxALPHA_LIMUNANCE88@@UPxALPHA8@@@@YAXPAXHHHIIIPBXHHHIIIHHHHHH@Z 10054928 f i FIMGlib:pixel.obj
+ 0001:00053a88       ??$convertPixelsCore@UPxALPHA8@@U1@@@YAXPAXHHHIIIPBXHHHIIIHHHHHH@Z 10054a88 f i FIMGlib:pixel.obj
+ 0001:00053be0       ??$convertFromRGBAData@UPxARGB1555@@@@YAGTPxRGBAData@@@Z 10054be0 f i FIMGlib:pixel.obj
+ 0001:00053c3c       ??$convertFromRGBAData@UPxRGBA5551@@@@YAGTPxRGBAData@@@Z 10054c3c f i FIMGlib:pixel.obj
+ 0001:00053ca0       ??$convertPixelsFrom@UPxARGB8@@@@YAXW4PxFmt@@PAXHHHIIIPBXHHHIIIHHHHHH@Z 10054ca0 f i FIMGlib:pixel.obj
+ 0001:000547b4       ??$convertPixelsFrom@UPxARGB0888@@@@YAXW4PxFmt@@PAXHHHIIIPBXHHHIIIHHHHHH@Z 100557b4 f i FIMGlib:pixel.obj
+ 0001:000552c8       ??$convertPixelsFrom@UPxRGB8@@@@YAXW4PxFmt@@PAXHHHIIIPBXHHHIIIHHHHHH@Z 100562c8 f i FIMGlib:pixel.obj
+ 0001:00055ddc       ??$convertPixelsFrom@UPxARGB4@@@@YAXW4PxFmt@@PAXHHHIIIPBXHHHIIIHHHHHH@Z 10056ddc f i FIMGlib:pixel.obj
+ 0001:000568f0       ??$convertPixelsFrom@UPxRGB565@@@@YAXW4PxFmt@@PAXHHHIIIPBXHHHIIIHHHHHH@Z 100578f0 f i FIMGlib:pixel.obj
+ 0001:00057404       ??$convertPixelsFrom@UPxRGB5@@@@YAXW4PxFmt@@PAXHHHIIIPBXHHHIIIHHHHHH@Z 10058404 f i FIMGlib:pixel.obj
+ 0001:00057f18       ??$convertPixelsFrom@UPxARGB1555@@@@YAXW4PxFmt@@PAXHHHIIIPBXHHHIIIHHHHHH@Z 10058f18 f i FIMGlib:pixel.obj
+ 0001:00058a2c       ??$convertPixelsFrom@UPxLUMINANCE8@@@@YAXW4PxFmt@@PAXHHHIIIPBXHHHIIIHHHHHH@Z 10059a2c f i FIMGlib:pixel.obj
+ 0001:00059540       ??$convertPixelsFrom@UPxLUMINANCE_ALPHA88@@@@YAXW4PxFmt@@PAXHHHIIIPBXHHHIIIHHHHHH@Z 1005a540 f i FIMGlib:pixel.obj
+ 0001:0005a054       ??$convertPixelsFrom@UPxLUMINANCE_ALPHA80@@@@YAXW4PxFmt@@PAXHHHIIIPBXHHHIIIHHHHHH@Z 1005b054 f i FIMGlib:pixel.obj
+ 0001:0005ab68       ??$convertPixelsFrom@UPxLUMINANCE_ALPHA08@@@@YAXW4PxFmt@@PAXHHHIIIPBXHHHIIIHHHHHH@Z 1005bb68 f i FIMGlib:pixel.obj
+ 0001:0005b67c       ??$convertPixelsFrom@UPxABGR8@@@@YAXW4PxFmt@@PAXHHHIIIPBXHHHIIIHHHHHH@Z 1005c67c f i FIMGlib:pixel.obj
+ 0001:0005c190       ??$convertPixelsFrom@UPxBGR8@@@@YAXW4PxFmt@@PAXHHHIIIPBXHHHIIIHHHHHH@Z 1005d190 f i FIMGlib:pixel.obj
+ 0001:0005cca4       ??$convertPixelsFrom@UPxRGBA4@@@@YAXW4PxFmt@@PAXHHHIIIPBXHHHIIIHHHHHH@Z 1005dca4 f i FIMGlib:pixel.obj
+ 0001:0005d7b8       ??$convertPixelsFrom@UPxRGBA5551@@@@YAXW4PxFmt@@PAXHHHIIIPBXHHHIIIHHHHHH@Z 1005e7b8 f i FIMGlib:pixel.obj
+ 0001:0005e2cc       ??$convertPixelsFrom@UPxALPHA_LIMUNANCE88@@@@YAXW4PxFmt@@PAXHHHIIIPBXHHHIIIHHHHHH@Z 1005f2cc f i FIMGlib:pixel.obj
+ 0001:0005ede0       ??$convertPixelsFrom@UPxALPHA8@@@@YAXW4PxFmt@@PAXHHHIIIPBXHHHIIIHHHHHH@Z 1005fde0 f i FIMGlib:pixel.obj
+ 0001:0005f8f4       ?convertFromRGBA@@YAIW4PxFmt@@TPxRGBAData@@@Z 100608f4 f   FIMGlib:pixel.obj
+ 0001:0005fb28       ?convertPixels@@YAXW4PxFmt@@PAXHHHIII0PBXHHHIIIHHHHHH@Z 10060b28 f   FIMGlib:pixel.obj
+ 0001:000606c8       ?convertFromRGBA@@YAIW4PxFmt@@MMMM@Z 100616c8 f   FIMGlib:pixel.obj
+ 0001:00060758       ?convertPixelsTexure@@YAXW4PxFmt@@PAXHH0PBX@Z 10061758 f   FIMGlib:pixel.obj
+ 0001:00060884       ?getColorMask@@YAIW4PxFmt@@_N111@Z 10061884 f   FIMGlib:pixel.obj
+ 0001:00060910       fglFlush                   10061910 f   FIMGlib:global.obj
+ 0001:00060980       fglClearCache              10061980 f   FIMGlib:global.obj
+ 0001:000609a8       fglGetVersion              100619a8 f   FIMGlib:global.obj
+ 0001:000609c8       ?InitShaderState@@YAHPAUOGLState@@@Z 100619c8 f   FIMGlib:glShader.obj
+ 0001:000609e8       ?getGLTypeString@@YAPBDI@Z 100619e8 f   FIMGlib:glShader.obj
+ 0001:00060b88       ?getNumComponents@@YAHI@Z  10061b88 f   FIMGlib:glShader.obj
+ 0001:00060c88       ?getNumSlots@@YAHI@Z       10061c88 f   FIMGlib:glShader.obj
+ 0001:00060d54       ?isSampler@@YA_NI@Z        10061d54 f   FIMGlib:glShader.obj
+ 0001:00060d9c       ?getBaseType@@YAII@Z       10061d9c f   FIMGlib:glShader.obj
+ 0001:00060e5c       ?shaderHeaderType@@YA?AW4ShaderType@@PBX@Z 10061e5c f   FIMGlib:glShader.obj
+ 0001:00060fa8       ?isAttached@Program@@QAA_NPAUShader@@@Z 10061fa8 f   FIMGlib:glShader.obj
+ 0001:00061020       ?validate@Program@@QAA_NXZ 10062020 f   FIMGlib:glShader.obj
+ 0001:00061028       ?_Lrotate@?$_Tree@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@U?$pair@$$CBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@UNameInfo@@@2@U_Kfn@?$map@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@UNameInfo@@U?$less@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@2@V?$allocator@UNameInfo@@@2@@2@U?$less@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@2@V?$allocator@UNameInfo@@@2@@std@@IAAXPAU_Node@12@@Z 10062028 f i FIMGlib:glShader.obj
+ 0001:000610a8       ?_Max@?$_Tree@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@U?$pair@$$CBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@UNameInfo@@@2@U_Kfn@?$map@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@UNameInfo@@U?$less@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@2@V?$allocator@UNameInfo@@@2@@2@U?$less@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@2@V?$allocator@UNameInfo@@@2@@std@@KAPAU_Node@12@PAU312@@Z 100620a8 f i FIMGlib:glShader.obj
+ 0001:000610e4       ?_Rrotate@?$_Tree@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@U?$pair@$$CBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@UNameInfo@@@2@U_Kfn@?$map@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@UNameInfo@@U?$less@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@2@V?$allocator@UNameInfo@@@2@@2@U?$less@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@2@V?$allocator@UNameInfo@@@2@@std@@IAAXPAU_Node@12@@Z 100620e4 f i FIMGlib:glShader.obj
+ 0001:0006116c       ?_Max@?$_Tree@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@U?$pair@$$CBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@H@2@U_Kfn@?$map@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@HU?$less@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@2@V?$allocator@H@2@@2@U?$less@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@2@V?$allocator@H@2@@std@@KAPAU_Node@12@PAU312@@Z 1006216c f i FIMGlib:glShader.obj
+ 0001:000611a8       ?_Dec@const_iterator@?$_Tree@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@U?$pair@$$CBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@UNameInfo@@@2@U_Kfn@?$map@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@UNameInfo@@U?$less@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@2@V?$allocator@UNameInfo@@@2@@2@U?$less@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@2@V?$allocator@UNameInfo@@@2@@std@@QAAXXZ 100621a8 f i FIMGlib:glShader.obj
+ 0001:00061260       ?_Dec@const_iterator@?$_Tree@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@U?$pair@$$CBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@H@2@U_Kfn@?$map@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@HU?$less@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@2@V?$allocator@H@2@@2@U?$less@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@2@V?$allocator@H@2@@std@@QAAXXZ 10062260 f i FIMGlib:glShader.obj
+ 0001:00061318       ?_Inc@const_iterator@?$_Tree@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@U?$pair@$$CBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@H@2@U_Kfn@?$map@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@HU?$less@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@2@V?$allocator@H@2@@2@U?$less@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@2@V?$allocator@H@2@@std@@QAAXXZ 10062318 f i FIMGlib:glShader.obj
+ 0001:000613bc       ?copyFrom@ShaderExecutable@@QAAXABU1@@Z 100623bc f   FIMGlib:glShader.obj
+ 0001:000614ec       ?copyFrom@Executable@@QAAXABU1@@Z 100624ec f   FIMGlib:glShader.obj
+ 0001:00061738       ?loadShaderBin@Shader@@QAAXPBXH@Z 10062738 f   FIMGlib:glShader.obj
+ 0001:00061838       ?find@ShaderProgNameList@@QBAPBUShaderProgramNameMap@@I@Z 10062838 f   FIMGlib:glShader.obj
+ 0001:00061868       ?getUnusedName@ShaderProgNameList@@QBAIXZ 10062868 f   FIMGlib:glShader.obj
+ 0001:0006189c       ?_Lrotate@?$_Tree@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@U?$pair@$$CBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@H@2@U_Kfn@?$map@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@HU?$less@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@2@V?$allocator@H@2@@2@U?$less@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@2@V?$allocator@H@2@@std@@IAAXPAU_Node@12@@Z 1006289c f i FIMGlib:glShader.obj
+ 0001:0006191c       ?_Rrotate@?$_Tree@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@U?$pair@$$CBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@H@2@U_Kfn@?$map@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@HU?$less@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@2@V?$allocator@H@2@@2@U?$less@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@2@V?$allocator@H@2@@std@@IAAXPAU_Node@12@@Z 1006291c f i FIMGlib:glShader.obj
+ 0001:000619a4       ??_GShader@@QAAPAXI@Z      100629a4 f i FIMGlib:glShader.obj
+ 0001:00061a48       ??0ShaderExecutable@@QAA@XZ 10062a48 f   FIMGlib:glShader.obj
+ 0001:00061ad8       ??0Shader@@QAA@W4ShaderType@@I@Z 10062ad8 f   FIMGlib:glShader.obj
+ 0001:00061b84       ??1UniformVar@@QAA@XZ      10062b84 f i FIMGlib:glShader.obj
+ 0001:00061bec       ?erase@?$vector@UShaderProgramNameMap@@V?$allocator@UShaderProgramNameMap@@@std@@@std@@QAAPAUShaderProgramNameMap@@PAU3@@Z 10062bec f i FIMGlib:glShader.obj
+ 0001:00061c48       ??R?$less@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@std@@QBA_NABV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@1@0@Z 10062c48 f i FIMGlib:glShader.obj
+ 0001:00061cbc       ?_Lbound@?$_Tree@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@U?$pair@$$CBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@UNameInfo@@@2@U_Kfn@?$map@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@UNameInfo@@U?$less@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@2@V?$allocator@UNameInfo@@@2@@2@U?$less@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@2@V?$allocator@UNameInfo@@@2@@std@@IBAPAU_Node@12@ABV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@2@@Z 10062cbc f i FIMGlib:glShader.obj
+ 0001:00061d64       ?_Lbound@?$_Tree@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@U?$pair@$$CBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@H@2@U_Kfn@?$map@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@HU?$less@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@2@V?$allocator@H@2@@2@U?$less@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@2@V?$allocator@H@2@@std@@IBAPAU_Node@12@ABV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@2@@Z 10062d64 f i FIMGlib:glShader.obj
+ 0001:00061e0c       ??$?9DU?$char_traits@D@std@@V?$allocator@D@1@@std@@YA_NABV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@0@0@Z 10062e0c f i FIMGlib:glShader.obj
+ 0001:00061e88       ?assign@?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@QAAAAV12@ABV12@II@Z 10062e88 f i FIMGlib:glShader.obj
+ 0001:00061fb0       ?erase@?$_Tree@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@U?$pair@$$CBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@UNameInfo@@@2@U_Kfn@?$map@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@UNameInfo@@U?$less@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@2@V?$allocator@UNameInfo@@@2@@2@U?$less@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@2@V?$allocator@UNameInfo@@@2@@std@@QAA?AViterator@12@V312@@Z 10062fb0 f i FIMGlib:glShader.obj
+ 0001:000624c4       ?_Erase@?$_Tree@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@U?$pair@$$CBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@UNameInfo@@@2@U_Kfn@?$map@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@UNameInfo@@U?$less@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@2@V?$allocator@UNameInfo@@@2@@2@U?$less@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@2@V?$allocator@UNameInfo@@@2@@std@@IAAXPAU_Node@12@@Z 100634c4 f i FIMGlib:glShader.obj
+ 0001:0006255c       ?erase@?$_Tree@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@U?$pair@$$CBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@H@2@U_Kfn@?$map@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@HU?$less@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@2@V?$allocator@H@2@@2@U?$less@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@2@V?$allocator@H@2@@std@@QAA?AViterator@12@V312@@Z 1006355c f i FIMGlib:glShader.obj
+ 0001:00062a70       ?_Erase@?$_Tree@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@U?$pair@$$CBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@H@2@U_Kfn@?$map@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@HU?$less@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@2@V?$allocator@H@2@@2@U?$less@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@2@V?$allocator@H@2@@std@@IAAXPAU_Node@12@@Z 10063a70 f i FIMGlib:glShader.obj
+ 0001:00062b08       ?clear@Executable@@QAAXXZ  10063b08 f   FIMGlib:glShader.obj
+ 0001:00062e64       ?erase@?$_Tree@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@U?$pair@$$CBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@UNameInfo@@@2@U_Kfn@?$map@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@UNameInfo@@U?$less@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@2@V?$allocator@UNameInfo@@@2@@2@U?$less@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@2@V?$allocator@UNameInfo@@@2@@std@@QAA?AViterator@12@V312@0@Z 10063e64 f i FIMGlib:glShader.obj
+ 0001:00063004       ?find@?$_Tree@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@U?$pair@$$CBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@UNameInfo@@@2@U_Kfn@?$map@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@UNameInfo@@U?$less@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@2@V?$allocator@UNameInfo@@@2@@2@U?$less@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@2@V?$allocator@UNameInfo@@@2@@std@@QAA?AViterator@12@ABV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@2@@Z 10064004 f i FIMGlib:glShader.obj
+ 0001:000630d8       ?_Destroy@?$vector@UUniformVar@@V?$allocator@UUniformVar@@@std@@@std@@IAAXPAUUniformVar@@0@Z 100640d8 f i FIMGlib:glShader.obj
+ 0001:00063144       ?erase@?$_Tree@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@U?$pair@$$CBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@H@2@U_Kfn@?$map@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@HU?$less@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@2@V?$allocator@H@2@@2@U?$less@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@2@V?$allocator@H@2@@std@@QAA?AViterator@12@V312@0@Z 10064144 f i FIMGlib:glShader.obj
+ 0001:000632e4       ?find@?$_Tree@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@U?$pair@$$CBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@H@2@U_Kfn@?$map@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@HU?$less@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@2@V?$allocator@H@2@@2@U?$less@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@2@V?$allocator@H@2@@std@@QAA?AViterator@12@ABV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@2@@Z 100642e4 f i FIMGlib:glShader.obj
+ 0001:000633b8       ??$?HDU?$char_traits@D@std@@V?$allocator@D@1@@std@@YA?AV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@0@ABV10@PBD@Z 100643b8 f i FIMGlib:glShader.obj
+ 0001:000634d0       ??0UniformVar@@QAA@XZ      100644d0 f   FIMGlib:glShader.obj
+ 0001:0006352c       ??0SamplerMapEntry@@QAA@XZ 1006452c f   FIMGlib:glShader.obj
+ 0001:00063568       ?updateVaryingMap@ProgramVars@@QAA_NAAUExecutable@@AAV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z 10064568 f   FIMGlib:glShader.obj
+ 0001:000643ac       ?getLocation@UniformTable@@QAAHPBD@Z 100653ac f   FIMGlib:glShader.obj
+ 0001:00064578       ?insertVaryingVar@ProgramVars@@QAA_NW4ShaderType@@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@IHAAV34@@Z 10065578 f   FIMGlib:glShader.obj
+ 0001:00064ba8       ?getLocation@AttribBindings@@QAAHPBD@Z 10065ba8 f   FIMGlib:glShader.obj
+ 0001:00064cec       ?updateAttribMap@Program@@QAA_NAAV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z 10065cec f   FIMGlib:glShader.obj
+ 0001:000651d4       ??$copy@PAUUniformVar@@PAU1@@std@@YAPAUUniformVar@@PAU1@00@Z 100661d4 f i FIMGlib:glShader.obj
+ 0001:00065264       ??$fill@PAUUniformVar@@U1@@std@@YAXPAUUniformVar@@0ABU1@@Z 10066264 f i FIMGlib:glShader.obj
+ 0001:000652ec       ??$copy_backward@PAUUniformVar@@PAU1@@std@@YAPAUUniformVar@@PAU1@00@Z 100662ec f i FIMGlib:glShader.obj
+ 0001:0006537c       ??0UniformTable@@QAA@XZ    1006637c f   FIMGlib:glShader.obj
+ 0001:00065418       ?_Insert@?$_Tree@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@U?$pair@$$CBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@UNameInfo@@@2@U_Kfn@?$map@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@UNameInfo@@U?$less@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@2@V?$allocator@UNameInfo@@@2@@2@U?$less@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@2@V?$allocator@UNameInfo@@@2@@std@@IAA?AViterator@12@PAU_Node@12@0ABU?$pair@$$CBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@UNameInfo@@@2@@Z 10066418 f i FIMGlib:glShader.obj
+ 0001:000657e8       ?_Ucopy@?$vector@UUniformVar@@V?$allocator@UUniformVar@@@std@@@std@@IAAPAUUniformVar@@PBU3@0PAU3@@Z 100667e8 f i FIMGlib:glShader.obj
+ 0001:00065890       ?_Ufill@?$vector@UUniformVar@@V?$allocator@UUniformVar@@@std@@@std@@IAAXPAUUniformVar@@IABU3@@Z 10066890 f i FIMGlib:glShader.obj
+ 0001:0006592c       ?_Insert@?$_Tree@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@U?$pair@$$CBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@H@2@U_Kfn@?$map@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@HU?$less@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@2@V?$allocator@H@2@@2@U?$less@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@2@V?$allocator@H@2@@std@@IAA?AViterator@12@PAU_Node@12@0ABU?$pair@$$CBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@H@2@@Z 1006692c f i FIMGlib:glShader.obj
+ 0001:00065cf4       ?insert@?$_Tree@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@U?$pair@$$CBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@UNameInfo@@@2@U_Kfn@?$map@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@UNameInfo@@U?$less@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@2@V?$allocator@UNameInfo@@@2@@2@U?$less@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@2@V?$allocator@UNameInfo@@@2@@std@@QAA?AU?$pair@Viterator@?$_Tree@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@U?$pair@$$CBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@UNameInfo@@@2@U_Kfn@?$map@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@UNameInfo@@U?$less@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@2@V?$allocator@UNameInfo@@@2@@2@U?$less@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@2@V?$allocator@UNameInfo@@@2@@std@@_N@2@ABU?$pair@$$CBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@UNameInfo@@@2@@Z 10066cf4 f i FIMGlib:glShader.obj
+ 0001:00065f28       ?insert@?$vector@UUniformVar@@V?$allocator@UUniformVar@@@std@@@std@@QAAXPAUUniformVar@@IABU3@@Z 10066f28 f i FIMGlib:glShader.obj
+ 0001:00066158       ?insert@?$_Tree@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@U?$pair@$$CBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@H@2@U_Kfn@?$map@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@HU?$less@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@2@V?$allocator@H@2@@2@U?$less@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@2@V?$allocator@H@2@@std@@QAA?AU?$pair@Viterator@?$_Tree@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@U?$pair@$$CBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@H@2@U_Kfn@?$map@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@HU?$less@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@2@V?$allocator@H@2@@2@U?$less@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@2@V?$allocator@H@2@@std@@_N@2@ABU?$pair@$$CBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@H@2@@Z 10067158 f i FIMGlib:glShader.obj
+ 0001:0006638c       ?clear@ProgramVars@@QAAXXZ 1006738c f   FIMGlib:glShader.obj
+ 0001:000665e4       ??1ProgramVars@@QAA@XZ     100675e4 f   FIMGlib:glShader.obj
+ 0001:00066728       ?setDefaults@Program@@QAAXXZ 10067728 f   FIMGlib:glShader.obj
+ 0001:000667e8       ??1Program@@QAA@XZ         100677e8 f   FIMGlib:glShader.obj
+ 0001:000668dc       ??0ProgramVars@@QAA@XZ     100678dc f   FIMGlib:glShader.obj
+ 0001:00066974       ??0Program@@QAA@I@Z        10067974 f   FIMGlib:glShader.obj
+ 0001:00066a4c       ??A?$map@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@UNameInfo@@U?$less@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@2@V?$allocator@UNameInfo@@@2@@std@@QAAAAUNameInfo@@ABV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@1@@Z 10067a4c f i FIMGlib:glShader.obj
+ 0001:00066afc       ??A?$map@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@HU?$less@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@2@V?$allocator@H@2@@std@@QAAAAHABV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@1@@Z 10067afc f i FIMGlib:glShader.obj
+ 0001:00066ba4       ?release@ShaderProgramNameMap@@QAAXXZ 10067ba4 f i FIMGlib:glShader.obj
+ 0001:00066c2c       ?insertOrUpdateBaseEntry@UniformTable@@QAA_NPBUDclBaseType_t@@W4ShaderType@@PBDAAV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@I@Z 10067c2c f   FIMGlib:glShader.obj
+ 0001:00067094       ?insertOrUpdateArrayEntry@UniformTable@@QAA_NPBUDclArrayType_t@@W4ShaderType@@PBDAAV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@I@Z 10068094 f   FIMGlib:glShader.obj
+ 0001:000677c4       ?insertVars@ProgramVars@@QAA_NAAUExecutable@@PBEHW4ShaderType@@AAV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@Z 100687c4 f   FIMGlib:glShader.obj
+ 0001:00068d10       ?setBinding@AttribBindings@@QAA_NPBDH@Z 10069d10 f   FIMGlib:glShader.obj
+ 0001:00068ec8       ?remove@ShaderProgNameList@@QAAXI@Z 10069ec8 f   FIMGlib:glShader.obj
+ 0001:00068f0c       ?cleanup@ShaderProgNameList@@QAAXXZ 10069f0c f   FIMGlib:glShader.obj
+ 0001:00069070       ?freeUnused@ShaderProgNameList@@QAAXXZ 1006a070 f   FIMGlib:glShader.obj
+ 0001:00069250       ??1ShaderProgNameList@@QAA@XZ 1006a250 f   FIMGlib:glShader.obj
+ 0001:0006927c       ?DeInitShaderState@@YAHPAUOGLState@@@Z 1006a27c f   FIMGlib:glShader.obj
+ 0001:000692f0       ?attachShader@Program@@QAAXPAUShader@@@Z 1006a2f0 f   FIMGlib:glShader.obj
+ 0001:000693e8       _gl_asm_memset             1006a3e8     FIMGlib:gl_asm.obj
+ 0001:00069420       _gl_asm_memcpy_3l          1006a420     FIMGlib:gl_asm.obj
+ 0001:0006943c       _gl_asm_memcpy_4l          1006a43c     FIMGlib:gl_asm.obj
+ 0001:00069458       _gl_asm_convertPixels_ABGR2ARGB 1006a458     FIMGlib:gl_asm.obj
+ 0001:0006948c       _gl_asm_nop                1006a48c     FIMGlib:gl_asm.obj
+ 0001:0006949c       _gl_asm_send_hostfifo2     1006a49c     FIMGlib:gl_asm.obj
+ 0001:000694b0       _gl_asm_send_hostfifo3     1006a4b0     FIMGlib:gl_asm.obj
+ 0001:000694c4       _gl_asm_send_hostfifo4     1006a4c4     FIMGlib:gl_asm.obj
+ 0001:000694d8       _gl_asm_send_hostfifo5     1006a4d8     FIMGlib:gl_asm.obj
+ 0001:000694ec       _gl_asm_send_hostfifo6     1006a4ec     FIMGlib:gl_asm.obj
+ 0001:00069500       _gl_asm_send_hostfifo7     1006a500     FIMGlib:gl_asm.obj
+ 0001:00069514       _gl_asm_send_hostfifo8     1006a514     FIMGlib:gl_asm.obj
+ 0001:00069528       _gl_asm_send_hostfifo2_aux 1006a528     FIMGlib:gl_asm.obj
+ 0001:0006953c       _gl_asm_send_hostfifo3_aux 1006a53c     FIMGlib:gl_asm.obj
+ 0001:00069550       _gl_asm_send_hostfifo4_aux 1006a550     FIMGlib:gl_asm.obj
+ 0001:00069564       INTLOCK                    1006a564     FIMGlib:gl_asm.obj
+ 0001:00069578       INTFREE                    1006a578     FIMGlib:gl_asm.obj
+ 0001:00069598       fglSetAlpha                1006a598 f   FIMGlib:perfrag.obj
+ 0001:000695c4       fglSetFrontStencil         1006a5c4 f   FIMGlib:perfrag.obj
+ 0001:0006965c       fglSetBackStencil          1006a65c f   FIMGlib:perfrag.obj
+ 0001:000696f0       fglSetDepth                1006a6f0 f   FIMGlib:perfrag.obj
+ 0001:00069710       fglSetBlend                1006a710 f   FIMGlib:perfrag.obj
+ 0001:00069774       fglSetBlendWorkAround      1006a774 f   FIMGlib:perfrag.obj
+ 0001:0006981c       fglSetBlendColor           1006a81c f   FIMGlib:perfrag.obj
+ 0001:0006983c       fglSetLogicalOp            1006a83c f   FIMGlib:perfrag.obj
+ 0001:00069868       fglSetDepthStencilWriteMask 1006a868 f   FIMGlib:perfrag.obj
+ 0001:00069894       fglSetFrameBufParams       1006a894 f   FIMGlib:perfrag.obj
+ 0001:000698dc       fglSetZBufBaseAddr         1006a8dc f   FIMGlib:perfrag.obj
+ 0001:000698fc       fglSetColorBufBaseAddr     1006a8fc f   FIMGlib:perfrag.obj
+ 0001:0006991c       fglSetFrameBufWidth        1006a91c f   FIMGlib:perfrag.obj
+ 0001:0006993c       fglVSSetPCRangeEXT         1006a93c f   FIMGlib:shader.obj
+ 0001:00069978       fglVSSetAttribNum          1006a978 f   FIMGlib:shader.obj
+ 0001:00069998       fglSetPSParams             1006a998 f   FIMGlib:shader.obj
+ 0001:00069a2c       fglSetVertexCtx            1006aa2c f   FIMGlib:primitive.obj
+ 0001:00069adc       fglSetViewportParams       1006aadc f   FIMGlib:primitive.obj
+ 0001:00069bb0       fglSetDepthRange           1006abb0 f   FIMGlib:primitive.obj
+ 0001:00069c18       fglSendToFIFO              1006ac18 f   FIMGlib:interface.obj
+ 0001:00069ce8       fglSetHInterface           1006ace8 f   FIMGlib:interface.obj
+ 0001:00069d54       fglSetAttribute            1006ad54 f   FIMGlib:interface.obj
+ 0001:00069dc4       _fglSendToFIFO32           1006adc4     FIMGlib:fnc.obj
+ 0001:00069e48       fglEnableDepthOffset       1006ae48 f   FIMGlib:raster.obj
+ 0001:00069e68       fglSetDepthOffsetParamf    1006ae68 f   FIMGlib:raster.obj
+ 0001:00069ed0       fglSetFaceCullControl      1006aed0 f   FIMGlib:raster.obj
+ 0001:00069efc       fglSetYClip                1006aefc f   FIMGlib:raster.obj
+ 0001:00069f1c       fglSetLODControl           1006af1c f   FIMGlib:raster.obj
+ 0001:00069f3c       fglSetXClip                1006af3c f   FIMGlib:raster.obj
+ 0001:00069f5c       GPI_AllocateMemory         1006af5c f   GPIlib:GPI_wince.obj
+ 0001:0006a038       GPI_FreeMemory             1006b038 f   GPIlib:GPI_wince.obj
+ 0001:0006a0c4       GPI_GetMemoryAddress       1006b0c4 f   GPIlib:GPI_wince.obj
+ 0001:0006a100       GPI_AllocPhysMem           1006b100 f   GPIlib:GPI_wince.obj
+ 0001:0006a120       GPI_FreePhysMem            1006b120 f   GPIlib:GPI_wince.obj
+ 0001:0006a128       GPI_GetPhysMemAddress      1006b128 f   GPIlib:GPI_wince.obj
+ 0001:0006a15c       GPI_ReleaseDepthBuffer     1006b15c f   GPIlib:GPI_wince.obj
+ 0001:0006a1e8       GPI_RequestDepthBuffer     1006b1e8 f   GPIlib:GPI_wince.obj
+ 0001:0006a2e8       NKDbgPrintfW               1006b2e8 f   coredll:COREDLL.dll
+ 0001:0006a2f8       __GetUserKData             1006b2f8 f   coredll:COREDLL.dll
+ 0001:0006a308       TlsCall                    1006b308 f   coredll:COREDLL.dll
+ 0001:0006a318       CloseHandle                1006b318 f   coredll:COREDLL.dll
+ 0001:0006a328       DeleteCriticalSection      1006b328 f   coredll:COREDLL.dll
+ 0001:0006a338       InitializeCriticalSection  1006b338 f   coredll:COREDLL.dll
+ 0001:0006a348       TlsSetValue                1006b348 f   coredll:COREDLL.dll
+ 0001:0006a358       DeviceIoControl            1006b358 f   coredll:COREDLL.dll
+ 0001:0006a368       CreateFileW                1006b368 f   coredll:COREDLL.dll
+ 0001:0006a378       RegQueryValueExW           1006b378 f   coredll:COREDLL.dll
+ 0001:0006a388       RegOpenKeyExW              1006b388 f   coredll:COREDLL.dll
+ 0001:0006a398       GetLastError               1006b398 f   coredll:COREDLL.dll
+ 0001:0006a3a8       CreateMutexW               1006b3a8 f   coredll:COREDLL.dll
+ 0001:0006a3b8       WaitForSingleObject        1006b3b8 f   coredll:COREDLL.dll
+ 0001:0006a3c8       ReleaseMutex               1006b3c8 f   coredll:COREDLL.dll
+ 0001:0006a3d8       EnterCriticalSection       1006b3d8 f   coredll:COREDLL.dll
+ 0001:0006a3e8       LeaveCriticalSection       1006b3e8 f   coredll:COREDLL.dll
+ 0001:0006a4fc       _DllMainCRTStartup         1006b4fc f   corelib0:pegdmain.obj
+ 0001:0006a52c       __GSHandlerCheckCommon     1006b52c f   corelib0:gshandler.obj
+ 0001:0006a568       __GSHandlerCheck           1006b568 f   corelib0:gshandler.obj
+ 0001:0006a58c       __security_init_cookie     1006b58c f   corelib0:seccinit.obj
+ 0001:0006a5e8       __security_check_cookie    1006b5e8 f   corelib0:armsecgs.obj
+ 0001:0006a5fc       __gsfailure                1006b5fc f   corelib0:armsecgs.obj
+ 0001:0006a708       _cexit                     1006b708 f   corelib0:cexit.obj
+ 0001:0006a724       _initterm                  1006b724 f   corelib0:crt0dat.obj
+ 0001:0006a758       _cinit                     1006b758 f   corelib0:crt0dat.obj
+ 0001:0006a78c       __itos                     1006b78c f   corelib1:COREDLL.dll
+ 0001:0006a79c       __muls                     1006b79c f   corelib1:COREDLL.dll
+ 0001:0006a7ac       __stou                     1006b7ac f   corelib1:COREDLL.dll
+ 0001:0006a7bc       __nes                      1006b7bc f   corelib1:COREDLL.dll
+ 0001:0006a7cc       __lts                      1006b7cc f   corelib1:COREDLL.dll
+ 0001:0006a7dc       __stod                     1006b7dc f   corelib1:COREDLL.dll
+ 0001:0006a7ec       __dtos                     1006b7ec f   corelib1:COREDLL.dll
+ 0001:0006a7fc       __stoi                     1006b7fc f   corelib1:COREDLL.dll
+ 0001:0006a80c       __subd                     1006b80c f   corelib1:COREDLL.dll
+ 0001:0006a81c       __muld                     1006b81c f   corelib1:COREDLL.dll
+ 0001:0006a82c       __dtoi                     1006b82c f   corelib1:COREDLL.dll
+ 0001:0006a83c       pow                        1006b83c f   corelib1:COREDLL.dll
+ 0001:0006a84c       __subs                     1006b84c f   corelib1:COREDLL.dll
+ 0001:0006a85c       __adds                     1006b85c f   corelib1:COREDLL.dll
+ 0001:0006a86c       __eqs                      1006b86c f   corelib1:COREDLL.dll
+ 0001:0006a87c       __divs                     1006b87c f   corelib1:COREDLL.dll
+ 0001:0006a88c       __ges                      1006b88c f   corelib1:COREDLL.dll
+ 0001:0006a89c       __ltd                      1006b89c f   corelib1:COREDLL.dll
+ 0001:0006a8ac       __negs                     1006b8ac f   corelib1:COREDLL.dll
+ 0001:0006a8bc       malloc                     1006b8bc f   corelib1:COREDLL.dll
+ 0001:0006a8cc       free                       1006b8cc f   corelib1:COREDLL.dll
+ 0001:0006a8dc       memcpy                     1006b8dc f   corelib1:COREDLL.dll
+ 0001:0006a8ec       __divd                     1006b8ec f   corelib1:COREDLL.dll
+ 0001:0006a8fc       cos                        1006b8fc f   corelib1:COREDLL.dll
+ 0001:0006a90c       sin                        1006b90c f   corelib1:COREDLL.dll
+ 0001:0006a91c       sqrt                       1006b91c f   corelib1:COREDLL.dll
+ 0001:0006a92c       __gts                      1006b92c f   corelib1:COREDLL.dll
+ 0001:0006a93c       __utos                     1006b93c f   corelib1:COREDLL.dll
+ 0001:0006a94c       __rt_sdiv                  1006b94c f   corelib1:COREDLL.dll
+ 0001:0006a95c       __rt_udiv                  1006b95c f   corelib1:COREDLL.dll
+ 0001:0006a96c       memset                     1006b96c f   corelib1:COREDLL.dll
+ 0001:0006a97c       printf                     1006b97c f   corelib1:COREDLL.dll
+ 0001:0006a98c       fflush                     1006b98c f   corelib1:COREDLL.dll
+ 0001:0006a99c       fprintf                    1006b99c f   corelib1:COREDLL.dll
+ 0001:0006a9ac       _getstdfilex               1006b9ac f   corelib1:COREDLL.dll
+ 0001:0006a9bc       sprintf                    1006b9bc f   corelib1:COREDLL.dll
+ 0001:0006a9cc       ??3@YAXPAX@Z               1006b9cc f   corelib1:COREDLL.dll
+ 0001:0006a9dc       vprintf                    1006b9dc f   corelib1:COREDLL.dll
+ 0001:0006a9ec       __les                      1006b9ec f   corelib1:COREDLL.dll
+ 0001:0006a9fc       ??2@YAPAXI@Z               1006b9fc f   corelib1:COREDLL.dll
+ 0001:0006aa0c       __addd                     1006ba0c f   corelib1:COREDLL.dll
+ 0001:0006aa1c       floor                      1006ba1c f   corelib1:COREDLL.dll
+ 0001:0006aa2c       __itod                     1006ba2c f   corelib1:COREDLL.dll
+ 0001:0006aa3c       memcmp                     1006ba3c f   corelib1:COREDLL.dll
+ 0001:0006aa4c       strlen                     1006ba4c f   corelib1:COREDLL.dll
+ 0001:0006aa5c       memmove                    1006ba5c f   corelib1:COREDLL.dll
+ 0001:0006aa6c       ?_Xran@std@@YAXXZ          1006ba6c f   corelib1:COREDLL.dll
+ 0001:0006aa7c       strncpy                    1006ba7c f   corelib1:COREDLL.dll
+ 0001:0006aa8c       __CxxFrameHandler3         1006ba8c f   corelib1:COREDLL.dll
+ 0001:0006aa9c       ?_Xlen@std@@YAXXZ          1006ba9c f   corelib1:COREDLL.dll
+ 0001:0006aaac       __dtou                     1006baac f   corelib1:COREDLL.dll
+ 0001:0006aabc       strcmp                     1006babc f   corelib1:COREDLL.dll
+ 0001:0006aacc       strncmp                    1006bacc f   corelib1:COREDLL.dll
+ 0001:0006aadc       _XcptFilter                1006badc f   corelib1:COREDLL.dll
+ 0001:0006aaec       __C_specific_handler       1006baec f   corelib1:COREDLL.dll
+ 0001:0006aafc       __security_gen_cookie2     1006bafc f   corelib1:COREDLL.dll
+ 0001:0006ab0c       __report_gsfailure         1006bb0c f   corelib1:COREDLL.dll
+ 0001:0006ab1c       TerminateProcess           1006bb1c f   coredll:COREDLL.dll
+ 0001:0006ab4c       __IMPORT_DESCRIPTOR_COREDLL 1006bb4c     coredll:COREDLL.dll
+ 0001:0006ab60       __IMPORT_DESCRIPTOR_libEGL 1006bb60     libEGL:libEGL.dll
+ 0001:0006ab74       __NULL_IMPORT_DESCRIPTOR   1006bb74     coredll:COREDLL.dll
+ 0002:00000000       __imp_NKDbgPrintfW         1006d000     coredll:COREDLL.dll
+ 0002:00000004       __imp___GetUserKData       1006d004     coredll:COREDLL.dll
+ 0002:00000008       __imp_TlsCall              1006d008     coredll:COREDLL.dll
+ 0002:0000000c       __imp_CloseHandle          1006d00c     coredll:COREDLL.dll
+ 0002:00000010       __imp_DeleteCriticalSection 1006d010     coredll:COREDLL.dll
+ 0002:00000014       __imp_InitializeCriticalSection 1006d014     coredll:COREDLL.dll
+ 0002:00000018       __imp_TlsSetValue          1006d018     coredll:COREDLL.dll
+ 0002:0000001c       __imp_DeviceIoControl      1006d01c     coredll:COREDLL.dll
+ 0002:00000020       __imp_CreateFileW          1006d020     coredll:COREDLL.dll
+ 0002:00000024       __imp_RegQueryValueExW     1006d024     coredll:COREDLL.dll
+ 0002:00000028       __imp_RegOpenKeyExW        1006d028     coredll:COREDLL.dll
+ 0002:0000002c       __imp_GetLastError         1006d02c     coredll:COREDLL.dll
+ 0002:00000030       __imp_CreateMutexW         1006d030     coredll:COREDLL.dll
+ 0002:00000034       __imp_WaitForSingleObject  1006d034     coredll:COREDLL.dll
+ 0002:00000038       __imp_ReleaseMutex         1006d038     coredll:COREDLL.dll
+ 0002:0000003c       __imp_EnterCriticalSection 1006d03c     coredll:COREDLL.dll
+ 0002:00000040       __imp_LeaveCriticalSection 1006d040     coredll:COREDLL.dll
+ 0002:00000044       __imp___report_gsfailure   1006d044     corelib1:COREDLL.dll
+ 0002:00000048       __imp___security_gen_cookie2 1006d048     corelib1:COREDLL.dll
+ 0002:0000004c       __imp___C_specific_handler 1006d04c     corelib1:COREDLL.dll
+ 0002:00000050       __imp__XcptFilter          1006d050     corelib1:COREDLL.dll
+ 0002:00000054       __imp_strncmp              1006d054     corelib1:COREDLL.dll
+ 0002:00000058       __imp_strcmp               1006d058     corelib1:COREDLL.dll
+ 0002:0000005c       __imp___dtou               1006d05c     corelib1:COREDLL.dll
+ 0002:00000060       __imp_?_Xlen@std@@YAXXZ    1006d060     corelib1:COREDLL.dll
+ 0002:00000064       __imp___CxxFrameHandler3   1006d064     corelib1:COREDLL.dll
+ 0002:00000068       __imp___itos               1006d068     corelib1:COREDLL.dll
+ 0002:0000006c       __imp___muls               1006d06c     corelib1:COREDLL.dll
+ 0002:00000070       __imp___stou               1006d070     corelib1:COREDLL.dll
+ 0002:00000074       __imp___nes                1006d074     corelib1:COREDLL.dll
+ 0002:00000078       __imp___lts                1006d078     corelib1:COREDLL.dll
+ 0002:0000007c       __imp___stod               1006d07c     corelib1:COREDLL.dll
+ 0002:00000080       __imp___dtos               1006d080     corelib1:COREDLL.dll
+ 0002:00000084       __imp___stoi               1006d084     corelib1:COREDLL.dll
+ 0002:00000088       __imp___subd               1006d088     corelib1:COREDLL.dll
+ 0002:0000008c       __imp___muld               1006d08c     corelib1:COREDLL.dll
+ 0002:00000090       __imp___dtoi               1006d090     corelib1:COREDLL.dll
+ 0002:00000094       __imp_pow                  1006d094     corelib1:COREDLL.dll
+ 0002:00000098       __imp___subs               1006d098     corelib1:COREDLL.dll
+ 0002:0000009c       __imp___adds               1006d09c     corelib1:COREDLL.dll
+ 0002:000000a0       __imp___eqs                1006d0a0     corelib1:COREDLL.dll
+ 0002:000000a4       __imp___divs               1006d0a4     corelib1:COREDLL.dll
+ 0002:000000a8       __imp___ges                1006d0a8     corelib1:COREDLL.dll
+ 0002:000000ac       __imp___ltd                1006d0ac     corelib1:COREDLL.dll
+ 0002:000000b0       __imp___negs               1006d0b0     corelib1:COREDLL.dll
+ 0002:000000b4       __imp_malloc               1006d0b4     corelib1:COREDLL.dll
+ 0002:000000b8       __imp_free                 1006d0b8     corelib1:COREDLL.dll
+ 0002:000000bc       __imp_memcpy               1006d0bc     corelib1:COREDLL.dll
+ 0002:000000c0       __imp___divd               1006d0c0     corelib1:COREDLL.dll
+ 0002:000000c4       __imp_cos                  1006d0c4     corelib1:COREDLL.dll
+ 0002:000000c8       __imp_sin                  1006d0c8     corelib1:COREDLL.dll
+ 0002:000000cc       __imp_sqrt                 1006d0cc     corelib1:COREDLL.dll
+ 0002:000000d0       __imp___gts                1006d0d0     corelib1:COREDLL.dll
+ 0002:000000d4       __imp___utos               1006d0d4     corelib1:COREDLL.dll
+ 0002:000000d8       __imp___rt_sdiv            1006d0d8     corelib1:COREDLL.dll
+ 0002:000000dc       __imp___rt_udiv            1006d0dc     corelib1:COREDLL.dll
+ 0002:000000e0       __imp_memset               1006d0e0     corelib1:COREDLL.dll
+ 0002:000000e4       __imp_printf               1006d0e4     corelib1:COREDLL.dll
+ 0002:000000e8       __imp_fflush               1006d0e8     corelib1:COREDLL.dll
+ 0002:000000ec       __imp_fprintf              1006d0ec     corelib1:COREDLL.dll
+ 0002:000000f0       __imp__getstdfilex         1006d0f0     corelib1:COREDLL.dll
+ 0002:000000f4       __imp_sprintf              1006d0f4     corelib1:COREDLL.dll
+ 0002:000000f8       __imp_??3@YAXPAX@Z         1006d0f8     corelib1:COREDLL.dll
+ 0002:000000fc       __imp_vprintf              1006d0fc     corelib1:COREDLL.dll
+ 0002:00000100       __imp___les                1006d100     corelib1:COREDLL.dll
+ 0002:00000104       __imp_??2@YAPAXI@Z         1006d104     corelib1:COREDLL.dll
+ 0002:00000108       __imp___addd               1006d108     corelib1:COREDLL.dll
+ 0002:0000010c       __imp_floor                1006d10c     corelib1:COREDLL.dll
+ 0002:00000110       __imp___itod               1006d110     corelib1:COREDLL.dll
+ 0002:00000114       __imp_memcmp               1006d114     corelib1:COREDLL.dll
+ 0002:00000118       __imp_strlen               1006d118     corelib1:COREDLL.dll
+ 0002:0000011c       __imp_memmove              1006d11c     corelib1:COREDLL.dll
+ 0002:00000120       __imp_?_Xran@std@@YAXXZ    1006d120     corelib1:COREDLL.dll
+ 0002:00000124       __imp_strncpy              1006d124     corelib1:COREDLL.dll
+ 0002:00000128       __imp_TerminateProcess     1006d128     coredll:COREDLL.dll
+ 0002:0000012c       \177COREDLL_NULL_THUNK_DATA 1006d12c     coredll:COREDLL.dll
+ 0002:00000130       __imp_pfnGLES2SetSurfaceData 1006d130     libEGL:libEGL.dll
+ 0002:00000134       __imp_pfnGLES2CreateContext 1006d134     libEGL:libEGL.dll
+ 0002:00000138       __imp_pfnGLES2SetContext   1006d138     libEGL:libEGL.dll
+ 0002:0000013c       __imp_pfnGLES2DestroyContext 1006d13c     libEGL:libEGL.dll
+ 0002:00000140       __imp_pfnGLES2BindTexImage 1006d140     libEGL:libEGL.dll
+ 0002:00000144       __imp_pfnGLES2ReleaseTexImage 1006d144     libEGL:libEGL.dll
+ 0002:00000148       __imp_pfnGLESChunkNew      1006d148     libEGL:libEGL.dll
+ 0002:0000014c       __imp_pfnGLESChunkFree     1006d14c     libEGL:libEGL.dll
+ 0002:00000150       __imp_pfnGLESDepthNew      1006d150     libEGL:libEGL.dll
+ 0002:00000154       __imp_pfnGLESDepthFree     1006d154     libEGL:libEGL.dll
+ 0002:00000158       __imp_pfnglFlush           1006d158     libEGL:libEGL.dll
+ 0002:0000015c       __imp_pfnglFinish          1006d15c     libEGL:libEGL.dll
+ 0002:00000160       \177libEGL_NULL_THUNK_DATA 1006d160     libEGL:libEGL.dll
+ 0002:00000168       texPalFormats              1006d168     glgets.obj
+ 0002:000001b0       shaderInfoUnifInfo         1006d1b0     loadshader.obj
+ 0002:000001c0       iMap                       1006d1c0     render.obj
+ 0002:000002d0       ?validRBformats@@3PAUPixelFormatInfo@@A 1006d2d0     FIMGlib:glFramebufferObject.obj
+ 0002:00000308       __security_cookie          1006d308     corelib0:seccinit.obj
+ 0002:0000030c       __security_cookie_complement 1006d30c     corelib0:seccinit.obj
+ 0002:000041d8       g_ProcessTlsCtx11          100711d8     eglInterface.obj
+ 0002:000041dc       ?gTLSIndex@@3HA            100711dc     FIMGlib:glCore.obj
+ 0002:000041e0       g_hFIMG                    100711e0     FIMGlib:glCore.obj
+ 0002:000041e4       gFimgBase                  100711e4     FIMGlib:glCore.obj
+ 0002:000041f4       ?_Nil@?$_Tree@IU?$pair@$$CBIPAURenderbufferObject@@@std@@U_Kfn@?$map@IPAURenderbufferObject@@U?$less@I@std@@V?$allocator@PAURenderbufferObject@@@3@@2@U?$less@I@2@V?$allocator@PAURenderbufferObject@@@2@@std@@1PAU_Node@12@A 100711f4     FIMGlib:glCore.obj
+ 0002:000041f8       ?_Nil@?$_Tree@IU?$pair@$$CBIPAUFramebufferObject@@@std@@U_Kfn@?$map@IPAUFramebufferObject@@U?$less@I@std@@V?$allocator@PAUFramebufferObject@@@3@@2@U?$less@I@2@V?$allocator@PAUFramebufferObject@@@2@@std@@1PAU_Node@12@A 100711f8     FIMGlib:glCore.obj
+ 0002:000041fc       ?_Nil@?$_Tree@IIU_Kfn@?$set@IU?$less@I@std@@V?$allocator@I@2@@std@@U?$less@I@3@V?$allocator@I@3@@std@@1PAU_Node@12@A 100711fc     FIMGlib:glCore.obj
+ 0002:00004200       ?_Nilrefs@?$_Tree@IU?$pair@$$CBIPAURenderbufferObject@@@std@@U_Kfn@?$map@IPAURenderbufferObject@@U?$less@I@std@@V?$allocator@PAURenderbufferObject@@@3@@2@U?$less@I@2@V?$allocator@PAURenderbufferObject@@@2@@std@@1IA 10071200     FIMGlib:glCore.obj
+ 0002:00004204       ?_Nilrefs@?$_Tree@IIU_Kfn@?$set@IU?$less@I@std@@V?$allocator@I@2@@std@@U?$less@I@3@V?$allocator@I@3@@std@@1IA 10071204     FIMGlib:glCore.obj
+ 0002:00004208       ?_Nilrefs@?$_Tree@IU?$pair@$$CBIPAUFramebufferObject@@@std@@U_Kfn@?$map@IPAUFramebufferObject@@U?$less@I@std@@V?$allocator@PAUFramebufferObject@@@3@@2@U?$less@I@2@V?$allocator@PAUFramebufferObject@@@2@@std@@1IA 10071208     FIMGlib:glCore.obj
+ 0002:0000420c       ?_Nil@?$_Tree@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@U?$pair@$$CBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@UNameInfo@@@2@U_Kfn@?$map@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@UNameInfo@@U?$less@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@2@V?$allocator@UNameInfo@@@2@@2@U?$less@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@2@V?$allocator@UNameInfo@@@2@@std@@1PAU_Node@12@A 1007120c     FIMGlib:glShaderApi.obj
+ 0002:00004210       ?customMemAlloc@@3P6AHHPAPAX0@ZA 10071210     FIMGlib:memext.obj
+ 0002:00004214       ?customMemFree@@3P6AHPAX0@ZA 10071214     FIMGlib:memext.obj
+ 0002:00004218       ?pCA@@3PAVChunkAlloc@@A    10071218     FIMGlib:ChunkAlloc.obj
+ 0002:0000421c       ?g_iDynSize@@3IA           1007121c     FIMGlib:ChunkAlloc.obj
+ 0002:00004220       ?gles20_context_mutex@@3UCRITICAL_SECTION@@A 10071220     FIMGlib:platform.obj
+ 0002:00004234       ?gles20_fimg_mutex@@3UCRITICAL_SECTION@@A 10071234     FIMGlib:platform.obj
+ 0002:00004248       ?gles20_chunkalloc_mutex@@3UCRITICAL_SECTION@@A 10071248     FIMGlib:platform.obj
+ 0002:00004260       ?_Nil@?$_Tree@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@U?$pair@$$CBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@H@2@U_Kfn@?$map@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@HU?$less@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@2@V?$allocator@H@2@@2@U?$less@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@2@V?$allocator@H@2@@std@@1PAU_Node@12@A 10071260     FIMGlib:glShader.obj
+ 0002:00004264       ?_Nilrefs@?$_Tree@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@U?$pair@$$CBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@UNameInfo@@@2@U_Kfn@?$map@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@UNameInfo@@U?$less@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@2@V?$allocator@UNameInfo@@@2@@2@U?$less@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@2@V?$allocator@UNameInfo@@@2@@std@@1IA 10071264     FIMGlib:glShader.obj
+ 0002:00004268       ?_Nilrefs@?$_Tree@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@U?$pair@$$CBV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@H@2@U_Kfn@?$map@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@HU?$less@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@2@V?$allocator@H@2@@2@U?$less@V?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@@2@V?$allocator@H@2@@std@@1IA 10071268     FIMGlib:glShader.obj
+ 0002:0000426c       _exitflag                  1007126c     corelib0:cexit.obj
+ 0002:00004270       __onexitend                10071270     <common>
+ 0002:00004274       __onexitbegin              10071274     <common>
+ 0002:00004278       _pRawDllMain               10071278     <common>
+
+ entry point at        0001:0006a4fc
+
+ Static symbols
+
+ 0001:00016d84       ?GetUniformsLocation@@YAXHI@Z 10017d84 f   loadshader.obj
+ 0001:00017d1c       ?checkGLerror@@YAXPBD@Z    10018d1c f   loadshader.obj
+ 0001:0001e068       ?set_default_values@@YAXPAUOGLState@@@Z 1001f068 f   FIMGlib:glCore.obj
+ 0001:00027c60       ?deleteTexImage@@YAXPAVTextureObject@@@Z 10028c60 f   FIMGlib:glTex.obj
+ 0001:00028fbc       ?checkTextureFormat@@YAIPAUOGLState@@II@Z 10029fbc f   FIMGlib:glTex.obj
+ 0001:00029504       ?CheckFormatConversion@@YAEIIPAI@Z 1002a504 f   FIMGlib:glTex.obj
+ 0001:0002963c       ?s3tcCompressedTex@@YA_NAAIIHHH@Z 1002a63c f   FIMGlib:glTex.obj
+ 0001:0002fa38       __catch$55156              10030a38 f i FIMGlib:glShaderApi.obj
+ 0001:00033380       ?StencilAction@@YA?AW4FGL_StencilActTag@@I@Z 10034380 f   FIMGlib:glFimg.obj
+ 0001:00033440       ?BlendFunc@@YA?AW4FGL_BlendFuncTag@@I@Z 10034440 f   FIMGlib:glFimg.obj
+ 0001:00033594       ?LogicOp@@YA?AW4FGL_LogicalOpTag@@I@Z 10034594 f   FIMGlib:glFimg.obj
+ 0001:000336f8       ?AttribType@@YA?AW4FGL_AttribDataTypeTag@@IE@Z 100346f8 f   FIMGlib:glFimg.obj
+ 0001:00060ebc       ?extractBaseNameAndOffset@@YAPBDPADHPAH1PBD@Z 10061ebc f   FIMGlib:glShader.obj
+ 0001:0006a400       _DllMainCRTStartupHelper   1006b400 f   corelib0:pegdmain.obj
+ 0001:0006a640       doexit                     1006b640 f   corelib0:cexit.obj

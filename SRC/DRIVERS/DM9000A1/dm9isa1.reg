@@ -1,0 +1,35 @@
+
+
+[HKEY_LOCAL_MACHINE\Comm\DM9CE1]
+	"DisplayName"="DM9000/9000A/9010 ISA Fast Ethernet Adapter1"
+	"Group"="NDIS"
+	"ImagePath"="dm9isa1.dll"
+
+[HKEY_LOCAL_MACHINE\Comm\DM9CE1\Linkage]
+	"Route"=multi_sz:"DM9CE11"
+
+[HKEY_LOCAL_MACHINE\Comm\DM9CE11]
+	"DisplayName"="DM9000/9000A/9010 ISA Fast Ethernet Adapter1"
+	"Group"="NDIS"
+	"ImagePath"="dm9isa1.dll"
+
+[HKEY_LOCAL_MACHINE\Comm\Tcpip\Linkage]
+	"Bind"="dm9ce11"
+
+[HKEY_LOCAL_MACHINE\Comm\DM9CE11\Parms]
+	"BusNumber"=dword:0
+	"BusType"=dword:1
+	"XmitBuffer"=dword:20
+	"RecvBuffer"=dword:20
+       "IrqNumber"=dword:7
+	"NetworkAddress"="02-03-04-05-06-09"
+	"SysIntr"=dword:12
+	"IoAddress"=dword:18000300
+
+[HKEY_LOCAL_MACHINE\Comm\DM9CE11\Parms\TcpIp]
+	"EnableDHCP"=dword:1
+	"UseZeroBroadcast"=dword:0
+	"DefaultGateway"="192.168.1.1"
+	"IpAddress"="192.168.1.216"
+	"Subnetmask"="255.255.255.0"
+	"DNS"="202.96.134.133"

@@ -1,0 +1,72 @@
+; Installation inf for the SEC SOC S3C2443X USB 2.0 Bulk IO Test B/D
+
+[Version]
+Signature="$CHICAGO$"
+Class=USB
+ClassGUID={36FC9E60-C465-11CF-8056-444553540000}
+provider=%ProviderName%
+DriverVer=03/21/2007
+
+[SourceDisksNames]
+1="USB Downloader Installation Disk for SEC SOC",,,
+
+[SourceDisksFiles]
+SECUSB2.sys = 1
+SECUSB2.inf = 1
+
+[Manufacturer]
+%MfgName%=SystemLsi
+
+[SystemLsi]
+%USB\VID_04E8&PID_1234.DeviceDesc%=SECUSB2.Dev, USB\VID_04E8&PID_1234
+%USB\VID_04E8&PID_6400.DeviceDesc%=SECUSB2.Dev, USB\VID_04E8&PID_6400
+
+;[PreCopySection]
+;HKR,,NoSetupUI,,1
+
+[DestinationDirs]
+SECUSB2.Files.Ext = 10,System32\Drivers
+SECUSB2.Files.Inf = 10,INF
+
+[SECUSB2.Dev]
+CopyFiles=SECUSB2.Files.Ext, SECUSB2.Files.Inf
+AddReg=SECUSB2.AddReg
+
+[SECUSB2.Dev.NT]
+CopyFiles=SECUSB2.Files.Ext, SECUSB2.Files.Inf
+AddReg=SECUSB2.AddReg
+
+[SECUSB2.Dev.NT.Services]
+Addservice = SECUSB2, 0x00000002, SECUSB2.AddService
+
+[SECUSB2.AddService]
+DisplayName    = %SECUSB2.SvcDesc%
+ServiceType    = 1                  ; SERVICE_KERNEL_DRIVER
+StartType      = 3                  ; SERVICE_DEMAND_START
+ErrorControl   = 1                  ; SERVICE_ERROR_NORMAL
+ServiceBinary  = %10%\System32\Drivers\SECUSB2.sys
+LoadOrderGroup = Base
+
+[SECUSB2.AddReg]
+HKR,,DevLoader,,*ntkern
+HKR,,NTMPDriver,,SECUSB2.sys
+HKLM,"System\Currentcontrolset\Services\SECUSB2\Parameters","MaximumTransferSize",0x10001,4096
+HKLM,"System\Currentcontrolset\Services\SECUSB2\Parameters","DebugLevel",0x10001,2
+
+
+[SECUSB2.Files.Ext]
+SECUSB2.sys
+
+[SECUSB2.Files.Inf]
+SECUSB2.Inf
+
+
+;---------------------------------------------------------------;
+
+[Strings]
+ProviderName="SEC AP application Team"
+MfgName="SEC, SYSTEM LSI"
+USB\VID_04E8&PID_1234.DeviceDesc="SEC SOC SMDK Board"
+USB\VID_04E8&PID_6400.DeviceDesc="SEC SOC SMDK Board"
+SECUSB2.SvcDesc="SECUSB2.sys, SEC SOC USBD Driver"
+

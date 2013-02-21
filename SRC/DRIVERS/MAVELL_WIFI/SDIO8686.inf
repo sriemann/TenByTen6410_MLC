@@ -1,0 +1,197 @@
+;
+;	SDIO8686 setup file
+;	Copyright (C) Marvell Corporation
+;	
+;
+[Version]						; Required section
+Signature = "$Windows NT$"
+Provider = "Marvell"
+CESignature = "$Windows CE$"
+
+[CEDevice.pocket.arm]
+ProcessorType  = 2577
+UnsupportedPlatforms = "HPC","Jupiter"
+VersionMin = 4.00 ; version 4.0
+VersionMax = 4.99
+
+[DefaultInstall]					; Required section
+AddReg = RegSettings.All
+CopyFiles = Files.ARM
+
+[Files.ARM]
+SDIO8686.dll,,,0
+
+
+[SourceDisksNames]					; Required section
+1 = ,"Common files",,.					; Using an absolute path
+
+
+[SourceDisksFiles]					; Required section
+SDIO8686.dll=1
+
+
+[DestinationDirs]					; Required section
+Files.ARM = 0,%CE2%					; \Windows
+
+[CEStrings]						; Required section
+AppName = "SDIO8686 Driver"
+InstallDir = %CE2%
+
+[RegSettings.All]
+HKLM,Drivers\SDCARD\ClientDrivers\Custom\MANF-02DF-CARDID-9103-FUNC-1,Dll,0x00000000,"SDIO8686.dll"
+HKLM,Drivers\SDCARD\ClientDrivers\Custom\MANF-02DF-CARDID-9103-FUNC-1,Prefix,0x00000000,"NDL"
+HKLM,Drivers\SDCARD\ClientDrivers\Custom\MANF-02DF-CARDID-9103-FUNC-1,Instance0,0x00000000,"SDIO8686:SDIO86861"
+
+;
+;	Registry keys
+;
+HKLM,Comm\SDIO8686,DisplayName,0x00000000,"Marvell SDIO8686 Wireless Card"
+HKLM,Comm\SDIO8686,Group,0x00000000,"NDIS"
+HKLM,Comm\SDIO8686,ImagePath,0x00000000,"SDIO8686.dll"
+;HKLM,Comm\SDIO8686,NoDeviceCreate,0x00010001,1
+
+HKLM,Comm\SDIO8686\Linkage,Route,0x00010000,"SDIO86861"
+
+HKLM,Comm\SDIO86861,DisplayName,0x00000000,"Marvell SDIO8686 Wireless Card"
+HKLM,Comm\SDIO86861,Group,0x00000000,"NDIS"
+HKLM,Comm\SDIO86861,ImagePath,0x00000000,"SDIO8686.dll"
+
+HKLM,Comm\SDIO86861\Parms,BusNumber,0x00010001,0
+HKLM,Comm\SDIO86861\Parms,BusType,0x00010001,0	; WinCE4.x only
+HKLM,Comm\Tcpip\Linkage,Bind,0x00010000,"ppp","SDIO86861"
+
+; setup card parameters
+; Set flag for loading MFG firmware, 0:Normal, 1:MFG
+HKLM,Comm\SDIO86861\Parms,"UseMfgFw",0x00010001,0
+
+HKLM,Comm\SDIO86861\Parms,NetworkAddress,0x00000000,""
+HKLM,Comm\SDIO86861\Parms,"PowerMode",0x00010001,0 ; 0 = off, 1 = on
+HKLM,Comm\SDIO86861\Parms,"FragThsd",0x00010001,0x92A
+HKLM,Comm\SDIO86861\Parms,"RTSThsd",0x00010001,0x92A
+
+; following is for BT/WLAN multi-functions driver 1:enable BT/WLAN multi-function driver, 0:WLAN only
+HKLM,Comm\SDIO86861\Parms,"BTMode",0x00010001,0
+
+; adhoc starter default channel
+HKLM,Comm\SDIO86861\Parms,"AdhocDefaultChannel",0x00010001,6
+; adhoc starter WiFi test datarate modify or not 
+HKLM,Comm\SDIO86861\Parms,"AdhocWiFiDataRate",0x00010001,0
+; adhoc default band, 1:G, 0:B
+HKLM,Comm\SDIO86861\Parms,"AdhocDefaultBand",0x00010001,1
+
+; 1:SDIO 4 bit mode; 0: SDIO 1 bit mode
+HKLM,Comm\SDIO86861\Parms,"SetSD4BIT",0x00010001,1
+
+;Set the priority of SdioIstThread
+HKLM,Comm\SDIO86861\Parms,"SdioIstThread",0x00010001,0x65
+
+;Set the value of AvoidScanTime after connected
+HKLM,Comm\SDIO86861\Parms,"AvoidScanTime",0x00010001,0x2710
+
+;Set ACTIVE_ROAMING
+HKLM,Comm\SDIO86861\Parms,"bActiveRoamingScanOneChannel",0x00010001,1
+HKLM,Comm\SDIO86861\Parms,"bLinkLostScanOneChannel",0x00010001,1
+
+;Set NEW_RSSI parameters
+HKLM,Comm\SDIO86861\Parms,"ulRSSIThresholdTimer",0x00010001,0x1388
+HKLM,Comm\SDIO86861\Parms,"RSSI_Range",0x00010001,0xa
+
+;Set ACTIVE_ROAMING with BackGround Scan
+HKLM,Comm\SDIO86861\Parms,"bActiveRoamingwithBGSCAN",0x00010001,0
+
+;Set RoamingMode:
+;	NOT_ROAMING_MODE = 1(default)
+;	ACTIVE_ROAMING_MODE=2
+;	FAST_ROAMING_MODE=3
+;	SMLS_ROAMING_MODE=4
+HKLM,Comm\SDIO86861\Parms,"RoamingMode",0x00010001,1
+
+;Set the value of Enable80211D
+HKLM,Comm\SDIO86861\Parms,"Enable80211D",0x00010001,0
+
+;Set the value of LocalListenInterval
+HKLM,Comm\SDIO86861\Parms,"LocalListenInterval",0x00010001,0
+
+;Set support 32bytes length ESSID
+HKLM,Comm\SDIO86861\Parms,"ESSID_32",0x00010001,0
+
+;Set the value to use GPIO pin as Interrupt pin, 1:use GPIO pin as interrupt source; 0:used SDIO bus interrupt
+HKLM,Comm\SDIO86861\Parms,"SDGPIOIntEnable",0x00010001,0
+;Set the GPIO pin # to be used as Interrupt Pin
+HKLM,Comm\SDIO86861\Parms,"GPIOIntPinNumber",0x00010001,4
+;Setup interrupt trigger edge, 0: Rasing edge, 1:Falling edge
+HKLM,Comm\SDIO86861\Parms,"GPIOIntTriggerEdge",0x00010001,1 
+;Setup interrupt pluse duration(us)
+HKLM,Comm\SDIO86861\Parms,"GPIOIntPulsewidth",0x00010001,5
+
+
+;Set the value of NullPktInterval, 0: unchanged.
+HKLM,Comm\SDIO86861\Parms,"NullPktInterval",0x00010001,0
+
+;Set the value of MultipleDTim
+HKLM,Comm\SDIO86861\Parms,"MultipleDTim",0x00010001,1
+
+;Set the value of AdhocAwakePeriod
+HKLM,Comm\SDIO86861\Parms,"AdhocAwakePeriod",0x00010001,1
+
+;Set MAC frame type
+HKLM,Comm\SDIO86861\Parms,"MacFrameType", 0x00010001, 0
+
+;
+;Roaming parameters ++
+;
+;Set the value of RoamSignalStrengthThreshold
+HKLM,Comm\SDIO86861\Parms,"RoamSignalStrengthThreshold",0x00010001,45
+
+;
+;Channel list. Valid value is from 0x00000000 ~ 0x00007ff
+;	=> bit[i]=1, channel[i+1] will be scanned
+HKLM,Comm\SDIO86861\Parms,"RoamChannelScanList",0x00010001,0x000007ff
+
+; Scan interval per channel(ms)
+HKLM,Comm\SDIO86861\Parms,"RoamMaxScanInterval",0x00010001,3000
+HKLM,Comm\SDIO86861\Parms,"RoamMinScanInterval",0x00010001,200
+
+
+;RSSI threshold. If the next AP's RSSI is higher more than this value, roam to that AP
+HKLM,Comm\SDIO86861\Parms,"RoamDiffRSSIThreshold",0x00010001,15
+
+;Scan algorithm
+;	0: Use background scan
+;	1: Use active scan
+HKLM,Comm\SDIO86861\Parms,"RoamScanAlgorithm",0x00010001,1
+;
+;Roaming parameters --
+;
+
+;Auto Deep Sleep time, 2 seconds per unit 
+HKLM,Comm\SDIO86861\Parms,"AutoDeepSleepTime", 0x00010001,0
+
+;Association fail retry times 
+HKLM,Comm\SDIO86861\Parms,"AssoRetryTimes", 0x00010001,2
+;enable enhance PS mode
+HKLM,Comm\SDIO86861\Parms,"ehancePS", 0x00010001,1
+
+
+
+;Bus power is on/off in D3
+HKLM,Comm\SDIO86861\Parms,"BusPowerInD3",0x00010001,1
+
+; default TCP/IP parameters
+HKLM,Comm\SDIO86861\Parms\TcpIp,"EnableDHCP",0x00010001,1
+HKLM,Comm\SDIO86861\Parms\TcpIp,"DefaultGateway",0x00010000,""
+HKLM,Comm\SDIO86861\Parms\TcpIp,"UseZeroBroadcast",0x00010001,0
+HKLM,Comm\SDIO86861\Parms\TcpIp,"IpAddress",0x00010000,"0.0.0.0"
+HKLM,Comm\SDIO86861\Parms\TcpIp,"Subnetmask",0x00010000,"255.255.255.0"
+
+
+
+
+; types
+;0x00000000		REG_SZ			string
+;0x00010000		REG_MULTI_SZ		multi-string
+;0x00000001		REG_BINARY		binary
+;0x00010001		REG_DWORD		dword
+
+
+

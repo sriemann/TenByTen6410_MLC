@@ -1,0 +1,18 @@
+!if 0
+    File:   DIRS
+
+    Author: Flash Software
+
+	COPYRIGHT (c) 2006 SAMSUNG ELECTRONICS CO., LTD. ALL RIGHTS RESERVED
+!endif
+
+DIRS= \
+     PseudoFTL      \
+     PseudoVFL      \
+     HalWrapper     \
+     WMR_Util  		\
+     ONDisk     	\
+     BIBDrvIF		\
+     BIBDrv			\
+     msmddoal
+     

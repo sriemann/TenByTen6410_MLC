@@ -1,0 +1,25 @@
+!if "$(WINCEDEBUG)" == "debug"
+SKIPBUILD = 1
+!endif
+
+TARGETNAME		= Stepldr_IROM_SD
+TARGETTYPE		= PROGRAM
+RELEASETYPE		= PLATFORM
+EXEENTRY		= StartUp
+NOMIPS16CODE	= 1
+
+
+!IF "$(BSP_USEDVS)" == "1"
+ADEFINES=$(ADEFINES) -pd "DVS_EN SETL {TRUE}"
+!ELSE
+ADEFINES=$(ADEFINES) -pd "DVS_EN SETL {FALSE}"
+!ENDIF
+LDEFINES = -subsystem:native /DEBUG /DEBUGTYPE:CV /FIXED:NO
+
+TARGETLIBS = $(_COMMONOAKROOT)\lib\$(_CPUINDPATH)\fulllibc.lib
+
+SOURCES =	startup.s	\
+			main.c    \
+			utils.c \
+
+WINCETARGETFILES=stepldr_romimage

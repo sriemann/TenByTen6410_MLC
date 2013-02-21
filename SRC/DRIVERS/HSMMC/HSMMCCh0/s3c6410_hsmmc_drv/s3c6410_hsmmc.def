@@ -1,0 +1,28 @@
+;
+; Copyright (c) Microsoft Corporation.  All rights reserved.
+;
+;
+; Use of this source code is subject to the terms of the Microsoft end-user
+; license agreement (EULA) under which you licensed this SOFTWARE PRODUCT.
+; If you did not accept the terms of the EULA, you are not authorized to use
+; this source code. For a copy of the EULA, please see the LICENSE.RTF on your
+; install media.
+;
+
+; Copyright (c) 2002 BSQUARE Corporation.  All rights reserved.
+; DO NOT REMOVE --- BEGIN EXTERNALLY DEVELOPED SOURCE CODE ID 40973--- DO NOT REMOVE
+
+NAME  s3c6410_hsmmc
+
+EXPORTS
+        HSC_Init
+        HSC_PreDeinit
+        HSC_Deinit
+        HSC_Open
+        HSC_Close
+        HSC_IOControl
+        HSC_PowerDown
+        HSC_PowerUp
+        CreateHSMMCHCCh0Object
+
+; DO NOT REMOVE --- END EXTERNALLY DEVELOPED SOURCE CODE ID --- DO NOT REMOVE

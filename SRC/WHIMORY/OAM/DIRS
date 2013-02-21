@@ -1,0 +1,12 @@
+!if 0
+    File:   dirs
+
+    Author: Dolph Seo
+
+	COPYRIGHT (c) 2004 SAMSUNG ELECTRONICS CO., LTD. ALL RIGHTS RESERVED
+!endif
+
+DIRS=				\
+		OSLess		\
+		WinCE		\
+		Eboot

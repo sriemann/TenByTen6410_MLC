@@ -1,0 +1,50 @@
+!if 0
+Copyright (c) Microsoft Corporation.  All rights reserved.
+!endif
+!if 0
+Use of this sample source code is subject to the terms of the 
+Software License Agreement (SLA) under which you licensed this software product.
+If you did not accept the terms of the license agreement, 
+you are not authorized to use this sample source code. 
+THE SAMPLE SOURCE CODE IS PROVIDED "AS IS", WITH NO WARRANTIES OR INDEMNITIES.
+!endif
+
+RELEASETYPE=PLATFORM
+TARGETNAME=oal
+TARGETTYPE=PROGRAM
+EXEENTRY=StartUp
+SYNCHRONIZE_DRAIN = 1
+NOMIPS16CODE=1
+NOLIBC=1
+
+SOURCES=
+
+LDEFINES=-subsystem:native /DEBUG /DEBUGTYPE:CV /FIXED:NO
+
+TARGETLIBS= \
+    $(_COMMONOAKROOT)\lib\$(_CPUDEPPATH)\oemmain.lib            \
+    $(_COMMONOAKROOT)\lib\$(_CPUDEPPATH)\nkstub.lib             \
+    $(_COMMONOAKROOT)\lib\$(_CPUDEPPATH)\nkldr.lib              \
+    $(_TARGETPLATROOT)\lib\$(_CPUDEPPATH)\oal.lib               \
+    $(_TARGETPLATROOT)\lib\$(_CPUDEPPATH)\s3c6410_args.lib      \
+    $(_TARGETPLATROOT)\lib\$(_CPUDEPPATH)\s3c6410_PM.lib        \
+    $(_PLATCOMMONLIB)\$(_CPUDEPPATH)\s3c6410_system_lib_sec_v1.lib     \
+    $(_PLATCOMMONLIB)\$(_CPUDEPPATH)\oal_intr_s3c6410_sec_v1.lib       \
+    $(_PLATCOMMONLIB)\$(_CPUDEPPATH)\oal_ioctl_s3c6410_sec_v1.lib      \
+    $(_PLATCOMMONLIB)\$(_CPUDEPPATH)\oal_power_s3c6410_sec_v1.lib      \
+    $(_PLATCOMMONLIB)\$(_CPUDEPPATH)\oal_profiler_s3c6410_sec_v1.lib   \
+    $(_PLATCOMMONLIB)\$(_CPUDEPPATH)\oal_rtc_s3c6410_sec_v1.lib        \
+    $(_PLATCOMMONLIB)\$(_CPUDEPPATH)\oal_timer_s3c6410_sec_v1.lib      \
+    $(_PLATCOMMONLIB)\$(_CPUDEPPATH)\oal_misc_s3c6410_sec_v1.lib       \
+    $(_PLATCOMMONLIB)\$(_CPUDEPPATH)\oal_cache_s3c6410_sec_v1.lib      \
+    $(_PLATCOMMONLIB)\$(_CPUINDPATH)\oal_memory_arm.lib         \
+    $(_PLATCOMMONLIB)\$(_CPUINDPATH)\oal_io.lib                 \
+    $(_PLATCOMMONLIB)\$(_CPUINDPATH)\oal_log.lib                \
+    $(_PLATCOMMONLIB)\$(_CPUINDPATH)\oal_other.lib              \
+    $(_COMMONOAKROOT)\lib\$(_CPUINDPATH)\fulllibc.lib
+
+SOURCELIBS = \
+!IF ("$(BSP_IROM_SDMMC_CH0_BOOT)"=="1")||("$(BSP_IROM_SDMMC_CH1_BOOT)"=="1")
+    $(_TARGETPLATROOT)\lib\$(_CPUINDPATH)\SDMMClib_OAL.lib
+!ENDIF
+

@@ -1,0 +1,7 @@
+@echo off
+
+set BSP_POCKETMORY=1
+
+set WMR_NAND_SUPPORT=MLC
+set WMR_FIL=SMDK6410
+set WMR_OAM=WINCE
