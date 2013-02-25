@@ -68,7 +68,7 @@ set BSP_NOUSBHCD=
 set BSP_NO_LED=1
 set BSP_NODM9000A1=
 set BSP_NO_SDIO_WIFI=
-set BSP_NOGPIO= 1
+set BSP_NOGPIO= 
 set BSP_NOEXTPOWERCTL =
 
 @REM If you want to exclude USB Function driver in BSP. Set this variable

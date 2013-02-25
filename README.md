@@ -11,8 +11,13 @@ This document list changes and ToDos for HITEG's TenByTen6410 MLC NAND WinCE 6R3
 	b) change Hirose 24pin keyboard connector to 24pin 2.0mm header, add I2C support there
 	c) move 8pin connector (MINI2440v2 compatibility) to new location (TVOUT)
 	d) support USB internal connector for USB hub chips ==> new layout
+	e) EINT support for GPIODriver
 
-
+----------------------------- 25.02.2013 -----------------------------------
+1.	Rewrote GPIODriver to support GPIOs found on the TenByTen6410 GPIO connector
+	Pin22 to PIN37 (16 pins) can be set/controlled as Input or output, 
+	with or without pull up, pull down.
+	Datums can be read/write pin by pin or as bulk ( see source code )
 ----------------------------- 19.02.2013 -----------------------------------
 
 1.	Make new 10.4" display working, currently under VGA800x600 (7) works flawlessly without any glitches

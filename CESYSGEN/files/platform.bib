@@ -197,10 +197,6 @@ ENDIF BSP_NOSERIAL !
 
 ;------------- IrDA Miniport Driver ---------------------------------------------------------
 ; @CESYSGEN IF CE_MODULES_IRDASTK
-IF BSP_NOSIR !
-; SIR - Serial Irda NDIS miniport driver
-    irsir.dll                $(_FLATRELEASEDIR)\irsir.dll               NK     SHMK
-ENDIF BSP_NOSIR !
 ; @CESYSGEN ENDIF CE_MODULES_IRDASTK
 ;---------------------------------------------------------------------------------------
 
