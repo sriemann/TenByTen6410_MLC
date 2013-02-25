@@ -1,0 +1,12 @@
+LIBRARY GPIO
+EXPORTS
+	GIO_Close
+	GIO_Deinit
+	GIO_Init
+	GIO_IOControl
+	GIO_Open
+	GIO_PowerDown
+	GIO_PowerUp
+	GIO_Read
+	GIO_Seek
+	GIO_Write

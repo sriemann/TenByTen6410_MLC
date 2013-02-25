@@ -1,0 +1,34 @@
+!if 0
+
+    File:   sources
+    Copyright (c) HITEG Limited All rights reserved.
+
+!endif
+
+!if "$(BSP_NOGPIO)" == "1"
+SKIPBUILD=1
+!endif
+
+TARGETNAME=GPIODriver
+RELEASETYPE=PLATFORM
+TARGETTYPE=DYNLINK
+DLLENTRY=DllEntry
+
+TARGETLIBS= \
+    $(_SYSGENSDKROOT)\lib\$(_CPUINDPATH)\coredll.lib \
+    $(_SYSGENOAKROOT)\lib\$(_CPUINDPATH)\ceddk.lib
+
+MSC_WARNING_LEVEL = $(MSC_WARNING_LEVEL) /W3 /WX
+
+INCLUDES= \
+    $(INCLUDES); \
+    $(_TARGETPLATROOT)\src\inc; \
+    $(_COMMONOAKROOT)\inc; \
+    $(_PUBLICROOT)\common\oak\inc;$(_PUBLICROOT)\common\sdk\inc;$(_PUBLICROOT)\common\ddk\inc; \
+    $(_TARGETPLATROOT)\SRC\DRIVERS\DMA\s3c6410_dma_lib; \
+    ..\..\inc
+
+SOURCES= \
+	GPIODriver.cpp
+
+
